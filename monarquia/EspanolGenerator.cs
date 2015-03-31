@@ -10,7 +10,16 @@ namespace monarquia
 		}
 
 		public IEnumerable<string> GetAll(){
-			return new [] { "yo voy" };
+			return new [] { 
+				"yo voy",
+				"tú vas", 
+				"él va",
+				"ella va",
+				"usted va",
+				"vosotros vais",
+				"ellos van",
+				"ellas van",
+				"ustedes van"};
 		}
 	}
 }
