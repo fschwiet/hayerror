@@ -1,0 +1,277 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" data-placeholder-focus="false"><head><script src="http://cdn.beanstock.com/pub/spanishdict/zm.js?15.3.11.15"></script><script async="" type="text/javascript" src="http://partner.googleadservices.com/gpt/pubads_impl_57.js"></script></head><body data-datetime="2015-03-11T20:08:47" data-is-mobile="false" class="lang-en js-transition-off-during-page-load"><img src="about:blank" style="display:none;" data-bsm-flag="true" data-bsm-zone-map-url="http://cdn.beanstock.com/pub/spanishdict/zm.js" data-bsm-sizes="300x250 728x90 160x600" data-bsm-pub="spanishdict" data-bsm-pub-zone="spanishdict.com/asection" data-bsm-event-host="//helix.beanstock.co" onload="this.onerror()" onerror="var s = document.createElement('script'); s.src = 'http://cdn.beanstock.com/pub/cx/flagTag.js'; document.body.appendChild(s)" /><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><link rel="publisher" href="https://plus.google.com/106413713006018165072" /><link rel="search" title="SpanishDict.com" type="application/opensearchdescription+xml" href="http://www.spanishdict.com/toolbar_search.xml" /><link rel="alternate" hreflang="en" href="http://www.spanishdict.com/translate/querer" /><link rel="alternate" hreflang="es" href="http://www.spanishdict.com/traductor/querer" /><title>Querer in English | Spanish to English Translation</title><meta name="description" content="Translate Querer in English. Get the most accurate Spanish to English translations. Fast. Easy. Free." /><meta property="fb:app_id" content="123097127645" /><meta property="fb:admins" content="1675823057" /><meta property="og:type" content="article" /><meta property="og:site_name" content="SpanishDict" /><meta property="og:title" content="Check out the translation for &quot;querer&quot; on SpanishDict!" /><meta property="og:description" content="Find out why SpanishDict is the web's most popular, free Spanish translation, dictionary, and conjugation site." /><meta property="og:image" content="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><meta property="og:url" content="http://www.spanishdict.com/translate/querer?utm_source=social&amp;utm_medium=facebook&amp;utm_campaign=share" /><script async="" type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script><script src="//cdn.beanstock.com/pub/cx/cx.8ce47cc9.js"></script><script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "http://www.spanishdict.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://www.spanishdict.com/translate/{search_term}",
+    "query-input": "required name=search_term"
+  }
+}</script><script src="http://cdn.beanstock.com/pub/cx/flagTag.js"></script><link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-144x144-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-120x120-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-114x114-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-76x76-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-72x72-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-57x57-precomposed.png" /><link rel="apple-touch-icon-precomposed" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-precomposed.png" /><script>(function(global) {
+  global.SD_ENV="production";
+  global.SD_LOG_LEVEL="warning";
+  global.SD_LANG="en";
+  global.SD_GA_UA="UA-329211-2";
+  global.SD_MP="0d9d3502c20e893b403e6018cccf0388";
+  global.SD_PN_USE=true;
+  global.SD_PN_INTAKE_URL="reports.pubnation.com/api/v1/complaint";
+})(this);</script><link rel="dns-prefetch" href="http://www.google-analytics.com" /><link rel="dns-prefetch" href="http://api.mixpanel.com" /><link rel="dns-prefetch" href="http://cdn.mxpnl.com" /><link rel="dns-prefetch" href="http://suggest1.spanishdict.com" /><link rel="dns-prefetch" href="http://translate1.spanishdict.com" /><meta name="viewport" content="width=1024" /><link rel="canonical" href="http://www.spanishdict.com/translate/querer" /><script>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+  var gads = document.createElement("script");
+  gads.async = true;
+  gads.type = "text/javascript";
+  var useSSL = "https:" == document.location.protocol;
+  gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+  var node = document.getElementsByTagName("script")[0];
+  node.parentNode.insertBefore(gads, node);
+})();
+googletag.cmd.push(function() {
+  googletag.pubads().setTargeting('sd_is_mobile', 'false');
+  googletag.pubads().setTargeting('test_group', '63');
+});
+</script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_HEADER", [728, 90], "adTop").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_FOOTER", [728, 90], "adBot").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR", [300, 250], "adSide1").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR_2", [300, 250], "adSide2").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_160_600_SIDEBAR", [160, 600], "adSideLong").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_CONTENT", [300, 250], "adContent").addService(googletag.pubads());
+ });
+ </script><script>googletag.cmd.push(function() {
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+});</script><iframe src="http://tpc.googlesyndication.com/safeframe/1-0-2/html/container.html" style="visibility: hidden; display: none;"></iframe><link rel="stylesheet" href="http://n1.sdcdns.com/dist/desktop-9b87909ec77e4c63f58e37725458bdf3.gz.css" /><!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://n1.sdcdns.com/dist/desktop-ie8-f7fed1e39cc45ed918639c01178e6dc6.gz.css"><![endif]--><div class="header-wrapper"><div class="header header-container container"><div class="menu-bar"><div class="menu-nav menu-collapsed"><div class="menu-container"><div class="menu-selector"><div class="icon-menu-nav-selector"></div><div class="menu-selector-text">Menu</div><div class="menu-collapse"></div></div><div class="menu"><a href="http://www.spanishdict.com/"><div class="menu-item">Home</div></a><a href="http://www.spanishdict.com/translation"><div class="menu-item">Translation</div></a><a href="http://www.spanishdict.com/conjugation"><div class="menu-item">Conjugation</div></a><a href="http://www.spanishdict.com/learn"><div class="menu-item">Learn Spanish</div></a><a href="http://www.spanishdict.com/flashcards"><div class="menu-item">Flashcards</div></a><a href="http://www.spanishdict.com/grammar"><div class="menu-item">Grammar</div></a><a href="http://www.spanishdict.com/answers"><div class="menu-item">Q &amp; A</div></a><a href="http://www.spanishdict.com/wordoftheday"><div class="menu-item">Word of the Day</div></a><a href="#"><div class="menu-item menu-divider go-language">Ver en español</div></a><div class="menu-fluencia menu-divider"><div class="menu-fluencia-title">Want to learn Spanish?</div><div class="menu-fluencia-text"><span>Try Fluencia, an amazing learning program from SpanishDict.</span></div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=nav_menu&amp;h=1" target="_blank" data-sd-track-click-type="fluencia" class="menu-fluencia-link sd-track-click"><div class="menu-fluencia-button">Yes!</div></a></div></div></div></div><div class="menu-user menu-collapsed"><div class="menu-container"><div class="menu-selector unauthed"><a href="http://www.spanishdict.com/users/login" class="menu-selector-text">Sign in</a></div></div></div><a href="http://www.spanishdict.com/" class="header-logo"></a></div></div></div><div class="content-container container"><div class="ad-wrapper-wide"><div class="ad-728-90 adTop-results ad-wrapper"><div id="adTop" class="adTop"><script>googletag.cmd.push(function() {
+  googletag.display("adTop");
+});</script><div id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div><div data-target="adTop" style="visibility: hidden;" class="pubnation">report this ad</div></div></div><div class="main-container"><div class="search"><div class="search-component search-form"><form action="/translation" method="post" accept-charset="utf-8" data-action="translation" class="search_query_to_url save-history"><span id="hidden-search"></span><div class="search-form-parts search-collapse"><input id="hidden-input" name="isExpand" type="hidden" value="false" /><textarea name="text" id="query" type="search" data-suggest-host="suggest1.spanishdict.com:80" data-suggest-path="/dictionary/translate_auto_suggest" placeholder="Enter Spanish or English text…" autocomplete="off" autocorrect="off" autocapitalize="off" class="search-form-input">querer</textarea><div class="accents"><span data-toggle="tooltip" title="Add á to your text" class="accents-letter">á</span><span data-toggle="tooltip" title="Add é to your text" class="accents-letter">é</span><span data-toggle="tooltip" title="Add í to your text" class="accents-letter">í</span><span data-toggle="tooltip" title="Add ó to your text" class="accents-letter">ó</span><span data-toggle="tooltip" title="Add ú to your text" class="accents-letter">ú</span><span data-toggle="tooltip" title="Add ñ to your text" class="accents-letter">ñ</span><span data-toggle="tooltip" title="Add ¿ to your text" class="accents-letter accents-descender">¿</span><span data-toggle="tooltip" title="Add ¡ to your text" class="accents-letter accents-descender">¡</span><span data-toggle="tooltip" title="Hear audio of the words" class="accents-audio-btn"> </span></div><div data-toggle="tooltip" title="Show the accent buttons and expand the search box." class="search-expand-icon"></div><div data-toggle="tooltip" title="Collapse the search box" class="search-collapse-icon"></div><button type="submit" class="search-form-button">Translate</button></div></form></div></div><div class="translate"><div class="card"><div class="quickdef"><div class="source"><h1 class="source-text">querer</h1><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=querer" data-toggle="tooltip" title="Listen to an audio pronunciation" class="audio-start"><span class="audio-blue"> </span></a><a href="http://www.spanishdict.com/videos/querer"><span data-toggle="tooltip" title="Watch a video translation" class="video-blue"> </span></a></div><div class="lang"><div class="el"><a href="http://www.spanishdict.com/translate/to">to</a> <a href="http://www.spanishdict.com/translate/want">want</a>, <a href="http://www.spanishdict.com/translate/to">to</a> <a href="http://www.spanishdict.com/translate/love">love</a></div><span class="media-links"><a href="http://audio1.spanishdict.com/audio?lang=en&amp;text=to-want%2C-to-love" data-toggle="tooltip" title="Listen to an audio pronunciation" class="audio-start"><span class="audio-blue"> </span></a></span></div></div><div class="nav-content"><div class="nav-content-item nav-active"><a><span class="nav-content-item-text">Dictionary</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/conjugate/querer"><span class="nav-content-item-text">Conjugation</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/videos/querer"><span class="nav-content-item-text">Video</span></a></div><div class="social-small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.spanishdict.com%2Ftranslate%2Fquerer%3Futm_source%3Dsocial%26utm_medium%3Dfacebook%26utm_campaign%3Dshare" class="social-small-icon social-small-facebook"></a><a target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20the%20translation%20for%20%22querer%22%20on%20%40SpanishDict!&amp;amp;url=http%3A%2F%2Fspanishdict.com%2ftranslate%2Fquerer%3Futm_source%3Dsocial%26utm_medium%3Dtwitter%26utm_campaign%3Dshare" class="social-small-icon social-small-twitter"></a><a target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fspanishdict.com%2Ftranslate%2Fquerer%3Futm_source%3Dsocial%26utm_medium%3Dgoogleplus%26utm_campaign%3Dshare" class="social-small-icon social-small-gplus"></a></div></div><div class="dictionary-entry dictionary-neodict"><div class="dictionary-neodict-entry-title">querer</div><a href="http://www.spanishdict.com/topics/show/107" title="A transitive verb is a verb that requires a direct object (e.g. I bought a book.)." data-toggle="tooltip" class="has-tooltip dictionary-neodict-first-part-of-speech part_of_speech">transitive verb</a><div class="dictionary-neodict-indent-1"><span class="def">1. </span><span class="context">(to wish)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to want</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Quiero comer chocolate.</span><span class="icon-dash"></span><em class="exB">I want to eat chocolate.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">2. </span><span class="context">(affection)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to love</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Ella todavía te quiere profundamente. </span><span class="icon-dash"></span><em class="exB">She still loves you deeply. </em></div></div><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">b.</span><span class="dictionary-neodict-translation-translation"> to like</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>El perro te quiere mucho.</span><span class="icon-dash"></span><em class="exB">The dog likes you a lot.</em></div></div></div></div><a href="http://www.spanishdict.com/topics/show/1" title="A masculine noun is used with masculine articles and adjectives (e.g. el hombre guapo, el sol amarillo)." data-toggle="tooltip" class="has-tooltip part_of_speech">masculine noun</a><div class="dictionary-neodict-indent-1"><span class="def">3. </span><span class="context">(object of one's affection)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> beloved</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Llora por el hombre que fue su querer.</span><span class="icon-dash"></span><em class="exB">She cries for the man that was her beloved.</em></div></div></div></div><div class="dictionary-neodict-entry-title">quererse</div><a href="http://www.spanishdict.com/topics/show/84" title="A reciprocal verb is a verb that indicates that two or more subjects perform an action on each other (e.g. Ellos se abrazan.)." data-toggle="tooltip" class="has-tooltip dictionary-neodict-first-part-of-speech part_of_speech">reciprocal verb</a><div class="dictionary-neodict-indent-1"><span class="def">4. </span><span class="context">(affection)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to love each other</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Dejaron de quererse.</span><span class="icon-dash"></span><em class="exB">They no longer love each other.</em></div></div></div></div><div class="d-copyright"><a href="http://www.spanishdict.com" rel="nofollow">Copyright © 2014 Curiosity Media Inc.</a></div></div><div class="dictionary-line"></div><div class="dictionary-entry dictionary-chambers"><div class="LV0">
+<div class="dictionary_word" id="word_querer ">
+<span class="head_word">querer </span>
+<div class="box">
+</div> <span class="pron">
+</span>
+<div class="LV2">
+<span class="part_of_speech">transitive verb</span>
+<div class="LV3">
+<span class="def_header">1. </span>
+<span class="def">to want </span> <em>
+<em class="context">(desear)</em>
+</em>
+<ul class="examples">
+<li>
+<span>quiero una bicicleta </span><span class="icon-dash"></span><em class="exB">I want a bicycle </em>
+<em class="context">
+</em> </li>
+<li>
+<span>¿quieren ustedes algo más? </span><span class="icon-dash"></span><em class="exB">would you like anything else? </em>
+<em class="context">
+</em> </li>
+<li>
+<span>haz lo que quieras </span><span class="icon-dash"></span><em class="exB">do what you want <i>o</i> like, do as you please <i>o</i> like </em>
+<em class="context">
+</em> </li>
+<li>
+<span>querer que alguien haga algo </span><span class="icon-dash"></span><em class="exB">to want somebody to do something </em>
+<em class="context">
+</em> </li>
+<li>
+<span>quiero que lo hagas tú </span><span class="icon-dash"></span><em class="exB">I want you to do it </em>
+<em class="context">
+</em> </li>
+<li>
+<span>queremos que las cosas te vayan bien </span><span class="icon-dash"></span><em class="exB">we want things to go well for you </em>
+<em class="context">
+</em> </li>
+<li>
+<span>quisiera hacerlo, pero… </span><span class="icon-dash"></span><em class="exB">I'd like to do it, but… </em>
+<em class="context">
+</em> </li>
+<li>
+<span>¡qué quieres que haga! </span><span class="icon-dash"></span><em class="exB">what am I supposed to do? </em>
+<em class="context">
+</em> </li>
+<li>
+<span>qué quieres que te diga, a mí me parece caro </span><span class="icon-dash"></span><em class="exB">to be honest, it seems expensive to me, what can I say? it seems expensive to me </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">2. </span>
+<span class="def">to love </span> <em>
+<em class="context">(amar)</em>
+</em>
+<ul class="examples">
+<li>
+<span>te quiero </span><span class="icon-dash"></span><em class="exB">I love you </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">3. </span>
+<em>
+<em class="context">(en preguntas) (con amabilidad)</em>
+</em>
+<ul class="examples">
+<li>
+<span>¿querrías explicarme qué ha pasado aquí? </span><span class="icon-dash"></span><em class="exB">would you mind explaining what happened here? </em>
+<em class="context">
+</em> </li>
+<li>
+<span>¿quiere decirle a su amigo que pase? </span><span class="icon-dash"></span><em class="exB">could you tell your friend to come in, please? </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">4. </span>
+<em>
+<em class="context">(pedir)</em>
+</em>
+<ul class="examples">
+<li>
+<span>querer algo (por) </span><span class="icon-dash"></span><em class="exB">to want something (for) </em>
+<em class="context">
+</em> </li>
+<li>
+<span>¿cuánto quieres por el coche? </span><span class="icon-dash"></span><em class="exB">how much do you want for the car? </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">5. </span>
+<em>
+<em class="context">(Irónico) (dar motivos para)</em>
+</em>
+<ul class="examples">
+<li>
+<span>tú lo que quieres es que te pegue </span><span class="icon-dash"></span><em class="exB">you're asking for a smack </em>
+<em class="context">
+</em> </li>
+<li>
+<span>¿quieres que te atropelle el tren o qué? </span><span class="icon-dash"></span><em class="exB">do you want to get run over by a train or something? </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">6. </span>
+<em>
+<em class="context">(expresiones)</em>
+</em>
+<ul class="examples">
+<li>
+<span>como quien no quiere la cosa </span><span class="icon-dash"></span><em class="exB">as if it were nothing </em>
+<em class="context">
+</em> </li>
+<li>
+<span>quien bien te quiere te hará llorar </span>
+<em class="context">(Prov) </em> <span class="icon-dash"></span><em class="exB">you have to be cruel to be kind </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<span class="part_of_speech">intransitive verb</span>
+<div class="LV3">
+<span class="def_header">7. </span>
+<span class="def">to want </span> <em>
+</em>
+<ul class="examples">
+<li>
+<span>ven cuando quieras </span><span class="icon-dash"></span><em class="exB">come whenever you like <i>o </i>want </em>
+<em class="context">
+</em> </li>
+<li>
+<span>no me voy porque no quiero </span><span class="icon-dash"></span><em class="exB">I'm not going because I don't want to </em>
+<em class="context">
+</em> </li>
+<li>
+<span>queriendo </span><span class="icon-dash"></span><em class="exB">on purpose </em>
+<em class="context">
+</em> </li>
+<li>
+<span>sin querer </span><span class="icon-dash"></span><em class="exB">accidentally </em>
+<em class="context">
+</em> </li>
+<li>
+<span>querer decir </span><span class="icon-dash"></span><em class="exB">to mean </em>
+<em class="context">
+</em> </li>
+<li>
+<span>¿qué quieres decir con eso? </span><span class="icon-dash"></span><em class="exB">what do you mean by that? </em>
+<em class="context">
+</em> </li>
+<li>
+<span>querer es poder </span><span class="icon-dash"></span><em class="exB">where there's a will there's a way </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<span class="part_of_speech">impersonal verb</span>
+<div class="LV3">
+<span class="def_header">8. </span>
+<em>
+<em class="context">(haber atisbos)</em>
+</em>
+<ul class="examples">
+<li>
+<span>parece que quiere llover </span><span class="icon-dash"></span><em class="exB">it looks like rain </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<span class="part_of_speech">masculine noun</span>
+<div class="LV3">
+<span class="def_header">9. </span>
+<span class="def">love </span> <em>
+<em class="context">(amor)</em>
+</em>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<div class="subheadword">quererse </div> <span class="part_of_speech">pronominal verb</span>
+<div class="LV3">
+<span class="def_header">1. </span>
+<span class="def">to love each other </span> <em>
+<em class="context">(dos personas)</em>
+</em>
+</div>
+</div>
+</div>
+</div><div class="d-copyright"><a href="http://www.amazon.com/Websters-World-Concise-Spanish-Dictionary/dp/0471748366/&amp;tag=spani-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" rel="nofollow">Copyright © 2006 Harrap Publishers Limited</a></div></div><div class="dictionary-line"></div><div class="dictionary-entry dictionary-collins"><div class="entry"><div class="hw_unit"><span class="hw">querer</span></div><div class="note">Para la expresión <em class="em">querer decir</em>, ver la otra entrada.</div><div class="gram_cat"><a name="verbo:transitivo"></a><div class="entry_pos">transitive verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="context">(a una persona)</span> <span class="sense"> <span class="label synonym">(amar)</span> <span class="tran_group"> <span class="tran_main">to love;</span></span></span><span class="sense"> <span class="label synonym">(apreciar)</span> <span class="tran_group"> <span class="tran_main">to like</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">¡te quiero!</span><span class="tran_group"> <span class="tran">I love you!</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">te quiero mucho</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">quiero mucho a mis abuelos</span><span class="tran_group"> <span class="tran">I love my grandparents very much</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hace tiempo que lo quiero</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">no estoy enamorado, pero la quiero mucho</span><span class="tran_group"> <span class="tran">I'm not in love with her, but I'm very fond of her;</span></span></span><span class="ex_unit"> <span class="ex">la quiero con locura</span><span class="tran_group"> <span class="tran">I'm madly in love with her;</span></span></span><span class="ex_unit"> <span class="ex">me quiere ... no me quiere</span> <span class="context">(deshojando una margarita)</span> <span class="tran_group"> <span class="tran">she loves me ... she loves me not</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">¿no me quieres siquiera un poquito?</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">en la oficina lo quieren mucho</span><span class="tran_group"> <span class="tran">he is well liked at the office</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">querer <em class="c">bien</em> a algn</span></span><span class="tran_group"> <span class="tran">to want the best for sb</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">yo sé que me quieres bien, y por eso te pido consejo</span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">hacerse</em> querer por algn</span></span><span class="tran_group"> <span class="tran">to endear o.s. to sb</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">querer <em class="c">mal</em> a algn</span></span><span class="tran_group"> <span class="tran">to wish sb ill</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">Y nunca habéis tenido ningún problema con nadie, alguien que os quiera mal, enemigos de algún tipo..Por muchas vueltas que damos , nunca se nos viene a la mente que alguna persona nos pueda querer hacer daño</span></span><span class="ex_unit"> <span class="ex">Siempre tengo la sensación de que quienes barajan mi nombre para ir a Madrid son quienes me quieren mal</span></span></div></div><div class="idm_group"><div class="idm_unit"><span class="idm">¡por lo que más quieras!</span> <span class="context">(rogando)</span> <span class="tran_group"> <span class="tran">by all that's sacred!;</span></span> <span class="context">(regañando)</span> <span class="tran_group"> <span class="tran">for Heaven's sake!</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">rogando: dios mio, por lo que más quieras, haz que me cure de esta enfermedad</span></span><span class="ex_unit"> <span class="ex">regañando con enfado: por lo que más quieras, hijo mío, deja de hacer ruido, que estamos intentando dormir</span></span></div></div></div><div class="idm_group"><div class="idm_unit"><span class="idm">querer a algn como a la niña de sus ojos</span><span class="tran_group"> <span class="tran">to dote on sb</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">la quiere como a la niña de sus ojos</span><span class="tran_group"> <span class="tran">she's the apple of his eye;</span> <span class="tran">he dotes on her</span></span></span></div></div></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="label synonym">(desear)</span> <span class="sense"> <span class="label collate object">[+objeto]</span> <span class="tran_group"> <span class="tran_main">to want</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">¿cuál quieres?</span><span class="tran_group"> <span class="tran">which one do you want?;</span></span></span><span class="ex_unit"> <span class="ex">¿qué más quieres?</span><span class="tran_group"> <span class="tran">what else do you want?;</span></span><span class="tran_group"> <span class="tran">what more do you want?;</span></span></span><span class="ex_unit"> <span class="ex">hace lo que quiere</span><span class="tran_group"> <span class="tran">she does what she wants <em class="or" title="es-es">o</em> as she pleases;</span></span></span><span class="ex_unit"> <span class="ex">se lo di, pero no lo quiso</span><span class="tran_group"> <span class="tran">I gave it to him, but he didn't want (to take) it</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">le dije que viniera, pero no quiso</span></span><span class="ex_unit"> <span class="ex">pero no quiso</span></span><span class="ex_unit"> <span class="ex">podía habérmelo dicho, pero no quiso</span></span><span class="ex_unit"> <span class="ex">Podía haber bajado a la tienda, pero no quiso</span></span><span class="ex_unit"> <span class="ex">Podría haber sido más comedido, pero no quiso</span></span><span class="ex_unit"> <span class="ex">Tal vez</span></span></div></span></div></div></div></div></div></div></div></div></body></html>

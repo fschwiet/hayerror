@@ -1,0 +1,628 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" data-placeholder-focus="false"><head><script type="text/javascript" async="" src="http://report-ads-to.pubnation.com/dist/pnr.js?t=pn-053b5b698be780ef"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js"></script><script src="http://cdn.beanstock.com/pub/spanishdict/zm.js?15.3.11.15"></script><script src="//cdn.beanstock.com/pub/cx/cx.8ce47cc9.js"></script><script async="" type="text/javascript" src="http://partner.googleadservices.com/gpt/pubads_impl_57.js"></script></head><body data-datetime="2015-03-11T20:08:14" data-is-mobile="false" class="lang-en no-touch supports-machineTranslation supports-suggest supports-history supports-autoScroll supports-conjugationExpand supports-clearSearch"><img src="about:blank" style="display:none;" data-bsm-flag="true" data-bsm-zone-map-url="http://cdn.beanstock.com/pub/spanishdict/zm.js" data-bsm-sizes="300x250 728x90 160x600" data-bsm-pub="spanishdict" data-bsm-pub-zone="spanishdict.com/asection" data-bsm-event-host="//helix.beanstock.co" onload="this.onerror()" onerror="var s = document.createElement('script'); s.src = 'http://cdn.beanstock.com/pub/cx/flagTag.js'; document.body.appendChild(s)" /><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><link rel="publisher" href="https://plus.google.com/106413713006018165072" /><link rel="search" title="SpanishDict.com" type="application/opensearchdescription+xml" href="http://www.spanishdict.com/toolbar_search.xml" /><link rel="alternate" hreflang="en" href="http://www.spanishdict.com/translate/hacer" /><link rel="alternate" hreflang="es" href="http://www.spanishdict.com/traductor/hacer" /><title>Hacer in English | Spanish to English Translation</title><meta name="description" content="Translate Hacer in English. Get the most accurate Spanish to English translations. Fast. Easy. Free." /><meta property="fb:app_id" content="123097127645" /><meta property="fb:admins" content="1675823057" /><meta property="og:type" content="article" /><meta property="og:site_name" content="SpanishDict" /><meta property="og:title" content="Check out the translation for &quot;hacer&quot; on SpanishDict!" /><meta property="og:description" content="Find out why SpanishDict is the web's most popular, free Spanish translation, dictionary, and conjugation site." /><meta property="og:image" content="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><meta property="og:url" content="http://www.spanishdict.com/translate/hacer?utm_source=social&amp;utm_medium=facebook&amp;utm_campaign=share" /><script async="" type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script><script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "http://www.spanishdict.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://www.spanishdict.com/translate/{search_term}",
+    "query-input": "required name=search_term"
+  }
+}</script><link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-144x144-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-120x120-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-114x114-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-76x76-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-72x72-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-57x57-precomposed.png" /><link rel="apple-touch-icon-precomposed" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-precomposed.png" /><script>(function(global) {
+  global.SD_ENV="production";
+  global.SD_LOG_LEVEL="warning";
+  global.SD_LANG="en";
+  global.SD_GA_UA="UA-329211-2";
+  global.SD_MP="0d9d3502c20e893b403e6018cccf0388";
+  global.SD_PN_USE=true;
+  global.SD_PN_INTAKE_URL="reports.pubnation.com/api/v1/complaint";
+})(this);</script><link rel="dns-prefetch" href="http://www.google-analytics.com" /><link rel="dns-prefetch" href="http://api.mixpanel.com" /><link rel="dns-prefetch" href="http://cdn.mxpnl.com" /><link rel="dns-prefetch" href="http://suggest1.spanishdict.com" /><link rel="dns-prefetch" href="http://translate1.spanishdict.com" /><meta name="viewport" content="width=1024" /><link rel="canonical" href="http://www.spanishdict.com/translate/hacer" /><script>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+  var gads = document.createElement("script");
+  gads.async = true;
+  gads.type = "text/javascript";
+  var useSSL = "https:" == document.location.protocol;
+  gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+  var node = document.getElementsByTagName("script")[0];
+  node.parentNode.insertBefore(gads, node);
+})();
+googletag.cmd.push(function() {
+  googletag.pubads().setTargeting('sd_is_mobile', 'false');
+  googletag.pubads().setTargeting('test_group', '63');
+});
+</script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_HEADER", [728, 90], "adTop").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_FOOTER", [728, 90], "adBot").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR", [300, 250], "adSide1").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR_2", [300, 250], "adSide2").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_160_600_SIDEBAR", [160, 600], "adSideLong").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_CONTENT", [300, 250], "adContent").addService(googletag.pubads());
+ });
+ </script><script>googletag.cmd.push(function() {
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+});</script><link rel="stylesheet" href="http://n1.sdcdns.com/dist/desktop-9b87909ec77e4c63f58e37725458bdf3.gz.css" /><!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://n1.sdcdns.com/dist/desktop-ie8-f7fed1e39cc45ed918639c01178e6dc6.gz.css"><![endif]--><div class="header-wrapper"><div class="header header-container container"><div class="menu-bar"><div class="menu-nav menu-collapsed"><div class="menu-container"><div class="menu-selector"><div class="icon-menu-nav-selector"></div><div class="menu-selector-text">Menu</div><div class="menu-collapse"></div></div><div class="menu"><a href="http://www.spanishdict.com/"><div class="menu-item">Home</div></a><a href="http://www.spanishdict.com/translation"><div class="menu-item">Translation</div></a><a href="http://www.spanishdict.com/conjugation"><div class="menu-item">Conjugation</div></a><a href="http://www.spanishdict.com/learn"><div class="menu-item">Learn Spanish</div></a><a href="http://www.spanishdict.com/flashcards"><div class="menu-item">Flashcards</div></a><a href="http://www.spanishdict.com/grammar"><div class="menu-item">Grammar</div></a><a href="http://www.spanishdict.com/answers"><div class="menu-item">Q &amp; A</div></a><a href="http://www.spanishdict.com/wordoftheday"><div class="menu-item">Word of the Day</div></a><a href="#"><div class="menu-item menu-divider go-language">Ver en español</div></a><div class="menu-fluencia menu-divider"><div class="menu-fluencia-title">Want to learn Spanish?</div><div class="menu-fluencia-text"><span>Try Fluencia, an amazing learning program from SpanishDict.</span></div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=nav_menu&amp;h=1" target="_blank" data-sd-track-click-type="fluencia" class="menu-fluencia-link sd-track-click"><div class="menu-fluencia-button">Yes!</div></a></div></div></div></div><div class="menu-user menu-collapsed"><div class="menu-container"><div class="menu-selector unauthed"><a href="http://www.spanishdict.com/users/login" class="menu-selector-text">Sign in</a></div></div></div><a href="http://www.spanishdict.com/" class="header-logo"></a></div></div></div><div class="content-container container"><div class="ad-wrapper-wide"><div class="ad-728-90 adTop-results ad-wrapper"><div id="adTop" class="adTop"><script>googletag.cmd.push(function() {
+  googletag.display("adTop");
+});</script><iframe src="http://tpc.googlesyndication.com/safeframe/1-0-2/html/container.html" style="visibility: hidden; display: none;"></iframe><div id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div><div data-target="adTop" style="visibility: hidden;" class="pubnation">report this ad</div></div></div><div class="main-container"><div class="search"><div class="search-component search-form"><form action="/translation" method="post" accept-charset="utf-8" data-action="translation" class="search_query_to_url save-history"><span id="hidden-search">hacer</span><div class="search-form-parts search-collapse"><input id="hidden-input" name="isExpand" type="hidden" value="false" /><textarea name="text" id="query" type="search" data-suggest-host="suggest1.spanishdict.com:80" data-suggest-path="/dictionary/translate_auto_suggest" placeholder="Enter Spanish or English text…" autocomplete="off" autocorrect="off" autocapitalize="off" class="search-form-input">hacer</textarea><div class="accents"><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add á to your text">á</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add é to your text">é</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add í to your text">í</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add ó to your text">ó</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add ú to your text">ú</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add ñ to your text">ñ</span><span data-toggle="tooltip" title="" class="accents-letter accents-descender" data-original-title="Add ¿ to your text">¿</span><span data-toggle="tooltip" title="" class="accents-letter accents-descender" data-original-title="Add ¡ to your text">¡</span><span data-toggle="tooltip" title="" class="accents-audio-btn" data-original-title="Hear audio of the words"> </span></div><div data-toggle="tooltip" title="" class="search-expand-icon" data-original-title="Show the accent buttons and expand the search box."></div><div data-toggle="tooltip" title="" class="search-collapse-icon" style="display: none;" data-original-title="Collapse the search box"></div><button type="submit" class="search-form-button">Translate</button></div><div class="input-table"><table cellspace="0" cellpadding="0" dir="ltr" class="input-table-table"><tbody><tr><td><table cellspace="0" cellpadding="0" class="inner-input-table">
+<tbody></tbody></table></td></tr></tbody></table></div></form></div></div><div class="translate"><div class="card"><div class="quickdef"><div class="source"><h1 class="source-text">hacer</h1><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=hacer" data-toggle="tooltip" title="" class="audio-start" data-original-title="Listen to an audio pronunciation"><span class="audio-blue"> </span></a><a href="http://www.spanishdict.com/videos/hacer"><span data-toggle="tooltip" title="" class="video-blue" data-original-title="Watch a video translation"> </span></a></div><div class="lang"><div class="el"><a href="http://www.spanishdict.com/translate/to">to</a> <a href="http://www.spanishdict.com/translate/do">do</a>, <a href="http://www.spanishdict.com/translate/to">to</a> <a href="http://www.spanishdict.com/translate/make">make</a></div><span class="media-links"><a href="http://audio1.spanishdict.com/audio?lang=en&amp;text=to-do%2C-to-make" data-toggle="tooltip" title="" class="audio-start" data-original-title="Listen to an audio pronunciation"><span class="audio-blue"> </span></a></span></div></div><div class="nav-content"><div class="nav-content-item nav-active"><a><span class="nav-content-item-text">Dictionary</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/conjugate/hacer"><span class="nav-content-item-text">Conjugation</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/videos/hacer"><span class="nav-content-item-text">Video</span></a></div><div class="social-small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.spanishdict.com%2Ftranslate%2Fhacer%3Futm_source%3Dsocial%26utm_medium%3Dfacebook%26utm_campaign%3Dshare" class="social-small-icon social-small-facebook"></a><a target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20the%20translation%20for%20%22hacer%22%20on%20%40SpanishDict!&amp;amp;url=http%3A%2F%2Fspanishdict.com%2ftranslate%2Fhacer%3Futm_source%3Dsocial%26utm_medium%3Dtwitter%26utm_campaign%3Dshare" class="social-small-icon social-small-twitter"></a><a target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fspanishdict.com%2Ftranslate%2Fhacer%3Futm_source%3Dsocial%26utm_medium%3Dgoogleplus%26utm_campaign%3Dshare" class="social-small-icon social-small-gplus"></a></div></div><div class="dictionary-entry dictionary-chambers"><div class="LV0">
+<div class="dictionary_word" id="word_hacer ">
+<span class="head_word">hacer </span>
+<div class="box">
+</div> <span class="pron">
+</span>
+<div class="LV2">
+<span class="part_of_speech">transitive verb</span>
+<div class="LV3">
+<span class="def_header">1. </span>
+<span class="def">to do </span> <em>
+<em class="context">(realizar) (estudios, experimento, favor)</em>
+</em>; <span class="def">to make </span> <em>
+<em class="context">(viaje, sacrificio, promesa)</em>
+</em>; <span class="def">to take </span> <em>
+<em class="context">(comunión)</em>
+</em>; <span class="def">to ask </span> <em>
+<em class="context">(pregunta)</em>
+</em>
+<ul class="examples">
+<li>
+<span>¿qué haces? </span><span class="icon-dash"></span><em class="exB">what are you doing? </em>
+<em class="context">
+</em> </li>
+<li>
+<span>tengo mucho que hacer </span><span class="icon-dash"></span><em class="exB">I have a lot to do </em>
+<em class="context">
+</em> </li>
+<li>
+<span>estoy haciendo segundo </span><span class="icon-dash"></span><em class="exB">I'm in my second year </em>
+<em class="context">
+</em> </li>
+<li>
+<span>¿qué habré hecho con las llaves? </span><span class="icon-dash"></span><em class="exB">what have I done with the keys? </em>
+<em class="context">
+</em> </li>
+<li>
+<span>la carretera hace una curva </span><span class="icon-dash"></span><em class="exB">there's a bend in the road </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">2. </span>
+<span class="def">to make </span> <em>
+<em class="context">(elaborar, crear, cocinar)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacer un vestido/planes </span><span class="icon-dash"></span><em class="exB">to make a dress/plans </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hacer un poema/una sinfonía </span><span class="icon-dash"></span><em class="exB">to write a poem/a symphony </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hacer una fiesta </span><span class="icon-dash"></span><em class="exB">to have a party </em>
+<em class="context">
+</em> </li>
+<li>
+<span>para hacer la carne… </span><span class="icon-dash"></span><em class="exB">to cook the meat… </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">3. </span>
+<span class="def">to make </span> <em>
+<em class="context">(obtener) (fotocopia)</em>
+</em>; <span class="def">to paint </span> <em>
+<em class="context">(retrato)</em>
+</em>; <span class="def">to take </span> <em>
+<em class="context">(fotografía)</em>
+</em>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">4. </span>
+<span class="def">to do </span> <em>
+<em class="context">(arreglar) (casa, colada)</em>
+</em>; <span class="def">to make </span> <em>
+<em class="context">(cama)</em>
+</em>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">5. </span>
+<span class="def">to build </span> <em>
+<em class="context">(construir)</em>
+</em>
+<ul class="examples">
+<li>
+<span>han hecho un edificio nuevo </span><span class="icon-dash"></span><em class="exB">they've put up a new building </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">6. </span>
+<span class="def">to make </span> <em>
+<em class="context">(movimientos, sonidos, gestos)</em>
+</em>
+<ul class="examples">
+<li>
+<span>le hice señas </span><span class="icon-dash"></span><em class="exB">I signaled to her </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hacer ruido </span><span class="icon-dash"></span><em class="exB">to make a noise </em>
+<em class="context">
+</em> </li>
+<li>
+<span>el gato hace "miau" </span><span class="icon-dash"></span><em class="exB">cats go "meow" </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">7. </span>
+<span class="def">to do </span> <em>
+<em class="context">(practicar) (en general)</em>
+</em>; <span class="def">to play </span> <em>
+<em class="context">(tenis, fútbol)</em>
+</em>
+<ul class="examples">
+<li>
+<span>debes hacer deporte </span><span class="icon-dash"></span><em class="exB">you should start doing some sport </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">8. </span>
+<em>
+<em class="context">(causar)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacer daño a alguien </span><span class="icon-dash"></span><em class="exB">to hurt somebody </em>
+<em class="context">
+</em> </li>
+<li>
+<span>me hizo gracia </span><span class="icon-dash"></span><em class="exB">I thought it was funny </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">9. </span>
+<em>
+<em class="context">(transformar en)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacer a alguien feliz </span><span class="icon-dash"></span><em class="exB">to make somebody happy </em>
+<em class="context">
+</em> </li>
+<li>
+<span>la guerra no le hizo un hombre </span><span class="icon-dash"></span><em class="exB">the war didn't make him (into) a man </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hizo pedazos el papel </span><span class="icon-dash"></span><em class="exB">he tore the paper to pieces </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hacer de algo/alguien algo </span><span class="icon-dash"></span><em class="exB">to make something/somebody into something </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hizo de ella una buena cantante </span><span class="icon-dash"></span><em class="exB">he made a good singer of her </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">10. </span>
+<span class="def">to cause to look <i>o </i>seem </span> <em>
+<em class="context">(dar aspecto a)</em>
+</em>
+<ul class="examples">
+<li>
+<span>este espejo te hace gordo </span><span class="icon-dash"></span><em class="exB">that mirror makes you look <i>o </i>seem fat </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">11. </span>
+<em>
+<em class="context">(comportarse como)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacer el tonto </span><span class="icon-dash"></span><em class="exB">to act the fool </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hacer el vándalo </span><span class="icon-dash"></span><em class="exB">to act like a hooligan </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">12. </span>
+<span class="def">to play </span> <em>
+<em class="context">(Cine &amp; Teatro) (papel)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hace el papel de la hija del rey </span><span class="icon-dash"></span><em class="exB">she plays (the part of) the king's daughter </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">13. </span>
+<span class="def">to think, to reckon </span> <em>
+<em class="context">(suponer)</em>
+</em>
+<ul class="examples">
+<li>
+<span>a estas horas yo te hacía en París </span><span class="icon-dash"></span><em class="exB">I thought <i>o </i>reckoned you'd be in Paris by now </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">14. </span>
+<em>
+<em class="context">(ser causa de)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacer que alguien haga algo </span><span class="icon-dash"></span><em class="exB">to make somebody do something </em>
+<em class="context">
+</em> </li>
+<li>
+<span>has hecho que se enfadara </span><span class="icon-dash"></span><em class="exB">you've made him angry </em>
+<em class="context">
+</em> </li>
+<li>
+<span>me hizo reír </span><span class="icon-dash"></span><em class="exB">it made me laugh </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">15. </span>
+<em>
+<em class="context">(mandar)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacer que se haga algo </span><span class="icon-dash"></span><em class="exB">to have something done </em>
+<em class="context">
+</em> </li>
+<li>
+<span>voy a hacer teñir este vestido </span><span class="icon-dash"></span><em class="exB">I'm going to have this dress dyed </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<span class="part_of_speech">intransitive verb</span>
+<div class="LV3">
+<span class="def_header">16. </span>
+<em>
+<em class="context">(intervenir)</em>
+</em>
+<ul class="examples">
+<li>
+<span>déjame hacer a mí </span><span class="icon-dash"></span><em class="exB">let me do it </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">17. </span>
+<em>
+<em class="context">(Cine &amp; Teatro)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacer de </span><span class="icon-dash"></span><em class="exB">to play; </em>
+<em class="context">(actuar)</em> <em class="exB">to act as </em>
+<em class="context">(trabajar)</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">18. </span>
+<em>
+<em class="context">(aparentar)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacer como si </span><span class="icon-dash"></span><em class="exB">to act as if </em>
+<em class="context">
+</em> </li>
+<li>
+<span>haz como que no te importa </span><span class="icon-dash"></span><em class="exB">act as if you don't care </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">19. </span>
+<em>
+<em class="context">(procurar, intentar)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacer por hacer algo </span><span class="icon-dash"></span><em class="exB">to try to do something </em>
+<em class="context">
+</em> </li>
+<li>
+<span>haré por verle esta noche </span><span class="icon-dash"></span><em class="exB">I'll try to see him tonight </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<em class="def_also"> also: </em>
+<ul class="examples">
+<li>
+<span>¿hace? </span><span class="icon-dash"></span><em class="exB">all right? </em>
+<em class="context"> (peninsular Spanish)</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<span class="part_of_speech">impersonal verb</span>
+<div class="LV3">
+<span class="def_header">20. </span>
+<em>
+<em class="context">(tiempo meteorológico)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hace frío/sol/viento </span><span class="icon-dash"></span><em class="exB">it's cold/sunny/windy </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hace buen/mal tiempo </span><span class="icon-dash"></span><em class="exB">the weather is good/bad </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hace un día precioso </span><span class="icon-dash"></span><em class="exB">it's a beautiful day </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">21. </span>
+<em>
+<em class="context">(tiempo transcurrido)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hace diez años </span><span class="icon-dash"></span><em class="exB">ten years ago </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hace mucho/poco </span><span class="icon-dash"></span><em class="exB">a long time/not long ago </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hace dos sábados </span><span class="icon-dash"></span><em class="exB">the Saturday before last </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hace un mes que llegué </span><span class="icon-dash"></span><em class="exB">it's a month since I arrived </em>
+<em class="context">
+</em> </li>
+<li>
+<span>no la veo desde hace un año </span><span class="icon-dash"></span><em class="exB">I haven't seen her for a year </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<div class="subheadword">hacerse </div> <span class="part_of_speech">pronominal verb</span>
+<div class="LV3">
+<span class="def_header">1. </span>
+<span class="def">to cook </span> <em>
+<em class="context">(guisarse, cocerse)</em>
+</em>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">2. </span>
+<span class="def">to make oneself </span> <em>
+<em class="context">(fabricarse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacer un vestido </span><span class="icon-dash"></span><em class="exB">to make oneself a dress; </em>
+<em class="context">(uno mismo)</em> <em class="exB">to have a dress made </em>
+<em class="context">(encargarlo)</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">3. </span>
+<em>
+<em class="context">(causarse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacerse daño </span><span class="icon-dash"></span><em class="exB">to hurt oneself </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">4. </span>
+<span class="def">to become </span> <em>
+<em class="context">(convertirse en)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacerse musulmán </span><span class="icon-dash"></span><em class="exB">to become a Moslem </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hacerse viejo </span><span class="icon-dash"></span><em class="exB">to grow old </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">5. </span>
+<em>
+<em class="context">(resultar)</em>
+</em>
+<ul class="examples">
+<li>
+<span>se me ha hecho muy corto </span><span class="icon-dash"></span><em class="exB">it seemed very short </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">6. </span>
+<em>
+<em class="context">(crearse en la mente)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacerse ilusiones </span><span class="icon-dash"></span><em class="exB">to get one's hopes up </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hacerse una idea de algo </span><span class="icon-dash"></span><em class="exB">to imagine what something is like </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">7. </span>
+<em>
+<em class="context">(mostrarse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacerse el gracioso/el simpático </span><span class="icon-dash"></span><em class="exB">to try to act the comedian/the nice guy </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hacerse el distraído </span><span class="icon-dash"></span><em class="exB">to pretend to be miles away </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">8. </span>
+<em>
+<em class="context">(acostumbrarse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacerse a algo </span><span class="icon-dash"></span><em class="exB">to get used to something </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">9. </span>
+<em>
+<em class="context">(conseguir)</em>
+</em>
+<ul class="examples">
+<li>
+<span>hacerse con algo </span><span class="icon-dash"></span><em class="exB">to get hold of something </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="d-copyright"><a href="http://www.amazon.com/Websters-World-Concise-Spanish-Dictionary/dp/0471748366/&amp;tag=spani-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" rel="nofollow">Copyright © 2006 Harrap Publishers Limited</a></div></div><div class="dictionary-line"></div><div class="dictionary-entry dictionary-collins"><div class="entry"><div class="hw_unit"><span class="hw">hacer</span></div><div class="note">Para las expresiones <em class="em">hacer añicos</em>, <em class="em">hacer gracia</em>, <em class="em">hacerse ilusiones</em>, <em class="em">hacer pedazos</em>, <em class="em">hacerse de rogar</em>, <em class="em">hacer el tonto</em>, <em class="em">hacer las veces de</em> ver la otra entrada.</div><div class="gram_cat"><a name="verbo:transitivo"></a><div class="entry_pos">transitive verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="context">(indicando actividad en general)</span> <span class="tran_group"> <span class="tran_main">to do</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">¿qué haces?</span><span class="tran_group"> <span class="tran">what are you doing?;</span></span></span><span class="ex_unit"> <span class="ex">¿qué haces ahí?</span><span class="tran_group"> <span class="tran">what are you doing there?;</span></span></span><span class="ex_unit"> <span class="ex">no sé qué hacer</span><span class="tran_group"> <span class="tran">I don't know what to do</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">haga lo que quiera</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">hace y deshace las cosas a su antojo</span><span class="tran_group"> <span class="tran">she does as she pleases;</span></span></span><span class="ex_unit"> <span class="ex">¡eso no se hace!</span><span class="tran_group"> <span class="tran">that's not done!</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">se hará de ladrillos</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">no hizo nada por ayudarnos</span><span class="tran_group"> <span class="tran">she didn't do anything to help us;</span></span></span><span class="ex_unit"> <span class="ex">haz todo lo posible por llegar a tiempo</span><span class="tran_group"> <span class="tran">do everything possible to arrive on time</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer el <em class="c">amor</em></span></span><span class="tran_group"> <span class="tran">to make love</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer la <em class="c">guerra</em></span></span><span class="tran_group"> <span class="tran">to wage war</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hacer una [obra de teatro]</span></span></div></div><div class="idm_group"><div class="idm_unit"><span class="idm">¡qué le vamos a hacer!</span><span class="tran_group"> <span class="tran">what can you do?;</span> <span class="tran">there's nothing you can do</span></span></div><div class="idm_unit"><span class="idm">hacer algo por hacer</span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">to do sth for the sake of doing it</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">no tiene sentido hacer las cosas por hacerlas</span><span class="tran_group"> <span class="tran">there's no point doing things just for the sake of it</span></span></span></div></div><div class="idm_unit"><span class="idm">¡la hemos hecho buena!</span><span class="tran_group"> <span class="tran">we've really gone and done it now!  <span class="label register">(familiar)</span></span></span></div><div class="idm_unit"><span class="idm">ya ha hecho otra de las suyas</span><span class="tran_group"> <span class="tran">he's been up to his old tricks again</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">ya ha hecho el niño otra de las suyas y ha roto uno de los jarrones</span></span></div></div></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="context">(en lugar de otro verbo)</span> <span class="tran_group"> <span class="tran_main">to do</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">él protestó y yo hice lo mismo</span><span class="tran_group"> <span class="tran">he protested and I did the same;</span></span></span><span class="ex_unit"> <span class="ex">no viene tanto como lo solía hacer</span><span class="tran_group"> <span class="tran">he doesn't come as much as he used to</span></span></span></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="label synonym">(crear)</span> <span class="sense"> <span class="label collate object">[+coche, escultura, juguete, ropa, pastel]</span> <span class="tran_group"> <span class="tran_main">to make;</span></span></span><span class="sense"> <span class="label collate object">[+casa]</span> <span class="tran_group"> <span class="tran_main">to build;</span></span></span><span class="sense"> <span class="label collate object">[+dibujo]</span> <span class="tran_group"> <span class="tran_main">to do</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">obra de arte</span></span></div></span><span class="sense"> <span class="label collate object">[+novela, sinfonía]</span> <span class="tran_group"> <span class="tran_main">to write</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">hacer dinero</span><span class="tran_group"> <span class="tran">to make money</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">le cuesta trabajo hacer <em class="c">amigos</em></span></span><span class="tran_group"> <span class="tran">he finds it hard to make friends</span></span></div></div><div class="sense_main"><a name="4"></a><span class="num">4</span>  <span class="label synonym">(realizar)</span> <span class="sense"> <span class="label collate object">[+apuesta, discurso, objeción]</span> <span class="tran_group"> <span class="tran_main">to make;</span></span></span><span class="sense"> <span class="label collate object">[+deporte, deberes]</span> <span class="tran_group"> <span class="tran_main">to do;</span></span></span><span class="sense"> <span class="label collate object">[+caca, pipí]</span> <span class="tran_group"> <span class="tran_main">to do;</span></span></span><span class="sense"> <span class="label collate object">[+nudo]</span> <span class="tran_group"> <span class="tran_main">to tie;</span></span></span><span class="sense"> <span class="label collate object">[+pregunta]</span> <span class="tran_group"> <span class="tran_main">to ask;</span></span></span><span class="sense"> <span class="label collate object">[+visita]</span> <span class="tran_group"> <span class="tran_main">to pay;</span></span></span><span class="sense"> <span class="label collate object">[+milagros]</span> <span class="tran_group"> <span class="tran_main">to do;</span> <span class="tran_main">work</span></span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">estoy haciendo los deberes</span></span><span class="ex_unit"> <span class="ex">hago mucho deporte</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">el gato hizo miau</span><span class="tran_group"> <span class="tran">the cat went miaow;</span> <span class="tran">the cat miaowed;</span></span></span><span class="ex_unit"> <span class="ex">el árbol no hace mucha sombra</span><span class="tran_group"> <span class="tran">the tree isn't very shady;</span> <span class="tran">the tree doesn't provide a lot of shade;</span></span></span><span class="ex_unit"> <span class="ex">¿me puedes hacer el nudo de la corbata?</span><span class="tran_group"> <span class="tran">could you knot my tie for me?</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hacer una [apuesta] con algn</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer un <em class="c">favor</em> a algn</span></span><span class="tran_group"> <span class="tran">to do sb a favour</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer un <em class="c">gesto</em></span></span> <span class="context">(con la cara)</span> <span class="tran_group"> <span class="tran">to make <em class="or" title="es-es">o</em> pull a face;</span></span> <span class="context">(con la mano)</span> <span class="tran_group"> <span class="tran">to make a sign</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer un <em class="c">recado</em></span></span><span class="tran_group"> <span class="tran">to do <em class="or" title="es-es">o</em> run an errand</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer <em class="c">ruido</em></span></span><span class="tran_group"> <span class="tran">to make a noise</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer <em class="c">sitio</em></span></span><span class="tran_group"> <span class="tran">to make room</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer <em class="c">tiempo</em></span></span><span class="tran_group"> <span class="tran">to kill time</span></span></div></div><div class="sense_main"><a name="5"></a><span class="num">5</span>  <span class="label synonym">(preparar)</span> <span class="sense"> <span class="label collate object">[+cama, comida]</span> <span class="tran_group"> <span class="tran_main">to make</span></span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hacer una tortilla/ensalada</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">hacer el pelo/las uñas a algn</span><span class="tran_group"> <span class="tran">to do sb's hair/nails;</span></span></span><span class="ex_unit"> <span class="ex">hacer la barba a algn</span><span class="tran_group"> <span class="tran">to trim sb's beard</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer las <em class="c">maletas</em></span></span><span class="tran_group"> <span class="tran">to pack one's bags</span></span></div></div><div class="sense_main"><a name="6"></a><span class="num">6</span>  <span class="label synonym">(dedicarse a)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">¿qué hace tu padre?</span><span class="tran_group"> <span class="tran">what does your father do?;</span></span></span><span class="ex_unit"> <span class="ex">está haciendo turismo en África</span><span class="tran_group"> <span class="tran">he's gone touring in Africa</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer <em class="c">cine</em></span></span><span class="tran_group"> <span class="tran">to make films</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer <em class="c">teatro</em></span></span><span class="tran_group"> <span class="tran">to act</span></span></div></div><div class="sense_main"><a name="7"></a><span class="num">7</span>  <span class="label synonym">(actuar)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">hacer un papel</span><span class="tran_group"> <span class="tran">to play a role <em class="or" title="es-es">o</em> part;</span></span></span><span class="ex_unit"> <span class="ex">hacer el papel de malo</span><span class="tran_group"> <span class="tran">to play the (part of the) villain</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hacer el [tonto]</span></span><span class="ex_unit"> <span class="ex">hacer el [muerto]</span></span></div></div><div class="sense_main"><a name="8"></a><span class="num">8</span>  <span class="label synonym">(sumar)</span> <span class="tran_group"> <span class="tran_main">to make</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">6 y 3 hacen 9</span><span class="tran_group"> <span class="tran">6 and 3 make 9;</span></span></span><span class="ex_unit"> <span class="ex">este hace 100</span><span class="tran_group"> <span class="tran">this one makes 100;</span></span></span><span class="ex_unit"> <span class="ex">y cincuenta céntimos, hacen diez euros</span><span class="tran_group"> <span class="tran">and fifty cents change, which makes ten euros;</span></span></span><span class="ex_unit"> <span class="ex">este hace el corredor número 100 en atravesar la meta</span><span class="tran_group"> <span class="tran">he's the 100th runner to cross the finishing line</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hago el tercero de cinco hermanos</span></span></div></div><div class="sense_main"><a name="9"></a><span class="num">9</span>  <span class="label synonym">(cumplir)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">voy a hacer 30 años la próxima semana</span><span class="tran_group"> <span class="tran">I'm going to be 30 next week;</span> <span class="tran">it's my 30th birthday next week</span></span></span></div></div><div class="sense_main"><a name="10"></a><span class="num">10</span>  <span class="label synonym">(obligar)</span> <span class="sense"><span class="tran_group"> <span class="tran_main">to make</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">les hice venir</span><span class="tran_group"> <span class="tran">I made them come</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hace estudiar a los alumnos</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">siempre consigue hacerme reír</span><span class="tran_group"> <span class="tran">she always manages to make me laugh;</span></span></span><span class="ex_unit"> <span class="ex">le gustaba hacerme rabiar</span><span class="tran_group"> <span class="tran">he enjoyed making me mad</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hágale <em class="c">entrar</em></span></span><span class="tran_group"> <span class="tran">show him in;</span> <span class="tran">have him come in</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">me lo hizo <em class="c">saber</em></span></span><span class="tran_group"> <span class="tran">he told me about it;</span> <span class="tran">he informed me of it</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer <em class="c">que</em></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">yo haré que vengan</span><span class="tran_group"> <span class="tran">I'll make sure they come</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">nos hizo que fuésemos</span></span></div></div></div><div class="sense_main"><a name="11"></a><span class="num">11</span>  <span class="label synonym">(mandar)</span> <span class="sense"><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hacer hacer algo</span></span></div></span><div class="ex_group"><span class="ex_unit"> <span class="ex">hizo construirse un palacio</span><span class="tran_group"> <span class="tran">she had a palace built</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hacer construir una casa</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">hicieron pintar la fachada del colegio</span><span class="tran_group"> <span class="tran">they had the front of the school painted</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hago lavar la ropa a una vecina</span></span></div></div><div class="sense_main"><a name="12"></a><span class="num">12</span>  <span class="label synonym">(transformar)</span> <span class="sense"><span class="tran_group"> <span class="tran_main">to make</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">esto lo hará más difícil</span><span class="tran_group"> <span class="tran">this will make it more difficult;</span></span></span><span class="ex_unit"> <span class="ex">hacer feliz a algn</span><span class="tran_group"> <span class="tran">to make sb happy;</span></span></span><span class="ex_unit"> <span class="ex">te hace más delgado</span><span class="tran_group"> <span class="tran">it makes you look slimmer;</span></span></span><span class="ex_unit"> <span class="ex">has hecho de mí un hombre muy feliz</span><span class="tran_group"> <span class="tran">you've made me a very happy man</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">el vino lo hizo borracho</span></span><span class="ex_unit"> <span class="ex">hacer algo pedazos</span></span><span class="ex_unit"> <span class="ex">la explosión hizo añicos el coche</span></span><span class="ex_unit"> <span class="ex">la tinta lo hizo azul</span></span></div></div><div class="sense_main"><a name="13"></a><span class="num">13</span>  <span class="label synonym">(pensar)</span> <span class="tran_group"> <span class="tran">to think</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">yo le hacía más viejo</span><span class="tran_group"> <span class="tran">I thought he was older;</span> <span class="tran">I had him down as being older;</span></span></span><span class="ex_unit"> <span class="ex">te hacíamos en el Perú</span><span class="tran_group"> <span class="tran">we thought you were in Peru</span></span></span></div></div><div class="sense_main"><a name="14"></a><span class="num">14</span>  <span class="label synonym">(acostumbrar)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">hacer el cuerpo al frío</span><span class="tran_group"> <span class="tran">to get one's body used to the cold</span></span></span></div></div><div class="sense_main"><a name="15"></a><span class="num">15</span>  <span class="label synonym">(ejercitar)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">hacer dedos</span><span class="tran_group"> <span class="tran">to do finger exercises;</span></span></span><span class="ex_unit"> <span class="ex">hacer piernas</span><span class="tran_group"> <span class="tran">to stretch one's legs</span></span></span></div></div><div class="sense_main"><a name="16"></a><span class="num">16</span> <div class="phs_group"><span class="ph_unit"><span class="ph">hacer a algn <em class="c">con</em></span></span> <span class="label synonym">(proveer)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">me hizo con dinero</span><span class="tran_group"> <span class="tran">he provided me with money</span></span></span></div></div></div></div><div class="gram_cat"><a name="verbo:intransitivo"></a><div class="entry_pos">intransitive verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="label synonym">(comportarse)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">haces bien en esperar</span><span class="tran_group"> <span class="tran">you're right to wait;</span></span></span><span class="ex_unit"> <span class="ex">haces mal no contestando a sus llamadas</span><span class="tran_group"> <span class="tran">it's wrong of you not to answer his calls</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer <em class="c">como</em> que <em class="or" title="es-es">o</em> como si</span></span><span class="tran_group"> <span class="tran">to make as if</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">hizo como que no se daba cuenta <em class="or" title="es-es">o</em> como si no se diera cuenta</span><span class="tran_group"> <span class="tran">he made as if he hadn't noticed;</span> <span class="tran">he pretended not to have noticed;</span></span></span><span class="ex_unit"> <span class="ex">hizo como si me fuera a pegar</span><span class="tran_group"> <span class="tran">he made as if to strike me</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hacer uno como que no quiere</span></span><span class="ex_unit"> <span class="ex">hacer las veces de</span></span></div></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span> <div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">dar que</em> hacer</span></span><span class="tran_group"> <span class="tran">to cause trouble</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">dieron que hacer a la policía</span><span class="tran_group"> <span class="tran">they caused <em class="or" title="es-es">o</em> gave the police quite a bit of trouble</span></span></span></div></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="label synonym">(importar)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">no le hace</span> <span class="label geo" title="">(Latinoamérica)</span><span class="tran_group"> <span class="tran">it doesn't matter;</span> <span class="tran">never mind</span></span></span></div><div class="idm_group"><div class="idm_unit"><span class="idm">¡no le hagas!</span> <span class="label geo" title="">(México)</span><span class="tran_group"> <span class="tran">don't give me that!  <span class="label register">(familiar)</span></span></span></div></div></div><div class="sense_main"><a name="4"></a><span class="num">4</span>  <span class="label synonym">(ser apropiado)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">¿hace?</span><span class="tran_group"> <span class="tran">will it do?;</span> <span class="tran">is it all right?;</span></span> <span class="label synonym">(¿de acuerdo?)</span> <span class="tran_group"> <span class="tran">is it a deal?;</span></span></span><span class="ex_unit"> <span class="ex">la llave hace a todas las puertas</span><span class="tran_group"> <span class="tran">the key fits all the doors;</span></span></span><span class="ex_unit"> <span class="ex">hace a todo</span><span class="tran_group"> <span class="tran">he's good for anything</span></span></span></div></div><div class="sense_main"><a name="5"></a><span class="num">5</span>  <span class="label synonym">(apetecer)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">¿te hace que vayamos a tomar unas copas?</span><span class="tran_group"> <span class="tran">how about going for a drink?;</span> <span class="tran">what do you say we go for a drink?;</span></span></span><span class="ex_unit"> <span class="ex">¿te hace un cigarrillo?</span><span class="tran_group"> <span class="tran">how about a cigarette?;</span> <span class="tran">do you fancy a cigarette?</span></span></span></div></div><div class="sense_main"><a name="6"></a><span class="num">6</span>  <span class="context">(seguido de preposición)</span> <div class="phs_group"><span class="ph_unit"><span class="ph">hacer de</span></span> <span class="label subject" title="">(Teat)</span> <span class="tran_group"> <span class="tran">to play the part of</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">hacer de malo</span><span class="tran_group"> <span class="tran">to play the villain</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacer por</span></span> <span class="label synonym">(intentar)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">haz por verlo si puedes</span><span class="tran_group"> <span class="tran">try to get round to seeing him if you can;</span></span></span><span class="ex_unit"> <span class="ex">hacer por hacer algo</span><span class="tran_group"> <span class="tran">to try to do sth;</span> <span class="tran">make an effort to do sth</span></span></span></div></div></div></div><div class="gram_cat"><a name="verbo:impersonal"></a><div class="entry_pos">impersonal verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="context">(con expresiones de tiempo atmosférico)</span> <span class="tran_group"> <span class="tran_main">to be</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">hace calor/frío</span><span class="tran_group"> <span class="tran">it's hot/cold;</span></span></span><span class="ex_unit"> <span class="ex">hizo dos grados bajo cero</span><span class="tran_group"> <span class="tran">it was two degrees below zero;</span></span></span><span class="ex_unit"> <span class="ex">¿qué tiempo hace?</span><span class="tran_group"> <span class="tran">what's the weather like?;</span></span></span><span class="ex_unit"> <span class="ex">ojalá haga buen tiempo</span><span class="tran_group"> <span class="tran">I hope the weather's nice</span></span></span></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="context">(con expresiones temporales)</span> <div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hace 3 años</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">hace tres años que se fue</span><span class="tran_group"> <span class="tran">he left three years ago;</span> <span class="tran">it's three years since he left;</span></span></span><span class="ex_unit"> <span class="ex">hace tres años que no lo veo</span><span class="tran_group"> <span class="tran">I haven't seen him for three years;</span> <span class="tran">it's three years since I (last) saw him;</span></span></span><span class="ex_unit"> <span class="ex">ha estado aquí hasta hace poco</span><span class="tran_group"> <span class="tran">he was here only a short while ago;</span></span></span><span class="ex_unit"> <span class="ex">no hace mucho</span><span class="tran_group"> <span class="tran">not long ago</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hacía un año</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">hace un mes que voy</span><span class="tran_group"> <span class="tran">I've been going for a month;</span></span></span><span class="ex_unit"> <span class="ex">¿hace mucho que esperas?</span><span class="tran_group"> <span class="tran">have you been waiting long?;</span></span></span><span class="ex_unit"> <span class="ex">hace de esto varios años</span><span class="tran_group"> <span class="tran">it is some years since this happened</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">desde</em> hace cuatro años</span></span><span class="tran_group"> <span class="tran">for four years</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">está perdido desde hace 15 días</span><span class="tran_group"> <span class="tran">it's been missing for a fortnight</span></span></span></div></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="label geo" title="">(Latinoamérica)</span> <span class="label synonym">(haber, tener)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">hace sed</span><span class="tran_group"> <span class="tran">I'm thirsty;</span></span></span><span class="ex_unit"> <span class="ex">hace sueño</span><span class="tran_group"> <span class="tran">I'm sleepy</span></span></span></div></div></div><div class="gram_cat"><a name="verbo:pronominal"></a><div class="entry_pos">pronominal verb</div><span class="drv">hacerse</span><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="label synonym">(realizar, crear)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">hacerse algo</span> <span class="label collate subject">[+uno mismo]</span> <span class="tran_group"> <span class="tran">to make o.s. sth;</span></span> <span class="label collate subject">[+otra persona]</span> <span class="tran_group"> <span class="tran">to have sth made;</span></span></span><span class="ex_unit"> <span class="ex">se hizo un jersey</span><span class="tran_group"> <span class="tran">he made himself a jumper;</span></span></span><span class="ex_unit"> <span class="ex">¿os hicisteis muchas fotos?</span><span class="tran_group"> <span class="tran">did you take a lot of photos?;</span></span></span><span class="ex_unit"> <span class="ex">todos los días me hago 3km andando</span><span class="tran_group"> <span class="tran">I walk 3km every day;</span></span></span><span class="ex_unit"> <span class="ex">hacerse un retrato</span><span class="tran_group"> <span class="tran">to have one's portrait painted;</span></span></span><span class="ex_unit"> <span class="ex">se hizo la cirugía estética</span><span class="tran_group"> <span class="tran">she had plastic surgery</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">no te hagas ilusiones</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacerse <em class="c">caca</em></span></span><span class="tran_group"> <span class="tran">to soil one's pants</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacerse <em class="c">pipí</em></span></span><span class="tran_group"> <span class="tran">to wet o.s.</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">se hace sus necesidades encima</span></span><span class="ex_unit"> <span class="ex">hacerse de [rogar]</span></span><span class="ex_unit"> <span class="ex">hacerse una [idea] de ...</span></span><span class="ex_unit"> <span class="ex">para hacerse una idea real del número total de afectados</span></span><span class="ex_unit"> <span class="ex">permitirá al historiador hacerse una idea del objeto de la investigación</span></span><span class="ex_unit"> <span class="ex">hacerse [ilusiones] de</span></span></div></div><div class="xref"><a class="xrhw" href="http://www.spanishdict.com/translate/idea#">idea</a> <a class="xrhw" href="http://www.spanishdict.com/translate/nudo#">nudo</a> </div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="label synonym">(cocinarse)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">todavía se está haciendo la comida</span><span class="tran_group"> <span class="tran">the meal's still cooking;</span></span></span><span class="ex_unit"> <span class="ex">deja que se haga bien la carne</span><span class="tran_group"> <span class="tran">make sure the meat is well done</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">todavía no se ha hecho</span></span><span class="ex_unit"> <span class="ex">no se han hecho investigaciones sobre sus efectos</span></span><span class="ex_unit"> <span class="ex">hacer las películas que me gustaría ver y que aún no se han hecho</span></span><span class="ex_unit"> <span class="ex">todavía no se ha hecho pública esta información</span></span><span class="ex_unit"> <span class="ex">se me hizo un nudo en la garganta</span></span></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span> <span class="sense"> <span class="label synonym">(conseguir)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">deberías hacerte oír</span><span class="tran_group"> <span class="tran">you should make your voice heard;</span></span></span><span class="ex_unit"> <span class="ex">la respuesta no se hizo esperar</span><span class="tran_group"> <span class="tran">the answer was not long in coming</span></span></span></div></span><span class="sense"> <span class="label synonym">(mandar)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">se hizo traer caviar directamente de Rusia</span><span class="tran_group"> <span class="tran">she had caviar sent over from Russia;</span></span></span><span class="ex_unit"> <span class="ex">se hizo cortar el pelo</span><span class="tran_group"> <span class="tran">she had her hair cut;</span></span></span><span class="ex_unit"> <span class="ex">hacerse afeitar la barba</span><span class="tran_group"> <span class="tran">to have one's beard trimmed;</span></span></span><span class="ex_unit"> <span class="ex">me estoy haciendo confeccionar un traje</span><span class="tran_group"> <span class="tran">I'm having a suit made</span></span></span></div></span></div><div class="sense_main"><a name="4"></a><span class="num">4</span>  <span class="label synonym">(reflexivo)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">se hizo a sí mismo</span><span class="tran_group"> <span class="tran">he's a self-made man</span></span></span></div></div><div class="sense_main"><a name="5"></a><span class="num">5</span>  <span class="context">(recíproco)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">se hacían caricias</span><span class="tran_group"> <span class="tran">they were caressing each other;</span></span></span><span class="ex_unit"> <span class="ex">hacerse cortesías mutuamente</span><span class="tran_group"> <span class="tran">to exchange courtesies</span></span></span></div></div><div class="sense_main"><a name="6"></a><span class="num">6</span>  <span class="label synonym">(llegar a ser)</span> <span class="sense"><span class="tran_group"> <span class="tran_main">to become</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">se hicieron amigos</span><span class="tran_group"> <span class="tran">they became friends;</span></span></span><span class="ex_unit"> <span class="ex">hacerse enfermera</span><span class="tran_group"> <span class="tran">to become a nurse;</span></span></span><span class="ex_unit"> <span class="ex">el sofá se hace cama</span><span class="tran_group"> <span class="tran">the sofa can be turned into a bed</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hacerse a uno mismo</span></span></div></span><span class="sense"><div class="ex_group"><span class="ex_unit"> <span class="ex">hacerse cristiano</span><span class="tran_group"> <span class="tran">to become a Christian;</span></span></span><span class="ex_unit"> <span class="ex">quiere hacerse famoso</span><span class="tran_group"> <span class="tran">he wants to be famous;</span></span></span><span class="ex_unit"> <span class="ex">esto se está haciendo pesado</span><span class="tran_group"> <span class="tran">this is getting <em class="or" title="es-es">o</em> becoming tedious;</span></span></span><span class="ex_unit"> <span class="ex">se está haciendo viejo</span><span class="tran_group"> <span class="tran">he's getting old;</span></span></span><span class="ex_unit"> <span class="ex">se hace tarde</span><span class="tran_group"> <span class="tran">it's getting late;</span></span></span><span class="ex_unit"> <span class="ex">hacerse grande</span><span class="tran_group"> <span class="tran">to grow tall</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">se me hace imposible trabajar</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">con tanto ruido se me hace imposible trabajar</span><span class="tran_group"> <span class="tran">I can't work with all this noise</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">se hicieron fuertes en el campamento</span></span></div></span></div><div class="sense_main"><a name="7"></a><span class="num">7</span>  <span class="label synonym">(parecer)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">se me hizo largo/pesado el viaje</span><span class="tran_group"> <span class="tran">the journey felt long/boring;</span></span></span><span class="ex_unit"> <span class="ex">se me hace que ...</span> <span class="label mod" title="especialmente">especialmente</span> <span class="label geo" title="">(Latinoamérica)</span><span class="tran_group"> <span class="tran">it seems to me that ...;</span> <span class="tran">I get the impression that ...;</span></span></span><span class="ex_unit"> <span class="ex">se me hace que nos están engañando</span><span class="tran_group"> <span class="tran">it seems to me that <em class="or" title="es-es">o</em> I get the impression that we're being deceived</span></span></span></div></div><div class="sense_main"><a name="8"></a><span class="num">8</span>  <span class="label synonym">(fingirse)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">hacerse el interesante</span><span class="tran_group"> <span class="tran">to act all high and mighty</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacerse <em class="c">de nuevas</em></span></span><span class="tran_group"> <span class="tran">to act all innocent</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacerse el <em class="c">sordo</em></span></span><span class="tran_group"> <span class="tran">to pretend not to hear</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hacerse el [sueco]</span></span></div></div></div><div class="sense_main"><a name="9"></a><span class="num">9</span>  <span class="label synonym">(moverse)</span> <div class="phs_group"><span class="ph_unit"><span class="ph">hacerse <em class="c">atrás</em></span></span><span class="tran_group"> <span class="tran">to move back</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacerse a un <em class="c">lado</em></span></span> <span class="context">(de pie)</span> <span class="tran_group"> <span class="tran">to move to one side;</span></span> <span class="context">(sentado)</span> <span class="tran_group"> <span class="tran">to move over</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">hazte <em class="c">para</em> allá, que me siente</span></span><span class="tran_group"> <span class="tran">move up that way a bit so I can sit down</span></span></div></div><div class="sense_main"><a name="10"></a><span class="num">10</span>  <span class="context">(seguido de preposición)</span> <div class="phs_group"><span class="ph_unit"><span class="ph">hacerse a</span></span> <span class="label synonym">(acostumbrarse)</span> <span class="tran_group"> <span class="tran">to get used to</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hacerse [a] algo</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">hacerse a una idea</span><span class="tran_group"> <span class="tran">to get used to an idea;</span></span></span><span class="ex_unit"> <span class="ex">hacerse a hacer algo</span><span class="tran_group"> <span class="tran">to get used to doing sth;</span></span></span><span class="ex_unit"> <span class="ex">¿te has hecho ya a levantarte temprano?</span><span class="tran_group"> <span class="tran">have you got used to getting up early yet?</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">hacerse con</span></span> <span class="label collate object">[+información]</span> <span class="tran_group"> <span class="tran">to get hold of;</span></span> <span class="label collate object">[+ciudad, fortaleza]</span> <span class="tran_group"> <span class="tran">to take</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">logró hacerse con una copia</span><span class="tran_group"> <span class="tran">he managed to get hold of a copy;</span></span></span><span class="ex_unit"> <span class="ex">se hizo con una importante fortuna</span><span class="tran_group"> <span class="tran">he amassed a large fortune;</span></span></span><span class="ex_unit"> <span class="ex">hacerse con el control de algo</span><span class="tran_group"> <span class="tran">to gain control of sth;</span></span></span><span class="ex_unit"> <span class="ex">finalmente se hicieron con la victoria</span><span class="tran_group"> <span class="tran">they eventually managed to win</span></span></span></div></div></div></div></div><div class="d-copyright"><a href="http://www.collinsdictionary.com/dictionary/english-spanish" rel="nofollow">Collins Complete Spanish Electronic Dictionary © HarperCollins Publishers 2011</a></div></div></div></div><div class="card machine"><a href="http://www.spanishdict.com/translate/hacer?t=1#mt-anchor" rel="nofollow"><div class="machine-img"></div><span class="machine-text">'hacer' </span><span class="machine-info">in our machine translators</span></a></div><div class="card fl-fourth-translation"><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=4thtranslation&amp;h=3" target="_blank" data-sd-track-click-type="fluencia" class="fluencia-link sd-track-click"><div class="fluencia-img"></div><div class="fluencia-text">Learn Spanish with Fluencia, the easiest way to learn Spanish from the creators of SpanishDict</div></a></div><div class="card"><div class="card-title">Verb Conjugations for hacer</div><div class="conj-row"><a href="http://www.spanishdict.com/answers/100043/gerund-form" target="_blank" class="conj-basic-label">Gerund:</a><span> haciendo</span></div><div class="conj-row"><a href="http://www.spanishdict.com/answers/100044/past-participles" target="_blank" class="conj-basic-label">Participle:</a><span> hecho</span></div><div class="conj-row"><span>The irregular conjugations of this verb are in</span><span> </span><span class="conj-irregular">red</span><span>.</span></div><a href="http://www.spanishdict.com/topics/show/112" class="vtable-label">Indicative<span class="icon-question-mark"></span></a><div class="vtable-wrapper"><table class="vtable"><tbody><tr><td class="vtable-empty"></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100045/present-tense" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He speaks* Spanish.">Present<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100046/preterite-simple-past" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He spoke* to my sister yesterday.">Preterite<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100048/imperfect-past" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He used to speak* Italian when he was a child.">Imperfect<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100050/conditional" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He would speak* French in France.">Conditional<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100049/future" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He will speak* Portuguese on his vacation next week.">Future<span class="icon-question-mark"></span></a></td></tr><tr><td class="vtable-pronoun">yo</td><td class="vtable-word conj-irregular ">hago</td><td class="vtable-word conj-irregular ">hice</td><td class="vtable-word  ">hacía</td><td class="vtable-word conj-irregular ">haría</td><td class="vtable-word conj-irregular ">haré</td></tr><tr><td class="vtable-pronoun">tú</td><td class="vtable-word  ">haces</td><td class="vtable-word conj-irregular ">hiciste</td><td class="vtable-word  ">hacías</td><td class="vtable-word conj-irregular ">harías</td><td class="vtable-word conj-irregular ">harás</td></tr><tr><td class="vtable-pronoun">él/ella/Ud.</td><td class="vtable-word  ">hace</td><td class="vtable-word conj-irregular ">hizo</td><td class="vtable-word  ">hacía</td><td class="vtable-word conj-irregular ">haría</td><td class="vtable-word conj-irregular ">hará</td></tr><tr><td class="vtable-pronoun">nosotros</td><td class="vtable-word  ">hacemos</td><td class="vtable-word conj-irregular ">hicimos</td><td class="vtable-word  ">hacíamos</td><td class="vtable-word conj-irregular ">haríamos</td><td class="vtable-word conj-irregular ">haremos</td></tr><tr><td class="vtable-pronoun">vosotros</td><td class="vtable-word  ">hacéis</td><td class="vtable-word conj-irregular ">hicisteis</td><td class="vtable-word  ">hacíais</td><td class="vtable-word conj-irregular ">haríais</td><td class="vtable-word conj-irregular ">haréis</td></tr><tr><td class="vtable-pronoun">ellos/ellas/Uds.</td><td class="vtable-word  ">hacen</td><td class="vtable-word conj-irregular ">hicieron</td><td class="vtable-word  ">hacían</td><td class="vtable-word conj-irregular ">harían</td><td class="vtable-word conj-irregular ">harán</td></tr></tbody></table></div><a href="http://www.spanishdict.com/conjugate/hacer" class="card-button-full">View complete conjugation for <strong>hacer</strong></a></div><div class="ad-300-250 adContent-results ad-wrapper"><div id="adContent" class="adContent"><script>googletag.cmd.push(function() {
+  googletag.display("adContent");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0" name="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adContent" style="visibility: hidden;" class="pubnation">report this ad</div></div><div id="feedback-query" class="card"><div class="card-title">Did this page answer your question?</div><form><div class="feedback-1"><a href="#" class="feedback-yes"><div class="icon-smile"></div><span>Yes</span></a><a href="#" class="feedback-no"><div class="icon-frown"></div><span>No</span></a></div><div class="feedback-2"><div id="feedback-categories"><div class="feedback-instructions">The page is...</div><div class="feedback-categories-select"><label><input type="radio" name="category" value="inaccurate" />Inaccurate</label><label><input type="radio" name="category" value="unclear" />Unclear</label><label><input type="radio" name="category" value="missingTranslations" />Missing translations</label><label><input type="radio" name="category" value="missingConjugations" />Missing conjugations</label><label><input type="radio" name="category" value="other" />Other</label></div></div><div class="feedback-instructions">What can we do to improve?</div><textarea id="feedback-comment" placeholder="Enter your comment..." required="" class="feedback-comment"></textarea><div class="feedback-instructions">How can we follow up with you? (Optional)</div><input id="feedback-query-email" type="email" placeholder="Enter your email" class="feedback-query-email" /><button type="submit" class="feedback-2-submit">Submit</button></div><div class="feedback-3"><span>Your feedback was sent. We appreciate your comments!</span></div></form></div></div><div class="sidebar-container"><div class="fluencia-sidebar card"><div class="card-title">Want to speak Spanish?</div><div class="fluencia-sidebar-text">Try Fluencia, an amazing learning program from SpanishDict.</div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=sidebar&amp;h=2" target="_blank" data-sd-track-click-type="fluencia" class="fluencia-sidebar-button sd-track-click">Join now</a></div><div class="ad-300-250 adSide-results sidebar-box ad-wrapper"><div id="adSide1" class="adSide1"><script>googletag.cmd.push(function() {
+  googletag.display("adSide1");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0" name="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSide1" style="visibility: hidden;" class="pubnation">report this ad</div></div><div class="wotd-sidebar card"><div class="card-title">Word of the Day</div><div class="wotd-sidebar-date">Mar 11</div><a href="http://www.spanishdict.com/wordoftheday/2326/el-brazo" class="wotd-sidebar-word">el brazo</a><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=el-brazo" data-toggle="tooltip" title="" class="audio-start" data-original-title="Listen to an audio pronunciation"><span class="audio-blue"> </span></a><div class="wotd-sidebar-translation">arm</div><div class="wotd-sidebar-prompt">Get the free word of the day!</div><form action="/users/signup_email_verify" method="post" class="wotd-sidebar-form"><input name="email" type="email" placeholder="email" class="wotd-sidebar-input" /><button type="submit" data-sd-track-click-type="wotd" class="wotd-sidebar-button sd-track-click">Subscribe</button></form></div><div class="ad-300-250 adSide-results sidebar-box ad-wrapper"><div id="adSide2" class="adSide2"><script>googletag.cmd.push(function() {
+  googletag.display("adSide2");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0" name="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSide2" style="visibility: hidden;" class="pubnation">report this ad</div></div><div class="social-sidebar card"><div class="card-title">Stay Connected</div><a href="https://www.facebook.com/pages/SpanishDict/92805940179" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="facebook" class="social-sidebar-button facebook sd-track-click"><div class="social-logo social-facebook-logo"></div></a><a href="https://plus.google.com/106413713006018165072/posts" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="google" class="social-sidebar-button gplus sd-track-click"><div class="social-logo social-gplus-logo"></div></a><a href="https://twitter.com/spanishdict" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="twitter" class="social-sidebar-button twitter sd-track-click"><div class="social-logo social-twitter-logo"></div></a></div><div class="ad-160-600 adSide-long-results sidebar-box-long ad-wrapper"><div id="adSideLong" class="adSideLong"><script>googletag.cmd.push(function() {
+  googletag.display("adSideLong");
+});</script><div id="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0" name="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSideLong" style="visibility: hidden;" class="pubnation">report this ad</div></div></div><div class="ad-wrapper-wide"><div class="ad-728-90 adBot-results ad-wrapper"><div id="adBot" class="adBot"><script>googletag.cmd.push(function() {
+  googletag.display("adBot");
+});</script><div id="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0" name="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adBot" style="visibility: hidden;" class="pubnation">report this ad</div></div></div></div><script src="http://cdn.beanstock.com/pub/cx/flagTag.js"></script><div class="footer-wrapper"><div class="footer footer-container container"><div class="footer-row"><div class="footer-item"><h4>Stay Connected</h4><div class="footer-social"><div class="social"><a href="http://www.facebook.com/pages/SpanishDict/92805940179"><div class="social-icon social-facebook"></div></a><a href="http://www.twitter.com/spanishdict"><div class="social-icon social-twitter"></div></a><a href="https://plus.google.com/106413713006018165072/posts"><div class="social-icon social-gplus"></div></a></div></div></div><div class="footer-item"><h4>iPhone</h4><a href="http://itunes.apple.com/us/app/spanishdict/id332510494"><div class="footer-external footer-external-appstore"></div></a></div><div class="footer-item"><h4>Android</h4><a href="https://play.google.com/store/apps/details?id=com.spanishdictapp"><div class="footer-external footer-external-google-play"></div></a></div><div class="footer-item footer-item-last"><h4>Kindle</h4><a href="http://www.amazon.com/SpanishDict-Spanish-English-Dictionary-and-More/dp/B004UO8ZNQ"><div class="footer-external footer-external-amazon"></div></a></div></div><div class="footer-row"><div class="footer-item"><h4>Spanish Reference</h4><ul><li><a href="http://www.spanishdict.com/translation">English to Spanish translation</a></li><li><a href="http://www.spanishdict.com/translation">Spanish to English translation</a></li><li><a href="http://www.spanishdict.com/dictionary">English to Spanish dictionary</a></li><li><a href="http://www.spanishdict.com/dictionary">Spanish to English dictionary</a></li></ul></div><div class="footer-item"><h4>Learn Spanish</h4><ul><li><a href="http://www.spanishdict.com/learn">Learn Spanish</a></li><li><a href="http://www.spanishdict.com/flashcards">Spanish Flashcards</a></li><li><a href="http://www.spanishdict.com/conjugation">Spanish Verb Conjugation</a></li><li><a href="http://www.spanishdict.com/answers">Spanish-English Q&amp;A</a></li></ul></div><div class="footer-item"><h4>Popular Translations</h4><ul><li><a href="http://www.spanishdict.com/translate/happy">happy in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/stop">stop in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/cheers">cheers in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/beautiful">beautiful in Spanish</a></li></ul></div><div class="footer-item footer-item-last"><h4>Popular Conjugations</h4><ul><li><a href="http://www.spanishdict.com/conjugate/ir">ir conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/pedir">pedir conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/ser">ser conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/haber">haber conjugation</a></li></ul></div></div><div class="footer-meta"><div class="footer-meta-list"><ul><li><a href="http://www.spanishdict.com/company/about">About</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.fluencia.com/about-us/careers/">We're hiring!</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.spanishdict.com/company/privacy">Privacy</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.spanishdict.com/company/tos">Terms</a><span class="footer-meta-list-item-bg"></span></li><li><a href="#" class="go-language">Español</a></li></ul></div><span class="footer-copyright">© Curiosity Media, Inc.</span><div class="footer-exclamation-logo-wrapper"><div class="footer-exclamation-container"><img src="http://n1.sdcdns.com/img/desktop/logoAnimation.gif" class="footer-exclamation-logo" /></div></div></div></div></div><div class="feedback-tab"><button data-toggle="modal" data-target="#feedback-modal">Feedback</button></div><div id="feedback-modal" class="feedback-modal sd-modal modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="sd-modal-title">Feedback</div><div class="sd-modal-close feedback-modal-close"></div><div class="sd-modal-message feedback-modal-message"></div><div class="sd-modal-content feedback-modal-content"><div class="sd-modal-desc">SpanishDict is devoted to improving our site based on user feedback and introducing new and innovative features that will continue to help people learn and love the Spanish language. Have a suggestion, idea, or comment? Send us your feedback.</div><form><label for="feedback-name" class="sd-modal-label">Your name</label><input id="feedback-name" type="text" placeholder="Your name" /><label for="feedback-email" class="sd-modal-label">Email address</label><input id="feedback-email" type="email" placeholder="Email address" /><label for="feedback-subject" class="sd-modal-label">Subject</label><input id="feedback-subject" type="text" placeholder="Subject" required="" /><label for="feedback-message" class="sd-modal-label">Message</label><textarea id="feedback-message" placeholder="Message" rows="5" required=""></textarea><input type="submit" value="Send" class="sd-modal-submit feedback-modal-submit" /></form></div></div></div></div></div><div id="report-this-modal" class="report-this-modal sd-modal modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="sd-modal-close report-this-modal-close"></div><div class="sd-modal-formbox report-this-modal-form-box"><div class="sd-modal-title">Report this ad</div><div class="sd-modal-desc">Spot an annoying ad? Let us know. We hate bad ads as much as you.</div><div class="sd-modal-content"><form><label for="report-this-email" class="sd-modal-label">Email (optional)</label><input id="report-this-email" type="email" placeholder="Email (optional)" /><label for="report-this-message" class="sd-modal-label">Describe what's annoying about this ad...</label><textarea id="report-this-message" placeholder="Describe what's annoying about this ad..." rows="2" required=""></textarea><input type="submit" value="Report ad" class="sd-modal-submit report-this-modal-submit" /></form></div></div><div class="sd-modal-completion-box report-this-modal-completion-box"><div class="sd-modal-title">We're on it!</div><div class="sd-modal-desc">If you see annoying ads in the future, let us know. Thanks!</div></div></div></div></div></div><div id="survey-modal" class="survey-modal modal"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="survey-modal-icon"></div><div class="survey-modal-title">Make Your Voice Heard</div><div class="survey-modal-close"></div><div class="survey-modal-message"></div><div class="survey-modal-content"><div class="survey-modal-desc">You've been randomly selected to participate in a short, 5 question
+survey on your experience with SpanishDict. We'll use your comments
+to help improve your experience.<br />Will you participate?</div><a href="#" target="_blank" class="survey-modal-submit">Take 5 Question Survey</a></div></div></div></div></div><script id="sd_analytics" type="application/json">{&amp;quot;site&amp;quot;:&amp;quot;desktop&amp;quot;,&amp;quot;q&amp;quot;:&amp;quot;hacer&amp;quot;,&amp;quot;type&amp;quot;:&amp;quot;translation&amp;quot;,&amp;quot;is_found&amp;quot;:1,&amp;quot;browser_lang&amp;quot;:&amp;quot;en-US&amp;quot;,&amp;quot;result&amp;quot;:&amp;quot;hacer&amp;quot;,&amp;quot;result_lang&amp;quot;:&amp;quot;es&amp;quot;,&amp;quot;result_sources&amp;quot;:[&amp;quot;chambers&amp;quot;,&amp;quot;velazquez&amp;quot;,&amp;quot;collins&amp;quot;],&amp;quot;result_has_alt_lang&amp;quot;:false}</script><script src="http://n1.sdcdns.com/dist/jquery-bundle-min-2b83783338b9b488c7286737f2e4b769.gz.js" type="text/javascript" crossorigin="anonymous"></script><script src="http://n1.sdcdns.com/dist/desktop-min-6715b0209d068fca355ab85c7130eb5e.gz.js" type="text/javascript" crossorigin="anonymous"></script><!--[if lte IE 9]><script>(function() {
+  var app = document.createElement('script'); app.type = 'text/javascript'; app.async = true;
+  app.src = 'http://n1.sdcdns.com/js/vendor/placeholders.min.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(app, s);
+})();</script><![endif]--> <script type="text/javascript">
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');   ga('set', 'user_status1', 'anonymous');   ga('set', 'section2', 'translate');   ga('set', 'sd_is_mobile3', 'false');
+   ga('require', 'displayfeatures');
+   ga('create', 'UA-329211-2', 'auto');
+   ga('send', 'pageview');
+ </script><script>var _pnq = _pnq || [];
+_pnq.push(['setId', 'pn-053b5b698be780ef']);
+(function() {
+  var pnr = document.createElement('script');
+  pnr.type = 'text/javascript';
+  pnr.async = true;
+  pnr.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'report-ads-to.pubnation.com/dist/pnr.js?t=pn-053b5b698be780ef';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(pnr, s);
+})();</script></body></html>

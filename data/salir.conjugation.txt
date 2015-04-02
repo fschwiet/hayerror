@@ -1,0 +1,523 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" data-placeholder-focus="false"><head><script type="text/javascript" async="" src="http://report-ads-to.pubnation.com/dist/pnr.js?t=pn-053b5b698be780ef"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js"></script><script src="//cdn.beanstock.com/pub/cx/cx.8ce47cc9.js"></script><script async="" type="text/javascript" src="http://partner.googleadservices.com/gpt/pubads_impl_57.js"></script></head><body data-datetime="2015-03-11T20:08:37" data-is-mobile="false" class="lang-en no-touch supports-machineTranslation supports-suggest supports-history supports-autoScroll supports-conjugationExpand supports-clearSearch"><img src="about:blank" style="display:none;" data-bsm-flag="true" data-bsm-zone-map-url="http://cdn.beanstock.com/pub/spanishdict/zm.js" data-bsm-sizes="300x250 728x90 160x600" data-bsm-pub="spanishdict" data-bsm-pub-zone="spanishdict.com/asection" data-bsm-event-host="//helix.beanstock.co" onload="this.onerror()" onerror="var s = document.createElement('script'); s.src = 'http://cdn.beanstock.com/pub/cx/flagTag.js'; document.body.appendChild(s)" /><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><link rel="publisher" href="https://plus.google.com/106413713006018165072" /><link rel="search" title="SpanishDict.com" type="application/opensearchdescription+xml" href="http://www.spanishdict.com/toolbar_search.xml" /><link rel="alternate" hreflang="en" href="http://www.spanishdict.com/translate/salir" /><link rel="alternate" hreflang="es" href="http://www.spanishdict.com/traductor/salir" /><title>Salir in English | Spanish to English Translation</title><meta name="description" content="Translate Salir in English. Get the most accurate Spanish to English translations. Fast. Easy. Free." /><meta property="fb:app_id" content="123097127645" /><meta property="fb:admins" content="1675823057" /><meta property="og:type" content="article" /><meta property="og:site_name" content="SpanishDict" /><meta property="og:title" content="Check out the translation for &quot;salir&quot; on SpanishDict!" /><meta property="og:description" content="Find out why SpanishDict is the web's most popular, free Spanish translation, dictionary, and conjugation site." /><meta property="og:image" content="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><meta property="og:url" content="http://www.spanishdict.com/translate/salir?utm_source=social&amp;utm_medium=facebook&amp;utm_campaign=share" /><script async="" type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script><script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "http://www.spanishdict.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://www.spanishdict.com/translate/{search_term}",
+    "query-input": "required name=search_term"
+  }
+}</script><link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-144x144-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-120x120-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-114x114-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-76x76-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-72x72-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-57x57-precomposed.png" /><link rel="apple-touch-icon-precomposed" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-precomposed.png" /><script>(function(global) {
+  global.SD_ENV="production";
+  global.SD_LOG_LEVEL="warning";
+  global.SD_LANG="en";
+  global.SD_GA_UA="UA-329211-2";
+  global.SD_MP="0d9d3502c20e893b403e6018cccf0388";
+  global.SD_PN_USE=true;
+  global.SD_PN_INTAKE_URL="reports.pubnation.com/api/v1/complaint";
+})(this);</script><link rel="dns-prefetch" href="http://www.google-analytics.com" /><link rel="dns-prefetch" href="http://api.mixpanel.com" /><link rel="dns-prefetch" href="http://cdn.mxpnl.com" /><link rel="dns-prefetch" href="http://suggest1.spanishdict.com" /><link rel="dns-prefetch" href="http://translate1.spanishdict.com" /><meta name="viewport" content="width=1024" /><link rel="canonical" href="http://www.spanishdict.com/translate/salir" /><script>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+  var gads = document.createElement("script");
+  gads.async = true;
+  gads.type = "text/javascript";
+  var useSSL = "https:" == document.location.protocol;
+  gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+  var node = document.getElementsByTagName("script")[0];
+  node.parentNode.insertBefore(gads, node);
+})();
+googletag.cmd.push(function() {
+  googletag.pubads().setTargeting('sd_is_mobile', 'false');
+  googletag.pubads().setTargeting('test_group', '63');
+});
+</script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_HEADER", [728, 90], "adTop").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_FOOTER", [728, 90], "adBot").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR", [300, 250], "adSide1").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR_2", [300, 250], "adSide2").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_160_600_SIDEBAR", [160, 600], "adSideLong").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_CONTENT", [300, 250], "adContent").addService(googletag.pubads());
+ });
+ </script><script>googletag.cmd.push(function() {
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+});</script><link rel="stylesheet" href="http://n1.sdcdns.com/dist/desktop-9b87909ec77e4c63f58e37725458bdf3.gz.css" /><!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://n1.sdcdns.com/dist/desktop-ie8-f7fed1e39cc45ed918639c01178e6dc6.gz.css"><![endif]--><div class="header-wrapper"><div class="header header-container container"><div class="menu-bar"><div class="menu-nav menu-collapsed"><div class="menu-container"><div class="menu-selector"><div class="icon-menu-nav-selector"></div><div class="menu-selector-text">Menu</div><div class="menu-collapse"></div></div><div class="menu"><a href="http://www.spanishdict.com/"><div class="menu-item">Home</div></a><a href="http://www.spanishdict.com/translation"><div class="menu-item">Translation</div></a><a href="http://www.spanishdict.com/conjugation"><div class="menu-item">Conjugation</div></a><a href="http://www.spanishdict.com/learn"><div class="menu-item">Learn Spanish</div></a><a href="http://www.spanishdict.com/flashcards"><div class="menu-item">Flashcards</div></a><a href="http://www.spanishdict.com/grammar"><div class="menu-item">Grammar</div></a><a href="http://www.spanishdict.com/answers"><div class="menu-item">Q &amp; A</div></a><a href="http://www.spanishdict.com/wordoftheday"><div class="menu-item">Word of the Day</div></a><a href="#"><div class="menu-item menu-divider go-language">Ver en español</div></a><div class="menu-fluencia menu-divider"><div class="menu-fluencia-title">Want to learn Spanish?</div><div class="menu-fluencia-text"><span>Try Fluencia, an amazing learning program from SpanishDict.</span></div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=nav_menu&amp;h=1" target="_blank" data-sd-track-click-type="fluencia" class="menu-fluencia-link sd-track-click"><div class="menu-fluencia-button">Yes!</div></a></div></div></div></div><div class="menu-user menu-collapsed"><div class="menu-container"><div class="menu-selector unauthed"><a href="http://www.spanishdict.com/users/login" class="menu-selector-text">Sign in</a></div></div></div><a href="http://www.spanishdict.com/" class="header-logo"></a></div></div></div><div class="content-container container"><div class="ad-wrapper-wide"><div class="ad-728-90 adTop-results ad-wrapper"><div id="adTop" class="adTop"><script>googletag.cmd.push(function() {
+  googletag.display("adTop");
+});</script><iframe src="http://tpc.googlesyndication.com/safeframe/1-0-2/html/container.html" style="visibility: hidden; display: none;"></iframe><div id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div><div data-target="adTop" style="visibility: hidden;" class="pubnation">report this ad</div></div></div><div class="main-container"><div class="search"><div class="search-component search-form"><form action="/translation" method="post" accept-charset="utf-8" data-action="translation" class="search_query_to_url save-history"><span id="hidden-search">salir</span><div class="search-form-parts search-collapse"><input id="hidden-input" name="isExpand" type="hidden" value="false" /><textarea name="text" id="query" type="search" data-suggest-host="suggest1.spanishdict.com:80" data-suggest-path="/dictionary/translate_auto_suggest" placeholder="Enter Spanish or English text…" autocomplete="off" autocorrect="off" autocapitalize="off" class="search-form-input">salir</textarea><div class="accents"><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add á to your text">á</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add é to your text">é</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add í to your text">í</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add ó to your text">ó</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add ú to your text">ú</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add ñ to your text">ñ</span><span data-toggle="tooltip" title="" class="accents-letter accents-descender" data-original-title="Add ¿ to your text">¿</span><span data-toggle="tooltip" title="" class="accents-letter accents-descender" data-original-title="Add ¡ to your text">¡</span><span data-toggle="tooltip" title="" class="accents-audio-btn" data-original-title="Hear audio of the words"> </span></div><div data-toggle="tooltip" title="" class="search-expand-icon" data-original-title="Show the accent buttons and expand the search box."></div><div data-toggle="tooltip" title="" class="search-collapse-icon" style="display: none;" data-original-title="Collapse the search box"></div><button type="submit" class="search-form-button">Translate</button></div><div class="input-table"><table cellspace="0" cellpadding="0" dir="ltr" class="input-table-table"><tbody><tr><td><table cellspace="0" cellpadding="0" class="inner-input-table">
+<tbody></tbody></table></td></tr></tbody></table></div></form></div></div><div class="translate"><div class="card"><div class="quickdef"><div class="source"><h1 class="source-text">salir</h1><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=salir" data-toggle="tooltip" title="" class="audio-start" data-original-title="Listen to an audio pronunciation"><span class="audio-blue"> </span></a><a href="http://www.spanishdict.com/videos/salir"><span data-toggle="tooltip" title="" class="video-blue" data-original-title="Watch a video translation"> </span></a></div><div class="lang"><div class="el"><a href="http://www.spanishdict.com/translate/to">to</a> <a href="http://www.spanishdict.com/translate/go">go</a> <a href="http://www.spanishdict.com/translate/out">out</a>, <a href="http://www.spanishdict.com/translate/to">to</a> <a href="http://www.spanishdict.com/translate/leave">leave</a></div><span class="media-links"><a href="http://audio1.spanishdict.com/audio?lang=en&amp;text=to-go-out%2C-to-leave" data-toggle="tooltip" title="" class="audio-start" data-original-title="Listen to an audio pronunciation"><span class="audio-blue"> </span></a></span></div></div><div class="nav-content"><div class="nav-content-item nav-active"><a><span class="nav-content-item-text">Dictionary</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/conjugate/salir"><span class="nav-content-item-text">Conjugation</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/videos/salir"><span class="nav-content-item-text">Video</span></a></div><div class="social-small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.spanishdict.com%2Ftranslate%2Fsalir%3Futm_source%3Dsocial%26utm_medium%3Dfacebook%26utm_campaign%3Dshare" class="social-small-icon social-small-facebook"></a><a target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20the%20translation%20for%20%22salir%22%20on%20%40SpanishDict!&amp;amp;url=http%3A%2F%2Fspanishdict.com%2ftranslate%2Fsalir%3Futm_source%3Dsocial%26utm_medium%3Dtwitter%26utm_campaign%3Dshare" class="social-small-icon social-small-twitter"></a><a target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fspanishdict.com%2Ftranslate%2Fsalir%3Futm_source%3Dsocial%26utm_medium%3Dgoogleplus%26utm_campaign%3Dshare" class="social-small-icon social-small-gplus"></a></div></div><div class="dictionary-entry dictionary-neodict"><div class="dictionary-neodict-entry-title">salir</div><a href="http://www.spanishdict.com/topics/show/107" title="" data-toggle="tooltip" class="has-tooltip dictionary-neodict-first-part-of-speech part_of_speech" data-original-title="An intrasitive verb is one that does not require a direct object (e.g. The man sneezed.).">intransitive verb</a><div class="dictionary-neodict-indent-1"><span class="def">1. </span><span class="context">(to exit)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to go out</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Usa el ascensor para salir.</span><span class="icon-dash"></span><em class="exB">Take the elevator to go out.</em></div></div><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">b.</span><span class="dictionary-neodict-translation-translation"> to leave</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Él salió pero dijo que nos encontraría para almorzar. </span><span class="icon-dash"></span><em class="exB">He left but said he would meet us for lunch. </em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">2. </span><span class="context">(to depart)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to leave</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>El tren está a punto de salir.</span><span class="icon-dash"></span><em class="exB">The train is about to leave.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">3. </span><span class="context">(to date)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to go out</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Llevan años saliendo.</span><span class="icon-dash"></span><em class="exB">They have been going out for years.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">4. </span><span class="context">(to party)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to go out</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Salgamos este fin de semana.</span><span class="icon-dash"></span><em class="exB">Let's go out this weekend.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">5. </span><span class="context">(to result)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to turn out</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Las cosas no siempre salen como se espera.</span><span class="icon-dash"></span><em class="exB">Things don't always turn out as expected.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">6. </span><span class="context">(to originate)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to come from</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>El éxito sale del trabajo duro.</span><span class="icon-dash"></span><em class="exB">Success comes from hard work.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">7. </span><span class="context">(in regards to the sun)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to rise</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Subimos a la cima para ver el sol saliendo sobre las montañas. </span><span class="icon-dash"></span><em class="exB">We hiked to the summit to see the sun rise over the mountains. </em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">8. </span><span class="context">(to appear)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to be</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Salió una gotera en el techo.</span><span class="icon-dash"></span><em class="exB">There is a leak in the ceiling.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">9. </span><span class="context">(to remove)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to come out</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Las manchas de tinta a veces salen con alcohol.</span><span class="icon-dash"></span><em class="exB">Ink stains often come out with alcohol.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">10. </span><span class="context">(in computing)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to exit</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Para salir del programa, pulsa Esc.</span><span class="icon-dash"></span><em class="exB">To exit the program press Esc.</em></div></div></div></div><div class="dictionary-neodict-entry-title">salirse</div><a href="http://www.spanishdict.com/topics/show/85" title="" data-toggle="tooltip" class="has-tooltip dictionary-neodict-first-part-of-speech part_of_speech" data-original-title="A reflexive verb is a verb that indicates that the subject performs an action on itself (e.g. Miguel se lava.). ">reflexive verb</a><div class="dictionary-neodict-indent-1"><span class="def">11. </span><span class="context">(to depart)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to leave</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Estaba tan enojada que se salió de la reunión.</span><span class="icon-dash"></span><em class="exB">She was so angry that she left the meeting.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">12. </span><span class="context">(to divert)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to come off</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>El tren se salió de la vía.</span><span class="icon-dash"></span><em class="exB">The train came off the rails.</em></div></div></div></div><a href="http://www.spanishdict.com/topics/show/107" title="" data-toggle="tooltip" class="has-tooltip part_of_speech" data-original-title="A pronominal verb always uses a reflexive pronoun. (e.g. Te ves cansado.).">pronominal verb</a><div class="dictionary-neodict-indent-1"><span class="def">13. </span><span class="context">(to release)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to come off</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Asegúrate de que la cuerda no se salga.</span><span class="icon-dash"></span><em class="exB">Make sure the rope doesn't come off.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">14. </span><span class="context">(to overflow)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to leak</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Se está saliendo el agua de la bomba.</span><span class="icon-dash"></span><em class="exB">There is water leaking from the pump.</em></div></div></div></div><div class="d-copyright"><a href="http://www.spanishdict.com" rel="nofollow">Copyright © 2014 Curiosity Media Inc.</a></div></div><div class="dictionary-line"></div><div class="dictionary-entry dictionary-chambers"><div class="LV0">
+<div class="dictionary_word" id="word_salir ">
+<span class="head_word">salir </span>
+<div class="box">
+</div> <span class="pron">
+</span>
+<div class="LV2">
+<span class="part_of_speech">intransitive verb</span>
+<div class="LV3">
+<span class="def_header">1. </span>
+<span class="def">to go out </span> <em>
+<em class="context">(ir fuera)</em>
+</em>; <span class="def">to come out </span> <em>
+<em class="context">(venir fuera)</em>
+</em>
+<ul class="examples">
+<li>
+<span>salir de </span><span class="icon-dash"></span><em class="exB">to go/come out of </em>
+<em class="context">
+</em> </li>
+<li>
+<span>¿salimos al jardín? </span><span class="icon-dash"></span><em class="exB">shall we go out into the garden? </em>
+<em class="context">
+</em> </li>
+<li>
+<span>¡sal aquí fuera! </span><span class="icon-dash"></span><em class="exB">come out here! </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">2. </span>
+<span class="def">to go out </span> <em>
+<em class="context">(ser novios)</em>
+</em>(<b>con</b> with) <ul class="examples">
+<li>
+<span>están saliendo </span><span class="icon-dash"></span><em class="exB">they are going out (together) </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">3. </span>
+<em>
+<em class="context">(marcharse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>salir (para) </span><span class="icon-dash"></span><em class="exB">to leave (for) </em>
+<em class="context">
+</em> </li>
+<li>
+<span>salir de viaje </span><span class="icon-dash"></span><em class="exB">to go away (on a trip) </em>
+<em class="context">
+</em> </li>
+<li>
+<span>cuando salimos de Quito </span><span class="icon-dash"></span><em class="exB">when we left Quito </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">4. </span>
+<em>
+<em class="context">(desembocar) (calle)</em>
+</em>
+<ul class="examples">
+<li>
+<span>salir a </span><span class="icon-dash"></span><em class="exB">to open out onto </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">5. </span>
+<em>
+<em class="context">(separarse) (tapón, anillo)</em>
+</em>
+<ul class="examples">
+<li>
+<span>salir (de algo) </span><span class="icon-dash"></span><em class="exB">to come off (something) </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">6. </span>
+<span class="def">to turn out </span> <em>
+<em class="context">(resultar)</em>
+</em>
+<ul class="examples">
+<li>
+<span>ha salido muy estudioso </span><span class="icon-dash"></span><em class="exB">he has turned out to be very studious </em>
+<em class="context">
+</em> </li>
+<li>
+<span>¿qué salió en la votación? </span><span class="icon-dash"></span><em class="exB">what was the result of the vote? </em>
+<em class="context">
+</em> </li>
+<li>
+<span>salir elegida actriz del año </span><span class="icon-dash"></span><em class="exB">to be voted actress of the year </em>
+<em class="context">
+</em> </li>
+<li>
+<span>salir premiado </span><span class="icon-dash"></span><em class="exB">to be awarded a prize </em>
+<em class="context">
+</em> </li>
+<li>
+<span>salir bien/mal </span><span class="icon-dash"></span><em class="exB">to turn out well/badly </em>
+<em class="context">
+</em> </li>
+<li>
+<span>salir ganando/perdiendo </span><span class="icon-dash"></span><em class="exB">to come off well/badly </em>
+<em class="context">
+</em> </li>
+<li>
+<span>me ha salido mal </span><span class="icon-dash"></span><em class="exB">it didn't go very well; </em>
+<em class="context">(examen, entrevista)</em> <em class="exB">it didn't turn out very well; </em>
+<em class="context">(plato, dibujo)</em> <em class="exB">I got the wrong result </em>
+<em class="context">(cuenta)</em> </li>
+<li>
+<span>¿qué tal te ha salido? </span><span class="icon-dash"></span><em class="exB">how did it go? </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">7. </span>
+<em>
+<em class="context">(proceder)</em>
+</em>
+<ul class="examples">
+<li>
+<span>salir de </span><span class="icon-dash"></span><em class="exB">to come from </em>
+<em class="context">
+</em> </li>
+<li>
+<span>el vino sale de la uva </span><span class="icon-dash"></span><em class="exB">wine comes from grapes </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">8. </span>
+<span class="def">to go out </span> <em>
+<em class="context">(a divertirse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>salen mucho a cenar </span><span class="icon-dash"></span><em class="exB">they eat out a lot </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">9. </span>
+<span class="def">to come out </span> <em>
+<em class="context">(surgir) (luna, estrellas, planta)</em>
+</em>; <span class="def">to rise </span> <em>
+<em class="context">(sol)</em>
+</em>; <span class="def">to come through </span> <em>
+<em class="context">(dientes)</em>
+</em>
+<ul class="examples">
+<li>
+<span>le ha salido un sarpullido en la espalda </span><span class="icon-dash"></span><em class="exB">her back has come out in a rash </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">10. </span>
+<span class="def">to come out </span> <em>
+<em class="context">(aparecer) (publicación, producto, traumas)</em>
+</em>; <span class="def">to come in </span> <em>
+<em class="context">(moda, ley)</em>
+</em>; <span class="def">to appear </span> <em>
+<em class="context">(en imagen, prensa, televisión)</em>
+</em>
+<ul class="examples">
+<li>
+<span>¡qué bien sales en la foto! </span><span class="icon-dash"></span><em class="exB">you look great in the photo! </em>
+<em class="context">
+</em> </li>
+<li>
+<span>ha salido en los periódicos/en la tele </span><span class="icon-dash"></span><em class="exB">it's been in the papers/on TV </em>
+<em class="context">
+</em> </li>
+<li>
+<span>salir de </span>
+<em class="context">(Cine &amp; Teatro) </em> <span class="icon-dash"></span><em class="exB">to appear as </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">11. </span>
+<span class="def">to come up </span> <em>
+<em class="context">(en sorteo)</em>
+</em>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">12. </span>
+<span class="def">to turn up, to come along </span> <em>
+<em class="context">(presentarse) (ocasión, oportunidad)</em>
+</em>; <span class="def">to arise </span> <em>
+<em class="context">(problema, contratiempo)</em>
+</em>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">13. </span>
+<span class="def">to work out </span> <em>
+<em class="context">(costar)</em>
+</em>(<b>a</b> <i>o</i> <b>por</b> at) <ul class="examples">
+<li>
+<span>salir caro </span><span class="icon-dash"></span><em class="exB">to be expensive; </em>
+<em class="context">(de dinero)</em> <em class="exB">to be costly </em>
+<em class="context">(por las consecuencias)</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">14. </span>
+<em>
+<em class="context">(decir u obrar inesperadamente)</em>
+</em>
+<ul class="examples">
+<li>
+<span>nunca se sabe por dónde va a salir </span><span class="icon-dash"></span><em class="exB">you never know what she's going to do/come out with next </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">15. </span>
+<em>
+<em class="context">(parecerse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>salir a alguien </span><span class="icon-dash"></span><em class="exB">to turn out like somebody, to take after somebody </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">16. </span>
+<span class="def">to lead </span> <em>
+<em class="context">(en juegos)</em>
+</em>
+<ul class="examples">
+<li>
+<span>te toca salir a ti </span><span class="icon-dash"></span><em class="exB">it's your lead </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">17. </span>
+<span class="def">to come out </span> <em>
+<em class="context">(desaparecer)</em>
+</em>
+<ul class="examples">
+<li>
+<span>la mancha de vino no sale </span><span class="icon-dash"></span><em class="exB">the wine stain won't come out </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">18. </span>
+<em>
+<em class="context">(librarse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>salir de un apuro </span><span class="icon-dash"></span><em class="exB">to get out of a tight spot </em>
+<em class="context">
+</em> </li>
+<li>
+<span>no sé si podremos salir de esta </span><span class="icon-dash"></span><em class="exB">I don't know how we're going to get out of this one </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">19. </span>
+<em>
+<em class="context">(computing)</em>
+</em>
+<ul class="examples">
+<li>
+<span>salir (de) </span><span class="icon-dash"></span><em class="exB">to quit, to exit </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">20. </span>
+<em>
+<em class="context">(informal)</em>
+</em>
+<ul class="examples">
+<li>
+<span>porque me sale/no me sale de las narices </span><span class="icon-dash"></span><em class="exB">because I damn well feel like it/damn well can't be bothered </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<em class="def_also"> also: </em>
+<ul class="examples">
+<li>
+<span>salir adelante </span><span class="icon-dash"></span><em class="exB">to get by; </em>
+<em class="context">(persona, empresa)</em> <em class="exB">to be successful </em>
+<em class="context">(proyecto, propuesta, ley)</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<div class="subheadword">salirse </div> <span class="part_of_speech">pronominal verb</span>
+<div class="LV3">
+<span class="def_header">1. </span>
+<em>
+<em class="context">(marcharse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>salirse (de) </span><span class="icon-dash"></span><em class="exB">to leave </em>
+<em class="context">
+</em> </li>
+<li>
+<span>me salí del agua porque tenía frío </span><span class="icon-dash"></span><em class="exB">I came out of the water because I was cold </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">2. </span>
+<span class="def">to leak, to escape </span> <em>
+<em class="context">(filtrarse) (líquido, gas)</em>
+</em>(<b>por</b> through); <span class="def">to come out </span> <em>
+</em>(<b>por</b> through)  <em class="context">(humo, aroma)</em>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">3. </span>
+<span class="def">to overflow </span> <em>
+<em class="context">(rebosar)</em>
+</em>; <span class="def">to boil over </span> <em>
+<em class="context">(leche)</em>
+</em>
+<ul class="examples">
+<li>
+<span>el río se salió del cauce </span>
+<em class="context">(humo, aroma)</em> <span class="icon-dash"></span><em class="exB">the river broke its banks </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">4. </span>
+<em>
+<em class="context">(desviarse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>salirse (de) </span><span class="icon-dash"></span><em class="exB">to come off </em>
+<em class="context">
+</em> </li>
+<li>
+<span>el coche se salió de la carretera </span><span class="icon-dash"></span><em class="exB">the car came off <i>o </i>left the road </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">5. </span>
+<em>
+<em class="context">(escaparse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>salirse de </span><span class="icon-dash"></span><em class="exB">to go beyond </em>
+<em class="context">(límites)</em> </li>
+<li>
+<span>salirse del tema </span><span class="icon-dash"></span><em class="exB">to digress </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<em class="def_also"> also: </em>
+<ul class="examples">
+<li>
+<span>salirse con la suya </span><span class="icon-dash"></span><em class="exB">to get one's own way </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="d-copyright"><a href="http://www.amazon.com/Websters-World-Concise-Spanish-Dictionary/dp/0471748366/&amp;tag=spani-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" rel="nofollow">Copyright © 2006 Harrap Publishers Limited</a></div></div><div class="dictionary-line"></div><div class="dictionary-entry dictionary-collins"><div class="entry"><div class="hw_unit"><span class="hw">salir</span></div><div class="note">Para las expresiones <em class="em">salir adelante</em>, <em class="em">salir ganando</em>, <em class="em">salir perdiendo</em>, <em class="em">salir de viaje</em>, ver la otra entrada.</div><div class="gram_cat"><a name="verbo:intransitivo"></a><div class="entry_pos">intransitive verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="label synonym">(partir)</span> <span class="sense"> <span class="label collate subject">[+persona]</span> <span class="tran_group"> <span class="tran_main">to leave;</span></span></span><span class="sense"> <span class="label collate subject">[+transportes]</span> <span class="tran_group"> <span class="tran_main">to leave;</span> <span class="tran_main">depart  <span class="label register">(formal)</span>;</span></span><span class="sense"> <span class="label subject" title="">(Náutica)</span> <span class="tran_group"> <span class="tran_main">to leave;</span> <span class="tran_main">sail</span></span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">el autocar sale a las ocho</span><span class="tran_group"> <span class="tran">the coach leaves at eight;</span></span></span><span class="ex_unit"> <span class="ex">sale un tren cada dos horas</span><span class="tran_group"> <span class="tran">there is a train every two hours</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">de</em></span></span><span class="tran_group"> <span class="tran">to leave</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">salimos de Madrid a las ocho</span><span class="tran_group"> <span class="tran">we left Madrid at eight;</span></span></span><span class="ex_unit"> <span class="ex">saldremos del hotel temprano</span><span class="tran_group"> <span class="tran">we'll leave the hotel early;</span></span></span><span class="ex_unit"> <span class="ex">quiere salir del país</span><span class="tran_group"> <span class="tran">she wants to leave the country;</span></span></span><span class="ex_unit"> <span class="ex">¿a qué hora sales de la oficina?</span><span class="tran_group"> <span class="tran">what time do you leave the office?</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">este año sale de presidente</span></span><span class="ex_unit"> <span class="ex">salgo de trabajar a las tres</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">salgo de clase a las cinco</span><span class="tran_group"> <span class="tran">I finish school at five</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">para</em></span></span><span class="tran_group"> <span class="tran">to set off for</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">después de comer salimos para Palencia</span><span class="tran_group"> <span class="tran">after we had eaten we set off for Palencia</span></span></span></div></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span> <span class="sense"> <span class="label synonym">(no entrar)</span>  <span class="label synonym">(ir fuera)</span> <span class="tran_group"> <span class="tran_main">to go out;</span></span></span><span class="sense"> <span class="label synonym">(venir fuera)</span> <span class="tran_group"> <span class="tran_main">to come out;</span></span><span class="sense"> <span class="context">(a divertirse)</span> <span class="tran_group"> <span class="tran_main">to go out</span></span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">sal ahí fuera a recoger la pelota</span><span class="tran_group"> <span class="tran">go out there and get the ball back;</span></span></span><span class="ex_unit"> <span class="ex">sal aquí al jardín con nosotros</span><span class="tran_group"> <span class="tran">come out into the garden with us</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">salimos a la calle</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">salió a la calle a ver si venían</span><span class="tran_group"> <span class="tran">she went outside <em class="or" title="es-es">o</em> she went out into the street to see if they were coming;</span></span></span><span class="ex_unit"> <span class="ex">—¿está Juan? —no, ha salido</span><span class="tran_group"> <span class="tran">"is Juan in?" — "no, I'm afraid he's gone out";</span></span></span><span class="ex_unit"> <span class="ex">¿vas a salir esta noche?</span><span class="tran_group"> <span class="tran">are you going out tonight?;</span></span></span><span class="ex_unit"> <span class="ex">nunca he salido al extranjero</span><span class="tran_group"> <span class="tran">I've never been abroad;</span></span></span><span class="ex_unit"> <span class="ex">la pelota salió fuera</span> <span class="label subject" title="">(Fútbol)</span> <span class="tran_group"> <span class="tran">the ball went out (of play);</span></span></span><span class="ex_unit"> <span class="ex">los rehenes salieron por la ventana</span><span class="tran_group"> <span class="tran">the hostages got out through the window</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">por ahí no se puede salir</span></span><span class="ex_unit"> <span class="ex">si no puedo salir por la puerta tendré qu esalir por la ventana</span></span><span class="ex_unit"> <span class="ex">hace años las niñas salían por una puerta y los niños por otra</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">salió <em class="c">corriendo</em> (del cuarto)</span></span><span class="tran_group"> <span class="tran">he ran out (of the room)</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">salir fuera, conocer el extranjero</span></span><span class="ex_unit"> <span class="ex">les gustaba, en salir fuera a París o a Londres</span></span><span class="ex_unit"> <span class="ex">los inversores de nuestra Comunidad tuvieran que salir fuera porque aquí no hay negocio</span></span><span class="ex_unit"> <span class="ex">La primera fue un tiro de Quique desde buena posición que [salió fuera,] y a continuación Marcos tuvo que emplearse a fondo para despejar un tiro muy colocado de Maxi.</span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">de</em></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">nos la encontramos al salir del cine</span><span class="tran_group"> <span class="tran">we bumped into her when we were coming out of the cinema</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">lo buscaremos al salir de aquí</span></span><span class="ex_unit"> <span class="ex">al salir del cine</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">¿de dónde has salido?</span><span class="tran_group"> <span class="tran">where did you appear <em class="or" title="es-es">o</em> spring from?;</span></span></span><span class="ex_unit"> <span class="ex">salir de un apuro</span><span class="tran_group"> <span class="tran">to get out of a jam;</span></span></span><span class="ex_unit"> <span class="ex">salir del coma</span><span class="tran_group"> <span class="tran">to come out of a coma</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">salir del [enojo]</span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">salir de <em class="c">paseo</em></span></span><span class="tran_group"> <span class="tran">to go out for a walk</span></span></div><div class="idm_group"><div class="idm_unit"><span class="idm">de esta no salimos</span><span class="tran_group"> <span class="tran">we'll never get out of this one  <span class="label register">(familiar)</span></span></span></div><div class="idm_unit"><span class="idm">salir de pobre</span><div class="ex_group"><span class="ex_unit"> <span class="ex">no salió nunca de pobre</span><span class="tran_group"> <span class="tran">he never stopped being poor</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">vivió siempre como los ricos, pero nunca salió de pobre</span></span><span class="ex_unit"> <span class="ex">total, para no salir de pobre no quiero meterme en jaleos</span></span></div></div></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="context">(al mercado)</span> <span class="sense"> <span class="label collate subject">[+revista, libro, disco]</span> <span class="tran_group"> <span class="tran_main">to come out;</span></span></span><span class="sense"> <span class="label collate subject">[+moda]</span> <span class="tran_group"> <span class="tran_main">to come in</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">el libro sale el mes que viene</span><span class="tran_group"> <span class="tran">the book comes out next month;</span></span></span><span class="ex_unit"> <span class="ex">acaba de salir un disco suyo</span><span class="tran_group"> <span class="tran">an album of his has just come out <em class="or" title="es-es">o</em> been released</span></span></span></div></div><div class="sense_main"><a name="4"></a><span class="num">4</span>  <span class="context">(en medios de comunicación)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">la noticia salió en el periódico de ayer</span><span class="tran_group"> <span class="tran">the news was <em class="or" title="es-es">o</em> appeared in yesterday's paper;</span></span></span><span class="ex_unit"> <span class="ex">sus padres salieron en los periódicos</span><span class="tran_group"> <span class="tran">her parents were in the papers;</span></span></span><span class="ex_unit"> <span class="ex">salir por la televisión</span><span class="tran_group"> <span class="tran">to be <em class="or" title="es-es">o</em> appear on TV</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">le salió la satisfacción a la cara</span></span></div></div><div class="sense_main"><a name="5"></a><span class="num">5</span>  <span class="label synonym">(surgir)</span> <span class="tran_group"> <span class="tran_main">to come up</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">en el debate no salió el tema del aborto</span><span class="tran_group"> <span class="tran">the subject of abortion didn't come up in the debate;</span></span></span><span class="ex_unit"> <span class="ex">si sale un puesto apropiado</span><span class="tran_group"> <span class="tran">if a suitable job comes up;</span></span></span><span class="ex_unit"> <span class="ex">cuando salga la ocasión</span><span class="tran_group"> <span class="tran">when the opportunity comes up <em class="or" title="es-es">o</em> arises;</span></span></span><span class="ex_unit"> <span class="ex">¡ya salió aquello!</span><span class="tran_group"> <span class="tran">we know all about that!</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">—porque ya sabes que, desde que tu cuñada me llamó "mal hijo" en 1974 ... — ¡vaya! ¡ya salió aquello!</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">salirle algo a algn: le ha salido novio/un trabajo</span><span class="tran_group"> <span class="tran">she's got herself a boyfriend/a job</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">le ha salido un trabajo en Marbella</span></span></div></div><div class="sense_main"><a name="6"></a><span class="num">6</span>  <span class="label synonym">(aparecer)</span> <span class="sense"> <span class="label collate subject">[+agua]</span> <span class="tran_group"> <span class="tran_main">to come out;</span></span></span><span class="sense"> <span class="label collate subject">[+sol]</span> <span class="tran_group"> <span class="tran_main">to come out;</span></span></span><span class="sense"> <span class="label collate subject">[+mancha]</span> <span class="tran_group"> <span class="tran_main">to appear</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">no sale agua del grifo</span><span class="tran_group"> <span class="tran">there's no water coming out of the tap</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">el sol salió de detrás de una nube</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">ha salido una mancha en el techo</span><span class="tran_group"> <span class="tran">a damp patch has appeared on the ceiling;</span></span></span><span class="ex_unit"> <span class="ex">me sale sangre</span><span class="tran_group"> <span class="tran">I'm bleeding</span></span></span></div></div><div class="sense_main"><a name="7"></a><span class="num">7</span>  <span class="label synonym">(nacer)</span> <span class="sense"> <span class="label collate subject">[+diente]</span> <span class="tran_group"> <span class="tran_main">to come through;</span></span></span><span class="sense"> <span class="label collate subject">[+planta, sol]</span> <span class="tran_group"> <span class="tran_main">to come up;</span></span></span><span class="sense"> <span class="label collate subject">[+pelo]</span> <span class="tran_group"> <span class="tran_main">to grow;</span></span></span><span class="sense"> <span class="label collate subject">[+pollito]</span> <span class="tran_group"> <span class="tran_main">to hatch</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">me está saliendo una muela del juicio</span><span class="tran_group"> <span class="tran">one of my wisdom teeth is coming through;</span></span></span><span class="ex_unit"> <span class="ex">ya le ha salido un diente al niño</span><span class="tran_group"> <span class="tran">the baby already has one tooth</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">el sol sale ahora sobre las seis de la mañana</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">le han salido muchas espinillas</span><span class="tran_group"> <span class="tran">he's got a lot of blackheads;</span></span></span><span class="ex_unit"> <span class="ex">nos levantamos antes de que saliera el sol</span><span class="tran_group"> <span class="tran">we got up before sunrise</span></span></span></div></div><div class="sense_main"><a name="8"></a><span class="num">8</span>  <span class="label synonym">(quitarse)</span> <span class="sense"> <span class="label collate subject">[+mancha]</span> <span class="tran_group"> <span class="tran_main">to come out;</span> <span class="tran_main">come off</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">el anillo no le sale del dedo</span><span class="tran_group"> <span class="tran">the ring won't come off her finger;</span> <span class="tran">she can't get the ring off her finger</span></span></span></div></div><div class="sense_main"><a name="9"></a><span class="num">9</span>  <span class="label synonym">(costar)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">la calefacción de gas saldría más barata</span><span class="tran_group"> <span class="tran">gas heating would work out cheaper</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">a</em></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">sale a ocho euros el kilo</span><span class="tran_group"> <span class="tran">it works out at eight euros a kilo</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">si compras las copas por separado salen a cinco mil pesetas las la docena</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">salimos a 10 libras por persona</span><span class="tran_group"> <span class="tran">it works out at £10 each</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">por</em></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">me salió por 1.000 pesos</span><span class="tran_group"> <span class="tran">it cost me 1,000 pesos</span></span></span></div></div></div><div class="sense_main"><a name="10"></a><span class="num">10</span>  <span class="label synonym">(resultar)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">¿cómo salió la representación?</span><span class="tran_group"> <span class="tran">how did the performance go?;</span></span></span><span class="ex_unit"> <span class="ex">espero que todo salga como habíamos planeado</span><span class="tran_group"> <span class="tran">I hope everything goes to plan;</span></span></span><span class="ex_unit"> <span class="ex">la prueba salió positiva</span><span class="tran_group"> <span class="tran">the test was positive;</span></span></span><span class="ex_unit"> <span class="ex">salió triunfador de las elecciones</span><span class="tran_group"> <span class="tran">he was victorious in the elections;</span></span></span><span class="ex_unit"> <span class="ex">la secretaria salió muy trabajadora</span><span class="tran_group"> <span class="tran">the secretary turned out to be very hard-working;</span></span></span><span class="ex_unit"> <span class="ex">¿qué número ha salido premiado en la lotería?</span><span class="tran_group"> <span class="tran">what was the winning number in the lottery?;</span></span></span><span class="ex_unit"> <span class="ex">salió alcalde por tres votos</span><span class="tran_group"> <span class="tran">he was elected mayor by three votes;</span></span></span><span class="ex_unit"> <span class="ex">tenemos que aceptarlo, salga lo que salga</span><span class="tran_group"> <span class="tran">we have to accept it, whatever happens</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">bien</em></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">el plan salió bien</span><span class="tran_group"> <span class="tran">the plan worked out well;</span></span></span><span class="ex_unit"> <span class="ex">espero que todo salga bien</span><span class="tran_group"> <span class="tran">I hope everything works out all right;</span></span></span><span class="ex_unit"> <span class="ex">¿salió bien la fiesta?</span><span class="tran_group"> <span class="tran">did the party go well?;</span></span></span><span class="ex_unit"> <span class="ex">ha salido muy bien de la operación</span><span class="tran_group"> <span class="tran">she's come through the operation very well</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">la foto me salió bien</span></span><span class="ex_unit"> <span class="ex">salí bien en el examen</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">¿cómo te salió el examen?</span><span class="tran_group"> <span class="tran">how did your exam go?</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">mal</em></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">salió muy mal del tratamiento</span><span class="tran_group"> <span class="tran">the treatment wasn't at all successful;</span></span></span><span class="ex_unit"> <span class="ex">la celebración salió mal por la lluvia</span><span class="tran_group"> <span class="tran">the celebrations were spoiled by the rain;</span></span></span><span class="ex_unit"> <span class="ex">les salió mal el proyecto</span><span class="tran_group"> <span class="tran">their plan didn't work out;</span></span></span><span class="ex_unit"> <span class="ex">¡qué mal me ha salido el dibujo!</span><span class="tran_group"> <span class="tran">oh dear! my drawing hasn't come out very well!</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">el dibujo me ha salido muy mal</span></span></div></div></div><div class="sense_main"><a name="11"></a><span class="num">11</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">salirle algo a algn</span></span></div><div class="sense_main"><a name="11"></a><span class="num">11</span>  <span class="label synonym">(poder resolverse)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">he intentado resolver el problema pero no me sale</span><span class="tran_group"> <span class="tran">I've tried to solve the problem but I just can't do it;</span></span></span><span class="ex_unit"> <span class="ex">este crucigrama no me sale</span><span class="tran_group"> <span class="tran">I can't do this crossword</span></span></span></div></div><div class="sense_main"><a name="11"></a><span class="num">11</span>  <span class="label synonym">(resultar natural)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">no me sale ser amable con ella</span><span class="tran_group"> <span class="tran">I find it difficult being nice to her</span></span></span></div></div><div class="sense_main"><a name="11"></a><span class="num">11</span>  <span class="label synonym">(poder recordarse)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">no me sale su apellido</span><span class="tran_group"> <span class="tran">I can't think of his name</span></span></span></div></div></div><div class="sense_main"><a name="12"></a><span class="num">12</span> <div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">a</em></span></span> <span class="label collate subject">[+calle]</span> <span class="tran_group"> <span class="tran">to come out in;</span> <span class="tran">lead to</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">sale a la calle S Nicolás</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">esta calle sale a la plaza</span><span class="tran_group"> <span class="tran">this street comes out in <em class="or" title="es-es">o</em> leads to the square</span></span></span></div></div></div><div class="sense_main"><a name="13"></a><span class="num">13</span> <div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">a</em> algn</span></span> <span class="label synonym">(parecerse)</span> <span class="tran_group"> <span class="tran">to take after sb</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">ha salido a su padre</span><span class="tran_group"> <span class="tran">he takes after his father</span></span></span></div></div></div><div class="sense_main"><a name="14"></a><span class="num">14</span> <div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">con</em> algn</span></span><span class="tran_group"> <span class="tran">to go out with sb</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">está saliendo con un compañero de clase</span><span class="tran_group"> <span class="tran">she's going out with one of her classmates;</span></span></span><span class="ex_unit"> <span class="ex">salen juntos desde hace dos años</span><span class="tran_group"> <span class="tran">they've been going out (together) for two years</span></span></span></div></div></div><div class="sense_main"><a name="15"></a><span class="num">15</span> <div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">con</em> algo</span></span> <span class="context">(al hablar)</span> <span class="tran_group"> <span class="tran">to come out with sth</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">y ahora sale con esto</span><span class="tran_group"> <span class="tran">and now he comes out with this;</span></span></span><span class="ex_unit"> <span class="ex">ahora me sale con que yo le debo dinero</span><span class="tran_group"> <span class="tran">and now he starts complaining that I owe him money</span></span></span></div></div></div><div class="sense_main"><a name="16"></a><span class="num">16</span> <div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">de</em></span></span> <span class="label collate subject">[+proceder]</span> <span class="tran_group"> <span class="tran">to come from</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">el aceite que sale de la aceituna</span><span class="tran_group"> <span class="tran">oil which comes from olives</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">el vino sale de la uva</span></span></div></div></div><div class="sense_main"><a name="17"></a><span class="num">17</span> <div class="phs_group"><span class="ph_unit"><span class="ph">salir <em class="c">por</em> algn</span></span> <span class="label synonym">(defender)</span> <span class="tran_group"> <span class="tran">to come out in defence of sb;</span> <span class="tran">stick up for sb;</span></span> <span class="context">(económicamente)</span> <span class="tran_group"> <span class="tran">to back sb financially</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">cuando hubo problemas, salió por mí</span><span class="tran_group"> <span class="tran">when there were problems, she stuck up for me <em class="or" title="es-es">o</em> came out in my defence</span></span></span></div></div></div><div class="sense_main"><a name="18"></a><span class="num">18</span>  <span class="label subject" title="">(Teat)</span> <span class="tran_group"> <span class="tran">to come on</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">sale vestido de policía</span><span class="tran_group"> <span class="tran">he comes on dressed as a policeman;</span></span></span><span class="ex_unit"> <span class="ex">"sale el rey"</span> <span class="context">(acotación)</span> <span class="tran_group"> <span class="tran">"enter the king"</span></span></span></div></div><div class="sense_main"><a name="19"></a><span class="num">19</span>  <span class="label synonym">(empezar)</span> <span class="sense"> <span class="label subject" title="">(Dep)</span> <span class="tran_group"> <span class="tran_main">to start;</span></span></span><span class="sense"> <span class="label subject" title="">(Ajedrez)</span> <span class="tran_group"> <span class="tran_main">to have first move;</span></span></span><span class="sense"> <span class="label subject" title="">(Naipes)</span> <span class="tran_group"> <span class="tran_main">to lead</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">salir con un as</span><span class="tran_group"> <span class="tran">to lead an ace;</span></span></span><span class="ex_unit"> <span class="ex">salir de triunfo</span><span class="tran_group"> <span class="tran">to lead a trump</span></span></span></div></div><div class="sense_main"><a name="20"></a><span class="num">20</span>  <span class="label subject" title="">(Informática)</span> <span class="tran_group"> <span class="tran">to exit</span></span></div><div class="sense_main"><a name="21"></a><span class="num">21</span>  <span class="label synonym">(sobresalir)</span> <span class="tran_group"> <span class="tran">to stick out</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">el balcón sale unos dos metros</span><span class="tran_group"> <span class="tran">the balcony sticks out about two metres</span></span></span></div></div><div class="sense_main"><a name="22"></a><span class="num">22</span>  <span class="label synonym">(pagar)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">salir a los gastos de algn</span><span class="tran_group"> <span class="tran">to meet <em class="or" title="es-es">o</em> pay sb's expenses</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">no sé cómo vamos a salir adelante</span></span><span class="ex_unit"> <span class="ex">salimos adelante con mucho esfuerzo</span></span><span class="ex_unit"> <span class="ex">tenía que hacer muchas chapucillas para salir adelante</span></span><span class="ex_unit"> <span class="ex">para que el proyecto pueda salir adelante sin que ningún cooperativista pierda dinero se necesita</span></span><span class="ex_unit"> <span class="ex">la empresa no salió adelante debido a la crisis</span></span><span class="ex_unit"> <span class="ex">socorrer a las empresas que son incapaces de salir adelante con sus propios medios</span></span><span class="ex_unit"> <span class="ex">Aquel grupo no llegó a salir adelante, y mi vecina se metió en una obra de café teatro</span></span><span class="ex_unit"> <span class="ex">la enmienda salió adelante con el voto socialista</span></span><span class="ex_unit"> <span class="ex">el país azteca, que va a salir adelante gracias a un tratado de libre comercio</span></span><span class="ex_unit"> <span class="ex">salir con un propósito</span></span><span class="ex_unit"> <span class="ex">salir con una pretensión</span></span><span class="ex_unit"> <span class="ex">ella sale con todo el trabajo</span></span></div></div></div><div class="gram_cat"><a name="verbo:pronominal"></a><div class="entry_pos">pronominal verb</div><span class="drv">salirse</span><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="label synonym">(irse)</span> <span class="tran_group"> <span class="tran_main">to leave</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">se salió del partido</span><span class="tran_group"> <span class="tran">he left the party</span></span></span></div><div class="idm_group"><div class="idm_unit"><span class="idm">salirse con la suya</span><span class="tran_group"> <span class="tran">to get one's way</span></span></div></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="label synonym">(escaparse)</span> <span class="tran_group"> <span class="tran_main">to escape;</span><span class="opt_prep">de</span><span class="tran_group"> <span class="tran">from;</span></span> <span class="tran_main">get out;</span><span class="opt_prep">de</span><span class="tran_group"> <span class="tran">of</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">el tigre se salió de la jaula</span><span class="tran_group"> <span class="tran">the tiger escaped from the cage;</span> <span class="tran">the tiger got out of the cage</span></span></span></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="label synonym">(filtrarse)</span> <span class="sense"> <span class="label collate subject">[+aire, líquido]</span> <span class="tran_group"> <span class="tran_main">to leak (out)</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">la botella estaba rota y se salía el vinagre</span><span class="tran_group"> <span class="tran">the bottle was cracked and the vinegar was coming out <em class="or" title="es-es">o</em> leaking (out);</span></span></span><span class="ex_unit"> <span class="ex">se salía el aceite del motor</span><span class="tran_group"> <span class="tran">oil was leaking out of the engine;</span></span></span><span class="ex_unit"> <span class="ex">el barril se sale</span> <span class="label geo" title="">(España)</span><span class="tran_group"> <span class="tran">the barrel is leaking</span></span></span></div></div><div class="sense_main"><a name="4"></a><span class="num">4</span>  <span class="label synonym">(rebosar)</span> <span class="tran_group"> <span class="tran_main">to overflow;</span></span><span class="sense"> <span class="context">(al hervir)</span> <span class="tran_group"> <span class="tran_main">to boil over</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">cierra el grifo antes de que se salga el agua</span><span class="tran_group"> <span class="tran">turn the tap off before the water overflows;</span></span></span><span class="ex_unit"> <span class="ex">se ha salido la leche</span><span class="tran_group"> <span class="tran">the milk has boiled over;</span></span></span><span class="ex_unit"> <span class="ex">el río se salió de su cauce</span><span class="tran_group"> <span class="tran">the river burst its banks</span></span></span></div><div class="idm_group"><div class="idm_unit"><span class="idm">salirse de madre</span><span class="tran_group"> <span class="tran">to lose one's self-control</span></span></div></div></div><div class="sense_main"><a name="5"></a><span class="num">5</span>  <span class="label synonym">(desviarse)</span> <span class="tran_group"> <span class="tran_main">to come off</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">nos salimos de la carretera</span><span class="tran_group"> <span class="tran">we came off the road;</span></span></span><span class="ex_unit"> <span class="ex">salirse de la vía</span><span class="tran_group"> <span class="tran">to jump the rails;</span></span></span><span class="ex_unit"> <span class="ex">salirse del tema</span><span class="tran_group"> <span class="tran">to get off the point</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">salirse de costumbre</span></span><span class="ex_unit"> <span class="ex">salirse de un compromiso</span></span></div></div><div class="sense_main"><a name="6"></a><span class="num">6</span>  <span class="label synonym">(desconectarse)</span> <span class="tran_group"> <span class="tran_main">to come out</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">se ha salido el enchufe</span><span class="tran_group"> <span class="tran">the plug has come out</span></span></span></div></div><div class="sense_main"><a name="7"></a><span class="num">7</span>  <span class="label synonym">(excederse)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">salirse de lo normal</span><span class="tran_group"> <span class="tran">to go beyond what is normal;</span></span></span><span class="ex_unit"> <span class="ex">salirse de los límites</span><span class="tran_group"> <span class="tran">to go beyond the limits</span></span></span></div></div></div><span class="note_header"><em class="em">Para precisar la forma de salir</em></span><div class="note">Aunque <em class="em">salir</em> (<em class="em">de</em>) se suele traducir por <em class="em">come out</em> (<em class="em">of</em>) o por <em class="em">go out</em> (<em class="em">of</em>) según la dirección del movimiento, cuando se quiere especificar la forma en que se realiza ese movimiento, estos verbos se pueden reemplazar por otros como <em class="em">run out</em>, <em class="em">rush out</em>, <em class="em">jump out</em>, <em class="em">tiptoe out</em>, <em class="em">climb out</em> <em class="em">etc</em>:</div><div class="ex_group"><span class="ex_unit"> <span class="ex">Se vio a tres hombres enmascarados salir del banco corriendo</span><span class="tran_group"> <span class="tran"><em class="em">Three masked men were seen running out of the bank</em></span></span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">Salió del coche con un salto</span><span class="tran_group"> <span class="tran"><em class="em">He jumped out of the car</em></span></span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">Salió de puntillas de la habitación</span><span class="tran_group"> <span class="tran"><em class="em">He tiptoed out of the room</em></span></span></span></div><div class="xref"><a class="xrhw" href="http://www.spanishdict.com/translate/salir#">salir</a> </div></div><div class="d-copyright"><a href="http://www.collinsdictionary.com/dictionary/english-spanish" rel="nofollow">Collins Complete Spanish Electronic Dictionary © HarperCollins Publishers 2011</a></div></div></div></div><div class="card machine"><a href="http://www.spanishdict.com/translate/salir?t=1#mt-anchor" rel="nofollow"><div class="machine-img"></div><span class="machine-text">'salir' </span><span class="machine-info">in our machine translators</span></a></div><div class="card fl-fourth-translation"><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=4thtranslation&amp;h=3" target="_blank" data-sd-track-click-type="fluencia" class="fluencia-link sd-track-click"><div class="fluencia-img"></div><div class="fluencia-text">Learn Spanish with Fluencia, the easiest way to learn Spanish from the creators of SpanishDict</div></a></div><div class="card"><div class="card-title">Verb Conjugations for salir</div><div class="conj-row"><a href="http://www.spanishdict.com/answers/100043/gerund-form" target="_blank" class="conj-basic-label">Gerund:</a><span> saliendo</span></div><div class="conj-row"><a href="http://www.spanishdict.com/answers/100044/past-participles" target="_blank" class="conj-basic-label">Participle:</a><span> salido</span></div><div class="conj-row"><span>The irregular conjugations of this verb are in</span><span> </span><span class="conj-irregular">red</span><span>.</span></div><a href="http://www.spanishdict.com/topics/show/112" class="vtable-label">Indicative<span class="icon-question-mark"></span></a><div class="vtable-wrapper"><table class="vtable"><tbody><tr><td class="vtable-empty"></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100045/present-tense" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He speaks* Spanish.">Present<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100046/preterite-simple-past" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He spoke* to my sister yesterday.">Preterite<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100048/imperfect-past" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He used to speak* Italian when he was a child.">Imperfect<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100050/conditional" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He would speak* French in France.">Conditional<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100049/future" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He will speak* Portuguese on his vacation next week.">Future<span class="icon-question-mark"></span></a></td></tr><tr><td class="vtable-pronoun">yo</td><td class="vtable-word conj-irregular ">salgo</td><td class="vtable-word  ">salí</td><td class="vtable-word  ">salía</td><td class="vtable-word conj-irregular ">saldría</td><td class="vtable-word conj-irregular ">saldré</td></tr><tr><td class="vtable-pronoun">tú</td><td class="vtable-word  ">sales</td><td class="vtable-word  ">saliste</td><td class="vtable-word  ">salías</td><td class="vtable-word conj-irregular ">saldrías</td><td class="vtable-word conj-irregular ">saldrás</td></tr><tr><td class="vtable-pronoun">él/ella/Ud.</td><td class="vtable-word  ">sale</td><td class="vtable-word  ">salió</td><td class="vtable-word  ">salía</td><td class="vtable-word conj-irregular ">saldría</td><td class="vtable-word conj-irregular ">saldrá</td></tr><tr><td class="vtable-pronoun">nosotros</td><td class="vtable-word  ">salimos</td><td class="vtable-word  ">salimos</td><td class="vtable-word  ">salíamos</td><td class="vtable-word conj-irregular ">saldríamos</td><td class="vtable-word conj-irregular ">saldremos</td></tr><tr><td class="vtable-pronoun">vosotros</td><td class="vtable-word  ">salís</td><td class="vtable-word  ">salisteis</td><td class="vtable-word  ">salíais</td><td class="vtable-word conj-irregular ">saldríais</td><td class="vtable-word conj-irregular ">saldréis</td></tr><tr><td class="vtable-pronoun">ellos/ellas/Uds.</td><td class="vtable-word  ">salen</td><td class="vtable-word  ">salieron</td><td class="vtable-word  ">salían</td><td class="vtable-word conj-irregular ">saldrían</td><td class="vtable-word conj-irregular ">saldrán</td></tr></tbody></table></div><a href="http://www.spanishdict.com/conjugate/salir" class="card-button-full">View complete conjugation for <strong>salir</strong></a></div><div class="ad-300-250 adContent-results ad-wrapper"><div id="adContent" class="adContent"><script>googletag.cmd.push(function() {
+  googletag.display("adContent");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0" name="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adContent" style="visibility: hidden;" class="pubnation">report this ad</div></div><div id="feedback-query" class="card"><div class="card-title">Did this page answer your question?</div><form><div class="feedback-1"><a href="#" class="feedback-yes"><div class="icon-smile"></div><span>Yes</span></a><a href="#" class="feedback-no"><div class="icon-frown"></div><span>No</span></a></div><div class="feedback-2"><div id="feedback-categories"><div class="feedback-instructions">The page is...</div><div class="feedback-categories-select"><label><input type="radio" name="category" value="inaccurate" />Inaccurate</label><label><input type="radio" name="category" value="unclear" />Unclear</label><label><input type="radio" name="category" value="missingTranslations" />Missing translations</label><label><input type="radio" name="category" value="missingConjugations" />Missing conjugations</label><label><input type="radio" name="category" value="other" />Other</label></div></div><div class="feedback-instructions">What can we do to improve?</div><textarea id="feedback-comment" placeholder="Enter your comment..." required="" class="feedback-comment"></textarea><div class="feedback-instructions">How can we follow up with you? (Optional)</div><input id="feedback-query-email" type="email" placeholder="Enter your email" class="feedback-query-email" /><button type="submit" class="feedback-2-submit">Submit</button></div><div class="feedback-3"><span>Your feedback was sent. We appreciate your comments!</span></div></form></div></div><div class="sidebar-container"><div class="fluencia-sidebar card"><div class="card-title">Want to speak Spanish?</div><div class="fluencia-sidebar-text">Try Fluencia, an amazing learning program from SpanishDict.</div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=sidebar&amp;h=2" target="_blank" data-sd-track-click-type="fluencia" class="fluencia-sidebar-button sd-track-click">Join now</a></div><div class="ad-300-250 adSide-results sidebar-box ad-wrapper"><div id="adSide1" class="adSide1"><script>googletag.cmd.push(function() {
+  googletag.display("adSide1");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0" name="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSide1" style="visibility: hidden;" class="pubnation">report this ad</div></div><div class="wotd-sidebar card"><div class="card-title">Word of the Day</div><div class="wotd-sidebar-date">Mar 11</div><a href="http://www.spanishdict.com/wordoftheday/2326/el-brazo" class="wotd-sidebar-word">el brazo</a><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=el-brazo" data-toggle="tooltip" title="" class="audio-start" data-original-title="Listen to an audio pronunciation"><span class="audio-blue"> </span></a><div class="wotd-sidebar-translation">arm</div><div class="wotd-sidebar-prompt">Get the free word of the day!</div><form action="/users/signup_email_verify" method="post" class="wotd-sidebar-form"><input name="email" type="email" placeholder="email" class="wotd-sidebar-input" /><button type="submit" data-sd-track-click-type="wotd" class="wotd-sidebar-button sd-track-click">Subscribe</button></form></div><div class="ad-300-250 adSide-results sidebar-box ad-wrapper"><div id="adSide2" class="adSide2"><script>googletag.cmd.push(function() {
+  googletag.display("adSide2");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0" name="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSide2" style="visibility: hidden;" class="pubnation">report this ad</div></div><div class="social-sidebar card"><div class="card-title">Stay Connected</div><a href="https://www.facebook.com/pages/SpanishDict/92805940179" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="facebook" class="social-sidebar-button facebook sd-track-click"><div class="social-logo social-facebook-logo"></div></a><a href="https://plus.google.com/106413713006018165072/posts" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="google" class="social-sidebar-button gplus sd-track-click"><div class="social-logo social-gplus-logo"></div></a><a href="https://twitter.com/spanishdict" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="twitter" class="social-sidebar-button twitter sd-track-click"><div class="social-logo social-twitter-logo"></div></a></div><div class="ad-160-600 adSide-long-results sidebar-box-long ad-wrapper"><div id="adSideLong" class="adSideLong"><script>googletag.cmd.push(function() {
+  googletag.display("adSideLong");
+});</script><div id="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0" name="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSideLong" style="visibility: hidden;" class="pubnation">report this ad</div></div></div><div class="ad-wrapper-wide"><div class="ad-728-90 adBot-results ad-wrapper"><div id="adBot" class="adBot"><script>googletag.cmd.push(function() {
+  googletag.display("adBot");
+});</script><div id="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0" name="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adBot" style="visibility: hidden;" class="pubnation">report this ad</div></div></div></div><script src="http://cdn.beanstock.com/pub/cx/flagTag.js"></script><div class="footer-wrapper"><div class="footer footer-container container"><div class="footer-row"><div class="footer-item"><h4>Stay Connected</h4><div class="footer-social"><div class="social"><a href="http://www.facebook.com/pages/SpanishDict/92805940179"><div class="social-icon social-facebook"></div></a><a href="http://www.twitter.com/spanishdict"><div class="social-icon social-twitter"></div></a><a href="https://plus.google.com/106413713006018165072/posts"><div class="social-icon social-gplus"></div></a></div></div></div><div class="footer-item"><h4>iPhone</h4><a href="http://itunes.apple.com/us/app/spanishdict/id332510494"><div class="footer-external footer-external-appstore"></div></a></div><div class="footer-item"><h4>Android</h4><a href="https://play.google.com/store/apps/details?id=com.spanishdictapp"><div class="footer-external footer-external-google-play"></div></a></div><div class="footer-item footer-item-last"><h4>Kindle</h4><a href="http://www.amazon.com/SpanishDict-Spanish-English-Dictionary-and-More/dp/B004UO8ZNQ"><div class="footer-external footer-external-amazon"></div></a></div></div><div class="footer-row"><div class="footer-item"><h4>Spanish Reference</h4><ul><li><a href="http://www.spanishdict.com/translation">English to Spanish translation</a></li><li><a href="http://www.spanishdict.com/translation">Spanish to English translation</a></li><li><a href="http://www.spanishdict.com/dictionary">English to Spanish dictionary</a></li><li><a href="http://www.spanishdict.com/dictionary">Spanish to English dictionary</a></li></ul></div><div class="footer-item"><h4>Learn Spanish</h4><ul><li><a href="http://www.spanishdict.com/learn">Learn Spanish</a></li><li><a href="http://www.spanishdict.com/flashcards">Spanish Flashcards</a></li><li><a href="http://www.spanishdict.com/conjugation">Spanish Verb Conjugation</a></li><li><a href="http://www.spanishdict.com/answers">Spanish-English Q&amp;A</a></li></ul></div><div class="footer-item"><h4>Popular Translations</h4><ul><li><a href="http://www.spanishdict.com/translate/happy">happy in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/cheers">cheers in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/I miss you">I miss you in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/I love you">I love you in Spanish</a></li></ul></div><div class="footer-item footer-item-last"><h4>Popular Conjugations</h4><ul><li><a href="http://www.spanishdict.com/conjugate/querer">querer conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/poner">poner conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/ir">ir conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/saber">saber conjugation</a></li></ul></div></div><div class="footer-meta"><div class="footer-meta-list"><ul><li><a href="http://www.spanishdict.com/company/about">About</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.fluencia.com/about-us/careers/">We're hiring!</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.spanishdict.com/company/privacy">Privacy</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.spanishdict.com/company/tos">Terms</a><span class="footer-meta-list-item-bg"></span></li><li><a href="#" class="go-language">Español</a></li></ul></div><span class="footer-copyright">© Curiosity Media, Inc.</span><div class="footer-exclamation-logo-wrapper"><div class="footer-exclamation-container"><img src="http://n1.sdcdns.com/img/desktop/logoAnimation.gif" class="footer-exclamation-logo" /></div></div></div></div></div><div class="feedback-tab"><button data-toggle="modal" data-target="#feedback-modal">Feedback</button></div><div id="feedback-modal" class="feedback-modal sd-modal modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="sd-modal-title">Feedback</div><div class="sd-modal-close feedback-modal-close"></div><div class="sd-modal-message feedback-modal-message"></div><div class="sd-modal-content feedback-modal-content"><div class="sd-modal-desc">SpanishDict is devoted to improving our site based on user feedback and introducing new and innovative features that will continue to help people learn and love the Spanish language. Have a suggestion, idea, or comment? Send us your feedback.</div><form><label for="feedback-name" class="sd-modal-label">Your name</label><input id="feedback-name" type="text" placeholder="Your name" /><label for="feedback-email" class="sd-modal-label">Email address</label><input id="feedback-email" type="email" placeholder="Email address" /><label for="feedback-subject" class="sd-modal-label">Subject</label><input id="feedback-subject" type="text" placeholder="Subject" required="" /><label for="feedback-message" class="sd-modal-label">Message</label><textarea id="feedback-message" placeholder="Message" rows="5" required=""></textarea><input type="submit" value="Send" class="sd-modal-submit feedback-modal-submit" /></form></div></div></div></div></div><div id="report-this-modal" class="report-this-modal sd-modal modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="sd-modal-close report-this-modal-close"></div><div class="sd-modal-formbox report-this-modal-form-box"><div class="sd-modal-title">Report this ad</div><div class="sd-modal-desc">Spot an annoying ad? Let us know. We hate bad ads as much as you.</div><div class="sd-modal-content"><form><label for="report-this-email" class="sd-modal-label">Email (optional)</label><input id="report-this-email" type="email" placeholder="Email (optional)" /><label for="report-this-message" class="sd-modal-label">Describe what's annoying about this ad...</label><textarea id="report-this-message" placeholder="Describe what's annoying about this ad..." rows="2" required=""></textarea><input type="submit" value="Report ad" class="sd-modal-submit report-this-modal-submit" /></form></div></div><div class="sd-modal-completion-box report-this-modal-completion-box"><div class="sd-modal-title">We're on it!</div><div class="sd-modal-desc">If you see annoying ads in the future, let us know. Thanks!</div></div></div></div></div></div><div id="survey-modal" class="survey-modal modal"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="survey-modal-icon"></div><div class="survey-modal-title">Make Your Voice Heard</div><div class="survey-modal-close"></div><div class="survey-modal-message"></div><div class="survey-modal-content"><div class="survey-modal-desc">You've been randomly selected to participate in a short, 5 question
+survey on your experience with SpanishDict. We'll use your comments
+to help improve your experience.<br />Will you participate?</div><a href="#" target="_blank" class="survey-modal-submit">Take 5 Question Survey</a></div></div></div></div></div><script id="sd_analytics" type="application/json">{&amp;quot;site&amp;quot;:&amp;quot;desktop&amp;quot;,&amp;quot;q&amp;quot;:&amp;quot;salir&amp;quot;,&amp;quot;type&amp;quot;:&amp;quot;translation&amp;quot;,&amp;quot;is_found&amp;quot;:1,&amp;quot;browser_lang&amp;quot;:&amp;quot;en-US&amp;quot;,&amp;quot;result&amp;quot;:&amp;quot;salir&amp;quot;,&amp;quot;result_lang&amp;quot;:&amp;quot;es&amp;quot;,&amp;quot;result_sources&amp;quot;:[&amp;quot;chambers&amp;quot;,&amp;quot;velazquez&amp;quot;,&amp;quot;collins&amp;quot;,&amp;quot;neodict&amp;quot;],&amp;quot;result_has_alt_lang&amp;quot;:false}</script><script src="http://n1.sdcdns.com/dist/jquery-bundle-min-2b83783338b9b488c7286737f2e4b769.gz.js" type="text/javascript" crossorigin="anonymous"></script><script src="http://n1.sdcdns.com/dist/desktop-min-6715b0209d068fca355ab85c7130eb5e.gz.js" type="text/javascript" crossorigin="anonymous"></script><!--[if lte IE 9]><script>(function() {
+  var app = document.createElement('script'); app.type = 'text/javascript'; app.async = true;
+  app.src = 'http://n1.sdcdns.com/js/vendor/placeholders.min.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(app, s);
+})();</script><![endif]--> <script type="text/javascript">
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');   ga('set', 'user_status1', 'anonymous');   ga('set', 'section2', 'translate');   ga('set', 'sd_is_mobile3', 'false');
+   ga('require', 'displayfeatures');
+   ga('create', 'UA-329211-2', 'auto');
+   ga('send', 'pageview');
+ </script><script>var _pnq = _pnq || [];
+_pnq.push(['setId', 'pn-053b5b698be780ef']);
+(function() {
+  var pnr = document.createElement('script');
+  pnr.type = 'text/javascript';
+  pnr.async = true;
+  pnr.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'report-ads-to.pubnation.com/dist/pnr.js?t=pn-053b5b698be780ef';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(pnr, s);
+})();</script></body></html>

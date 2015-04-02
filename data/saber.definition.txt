@@ -1,0 +1,340 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" data-placeholder-focus="false"><head><script src="//cdn.beanstock.com/pub/cx/cx.8ce47cc9.js"></script><script async="" type="text/javascript" src="http://partner.googleadservices.com/gpt/pubads_impl_57.js"></script></head><body data-datetime="2015-03-11T20:08:48" data-is-mobile="false" class="lang-en js-transition-off-during-page-load"><img src="about:blank" style="display:none;" data-bsm-flag="true" data-bsm-zone-map-url="http://cdn.beanstock.com/pub/spanishdict/zm.js" data-bsm-sizes="300x250 728x90 160x600" data-bsm-pub="spanishdict" data-bsm-pub-zone="spanishdict.com/asection" data-bsm-event-host="//helix.beanstock.co" onload="this.onerror()" onerror="var s = document.createElement('script'); s.src = 'http://cdn.beanstock.com/pub/cx/flagTag.js'; document.body.appendChild(s)" /><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><link rel="publisher" href="https://plus.google.com/106413713006018165072" /><link rel="search" title="SpanishDict.com" type="application/opensearchdescription+xml" href="http://www.spanishdict.com/toolbar_search.xml" /><link rel="alternate" hreflang="en" href="http://www.spanishdict.com/translate/saber" /><link rel="alternate" hreflang="es" href="http://www.spanishdict.com/traductor/saber" /><title>Saber in English | Spanish to English Translation</title><meta name="description" content="Translate Saber in English. Get the most accurate Spanish to English translations. Fast. Easy. Free." /><meta property="fb:app_id" content="123097127645" /><meta property="fb:admins" content="1675823057" /><meta property="og:type" content="article" /><meta property="og:site_name" content="SpanishDict" /><meta property="og:title" content="Check out the translation for &quot;saber&quot; on SpanishDict!" /><meta property="og:description" content="Find out why SpanishDict is the web's most popular, free Spanish translation, dictionary, and conjugation site." /><meta property="og:image" content="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><meta property="og:url" content="http://www.spanishdict.com/translate/saber?utm_source=social&amp;utm_medium=facebook&amp;utm_campaign=share" /><script async="" type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script><script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "http://www.spanishdict.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://www.spanishdict.com/translate/{search_term}",
+    "query-input": "required name=search_term"
+  }
+}</script><link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-144x144-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-120x120-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-114x114-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-76x76-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-72x72-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-57x57-precomposed.png" /><link rel="apple-touch-icon-precomposed" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-precomposed.png" /><script>(function(global) {
+  global.SD_ENV="production";
+  global.SD_LOG_LEVEL="warning";
+  global.SD_LANG="en";
+  global.SD_GA_UA="UA-329211-2";
+  global.SD_MP="0d9d3502c20e893b403e6018cccf0388";
+  global.SD_PN_USE=true;
+  global.SD_PN_INTAKE_URL="reports.pubnation.com/api/v1/complaint";
+})(this);</script><link rel="dns-prefetch" href="http://www.google-analytics.com" /><link rel="dns-prefetch" href="http://api.mixpanel.com" /><link rel="dns-prefetch" href="http://cdn.mxpnl.com" /><link rel="dns-prefetch" href="http://suggest1.spanishdict.com" /><link rel="dns-prefetch" href="http://translate1.spanishdict.com" /><meta name="viewport" content="width=1024" /><link rel="canonical" href="http://www.spanishdict.com/translate/saber" /><script>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+  var gads = document.createElement("script");
+  gads.async = true;
+  gads.type = "text/javascript";
+  var useSSL = "https:" == document.location.protocol;
+  gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+  var node = document.getElementsByTagName("script")[0];
+  node.parentNode.insertBefore(gads, node);
+})();
+googletag.cmd.push(function() {
+  googletag.pubads().setTargeting('sd_is_mobile', 'false');
+  googletag.pubads().setTargeting('test_group', '63');
+});
+</script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_HEADER", [728, 90], "adTop").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_FOOTER", [728, 90], "adBot").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR", [300, 250], "adSide1").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR_2", [300, 250], "adSide2").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_160_600_SIDEBAR", [160, 600], "adSideLong").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_CONTENT", [300, 250], "adContent").addService(googletag.pubads());
+ });
+ </script><script>googletag.cmd.push(function() {
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+});</script><link rel="stylesheet" href="http://n1.sdcdns.com/dist/desktop-9b87909ec77e4c63f58e37725458bdf3.gz.css" /><!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://n1.sdcdns.com/dist/desktop-ie8-f7fed1e39cc45ed918639c01178e6dc6.gz.css"><![endif]--><div class="header-wrapper"><div class="header header-container container"><div class="menu-bar"><div class="menu-nav menu-collapsed"><div class="menu-container"><div class="menu-selector"><div class="icon-menu-nav-selector"></div><div class="menu-selector-text">Menu</div><div class="menu-collapse"></div></div><div class="menu"><a href="http://www.spanishdict.com/"><div class="menu-item">Home</div></a><a href="http://www.spanishdict.com/translation"><div class="menu-item">Translation</div></a><a href="http://www.spanishdict.com/conjugation"><div class="menu-item">Conjugation</div></a><a href="http://www.spanishdict.com/learn"><div class="menu-item">Learn Spanish</div></a><a href="http://www.spanishdict.com/flashcards"><div class="menu-item">Flashcards</div></a><a href="http://www.spanishdict.com/grammar"><div class="menu-item">Grammar</div></a><a href="http://www.spanishdict.com/answers"><div class="menu-item">Q &amp; A</div></a><a href="http://www.spanishdict.com/wordoftheday"><div class="menu-item">Word of the Day</div></a><a href="#"><div class="menu-item menu-divider go-language">Ver en español</div></a><div class="menu-fluencia menu-divider"><div class="menu-fluencia-title">Want to learn Spanish?</div><div class="menu-fluencia-text"><span>Try Fluencia, an amazing learning program from SpanishDict.</span></div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=nav_menu&amp;h=1" target="_blank" data-sd-track-click-type="fluencia" class="menu-fluencia-link sd-track-click"><div class="menu-fluencia-button">Yes!</div></a></div></div></div></div><div class="menu-user menu-collapsed"><div class="menu-container"><div class="menu-selector unauthed"><a href="http://www.spanishdict.com/users/login" class="menu-selector-text">Sign in</a></div></div></div><a href="http://www.spanishdict.com/" class="header-logo"></a></div></div></div><div class="content-container container"><div class="ad-wrapper-wide"><div class="ad-728-90 adTop-results ad-wrapper"><div id="adTop" class="adTop"><script>googletag.cmd.push(function() {
+  googletag.display("adTop");
+});</script><iframe src="http://tpc.googlesyndication.com/safeframe/1-0-2/html/container.html" style="visibility: hidden; display: none;"></iframe><div id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div><div data-target="adTop" style="visibility: hidden;" class="pubnation">report this ad</div></div></div><div class="main-container"><div class="search"><div class="search-component search-form"><form action="/translation" method="post" accept-charset="utf-8" data-action="translation" class="search_query_to_url save-history"><span id="hidden-search"></span><div class="search-form-parts search-collapse"><input id="hidden-input" name="isExpand" type="hidden" value="false" /><textarea name="text" id="query" type="search" data-suggest-host="suggest1.spanishdict.com:80" data-suggest-path="/dictionary/translate_auto_suggest" placeholder="Enter Spanish or English text…" autocomplete="off" autocorrect="off" autocapitalize="off" class="search-form-input">saber</textarea><div class="accents"><span data-toggle="tooltip" title="Add á to your text" class="accents-letter">á</span><span data-toggle="tooltip" title="Add é to your text" class="accents-letter">é</span><span data-toggle="tooltip" title="Add í to your text" class="accents-letter">í</span><span data-toggle="tooltip" title="Add ó to your text" class="accents-letter">ó</span><span data-toggle="tooltip" title="Add ú to your text" class="accents-letter">ú</span><span data-toggle="tooltip" title="Add ñ to your text" class="accents-letter">ñ</span><span data-toggle="tooltip" title="Add ¿ to your text" class="accents-letter accents-descender">¿</span><span data-toggle="tooltip" title="Add ¡ to your text" class="accents-letter accents-descender">¡</span><span data-toggle="tooltip" title="Hear audio of the words" class="accents-audio-btn"> </span></div><div data-toggle="tooltip" title="Show the accent buttons and expand the search box." class="search-expand-icon"></div><div data-toggle="tooltip" title="Collapse the search box" class="search-collapse-icon"></div><button type="submit" class="search-form-button">Translate</button></div></form></div></div><div class="translate"><ul class="nav nav-tabs lang-tabs"><li><a href="#translate-es" data-toggle="tab">English to Spanish</a></li><li class="active"><a href="#translate-en" data-toggle="tab">Spanish to English</a></li></ul><div class="tab-content"><div id="translate-es" class="tab-pane"><div class="card card-tab"><div class="quickdef"><div class="source"><h1 class="source-text">saber</h1><a href="http://audio1.spanishdict.com/audio?lang=en&amp;text=saber" data-toggle="tooltip" title="Listen to an audio pronunciation" class="audio-start"><span class="audio-blue"> </span></a></div><div class="lang"><div class="el"><a href="http://www.spanishdict.com/translate/el">el</a> <a href="http://www.spanishdict.com/translate/sable">sable</a></div><span class="media-links"><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=el-sable" data-toggle="tooltip" title="Listen to an audio pronunciation" class="audio-start"><span class="audio-blue"> </span></a></span></div></div><div class="nav-content"><div class="nav-content-item nav-active"><a><span class="nav-content-item-text">Dictionary</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/conjugate/saber"><span class="nav-content-item-text">Conjugation</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/videos/saber"><span class="nav-content-item-text">Video</span></a></div><div class="social-small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.spanishdict.com%2Ftranslate%2Fsaber%3Futm_source%3Dsocial%26utm_medium%3Dfacebook%26utm_campaign%3Dshare" class="social-small-icon social-small-facebook"></a><a target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20the%20translation%20for%20%22saber%22%20on%20%40SpanishDict!&amp;amp;url=http%3A%2F%2Fspanishdict.com%2ftranslate%2Fsaber%3Futm_source%3Dsocial%26utm_medium%3Dtwitter%26utm_campaign%3Dshare" class="social-small-icon social-small-twitter"></a><a target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fspanishdict.com%2Ftranslate%2Fsaber%3Futm_source%3Dsocial%26utm_medium%3Dgoogleplus%26utm_campaign%3Dshare" class="social-small-icon social-small-gplus"></a></div></div><div class="dictionary-entry dictionary-chambers"><div class="LV0">
+<div class="dictionary_word" id="word_saber, saber ">
+<span class="head_word">saber, saber </span>
+<div class="box">
+</div> <span class="pron">[ˈseɪbə(r)] </span>
+<div class="LV2">
+<span class="part_of_speech">noun</span>
+<div class="LV3">
+<span class="def_header">1. </span>
+<span class="def">sable <em class="gender">(m)</em> </span> <em> (Estados Unidos)</em>
+</div>
+</div>
+</div>
+</div><div class="d-copyright"><a href="http://www.amazon.com/Websters-World-Concise-Spanish-Dictionary/dp/0471748366/&amp;tag=spani-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" rel="nofollow">Copyright © 2006 Harrap Publishers Limited</a></div></div><div class="dictionary-line"></div><div class="dictionary-entry dictionary-collins"><div class="entry"><div class="hw_unit"><span class="hw">saber</span> <span class="pron">[ˈseɪbəʳ]</span> </div><div class="gram_cat"><a name="noun"></a><div class="entry_pos">noun</div> <span class="label geo" title="United States">(US)</span><div class="xref"><a class="xrhw" href="http://www.spanishdict.com/translate/sabre#">sabre</a> </div></div></div><div class="d-copyright"><a href="http://www.collinsdictionary.com/dictionary/english-spanish" rel="nofollow">Collins Complete Spanish Electronic Dictionary © HarperCollins Publishers 2011</a></div></div></div></div><div id="translate-en" class="tab-pane active"><div class="card card-tab"><div class="quickdef"><div class="source"><h1 class="source-text">saber</h1><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=saber" data-toggle="tooltip" title="Listen to an audio pronunciation" class="audio-start"><span class="audio-blue"> </span></a><a href="http://www.spanishdict.com/videos/saber"><span data-toggle="tooltip" title="Watch a video translation" class="video-blue"> </span></a></div><div class="lang"><div class="el"><a href="http://www.spanishdict.com/translate/to">to</a> <a href="http://www.spanishdict.com/translate/know">know</a></div><span class="media-links"><a href="http://audio1.spanishdict.com/audio?lang=en&amp;text=to-know" data-toggle="tooltip" title="Listen to an audio pronunciation" class="audio-start"><span class="audio-blue"> </span></a></span></div></div><div class="nav-content"><div class="nav-content-item nav-active"><a><span class="nav-content-item-text">Dictionary</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/conjugate/saber"><span class="nav-content-item-text">Conjugation</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/videos/saber"><span class="nav-content-item-text">Video</span></a></div><div class="social-small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.spanishdict.com%2Ftranslate%2Fsaber%3Futm_source%3Dsocial%26utm_medium%3Dfacebook%26utm_campaign%3Dshare" class="social-small-icon social-small-facebook"></a><a target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20the%20translation%20for%20%22saber%22%20on%20%40SpanishDict!&amp;amp;url=http%3A%2F%2Fspanishdict.com%2ftranslate%2Fsaber%3Futm_source%3Dsocial%26utm_medium%3Dtwitter%26utm_campaign%3Dshare" class="social-small-icon social-small-twitter"></a><a target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fspanishdict.com%2Ftranslate%2Fsaber%3Futm_source%3Dsocial%26utm_medium%3Dgoogleplus%26utm_campaign%3Dshare" class="social-small-icon social-small-gplus"></a></div></div><div class="dictionary-entry dictionary-neodict"><div class="dictionary-neodict-entry-title">saber</div><a href="http://www.spanishdict.com/topics/show/107" title="A transitive verb is a verb that requires a direct object (e.g. I bought a book.)." data-toggle="tooltip" class="has-tooltip dictionary-neodict-first-part-of-speech part_of_speech">transitive verb</a><div class="dictionary-neodict-indent-1"><span class="def">1. </span><span class="context">(to have knowledge)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to know</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Yo sé que la capital de la República Dominicana es Santo Domingo.</span><span class="icon-dash"></span><em class="exB">I know that the capital of the Dominican Republic is Santo Domingo.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">2. </span><span class="context">(to learn)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to find out</span><span class="context"> (in the past tense)</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Lo supe porque lo vi por internet.</span><span class="icon-dash"></span><em class="exB">I found out because I saw it online.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">3. </span><span class="context">(to be able to)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to know how</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Mi hijo no sabe amarrarse los zapatos.</span><span class="icon-dash"></span><em class="exB">My son doesn't know how to tie his shoes.</em></div></div></div></div><a href="http://www.spanishdict.com/topics/show/107" title="An intrasitive verb is one that does not require a direct object (e.g. The man sneezed.)." data-toggle="tooltip" class="has-tooltip part_of_speech">intransitive verb</a><div class="dictionary-neodict-indent-1"><span class="def">4. </span><span class="context">(to have a flavor)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to taste</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Sabe a miel.</span><span class="icon-dash"></span><em class="exB">It tastes like honey.</em></div></div></div></div><a href="http://www.spanishdict.com/topics/show/86" title="An impersonal verb is a verb with no apparent subject (e.g. Llueve en España.)." data-toggle="tooltip" class="has-tooltip part_of_speech">impersonal verb</a><div class="dictionary-neodict-indent-1"><span class="def">5. </span><span class="context">(to have knowledge)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to know</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Se sabe que los vampiros se alimentan de sangre.</span><span class="icon-dash"></span><em class="exB">It is known that vampires feed on blood.</em></div></div></div></div><a href="http://www.spanishdict.com/topics/show/1" title="A masculine noun is used with masculine articles and adjectives (e.g. el hombre guapo, el sol amarillo)." data-toggle="tooltip" class="has-tooltip part_of_speech">masculine noun</a><div class="dictionary-neodict-indent-1"><span class="def">6. </span><span class="context">(wisdom)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> knowledge</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>El saber popular se basa en creencias.</span><span class="icon-dash"></span><em class="exB">Popular knowledge is based on beliefs.</em></div></div></div></div><div class="dictionary-neodict-entry-title">saberse</div><a href="http://www.spanishdict.com/topics/show/107" title="A pronominal verb always uses a reflexive pronoun. (e.g. Te ves cansado.)." data-toggle="tooltip" class="has-tooltip dictionary-neodict-first-part-of-speech part_of_speech">pronominal verb</a><div class="dictionary-neodict-indent-1"><span class="def">7. </span><span class="context">(to have knowledge)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a.</span><span class="dictionary-neodict-translation-translation"> to know</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span>Me sé todas las canciones de Elvis.</span><span class="icon-dash"></span><em class="exB">I know all Elvis' songs.</em></div></div></div></div><div class="d-copyright"><a href="http://www.spanishdict.com" rel="nofollow">Copyright © 2014 Curiosity Media Inc.</a></div></div><div class="dictionary-line"></div><div class="dictionary-entry dictionary-chambers"><div class="LV0">
+<div class="dictionary_word" id="word_saber ">
+<span class="head_word">saber </span>
+<div class="box">
+</div> <span class="pron">
+</span>
+<div class="LV2">
+<span class="part_of_speech">masculine noun</span>
+<div class="LV3">
+<span class="def_header">1. </span>
+<span class="def">knowledge </span> <em>
+</em>
+<ul class="examples">
+<li>
+<span>el saber no ocupa lugar </span>
+<em class="context">(Prov) </em> <span class="icon-dash"></span><em class="exB">you can never know too much </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<span class="part_of_speech">transitive verb</span>
+<div class="LV3">
+<span class="def_header">2. </span>
+<span class="def">to know </span> <em>
+<em class="context">(conocer)</em>
+</em>
+<ul class="examples">
+<li>
+<span>ya lo sé </span><span class="icon-dash"></span><em class="exB">I know </em>
+<em class="context">
+</em> </li>
+<li>
+<span>de haberlo sabido (antes) <i>o</i> si lo llego a saber, me quedo en casa </span><span class="icon-dash"></span><em class="exB">if I'd known, I'd have stayed at home </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hacer saber algo a alguien </span><span class="icon-dash"></span><em class="exB">to inform somebody of something, to tell somebody something </em>
+<em class="context">
+</em> </li>
+<li>
+<span>para que lo sepas, somos amigos </span><span class="icon-dash"></span><em class="exB">we're friends, for your information </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">3. </span>
+<em>
+<em class="context">(ser capaz de)</em>
+</em>
+<ul class="examples">
+<li>
+<span>saber hacer algo </span><span class="icon-dash"></span><em class="exB">to know how to do something, to be able to do something </em>
+<em class="context">
+</em> </li>
+<li>
+<span>no sé nadar </span><span class="icon-dash"></span><em class="exB">I can't swim, I don't know how to swim </em>
+<em class="context">
+</em> </li>
+<li>
+<span>sabe hablar inglés/montar en bici </span><span class="icon-dash"></span><em class="exB">she can speak English/ride a bike </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">4. </span>
+<span class="def">to learn, to find out </span> <em>
+<em class="context">(enterarse de)</em>
+</em>
+<ul class="examples">
+<li>
+<span>lo supe ayer </span><span class="icon-dash"></span><em class="exB">I found out yesterday </em>
+<em class="context">
+</em> </li>
+<li>
+<span>¿sabes algo de Juan?, ¿qué sabes de Juan? </span><span class="icon-dash"></span><em class="exB">have you had any news from <i>o</i> heard from Juan? </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">5. </span>
+<span class="def">to know about </span> <em>
+<em class="context">(entender de)</em>
+</em>
+<ul class="examples">
+<li>
+<span>sabe mucha física </span><span class="icon-dash"></span><em class="exB">he knows a lot about physics </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">6. </span>
+<em>
+<em class="context">(expresiones)</em>
+</em>
+<ul class="examples">
+<li>
+<span>no saber dónde meterse </span><span class="icon-dash"></span><em class="exB">not to know where to put oneself </em>
+<em class="context">
+</em> </li>
+<li>
+<span>no sabe lo que se hace </span><span class="icon-dash"></span><em class="exB">he doesn't know what he's doing </em>
+<em class="context">
+</em> </li>
+<li>
+<span>no sabe lo que tiene </span><span class="icon-dash"></span><em class="exB">he doesn't realize just how lucky he is </em>
+<em class="context">
+</em> </li>
+<li>
+<span>no sé qué decir </span><span class="icon-dash"></span><em class="exB">I don't know what to say </em>
+<em class="context">
+</em> </li>
+<li>
+<span>¡qué sé yo! </span><span class="icon-dash"></span><em class="exB">how should I know! </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<span class="part_of_speech">intransitive verb</span>
+<div class="LV3">
+<span class="def_header">7. </span>
+<span class="def">to taste </span> <em>
+<em class="context">(tener sabor)</em>
+</em>(<b>a</b> of) <ul class="examples">
+<li>
+<span>saber bien/mal </span><span class="icon-dash"></span><em class="exB">to taste good/bad </em>
+<em class="context">
+</em> </li>
+<li>
+<span>saber a cuernos <i>o </i>rayos </span>
+<em class="context">(informal figurative) </em> <span class="icon-dash"></span><em class="exB">to taste disgusting <i>o </i>revolting </em>
+<em class="context">
+</em> </li>
+<li>
+<span>le supo mal </span>
+<em class="context">(figurative) </em> <span class="icon-dash"></span><em class="exB">it upset <i>o </i>annoyed him </em>
+<em class="context">(le enfadó)</em> </li>
+<li>
+<span>me sabe mal mentirle </span>
+<em class="context">(figurative) </em> <span class="icon-dash"></span><em class="exB">I feel bad about lying to him </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">8. </span>
+<em>
+<em class="context">(entender)</em>
+</em>
+<ul class="examples">
+<li>
+<span>saber de algo </span><span class="icon-dash"></span><em class="exB">to know about something </em>
+<em class="context">
+</em> </li>
+<li>
+<span>ése sí que sabe </span><span class="icon-dash"></span><em class="exB">he's a canny one </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">9. </span>
+<em>
+<em class="context">(tener noticia)</em>
+</em>
+<ul class="examples">
+<li>
+<span>saber de alguien </span><span class="icon-dash"></span><em class="exB">to hear from somebody </em>
+<em class="context">
+</em> </li>
+<li>
+<span>saber de algo </span><span class="icon-dash"></span><em class="exB">to learn of something </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">10. </span>
+<em>
+<em class="context">(parecer)</em>
+</em>
+<ul class="examples">
+<li>
+<span>eso me sabe a disculpa </span><span class="icon-dash"></span><em class="exB">that sounds like an excuse to me </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">11. </span>
+<em>
+<em class="context">(expresiones)</em>
+</em>
+<ul class="examples">
+<li>
+<span>a saber </span><span class="icon-dash"></span><em class="exB">namely </em>
+<em class="context">(es decir)</em> </li>
+<li>
+<span>¡quién sabe!, ¡vete a saber! </span><span class="icon-dash"></span><em class="exB">who knows! </em>
+<em class="context">
+</em> </li>
+<li>
+<span>que yo sepa </span><span class="icon-dash"></span><em class="exB">as far as I know </em>
+<em class="context">
+</em> </li>
+<li>
+<span>no sabe por dónde se anda </span><span class="icon-dash"></span><em class="exB">he doesn't have a clue </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<div class="subheadword">saberse </div> <span class="part_of_speech">pronominal verb</span>
+<div class="LV3">
+<em class="def_also"> also: </em>
+<ul class="examples">
+<li>
+<span>saberse algo </span><span class="icon-dash"></span><em class="exB">to know something </em>
+<em class="context">
+</em> </li>
+<li>
+<span>saberse algo al dedillo </span><span class="icon-dash"></span><em class="exB">to know something inside out </em>
+<em class="context">
+</em> </li>
+<li>
+<span>sabérselas todas </span>
+<em class="context">(figurative) </em> <span class="icon-dash"></span><em class="exB">to know all the tricks </em>
+<em class="context">
+</em> </li>
+<li>
+<span>llegar a saberse </span><span class="icon-dash"></span><em class="exB">to come to light </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="d-copyright"><a href="http://www.amazon.com/Websters-World-Concise-Spanish-Dictionary/dp/0471748366/&amp;tag=spani-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" rel="nofollow">Copyright © 2006 Harrap Publishers Limited</a></div></div><div class="dictionary-line"></div><div class="dictionary-entry dictionary-collins"><div class="entry"><div class="hw_unit"><span class="hw">saber</span></div><div class="gram_cat"><a name="verbo:transitivo"></a><div class="entry_pos">transitive verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="label synonym">(tener conocimiento de)</span> <span class="sense"> <span class="label collate object">[+dato, información]</span> <span class="tran_group"> <span class="tran_main">to know</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">no sabía que era tu cumpleaños</span><span class="tran_group"> <span class="tran">I didn't know it was your birthday;</span></span></span><span class="ex_unit"> <span class="ex">sé que me has mentido</span><span class="tran_group"> <span class="tran">I know you've lied to me;</span></span></span><span class="ex_unit"> <span class="ex">lo sé</span><span class="tran_group"> <span class="tran">I know;</span></span></span><span class="ex_unit"> <span class="ex">sin saberlo yo</span><span class="tran_group"> <span class="tran">without my knowledge;</span> <span class="tran">without me knowing</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">hacer</em> saber algo a algn</span></span><span class="tran_group"> <span class="tran">to inform sb of sth;</span> <span class="tran">let sb know about sth</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">El Ayuntamiento hace saber a los peregrinos en el aviso,que » Prado Nuevo constituye un bien patrimonial o propiedad privada,</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">quiero hacerle saber que ...</span><span class="tran_group"> <span class="tran">I would like to inform <em class="or" title="es-es">o</em> advise you that ...</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">Pero sí quiero hacerle saber que la mayoría de los miembros del Ejército somos los más interesados en que la Justicia aclare estos supuestos</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">el motivo de esta carta es hacerle saber que ...</span><span class="tran_group"> <span class="tran">I am writing to inform <em class="or" title="es-es">o</em> advise you that ...</span></span></span></div></div></span><span class="sense"> <span class="context">(locuciones)</span> <div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">a</em> saber</span></span><span class="tran_group"> <span class="tran">namely</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">dos planetas, a saber, Venus y la Tierra</span><span class="tran_group"> <span class="tran">two planets, namely Venus and Earth</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">es a saber</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">a saber si realmente lo compró</span><span class="tran_group"> <span class="tran">I wonder whether he really did buy it;</span></span></span><span class="ex_unit"> <span class="ex">a saber dónde lo tiene guardado</span><span class="tran_group"> <span class="tran">I wonder where he has it hidden away</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">¡<em class="c">anda</em> a saber!</span> <span class="label geo" title="">(Latinoamérica)</span></span><span class="tran_group"> <span class="tran">God knows!</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">demasiado <em class="c">bien</em> sé que ...</span></span><span class="tran_group"> <span class="tran">I know only too well that ...</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">¡no lo sabes bien!</span><span class="tran_group"> <span class="tran">not half!  <span class="label register">(familiar)</span></span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">cualquiera</em> sabe si ...</span></span><span class="tran_group"> <span class="tran">it's anybody's guess whether ...</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">¡de <em class="c">haberlo</em> sabido!</span></span><span class="tran_group"> <span class="tran">if only I'd known!</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">lo dudo, pero <em class="c">nunca</em> se sabe</span></span><span class="tran_group"> <span class="tran">I doubt it, but you never know</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">para</em> que lo sepas</span></span><span class="tran_group"> <span class="tran">let me tell you;</span> <span class="tran">for your information</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">para que lo sepas</span></span><span class="ex_unit"> <span class="ex">nosotras, señor mío, para que lo sepa,somos muy mujeres</span></span><span class="ex_unit"> <span class="ex">von Braun, autentico maestro en su campo, pero para que lo sepas, el tampoco invento el cohete</span></span><span class="ex_unit"> <span class="ex">crees que no se te está viendo; pues, para que lo sepas, te estoy viendo</span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">que</em> yo sepa</span></span><span class="tran_group"> <span class="tran">as far as I know</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">que sepamos</span><span class="tran_group"> <span class="tran">as far as we know</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">un no sé <em class="c">qué</em></span></span><span class="tran_group"> <span class="tran">a certain something</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">un no sé qué de afectado</span><span class="tran_group"> <span class="tran">a certain (element of) affectation</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hay en su carácter un no sé qué de baturro</span></span><span class="ex_unit"> <span class="ex">Había en ella un no sé qué indefenso</span></span><span class="ex_unit"> <span class="ex">un profesor con un no sé qué de extraño en la mirada</span></span><span class="ex_unit"> <span class="ex">Su mirada tenía un no sé qué irónico</span></span><span class="ex_unit"> <span class="ex">nos sirvió no sé qué vino</span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">¡<em class="c">quién</em> sabe!</span></span><span class="tran_group"> <span class="tran">who knows!</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">¿quién sabe?</span><span class="tran_group"> <span class="tran">who knows?;</span> <span class="tran">who can tell?;</span> <span class="tran">who's to say?</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">¡<em class="c">si</em> lo sabré yo!</span></span><span class="tran_group"> <span class="tran">I should know!</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">tú</em> sabrás (lo que haces)</span></span><span class="tran_group"> <span class="tran">I suppose you know (what you're doing)</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">¿tú qué sabes?</span><span class="tran_group"> <span class="tran">what do you know about it?</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">¡<em class="c">vete</em> a saber!</span></span><span class="tran_group"> <span class="tran">God knows!</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">¡vete a saber de dónde ha venido!</span><span class="tran_group"> <span class="tran">goodness only knows where he came from!;</span></span></span><span class="ex_unit"> <span class="ex">vete tú a saber</span><span class="tran_group"> <span class="tran">your guess is as good as mine</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">ya</em> lo sabía yo</span></span><span class="tran_group"> <span class="tran">I thought as much</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">¡<em class="c">yo</em> qué sé!, ¡qué sé yo!</span></span><span class="tran_group"> <span class="tran">how should I know!;</span> <span class="tran">search me!  <span class="label register">(familiar)</span></span></span></div><div class="idm_group"><div class="idm_unit"><span class="idm">cada uno sabe dónde le aprieta el zapato</span><span class="tran_group"> <span class="tran">everyone knows their own weaknesses</span></span></div><div class="idm_unit"><span class="idm">no sabía dónde meterse</span><span class="tran_group"> <span class="tran">he didn't know what to do with himself</span></span></div><div class="idm_unit"><span class="idm">no saber ni papa</span><span class="tran_group"> <span class="tran">not to know the first thing about sth</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">no saber a qué quedarse</span></span></div></div></div></span><div class="xref"><a class="xrhw" href="http://www.spanishdict.com/translate/Briján#">Briján</a> </div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="label synonym">(enterarse de)</span> <span class="tran_group"> <span class="tran_main">to find out</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">en cuanto lo supimos fuimos a ayudarle</span><span class="tran_group"> <span class="tran">as soon as we found out, we went to help him;</span></span></span><span class="ex_unit"> <span class="ex">cuando lo supe</span><span class="tran_group"> <span class="tran">when I heard <em class="or" title="es-es">o</em> found out about it;</span></span></span><span class="ex_unit"> <span class="ex">lograron saber el secreto</span><span class="tran_group"> <span class="tran">they managed to learn the secret</span></span></span></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="label synonym">(tener noticias)</span> <span class="tran_group"> <span class="tran_main">to hear</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">desde hace seis meses no sabemos nada de él</span><span class="tran_group"> <span class="tran">we haven't heard from him for six months</span></span></span></div></div><div class="sense_main"><a name="4"></a><span class="num">4</span>  <span class="label synonym">(tener destreza en)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">¿sabes ruso?</span><span class="tran_group"> <span class="tran">do you speak Russian?;</span> <span class="tran">can you speak Russian?;</span></span></span><span class="ex_unit"> <span class="ex">no sé nada de cocina</span><span class="tran_group"> <span class="tran">I don't know anything about cookery;</span> <span class="tran">I know nothing about cookery</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">saber <em class="c">hacer</em> algo</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">sabe cuidar de sí mismo</span><span class="tran_group"> <span class="tran">he can take care of himself;</span> <span class="tran">he knows how to take care of himself;</span></span></span><span class="ex_unit"> <span class="ex">¿sabes nadar?</span><span class="tran_group"> <span class="tran">can you swim?;</span></span></span><span class="ex_unit"> <span class="ex">saben tratar muy bien al forastero</span><span class="tran_group"> <span class="tran">they know how to look after visitors</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">los españoles saben tratar muy bien al forastero</span></span><span class="ex_unit"> <span class="ex">el público sabe discernir</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">¿sabes ir?</span><span class="tran_group"> <span class="tran">do you know the way?;</span></span></span><span class="ex_unit"> <span class="ex">todavía no sabe orientarse por la ciudad</span><span class="tran_group"> <span class="tran">he still doesn't know his way around town;</span></span></span><span class="ex_unit"> <span class="ex">pocos campeones saben perder</span><span class="tran_group"> <span class="tran">few champions are good losers;</span></span></span><span class="ex_unit"> <span class="ex">es una persona que sabe escuchar</span><span class="tran_group"> <span class="tran">she's a good listener</span></span></span></div></div></div><div class="sense_main"><a name="5"></a><span class="num">5</span>  <span class="label geo" title="">(Latinoamérica)</span><div class="ex_group"><span class="ex_unit"> <span class="ex">saber hacer</span><span class="tran_group"> <span class="tran">to be in the habit of doing;</span></span></span><span class="ex_unit"> <span class="ex">no sabe venir por aquí</span><span class="tran_group"> <span class="tran">he doesn't usually come this way;</span> <span class="tran">he's not in the habit of coming along here</span></span></span></div></div></div><div class="gram_cat"><a name="verbo:intransitivo"></a><div class="entry_pos">intransitive verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="label synonym">(tener conocimiento)</span> <div class="phs_group"><span class="ph_unit"><span class="ph">saber <em class="c">de</em> algo</span></span><span class="tran_group"> <span class="tran">to know of sth</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">sabe mucho de ordenadores</span><span class="tran_group"> <span class="tran">he knows a lot about computers;</span></span></span><span class="ex_unit"> <span class="ex">sé de un sitio muy bueno</span><span class="tran_group"> <span class="tran">I know of a very good place</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">yo sé de una gata que está cuidando, educando a los gatitos que ella no parió, que parió otra gata que luego mo.. murió</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">hace mucho que no sabemos de ella</span><span class="tran_group"> <span class="tran">it's quite a while since we heard from her;</span> <span class="tran">we haven't had any news from her for quite a while</span></span></span></div></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="label synonym">(estar enterado)</span> <span class="tran_group"> <span class="tran_main">to know</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">costó muy caro, ¿sabe usted?</span><span class="tran_group"> <span class="tran">it was very expensive, you know</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">los "no sabe, no contesta"</span></span><span class="ex_unit"> <span class="ex">Los no sabe, no contesta" pasaron de significar la mitad de los encuestados a</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">un 5% no sabe, no contesta</span><span class="tran_group"> <span class="tran">there were 5% "don't knows"</span></span></span></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="label synonym">(tener sabor)</span> <span class="tran_group"> <span class="tran_main">to taste</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">no sabe demasiado bien</span><span class="tran_group"> <span class="tran">it doesn't taste too good;</span></span></span><span class="ex_unit"> <span class="ex">sabe un poco amargo</span><span class="tran_group"> <span class="tran">it tastes rather bitter</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">saber <em class="c">a</em></span></span><span class="tran_group"> <span class="tran">to taste of</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">esto sabe a queso</span><span class="tran_group"> <span class="tran">this tastes of cheese;</span></span></span><span class="ex_unit"> <span class="ex">esto sabe a demonio(s)</span><span class="tran_group"> <span class="tran">this tastes awful</span></span></span></div></div><div class="idm_group"><div class="idm_unit"><span class="idm">saberle mal a algn</span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">le sabe mal que otro la saque a bailar</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">me supo muy mal lo que hicieron</span><span class="tran_group"> <span class="tran">I didn't like what they did;</span> <span class="tran">I wasn't pleased <em class="or" title="es-es">o</em> didn't feel good about what they did</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">me supo mal que no me invitaran</span></span><span class="ex_unit"> <span class="ex">Me sabría mal que Laudrup fichara por el Madrid</span></span><span class="ex_unit"> <span class="ex">le ha sabido muy mal dejar el ministerio</span></span><span class="ex_unit"> <span class="ex">A Largo Caballero le supo muy mal lo hecho por Asua</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">no me sabe mal que un amigo me gaste bromas</span><span class="tran_group"> <span class="tran">I don't mind a friend playing jokes on me;</span> <span class="tran">it doesn't bother me having a friend play jokes on me</span></span></span></div></div></div></div></div><div class="gram_cat"><a name="verbo:pronominal"></a><div class="entry_pos">pronominal verb</div><span class="drv">saberse</span><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="context">(uso enfático)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">eso ya me lo sabía yo</span><span class="tran_group"> <span class="tran">I already knew that;</span></span></span><span class="ex_unit"> <span class="ex">se lo sabe de memoria</span><span class="tran_group"> <span class="tran">she knows it by heart</span></span></span></div><div class="idm_group"><div class="idm_unit"><span class="idm">se las sabe todas</span><span class="tran_group"> <span class="tran">he knows every trick in the book  <span class="label register">(familiar)</span></span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">un Mao cínico y cansado, autodidacta, que se las sabe todas</span></span><span class="ex_unit"> <span class="ex">se las sabe todas en lo que a negociar se refiere,</span></span><span class="ex_unit"> <span class="ex">en cuanto a técnicas y formas de aplicarlas, se las sabe todas</span></span></div></div></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="context">(uso impersonal)</span> <span class="sense"> <span class="label synonym">(ser conocido)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">ya se sabe que ...</span><span class="tran_group"> <span class="tran">it is known that ...;</span> <span class="tran">we know that ...;</span></span></span><span class="ex_unit"> <span class="ex">no se sabe</span><span class="tran_group"> <span class="tran">nobody knows;</span> <span class="tran">it's not known;</span></span></span><span class="ex_unit"> <span class="ex">no se saben las causas</span><span class="tran_group"> <span class="tran">the causes are not known <em class="or" title="es-es">o</em> are unknown;</span></span></span><span class="ex_unit"> <span class="ex">¿se puede saber si ...?</span><span class="tran_group"> <span class="tran">can you tell me if <em class="or" title="es-es">o</em> whether ...?;</span></span></span><span class="ex_unit"> <span class="ex">¿quién es usted, si se puede saber?</span><span class="tran_group"> <span class="tran">who are you, may I ask?;</span></span></span><span class="ex_unit"> <span class="ex">sépase que ...</span><span class="tran_group"> <span class="tran">let it be known that ...;</span></span></span><span class="ex_unit"> <span class="ex">nunca más se supo de ellos</span><span class="tran_group"> <span class="tran">they were never heard of again</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">partió al frente con los del camión. Nunca más se supo de él</span></span><span class="ex_unit"> <span class="ex">los guardaespaldas de Sarasola, de los que nunca más se supo</span></span></div></span><span class="sense"> <span class="label synonym">(ser descubierto)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">se supo que ...</span><span class="tran_group"> <span class="tran">it was learnt <em class="or" title="es-es">o</em> discovered that ...;</span></span></span><span class="ex_unit"> <span class="ex">por fin se supo el secreto</span><span class="tran_group"> <span class="tran">finally the secret was revealed</span></span></span></div></span></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="context">(de uno mismo)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">se saben héroes</span><span class="tran_group"> <span class="tran">they know they are heroes</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">unos seres que se saben condenados a morir</span></span></div></div></div><div class="gram_cat"><span class="sense"><span class="tran_group"> <span class="tran_main">knowledge;</span> <span class="tran_main">learning</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">según mi leal saber y entender</span><span class="tran_group"> <span class="tran">to the best of my knowledge</span></span></span></div><div class="cpd_group"><span class="cpd">saber hacer</span>  <span class="label subject" title="">(Técnica)</span> <span class="tran_group"> <span class="tran">know-how;</span></span> <span class="label subject" title="">(Literat)</span> <span class="tran_group"> <span class="tran">savoir-faire</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">con ese saber hacer que le caracteriza se defendió muy bien ante los periodistas</span></span></div></div><div class="cpd_group"><span class="cpd">saber popular</span> <span class="tran_group"> <span class="tran">folk wisdom</span></span></div></span></div><div class="note">Por regla general, si <em class="em">saber</em> va seguido de un infinitivo, se traduce por <em class="em">can</em> cuando indica una habilidad permanente y por <em class="em">know how</em> cuando se trata de la capacidad de resolver un problema concreto. La construcción correspondiente habrá de ser <em class="em">can</em> + INFINITIVO <em class="em">sin</em> <em class="em">to</em> <em class="or" title="es-es">o</em> <em class="em">know how</em> + INFINITIVO <em class="em">con</em> <em class="em">to</em>:</div><div class="ex_group"><span class="ex_unit"> <span class="ex">Jaime sabe tocar el piano</span><span class="tran_group"> <span class="tran"><em class="em">Jaime can play the piano</em></span></span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">¿Sabes cambiar una rueda?</span><span class="tran_group"> <span class="tran"><em class="em">Do you know how to change a wheel?</em></span></span></span></div><div class="note">Hay que tener en cuenta que <em class="em">know</em> (sin <em class="em">how</em>) nunca puede ir seguido directamente de un infinitivo en inglés.</div><div class="xref"><a class="xrhw" href="http://www.spanishdict.com/translate/saber#sustantivo:masculino">saber</a> </div></div><div class="d-copyright"><a href="http://www.collinsdictionary.com/dictionary/english-spanish" rel="nofollow">Collins Complete Spanish Electronic Dictionary © HarperCollins Publishers 2011</a></div></div></div></div></div></div><div class="card machine"><a href="http://www.spanishdict.com/translate/saber?t=1#mt-anchor" rel="nofollow"><div class="machine-img"></div><span class="machine-text">'saber' </span><span class="machine-info">in our machine translators</span></a></div><div class="card fl-fourth-translation"><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=4thtranslation&amp;h=3" target="_blank" data-sd-track-click-type="fluencia" class="fluencia-link sd-track-click"><div class="fluencia-img"></div><div class="fluencia-text">Learn Spanish with Fluencia, the easiest way to learn Spanish from the creators of SpanishDict</div></a></div><div class="card"><div class="card-title">Verb Conjugations for saber</div><div class="conj-row"><a href="http://www.spanishdict.com/answers/100043/gerund-form" target="_blank" class="conj-basic-label">Gerund:</a><span> sabiendo</span></div><div class="conj-row"><a href="http://www.spanishdict.com/answers/100044/past-participles" target="_blank" class="conj-basic-label">Participle:</a><span> sabido</span></div><div class="conj-row"><span>The irregular conjugations of this verb are in</span><span> </span><span class="conj-irregular">red</span><span>.</span></div><a href="http://www.spanishdict.com/topics/show/112" class="vtable-label">Indicative<span class="icon-question-mark"></span></a><div class="vtable-wrapper"><table class="vtable"><tbody><tr><td class="vtable-empty"></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100045/present-tense" title="Tense example: *He speaks* Spanish." data-toggle="tooltip" class="vtable-title-link">Present<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100046/preterite-simple-past" title="Tense example: *He spoke* to my sister yesterday." data-toggle="tooltip" class="vtable-title-link">Preterite<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100048/imperfect-past" title="Tense example: *He used to speak* Italian when he was a child." data-toggle="tooltip" class="vtable-title-link">Imperfect<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100050/conditional" title="Tense example: *He would speak* French in France." data-toggle="tooltip" class="vtable-title-link">Conditional<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100049/future" title="Tense example: *He will speak* Portuguese on his vacation next week." data-toggle="tooltip" class="vtable-title-link">Future<span class="icon-question-mark"></span></a></td></tr><tr><td class="vtable-pronoun">yo</td><td class="vtable-word conj-irregular ">sé</td><td class="vtable-word conj-irregular ">supe</td><td class="vtable-word  ">sabía</td><td class="vtable-word conj-irregular ">sabría</td><td class="vtable-word conj-irregular ">sabré</td></tr><tr><td class="vtable-pronoun">tú</td><td class="vtable-word  ">sabes</td><td class="vtable-word conj-irregular ">supiste</td><td class="vtable-word  ">sabías</td><td class="vtable-word conj-irregular ">sabrías</td><td class="vtable-word conj-irregular ">sabrás</td></tr><tr><td class="vtable-pronoun">él/ella/Ud.</td><td class="vtable-word  ">sabe</td><td class="vtable-word conj-irregular ">supo</td><td class="vtable-word  ">sabía</td><td class="vtable-word conj-irregular ">sabría</td><td class="vtable-word conj-irregular ">sabrá</td></tr><tr><td class="vtable-pronoun">nosotros</td><td class="vtable-word  ">sabemos</td><td class="vtable-word conj-irregular ">supimos</td><td class="vtable-word  ">sabíamos</td><td class="vtable-word conj-irregular ">sabríamos</td><td class="vtable-word conj-irregular ">sabremos</td></tr><tr><td class="vtable-pronoun">vosotros</td><td class="vtable-word  ">sabéis</td><td class="vtable-word conj-irregular ">supisteis</td><td class="vtable-word  ">sabíais</td><td class="vtable-word conj-irregular ">sabríais</td><td class="vtable-word conj-irregular ">sabréis</td></tr><tr><td class="vtable-pronoun">ellos/ellas/Uds.</td><td class="vtable-word  ">saben</td><td class="vtable-word conj-irregular ">supieron</td><td class="vtable-word  ">sabían</td><td class="vtable-word conj-irregular ">sabrían</td><td class="vtable-word conj-irregular ">sabrán</td></tr></tbody></table></div><a href="http://www.spanishdict.com/conjugate/saber" class="card-button-full">View complete conjugation for <strong>saber</strong></a></div><div class="card"><div class="card-title">Search history</div><div class="search-history-items"></div></div><div class="ad-300-250 adContent-results ad-wrapper"><div id="adContent" class="adContent"><script>googletag.cmd.push(function() {
+  googletag.display("adContent");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0" name="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adContent" style="visibility: hidden;" class="pubnation">report this ad</div></div><div id="feedback-query" class="card"><div class="card-title">Did this page answer your question?</div><form><div class="feedback-1"><a href="#" class="feedback-yes"><div class="icon-smile"></div><span>Yes</span></a><a href="#" class="feedback-no"><div class="icon-frown"></div><span>No</span></a></div><div class="feedback-2"><div id="feedback-categories"><div class="feedback-instructions">The page is...</div><div class="feedback-categories-select"><label><input type="radio" name="category" value="inaccurate" />Inaccurate</label><label><input type="radio" name="category" value="unclear" />Unclear</label><label><input type="radio" name="category" value="missingTranslations" />Missing translations</label><label><input type="radio" name="category" value="missingConjugations" />Missing conjugations</label><label><input type="radio" name="category" value="other" />Other</label></div></div><div class="feedback-instructions">What can we do to improve?</div><textarea id="feedback-comment" placeholder="Enter your comment..." required="" class="feedback-comment"></textarea><div class="feedback-instructions">How can we follow up with you? (Optional)</div><input id="feedback-query-email" type="email" placeholder="Enter your email" class="feedback-query-email" /><button type="submit" class="feedback-2-submit">Submit</button></div><div class="feedback-3"><span>Your feedback was sent. We appreciate your comments!</span></div></form></div></div><div class="sidebar-container"><div class="fluencia-sidebar card"><div class="card-title">Want to speak Spanish?</div><div class="fluencia-sidebar-text">Try Fluencia, an amazing learning program from SpanishDict.</div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=sidebar&amp;h=2" target="_blank" data-sd-track-click-type="fluencia" class="fluencia-sidebar-button sd-track-click">Join now</a></div><div class="ad-300-250 adSide-results sidebar-box ad-wrapper"><div id="adSide1" class="adSide1"><script>googletag.cmd.push(function() {
+  googletag.display("adSide1");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0" name="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSide1" style="visibility: hidden;" class="pubnation">report this ad</div></div><div class="wotd-sidebar card"><div class="card-title">Word of the Day</div><div class="wotd-sidebar-date">Mar 11</div><a href="http://www.spanishdict.com/wordoftheday/2326/el-brazo" class="wotd-sidebar-word">el brazo</a><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=el-brazo" data-toggle="tooltip" title="Listen to an audio pronunciation" class="audio-start"><span class="audio-blue"> </span></a><div class="wotd-sidebar-translation">arm</div><div class="wotd-sidebar-prompt">Get the free word of the day!</div><form action="/users/signup_email_verify" method="post" class="wotd-sidebar-form"><input name="email" type="email" placeholder="email" class="wotd-sidebar-input" /><button type="submit" data-sd-track-click-type="wotd" class="wotd-sidebar-button sd-track-click">Subscribe</button></form></div><div class="ad-300-250 adSide-results sidebar-box ad-wrapper"><div id="adSide2" class="adSide2"><script>googletag.cmd.push(function() {
+  googletag.display("adSide2");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0" name="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div></div></div></div><script src="http://cdn.beanstock.com/pub/cx/flagTag.js"></script></body></html>

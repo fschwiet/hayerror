@@ -1,0 +1,314 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" data-placeholder-focus="false"><head><script src="//cdn.beanstock.com/pub/cx/cx.8ce47cc9.js"></script><script async="" type="text/javascript" src="http://partner.googleadservices.com/gpt/pubads_impl_57.js"></script></head><body data-datetime="2015-03-11T20:08:41" data-is-mobile="false" class="lang-en js-transition-off-during-page-load"><img src="about:blank" style="display:none;" data-bsm-flag="true" data-bsm-zone-map-url="http://cdn.beanstock.com/pub/spanishdict/zm.js" data-bsm-sizes="300x250 728x90 160x600" data-bsm-pub="spanishdict" data-bsm-pub-zone="spanishdict.com/asection" data-bsm-event-host="//helix.beanstock.co" onload="this.onerror()" onerror="var s = document.createElement('script'); s.src = 'http://cdn.beanstock.com/pub/cx/flagTag.js'; document.body.appendChild(s)" /><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><link rel="publisher" href="https://plus.google.com/106413713006018165072" /><link rel="search" title="SpanishDict.com" type="application/opensearchdescription+xml" href="http://www.spanishdict.com/toolbar_search.xml" /><link rel="alternate" hreflang="en" href="http://www.spanishdict.com/translate/valer" /><link rel="alternate" hreflang="es" href="http://www.spanishdict.com/traductor/valer" /><title>Valer in English | Spanish to English Translation</title><meta name="description" content="Translate Valer in English. Get the most accurate Spanish to English translations. Fast. Easy. Free." /><meta property="fb:app_id" content="123097127645" /><meta property="fb:admins" content="1675823057" /><meta property="og:type" content="article" /><meta property="og:site_name" content="SpanishDict" /><meta property="og:title" content="Check out the translation for &quot;valer&quot; on SpanishDict!" /><meta property="og:description" content="Find out why SpanishDict is the web's most popular, free Spanish translation, dictionary, and conjugation site." /><meta property="og:image" content="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><meta property="og:url" content="http://www.spanishdict.com/translate/valer?utm_source=social&amp;utm_medium=facebook&amp;utm_campaign=share" /><script async="" type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script><script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "http://www.spanishdict.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://www.spanishdict.com/translate/{search_term}",
+    "query-input": "required name=search_term"
+  }
+}</script><link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-144x144-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-120x120-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-114x114-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-76x76-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-72x72-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-57x57-precomposed.png" /><link rel="apple-touch-icon-precomposed" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-precomposed.png" /><script>(function(global) {
+  global.SD_ENV="production";
+  global.SD_LOG_LEVEL="warning";
+  global.SD_LANG="en";
+  global.SD_GA_UA="UA-329211-2";
+  global.SD_MP="0d9d3502c20e893b403e6018cccf0388";
+  global.SD_PN_USE=true;
+  global.SD_PN_INTAKE_URL="reports.pubnation.com/api/v1/complaint";
+})(this);</script><link rel="dns-prefetch" href="http://www.google-analytics.com" /><link rel="dns-prefetch" href="http://api.mixpanel.com" /><link rel="dns-prefetch" href="http://cdn.mxpnl.com" /><link rel="dns-prefetch" href="http://suggest1.spanishdict.com" /><link rel="dns-prefetch" href="http://translate1.spanishdict.com" /><meta name="viewport" content="width=1024" /><link rel="canonical" href="http://www.spanishdict.com/translate/valer" /><script>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+  var gads = document.createElement("script");
+  gads.async = true;
+  gads.type = "text/javascript";
+  var useSSL = "https:" == document.location.protocol;
+  gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+  var node = document.getElementsByTagName("script")[0];
+  node.parentNode.insertBefore(gads, node);
+})();
+googletag.cmd.push(function() {
+  googletag.pubads().setTargeting('sd_is_mobile', 'false');
+  googletag.pubads().setTargeting('test_group', '63');
+});
+</script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_HEADER", [728, 90], "adTop").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_FOOTER", [728, 90], "adBot").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR", [300, 250], "adSide1").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR_2", [300, 250], "adSide2").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_160_600_SIDEBAR", [160, 600], "adSideLong").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_CONTENT", [300, 250], "adContent").addService(googletag.pubads());
+ });
+ </script><script>googletag.cmd.push(function() {
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+});</script><link rel="stylesheet" href="http://n1.sdcdns.com/dist/desktop-9b87909ec77e4c63f58e37725458bdf3.gz.css" /><!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://n1.sdcdns.com/dist/desktop-ie8-f7fed1e39cc45ed918639c01178e6dc6.gz.css"><![endif]--><div class="header-wrapper"><div class="header header-container container"><div class="menu-bar"><div class="menu-nav menu-collapsed"><div class="menu-container"><div class="menu-selector"><div class="icon-menu-nav-selector"></div><div class="menu-selector-text">Menu</div><div class="menu-collapse"></div></div><div class="menu"><a href="http://www.spanishdict.com/"><div class="menu-item">Home</div></a><a href="http://www.spanishdict.com/translation"><div class="menu-item">Translation</div></a><a href="http://www.spanishdict.com/conjugation"><div class="menu-item">Conjugation</div></a><a href="http://www.spanishdict.com/learn"><div class="menu-item">Learn Spanish</div></a><a href="http://www.spanishdict.com/flashcards"><div class="menu-item">Flashcards</div></a><a href="http://www.spanishdict.com/grammar"><div class="menu-item">Grammar</div></a><a href="http://www.spanishdict.com/answers"><div class="menu-item">Q &amp; A</div></a><a href="http://www.spanishdict.com/wordoftheday"><div class="menu-item">Word of the Day</div></a><a href="#"><div class="menu-item menu-divider go-language">Ver en español</div></a><div class="menu-fluencia menu-divider"><div class="menu-fluencia-title">Want to learn Spanish?</div><div class="menu-fluencia-text"><span>Try Fluencia, an amazing learning program from SpanishDict.</span></div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=nav_menu&amp;h=1" target="_blank" data-sd-track-click-type="fluencia" class="menu-fluencia-link sd-track-click"><div class="menu-fluencia-button">Yes!</div></a></div></div></div></div><div class="menu-user menu-collapsed"><div class="menu-container"><div class="menu-selector unauthed"><a href="http://www.spanishdict.com/users/login" class="menu-selector-text">Sign in</a></div></div></div><a href="http://www.spanishdict.com/" class="header-logo"></a></div></div></div><div class="content-container container"><div class="ad-wrapper-wide"><div class="ad-728-90 adTop-results ad-wrapper"><div id="adTop" class="adTop"><script>googletag.cmd.push(function() {
+  googletag.display("adTop");
+});</script><iframe src="http://tpc.googlesyndication.com/safeframe/1-0-2/html/container.html" style="visibility: hidden; display: none;"></iframe><div id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div><div data-target="adTop" style="visibility: hidden;" class="pubnation">report this ad</div></div></div><div class="main-container"><div class="search"><div class="search-component search-form"><form action="/translation" method="post" accept-charset="utf-8" data-action="translation" class="search_query_to_url save-history"><span id="hidden-search"></span><div class="search-form-parts search-collapse"><input id="hidden-input" name="isExpand" type="hidden" value="false" /><textarea name="text" id="query" type="search" data-suggest-host="suggest1.spanishdict.com:80" data-suggest-path="/dictionary/translate_auto_suggest" placeholder="Enter Spanish or English text…" autocomplete="off" autocorrect="off" autocapitalize="off" class="search-form-input">valer</textarea><div class="accents"><span data-toggle="tooltip" title="Add á to your text" class="accents-letter">á</span><span data-toggle="tooltip" title="Add é to your text" class="accents-letter">é</span><span data-toggle="tooltip" title="Add í to your text" class="accents-letter">í</span><span data-toggle="tooltip" title="Add ó to your text" class="accents-letter">ó</span><span data-toggle="tooltip" title="Add ú to your text" class="accents-letter">ú</span><span data-toggle="tooltip" title="Add ñ to your text" class="accents-letter">ñ</span><span data-toggle="tooltip" title="Add ¿ to your text" class="accents-letter accents-descender">¿</span><span data-toggle="tooltip" title="Add ¡ to your text" class="accents-letter accents-descender">¡</span><span data-toggle="tooltip" title="Hear audio of the words" class="accents-audio-btn"> </span></div><div data-toggle="tooltip" title="Show the accent buttons and expand the search box." class="search-expand-icon"></div><div data-toggle="tooltip" title="Collapse the search box" class="search-collapse-icon"></div><button type="submit" class="search-form-button">Translate</button></div></form></div></div><div class="translate"><div class="card"><div class="quickdef"><div class="source"><h1 class="source-text">valer</h1><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=valer" data-toggle="tooltip" title="Listen to an audio pronunciation" class="audio-start"><span class="audio-blue"> </span></a><a href="http://www.spanishdict.com/videos/valer"><span data-toggle="tooltip" title="Watch a video translation" class="video-blue"> </span></a></div><div class="lang"><div class="el"><a href="http://www.spanishdict.com/translate/to">to</a> <a href="http://www.spanishdict.com/translate/cost">cost</a>; <a href="http://www.spanishdict.com/translate/to">to</a> <a href="http://www.spanishdict.com/translate/be">be</a> <a href="http://www.spanishdict.com/translate/worth">worth</a></div><span class="media-links"><a href="http://audio1.spanishdict.com/audio?lang=en&amp;text=to-cost%3B-to-be-worth" data-toggle="tooltip" title="Listen to an audio pronunciation" class="audio-start"><span class="audio-blue"> </span></a></span></div></div><div class="nav-content"><div class="nav-content-item nav-active"><a><span class="nav-content-item-text">Dictionary</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/conjugate/valer"><span class="nav-content-item-text">Conjugation</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/videos/valer"><span class="nav-content-item-text">Video</span></a></div><div class="social-small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.spanishdict.com%2Ftranslate%2Fvaler%3Futm_source%3Dsocial%26utm_medium%3Dfacebook%26utm_campaign%3Dshare" class="social-small-icon social-small-facebook"></a><a target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20the%20translation%20for%20%22valer%22%20on%20%40SpanishDict!&amp;amp;url=http%3A%2F%2Fspanishdict.com%2ftranslate%2Fvaler%3Futm_source%3Dsocial%26utm_medium%3Dtwitter%26utm_campaign%3Dshare" class="social-small-icon social-small-twitter"></a><a target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fspanishdict.com%2Ftranslate%2Fvaler%3Futm_source%3Dsocial%26utm_medium%3Dgoogleplus%26utm_campaign%3Dshare" class="social-small-icon social-small-gplus"></a></div></div><div class="dictionary-entry dictionary-chambers"><div class="LV0">
+<div class="dictionary_word" id="word_valer ">
+<span class="head_word">valer </span>
+<div class="box">
+</div> <span class="pron">
+</span>
+<div class="LV2">
+<span class="part_of_speech">transitive verb</span>
+<div class="LV3">
+<span class="def_header">1. </span>
+<span class="def">to cost </span> <em>
+<em class="context">(costar) (precio)</em>
+</em>; <span class="def">to be worth </span> <em>
+<em class="context">(tener un valor de)</em>
+</em>
+<ul class="examples">
+<li>
+<span>¿cuánto vale? </span><span class="icon-dash"></span><em class="exB">how much does it cost?, how much is it? </em>
+<em class="context">
+</em> </li>
+<li>
+<span>este cuadro vale mucho dinero </span><span class="icon-dash"></span><em class="exB">this painting is worth a lot of money </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">2. </span>
+<span class="def">to earn </span> <em>
+<em class="context">(suponer)</em>
+</em>
+<ul class="examples">
+<li>
+<span>su generosidad le valió el afecto de todos </span><span class="icon-dash"></span><em class="exB">her generosity earned her everyone's affection </em>
+<em class="context">
+</em> </li>
+<li>
+<span>esta victoria puede valerles el campeonato </span><span class="icon-dash"></span><em class="exB">this win may be enough for them to take the championship </em>
+<em class="context">
+</em> </li>
+<li>
+<span>aquello nos valió muchos disgustos </span><span class="icon-dash"></span><em class="exB">that cost us a lot of trouble </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">3. </span>
+<span class="def">to deserve </span> <em>
+<em class="context">(merecer)</em>
+</em>
+<ul class="examples">
+<li>
+<span>esta noticia bien vale una celebración </span><span class="icon-dash"></span><em class="exB">this news deserves a celebration </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">4. </span>
+<em>
+<em class="context">(en exclamaciones)</em>
+</em>
+<ul class="examples">
+<li>
+<span>¡válgame Dios! </span><span class="icon-dash"></span><em class="exB">good God <i>o </i>heavens! </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<span class="part_of_speech">intransitive verb</span>
+<div class="LV3">
+<span class="def_header">5. </span>
+<span class="def">to be good </span> <em>
+<em class="context">(tener valor, merecer aprecio) (persona, obra)</em>
+</em>
+<ul class="examples">
+<li>
+<span>la obra vale poco/no vale (nada) </span><span class="icon-dash"></span><em class="exB">the play isn't up to much/is no good at all </em>
+<em class="context">
+</em> </li>
+<li>
+<span>hacer valer algo </span><span class="icon-dash"></span><em class="exB">to assert something </em>
+<em class="context">(derechos, autoridad)</em> </li>
+<li>
+<span>hacerse valer </span><span class="icon-dash"></span><em class="exB">to show one's worth </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">6. </span>
+<em>
+<em class="context">(servir)</em>
+</em>
+<ul class="examples">
+<li>
+<span>eso aún vale </span><span class="icon-dash"></span><em class="exB">you can still use that </em>
+<em class="context">
+</em> </li>
+<li>
+<span>valer para algo </span><span class="icon-dash"></span><em class="exB">to be for something; </em>
+<em class="context">(objeto)</em> <em class="exB">to be good at something </em>
+<em class="context">(persona)</em> </li>
+<li>
+<span>¿para qué vale? </span><span class="icon-dash"></span><em class="exB">what's it for? </em>
+<em class="context">
+</em> </li>
+<li>
+<span>valer a alguien </span><span class="icon-dash"></span><em class="exB">to be of use to somebody </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">7. </span>
+<span class="def">to be valid </span> <em>
+<em class="context">(ser válido) (documento, norma)</em>
+</em>; <span class="def">to be correct </span> <em>
+<em class="context">(respuesta)</em>
+</em>; <span class="def">to be allowed </span> <em>
+<em class="context">(en juegos)</em>
+</em>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">8. </span>
+<em>
+<em class="context">(equivaler)</em>
+</em>
+<ul class="examples">
+<li>
+<span>valer por </span><span class="icon-dash"></span><em class="exB">to be worth </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">9. </span>
+<em>
+<em class="context">(ser la talla)</em>
+</em>
+<ul class="examples">
+<li>
+<span>valer a alguien </span><span class="icon-dash"></span><em class="exB">to fit somebody </em>
+<em class="context"> (peninsular Spanish)</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">10. </span>
+<em>
+<em class="context">(informal) (no importar)</em>
+</em>
+<ul class="examples">
+<li>
+<span>lo que él piense me vale </span><span class="icon-dash"></span><em class="exB">I couldn't care less what he thinks </em>
+<em class="context"> (Mexican Spanish)</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">11. </span>
+<em>
+<em class="context">(expresiones)</em>
+</em>
+<ul class="examples">
+<li>
+<span>más vale tarde que nunca </span><span class="icon-dash"></span><em class="exB">better late than never </em>
+<em class="context">
+</em> </li>
+<li>
+<span>más vale que te calles/vayas </span><span class="icon-dash"></span><em class="exB">it would be better if you shut up/left </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<span class="part_of_speech">masculine noun</span>
+<div class="LV3">
+<span class="def_header">12. </span>
+<span class="def">worth, value </span> <em>
+</em>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<div class="subheadword">valerse </div> <span class="part_of_speech">pronominal verb</span>
+<div class="LV3">
+<span class="def_header">1. </span>
+<em>
+<em class="context">(servirse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>valerse de algo/alguien </span><span class="icon-dash"></span><em class="exB">to use something/somebody </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">2. </span>
+<em>
+<em class="context">(desenvolverse)</em>
+</em>
+<ul class="examples">
+<li>
+<span>valerse (por sí mismo) </span><span class="icon-dash"></span><em class="exB">to manage on one's own </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">3. </span>
+<span class="def">to be allowed </span> <em>
+<em class="context">(estar permitido) (Mexican Spanish)</em>
+</em>
+<ul class="examples">
+<li>
+<span>no se vale mentir </span><span class="icon-dash"></span><em class="exB">lying's not allowed </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="d-copyright"><a href="http://www.amazon.com/Websters-World-Concise-Spanish-Dictionary/dp/0471748366/&amp;tag=spani-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" rel="nofollow">Copyright © 2006 Harrap Publishers Limited</a></div></div><div class="dictionary-line"></div><div class="dictionary-entry dictionary-collins"><div class="entry"><div class="hw_unit"><span class="hw">valer</span></div><div class="note">Para la frase <em class="em">valer la pena</em>, ver la otra entrada.</div><div class="gram_cat"><a name="verbo:transitivo"></a><div class="entry_pos">transitive verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="label synonym">(costar)</span> <span class="tran_group"> <span class="tran_main">to cost</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">solo el vuelo ya vale 8.000 euros</span><span class="tran_group"> <span class="tran">the flight alone costs 8,000 euros;</span></span></span><span class="ex_unit"> <span class="ex">este libro vale cinco dólares</span><span class="tran_group"> <span class="tran">this book costs five dollars</span></span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">¿cuánto vale?</span></span><span class="ex_unit"> <span class="ex">¿qué vale?</span></span><span class="tran_group"> <span class="tran">how much is it?;</span> <span class="tran">how much does it cost?</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">esas valen (a) dos euros el kilo</span><span class="tran_group"> <span class="tran">those are two euros a kilo</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">esta tela vale a 60 pesetas el metro</span></span></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="label synonym">(tener un valor de)</span> <span class="tran_group"> <span class="tran_main">to be worth</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">el terreno vale más que la casa</span><span class="tran_group"> <span class="tran">the land is worth more than the house</span></span></span></div><div class="idm_group"><div class="idm_unit"><span class="idm">no vale un higo <em class="or" title="es-es">o</em> un pimiento</span> <span class="label geo" title="">(España)</span><span class="tran_group"> <span class="tran">it's not worth a brass farthing</span></span></div><div class="idm_unit"><span class="idm">vale lo que pesa (en oro)</span><span class="tran_group"> <span class="tran">it's worth its weight in gold</span></span></div></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="label synonym">(ser causa de)</span> <span class="sense"> <span class="label collate object">[+premio]</span> <span class="tran_group"> <span class="tran_main">to win;</span></span></span><span class="sense"> <span class="label collate object">[+críticas, amenazas]</span> <span class="tran_group"> <span class="tran_main">to earn</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">la final histórica que le valió a Brasil la copa del mundo</span><span class="tran_group"> <span class="tran">the famous final in which Brazil won the world cup;</span></span></span><span class="ex_unit"> <span class="ex">son las cualidades que le valieron el premio</span><span class="tran_group"> <span class="tran">these are the qualities which won him the prize;</span></span></span><span class="ex_unit"> <span class="ex">esa tontería le valió un rapapolvo</span><span class="tran_group"> <span class="tran">that piece of stupidity got <em class="or" title="es-es">o</em> earned him a telling-off;</span></span></span><span class="ex_unit"> <span class="ex">su ausencia le valió la pérdida del contrato</span><span class="tran_group"> <span class="tran">his absence lost <em class="or" title="es-es">o</em> cost him the contract</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">la condena de prisión le valió una orden de expulsión de Francia</span></span><span class="ex_unit"> <span class="ex">el asunto le valió muchos disgustos</span></span><span class="ex_unit"> <span class="ex">Este descubrimiento le valió el premio Nobel de Medicina en 1982</span></span><span class="ex_unit"> <span class="ex">Su expediente académico le valió en 1974 una beca para estudios posdoctorales en Harvard</span></span><span class="ex_unit"> <span class="ex">Su actividad política le valió numerosas amenazas de muerte y un exilio de 27 años</span></span><span class="ex_unit"> <span class="ex">Esta caída de la rentabilidad le valió duras críticas</span></span></div></div><div class="sense_main"><a name="4"></a><span class="num">4</span>  <span class="label subject" title="">(Matemáticas)</span> <span class="sense"> <span class="label synonym">(equivaler a)</span> <span class="tran_group"> <span class="tran_main">to equal</span></span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">la suma vale 99</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">en ese caso X vale 9</span><span class="tran_group"> <span class="tran">in that case X equals 9;</span></span></span><span class="ex_unit"> <span class="ex">el ángulo B vale 38 grados</span><span class="tran_group"> <span class="tran">angle B is 38 degrees</span></span></span></div></div><div class="sense_main"><a name="5"></a><span class="num">5</span>  <span class="label synonym">(proteger)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">¡válgame (Dios)!</span><span class="tran_group"> <span class="tran">oh, my God!;</span> <span class="tran">God help me!</span></span></span></div></div></div><div class="gram_cat"><a name="verbo:intransitivo"></a><div class="entry_pos">intransitive verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="label synonym">(costar)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">este coche vale muy caro</span><span class="tran_group"> <span class="tran">this car is very expensive <em class="or" title="es-es">o</em> costs a lot of money;</span></span></span><span class="ex_unit"> <span class="ex">¿vale mucho?</span><span class="tran_group"> <span class="tran">is it very expensive?</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">vale [la pena]</span></span><span class="ex_unit"> <span class="ex">vale la pena hacer el esfuerzo</span></span><span class="ex_unit"> <span class="ex">no vale la pena gastar tanto dinero</span></span><span class="ex_unit"> <span class="ex">no vale la pena hacerlo</span></span></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="label synonym">(tener valía)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">vale mucho como intérprete</span><span class="tran_group"> <span class="tran">he's an excellent <em class="or" title="es-es">o</em> first-rate interpreter</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">es un hombre que vale</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">Juan vale más que su hermano</span><span class="tran_group"> <span class="tran">Juan is a better person than his brother;</span></span></span><span class="ex_unit"> <span class="ex">su última película no vale gran cosa</span><span class="tran_group"> <span class="tran">his latest film is not up to much <em class="or" title="es-es">o</em> is not much good;</span></span></span><span class="ex_unit"> <span class="ex">este coche no vale nada</span><span class="tran_group"> <span class="tran">this car is useless</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">hacer</em> valer</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">hizo valer su derecho al veto</span><span class="tran_group"> <span class="tran">he exercised his veto;</span></span></span><span class="ex_unit"> <span class="ex">hizo valer sus derechos</span><span class="tran_group"> <span class="tran">he asserted his rights;</span></span></span><span class="ex_unit"> <span class="ex">hizo valer sus argumentos en la reunión</span><span class="tran_group"> <span class="tran">she got her arguments across during the meeting</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">hacerse</em> valer</span></span><span class="tran_group"> <span class="tran">to assert o.s.</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">tienes que hacerte valer</span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">valer <em class="c">por</em></span></span> <span class="label synonym">(equivaler a)</span> <span class="tran_group"> <span class="tran">to be worth</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">cada cupón vale por un paquete de azúcar</span><span class="tran_group"> <span class="tran">each coupon is worth <em class="or" title="es-es">o</em> can be exchanged for one bag of sugar;</span></span></span><span class="ex_unit"> <span class="ex">cuatro fichas azules valen por una negra</span><span class="tran_group"> <span class="tran">four blue counters equal <em class="or" title="es-es">o</em> are worth one black one</span></span></span></div></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="label synonym">(servir)</span> <span class="sense"> <span class="label collate subject">[+herramienta, objeto]</span> <span class="tran_group"> <span class="tran_main">to be useful</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">todavía puede valer</span><span class="tran_group"> <span class="tran">it might still be useful;</span></span></span><span class="ex_unit"> <span class="ex">este mismo valdrá</span><span class="tran_group"> <span class="tran">this one will do</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">eso <em class="c">no</em> vale</span></span><span class="tran_group"> <span class="tran">that's no good <em class="or" title="es-es">o</em> use</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">hay que tirar todo lo que no vale</span><span class="tran_group"> <span class="tran">we must throw out everything that is no use;</span></span></span><span class="ex_unit"> <span class="ex">ya no me vale</span><span class="tran_group"> <span class="tran">it's no good <em class="or" title="es-es">o</em> use to me now;</span></span></span><span class="ex_unit"> <span class="ex">este destornillador no me vale porque es pequeño</span><span class="tran_group"> <span class="tran">this screwdriver is no good to me, it's too small</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">valer <em class="c">para</em> algo</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">es viejo, pero vale para la lluvia</span><span class="tran_group"> <span class="tran">it's old, but it'll do for when it rains;</span></span></span><span class="ex_unit"> <span class="ex">este trozo no me vale para hacer la cortina</span><span class="tran_group"> <span class="tran">this piece won't do to make the curtain;</span></span></span><span class="ex_unit"> <span class="ex">este cuchillo no vale para nada</span><span class="tran_group"> <span class="tran">this knife is useless</span></span></span></div></div></span><span class="sense"> <span class="label collate subject">[+ropa]</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">este sombrero me vale aún</span><span class="tran_group"> <span class="tran">I can still wear <em class="or" title="es-es">o</em> use this hat;</span></span></span><span class="ex_unit"> <span class="ex">me vale la ropa de mi hermana</span><span class="tran_group"> <span class="tran">my sister's clothes do for  <span class="label register">(familiar)</span> <em class="or" title="es-es">o</em> fit me as well;</span></span></span><span class="ex_unit"> <span class="ex">a mi hijo no le vale la ropa del año pasado</span><span class="tran_group"> <span class="tran">the clothes my son wore last year are too small for him now</span></span></span></div></span><span class="sense"> <span class="label collate subject">[+situación]</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">no le vale ser hijo del ministro</span><span class="tran_group"> <span class="tran">being the minister's son is no use to him;</span></span></span><span class="ex_unit"> <span class="ex">su situación privilegiada no le valió</span><span class="tran_group"> <span class="tran">his privileged position was no help <em class="or" title="es-es">o</em> use to him;</span></span></span><span class="ex_unit"> <span class="ex">no le valdrán excusas</span><span class="tran_group"> <span class="tran">excuses won't help him <em class="or" title="es-es">o</em> do him any good</span></span></span></div></span><span class="sense"> <span class="label collate subject">[+persona]</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">yo no valdría para enfermera</span><span class="tran_group"> <span class="tran">I'd be no good as a nurse</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">no vale para este trabajo</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">el chico no vale para el trabajo</span><span class="tran_group"> <span class="tran">the boy is no good <em class="or" title="es-es">o</em> not right for the job</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">no vales para <em class="c">nada</em></span></span><span class="tran_group"> <span class="tran">you're hopeless <em class="or" title="es-es">o</em> useless;</span> <span class="tran">you're a dead loss  <span class="label register">(familiar)</span></span></span></div></span></div><div class="sense_main"><a name="4"></a><span class="num">4</span>  <span class="label synonym">(ser válido)</span> <span class="sense"> <span class="label collate subject">[+documento]</span> <span class="tran_group"> <span class="tran_main">to be valid;</span></span></span><span class="sense"> <span class="label collate subject">[+moneda, billete]</span> <span class="tran_group"> <span class="tran_main">to be legal tender</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">este tipo de pasaporte no vale desde hace un mes</span><span class="tran_group"> <span class="tran">they stopped using this type of passport a month ago;</span></span></span><span class="ex_unit"> <span class="ex">estos billetes ya no valen</span><span class="tran_group"> <span class="tran">these banknotes are no longer legal tender;</span></span></span><span class="ex_unit"> <span class="ex">es una teoría que no vale ya</span><span class="tran_group"> <span class="tran">it is a theory which no longer holds</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">valga la <em class="c">expresión</em></span></span><span class="tran_group"> <span class="tran">for want of a better way of putting it</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">está un poco chiflado, valga la expresión</span><span class="tran_group"> <span class="tran">he's a bit cracked, for want of a better way of putting it</span></span></span></div></div><div class="idm_group"><div class="idm_unit"><span class="idm">¡no hay ... que valga!</span><div class="ex_group"><span class="ex_unit"> <span class="ex">—¡pero querido! —¡no hay querido que valga!</span><span class="tran_group"> <span class="tran">"but darling!" — "don't darling me!"  <span class="label register">(familiar)</span></span></span></span></div></div></div><div class="xref"><a class="xrhw" href="http://www.spanishdict.com/translate/pero#">pero</a> <a class="xrhw" href="http://www.spanishdict.com/translate/redundancia#">redundancia</a> </div></div><div class="sense_main"><a name="5"></a><span class="num">5</span> <div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">más</em> vale</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">más vale así</span><span class="tran_group"> <span class="tran">it's better this way;</span></span></span><span class="ex_unit"> <span class="ex">más vale no hacerlo</span><span class="tran_group"> <span class="tran">it would be better not to do it;</span></span></span><span class="ex_unit"> <span class="ex">más vale mantener esto en secreto</span><span class="tran_group"> <span class="tran">it would be best to keep this quiet;</span></span></span><span class="ex_unit"> <span class="ex">—mañana te devuelvo el dinero —más te vale</span><span class="tran_group"> <span class="tran">"I'll give you the money back tomorrow" — "you'd better!";</span></span></span><span class="ex_unit"> <span class="ex">más vale que me vaya</span><span class="tran_group"> <span class="tran">I'd <em class="or" title="es-es">o</em> I had better go;</span></span></span><span class="ex_unit"> <span class="ex">más vale que te lleves el abrigo</span><span class="tran_group"> <span class="tran">you'd <em class="or" title="es-es">o</em> you had better take your coat;</span></span></span><span class="ex_unit"> <span class="ex">más vale que vayas tú</span><span class="tran_group"> <span class="tran">it would be better if you went</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">más vale tarde que nunca</span></span><span class="tran_group"> <span class="tran">better late than never</span></span></div></div><div class="sense_main"><a name="6"></a><span class="num">6</span>  <span class="label geo" title="">(España)</span> <span class="label synonym">(ser suficiente)</span> <span class="tran_group"> <span class="tran_main">to be enough</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">dos terrones valen para endulzarlo</span><span class="tran_group"> <span class="tran">two lumps are enough to sweeten it;</span></span></span><span class="ex_unit"> <span class="ex">vale ya, que habéis estado gritando toda la tarde</span><span class="tran_group"> <span class="tran">that's enough! you've been shouting all afternoon;</span></span></span><span class="ex_unit"> <span class="ex">¡vale, vale!, no me eches más azúcar</span><span class="tran_group"> <span class="tran">OK! that's enough! don't put any more sugar in;</span></span></span><span class="ex_unit"> <span class="ex">—¿subo más la persiana? —no, así ya vale</span><span class="tran_group"> <span class="tran">"shall I put the blind up a bit more?" — "no, it's OK like that"</span></span></span></div></div><div class="sense_main"><a name="7"></a><span class="num">7</span>  <span class="label synonym">(estar permitido)</span> <span class="tran_group"> <span class="tran_main">to be allowed</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">—¿puedo darle con la mano? —no, eso no vale</span><span class="tran_group"> <span class="tran">"can I hit it with my hand?" — "no, that's not allowed";</span></span></span><span class="ex_unit"> <span class="ex">no vale intentarlo dos veces</span><span class="tran_group"> <span class="tran">you're not allowed to have two goes;</span></span></span><span class="ex_unit"> <span class="ex">no vale empujar</span><span class="tran_group"> <span class="tran">no pushing!;</span> <span class="tran">pushing's not allowed;</span></span></span><span class="ex_unit"> <span class="ex">—le han dado el trabajo al hijo del jefe —¡pues, eso no vale!</span><span class="tran_group"> <span class="tran">"they've given the job to the boss's son" — "that's not on!"  <span class="label register">(familiar)</span> <em class="or" title="es-es">o</em> "they can't do that!"</span></span></span></div></div><div class="sense_main"><a name="8"></a><span class="num">8</span> <div class="phs_group"><span class="ph_unit"><span class="ph">vale</span> <span class="label geo" title="">(España)</span></span> <span class="label synonym">(de acuerdo)</span> <span class="tran_group"> <span class="tran">all right;</span> <span class="tran">OK  <span class="label register">(familiar)</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">—¿vamos a tomar algo? —¡vale!</span><span class="tran_group"> <span class="tran">"shall we go for a drink?" — "OK!" <em class="or" title="es-es">o</em> "all right!";</span></span></span><span class="ex_unit"> <span class="ex">pásate por mi casa esta tarde, ¿vale?</span><span class="tran_group"> <span class="tran">drop by my house this afternoon, OK?;</span></span></span><span class="ex_unit"> <span class="ex">vale que discutan, pero que se peguen es imperdonable</span><span class="tran_group"> <span class="tran">having an argument is one thing but hitting each other is another matter entirely <em class="or" title="es-es">o</em> is inexcusable</span></span></span></div></div></div><div class="sense_main"><a name="9"></a><span class="num">9</span> <div class="idm_group"><div class="idm_unit"><span class="idm">me vale madre <em class="or" title="es-es">o</em> sombrilla</span> <span class="label geo" title="">(México)</span><span class="tran_group"> <span class="tran">I couldn't care less  <span class="label register">(familiar)</span>;</span> <span class="tran">I don't give a damn!  <span class="label register">(familiar)</span></span></span></div></div></div></div><div class="gram_cat"><a name="verbo:pronominal"></a><div class="entry_pos">pronominal verb</div><span class="drv">valerse</span><div class="sense_main"><a name="1"></a><span class="num">1</span> <div class="phs_group"><span class="ph_unit"><span class="ph">valerse <em class="c">de</em></span></span> <span class="label synonym">(utilizar)</span>  <span class="label collate object">[+herramienta, objeto]</span> <span class="tran_group"> <span class="tran">to use;</span> <span class="tran">make use of;</span></span> <span class="label synonym">(aprovecharse de)</span>  <span class="label collate object">[+amistad, influencia]</span> <span class="tran_group"> <span class="tran">to use</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">se valió de un bastón para cruzar el río</span><span class="tran_group"> <span class="tran">he used a cane to get across the river;</span></span></span><span class="ex_unit"> <span class="ex">se valió del derecho al veto para frenar el acuerdo</span><span class="tran_group"> <span class="tran">he made use of <em class="or" title="es-es">o</em> exercised his veto to put a stop to the agreement;</span></span></span><span class="ex_unit"> <span class="ex">se valió de su cargo para conseguir la información</span><span class="tran_group"> <span class="tran">she used her position to obtain the information</span></span></span></div></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="label synonym">(arreglárselas)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">es muy mayor, pero todavía se vale</span><span class="tran_group"> <span class="tran">she is very old, but she can still do things for herself</span></span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">no se vale solo</span></span><span class="ex_unit"> <span class="ex">no puede valerse por sí mismo</span></span><span class="tran_group"> <span class="tran">he can't look after himself <em class="or" title="es-es">o</em> manage on his own</span></span></div></div></div></div><div class="d-copyright"><a href="http://www.collinsdictionary.com/dictionary/english-spanish" rel="nofollow">Collins Complete Spanish Electronic Dictionary © HarperCollins Publishers 2011</a></div></div></div></div><div class="card machine"><a href="http://www.spanishdict.com/translate/valer?t=1#mt-anchor" rel="nofollow"><div class="machine-img"></div><span class="machine-text">'valer' </span><span class="machine-info">in our machine translators</span></a></div><div class="card fl-fourth-translation"><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=4thtranslation&amp;h=3" target="_blank" data-sd-track-click-type="fluencia" class="fluencia-link sd-track-click"><div class="fluencia-img"></div><div class="fluencia-text">Learn Spanish with Fluencia, the easiest way to learn Spanish from the creators of SpanishDict</div></a></div><div class="card"><div class="card-title">Verb Conjugations for valer</div><div class="conj-row"><a href="http://www.spanishdict.com/answers/100043/gerund-form" target="_blank" class="conj-basic-label">Gerund:</a><span> valiendo</span></div><div class="conj-row"><a href="http://www.spanishdict.com/answers/100044/past-participles" target="_blank" class="conj-basic-label">Participle:</a><span> valido</span></div><div class="conj-row"><span>The irregular conjugations of this verb are in</span><span> </span><span class="conj-irregular">red</span><span>.</span></div><a href="http://www.spanishdict.com/topics/show/112" class="vtable-label">Indicative<span class="icon-question-mark"></span></a><div class="vtable-wrapper"><table class="vtable"><tbody><tr><td class="vtable-empty"></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100045/present-tense" title="Tense example: *He speaks* Spanish." data-toggle="tooltip" class="vtable-title-link">Present<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100046/preterite-simple-past" title="Tense example: *He spoke* to my sister yesterday." data-toggle="tooltip" class="vtable-title-link">Preterite<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100048/imperfect-past" title="Tense example: *He used to speak* Italian when he was a child." data-toggle="tooltip" class="vtable-title-link">Imperfect<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100050/conditional" title="Tense example: *He would speak* French in France." data-toggle="tooltip" class="vtable-title-link">Conditional<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100049/future" title="Tense example: *He will speak* Portuguese on his vacation next week." data-toggle="tooltip" class="vtable-title-link">Future<span class="icon-question-mark"></span></a></td></tr><tr><td class="vtable-pronoun">yo</td><td class="vtable-word conj-irregular ">valgo</td><td class="vtable-word  ">valí</td><td class="vtable-word  ">valía</td><td class="vtable-word conj-irregular ">valdría</td><td class="vtable-word conj-irregular ">valdré</td></tr><tr><td class="vtable-pronoun">tú</td><td class="vtable-word  ">vales</td><td class="vtable-word  ">valiste</td><td class="vtable-word  ">valías</td><td class="vtable-word conj-irregular ">valdrías</td><td class="vtable-word conj-irregular ">valdrás</td></tr><tr><td class="vtable-pronoun">él/ella/Ud.</td><td class="vtable-word  ">vale</td><td class="vtable-word  ">valió</td><td class="vtable-word  ">valía</td><td class="vtable-word conj-irregular ">valdría</td><td class="vtable-word conj-irregular ">valdrá</td></tr><tr><td class="vtable-pronoun">nosotros</td><td class="vtable-word  ">valemos</td><td class="vtable-word  ">valimos</td><td class="vtable-word  ">valíamos</td><td class="vtable-word conj-irregular ">valdríamos</td><td class="vtable-word conj-irregular ">valdremos</td></tr><tr><td class="vtable-pronoun">vosotros</td><td class="vtable-word  ">valéis</td><td class="vtable-word  ">valisteis</td><td class="vtable-word  ">valíais</td><td class="vtable-word conj-irregular ">valdríais</td><td class="vtable-word conj-irregular ">valdréis</td></tr><tr><td class="vtable-pronoun">ellos/ellas/Uds.</td><td class="vtable-word  ">valen</td><td class="vtable-word  ">valieron</td><td class="vtable-word  ">valían</td><td class="vtable-word conj-irregular ">valdrían</td><td class="vtable-word conj-irregular ">valdrán</td></tr></tbody></table></div><a href="http://www.spanishdict.com/conjugate/valer" class="card-button-full">View complete conjugation for <strong>valer</strong></a></div><div class="card"><div class="card-title">Search history</div><div class="search-history-items"></div></div><div class="ad-300-250 adContent-results ad-wrapper"><div id="adContent" class="adContent"><script>googletag.cmd.push(function() {
+  googletag.display("adContent");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0" name="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adContent" style="visibility: hidden;" class="pubnation">report this ad</div></div><div id="feedback-query" class="card"><div class="card-title">Did this page answer your question?</div><form><div class="feedback-1"><a href="#" class="feedback-yes"><div class="icon-smile"></div><span>Yes</span></a><a href="#" class="feedback-no"><div class="icon-frown"></div><span>No</span></a></div><div class="feedback-2"><div id="feedback-categories"><div class="feedback-instructions">The page is...</div><div class="feedback-categories-select"><label><input type="radio" name="category" value="inaccurate" />Inaccurate</label><label><input type="radio" name="category" value="unclear" />Unclear</label><label><input type="radio" name="category" value="missingTranslations" />Missing translations</label><label><input type="radio" name="category" value="missingConjugations" />Missing conjugations</label><label><input type="radio" name="category" value="other" />Other</label></div></div><div class="feedback-instructions">What can we do to improve?</div><textarea id="feedback-comment" placeholder="Enter your comment..." required="" class="feedback-comment"></textarea><div class="feedback-instructions">How can we follow up with you? (Optional)</div><input id="feedback-query-email" type="email" placeholder="Enter your email" class="feedback-query-email" /><button type="submit" class="feedback-2-submit">Submit</button></div><div class="feedback-3"><span>Your feedback was sent. We appreciate your comments!</span></div></form></div></div><div class="sidebar-container"><div class="fluencia-sidebar card"><div class="card-title">Want to speak Spanish?</div><div class="fluencia-sidebar-text">Try Fluencia, an amazing learning program from SpanishDict.</div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=sidebar&amp;h=2" target="_blank" data-sd-track-click-type="fluencia" class="fluencia-sidebar-button sd-track-click">Join now</a></div><div class="ad-300-250 adSide-results sidebar-box ad-wrapper"><div id="adSide1" class="adSide1"><script>googletag.cmd.push(function() {
+  googletag.display("adSide1");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0" name="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSide1" style="visibility: hidden;" class="pubnation">report this ad</div></div><div class="wotd-sidebar card"><div class="card-title">Word of the Day</div><div class="wotd-sidebar-date">Mar 11</div><a href="http://www.spanishdict.com/wordoftheday/2326/el-brazo" class="wotd-sidebar-word">el brazo</a><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=el-brazo" data-toggle="tooltip" title="Listen to an audio pronunciation" class="audio-start"><span class="audio-blue"> </span></a><div class="wotd-sidebar-translation">arm</div><div class="wotd-sidebar-prompt">Get the free word of the day!</div><form action="/users/signup_email_verify" method="post" class="wotd-sidebar-form"><input name="email" type="email" placeholder="email" class="wotd-sidebar-input" /><button type="submit" data-sd-track-click-type="wotd" class="wotd-sidebar-button sd-track-click">Subscribe</button></form></div><div class="ad-300-250 adSide-results sidebar-box ad-wrapper"><div id="adSide2" class="adSide2"><script>googletag.cmd.push(function() {
+  googletag.display("adSide2");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0" name="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSide2" style="visibility: hidden;" class="pubnation">report this ad</div></div><div class="social-sidebar card"><div class="card-title">Stay Connected</div><a href="https://www.facebook.com/pages/SpanishDict/92805940179" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="facebook" class="social-sidebar-button facebook sd-track-click"><div class="social-logo social-facebook-logo"></div></a><a href="https://plus.google.com/106413713006018165072/posts" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="google" class="social-sidebar-button gplus sd-track-click"><div class="social-logo social-gplus-logo"></div></a><a href="https://twitter.com/spanishdict" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="twitter" class="social-sidebar-button twitter sd-track-click"><div class="social-logo social-twitter-logo"></div></a></div><div class="ad-160-600 adSide-long-results sidebar-box-long ad-wrapper"><div id="adSideLong" class="adSideLong"><script>googletag.cmd.push(function() {
+  googletag.display("adSideLong");
+});</script><div id="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0" name="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSideLong" style="visibility: hidden;" class="pubnation">report this ad</div></div></div><div class="ad-wrapper-wide"><div class="ad-728-90 adBot-results ad-wrapper"><div id="adBot" class="adBot"><script>googletag.cmd.push(function() {
+  googletag.display("adBot");
+});</script><div id="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0" name="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adBot" style="visibility: hidden;" class="pubnation">report this ad</div></div></div></div><div class="footer-wrapper"><div class="footer footer-container container"><div class="footer-row"><div class="footer-item"><h4>Stay Connected</h4><div class="footer-social"><div class="social"><a href="http://www.facebook.com/pages/SpanishDict/92805940179"><div class="social-icon social-facebook"></div></a><a href="http://www.twitter.com/spanishdict"><div class="social-icon social-twitter"></div></a><a href="https://plus.google.com/106413713006018165072/posts"><div class="social-icon social-gplus"></div></a></div></div></div><div class="footer-item"><h4>iPhone</h4><a href="http://itunes.apple.com/us/app/spanishdict/id332510494"><div class="footer-external footer-external-appstore"></div></a></div><div class="footer-item"><h4>Android</h4><a href="https://play.google.com/store/apps/details?id=com.spanishdictapp"><div class="footer-external footer-external-google-play"></div></a></div><div class="footer-item footer-item-last"><h4>Kindle</h4><a href="http://www.amazon.com/SpanishDict-Spanish-English-Dictionary-and-More/dp/B004UO8ZNQ"><div class="footer-external footer-external-amazon"></div></a></div></div><div class="footer-row"><div class="footer-item"><h4>Spanish Reference</h4><ul><li><a href="http://www.spanishdict.com/translation">English to Spanish translation</a></li><li><a href="http://www.spanishdict.com/translation">Spanish to English translation</a></li><li><a href="http://www.spanishdict.com/dictionary">English to Spanish dictionary</a></li><li><a href="http://www.spanishdict.com/dictionary">Spanish to English dictionary</a></li></ul></div><div class="footer-item"><h4>Learn Spanish</h4><ul><li><a href="http://www.spanishdict.com/learn">Learn Spanish</a></li><li><a href="http://www.spanishdict.com/flashcards">Spanish Flashcards</a></li><li><a href="http://www.spanishdict.com/conjugation">Spanish Verb Conjugation</a></li><li><a href="http://www.spanishdict.com/answers">Spanish-English Q&amp;A</a></li></ul></div><div class="footer-item"><h4>Popular Translations</h4><ul><li><a href="http://www.spanishdict.com/translate/beautiful">beautiful in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/cheers">cheers in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/money">money in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/happy">happy in Spanish</a></li></ul></div><div class="footer-item footer-item-last"><h4>Popular Conjugations</h4><ul><li><a href="http://www.spanishdict.com/conjugate/dar">dar conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/estar">estar conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/pensar">pensar conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/salir">salir conjugation</a></li></ul></div></div><div class="footer-meta"><div class="footer-meta-list"><ul><li><a href="http://www.spanishdict.com/company/about">About</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.fluencia.com/about-us/careers/">We're hiring!</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.spanishdict.com/company/privacy">Privacy</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.spanishdict.com/company/tos">Terms</a><span class="footer-meta-list-item-bg"></span></li><li><a href="#" class="go-language">Español</a></li></ul></div><span class="footer-copyright">© Curiosity Media, Inc.</span><div class="footer-exclamation-logo-wrapper"><div class="footer-exclamation-container"><img src="http://n1.sdcdns.com/img/desktop/logoAnimation.gif" class="footer-exclamation-logo" /></div></div></div></div></div><div class="feedback-tab"><button data-toggle="modal" data-target="#feedback-modal">Feedback</button></div><div id="feedback-modal" class="feedback-modal sd-modal modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="sd-modal-title">Feedback</div><div class="sd-modal-close feedback-modal-close"></div><div class="sd-modal-message feedback-modal-message"></div><div class="sd-modal-content feedback-modal-content"><div class="sd-modal-desc">SpanishDict is devoted to improving our site based on user feedback and introducing new and innovative features that will continue to help people learn and love the Spanish language. Have a suggestion, idea, or comment? Send us your feedback.</div><form><label for="feedback-name" class="sd-modal-label">Your name</label><input id="feedback-name" type="text" placeholder="Your name" /><label for="feedback-email" class="sd-modal-label">Email address</label><input id="feedback-email" type="email" placeholder="Email address" /><label for="feedback-subject" class="sd-modal-label">Subject</label><input id="feedback-subject" type="text" placeholder="Subject" required="" /><label for="feedback-message" class="sd-modal-label">Message</label><textarea id="feedback-message" placeholder="Message" rows="5" required=""></textarea><input type="submit" value="Send" class="sd-modal-submit feedback-modal-submit" /></form></div></div></div></div></div><div id="report-this-modal" class="report-this-modal sd-modal modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="sd-modal-close report-this-modal-close"></div><div class="sd-modal-formbox report-this-modal-form-box"><div class="sd-modal-title">Report this ad</div><div class="sd-modal-desc">Spot an anno</div></div></div></div></div></div><script src="http://cdn.beanstock.com/pub/cx/flagTag.js"></script></body></html>
