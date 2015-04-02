@@ -32,7 +32,7 @@ namespace monarquia
 		{
 			List < Tuple < string,string >> results = new List<Tuple<string, string>> ();
 
-			foreach(var file in Directory.GetFiles(remainingArguments[0])) {
+			foreach(var file in Directory.GetFiles(DataDirectory)) {
 
 				if (!file.EndsWith (".definition.txt")) {
 					continue;
