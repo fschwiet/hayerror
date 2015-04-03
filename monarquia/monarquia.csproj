@@ -45,13 +45,16 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EspanolGenerator.cs" />
-    <Compile Include="LoadAllExampleTexts.cs" />
     <Compile Include="DataLoader.cs" />
     <Compile Include="Verb.cs" />
     <Compile Include="PointOfView.cs" />
+    <Compile Include="Commands\LoadAllExampleTexts.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commands\" />
   </ItemGroup>
 </Project>

@@ -6,7 +6,7 @@ using ManyConsole;
 using System.Net;
 using System.Collections.Generic;
 
-namespace monarquia
+namespace monarquia.Commands
 {
 	public class LoadAllExampleTexts : ConsoleCommand
 	{
