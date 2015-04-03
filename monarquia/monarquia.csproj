@@ -49,6 +49,7 @@
     <Compile Include="Verb.cs" />
     <Compile Include="PointOfView.cs" />
     <Compile Include="Commands\LoadAllExampleTexts.cs" />
+    <Compile Include="Commands\LoadContexts.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
