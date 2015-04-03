@@ -23,7 +23,7 @@ namespace test
 		[NUnit.Framework.TestCase("yo grito")]
 		public void PresentTenseIr (string expected)
 		{
-			var results = new monarquia.EspanolGenerator().GetAll();
+			var results = new monarquia.EspanolGenerator("../../../data").GetAll();
 
 			Assert.Contains (expected, results.ToArray());
 		}
