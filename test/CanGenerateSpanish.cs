@@ -1,12 +1,21 @@
 ﻿using NUnit.Framework;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using monarquia;
 
 namespace test
 {
 	[TestFixture ()]
 	public class CanGenerateSpanish
 	{
+		string[] allPhrases;
+
+		[TestFixtureSetUp]
+		public void LoadVerbs() {
+			allPhrases = new monarquia.EspanolGenerator("../../../data").GetAll().ToArray();
+		}
+
 		[Test]
 		[NUnit.Framework.TestCase("yo voy")]
 		[NUnit.Framework.TestCase("tú vas")]		
@@ -23,9 +32,7 @@ namespace test
 		[NUnit.Framework.TestCase("yo grito")]
 		public void PresentTenseIr (string expected)
 		{
-			var results = new monarquia.EspanolGenerator("../../../data").GetAll();
-
-			Assert.Contains (expected, results.ToArray());
+			Assert.Contains (expected, allPhrases);
 		}
 	}
 }
