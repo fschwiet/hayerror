@@ -30,7 +30,19 @@ namespace test
 		[TestCase("ellas van")]
 
 		[TestCase("yo grito")]
-		public void PresentTenseIr (string expected)
+		public void PresentTenseIntransitive (string expected)
+		{
+			Assert.Contains (expected, allPhrases);
+		}
+
+		[TestCase("yo preparo la cena")]
+		[TestCase("ellos suben la escalera")]
+		[TestCase("ellas beben leche")]
+		[TestCase("él suma la cuenta")]
+		[TestCase("ella habla a la reportera")]
+		[TestCase("él teme a los críticos")]
+		[TestCase("ellos comen fajitas")]
+		public void PresentTenseTransitive (string expected)
 		{
 			Assert.Contains (expected, allPhrases);
 		}

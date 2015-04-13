@@ -49,12 +49,23 @@ namespace monarquia
 
 		public IEnumerable<string> GetAll(){
 
+			var cannedData = new CannedData ();
+
 			List<string> results = new List<string>();
 			foreach(var verb in GetAllVerbs()) {
 
-				foreach (PointOfView pointOfView in Enum.GetValues(typeof(PointOfView))) {
-					Console.WriteLine (pointOfView);
-					results.Add(SubjectPronounFor(pointOfView) + " " + verb.ConjugatedPresentTense(pointOfView));
+				var verbEndings = cannedData.GetVerbEndings (verb.Infinitive);
+
+				foreach (var verbEnding in verbEndings) {
+					foreach (PointOfView pointOfView in Enum.GetValues(typeof(PointOfView))) {
+
+						var result = SubjectPronounFor (pointOfView) + " " + verb.ConjugatedPresentTense (pointOfView);
+
+						if (!string.IsNullOrEmpty (verbEnding))
+							result += " " + verbEnding;
+						
+						results.Add(result);
+					}
 				}
 			}
 
