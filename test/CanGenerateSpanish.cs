@@ -17,19 +17,19 @@ namespace test
 		}
 
 		[Test]
-		[NUnit.Framework.TestCase("yo voy")]
-		[NUnit.Framework.TestCase("tú vas")]		
-		[NUnit.Framework.TestCase("usted va")]
-		[NUnit.Framework.TestCase("él va")]
-		[NUnit.Framework.TestCase("ella va")]
+		[TestCase("yo voy")]
+		[TestCase("tú vas")]		
+		[TestCase("usted va")]
+		[TestCase("él va")]
+		[TestCase("ella va")]
 
-		[NUnit.Framework.TestCase("nosotros vamos")]
-		[NUnit.Framework.TestCase("vosotros vais")]
-		[NUnit.Framework.TestCase("ustedes van")]
-		[NUnit.Framework.TestCase("ellos van")]
-		[NUnit.Framework.TestCase("ellas van")]
+		[TestCase("nosotros vamos")]
+		[TestCase("vosotros vais")]
+		[TestCase("ustedes van")]
+		[TestCase("ellos van")]
+		[TestCase("ellas van")]
 
-		[NUnit.Framework.TestCase("yo grito")]
+		[TestCase("yo grito")]
 		public void PresentTenseIr (string expected)
 		{
 			Assert.Contains (expected, allPhrases);
