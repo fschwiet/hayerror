@@ -51,6 +51,7 @@
     <Compile Include="Commands\LoadAllExampleTexts.cs" />
     <Compile Include="Commands\LoadContexts.cs" />
     <Compile Include="CannedData.cs" />
+    <Compile Include="Commands\DrillVerb.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

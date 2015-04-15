@@ -2,6 +2,8 @@
 using System;
 using System.Linq;
 using monarquia;
+using CsQuery;
+
 
 namespace test
 {
@@ -15,7 +17,8 @@ namespace test
 
 			var expected = allVerbs.Single (v => v.Infinitive == "ir");
 
-
+			Assert.AreEqual("voy", expected.ConjugatedPresentTense(PointOfView.FirstPerson));
+			Assert.AreEqual("he ido", expected.ConjugatedPresentPerfectTense(PointOfView.FirstPerson));
 		}
 	}
 }

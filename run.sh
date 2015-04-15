@@ -1,1 +1,1 @@
-mono ./monarquia/bin/Debug/monarquia.exe $*
+mono --debug ./monarquia/bin/Debug/monarquia.exe $*

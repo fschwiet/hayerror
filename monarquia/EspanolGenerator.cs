@@ -36,11 +36,15 @@ namespace monarquia
 		}
 
 		List<Verb> allVerbs;
+		CannedData cannedData;
+		Random random;
 
 		public EspanolGenerator (string dataDirectory)
 		{
 			var dataLoader = new DataLoader (dataDirectory);
 			allVerbs = dataLoader.GetAllVerbs ();
+			cannedData = new CannedData ();
+			random = new Random ();
 		}
 
 		public IEnumerable<Verb> GetAllVerbs() {
@@ -49,26 +53,56 @@ namespace monarquia
 
 		public IEnumerable<string> GetAll(){
 
-			var cannedData = new CannedData ();
-
 			List<string> results = new List<string>();
 			foreach(var verb in GetAllVerbs()) {
-
-				var verbEndings = cannedData.GetVerbEndings (verb.Infinitive);
-
-				foreach (var verbEnding in verbEndings) {
-					foreach (PointOfView pointOfView in Enum.GetValues(typeof(PointOfView))) {
-
-						var result = SubjectPronounFor (pointOfView) + " " + verb.ConjugatedPresentTense (pointOfView);
-
-						if (!string.IsNullOrEmpty (verbEnding))
-							result += " " + verbEnding;
-						
-						results.Add(result);
-					}
-				}
+				results.AddRange(GetForVerb(verb, false));
 			}
 
+			return results;
+		}
+
+		public IEnumerable<string> GetForVerb(string infinitive, bool limitVariations) {
+			var verb = allVerbs.Single (v => string.Equals (infinitive, v.Infinitive, StringComparison.InvariantCultureIgnoreCase));
+		
+			return GetForVerb (verb, limitVariations);
+		}
+
+		IEnumerable<string> GetForVerb (Verb verb, bool limitVariations)
+		{
+			List<string> results = new List<string>();
+
+			var verbEndings = cannedData.GetVerbEndings (verb.Infinitive).ToArray();
+
+			foreach (PointOfView pointOfView in Enum.GetValues (typeof(PointOfView))) {
+
+				var selectedVerbEndings = verbEndings.ToArray();
+
+				if (limitVariations) {
+					selectedVerbEndings = new[] {
+						verbEndings[random.Next(verbEndings.Length)]
+					};
+				}
+
+				foreach (var verbEnding in selectedVerbEndings) {
+					var result = SubjectPronounFor (pointOfView) + " " + verb.ConjugatedPresentTense (pointOfView);
+					if (!string.IsNullOrEmpty (verbEnding))
+						result += " " + verbEnding;
+					results.Add (result);
+				}
+
+				if (limitVariations) {
+					selectedVerbEndings = new[] {
+						verbEndings[random.Next(verbEndings.Length)]
+					};
+				}
+
+				foreach (var verbEnding in selectedVerbEndings) {
+					var result = SubjectPronounFor (pointOfView) + " " + verb.ConjugatedPresentPerfectTense (pointOfView);
+					if (!string.IsNullOrEmpty (verbEnding))
+						result += " " + verbEnding;
+					results.Add (result);
+				}
+			}
 			return results;
 		}
 	}

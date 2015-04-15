@@ -12,6 +12,7 @@ namespace monarquia
 			AddVerbEnding ("beber", "leche");
 			AddVerbEnding ("sumar", "la cuenta");
 			AddVerbEnding ("hablar", "a la reportera");
+			AddVerbEnding ("hablar", "con él");
 			AddVerbEnding ("temer", "a los críticos");
 			AddVerbEnding ("comer", "fajitas");
 		}

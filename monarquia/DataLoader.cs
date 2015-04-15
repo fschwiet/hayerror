@@ -33,45 +33,59 @@ namespace monarquia
 
 				CsQuery.CQ document = File.ReadAllText (file);
 
-				var indicativeRows = document ["a.vtable-label + .vtable-wrapper tr"].ToArray();
-				
-				var transformed = new string[5][];
-
-				for (var initIndex = 0; initIndex < transformed.Length; initIndex++) {
-					transformed [initIndex] = new string[6];
-				}
-
-				for (var rowIndex = 1; rowIndex < indicativeRows.Length; rowIndex++) {
-
-					var row = indicativeRows [rowIndex];
-					var columns = row.ChildNodes.ToArray ();
-
-					for (var columnIndex = 1; columnIndex < columns.Length; columnIndex++) {
-						var column = columns [columnIndex];
-
-						transformed[columnIndex-1][rowIndex-1] = WebUtility.HtmlDecode(column.InnerText);
-					}
-				}
+				var indicativeTable = LoadConjugationTable (document, 0);
+				var perfectTable = LoadConjugationTable (document, 3);
 
 				var verb = new Verb (infinitive);
 
-				var presentTenses = new Dictionary<PointOfView, string> ();
-				presentTenses [PointOfView.FirstPerson] = transformed[0][0];
-				presentTenses [PointOfView.SecondPerson] = transformed[0][1];
-				presentTenses [PointOfView.SecondPersonFormal] = transformed[0][2];
-				presentTenses [PointOfView.ThirdPersonMasculine] = transformed[0][2];
-				presentTenses [PointOfView.ThirdPersonFeminine] = transformed[0][2];
-				presentTenses [PointOfView.FirstPersonPlural] = transformed[0][3];
-				presentTenses [PointOfView.SecondPersonPlural] = transformed[0][4];
-				presentTenses [PointOfView.SecondPersonPluralFormal] = transformed[0][5];
-				presentTenses [PointOfView.ThirdPersonPluralMasculine] = transformed[0][5];
-				presentTenses [PointOfView.ThirdPersonPluralFeminine] = transformed[0][5];
+				var presentTenses = GetPovLookupFromTableColumn (indicativeTable, 0);
 				verb.WithPresentTenses (presentTenses);
+
+				var presentPerfectTenses = GetPovLookupFromTableColumn (perfectTable, 0);
+				verb.WithPresentPerfectTenses (presentPerfectTenses);
 
 				results.Add (verb);
 			}
 
 			return results;
+		}
+
+		static string[][] LoadConjugationTable (CQ document, int tableIndex)
+		{
+			var selector = "a.vtable-label:eq(" + tableIndex + ") + .vtable-wrapper tr";
+			//Console.WriteLine ("selector:" + selector);
+			var tableRows = document [selector].ToArray ();
+
+			var transformed = new string[5][];
+			for (var initIndex = 0; initIndex < transformed.Length; initIndex++) {
+				transformed [initIndex] = new string[6];
+			}
+			for (var rowIndex = 1; rowIndex < tableRows.Length; rowIndex++) {
+				var row = tableRows [rowIndex];
+				var columns = row.ChildNodes.ToArray ();
+				for (var columnIndex = 1; columnIndex < columns.Length; columnIndex++) {
+					var column = columns [columnIndex];
+					transformed [columnIndex - 1] [rowIndex - 1] = WebUtility.HtmlDecode (column.InnerText);
+				}
+			}
+			return transformed;
+		}
+
+		static Dictionary<PointOfView, string> GetPovLookupFromTableColumn (string[][] indicativeTable, int columnIndex)
+		{
+			var presentTenses = new Dictionary<PointOfView, string> ();
+
+			presentTenses [PointOfView.FirstPerson] = indicativeTable [columnIndex] [0];
+			presentTenses [PointOfView.SecondPerson] = indicativeTable [columnIndex] [1];
+			presentTenses [PointOfView.SecondPersonFormal] = indicativeTable [columnIndex] [2];
+			presentTenses [PointOfView.ThirdPersonMasculine] = indicativeTable [columnIndex] [2];
+			presentTenses [PointOfView.ThirdPersonFeminine] = indicativeTable [columnIndex] [2];
+			presentTenses [PointOfView.FirstPersonPlural] = indicativeTable [columnIndex] [3];
+			presentTenses [PointOfView.SecondPersonPlural] = indicativeTable [columnIndex] [4];
+			presentTenses [PointOfView.SecondPersonPluralFormal] = indicativeTable [columnIndex] [5];
+			presentTenses [PointOfView.ThirdPersonPluralMasculine] = indicativeTable [columnIndex] [5];
+			presentTenses [PointOfView.ThirdPersonPluralFeminine] = indicativeTable [columnIndex] [5];
+			return presentTenses;
 		}
 	}
 }

@@ -46,6 +46,15 @@ namespace test
 		{
 			Assert.Contains (expected, allPhrases);
 		}
+
+		[TestCase("yo he hablado con él")]
+		public void PresentPerfectTense (string expected) {
+
+			var filtered = allPhrases.Where (p => p.Contains ("he hablado")).ToArray();
+			Console.WriteLine (String.Join (", ", filtered));
+
+			Assert.Contains (expected, allPhrases);
+		}
 	}
 }
 
