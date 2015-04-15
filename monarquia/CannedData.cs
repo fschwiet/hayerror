@@ -7,14 +7,14 @@ namespace monarquia
 	{
 		public CannedData ()
 		{
-			AddVerbEnding ("preparar", "la cena");
-			AddVerbEnding ("subir", "la escalera");
 			AddVerbEnding ("beber", "leche");
-			AddVerbEnding ("sumar", "la cuenta");
+			AddVerbEnding ("comer", "fajitas");
 			AddVerbEnding ("hablar", "a la reportera");
 			AddVerbEnding ("hablar", "con él");
+			AddVerbEnding ("preparar", "la cena");
+			AddVerbEnding ("subir", "la escalera");
+			AddVerbEnding ("sumar", "la cuenta");
 			AddVerbEnding ("temer", "a los críticos");
-			AddVerbEnding ("comer", "fajitas");
 		}
 
 		void AddVerbEnding(string verbInfinitive, string ending) {
