@@ -75,33 +75,30 @@ namespace monarquia
 
 			foreach (PointOfView pointOfView in Enum.GetValues (typeof(PointOfView))) {
 
-				var selectedVerbEndings = verbEndings.ToArray();
+				results.AddRange (GetForVerbConjugation (limitVariations, pointOfView, verbEndings, v => verb.ConjugatedPresentTense(v)));
+				results.AddRange (GetForVerbConjugation (limitVariations, pointOfView, verbEndings, v => verb.ConjugatedPresentPerfectTense(v)));
+			}
+			return results;
+		}
 
-				if (limitVariations) {
-					selectedVerbEndings = new[] {
-						verbEndings[random.Next(verbEndings.Length)]
-					};
-				}
-
-				foreach (var verbEnding in selectedVerbEndings) {
-					var result = SubjectPronounFor (pointOfView) + " " + verb.ConjugatedPresentTense (pointOfView);
-					if (!string.IsNullOrEmpty (verbEnding))
-						result += " " + verbEnding;
-					results.Add (result);
-				}
-
-				if (limitVariations) {
-					selectedVerbEndings = new[] {
-						verbEndings[random.Next(verbEndings.Length)]
-					};
-				}
-
-				foreach (var verbEnding in selectedVerbEndings) {
-					var result = SubjectPronounFor (pointOfView) + " " + verb.ConjugatedPresentPerfectTense (pointOfView);
-					if (!string.IsNullOrEmpty (verbEnding))
-						result += " " + verbEnding;
-					results.Add (result);
-				}
+		List<string> GetForVerbConjugation (
+			bool limitVariations, 
+			PointOfView pointOfView, 
+			IEnumerable<string> verbEndings, 
+			Func<PointOfView,string> specificVerbConjugation)
+		{
+			List<string> results = new List<string> ();
+			var selectedVerbEndings = verbEndings.ToArray ();
+			if (limitVariations) {
+				selectedVerbEndings = new string[] {
+					selectedVerbEndings [random.Next (selectedVerbEndings.Length)]
+				};
+			}
+			foreach (var verbEnding in selectedVerbEndings) {
+				var result = SubjectPronounFor (pointOfView) + " " + specificVerbConjugation (pointOfView);
+				if (!string.IsNullOrEmpty (verbEnding))
+					result += " " + verbEnding;
+				results.Add (result);
 			}
 			return results;
 		}
