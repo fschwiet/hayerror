@@ -62,8 +62,13 @@ namespace monarquia
 		}
 
 		public IEnumerable<string> GetForVerb(string infinitive, bool limitVariations) {
-			var verb = allVerbs.Single (v => string.Equals (infinitive, v.Infinitive, StringComparison.InvariantCultureIgnoreCase));
+			
+			var verb = allVerbs.SingleOrDefault (v => string.Equals (infinitive, v.Infinitive, StringComparison.InvariantCultureIgnoreCase));
 		
+			if (verb == null) {
+				throw new Exception ("Verb does not have data: " + infinitive);
+			}
+
 			return GetForVerb (verb, limitVariations);
 		}
 
