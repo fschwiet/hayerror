@@ -76,26 +76,58 @@ namespace monarquia
 		{
 			List<string> results = new List<string>();
 
-			foreach (PointOfView pointOfView in Enum.GetValues (typeof(PointOfView))) {
+			var selectedPointsOfView = Enum.GetValues (typeof(PointOfView)).Cast<PointOfView> ();
+				
+			if (limitVariations) {
+				// don't use vosotros
+				selectedPointsOfView = selectedPointsOfView.Where (v => v != PointOfView.SecondPersonPlural);
 
-				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
-					CannedData.Timeframe.Now, cannedData, v => verb.ConjugatedPresentTense(v)));
+				// only use one of el/ella/usted
+				// only use one of ellos/ellas/ustedes
 
-				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
-					CannedData.Timeframe.Frequency, cannedData, v => verb.ConjugatedPresentTense(v)));
+				Func<PointOfView> randomPointOfViewThatIsThirdPersonish = delegate() {
+					switch (random.Next (3)) {
+					case 0:
+						return PointOfView.ThirdPersonFeminine;
+					case 1:
+						return PointOfView.ThirdPersonMasculine;
+					case 2:
+						return PointOfView.SecondPersonFormal;
+					default:
+						throw new Exception("random.Next() produced unexpected");
+					}
+				};
 
-				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
-					CannedData.Timeframe.NearFuture, cannedData, v => verb.ConjugatedPresentTense(v)));
+				Func<PointOfView> randomPointOfViewThatIsThirdPersonPluralish = delegate() {
+					switch (random.Next (3)) {
+					case 0:
+						return PointOfView.ThirdPersonPluralFeminine;
+					case 1:
+						return PointOfView.ThirdPersonMasculine;
+					case 2:
+						return PointOfView.SecondPersonPluralFormal;
+					default:
+						throw new Exception("random.Next() produced unexpected");
+					}
+				};
 
-				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
-					CannedData.Timeframe.NotImplemented,cannedData, v => verb.ConjugatedPresentPerfectTense(v)));
+				selectedPointsOfView = selectedPointsOfView
+					.Where (v => v != PointOfView.ThirdPersonFeminine &&
+						v != PointOfView.ThirdPersonMasculine &&
+						v != PointOfView.SecondPersonFormal &&
+						v != PointOfView.ThirdPersonPluralFeminine &&
+						v != PointOfView.ThirdPersonPluralMasculine &&
+						v != PointOfView.SecondPersonPluralFormal);
 
-				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
-					CannedData.Timeframe.PastPreterite,cannedData, v => verb.ConjugatePastPreteriteTense(v)));
-
-				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
-					CannedData.Timeframe.PastImperfect,cannedData, v => verb.ConjugatePastImperfectTense(v)));
+				results.AddRange(GetAllConjugationsForVerb (verb, limitVariations, randomPointOfViewThatIsThirdPersonish));
+				results.AddRange(GetAllConjugationsForVerb (verb, limitVariations, randomPointOfViewThatIsThirdPersonPluralish));
 			}
+
+			foreach (PointOfView pointOfView in selectedPointsOfView) {
+
+				results.AddRange (GetAllConjugationsForVerb (verb, limitVariations, () => pointOfView));
+			}
+
 			return results;
 		}
 
@@ -148,6 +180,18 @@ namespace monarquia
 
 				results.Add (capitolizedSentencewithPeriod);
 			}
+
+			return results;
+		}
+
+		List<string> GetAllConjugationsForVerb (Verb verb, bool limitVariations, Func<PointOfView> pointOfViewSelector)
+		{
+			List<string> results = new List<string> ();
+
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), CannedData.Timeframe.Present, cannedData, v => verb.ConjugatedPresentTense (v)));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), CannedData.Timeframe.PastPreterite, cannedData, v => verb.ConjugatePastPreteriteTense (v)));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), CannedData.Timeframe.PastImperfect, cannedData, v => verb.ConjugatePastImperfectTense (v)));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), CannedData.Timeframe.NotImplemented, cannedData, v => verb.ConjugatedPresentPerfectTense (v)));
 
 			return results;
 		}

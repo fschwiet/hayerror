@@ -6,9 +6,8 @@ namespace monarquia
 	public class CannedData
 	{
 		public enum Timeframe {
-			Now,
-			Frequency,
-			NearFuture,
+			Present,
+
 			PastPreterite, //  Preterite
 			PastImperfect,
 			NotImplemented
@@ -38,28 +37,32 @@ namespace monarquia
 
 			AddTimeframeExpression (Timeframe.NotImplemented, "");
 
-			AddTimeframeExpression (Timeframe.Now, "");
-			AddTimeframeExpression (Timeframe.Now, "ahora");
-			AddTimeframeExpression (Timeframe.Now, "ahora mismo");
-			AddTimeframeExpression (Timeframe.Now, "hoy");
 
-			AddTimeframeExpression (Timeframe.Frequency, "a menudo");  // not sure
-			AddTimeframeExpression (Timeframe.Frequency, "de vez en cuando");  // not sure
-			AddTimeframeExpression (Timeframe.Frequency, "en general");
-			AddTimeframeExpression (Timeframe.Frequency, "los lunes");
-			AddTimeframeExpression (Timeframe.Frequency, "los martes");
-			AddTimeframeExpression (Timeframe.Frequency, "los miercoles");
-			AddTimeframeExpression (Timeframe.Frequency, "los jueves");
-			AddTimeframeExpression (Timeframe.Frequency, "los viernes");
-			AddTimeframeExpression (Timeframe.Frequency, "los sábados");
-			AddTimeframeExpression (Timeframe.Frequency, "los domingos");
-			AddTimeframeExpression (Timeframe.Frequency, "los fines de semanas");
-			AddTimeframeExpression (Timeframe.Frequency, "normalmente");
-			AddTimeframeExpression (Timeframe.Frequency, "siempre");
+			// Now
+			AddTimeframeExpression (Timeframe.Present, "");
+			AddTimeframeExpression (Timeframe.Present, "ahora");
+			AddTimeframeExpression (Timeframe.Present, "ahora mismo");
+			AddTimeframeExpression (Timeframe.Present, "hoy");
 
-			AddTimeframeExpression (Timeframe.NearFuture, "al mediodía");
-			AddTimeframeExpression (Timeframe.NearFuture, "esta semana");
-			AddTimeframeExpression (Timeframe.NearFuture, "esta mes");
+			// Usually? Frequency?
+			AddTimeframeExpression (Timeframe.Present, "a menudo");  // not sure
+			AddTimeframeExpression (Timeframe.Present, "de vez en cuando");  // not sure
+			AddTimeframeExpression (Timeframe.Present, "en general");
+			AddTimeframeExpression (Timeframe.Present, "los lunes");
+			AddTimeframeExpression (Timeframe.Present, "los martes");
+			AddTimeframeExpression (Timeframe.Present, "los miercoles");
+			AddTimeframeExpression (Timeframe.Present, "los jueves");
+			AddTimeframeExpression (Timeframe.Present, "los viernes");
+			AddTimeframeExpression (Timeframe.Present, "los sábados");
+			AddTimeframeExpression (Timeframe.Present, "los domingos");
+			AddTimeframeExpression (Timeframe.Present, "los fines de semanas");
+			AddTimeframeExpression (Timeframe.Present, "normalmente");
+			AddTimeframeExpression (Timeframe.Present, "siempre");
+
+			// Near future
+			AddTimeframeExpression (Timeframe.Present, "al mediodía");
+			AddTimeframeExpression (Timeframe.Present, "esta semana");
+			AddTimeframeExpression (Timeframe.Present, "esta mes");
 
 			AddTimeframeExpression (Timeframe.PastPreterite, "a esa hora");
 			AddTimeframeExpression (Timeframe.PastPreterite, "a las cuatro");
