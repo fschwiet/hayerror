@@ -17,6 +17,7 @@ namespace monarquia
 		public CannedData ()
 		{
 			AddVerbEnding ("beber", "leche");
+			AddVerbEnding ("beber", "agua");
 			AddVerbEnding ("comer", "fajitas");
 			AddVerbEnding ("dar", "un abrazo");
 			AddVerbEnding ("dar", "gritos");
