@@ -9,6 +9,8 @@ namespace monarquia
 			Present,
 			PastPreterite,
 			PastImperfect,
+			Future,
+			Conditional,
 			PresentPerfect
 		}
 

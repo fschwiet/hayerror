@@ -41,6 +41,8 @@ namespace monarquia
 				verb.WithTenses (Verb.Conjugation.Present, GetPovLookupFromTableColumn (indicativeTable, 0));
 				verb.WithTenses (Verb.Conjugation.PastPreterite, GetPovLookupFromTableColumn (indicativeTable, 1));
 				verb.WithTenses (Verb.Conjugation.PastImperfect, GetPovLookupFromTableColumn (indicativeTable, 2));
+				verb.WithTenses (Verb.Conjugation.Conditional, GetPovLookupFromTableColumn (indicativeTable, 3));
+				verb.WithTenses (Verb.Conjugation.Future, GetPovLookupFromTableColumn (indicativeTable, 4));
 				verb.WithTenses (Verb.Conjugation.PresentPerfect, GetPovLookupFromTableColumn (perfectTable, 0));
 
 
