@@ -84,6 +84,12 @@ namespace monarquia
 
 				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
 					CannedData.Timeframe.NotImplemented,cannedData, v => verb.ConjugatedPresentPerfectTense(v)));
+
+				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
+					CannedData.Timeframe.DefinitePast,cannedData, v => verb.ConjugatePastPreteriteTense(v)));
+
+				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
+					CannedData.Timeframe.ImperfectPast,cannedData, v => verb.ConjugatePastImperfectTense(v)));
 			}
 			return results;
 		}

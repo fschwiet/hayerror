@@ -38,11 +38,11 @@ namespace monarquia
 
 				var verb = new Verb (infinitive);
 
-				var presentTenses = GetPovLookupFromTableColumn (indicativeTable, 0);
-				verb.WithPresentTenses (presentTenses);
+				verb.WithPresentTenses (GetPovLookupFromTableColumn (indicativeTable, 0));
+				verb.WithPastPreteriteTenses (GetPovLookupFromTableColumn (indicativeTable, 1));
+				verb.WithPastImperfectTenses (GetPovLookupFromTableColumn (indicativeTable, 2));
+				verb.WithPresentPerfectTenses (GetPovLookupFromTableColumn (perfectTable, 0));
 
-				var presentPerfectTenses = GetPovLookupFromTableColumn (perfectTable, 0);
-				verb.WithPresentPerfectTenses (presentPerfectTenses);
 
 				results.Add (verb);
 			}
