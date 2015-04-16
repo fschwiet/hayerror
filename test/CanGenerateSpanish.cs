@@ -17,37 +17,37 @@ namespace test
 		}
 
 		[Test]
-		[TestCase("yo voy")]
-		[TestCase("tú vas")]		
-		[TestCase("usted va")]
-		[TestCase("él va")]
-		[TestCase("ella va")]
+		[TestCase("Yo voy.")]
+		[TestCase("Tú vas.")]		
+		[TestCase("Usted va.")]
+		[TestCase("Él va.")]
+		[TestCase("Ella va.")]
 
-		[TestCase("nosotros vamos")]
-		[TestCase("vosotros vais")]
-		[TestCase("ustedes van")]
-		[TestCase("ellos van")]
-		[TestCase("ellas van")]
+		[TestCase("Nosotros vamos.")]
+		[TestCase("Vosotros vais.")]
+		[TestCase("Ustedes van.")]
+		[TestCase("Ellos van.")]
+		[TestCase("Ellas van.")]
 
-		[TestCase("yo grito")]
+		[TestCase("Yo grito.")]
 		public void PresentTenseIntransitive (string expected)
 		{
 			Assert.Contains (expected, allPhrases);
 		}
 
-		[TestCase("yo preparo la cena")]
-		[TestCase("ellos suben la escalera")]
-		[TestCase("ellas beben leche")]
-		[TestCase("él suma la cuenta")]
-		[TestCase("ella habla a la reportera")]
-		[TestCase("él teme a los críticos")]
-		[TestCase("ellos comen fajitas")]
+		[TestCase("Yo preparo la cena.")]
+		[TestCase("Ellos suben la escalera.")]
+		[TestCase("Ellas beben leche.")]
+		[TestCase("Él suma la cuenta.")]
+		[TestCase("Ella habla a la reportera.")]
+		[TestCase("Él teme a los críticos.")]
+		[TestCase("Ellos comen fajitas.")]
 		public void PresentTenseTransitive (string expected)
 		{
 			Assert.Contains (expected, allPhrases);
 		}
 
-		[TestCase("yo he hablado con él")]
+		[TestCase("Yo he hablado con él.")]
 		public void PresentPerfectTense (string expected) {
 
 			var filtered = allPhrases.Where (p => p.Contains ("he hablado")).ToArray();
@@ -56,11 +56,11 @@ namespace test
 			Assert.Contains (expected, allPhrases);
 		}
 
-		[TestCase("ahora yo preparo la cena")]
-		[TestCase("normalmente yo preparo la cena")]
-		[TestCase("esta mes yo preparo la cena")]
-		[TestCase("anoche yo preparé la cena")]
-		[TestCase("casi nunca yo preparaba la cena")]
+		[TestCase("Ahora yo preparo la cena.")]
+		[TestCase("Normalmente yo preparo la cena.")]
+		[TestCase("Esta mes yo preparo la cena.")]
+		[TestCase("Anoche yo preparé la cena.")]
+		[TestCase("Casi nunca yo preparaba la cena.")]
 		// other conjugations?
 		public void TimeframesAreUsedWithAppropriateTense(string expected) {
 			Assert.Contains (expected, allPhrases);

@@ -132,12 +132,10 @@ namespace monarquia
 				var nonemptyWordsJoinedBySpaces = 
 					string.Join (" ", accumulatedWords.Where (w => !string.IsNullOrEmpty (w)));
 
-				/*
 				var capitolizedSentencewithPeriod = 
 					nonemptyWordsJoinedBySpaces.First ().ToString ().ToUpper () + nonemptyWordsJoinedBySpaces.Substring (1) + ".";
-				*/
 
-				results.Add (nonemptyWordsJoinedBySpaces);
+				results.Add (capitolizedSentencewithPeriod);
 			}
 
 			return results;
