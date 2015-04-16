@@ -8,7 +8,9 @@ namespace monarquia
 		public enum Timeframe {
 			Now,
 			Frequency,
-			NearFuture
+			NearFuture,
+			DefinitePast, //  Preterite
+			ImperfectPast
 		}
 
 		public CannedData ()
@@ -36,9 +38,8 @@ namespace monarquia
 			AddTimeframeExpression (Timeframe.Now, "ahora mismo");
 			AddTimeframeExpression (Timeframe.Now, "hoy");
 
-			AddTimeframeExpression (Timeframe.Frequency, "a menudo");
-			AddTimeframeExpression (Timeframe.Frequency, "de vez en cuando");
-			AddTimeframeExpression (Timeframe.Frequency, "de vez en cuando");
+			AddTimeframeExpression (Timeframe.Frequency, "a menudo");  // not sure
+			AddTimeframeExpression (Timeframe.Frequency, "de vez en cuando");  // not sure
 			AddTimeframeExpression (Timeframe.Frequency, "en general");
 			AddTimeframeExpression (Timeframe.Frequency, "los lunes");
 			AddTimeframeExpression (Timeframe.Frequency, "los martes");
@@ -49,12 +50,42 @@ namespace monarquia
 			AddTimeframeExpression (Timeframe.Frequency, "los domingos");
 			AddTimeframeExpression (Timeframe.Frequency, "los fines de semanas");
 			AddTimeframeExpression (Timeframe.Frequency, "normalmente");
-			AddTimeframeExpression (Timeframe.Frequency, "nunca");
 			AddTimeframeExpression (Timeframe.Frequency, "siempre");
 
 			AddTimeframeExpression (Timeframe.NearFuture, "al mediodía");
 			AddTimeframeExpression (Timeframe.NearFuture, "esta semana");
 			AddTimeframeExpression (Timeframe.NearFuture, "esta mes");
+
+			AddTimeframeExpression (Timeframe.DefinitePast, "a esa hora");
+			AddTimeframeExpression (Timeframe.DefinitePast, "a las cuatro");
+			AddTimeframeExpression (Timeframe.DefinitePast, "anoche");
+			AddTimeframeExpression (Timeframe.DefinitePast, "anteanoche");
+			AddTimeframeExpression (Timeframe.DefinitePast, "anteayer");
+			AddTimeframeExpression (Timeframe.DefinitePast, "ayer por la mañana");
+			AddTimeframeExpression (Timeframe.DefinitePast, "ayer por la noche");
+			AddTimeframeExpression (Timeframe.DefinitePast, "ayer por la tarde");
+			AddTimeframeExpression (Timeframe.DefinitePast, "el año pasado");
+			AddTimeframeExpression (Timeframe.DefinitePast, "el lunes pasado");
+			AddTimeframeExpression (Timeframe.DefinitePast, "el mes pasado");
+			AddTimeframeExpression (Timeframe.DefinitePast, "en ese momento");
+			AddTimeframeExpression (Timeframe.DefinitePast, "hace diez años");
+			AddTimeframeExpression (Timeframe.DefinitePast, "hoy por la mañana");
+			AddTimeframeExpression (Timeframe.DefinitePast, "la semana pasada");
+
+			AddTimeframeExpression (Timeframe.ImperfectPast, "a veces");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "algunas veces");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "casi nunca");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "casi siempre");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "de vez en cuando");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "generalmente");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "mientras");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "muchas veces");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "por lo general");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "rara vez");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "siempre");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "todas las mañanas");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "todos los años");
+			AddTimeframeExpression (Timeframe.ImperfectPast, "todos los días");
 		}
 
 		Dictionary<string, List<string>> AllVerbEndings = new Dictionary<string, List<string>>(StringComparer.InvariantCultureIgnoreCase);
