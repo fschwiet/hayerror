@@ -10,7 +10,8 @@ namespace monarquia
 			Frequency,
 			NearFuture,
 			DefinitePast, //  Preterite
-			ImperfectPast
+			ImperfectPast,
+			NotImplemented
 		}
 
 		public CannedData ()
@@ -34,6 +35,9 @@ namespace monarquia
 			AddVerbEnding ("tener", "prisa");  // to be in a hurry
 			AddVerbEnding ("tener", "culpa");  // to be at fault
 
+			AddTimeframeExpression (Timeframe.NotImplemented, "");
+
+			AddTimeframeExpression (Timeframe.Now, "");
 			AddTimeframeExpression (Timeframe.Now, "ahora");
 			AddTimeframeExpression (Timeframe.Now, "ahora mismo");
 			AddTimeframeExpression (Timeframe.Now, "hoy");
@@ -118,6 +122,11 @@ namespace monarquia
 			foreach (var expression in expressions) {
 				TimeExpressions[timeframe].Add (expression);
 			}
+		}
+
+		public IEnumerable<string> GetTimeframeExpressions(Timeframe timeframe) {
+
+			return TimeExpressions [timeframe];
 		}
 	}
 }

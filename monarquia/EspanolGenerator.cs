@@ -71,35 +71,75 @@ namespace monarquia
 		{
 			List<string> results = new List<string>();
 
-			var verbEndings = cannedData.GetVerbEndings (verb.Infinitive).ToArray();
-
 			foreach (PointOfView pointOfView in Enum.GetValues (typeof(PointOfView))) {
 
-				results.AddRange (GetForVerbConjugation (limitVariations, pointOfView, verbEndings, v => verb.ConjugatedPresentTense(v)));
-				results.AddRange (GetForVerbConjugation (limitVariations, pointOfView, verbEndings, v => verb.ConjugatedPresentPerfectTense(v)));
+				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
+					CannedData.Timeframe.Now, cannedData, v => verb.ConjugatedPresentTense(v)));
+
+				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
+					CannedData.Timeframe.Frequency, cannedData, v => verb.ConjugatedPresentTense(v)));
+
+				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
+					CannedData.Timeframe.NearFuture, cannedData, v => verb.ConjugatedPresentTense(v)));
+
+				results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, 
+					CannedData.Timeframe.NotImplemented,cannedData, v => verb.ConjugatedPresentPerfectTense(v)));
 			}
 			return results;
 		}
 
 		List<string> GetForVerbConjugation (
+			Verb verb,
 			bool limitVariations, 
 			PointOfView pointOfView, 
-			IEnumerable<string> verbEndings, 
+			CannedData.Timeframe timeframe,
+			CannedData cannedData, 
 			Func<PointOfView,string> specificVerbConjugation)
 		{
 			List<string> results = new List<string> ();
-			var selectedVerbEndings = verbEndings.ToArray ();
+
+			var selectedVerbEndings = cannedData.GetVerbEndings (verb.Infinitive).ToArray();
 			if (limitVariations) {
 				selectedVerbEndings = new string[] {
 					selectedVerbEndings [random.Next (selectedVerbEndings.Length)]
 				};
 			}
-			foreach (var verbEnding in selectedVerbEndings) {
-				var result = SubjectPronounFor (pointOfView) + " " + specificVerbConjugation (pointOfView);
-				if (!string.IsNullOrEmpty (verbEnding))
-					result += " " + verbEnding;
-				results.Add (result);
+
+			var selectedTimeframes = cannedData.GetTimeframeExpressions(timeframe).ToArray();
+
+			if (limitVariations) {
+				selectedTimeframes = new string[] {
+					selectedTimeframes[random.Next(selectedTimeframes.Length)]
+				};
 			}
+
+
+			foreach (var scenario in 
+				from verbEnding in selectedVerbEndings
+				from tf in selectedTimeframes
+				select new { verbEnding, timeframe = tf }) 
+			{
+				//  some accumulated words may be empty strings
+				List<string> accumulatedWords = new List<string>();
+
+				accumulatedWords.Add (scenario.timeframe);
+
+				accumulatedWords.Add(SubjectPronounFor (pointOfView));
+				accumulatedWords.Add(specificVerbConjugation (pointOfView));
+
+				accumulatedWords.Add(scenario.verbEnding);
+						
+				var nonemptyWordsJoinedBySpaces = 
+					string.Join (" ", accumulatedWords.Where (w => !string.IsNullOrEmpty (w)));
+
+				/*
+				var capitolizedSentencewithPeriod = 
+					nonemptyWordsJoinedBySpaces.First ().ToString ().ToUpper () + nonemptyWordsJoinedBySpaces.Substring (1) + ".";
+				*/
+
+				results.Add (nonemptyWordsJoinedBySpaces);
+			}
+
 			return results;
 		}
 	}
