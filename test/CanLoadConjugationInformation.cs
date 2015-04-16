@@ -17,8 +17,8 @@ namespace test
 
 			var expected = allVerbs.Single (v => v.Infinitive == "ir");
 
-			Assert.AreEqual("voy", expected.ConjugatedPresentTense(PointOfView.FirstPerson));
-			Assert.AreEqual("he ido", expected.ConjugatedPresentPerfectTense(PointOfView.FirstPerson));
+			Assert.AreEqual("voy", expected.ConjugatedForTense(Verb.Conjugation.Present, PointOfView.FirstPerson));
+			Assert.AreEqual("he ido", expected.ConjugatedForTense(Verb.Conjugation.PresentPerfect, PointOfView.FirstPerson));
 		}
 	}
 }

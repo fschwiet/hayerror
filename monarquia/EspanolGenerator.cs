@@ -136,8 +136,8 @@ namespace monarquia
 			bool limitVariations, 
 			PointOfView pointOfView, 
 			CannedData.Timeframe timeframe,
-			CannedData cannedData, 
-			Func<PointOfView,string> specificVerbConjugation)
+			CannedData cannedData,
+			Verb.Conjugation conjugation)
 		{
 			List<string> results = new List<string> ();
 
@@ -168,7 +168,7 @@ namespace monarquia
 				accumulatedWords.Add (scenario.timeframe);
 
 				accumulatedWords.Add(SubjectPronounFor (pointOfView));
-				accumulatedWords.Add(specificVerbConjugation (pointOfView));
+				accumulatedWords.Add(verb.ConjugatedForTense (conjugation, pointOfView));
 
 				accumulatedWords.Add(scenario.verbEnding);
 						
@@ -188,10 +188,10 @@ namespace monarquia
 		{
 			List<string> results = new List<string> ();
 
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), CannedData.Timeframe.Present, cannedData, v => verb.ConjugatedPresentTense (v)));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), CannedData.Timeframe.PastPreterite, cannedData, v => verb.ConjugatePastPreteriteTense (v)));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), CannedData.Timeframe.PastImperfect, cannedData, v => verb.ConjugatePastImperfectTense (v)));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), CannedData.Timeframe.NotImplemented, cannedData, v => verb.ConjugatedPresentPerfectTense (v)));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), CannedData.Timeframe.Present, cannedData, Verb.Conjugation.Present));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), CannedData.Timeframe.PastPreterite, cannedData, Verb.Conjugation.PastPreterite));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), CannedData.Timeframe.PastImperfect, cannedData, Verb.Conjugation.PastImperfect));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), CannedData.Timeframe.NotImplemented, cannedData, Verb.Conjugation.PresentPerfect));
 
 			return results;
 		}

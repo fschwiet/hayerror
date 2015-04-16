@@ -5,58 +5,28 @@ namespace monarquia
 {
 	public class Verb {
 
+		public enum Conjugation {
+			Present,
+			PastPreterite,
+			PastImperfect,
+			PresentPerfect
+		}
+
 		public readonly string Infinitive;
-		public Dictionary<PointOfView, string> PresentTense;
-		public Dictionary<PointOfView, string> PresentPerfectTense;
-		public Dictionary<PointOfView, string> PastPreteriteTense;
-		public Dictionary<PointOfView, string> PastImperfectTense;
+		public Dictionary<Conjugation, Dictionary<PointOfView, string>> Tenses;
 
 		public Verb(string infinitiv) {
 			Infinitive = infinitiv;
+			Tenses = new Dictionary<Conjugation, Dictionary<PointOfView, string>> ();
 		}
 
-		public Verb WithPresentTenses (Dictionary<PointOfView, string> value)
-		{
-			PresentTense = value;
-
+		public Verb WithTenses (Conjugation conjugation, Dictionary<PointOfView, string> value) {
+			Tenses [conjugation] = value;
 			return this;
 		}
 
-		public Verb WithPresentPerfectTenses (Dictionary<PointOfView, string> value)
-		{
-			PresentPerfectTense = value;
-
-			return this;
-		}
-
-		public Verb WithPastPreteriteTenses (Dictionary<PointOfView, string> value)
-		{
-			PastPreteriteTense = value;
-
-			return this;
-		}
-
-		public Verb WithPastImperfectTenses (Dictionary<PointOfView, string> value)
-		{
-			PastImperfectTense = value;
-
-			return this;
-		}
-
-		public string ConjugatedPresentTense(PointOfView v) {
-			return PresentTense [v];
-		}
-
-		public string ConjugatedPresentPerfectTense(PointOfView v) {
-			return PresentPerfectTense [v];
-		}
-
-		public string ConjugatePastPreteriteTense(PointOfView v) {
-			return PastPreteriteTense [v];
-		}
-
-		public string ConjugatePastImperfectTense(PointOfView v) {
-			return PastImperfectTense [v];
+		public string ConjugatedForTense(Conjugation conjugation, PointOfView pointOfView) {
+			return Tenses [conjugation][pointOfView];
 		}
 	}
 }
