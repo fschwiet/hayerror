@@ -55,6 +55,16 @@ namespace test
 
 			Assert.Contains (expected, allPhrases);
 		}
+
+		[TestCase("ahora yo preparo la cena")]
+		[TestCase("normalmente yo preparo la cena")]
+		[TestCase("esta mes yo preparo la cena")]
+		[TestCase("anoche yo preparé la cena")]
+		[TestCase("casi nunca yo preparaba la cena")]
+		// other conjugations?
+		public void TimeframesAreUsedWithAppropriateTense(string expected) {
+			Assert.Contains (expected, allPhrases);
+		}
 	}
 }
 
