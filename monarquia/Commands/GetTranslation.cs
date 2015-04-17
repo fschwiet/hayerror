@@ -26,18 +26,26 @@ namespace monarquia
 
 		public override int Run (string[] remainingArguments)
 		{
-			var query = "http://mymemory.translated.net/api/get?langpair=es|en&q=" + WebUtility.UrlEncode (Original);
 
 			using (var client = new WebClient ()) {
-				var resultText = client.DownloadString (query);
 
-				var result = JObject.Parse (resultText);
-				var responseData = result.GetValue ("responseData") as JObject;
-				var translatedText = responseData.GetValue ("translatedText") as JValue;
-				Console.WriteLine (translatedText.ToString ());
+				var query = "http://mymemory.translated.net/api/get?langpair=es|en&q=" + WebUtility.UrlEncode (Original);
+
+				var translatedText = DownloadTranslation (client, query);
+
+				Console.WriteLine (translatedText);
 			}
 
 			return 0;
+		}
+
+		public static string DownloadTranslation (WebClient client, string query)
+		{
+			var resultText = client.DownloadString (query);
+			var result = JObject.Parse (resultText);
+			var responseData = result.GetValue ("responseData") as JObject;
+			var translatedText = (responseData.GetValue ("translatedText") as JValue).ToString ();
+			return translatedText;
 		}
 	}
 }
