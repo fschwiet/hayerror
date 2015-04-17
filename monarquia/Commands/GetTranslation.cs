@@ -31,7 +31,7 @@ namespace monarquia
 
 				var query = "http://mymemory.translated.net/api/get?langpair=es|en&q=" + WebUtility.UrlEncode (Original);
 
-				var translatedText = DownloadTranslation (client, query);
+				var translatedText = DownloadTranslation (client, Original);
 
 				Console.WriteLine (translatedText);
 			}
@@ -39,8 +39,9 @@ namespace monarquia
 			return 0;
 		}
 
-		public static string DownloadTranslation (WebClient client, string query)
+		public static string DownloadTranslation (WebClient client, string source)
 		{
+			var query = "http://mymemory.translated.net/api/get?langpair=es|en&q=" + WebUtility.UrlEncode (source);
 			var resultText = client.DownloadString (query);
 			var result = JObject.Parse (resultText);
 			var responseData = result.GetValue ("responseData") as JObject;

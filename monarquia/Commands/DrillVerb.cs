@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using ManyConsole;
+using CsvHelper;
 
 namespace monarquia
 {
@@ -28,9 +30,23 @@ namespace monarquia
 
 			var results = generator.GetForVerb (Verb, true);
 
-			foreach (var result in results) {
-				Console.WriteLine (result);
+			using (var client = new System.Net.WebClient ()) {
+
+				var memoryStream = new MemoryStream ();
+				var csv = new CsvWriter( new StreamWriter(memoryStream, System.Text.Encoding.UTF8));
+
+				foreach (var original in results) {
+
+					var translation = GetTranslation.DownloadTranslation (client, original);
+
+					Console.WriteLine (original + ", " + translation);
+					csv.WriteField(original);
+					csv.WriteField (translation);
+					csv.NextRecord ();
+				}
 			}
+
+	
 
 			return 0;
 		} 
