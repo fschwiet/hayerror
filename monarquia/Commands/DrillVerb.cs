@@ -15,6 +15,7 @@ namespace monarquia
 		{
 			this.IsCommand ("drill-verb", "Generate phrases for a particular verb");
 			this.HasAdditionalArguments (1, " <verb infinitive>");
+			this.SkipsCommandSummaryBeforeRunning ();
 		}
 
 		public override int? OverrideAfterHandlingArgumentsBeforeRun (string[] remainingArguments)
@@ -42,6 +43,8 @@ namespace monarquia
 					Console.WriteLine (original + ", " + translation);
 					csv.WriteField(original);
 					csv.WriteField (translation);
+					csv.WriteField (Verb);
+					csv.WriteField ("hayerror:drill");
 					csv.NextRecord ();
 				}
 			}

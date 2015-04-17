@@ -17,17 +17,17 @@ namespace test
 		}
 
 		[Test]
-		[TestCase("Yo voy.")]
-		[TestCase("Tú vas.")]		
-		[TestCase("Usted va.")]
-		[TestCase("Él va.")]
-		[TestCase("Ella va.")]
+		[TestCase("Yo voy al cine.")]
+		[TestCase("Tú vas al cine.")]		
+		[TestCase("Usted va al cine.")]
+		[TestCase("Él va al cine.")]
+		[TestCase("Ella va al cine.")]
 
-		[TestCase("Nosotros vamos.")]
-		[TestCase("Vosotros vais.")]
-		[TestCase("Ustedes van.")]
-		[TestCase("Ellos van.")]
-		[TestCase("Ellas van.")]
+		[TestCase("Nosotros vamos al cine.")]
+		[TestCase("Vosotros vais al cine.")]
+		[TestCase("Ustedes van al cine.")]
+		[TestCase("Ellos van al cine.")]
+		[TestCase("Ellas van al cine.")]
 
 		[TestCase("Yo grito.")]
 		public void PresentTenseIntransitive (string expected)

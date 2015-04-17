@@ -15,8 +15,11 @@ namespace monarquia
 			//  AddVerbEnding ("dar", "la una");  ->  only clocks can strike one (to indicate a time)
 			AddVerbEnding ("hablar", "a la reportera");
 			AddVerbEnding ("hablar", "con él");
-			AddVerbEnding ("ir", "");
 			AddVerbEnding ("ir", "al cine");
+			AddVerbEnding ("ir", "con botas amarillas");
+			AddVerbEnding ("ir", "a decir la verdad");
+			AddVerbEnding ("ir", "a leer");
+			AddVerbEnding ("ir", "allí");
 			AddVerbEnding ("preparar", "la cena");
 			AddVerbEnding ("subir", "la escalera");
 			AddVerbEnding ("sumar", "la cuenta");
