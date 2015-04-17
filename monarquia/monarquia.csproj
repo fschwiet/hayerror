@@ -40,6 +40,9 @@
     <Reference Include="ManyConsole">
       <HintPath>..\packages\ManyConsole.0.4.2.17\lib\ManyConsole.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -52,6 +55,7 @@
     <Compile Include="Commands\LoadContexts.cs" />
     <Compile Include="CannedData.cs" />
     <Compile Include="Commands\DrillVerb.cs" />
+    <Compile Include="Commands\GetTranslation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
