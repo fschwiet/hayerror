@@ -113,6 +113,24 @@ namespace monarquia
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "todos los días");
 
 			AddTimeframeExpression (Verb.Conjugation.PresentPerfect, "");
+
+			AddTimeframeExpression (Verb.Conjugation.Future, "");
+			AddTimeframeExpression (Verb.Conjugation.Future, "a la una");
+			AddTimeframeExpression (Verb.Conjugation.Future, "de aquí a dos días");
+			AddTimeframeExpression (Verb.Conjugation.Future, "el lunes que vien");
+			AddTimeframeExpression (Verb.Conjugation.Future, "en una semana");
+			AddTimeframeExpression (Verb.Conjugation.Future, "esta noche");
+			AddTimeframeExpression (Verb.Conjugation.Future, "esta primavera");
+			AddTimeframeExpression (Verb.Conjugation.Future, "luego");
+			AddTimeframeExpression (Verb.Conjugation.Future, "mañana");
+			AddTimeframeExpression (Verb.Conjugation.Future, "mañana por la mañana");
+			AddTimeframeExpression (Verb.Conjugation.Future, "mañana por la tarde");
+			AddTimeframeExpression (Verb.Conjugation.Future, "mañana por la noche");
+			AddTimeframeExpression (Verb.Conjugation.Future, "pasado mañana");
+
+			AddTimeframeExpression (Verb.Conjugation.Conditional, "");
+			AddTimeframeExpression (Verb.Conjugation.Conditional, "ahora mismo");
+			AddTimeframeExpression (Verb.Conjugation.Conditional, "por supuesto");
 		}
 
 		Dictionary<string, List<string>> AllVerbEndings = new Dictionary<string, List<string>>(StringComparer.InvariantCultureIgnoreCase);
