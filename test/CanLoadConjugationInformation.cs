@@ -30,6 +30,8 @@ namespace test
 
 			var expected = allVerbs.Single (v => v.Infinitive == "estar");
 
+			Assert.AreEqual("estoy", expected.ConjugatedForTense(Verb.Conjugation.Present, PointOfView.FirstPerson));
+			Assert.AreEqual("estás", expected.ConjugatedForTense(Verb.Conjugation.Present, PointOfView.SecondPerson));
 			Assert.AreEqual("está", expected.ConjugatedForTense(Verb.Conjugation.Present, PointOfView.ThirdPersonFeminine));
 		}
 	}

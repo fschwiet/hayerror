@@ -67,7 +67,8 @@ namespace monarquia
 				var columns = row.ChildNodes.ToArray ();
 				for (var columnIndex = 1; columnIndex < columns.Length; columnIndex++) {
 					var column = columns [columnIndex];
-					transformed [columnIndex - 1] [rowIndex - 1] = WebUtility.HtmlDecode (column.InnerText);
+
+					transformed [columnIndex - 1] [rowIndex - 1] = WebUtility.HtmlDecode (column.Cq().Text());
 				}
 			}
 			return transformed;

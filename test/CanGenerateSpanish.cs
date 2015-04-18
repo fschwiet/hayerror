@@ -34,7 +34,8 @@ namespace test
 		}
 
 		[TestCase("Yo grito.")]
-		[TestCase("Ella está en frente")]
+		[TestCase("Ella está en frente.")]
+		[TestCase("Yo estoy en frente.")]
 		public void MiscBugs (string expected)
 		{
 			Assert.Contains (expected, allPhrases);
