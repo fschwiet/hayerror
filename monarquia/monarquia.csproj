@@ -69,6 +69,7 @@
     <Compile Include="Commands\GetTranslation.cs" />
     <Compile Include="Spanish\PointOfView.cs" />
     <Compile Include="Spanish\Verb.cs" />
+    <Compile Include="Spanish\Noun.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

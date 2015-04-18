@@ -140,7 +140,7 @@ namespace monarquia
 		{
 			List<string> results = new List<string> ();
 
-			var selectedVerbEndings = cannedData.GetVerbEndings (verb.Infinitive).ToArray();
+			var selectedVerbEndings = cannedData.GetVerbEndings (verb.Infinitive, pointOfView).ToArray();
 			if (limitVariations) {
 				selectedVerbEndings = new string[] {
 					selectedVerbEndings [random.Next (selectedVerbEndings.Length)]

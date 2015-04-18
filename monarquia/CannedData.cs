@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace monarquia
 {
@@ -7,6 +8,13 @@ namespace monarquia
 	{
 		public CannedData ()
 		{
+			var actor = new Noun ("actor", "actriz", "actores", "actrizes");
+			var cook = new Noun ("cocinero", "cocinera", "cocineros", "cocineras");
+			var dentist = new Noun ("dentista", "dentistas");
+			var landlord = new Noun ("dueño", "dueña", "dueños", "dueñas");
+			var student = new Noun ("estudiante", "estudiantes");
+
+
 			AddVerbEnding ("beber", "leche");
 			AddVerbEnding ("beber", "agua");
 			AddVerbEnding ("comer", "fajitas");
@@ -25,8 +33,13 @@ namespace monarquia
 			AddVerbEnding ("ir", "a leer");
 			AddVerbEnding ("ir", "allí");
 			AddVerbEnding ("preparar", "la cena");
-			//AddVerbEnding ("ser", "dentista"); -> BUGBUG needs pluralization matching
-			//AddVerbEnding ("ser", "estudiantes"); -> BUGBUG needs pluralization matching
+
+			AddVerbEnding ("ser", actor);
+			AddVerbEnding ("ser", cook);
+			AddVerbEnding ("ser", dentist);
+			AddVerbEnding ("ser", landlord);
+			AddVerbEnding ("ser", student);
+
 			AddVerbEnding ("subir", "la escalera");
 			AddVerbEnding ("sumar", "la cuenta");
 			AddVerbEnding ("temer", "a los críticos");
@@ -144,25 +157,34 @@ namespace monarquia
 			AddTimeframeExpression (Verb.Conjugation.Conditional, "por supuesto");
 		}
 
-		Dictionary<string, List<string>> AllVerbEndings = new Dictionary<string, List<string>>(StringComparer.InvariantCultureIgnoreCase);
+		Dictionary<string, List<Func<PointOfView,String>>> AllVerbEndings = new Dictionary<string, List<Func<PointOfView,String>>>(StringComparer.InvariantCultureIgnoreCase);
 		Dictionary<Verb.Conjugation, List<string>> TimeExpressions = new Dictionary<Verb.Conjugation, List<string>>();
 
 		void AddVerbEnding(string verbInfinitive, string ending) {
 		
 			if (!AllVerbEndings.ContainsKey (verbInfinitive)) {
-				AllVerbEndings.Add (verbInfinitive, new List<string> ());
+				AllVerbEndings.Add (verbInfinitive, new List<Func<PointOfView,String>> ());
 			}
 
-			AllVerbEndings [verbInfinitive].Add (ending);
+			AllVerbEndings [verbInfinitive].Add (pov => ending);
 		}
 
-		public IEnumerable<string> GetVerbEndings(string verbInfinitive) {
+		void AddVerbEnding(string verbInfinitive, Noun noun) {
+
+			if (!AllVerbEndings.ContainsKey (verbInfinitive)) {
+				AllVerbEndings.Add (verbInfinitive, new List<Func<PointOfView,String>> ());
+			}
+
+			AllVerbEndings [verbInfinitive].Add (pov => noun.For(pov));
+		}
+
+		public IEnumerable<string> GetVerbEndings(string verbInfinitive, PointOfView pointOfView) {
 
 			if (!AllVerbEndings.ContainsKey (verbInfinitive)) {
 				return new string[] { "" };
 			}
 
-			return AllVerbEndings [verbInfinitive];
+			return AllVerbEndings [verbInfinitive].Select (f => f (pointOfView));
 		}
 
 		void AddTimeframeExpression(Verb.Conjugation conjugation, params string[] expressions) {

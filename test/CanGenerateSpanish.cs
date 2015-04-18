@@ -74,6 +74,14 @@ namespace test
 		public void TimeframesAreUsedWithAppropriateTense(string expected) {
 			Assert.Contains (expected, allPhrases);
 		}
+
+		[TestCase("Él es actor.")]
+		[TestCase("Ella es actriz.")]
+		[TestCase("Ellos son actores.")]
+		[TestCase("Ellas son actrizes.")]
+		public void TransferGenderAndNumberForSer(string expected){
+			Assert.Contains (expected, allPhrases);
+		}
 	}
 }
 
