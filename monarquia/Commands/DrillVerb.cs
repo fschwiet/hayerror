@@ -10,11 +10,13 @@ namespace monarquia
 	public class DrillVerb : ConsoleCommand
 	{
 		public string Verb;
+		public bool IncludeTranslations = false;
 
 		public DrillVerb ()
 		{
 			this.IsCommand ("drill-verb", "Generate phrases for a particular verb");
 			this.HasAdditionalArguments (1, " <verb infinitive>");
+			this.HasOption ("t", "include translations", v => IncludeTranslations = true);
 			this.SkipsCommandSummaryBeforeRunning ();
 		}
 
@@ -30,6 +32,13 @@ namespace monarquia
 			var generator = new EspanolGenerator ("./data");
 
 			var results = generator.GetForVerb (Verb, true);
+
+			if (!IncludeTranslations) {
+				foreach (var result in results) {
+					Console.WriteLine (result);
+				}
+				return 0;
+			}
 
 			var translated = GetTranslation.DownloadTranslationsFromGoogle(results);
 

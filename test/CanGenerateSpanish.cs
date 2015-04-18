@@ -28,9 +28,14 @@ namespace test
 		[TestCase("Ustedes van al cine.")]
 		[TestCase("Ellos van al cine.")]
 		[TestCase("Ellas van al cine.")]
+		public void PresentTenseIntransitive (string expected)
+		{
+			Assert.Contains (expected, allPhrases);
+		}
 
 		[TestCase("Yo grito.")]
-		public void PresentTenseIntransitive (string expected)
+		[TestCase("Ella está en frente")]
+		public void MiscBugs (string expected)
 		{
 			Assert.Contains (expected, allPhrases);
 		}

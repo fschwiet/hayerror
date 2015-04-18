@@ -62,13 +62,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EspanolGenerator.cs" />
     <Compile Include="DataLoader.cs" />
-    <Compile Include="Verb.cs" />
-    <Compile Include="PointOfView.cs" />
     <Compile Include="Commands\LoadAllExampleTexts.cs" />
     <Compile Include="Commands\LoadContexts.cs" />
     <Compile Include="CannedData.cs" />
     <Compile Include="Commands\DrillVerb.cs" />
     <Compile Include="Commands\GetTranslation.cs" />
+    <Compile Include="Spanish\PointOfView.cs" />
+    <Compile Include="Spanish\Verb.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -79,5 +79,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\" />
+    <Folder Include="Spanish\" />
   </ItemGroup>
 </Project>

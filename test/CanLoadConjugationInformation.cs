@@ -2,7 +2,6 @@
 using System;
 using System.Linq;
 using monarquia;
-using CsQuery;
 
 
 namespace test
@@ -23,6 +22,15 @@ namespace test
 			Assert.AreEqual("iré", expected.ConjugatedForTense(Verb.Conjugation.Future, PointOfView.FirstPerson));
 			Assert.AreEqual("iría", expected.ConjugatedForTense(Verb.Conjugation.Conditional, PointOfView.FirstPerson));
 			Assert.AreEqual("he ido", expected.ConjugatedForTense(Verb.Conjugation.PresentPerfect, PointOfView.FirstPerson));
+		}
+
+		[Test]
+		public void MiscConjugationBugs () {
+			var allVerbs = new DataLoader("../../../data").GetAllVerbs ();
+
+			var expected = allVerbs.Single (v => v.Infinitive == "estar");
+
+			Assert.AreEqual("está", expected.ConjugatedForTense(Verb.Conjugation.Present, PointOfView.ThirdPersonFeminine));
 		}
 	}
 }

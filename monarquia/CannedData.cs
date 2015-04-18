@@ -13,6 +13,10 @@ namespace monarquia
 			AddVerbEnding ("dar", "un abrazo");
 			AddVerbEnding ("dar", "gritos");
 			//  AddVerbEnding ("dar", "la una");  ->  only clocks can strike one (to indicate a time)
+			AddVerbEnding ("estar", "en frente");
+			AddVerbEnding ("estar", "en la espalda");
+			AddVerbEnding ("estar", "al otro lado de la calle");
+
 			AddVerbEnding ("hablar", "a la reportera");
 			AddVerbEnding ("hablar", "con él");
 			AddVerbEnding ("ir", "al cine");
@@ -21,6 +25,8 @@ namespace monarquia
 			AddVerbEnding ("ir", "a leer");
 			AddVerbEnding ("ir", "allí");
 			AddVerbEnding ("preparar", "la cena");
+			//AddVerbEnding ("ser", "dentista"); -> BUGBUG needs pluralization matching
+			//AddVerbEnding ("ser", "estudiantes"); -> BUGBUG needs pluralization matching
 			AddVerbEnding ("subir", "la escalera");
 			AddVerbEnding ("sumar", "la cuenta");
 			AddVerbEnding ("temer", "a los críticos");
