@@ -21,8 +21,8 @@ namespace monarquia
 			AddVerbEnding ("dar", "un abrazo");
 			AddVerbEnding ("dar", "gritos");
 			//  AddVerbEnding ("dar", "la una");  ->  only clocks can strike one (to indicate a time)
-			AddVerbEnding ("estar", "en frente");
-			AddVerbEnding ("estar", "en la espalda");
+			AddVerbEnding ("estar", "a frente");
+			AddVerbEnding ("estar", "a la atrás");
 			AddVerbEnding ("estar", "al otro lado de la calle");
 
 			AddVerbEnding ("hablar", "a la reportera");
