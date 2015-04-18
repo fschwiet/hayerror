@@ -54,6 +54,11 @@ namespace monarquia
 					client.Navigate ().GoToUrl ("about:blank");
 					client.Navigate ().GoToUrl ("https://translate.google.com/#es/en/" + WebUtility.UrlEncode(input));
 
+					var translateOriginalButton = client.FindElementsByCssSelector ("gt-revert-correct-message");
+
+					if (translateOriginalButton.Any ())
+						translateOriginalButton.First ().Click ();
+						
 					string result = null;
 					Polly.Policy.Handle<Exception> ().
 						WaitAndRetry(20, retryAttempt => TimeSpan.FromMilliseconds(200)).
