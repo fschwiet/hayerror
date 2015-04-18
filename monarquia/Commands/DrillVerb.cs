@@ -23,7 +23,7 @@ namespace monarquia
 			Verb = remainingArguments [0].ToLower ();
 
 			return base.OverrideAfterHandlingArgumentsBeforeRun (remainingArguments);
-		}
+		} 
 
 		public override int Run (string[] remainingArguments)
 		{
@@ -31,22 +31,22 @@ namespace monarquia
 
 			var results = generator.GetForVerb (Verb, true);
 
+			var translated = GetTranslation.DownloadTranslationsFromGoogle(results);
+
 			using (var client = new System.Net.WebClient ()) {
 
-				var memoryStream = new MemoryStream ();
-				var csv = new CsvWriter( new StreamWriter(memoryStream, System.Text.Encoding.UTF8));
+				var csv = new CsvWriter( Console.Out);
 
-				foreach (var original in results) {
+				foreach (var result in translated) {
 
-					var translation = GetTranslation.DownloadTranslation (client, original);
-
-					Console.WriteLine (original + ", " + translation);
-					csv.WriteField(original);
-					csv.WriteField (translation);
+					csv.WriteField (result.Key);
+					csv.WriteField (result.Value);
 					csv.WriteField (Verb);
 					csv.WriteField ("hayerror:drill");
 					csv.NextRecord ();
 				}
+
+				Console.Out.Flush ();
 			}
 
 	

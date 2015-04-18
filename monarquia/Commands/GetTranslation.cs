@@ -5,6 +5,7 @@ using System.Net;
 using ManyConsole;
 using Newtonsoft.Json.Linq;
 using OpenQA.Selenium.Chrome;
+using Polly;
 
 namespace monarquia
 {
@@ -38,18 +39,32 @@ namespace monarquia
 			return 0;
 		}
 
-		public static Dictionary<string, string> DownloadTranslationsFromGoogle (string[] inputs)
+		public static Dictionary<string, string> DownloadTranslationsFromGoogle (IEnumerable<string> inputs)
 		{
 			var results = new Dictionary<string, string>();
 
-			using (var client = new ChromeDriver ()) {
+			var options = new ChromeOptions();
+			var service = ChromeDriverService.CreateDefaultService();
+			service.SuppressInitialDiagnosticInformation = true;
+
+			using (var client = new ChromeDriver (service, options)) {
 
 				foreach (var input in inputs) {
 
+					client.Navigate ().GoToUrl ("about:blank");
 					client.Navigate ().GoToUrl ("https://translate.google.com/#es/en/" + WebUtility.UrlEncode(input));
 
-					var result = client.FindElementByCssSelector("#result_box").Text;
+					string result = null;
+					Polly.Policy.Handle<Exception> ().
+						WaitAndRetry(20, retryAttempt => TimeSpan.FromMilliseconds(200)).
+						Execute (() => {
+							result = client.FindElementByCssSelector("#result_box").Text;
 
+							if (String.IsNullOrEmpty(result)) {
+								throw new Exception("translation text empty");
+							}
+						});
+				
 					results.Add (input, result);
 				}
 			}
