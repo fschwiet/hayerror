@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using ManyConsole;
 using Newtonsoft.Json.Linq;
+using OpenQA.Selenium.Chrome;
 
 namespace monarquia
 {
@@ -26,17 +27,44 @@ namespace monarquia
 
 		public override int Run (string[] remainingArguments)
 		{
+			var inputs = new [] { Original};
 
-			using (var client = new WebClient ()) {
+			var results = DownloadTranslationsFromGoogle (inputs);
 
-				var query = "http://mymemory.translated.net/api/get?langpair=es|en&q=" + WebUtility.UrlEncode (Original);
-
-				var translatedText = DownloadTranslation (client, Original);
-
-				Console.WriteLine (translatedText);
+			foreach (var result in results) {
+				Console.WriteLine (result);
 			}
 
 			return 0;
+		}
+
+		public static Dictionary<string, string> DownloadTranslationsFromGoogle (string[] inputs)
+		{
+			var results = new Dictionary<string, string>();
+
+			using (var client = new ChromeDriver ()) {
+
+				foreach (var input in inputs) {
+
+					client.Navigate ().GoToUrl ("https://translate.google.com/#es/en/" + WebUtility.UrlEncode(input));
+
+					var result = client.FindElementByCssSelector("#result_box").Text;
+
+					results.Add (input, result);
+				}
+			}
+			return results;
+		}
+
+		static List<string> DownloadTranslationsFromMyMemory (string[] inputs)
+		{
+			var results = new List<string> ();
+			using (var client = new WebClient ()) {
+				foreach (var input in inputs) {
+					results.Add (DownloadTranslation (client, input));
+				}
+			}
+			return results;
 		}
 
 		public static string DownloadTranslation (WebClient client, string source)
