@@ -70,7 +70,6 @@ namespace monarquia
 			AddTimeframeExpression (Verb.Conjugation.Present, "los domingos");
 			AddTimeframeExpression (Verb.Conjugation.Present, "los fines de semanas");
 			AddTimeframeExpression (Verb.Conjugation.Present, "normalmente");
-			AddTimeframeExpression (Verb.Conjugation.Present, "siempre");
 
 			// Near future
 			AddTimeframeExpression (Verb.Conjugation.Present, "al mediodía");
@@ -97,6 +96,11 @@ namespace monarquia
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "hoy por la mañana");
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "la semana pasada");
 
+
+			/*
+			 * 
+			// excluding siempre since amibguous and google mistranslates 'Siempre usted está en frente'
+
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "entonces");  // ambiguous
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "finalmente");  // ambiguous
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "por fin");  // ambiguous
@@ -105,7 +109,6 @@ namespace monarquia
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "una noche");  // ambiguous
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "una vez");  // ambiguous
 
-			/*
 			AddTimeframeExpression (Timeframe.PastPreterite, "con frecuencia"); // ambiguous
 			AddTimeframeExpression (Timeframe.PastPreterite, "constantemente"); // ambiguous
 			AddTimeframeExpression (Timeframe.PastPreterite, "de costumbre"); // ambiguous
@@ -113,7 +116,6 @@ namespace monarquia
 			AddTimeframeExpression (Timeframe.PastPreterite, "generalmente"); // ambiguous
 			AddTimeframeExpression (Timeframe.PastPreterite, "normalmente"); // ambiguous
 			AddTimeframeExpression (Timeframe.PastPreterite, "por lo general"); // ambiguous
-			AddTimeframeExpression (Timeframe.PastPreterite, "siempre"); // ambiguous
 			AddTimeframeExpression (Timeframe.PastPreterite, "con frecuencia"); // ambiguous
 			AddTimeframeExpression (Timeframe.PastPreterite, "con frecuencia"); // ambiguous
 			AddTimeframeExpression (Timeframe.PastPreterite, "con frecuencia"); // ambiguous
@@ -130,7 +132,6 @@ namespace monarquia
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "muchas veces");
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "por lo general");
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "rara vez");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "siempre");
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "todas las mañanas");
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "todos los años");
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "todos los días");
