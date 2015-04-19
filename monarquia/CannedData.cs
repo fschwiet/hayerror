@@ -116,9 +116,8 @@ namespace monarquia
 			AddTimeframeExpression (Timeframe.PastPreterite, "generalmente"); // ambiguous
 			AddTimeframeExpression (Timeframe.PastPreterite, "normalmente"); // ambiguous
 			AddTimeframeExpression (Timeframe.PastPreterite, "por lo general"); // ambiguous
-			AddTimeframeExpression (Timeframe.PastPreterite, "con frecuencia"); // ambiguous
-			AddTimeframeExpression (Timeframe.PastPreterite, "con frecuencia"); // ambiguous
-			AddTimeframeExpression (Timeframe.PastPreterite, "con frecuencia"); // ambiguous
+
+			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "mientras");  // also a conjugation
 
 */
 
@@ -127,8 +126,6 @@ namespace monarquia
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "casi nunca");
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "casi siempre");
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "de vez en cuando");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "generalmente");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "mientras");
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "muchas veces");
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "por lo general");
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "rara vez");
