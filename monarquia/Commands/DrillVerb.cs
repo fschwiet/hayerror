@@ -9,21 +9,20 @@ namespace monarquia
 {
 	public class DrillVerb : ConsoleCommand
 	{
-		public string Verb;
+		public string[] Verbs;
 		public bool IncludeTranslations = false;
 
 		public DrillVerb ()
 		{
 			this.IsCommand ("drill-verb", "Generate phrases for a particular verb");
-			this.HasAdditionalArguments (1, " <verb infinitive>");
+			this.AllowsAnyAdditionalArguments (" <verb infinitive>+");
 			this.HasOption ("t", "include translations", v => IncludeTranslations = true);
 			this.SkipsCommandSummaryBeforeRunning ();
 		}
 
 		public override int? OverrideAfterHandlingArgumentsBeforeRun (string[] remainingArguments)
 		{
-			Verb = remainingArguments [0].ToLower ();
-
+			Verbs = remainingArguments.ToArray ();
 			return base.OverrideAfterHandlingArgumentsBeforeRun (remainingArguments);
 		} 
 
@@ -31,7 +30,11 @@ namespace monarquia
 		{
 			var generator = new EspanolGenerator ("./data");
 
-			var results = generator.GetForVerb (Verb, true);
+			var results = new List<string> ();
+
+			foreach (var verb in Verbs) {
+				results.AddRange (generator.GetForVerb (verb, true));
+			}
 
 			if (!IncludeTranslations) {
 				foreach (var result in results) {
@@ -50,7 +53,6 @@ namespace monarquia
 
 					csv.WriteField (result.Key);
 					csv.WriteField (result.Value);
-					csv.WriteField (Verb);
 					csv.WriteField ("hayerror:drill");
 					csv.NextRecord ();
 				}
