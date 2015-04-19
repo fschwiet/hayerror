@@ -11,7 +11,6 @@ namespace monarquia
 			var actor = new Noun ("actor", "actriz", "actores", "actrizes");
 			var cook = new Noun ("cocinero", "cocinera", "cocineros", "cocineras");
 			var dentist = new Noun ("dentista", "dentistas");
-			var landlord = new Noun ("dueño", "dueña", "dueños", "dueñas");
 			var student = new Noun ("estudiante", "estudiantes");
 
 
@@ -29,7 +28,6 @@ namespace monarquia
 			AddVerbEnding ("hablar", "a la reportera");
 			AddVerbEnding ("hablar", "con él");
 			AddVerbEnding ("ir", "al cine");
-			AddVerbEnding ("ir", "con botas amarillas");
 			AddVerbEnding ("ir", "a decir la verdad");
 			AddVerbEnding ("ir", "a leer");
 			AddVerbEnding ("ir", "allí");
@@ -38,7 +36,6 @@ namespace monarquia
 			AddVerbEnding ("ser", actor);
 			AddVerbEnding ("ser", cook);
 			AddVerbEnding ("ser", dentist);
-			AddVerbEnding ("ser", landlord);
 			AddVerbEnding ("ser", student);
 
 			AddVerbEnding ("subir", "la escalera");
