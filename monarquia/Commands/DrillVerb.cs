@@ -30,10 +30,10 @@ namespace monarquia
 		{
 			var generator = new EspanolGenerator ("./data");
 
-			var results = new List<string> ();
+			var results = new List<Tuple<string,string>> ();
 
 			foreach (var verb in Verbs) {
-				results.AddRange (generator.GetForVerb (verb, true));
+				results.AddRange (generator.GetForVerb (verb, true).Select(t => new Tuple<string,string>(verb, t)));
 			}
 
 			if (!IncludeTranslations) {
@@ -43,16 +43,17 @@ namespace monarquia
 				return 0;
 			}
 
-			var translated = GetTranslation.DownloadTranslationsFromGoogle(results);
+			var translated = GetTranslation.DownloadTranslationsFromGoogle(results.Select(t => t.Item2));
 
 			using (var client = new System.Net.WebClient ()) {
 
 				var csv = new CsvWriter( Console.Out);
 
-				foreach (var result in translated) {
+				foreach (var result in results) {
 
-					csv.WriteField (result.Key);
-					csv.WriteField (result.Value);
+					csv.WriteField (result.Item2);
+					csv.WriteField (translated[result.Item2]);
+					csv.WriteField (result.Item1);
 					csv.WriteField ("hayerror:drill");
 					csv.NextRecord ();
 				}
