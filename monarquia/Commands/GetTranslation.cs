@@ -53,16 +53,20 @@ namespace monarquia
 
 					client.Navigate ().GoToUrl ("about:blank");
 					client.Navigate ().GoToUrl ("https://translate.google.com/#es/en/" + WebUtility.UrlEncode(input));
+
+					client.Manage ().Timeouts ().ImplicitlyWait (TimeSpan.FromSeconds (3));
 											
 					string result = null;
 					Polly.Policy.Handle<Exception> ().
-						WaitAndRetry(20, retryAttempt => TimeSpan.FromMilliseconds(200)).
+						WaitAndRetry(20, retryAttempt => TimeSpan.FromMilliseconds(500)).
 						Execute (() => {
 							
 							var translateOriginalButton = client.FindElementsByCssSelector ("gt-revert-correct-message");
 
-							if (translateOriginalButton.Any ())
+							if (translateOriginalButton.Any ()) {
 								translateOriginalButton.First ().Click ();
+								throw new Exception("Google suggested alternate translation");
+							}
 
 							result = client.FindElementByCssSelector("#result_box").Text;
 
@@ -73,9 +77,9 @@ namespace monarquia
 							if (result.Contains("...")) {
 								throw new Exception("translation was not ready");
 							}
+
+							results.Add (input, result);
 						});
-				
-					results.Add (input, result);
 				}
 			}
 			return results;
