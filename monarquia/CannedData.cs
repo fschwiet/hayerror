@@ -21,8 +21,9 @@ namespace monarquia
 			AddVerbEnding ("dar", "un abrazo");
 			AddVerbEnding ("dar", "gritos");
 			//  AddVerbEnding ("dar", "la una");  ->  only clocks can strike one (to indicate a time)
-			AddVerbEnding ("estar", "al frente");
-			AddVerbEnding ("estar", "a la trasera");
+
+			AddVerbEnding ("estar", "en frente");
+			AddVerbEnding ("estar", "en el detrás");
 			AddVerbEnding ("estar", "al otro lado de la calle");
 
 			AddVerbEnding ("hablar", "a la reportera");
@@ -57,6 +58,7 @@ namespace monarquia
 			AddTimeframeExpression (Verb.Conjugation.Present, "ahora");
 			AddTimeframeExpression (Verb.Conjugation.Present, "ahora mismo");
 			AddTimeframeExpression (Verb.Conjugation.Present, "hoy");
+			AddTimeframeExpression (Verb.Conjugation.Present, "a este minuto");
 
 			// Usually? Frequency?
 			AddTimeframeExpression (Verb.Conjugation.Present, "a menudo");  // not sure
