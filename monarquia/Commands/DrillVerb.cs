@@ -30,20 +30,19 @@ namespace monarquia
 		{
 			var generator = new EspanolGenerator ("./data");
 
-			var results = new List<Tuple<string,string>> ();
+			var results = new List<EspanolGenerator.Exercise> ();
 
 			foreach (var verb in Verbs) {
-				results.AddRange (generator.GetForVerb (verb, true).Select(t => new Tuple<string,string>(verb, t)));
+				results.AddRange (generator.GetForVerb (verb, true));
 			}
 
-			if (!IncludeTranslations) {
+			if (IncludeTranslations) {
+				var translations = GetTranslation.DownloadTranslationsFromGoogle(results.Select(t => t.Original));
+
 				foreach (var result in results) {
-					Console.WriteLine (result);
+					result.Translated = translations [result.Original];
 				}
-				return 0;
 			}
-
-			var translated = GetTranslation.DownloadTranslationsFromGoogle(results.Select(t => t.Item2));
 
 			using (var client = new System.Net.WebClient ()) {
 
@@ -51,10 +50,16 @@ namespace monarquia
 
 				foreach (var result in results) {
 
-					csv.WriteField (result.Item2);
-					csv.WriteField (translated[result.Item2]);
-					csv.WriteField (result.Item1);
-					csv.WriteField ("hayerror:drill");
+					csv.WriteField (result.Original);
+
+					var translated = result.Translated;
+					if (result.HintsForTranslated.Any()) {
+						translated = "(" + string.Join(", ", result.HintsForTranslated) + ") " + result.Translated;
+					}
+
+					csv.WriteField (translated);
+					csv.WriteField (result.ExtraInfo);
+					csv.WriteField (string.Join(" ", result.Tags));
 					csv.NextRecord ();
 				}
 

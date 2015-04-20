@@ -7,6 +7,24 @@ namespace monarquia
 {
 	public class EspanolGenerator
 	{
+		public class Exercise {
+			public string Original;
+			public string Translated;
+			public string ExtraInfo;
+			public List<string> HintsForTranslated = new List<string>();
+			public List<string> Tags = new List<string>();
+
+			public Exercise Clone() {
+				return new Exercise () {
+					Original = this.Original,
+					Translated = this.Translated,
+					ExtraInfo = this.ExtraInfo,
+					HintsForTranslated = new List<string> (this.HintsForTranslated),
+					Tags = new List<string> (this.Tags)
+				};
+			}
+		}
+
 		public static string SubjectPronounFor(PointOfView v) {
 			switch (v) {
 			case PointOfView.FirstPerson:
@@ -55,13 +73,13 @@ namespace monarquia
 
 			List<string> results = new List<string>();
 			foreach(var verb in GetAllVerbs()) {
-				results.AddRange(GetForVerb(verb, false));
+				results.AddRange(GetForVerb(verb, false).Select(e => e.Original));
 			}
 
 			return results;
 		}
 
-		public IEnumerable<string> GetForVerb(string infinitive, bool limitVariations) {
+		public IEnumerable<Exercise> GetForVerb(string infinitive, bool limitVariations) {
 			
 			var verb = allVerbs.SingleOrDefault (v => string.Equals (infinitive, v.Infinitive, StringComparison.InvariantCultureIgnoreCase));
 		
@@ -72,9 +90,9 @@ namespace monarquia
 			return GetForVerb (verb, limitVariations);
 		}
 
-		IEnumerable<string> GetForVerb (Verb verb, bool limitVariations)
+		IEnumerable<Exercise> GetForVerb (Verb verb, bool limitVariations)
 		{
-			List<string> results = new List<string>();
+			List<Exercise> results = new List<Exercise>();
 
 			var selectedPointsOfView = Enum.GetValues (typeof(PointOfView)).Cast<PointOfView> ();
 				
@@ -131,14 +149,24 @@ namespace monarquia
 			return results;
 		}
 
-		List<string> GetForVerbConjugation (
+		List<Exercise> GetForVerbConjugation (
 			Verb verb,
 			bool limitVariations, 
 			PointOfView pointOfView,
 			CannedData cannedData,
 			Verb.Conjugation conjugation)
 		{
-			List<string> results = new List<string> ();
+			Exercise resultTemplate = new Exercise ();
+
+			resultTemplate.ExtraInfo = verb.Infinitive;
+
+			if (pointOfView.IsSecondPerson ())
+				resultTemplate.HintsForTranslated.Add (SubjectPronounFor (pointOfView));
+			
+			resultTemplate.Tags.Add ("conjugation:" + conjugation);
+			resultTemplate.Tags.Add ("verb:" + verb.Infinitive);
+
+			List<Exercise> results = new List<Exercise> ();
 
 			var selectedVerbEndings = cannedData.GetVerbEndings (verb.Infinitive, pointOfView).ToArray();
 			if (limitVariations) {
@@ -177,15 +205,18 @@ namespace monarquia
 				var capitolizedSentencewithPeriod = 
 					nonemptyWordsJoinedBySpaces.First ().ToString ().ToUpper () + nonemptyWordsJoinedBySpaces.Substring (1) + ".";
 
-				results.Add (capitolizedSentencewithPeriod);
+				var result = resultTemplate.Clone ();
+				result.Original = capitolizedSentencewithPeriod;
+
+				results.Add (result);
 			}
 
 			return results;
 		}
 
-		List<string> GetAllConjugationsForVerb (Verb verb, bool limitVariations, Func<PointOfView> pointOfViewSelector)
+		List<Exercise> GetAllConjugationsForVerb (Verb verb, bool limitVariations, Func<PointOfView> pointOfViewSelector)
 		{
-			List<string> results = new List<string> ();
+			List<Exercise> results = new List<Exercise> ();
 
 			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Verb.Conjugation.Present));
 			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Verb.Conjugation.PastPreterite));

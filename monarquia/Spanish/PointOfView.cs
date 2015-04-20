@@ -38,6 +38,18 @@ namespace monarquia
 
 			return false;
 		}
+
+		public static bool IsSecondPerson(this PointOfView pointOfView) {
+			switch (pointOfView) {
+			case PointOfView.SecondPerson:
+			case PointOfView.SecondPersonFormal:
+			case PointOfView.SecondPersonPlural:
+			case PointOfView.SecondPersonPluralFormal:
+				return true;
+			}
+
+			return false;
+		}
 	}
 }
 
