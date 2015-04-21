@@ -94,56 +94,57 @@ namespace monarquia
 		{
 			List<Exercise> results = new List<Exercise>();
 
-			var selectedPointsOfView = Enum.GetValues (typeof(PointOfView)).Cast<PointOfView> ();
+			var selectedPointsOfView = Enum.GetValues (typeof(PointOfView)).Cast<PointOfView> ().ToList();
 				
 			if (limitVariations) {
-				// don't use vosotros
-				selectedPointsOfView = selectedPointsOfView.Where (v => v != PointOfView.SecondPersonPlural);
-
-				// only use one of el/ella/usted
-				// only use one of ellos/ellas/ustedes
-
-				Func<PointOfView> randomPointOfViewThatIsThirdPersonish = delegate() {
-					switch (random.Next (3)) {
-					case 0:
-						return PointOfView.ThirdPersonFeminine;
-					case 1:
-						return PointOfView.ThirdPersonMasculine;
-					case 2:
-						return PointOfView.SecondPersonFormal;
-					default:
-						throw new Exception("random.Next() produced unexpected");
-					}
-				};
-
-				Func<PointOfView> randomPointOfViewThatIsThirdPersonPluralish = delegate() {
-					switch (random.Next (3)) {
-					case 0:
-						return PointOfView.ThirdPersonPluralFeminine;
-					case 1:
-						return PointOfView.ThirdPersonMasculine;
-					case 2:
-						return PointOfView.SecondPersonPluralFormal;
-					default:
-						throw new Exception("random.Next() produced unexpected");
-					}
-				};
-
-				selectedPointsOfView = selectedPointsOfView
-					.Where (v => v != PointOfView.ThirdPersonFeminine &&
-						v != PointOfView.ThirdPersonMasculine &&
-						v != PointOfView.SecondPersonFormal &&
-						v != PointOfView.ThirdPersonPluralFeminine &&
-						v != PointOfView.ThirdPersonPluralMasculine &&
-						v != PointOfView.SecondPersonPluralFormal);
-
-				results.AddRange(GetAllConjugationsForVerb (verb, limitVariations, randomPointOfViewThatIsThirdPersonish));
-				results.AddRange(GetAllConjugationsForVerb (verb, limitVariations, randomPointOfViewThatIsThirdPersonPluralish));
+				selectedPointsOfView = ChoosePointOfViewsForDrill ();
 			}
 
 			foreach (PointOfView pointOfView in selectedPointsOfView) {
-
 				results.AddRange (GetAllConjugationsForVerb (verb, limitVariations, () => pointOfView));
+			}
+
+			return results;
+		}
+
+		List<PointOfView> ChoosePointOfViewsForDrill ()
+		{
+			var results = Enum.GetValues (typeof(PointOfView)).Cast<PointOfView> ().ToList();
+
+			// don't use vosotros
+			results = results.Where (v => v != PointOfView.SecondPersonPlural).ToList ();
+
+			// only use one of el/ella/usted
+			// only use one of ellos/ellas/ustedes
+			results = results.Where (v => v != PointOfView.ThirdPersonFeminine && 
+				v != PointOfView.ThirdPersonMasculine && 
+				v != PointOfView.SecondPersonFormal && 
+				v != PointOfView.ThirdPersonPluralFeminine && 
+				v != PointOfView.ThirdPersonPluralMasculine && 
+				v != PointOfView.SecondPersonPluralFormal).ToList ();
+		
+			switch (random.Next (3)) {
+			case 0:
+				results.Add (PointOfView.ThirdPersonFeminine);
+				break;
+			case 1:
+				results.Add (PointOfView.ThirdPersonMasculine);
+				break;
+			case 2:
+				results.Add (PointOfView.SecondPersonFormal);
+				break;
+			}
+
+			switch (random.Next (3)) {
+			case 0:
+				results.Add (PointOfView.ThirdPersonPluralFeminine);
+				break;
+			case 1:
+				results.Add (PointOfView.ThirdPersonMasculine);
+				break;
+			case 2:
+				results.Add (PointOfView.SecondPersonPluralFormal);
+				break;
 			}
 
 			return results;
