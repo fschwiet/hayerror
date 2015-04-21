@@ -70,6 +70,7 @@
     <Compile Include="Spanish\PointOfView.cs" />
     <Compile Include="Spanish\Verb.cs" />
     <Compile Include="Spanish\Noun.cs" />
+    <Compile Include="Commands\DrillVerbWithLinguee.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
