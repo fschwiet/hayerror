@@ -50,6 +50,34 @@ namespace monarquia
 
 			return false;
 		}
+
+		public static string AsSubjectPronoun(this PointOfView v) {
+			switch (v) {
+			case PointOfView.FirstPerson:
+				return "yo";
+			case PointOfView.SecondPerson:
+				return "tú";
+			case PointOfView.SecondPersonFormal:
+				return "usted";
+			case PointOfView.ThirdPersonMasculine:
+				return "él";
+			case PointOfView.ThirdPersonFeminine:
+				return "ella";
+
+			case PointOfView.FirstPersonPlural:
+				return "nosotros";
+			case PointOfView.SecondPersonPlural:
+				return "vosotros";
+			case PointOfView.SecondPersonPluralFormal:
+				return "ustedes";
+			case PointOfView.ThirdPersonPluralMasculine:
+				return "ellos";
+			case PointOfView.ThirdPersonPluralFeminine:
+				return "ellas";
+			default:
+				throw new Exception ("Unrecognized PointOfView");
+			}
+		}
 	}
 }
 
