@@ -25,6 +25,21 @@ namespace monarquia
 				};
 			}
 
+			public int GetWeight() {
+				return WeighString (Original);
+			}
+
+			public static int WeighString(string text) {
+				//  At points we try to pick 'nicer' exercises.
+				//    - We prefer shorter exercises.
+				//    - We prefer fewer numbers
+				//    - We prefer not ALL-CAPS
+
+				return text.Length
+					+ text.Select (c => Char.IsDigit (c)).Count() * 4
+					+ text.Select (c => Char.IsUpper (c)).Count() * 4;
+			}
+
 			static public void WriteAsCsv(TextWriter textWriter, IEnumerable<Exercise> exercises) {
 
 				var csv = new CsvWriter(textWriter);

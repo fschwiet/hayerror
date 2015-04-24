@@ -18,40 +18,64 @@ namespace monarquia
 
 			var verb = LookupVerb (infinitive);
 
+			var pointOfViewGroupedByConjugationEffect = new [] {
+				new [] { PointOfView.FirstPerson },
+				new [] { PointOfView.FirstPersonPlural },
+				new [] { PointOfView.SecondPerson },
+				new [] { PointOfView.SecondPersonPluralFormal },
+				new [] { PointOfView.ThirdPersonMasculine, PointOfView.ThirdPersonFeminine, PointOfView.SecondPersonFormal },
+				new [] { PointOfView.ThirdPersonPluralMasculine, PointOfView.ThirdPersonPluralFeminine, PointOfView.SecondPersonPluralFormal }
+			};
+
 			foreach (var conjugation in Enum.GetValues(typeof(Verb.Conjugation)).Cast<Verb.Conjugation>()) {
-				foreach (var pointOfView in ChoosePointOfViewsForDrill()) {
+				foreach (var pointsOfView in pointOfViewGroupedByConjugationEffect) {
 
-					var basePhrase = pointOfView.AsSubjectPronoun () + " " +
-					                 verb.ConjugatedForTense (conjugation, pointOfView);
+					List<Exercise> pointOfViewExercises = new List<Exercise> ();
 
-					var exercise = new Exercise () {
+					var exerciseTemplate = new Exercise () {
 						ExtraInfo = verb.Infinitive,
 					};
 
-					exercise.Tags.Add ("drill:linguee");
-					exercise.Tags.Add ("conjugation:" + conjugation);
+					exerciseTemplate.Tags.Add ("drill:linguee");
+					exerciseTemplate.Tags.Add ("conjugation:" + conjugation);
 
-					if (pointOfView.IsSecondPerson ())
-						exercise.HintsForTranslated.Add (pointOfView.AsSubjectPronoun());
-					
-					var lingueeResults = DoLingueeLookup (webDriver, basePhrase);
+					foreach (var pointOfView in pointsOfView) {
 
-					//  We'll use the shortest (hopefully the easiest) result.
-					exercise.Original = lingueeResults.Keys.OrderBy (k => k.Length).FirstOrDefault();
+						var exercise = exerciseTemplate.Clone ();
 
-					if (exercise.Original == null) {
-						lingueeResults = DoLingueeLookup (webDriver, verb.ConjugatedForTense (conjugation, pointOfView));
+						var basePhrase = pointOfView.AsSubjectPronoun () + " " +
+							verb.ConjugatedForTense (conjugation, pointOfView);
 
-						exercise.Original = lingueeResults.Keys.OrderBy (k => k.Length).FirstOrDefault();
+						if (pointOfView.IsSecondPerson ())
+							exercise.HintsForTranslated.Add (pointOfView.AsSubjectPronoun());
 
-						if (exercise.Original == null) {
-							throw new Exception (String.Format ("Unable to find linguee phrases for {0} of {1}, '{2}'", conjugation, verb.Infinitive, basePhrase));
+						var lingueeResults = DoLingueeLookup (webDriver, basePhrase);
+
+						exercise.Original = lingueeResults.Keys.OrderBy (k => Exercise.WeighString(k)).FirstOrDefault();
+
+						if (exercise.Original != null) {
+							exercise.Translated = lingueeResults [exercise.Original];
+							pointOfViewExercises.Add (exercise);
 						}
 					}
 
-					exercise.Translated = lingueeResults [exercise.Original];
+					if (!pointOfViewExercises.Any ()) {
 
-					results.Add (exercise);
+						var basePhrase = verb.ConjugatedForTense (conjugation, pointsOfView.First ());
+						var lingueeResults = DoLingueeLookup (webDriver, basePhrase);
+
+						if (!lingueeResults.Any ())
+							throw new Exception (String.Format("No linguee results found for {0} of {1} as {2}", verb.Infinitive, conjugation, basePhrase));
+
+						var exercise = exerciseTemplate.Clone ();
+
+						exercise.Original = lingueeResults.Keys.OrderBy (k => Exercise.WeighString(k)).FirstOrDefault();
+						exercise.Translated = lingueeResults [exercise.Original];
+
+						pointOfViewExercises.Add (exercise);
+					}
+
+					results.Add (pointOfViewExercises.OrderBy(e => e.GetWeight()).First());
 				}
 			}
 
@@ -64,26 +88,31 @@ namespace monarquia
 
 		public static Dictionary<string, string> DoLingueeLookup (ChromeDriver chromeDriver, string target)
 		{
-			Dictionary<string, string> results = new Dictionary<string, string> ();
-
 			var lingueeLookup = "http://www.linguee.com/english-spanish/search?source=auto&query=\"" + System.Net.WebUtility.UrlEncode (target) + "\"";
 
-			chromeDriver.Navigate ().GoToUrl (lingueeLookup);
+			try {
+				Dictionary<string, string> results = new Dictionary<string, string> ();
 
-			// This elements are difficult to remove for output selectively,
-			// so I'm just removing them all from the page.
-			chromeDriver.ExecuteScript ("$('.source_url_spacer').remove()");
-			chromeDriver.ExecuteScript ("$('.source_url').remove()");
-			chromeDriver.ExecuteScript ("$('.behindLinkDiv').remove()");
+				chromeDriver.Navigate ().GoToUrl (lingueeLookup);
 
-			foreach (var example in chromeDriver.FindElementsByCssSelector ("tbody.examples tr")) {
-				var elements = example.FindElements (By.TagName ("td")).ToArray ();
-				var sample = elements [0].Text;
-				var translation = elements [1].Text;
-				results [sample] = translation;
+				// This elements are difficult to remove for output selectively,
+				// so I'm just removing them all from the page.
+				chromeDriver.ExecuteScript ("$('.source_url_spacer').remove()");
+				chromeDriver.ExecuteScript ("$('.source_url').remove()");
+				chromeDriver.ExecuteScript ("$('.behindLinkDiv').remove()");
+
+				foreach (var example in chromeDriver.FindElementsByCssSelector ("tbody.examples tr")) {
+					var elements = example.FindElements (By.TagName ("td")).ToArray ();
+					var sample = elements [0].Text;
+					var translation = elements [1].Text;
+					results [sample] = translation;
+				}
+
+				return results;
 			}
-
-			return results;
+			catch(Exception e) {
+				throw new Exception ("Linguee failure for url: " + lingueeLookup, e);
+			}
 		}
 	}
 }
