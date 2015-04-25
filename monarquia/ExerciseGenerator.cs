@@ -69,7 +69,7 @@ namespace monarquia
 		public ExerciseGenerator (string dataDirectory)
 		{
 			var dataLoader = new DataLoader (dataDirectory);
-			allVerbs = dataLoader.GetAllVerbs ();
+			allVerbs = dataLoader.GetAllSpanishVerbs ();
 		}
 
 		public Verb LookupVerb(string infinitive) {

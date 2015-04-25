@@ -10,13 +10,18 @@ namespace monarquia
 	public class DataLoader
 	{
 		string dataDirectory;
+		List<Verb> spanishVerbs;
+		List<Verb> englishVerbs;
 
 		public DataLoader (string dataDirectory)
 		{
 			this.dataDirectory = dataDirectory;
 		}
 
-		public List<Verb> GetAllVerbs() {
+		public List<Verb> GetAllSpanishVerbs() {
+
+			if (spanishVerbs != null)
+				return spanishVerbs;
 
 			List<Verb> results = new List<Verb> ();
 
@@ -49,18 +54,57 @@ namespace monarquia
 				results.Add (verb);
 			}
 
-			return results;
+			return spanishVerbs = results;
+		}
+
+		public List<Verb> GetAllEnglishVerbs() {
+
+			if (englishVerbs != null)
+				return englishVerbs;
+
+			List<Verb> results = new List<Verb> ();
+
+			foreach(var file in Directory.GetFiles(Path.Combine(dataDirectory, "english-verbs"))) {
+
+				var expectedFileEnding = ".conjugation.txt";
+
+				if (!file.EndsWith (expectedFileEnding)) {
+					continue;
+				}
+
+				var filename = new FileInfo (file).Name;
+				string infinitive = filename.Substring (0, filename.Length - expectedFileEnding.Length);
+
+				CsQuery.CQ document = File.ReadAllText (file);
+
+				var indicativeTable = LoadConjugationTable (document, 0);
+				var perfectTable = LoadConjugationTable (document, 1);
+
+				var verb = new Verb (infinitive);
+
+				verb.WithTenses (Verb.Conjugation.Present, GetEnglishPovLookupFromRow (indicativeTable, 0));
+				verb.WithTenses (Verb.Conjugation.PastPreterite, GetEnglishPovLookupFromRow (indicativeTable, 1));
+				verb.WithTenses (Verb.Conjugation.PastImperfect, GetEnglishPovLookupFromRow (indicativeTable, 1));
+				verb.WithTenses (Verb.Conjugation.Conditional, GetEnglishPovLookupFromRow (indicativeTable, 2));
+				verb.WithTenses (Verb.Conjugation.Future, GetEnglishPovLookupFromRow (indicativeTable, 2));
+				verb.WithTenses (Verb.Conjugation.PresentPerfect, GetEnglishPovLookupFromRow (perfectTable, 1));
+
+				results.Add (verb);
+			}
+
+			return englishVerbs = results;
 		}
 
 		static string[][] LoadConjugationTable (CQ document, int tableIndex)
 		{
-			var selector = "a.vtable-label:eq(" + tableIndex + ") + .vtable-wrapper tr";
-			//Console.WriteLine ("selector:" + selector);
-			var tableRows = document [selector].ToArray ();
+			var tableRows = FindTable (document, tableIndex);
 
-			var transformed = new string[5][];
+			var rowCount = tableRows [1].ChildNodes.Length - 1;
+			var columnCount = tableRows.Length - 1;
+
+			var transformed = new string[rowCount][];
 			for (var initIndex = 0; initIndex < transformed.Length; initIndex++) {
-				transformed [initIndex] = new string[6];
+				transformed [initIndex] = new string[columnCount];
 			}
 			for (var rowIndex = 1; rowIndex < tableRows.Length; rowIndex++) {
 				var row = tableRows [rowIndex];
@@ -72,6 +116,13 @@ namespace monarquia
 				}
 			}
 			return transformed;
+		}
+
+		static IDomObject[] FindTable (CQ document, int tableIndex)
+		{
+			var selector = ".vtable-label:eq(" + tableIndex + ") + .vtable-wrapper tr";
+			var tableRows = document [selector].ToArray ();
+			return tableRows;
 		}
 
 		static Dictionary<PointOfView, string> GetPovLookupFromTableColumn (string[][] indicativeTable, int columnIndex)
@@ -86,6 +137,23 @@ namespace monarquia
 			presentTenses [PointOfView.FirstPersonPlural] = indicativeTable [columnIndex] [3];
 			presentTenses [PointOfView.SecondPersonPlural] = indicativeTable [columnIndex] [4];
 			presentTenses [PointOfView.SecondPersonPluralFormal] = indicativeTable [columnIndex] [5];
+			presentTenses [PointOfView.ThirdPersonPluralMasculine] = indicativeTable [columnIndex] [5];
+			presentTenses [PointOfView.ThirdPersonPluralFeminine] = indicativeTable [columnIndex] [5];
+			return presentTenses;
+		}
+
+		static Dictionary<PointOfView, string> GetEnglishPovLookupFromRow (string[][] indicativeTable, int columnIndex)
+		{
+			var presentTenses = new Dictionary<PointOfView, string> ();
+
+			presentTenses [PointOfView.FirstPerson] = indicativeTable [columnIndex] [0];
+			presentTenses [PointOfView.SecondPerson] = indicativeTable [columnIndex] [1];
+			presentTenses [PointOfView.SecondPersonFormal] = indicativeTable [columnIndex] [1];
+			presentTenses [PointOfView.ThirdPersonMasculine] = indicativeTable [columnIndex] [2];
+			presentTenses [PointOfView.ThirdPersonFeminine] = indicativeTable [columnIndex] [2];
+			presentTenses [PointOfView.FirstPersonPlural] = indicativeTable [columnIndex] [3];
+			presentTenses [PointOfView.SecondPersonPlural] = indicativeTable [columnIndex] [4];
+			presentTenses [PointOfView.SecondPersonPluralFormal] = indicativeTable [columnIndex] [4];
 			presentTenses [PointOfView.ThirdPersonPluralMasculine] = indicativeTable [columnIndex] [5];
 			presentTenses [PointOfView.ThirdPersonPluralFeminine] = indicativeTable [columnIndex] [5];
 			return presentTenses;

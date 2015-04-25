@@ -12,7 +12,7 @@ namespace test
 		[Test]
 		public void CanLoadIr ()
 		{
-			var allVerbs = new DataLoader("../../../data").GetAllVerbs ();
+			var allVerbs = new DataLoader("../../../data").GetAllSpanishVerbs ();
 
 			var expected = allVerbs.Single (v => v.Infinitive == "ir");
 
@@ -25,8 +25,22 @@ namespace test
 		}
 
 		[Test]
+		public void CanLoadGo () {
+			var allVerbs = new DataLoader("../../../data").GetAllEnglishVerbs ();
+
+			var expected = allVerbs.Single (v => v.Infinitive == "go");
+
+			Assert.AreEqual("go", expected.ConjugatedForTense(Verb.Conjugation.Present, PointOfView.FirstPerson));
+			Assert.AreEqual("went", expected.ConjugatedForTense(Verb.Conjugation.PastPreterite, PointOfView.FirstPerson));
+			Assert.AreEqual("went", expected.ConjugatedForTense(Verb.Conjugation.PastImperfect, PointOfView.FirstPerson));
+			Assert.AreEqual("will go", expected.ConjugatedForTense(Verb.Conjugation.Future, PointOfView.FirstPerson));
+			Assert.AreEqual("will go", expected.ConjugatedForTense(Verb.Conjugation.Conditional, PointOfView.FirstPerson));
+			Assert.AreEqual("had gone", expected.ConjugatedForTense(Verb.Conjugation.PresentPerfect, PointOfView.FirstPerson));
+		}
+
+		[Test]
 		public void MiscConjugationBugs () {
-			var allVerbs = new DataLoader("../../../data").GetAllVerbs ();
+			var allVerbs = new DataLoader("../../../data").GetAllSpanishVerbs ();
 
 			var expected = allVerbs.Single (v => v.Infinitive == "estar");
 
