@@ -87,7 +87,7 @@ namespace monarquia
 				verb.WithTenses (Verb.Conjugation.PastImperfect, GetEnglishPovLookupFromRow (indicativeTable, 1));
 				verb.WithTenses (Verb.Conjugation.Conditional, GetEnglishPovLookupFromRow (indicativeTable, 2));
 				verb.WithTenses (Verb.Conjugation.Future, GetEnglishPovLookupFromRow (indicativeTable, 2));
-				verb.WithTenses (Verb.Conjugation.PresentPerfect, GetEnglishPovLookupFromRow (perfectTable, 1));
+				verb.WithTenses (Verb.Conjugation.PresentPerfect, GetEnglishPovLookupFromRow (perfectTable, 0));
 
 				results.Add (verb);
 			}

@@ -65,10 +65,11 @@ namespace monarquia
 
 		protected List<Verb> allVerbs;
 		protected Random random  = new Random ();
+		protected DataLoader dataLoader;
 
 		public ExerciseGenerator (string dataDirectory)
 		{
-			var dataLoader = new DataLoader (dataDirectory);
+			dataLoader = new DataLoader (dataDirectory);
 			allVerbs = dataLoader.GetAllSpanishVerbs ();
 		}
 

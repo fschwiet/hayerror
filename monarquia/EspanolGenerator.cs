@@ -92,16 +92,20 @@ namespace monarquia
 
 				accumulatedWords.Add(scenario.verbEnding.AsSpanish(pointOfView));
 
-				List<string> accumulatedTranslation = new List<string> ();
-
-				accumulatedTranslation.Add (pointOfView.AsEnglishSubjectPronoun ());
-				accumulatedTranslation.Add (verb.EnglishConjugatedForTense (conjugation, pointOfView));
-				accumulatedTranslation.Add (scenario.verbEnding.AsEnglish(pointOfView));
+				var englishVerb = cannedData.TranslationVerbFromSpanishToEnglish (dataLoader, verb);
 
 				var result = resultTemplate.Clone ();
 				result.Original = MakeSentenceFromWords (accumulatedWords);
-				result.Translated = MakeSentenceFromWords (accumulatedTranslation);
 
+				if (englishVerb != null) {
+					List<string> accumulatedTranslation = new List<string> ();
+
+					accumulatedTranslation.Add (pointOfView.AsEnglishSubjectPronoun ());
+					accumulatedTranslation.Add (englishVerb.ConjugatedForTense (conjugation, pointOfView));
+					accumulatedTranslation.Add (scenario.verbEnding.AsEnglish(pointOfView));
+
+					result.Translated = MakeSentenceFromWords (accumulatedTranslation);
+				}
 				results.Add (result);
 			}
 

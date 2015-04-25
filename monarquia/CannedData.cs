@@ -13,6 +13,7 @@ namespace monarquia
 			var dentist = new Noun ("dentista", "dentistas");
 			var student = new Noun ("estudiante", "estudiantes");
 
+			AddVerbTranslation ("ir", "go");
 
 			AddVerbEnding ("beber", "leche");
 			AddVerbEnding ("beber", "agua");
@@ -156,6 +157,7 @@ namespace monarquia
 
 		Dictionary<string, List<ITranslateable>> AllVerbEndings = new Dictionary<string, List<ITranslateable>>(StringComparer.InvariantCultureIgnoreCase);
 		Dictionary<Verb.Conjugation, List<string>> TimeExpressions = new Dictionary<Verb.Conjugation, List<string>>();
+		Dictionary<string,string> VerbTranslations = new Dictionary<string, string> (StringComparer.InvariantCultureIgnoreCase);
 
 		void AddVerbEnding(string verbInfinitive, string ending) {
 			AddVerbEnding(verbInfinitive, new CannedTranslation(ending, "<not translated>"));
@@ -202,6 +204,20 @@ namespace monarquia
 		public IEnumerable<string> GetTimeframeExpressions(Verb.Conjugation conjugation) {
 			
 			return TimeExpressions [conjugation];
+		}
+
+		public void AddVerbTranslation(string spanishInfinitive, string englishInfinitive) {
+			VerbTranslations.Add (spanishInfinitive, englishInfinitive);
+		}
+
+		public Verb TranslationVerbFromSpanishToEnglish(DataLoader loader, Verb verb) {
+
+			if (!VerbTranslations.ContainsKey (verb.Infinitive))
+				return null;
+
+			var englishInfinitive = VerbTranslations [verb.Infinitive];
+
+			return loader.GetAllEnglishVerbs ().Single (v => v.Infinitive == englishInfinitive);
 		}
 	}
 }
