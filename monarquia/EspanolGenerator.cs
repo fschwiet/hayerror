@@ -106,6 +106,7 @@ namespace monarquia
 
 					result.Translated = MakeSentenceFromWords (accumulatedTranslation);
 				}
+
 				results.Add (result);
 			}
 

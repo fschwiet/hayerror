@@ -14,6 +14,8 @@ namespace monarquia
 			var student = new Noun ("estudiante", "estudiantes");
 
 			AddVerbTranslation ("ir", "go");
+			AddVerbTranslation ("estar", "is");
+			AddVerbTranslation ("gritar", "shout");
 
 			AddVerbEnding ("beber", "leche");
 			AddVerbEnding ("beber", "agua");
@@ -22,7 +24,7 @@ namespace monarquia
 			AddVerbEnding ("dar", "gritos");
 			//  AddVerbEnding ("dar", "la una");  ->  only clocks can strike one (to indicate a time)
 
-			AddVerbEnding ("estar", "en frente");
+			AddVerbEnding ("estar", new CannedTranslation("en frente", "in front"));
 			AddVerbEnding ("estar", "en el detrás");
 			AddVerbEnding ("estar", "al otro lado de la calle");
 

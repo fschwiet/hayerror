@@ -46,12 +46,20 @@ namespace test
 			}
 		}
 
-		[TestCase("Yo grito.")]
-		[TestCase("Ella está en frente.")]
-		[TestCase("Yo estoy en frente.")]
-		public void MiscBugs (string expected)
+		[TestCase("Yo grito.", "I shout.")]
+		[TestCase("Ella está en frente.", "She is in front.")]
+		[TestCase("Yo estoy en frente.", "I am in front.")]
+		public void MiscBugs (string expected, string translation)
 		{
-			Assert.Contains (expected, allPhrases);
+			var exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();
+
+			if (exercise == null) {
+				throw new Exception ("Original text not found: " + expected);
+			}
+
+			if (!string.IsNullOrEmpty (translation)) {
+				Assert.AreEqual (translation, exercise.Translated);
+			}
 		}
 
 		[TestCase("Yo preparo la cena.")]
