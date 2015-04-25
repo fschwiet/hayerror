@@ -2,12 +2,15 @@
 
 namespace monarquia
 {
-	public class Noun
+	public class Noun : ITranslateable
 	{
 		public string Masculine;
 		public string Feminine;
 		public string PluralMasculine;
 		public string PluralFeminine;
+
+		public string EnglishSingular;
+		public string EnglishPlural;
 
 		public Noun (string masculine, string feminine, string pluralMasculine, string pluralFeminine)
 		{
@@ -24,7 +27,13 @@ namespace monarquia
 			PluralFeminine = plural;
 		}
 
-		public string For(PointOfView pov) {
+		public Noun WithTranslation(string singular, string plural) {
+			EnglishSingular = singular;
+			EnglishPlural = plural;
+			return this;
+		}
+
+		public string AsSpanish(PointOfView pov) {
 			if (pov.IsFeminine ()) {
 				if (pov.IsPlural ()) {
 					return PluralFeminine;
@@ -38,6 +47,13 @@ namespace monarquia
 					return Masculine;
 				}
 			}
+		}
+
+		public string AsEnglish(PointOfView pointOfView) {
+			if (pointOfView.IsPlural())
+				return EnglishPlural;
+			else
+				return EnglishSingular;
 		}
 	}
 }

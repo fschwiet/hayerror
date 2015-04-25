@@ -27,7 +27,7 @@ namespace monarquia
 
 			AddVerbEnding ("hablar", "a la reportera");
 			AddVerbEnding ("hablar", "con él");
-			AddVerbEnding ("ir", "al cine");
+			AddVerbEnding ("ir", new CannedTranslation("al cine", "to the movies"));
 			AddVerbEnding ("ir", "a decir la verdad");
 			AddVerbEnding ("ir", "a leer");
 			AddVerbEnding ("ir", "allí");
@@ -154,34 +154,38 @@ namespace monarquia
 			AddTimeframeExpression (Verb.Conjugation.Conditional, "por supuesto");
 		}
 
-		Dictionary<string, List<Func<PointOfView,String>>> AllVerbEndings = new Dictionary<string, List<Func<PointOfView,String>>>(StringComparer.InvariantCultureIgnoreCase);
+		Dictionary<string, List<ITranslateable>> AllVerbEndings = new Dictionary<string, List<ITranslateable>>(StringComparer.InvariantCultureIgnoreCase);
 		Dictionary<Verb.Conjugation, List<string>> TimeExpressions = new Dictionary<Verb.Conjugation, List<string>>();
 
 		void AddVerbEnding(string verbInfinitive, string ending) {
+			AddVerbEnding(verbInfinitive, new CannedTranslation(ending, "<not translated>"));
+		}
+
+		void AddVerbEnding(string verbInfinitive, CannedTranslation ending) {
 		
 			if (!AllVerbEndings.ContainsKey (verbInfinitive)) {
-				AllVerbEndings.Add (verbInfinitive, new List<Func<PointOfView,String>> ());
+				AllVerbEndings.Add (verbInfinitive, new List<ITranslateable> ());
 			}
 
-			AllVerbEndings [verbInfinitive].Add (pov => ending);
+			AllVerbEndings [verbInfinitive].Add (ending);
 		}
 
 		void AddVerbEnding(string verbInfinitive, Noun noun) {
 
 			if (!AllVerbEndings.ContainsKey (verbInfinitive)) {
-				AllVerbEndings.Add (verbInfinitive, new List<Func<PointOfView,String>> ());
+				AllVerbEndings.Add (verbInfinitive, new List<ITranslateable> ());
 			}
 
-			AllVerbEndings [verbInfinitive].Add (pov => noun.For(pov));
+			AllVerbEndings [verbInfinitive].Add (noun);
 		}
 
-		public IEnumerable<string> GetVerbEndings(string verbInfinitive, PointOfView pointOfView) {
+		public IEnumerable<ITranslateable> GetVerbEndings(string verbInfinitive, PointOfView pointOfView) {
 
 			if (!AllVerbEndings.ContainsKey (verbInfinitive)) {
-				return new string[] { "" };
+				return new [] { new CannedTranslation("","") };
 			}
 
-			return AllVerbEndings [verbInfinitive].Select (f => f (pointOfView));
+			return AllVerbEndings [verbInfinitive];
 		}
 
 		void AddTimeframeExpression(Verb.Conjugation conjugation, params string[] expressions) {

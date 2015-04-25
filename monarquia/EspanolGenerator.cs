@@ -63,7 +63,7 @@ namespace monarquia
 
 			var selectedVerbEndings = cannedData.GetVerbEndings (verb.Infinitive, pointOfView).ToArray();
 			if (limitVariations) {
-				selectedVerbEndings = new string[] {
+				selectedVerbEndings = new [] {
 					selectedVerbEndings [random.Next (selectedVerbEndings.Length)]
 				};
 			}
@@ -90,21 +90,29 @@ namespace monarquia
 				accumulatedWords.Add(pointOfView.AsSubjectPronoun());
 				accumulatedWords.Add(verb.ConjugatedForTense (conjugation, pointOfView));
 
-				accumulatedWords.Add(scenario.verbEnding);
-						
-				var nonemptyWordsJoinedBySpaces = 
-					string.Join (" ", accumulatedWords.Where (w => !string.IsNullOrEmpty (w)));
+				accumulatedWords.Add(scenario.verbEnding.AsSpanish(pointOfView));
 
-				var capitolizedSentencewithPeriod = 
-					nonemptyWordsJoinedBySpaces.First ().ToString ().ToUpper () + nonemptyWordsJoinedBySpaces.Substring (1) + ".";
+				List<string> accumulatedTranslation = new List<string> ();
+
+				accumulatedTranslation.Add (pointOfView.AsEnglishSubjectPronoun ());
+				accumulatedTranslation.Add (verb.EnglishConjugatedForTense (conjugation, pointOfView));
+				accumulatedTranslation.Add (scenario.verbEnding.AsEnglish(pointOfView));
 
 				var result = resultTemplate.Clone ();
-				result.Original = capitolizedSentencewithPeriod;
+				result.Original = MakeSentenceFromWords (accumulatedWords);
+				result.Translated = MakeSentenceFromWords (accumulatedTranslation);
 
 				results.Add (result);
 			}
 
 			return results;
+		}
+
+		static string MakeSentenceFromWords (List<string> accumulatedWords)
+		{
+			var nonemptyWordsJoinedBySpaces = string.Join (" ", accumulatedWords.Where (w => !string.IsNullOrEmpty (w)));
+			var capitolizedSentencewithPeriod = nonemptyWordsJoinedBySpaces.First ().ToString ().ToUpper () + nonemptyWordsJoinedBySpaces.Substring (1) + ".";
+			return capitolizedSentencewithPeriod;
 		}
 
 		List<Exercise> GetAllConjugationsForVerb (Verb verb, bool limitVariations, Func<PointOfView> pointOfViewSelector)

@@ -22,20 +22,28 @@ namespace test
 		}
 
 		[Test]
-		[TestCase("Yo voy al cine.")]
-		[TestCase("Tú vas al cine.")]		
-		[TestCase("Usted va al cine.")]
-		[TestCase("Él va al cine.")]
-		[TestCase("Ella va al cine.")]
+		[TestCase("Yo voy al cine.", "I go to the movies.")]
+		[TestCase("Tú vas al cine.", "You go to the movies.")]		
+		[TestCase("Usted va al cine.", "You go to the movies.")]
+		[TestCase("Él va al cine.", "He goes to the movies.")]
+		[TestCase("Ella va al cine.", "She goes to the movies.")]
 
-		[TestCase("Nosotros vamos al cine.")]
-		[TestCase("Vosotros vais al cine.")]
-		[TestCase("Ustedes van al cine.")]
-		[TestCase("Ellos van al cine.")]
-		[TestCase("Ellas van al cine.")]
-		public void PresentTenseIntransitive (string expected)
+		[TestCase("Nosotros vamos al cine.", "We go to the movies.")]
+		[TestCase("Vosotros vais al cine.", "You all go to the movies.")]
+		[TestCase("Ustedes van al cine.", "You all go to the movies.")]
+		[TestCase("Ellos van al cine.", "They go to the movies.")]
+		[TestCase("Ellas van al cine.", "They go to the movies.")]
+		public void PresentTenseIntransitive (string expected, string translation)
 		{
-			Assert.Contains (expected, allPhrases);
+			var exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();
+
+			if (exercise == null) {
+				throw new Exception ("Original text not found: " + expected);
+			}
+
+			if (!string.IsNullOrEmpty (translation)) {
+				Assert.AreEqual (translation, exercise.Translated);
+			}
 		}
 
 		[TestCase("Yo grito.")]

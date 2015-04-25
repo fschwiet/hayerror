@@ -74,6 +74,8 @@
     <Compile Include="LingueeGenerator.cs" />
     <Compile Include="Commands\LingueeLookup.cs" />
     <Compile Include="Commands\DrillWithLinguee.cs" />
+    <Compile Include="Spanish\CannedTranslation.cs" />
+    <Compile Include="Spanish\ITranslateable.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
