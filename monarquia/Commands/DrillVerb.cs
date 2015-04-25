@@ -29,8 +29,9 @@ namespace monarquia
 		public override int Run (string[] remainingArguments)
 		{
 			var results = new List<EspanolGenerator.Exercise> ();
+			var cannedData = new CannedData ();
 
-			var generator = new EspanolGenerator ("./data");
+			var generator = new EspanolGenerator (cannedData, "./data");
 
 			foreach (var verbString in Verbs) {
 				var verb = generator.LookupVerb (verbString);

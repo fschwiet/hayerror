@@ -64,7 +64,6 @@
     <Compile Include="DataLoader.cs" />
     <Compile Include="Commands\LoadAllExampleTexts.cs" />
     <Compile Include="Commands\LoadContexts.cs" />
-    <Compile Include="CannedData.cs" />
     <Compile Include="Commands\DrillVerb.cs" />
     <Compile Include="Commands\GetTranslation.cs" />
     <Compile Include="Spanish\PointOfView.cs" />
@@ -77,6 +76,9 @@
     <Compile Include="Spanish\CannedTranslation.cs" />
     <Compile Include="Spanish\ITranslateable.cs" />
     <Compile Include="Commands\ScrapeDictionary.cs" />
+    <Compile Include="BigCannedData.cs" />
+    <Compile Include="CannedData.cs" />
+    <Compile Include="Commands\ViewExercises.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

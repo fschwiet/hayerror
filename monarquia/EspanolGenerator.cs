@@ -9,10 +9,10 @@ namespace monarquia
 	{
 		CannedData cannedData;
 
-		public EspanolGenerator (string dataDirectory)
+		public EspanolGenerator (CannedData cannedData, string dataDirectory)
 			: base(dataDirectory)
 		{
-			cannedData = new CannedData ();
+			this.cannedData = cannedData;
 		}
 
 		public IEnumerable<Exercise> GetAll(){
@@ -92,7 +92,7 @@ namespace monarquia
 
 				accumulatedWords.Add(scenario.verbEnding.AsSpanish(pointOfView));
 
-				var englishVerb = cannedData.TranslationVerbFromSpanishToEnglish (dataLoader, verb);
+				var englishVerb = cannedData.TranslateVerbFromSpanishToEnglish (dataLoader, verb);
 
 				var result = resultTemplate.Clone ();
 				result.Original = MakeSentenceFromWords (accumulatedWords);

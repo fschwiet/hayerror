@@ -25,6 +25,14 @@ namespace monarquia
 				};
 			}
 
+			public string GetTranslatedWithHints() {
+				var result = Translated;
+				if (HintsForTranslated.Any()) {
+					result = "(" + string.Join(", ", HintsForTranslated) + ") " + Translated;
+				}
+				return result;
+			}
+
 			public int GetWeight() {
 				return WeighString (Original);
 			}
@@ -47,13 +55,7 @@ namespace monarquia
 				foreach (var exercise in exercises) {
 
 					csv.WriteField (exercise.Original);
-
-					var translated = exercise.Translated;
-					if (exercise.HintsForTranslated.Any()) {
-						translated = "(" + string.Join(", ", exercise.HintsForTranslated) + ") " + exercise.Translated;
-					}
-
-					csv.WriteField (translated);
+					csv.WriteField (exercise.GetTranslatedWithHints());
 					csv.WriteField (exercise.ExtraInfo);
 					csv.WriteField (string.Join(" ", exercise.Tags));
 					csv.NextRecord ();
