@@ -82,9 +82,9 @@ namespace monarquia
 
 				var verb = new Verb (infinitive);
 
-				var futureConditional = GetEnglishPovLookupFromRow (indicativeTable, 0);
+				var futureConditional = GetEnglishPovLookupFromRow (indicativeTable, 2);
 				foreach (var key in futureConditional.Keys.ToArray()) {
-					futureConditional[key] = "would " + futureConditional [key];
+					futureConditional [key] = futureConditional[key].Replace("will", "would");
 				}
 
 				verb.WithTenses (Verb.Conjugation.Present, GetEnglishPovLookupFromRow (indicativeTable, 0));
