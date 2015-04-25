@@ -8,42 +8,52 @@ namespace monarquia
 	{
 		public CannedData ()
 		{
-			var actor = new Noun ("actor", "actriz", "actores", "actrizes");
-			var cook = new Noun ("cocinero", "cocinera", "cocineros", "cocineras");
-			var dentist = new Noun ("dentista", "dentistas");
-			var student = new Noun ("estudiante", "estudiantes");
+			var actor = new Noun ("actor", "actriz", "actores", "actrizes").WithTranslation ("actor", "actors");
+			var cook = new Noun ("cocinero", "cocinera", "cocineros", "cocineras").WithTranslation ("cook", "cooks");
+			var dentist = new Noun ("dentista", "dentistas").WithTranslation ("dentist", "dentists");
+			var student = new Noun ("estudiante", "estudiantes").WithTranslation ("student", "students");
 
-			AddVerbTranslation ("ir", "go");
+			AddVerbTranslation ("beber", "drink");
+			AddVerbTranslation ("comer", "eat");
 			AddVerbTranslation ("estar", "is");
 			AddVerbTranslation ("gritar", "shout");
+			AddVerbTranslation ("hablar", "talk");
+			AddVerbTranslation ("ir", "go");
+			//AddVerbTranslation ("preparar", "prepare"); -> ugh, can't load spanishdictionary.com/conjugate/prepare
+			AddVerbTranslation ("ser", "is");
+			AddVerbTranslation ("subir", "climb");
+			AddVerbTranslation ("sumar", "sum");
+			AddVerbTranslation ("temer", "fear");
+			AddVerbTranslation ("tener", "have");
 
-			AddVerbEnding ("beber", "leche");
-			AddVerbEnding ("beber", "agua");
-			AddVerbEnding ("comer", "fajitas");
-			AddVerbEnding ("dar", "un abrazo");
-			AddVerbEnding ("dar", "gritos");
+
+			AddVerbEnding ("beber", new CannedTranslation("leche", "milk"));
+			AddVerbEnding ("beber", new CannedTranslation("agua", "water"));
+			AddVerbEnding ("comer", new CannedTranslation("fajitas", "fajitas"));
+			AddVerbEnding ("dar", new CannedTranslation("un abrazo", "a hug"));
+			AddVerbEnding ("dar", new CannedTranslation("gritos", "shouts"));
 			//  AddVerbEnding ("dar", "la una");  ->  only clocks can strike one (to indicate a time)
 
 			AddVerbEnding ("estar", new CannedTranslation("en frente", "in front"));
-			AddVerbEnding ("estar", "en el detrás");
-			AddVerbEnding ("estar", "al otro lado de la calle");
+			AddVerbEnding ("estar", new CannedTranslation("en el detrás", "in the back"));
+			AddVerbEnding ("estar", new CannedTranslation("al otro lado de la calle", "on the other side of the street"));
 
-			AddVerbEnding ("hablar", "a la reportera");
-			AddVerbEnding ("hablar", "con él");
+			AddVerbEnding ("hablar", new CannedTranslation("a la reportera", "to the reporter"));
+			AddVerbEnding ("hablar", new CannedTranslation("con él", "to him"));
 			AddVerbEnding ("ir", new CannedTranslation("al cine", "to the movies"));
-			AddVerbEnding ("ir", "a decir la verdad");
-			AddVerbEnding ("ir", "a leer");
-			AddVerbEnding ("ir", "allí");
-			AddVerbEnding ("preparar", "la cena");
+			AddVerbEnding ("ir", new CannedTranslation("a decir la verdad", "to tell the truth"));
+			AddVerbEnding ("ir", new CannedTranslation("a leer", "to read"));
+			AddVerbEnding ("ir", new CannedTranslation("allí", "threre"));
+			AddVerbEnding ("preparar", new CannedTranslation("la cena", "the dinner"));
 
 			AddVerbEnding ("ser", actor);
 			AddVerbEnding ("ser", cook);
 			AddVerbEnding ("ser", dentist);
 			AddVerbEnding ("ser", student);
 
-			AddVerbEnding ("subir", "la escalera");
-			AddVerbEnding ("sumar", "la cuenta");
-			AddVerbEnding ("temer", "a los críticos");
+			AddVerbEnding ("subir", new CannedTranslation("la escalera", "the stairs"));
+			AddVerbEnding ("sumar", new CannedTranslation("la cuenta", "the bill"));
+			AddVerbEnding ("temer", new CannedTranslation("a los críticos", "the critics"));
 			AddVerbEnding ("tener", "frío");   // to be cold
 			AddVerbEnding ("tener", "hambre"); // to be hungry
 			AddVerbEnding ("tener", "miedo");  // to have fear

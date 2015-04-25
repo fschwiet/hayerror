@@ -15,8 +15,6 @@ namespace test
 		[TestFixtureSetUp]
 		public void LoadVerbs() {
 
-			List<ExerciseGenerator.Exercise> everyExercise = new List<ExerciseGenerator.Exercise> ();
-
 			allExercises = new monarquia.EspanolGenerator("../../../data").GetAll().ToArray();
 			allPhrases = allExercises.Select (e => e.Original).ToArray ();
 		}
@@ -62,25 +60,36 @@ namespace test
 			}
 		}
 
-		[TestCase("Yo preparo la cena.")]
-		[TestCase("Ellos suben la escalera.")]
-		[TestCase("Ellas beben leche.")]
-		[TestCase("Él suma la cuenta.")]
-		[TestCase("Ella habla a la reportera.")]
-		[TestCase("Él teme a los críticos.")]
-		[TestCase("Ellos comen fajitas.")]
-		public void PresentTenseTransitive (string expected)
-		{
-			Assert.Contains (expected, allPhrases);
+		[TestCase("Yo preparo la cena.", "I prepare the dinner")]
+		[TestCase("Ellos suben la escalera.", "They climb the stairs.")]
+		[TestCase("Ellas beben leche.", "They drink milk.")]
+		[TestCase("Él suma la cuenta.", "He adds up the check.")]
+		[TestCase("Ella habla a la reportera.", "She talks to the reporter.")]
+		[TestCase("Él teme a los críticos.", "He fears the critics.")]
+		[TestCase("Ellos comen fajitas.", "They eat fajitas.")]
+		public void PresentTenseTransitive (string expected, string translation) {
+			var exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();
+
+			if (exercise == null) {
+				throw new Exception ("Original text not found: " + expected);
+			}
+
+			if (!string.IsNullOrEmpty (translation)) {
+				Assert.AreEqual (translation, exercise.Translated);
+			}
 		}
 
-		[TestCase("Yo he hablado con él.")]
-		public void PresentPerfectTense (string expected) {
+		[TestCase("Yo he hablado con él.", "I have talked to him.")]
+		public void PresentPerfectTense (string expected, string translation) {
+			var exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();
 
-			var filtered = allPhrases.Where (p => p.Contains ("he hablado")).ToArray();
-			Console.WriteLine (String.Join (", ", filtered));
+			if (exercise == null) {
+				throw new Exception ("Original text not found: " + expected);
+			}
 
-			Assert.Contains (expected, allPhrases);
+			if (!string.IsNullOrEmpty (translation)) {
+				Assert.AreEqual (translation, exercise.Translated);
+			}
 		}
 
 		[TestCase("Ahora yo preparo la cena.")]

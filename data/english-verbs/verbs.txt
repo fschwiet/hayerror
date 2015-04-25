@@ -1,3 +1,10 @@
+climb
+drink
+eat
+fear
 go
+have
 is
 shout
+sum
+talk
