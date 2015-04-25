@@ -47,6 +47,7 @@ namespace test
 		[TestCase("Yo grito.", "I shout.")]
 		[TestCase("Ella está en frente.", "She is in front.")]
 		[TestCase("Yo estoy en frente.", "I am in front.")]
+		[TestCase("Yo soy cocinero.", "I am a cook.")]
 		public void MiscBugs (string expected, string translation)
 		{
 			var exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();

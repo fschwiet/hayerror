@@ -3,7 +3,7 @@
 namespace monarquia
 {
 
-	public class CannedTranslation : ITranslateable
+	public class CannedTranslation : NotComposed
 	{
 		string spanishText;
 		string englishText;
@@ -14,11 +14,11 @@ namespace monarquia
 			this.englishText = englishText;
 		}
 
-		public string AsSpanish(PointOfView pointOfView) {
+		public override string AsSpanish(PointOfView pointOfView) {
 			return spanishText;
 		}
 
-		public string AsEnglish(PointOfView pointOfView) {
+		public override string AsEnglish(PointOfView pointOfView) {
 			return englishText;
 		}
 	}
