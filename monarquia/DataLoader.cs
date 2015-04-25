@@ -20,7 +20,7 @@ namespace monarquia
 
 			List<Verb> results = new List<Verb> ();
 
-			foreach(var file in Directory.GetFiles(dataDirectory)) {
+			foreach(var file in Directory.GetFiles(Path.Combine(dataDirectory, "spanish-verbs"))) {
 
 				var expectedFileEnding = ".conjugation.txt";
 
