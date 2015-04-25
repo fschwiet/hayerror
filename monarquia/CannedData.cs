@@ -7,14 +7,14 @@ namespace monarquia
 	public class CannedData {
 
 		Dictionary<string, List<ITranslateable>> AllVerbEndings = new Dictionary<string, List<ITranslateable>>(StringComparer.InvariantCultureIgnoreCase);
-		Dictionary<Verb.Conjugation, List<string>> TimeExpressions = new Dictionary<Verb.Conjugation, List<string>>();
+		Dictionary<Verb.Conjugation, List<ITranslateable>> TimeExpressions = new Dictionary<Verb.Conjugation, List<ITranslateable>>();
 		Dictionary<string,string> VerbTranslations = new Dictionary<string, string> (StringComparer.InvariantCultureIgnoreCase);
 
 		protected void AddVerbEnding(string verbInfinitive, string ending) {
-			AddVerbEnding(verbInfinitive, new CannedTranslation(ending, "<not translated>"));
+			AddVerbEnding(verbInfinitive, new TranslationNotImplemented(ending));
 		}
 
-		protected void AddVerbEnding(string verbInfinitive, CannedTranslation ending) {
+		protected void AddVerbEnding(string verbInfinitive, ITranslateable ending) {
 
 			if (!AllVerbEndings.ContainsKey (verbInfinitive)) {
 				AllVerbEndings.Add (verbInfinitive, new List<ITranslateable> ());
@@ -41,21 +41,28 @@ namespace monarquia
 			return AllVerbEndings [verbInfinitive];
 		}
 
-		protected void AddTimeframeExpression(Verb.Conjugation conjugation, params string[] expressions) {
+		protected void AddTimeframeExpression(Verb.Conjugation conjugation, string expression) {
 
 			if (!TimeExpressions.ContainsKey (conjugation)) {
-				TimeExpressions [conjugation] = new List<string> ();
+				TimeExpressions [conjugation] = new List<ITranslateable> ();
 			}
 
-			foreach (var expression in expressions) {
-				TimeExpressions[conjugation].Add (expression);
-			}
+			TimeExpressions[conjugation].Add (new TranslationNotImplemented(expression));
 		}
 
-		public IEnumerable<string> GetTimeframeExpressions(Verb.Conjugation conjugation) {
+		protected void AddTimeframeExpression(Verb.Conjugation conjugation, ITranslateable expression) {
+
+			if (!TimeExpressions.ContainsKey (conjugation)) {
+				TimeExpressions [conjugation] = new List<ITranslateable> ();
+			}
+
+			TimeExpressions[conjugation].Add (expression);
+		}
+
+		public IEnumerable<ITranslateable> GetTimeframeExpressions(Verb.Conjugation conjugation) {
 
 			if (!TimeExpressions.ContainsKey (conjugation))
-				return new string[] { "" };
+				return new [] { new CannedTranslation("","") };
 
 			return TimeExpressions [conjugation];
 		}

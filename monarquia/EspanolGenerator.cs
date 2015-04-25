@@ -71,7 +71,7 @@ namespace monarquia
 			var selectedTimeframes = cannedData.GetTimeframeExpressions(conjugation).ToArray();
 
 			if (limitVariations) {
-				selectedTimeframes = new string[] {
+				selectedTimeframes = new [] {
 					selectedTimeframes[random.Next(selectedTimeframes.Length)]
 				};
 			}
@@ -85,7 +85,7 @@ namespace monarquia
 				//  some accumulated words may be empty strings
 				List<string> accumulatedWords = new List<string>();
 
-				accumulatedWords.Add (scenario.timeframe);
+				accumulatedWords.Add (scenario.timeframe.AsSpanish(pointOfView));
 
 				accumulatedWords.Add(pointOfView.AsSubjectPronoun());
 				accumulatedWords.Add(verb.ConjugatedForTense (conjugation, pointOfView));
@@ -97,9 +97,13 @@ namespace monarquia
 				var result = resultTemplate.Clone ();
 				result.Original = MakeSentenceFromWords (accumulatedWords);
 
-				if (englishVerb != null) {
+				if (englishVerb != null && 
+					!(scenario.verbEnding is TranslationNotImplemented) &&
+					!(scenario.timeframe is TranslationNotImplemented)) {
+
 					List<string> accumulatedTranslation = new List<string> ();
 
+					accumulatedTranslation.Add (scenario.timeframe.AsEnglish (pointOfView));
 					accumulatedTranslation.Add (pointOfView.AsEnglishSubjectPronoun ());
 					accumulatedTranslation.Add (englishVerb.ConjugatedForTense (conjugation, pointOfView));
 					accumulatedTranslation.Add (scenario.verbEnding.AsEnglish(pointOfView));

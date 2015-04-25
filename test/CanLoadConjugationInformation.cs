@@ -34,7 +34,7 @@ namespace test
 			Assert.AreEqual("went", expected.ConjugatedForTense(Verb.Conjugation.PastPreterite, PointOfView.FirstPerson));
 			Assert.AreEqual("went", expected.ConjugatedForTense(Verb.Conjugation.PastImperfect, PointOfView.FirstPerson));
 			Assert.AreEqual("will go", expected.ConjugatedForTense(Verb.Conjugation.Future, PointOfView.FirstPerson));
-			Assert.AreEqual("will go", expected.ConjugatedForTense(Verb.Conjugation.Conditional, PointOfView.FirstPerson));
+			Assert.AreEqual("would go", expected.ConjugatedForTense(Verb.Conjugation.Conditional, PointOfView.FirstPerson));
 			Assert.AreEqual("have gone", expected.ConjugatedForTense(Verb.Conjugation.PresentPerfect, PointOfView.FirstPerson));
 		}
 
