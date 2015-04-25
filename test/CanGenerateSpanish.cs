@@ -9,11 +9,16 @@ namespace test
 	[TestFixture ()]
 	public class CanGenerateSpanish
 	{
+		ExerciseGenerator.Exercise[] allExercises;
 		string[] allPhrases;
 
 		[TestFixtureSetUp]
 		public void LoadVerbs() {
-			allPhrases = new monarquia.EspanolGenerator("../../../data").GetAll().ToArray();
+
+			List<ExerciseGenerator.Exercise> everyExercise = new List<ExerciseGenerator.Exercise> ();
+
+			allExercises = new monarquia.EspanolGenerator("../../../data").GetAll().ToArray();
+			allPhrases = allExercises.Select (e => e.Original).ToArray ();
 		}
 
 		[Test]

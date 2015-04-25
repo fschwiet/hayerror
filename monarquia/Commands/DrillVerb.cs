@@ -32,8 +32,9 @@ namespace monarquia
 
 			var generator = new EspanolGenerator ("./data");
 
-			foreach (var verb in Verbs) {
-				results.AddRange (generator.GetForVerb (verb, true));
+			foreach (var verbString in Verbs) {
+				var verb = generator.LookupVerb (verbString);
+				results.AddRange (generator.GetForVerb(verb, true));
 			}
 
 			if (IncludeTranslations) {

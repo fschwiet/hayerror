@@ -15,22 +15,17 @@ namespace monarquia
 			cannedData = new CannedData ();
 		}
 
-		public IEnumerable<string> GetAll(){
+		public IEnumerable<Exercise> GetAll(){
 
-			List<string> results = new List<string>();
+			List<Exercise> results = new List<Exercise>();
 			foreach(var verb in allVerbs) {
-				results.AddRange(GetForVerb(verb, false).Select(e => e.Original));
+				results.AddRange(GetForVerb(verb, false));
 			}
 
 			return results;
 		}
 
-		public IEnumerable<Exercise> GetForVerb(string infinitive, bool limitVariations) {
-			
-			return GetForVerb (LookupVerb(infinitive), limitVariations);
-		}
-
-		IEnumerable<Exercise> GetForVerb (Verb verb, bool limitVariations)
+		public IEnumerable<Exercise> GetForVerb (Verb verb, bool limitVariations)
 		{
 			List<Exercise> results = new List<Exercise>();
 
