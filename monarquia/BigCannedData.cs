@@ -13,6 +13,16 @@ namespace monarquia
 		public BetterCannedData() {
 			AddVerbTranslation ("ser", "is");
 
+			AddTimeframeExpression (Verb.Conjugation.PastPreterite, new CannedTranslation("a esa hora", "at that hour"));
+			AddTimeframeExpression (Verb.Conjugation.PastPreterite, new CannedTranslation("ayer", "yesterday"));
+			AddTimeframeExpression (Verb.Conjugation.PastPreterite, new CannedTranslation("de pronto", "suddenly"));
+			AddTimeframeExpression (Verb.Conjugation.PastPreterite, new CannedTranslation("de repente", "suddenly"));
+
+			AddTimeframeExpression (Verb.Conjugation.PastImperfect, new CannedTranslation("él me dijo que", "he told me that"));
+			AddTimeframeExpression (Verb.Conjugation.PastImperfect, new CannedTranslation("todas las mañanas", "every morning"));
+			AddTimeframeExpression (Verb.Conjugation.PastImperfect, new CannedTranslation("todos los años", "every year"));
+			AddTimeframeExpression (Verb.Conjugation.PastImperfect, new CannedTranslation("todos los días", "every day"));
+
 			var actor = new Noun ("actor", "actriz", "actores", "actrizes").WithTranslation ("actor", "actors");
 			var cook = new Noun ("cocinero", "cocinera", "cocineros", "cocineras").WithTranslation ("cook", "cooks");
 			var dentist = new Noun ("dentista", "dentistas").WithTranslation ("dentist", "dentists");
@@ -22,6 +32,8 @@ namespace monarquia
 			AddVerbEnding ("ser", cook);
 			AddVerbEnding ("ser", dentist);
 			AddVerbEnding ("ser", student);
+
+		
 		}
 	}
 
@@ -99,14 +111,10 @@ namespace monarquia
 			AddTimeframeExpression (Verb.Conjugation.Present, "esta semana");
 			AddTimeframeExpression (Verb.Conjugation.Present, "esta mes");
 
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "a esa hora");
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "a las cuatro");
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "anoche");
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "anteanoche");
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "anteayer");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "ayer");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "de pronto");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "de repente");
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "ayer por la mañana");
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "ayer por la noche");
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "ayer por la tarde");
@@ -152,9 +160,6 @@ namespace monarquia
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "muchas veces");
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "por lo general");
 			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "rara vez");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "todas las mañanas");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "todos los años");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "todos los días");
 
 			AddTimeframeExpression (Verb.Conjugation.PresentPerfect, "");
 
