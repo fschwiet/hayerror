@@ -9,6 +9,9 @@ namespace monarquia
 
 	public class TranslationNotImplemented : ITranslateable {
 
+		public class TranslatedNotImplementedException : Exception {
+		}
+
 		string value;
 
 		public TranslationNotImplemented(string value) {
@@ -20,7 +23,7 @@ namespace monarquia
 		}
 
 		public string AsEnglish(PointOfView pointOfView) {
-			throw new Exception("not implemented");
+			throw new TranslatedNotImplementedException();
 		}
 	}
 	

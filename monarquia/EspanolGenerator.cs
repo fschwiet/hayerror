@@ -97,18 +97,21 @@ namespace monarquia
 				var result = resultTemplate.Clone ();
 				result.Original = MakeSentenceFromWords (accumulatedWords);
 
-				if (englishVerb != null && 
-					!(scenario.verbEnding is TranslationNotImplemented) &&
-					!(scenario.timeframe is TranslationNotImplemented)) {
+				if (englishVerb != null) {
 
-					List<string> accumulatedTranslation = new List<string> ();
+					try {
+						List<string> accumulatedTranslation = new List<string> ();
 
-					accumulatedTranslation.Add (scenario.timeframe.AsEnglish (pointOfView));
-					accumulatedTranslation.Add (pointOfView.AsEnglishSubjectPronoun ());
-					accumulatedTranslation.Add (englishVerb.ConjugatedForTense (conjugation, pointOfView));
-					accumulatedTranslation.Add (scenario.verbEnding.AsEnglish(pointOfView));
+						accumulatedTranslation.Add (scenario.timeframe.AsEnglish (pointOfView));
+						accumulatedTranslation.Add (pointOfView.AsEnglishSubjectPronoun ());
+						accumulatedTranslation.Add (englishVerb.ConjugatedForTense (conjugation, pointOfView));
+						accumulatedTranslation.Add (scenario.verbEnding.AsEnglish(pointOfView));
 
-					result.Translated = MakeSentenceFromWords (accumulatedTranslation);
+						result.Translated = MakeSentenceFromWords (accumulatedTranslation);					
+					}
+					catch(TranslationNotImplemented.TranslatedNotImplementedException) {
+						// ignore
+					}
 				}
 
 				results.Add (result);
