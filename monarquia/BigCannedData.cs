@@ -86,7 +86,7 @@ namespace monarquia
 
 
 			// Now
-			AddTimeframeExpression (Verb.Conjugation.Present, "");
+			AddTimeframeExpression (Verb.Conjugation.Present, new CannedTranslation("", ""));
 			AddTimeframeExpression (Verb.Conjugation.Present, "ahora");
 			AddTimeframeExpression (Verb.Conjugation.Present, "ahora mismo");
 			AddTimeframeExpression (Verb.Conjugation.Present, "hoy");
