@@ -52,7 +52,8 @@ namespace monarquia
 
 					var languageLink = IsSpanish ? "a[href='#translate-es']" : "a[href='#translate-en']";
 
-					driver.FindElementByCssSelector (languageLink).Click ();
+					if (driver.FindElementsByCssSelector(languageLink).Any())
+						driver.FindElementByCssSelector (languageLink).Click ();
 
 					var definitionFileTarget = Path.Combine (TargetDirectory, word + ".definition.txt");
 					File.WriteAllText (definitionFileTarget, driver.PageSource);
