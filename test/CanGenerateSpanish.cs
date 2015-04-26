@@ -69,6 +69,7 @@ namespace test
 		}
 
 		[TestCase("Yo soy cocinero.", "I am a cook.")]
+		[TestCase("Ella es actriz.", "She is an actor.")]
 		[TestCase("Tú eres cocinero.", "You are a cook.")]
 		[TestCase("Nosotros somos cocineros.", "We are cooks.")]
 		[TestCase("Ellos son cocineros.", "They are cooks.")]
