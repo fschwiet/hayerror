@@ -11,6 +11,7 @@ namespace monarquia
 		};
 
 		public BetterCannedData() {
+			
 			AddVerbTranslation ("ser", "is");
 
 			AddTimeframeExpression (Verb.Conjugation.PastPreterite, new CannedTranslation("a esa hora", "at that hour"));
@@ -28,12 +29,14 @@ namespace monarquia
 			var dentist = new Noun ("dentista", "dentistas").WithTranslation ("dentist", "dentists");
 			var student = new Noun ("estudiante", "estudiantes").WithTranslation ("student", "students");
 
-			AddVerbEnding ("ser", actor);
-			AddVerbEnding ("ser", cook);
-			AddVerbEnding ("ser", dentist);
-			AddVerbEnding ("ser", student);
+			var professions = new [] { actor, cook, dentist, student };
 
-		
+			foreach (var profession in professions.Select(t => (Composed)t)) {
+				AddVerbEnding ("ser", 
+					profession.WithEnglishAlternative(
+						new Article() + profession
+					));
+			}
 		}
 	}
 

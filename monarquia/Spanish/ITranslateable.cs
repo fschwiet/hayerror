@@ -28,11 +28,15 @@ namespace monarquia
 		}
 
 		public string AsSpanish(PointOfView pointOfView) {
-			return String.Join (" ", spanish.Select(e => e.AsSpanish(pointOfView)));
+			return String.Join (" ", 
+				spanish.Select(e => e.AsSpanish(pointOfView))
+				.Where(s => !String.IsNullOrEmpty(s)));
 		}
 
 		public string AsEnglish(PointOfView pointOfView) {
-			return String.Join (" ", english.Select(e => e.AsEnglish(pointOfView)));
+			return String.Join (" ", 
+				english.Select(e => e.AsEnglish(pointOfView))
+				.Where(s => !String.IsNullOrEmpty(s)));
 		}
 
 		public Composed WithEnglishAlternative(ITranslateable english) {

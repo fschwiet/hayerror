@@ -79,6 +79,7 @@
     <Compile Include="BigCannedData.cs" />
     <Compile Include="CannedData.cs" />
     <Compile Include="Commands\ViewExercises.cs" />
+    <Compile Include="Spanish\Article.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

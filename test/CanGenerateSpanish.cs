@@ -12,6 +12,30 @@ namespace test
 		ExerciseGenerator.Exercise[] allExercises;
 		string[] allPhrases;
 
+		public void AssertHasTranslation (string expected, string translation)
+		{
+			ExerciseGenerator.Exercise exercise;
+
+			try {
+				exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();
+			} catch(InvalidOperationException) {
+				
+				var matchingExercises = allExercises.Where (e => e.Original == expected);
+				Console.WriteLine("has exercises for '" + expected + "':");
+				ExerciseGenerator.Exercise.WriteAsCsv (Console.Out, matchingExercises);
+
+				throw;
+			}
+
+			if (exercise == null) {
+				throw new Exception ("Original text not found: " + expected);
+			}
+
+			if (!string.IsNullOrEmpty (translation)) {
+				Assert.AreEqual (translation, exercise.Translated);
+			}
+		}
+
 		[TestFixtureSetUp]
 		public void LoadVerbs() {
 
@@ -33,32 +57,24 @@ namespace test
 		[TestCase("Ellas van al cine.", "They go to the movies.")]
 		public void PresentTenseIntransitive (string expected, string translation)
 		{
-			var exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();
-
-			if (exercise == null) {
-				throw new Exception ("Original text not found: " + expected);
-			}
-
-			if (!string.IsNullOrEmpty (translation)) {
-				Assert.AreEqual (translation, exercise.Translated);
-			}
+			AssertHasTranslation (expected, translation);
 		}
 
 		[TestCase("Yo grito.", "I shout.")]
 		[TestCase("Ella está en frente.", "She is in front.")]
 		[TestCase("Yo estoy en frente.", "I am in front.")]
-		[TestCase("Yo soy cocinero.", "I am a cook.")]
 		public void MiscBugs (string expected, string translation)
 		{
-			var exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();
+			AssertHasTranslation (expected, translation);
+		}
 
-			if (exercise == null) {
-				throw new Exception ("Original text not found: " + expected);
-			}
-
-			if (!string.IsNullOrEmpty (translation)) {
-				Assert.AreEqual (translation, exercise.Translated);
-			}
+		[TestCase("Yo soy cocinero.", "I am a cook.")]
+		[TestCase("Tú eres cocinero.", "You are a cook.")]
+		[TestCase("Nosotros somos cocineros.", "We are cooks.")]
+		[TestCase("Ellos son cocineros.", "They are cooks.")]
+		public void IsProfessionExpressionsOftenLackAnArticle (string expected, string translation)
+		{
+			AssertHasTranslation (expected, translation);
 		}
 
 		[TestCase("Yo preparo la cena.", null/*, "I prepare the dinner"*/)]
@@ -68,29 +84,15 @@ namespace test
 		[TestCase("Ella habla a la reportera.", "She talks to the reporter.")]
 		[TestCase("Él teme a los críticos.", "He fears the critics.")]
 		[TestCase("Ellos comen fajitas.", "They eat fajitas.")]
-		public void PresentTenseTransitive (string expected, string translation) {
-			var exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();
-
-			if (exercise == null) {
-				throw new Exception ("Original text not found: " + expected);
-			}
-
-			if (!string.IsNullOrEmpty (translation)) {
-				Assert.AreEqual (translation, exercise.Translated);
-			}
+		public void PresentTenseTransitive (string expected, string translation)
+		{
+			AssertHasTranslation (expected, translation);
 		}
 
 		[TestCase("Yo he hablado con él.", "I have talked to him.")]
-		public void PresentPerfectTense (string expected, string translation) {
-			var exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();
-
-			if (exercise == null) {
-				throw new Exception ("Original text not found: " + expected);
-			}
-
-			if (!string.IsNullOrEmpty (translation)) {
-				Assert.AreEqual (translation, exercise.Translated);
-			}
+		public void PresentPerfectTense (string expected, string translation)
+		{
+			AssertHasTranslation (expected, translation);
 		}
 
 		[TestCase("Ahora yo preparo la cena.")]
