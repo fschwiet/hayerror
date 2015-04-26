@@ -31,6 +31,7 @@ namespace monarquia
 			switch (pointOfView) {
 				case PointOfView.FirstPersonPlural:
 				case PointOfView.SecondPersonPlural:
+				case PointOfView.SecondPersonPluralFormal:
 				case PointOfView.ThirdPersonPluralFeminine:
 				case PointOfView.ThirdPersonPluralMasculine:
 					return true;
