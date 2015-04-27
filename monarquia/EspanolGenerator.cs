@@ -55,9 +55,14 @@ namespace monarquia
 
 			resultTemplate.ExtraInfo = verb.Infinitive + " (" + conjugation.AsFriendlyString() + " tense)";
 
-			if (pointOfView.IsSecondPerson ())
+			if (// tu o usted?
+				pointOfView.IsSecondPerson () ||
+				// ellos o ellas?
+				(pointOfView == PointOfView.ThirdPersonPluralMasculine || pointOfView == PointOfView.ThirdPersonPluralFeminine)) {
+
 				resultTemplate.HintsForTranslated.Add (pointOfView.AsSubjectPronoun());
-			
+			}
+
 			resultTemplate.Tags.Add ("conjugation:" + conjugation);
 			resultTemplate.Tags.Add ("verb:" + verb.Infinitive);
 
