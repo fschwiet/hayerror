@@ -80,6 +80,8 @@
     <Compile Include="CannedData.cs" />
     <Compile Include="Commands\ViewExercises.cs" />
     <Compile Include="Spanish\Article.cs" />
+    <Compile Include="Commands\DownloadPhoneticForm.cs" />
+    <Compile Include="CachedPhoneticData.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

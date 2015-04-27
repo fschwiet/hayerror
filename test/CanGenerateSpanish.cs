@@ -39,7 +39,8 @@ namespace test
 		[TestFixtureSetUp]
 		public void LoadVerbs() {
 
-			allExercises = new monarquia.EspanolGenerator(new BigCannedData(), "../../../data").GetAll().ToArray();
+			var dataDirectory = "../../../data";
+			allExercises = new monarquia.EspanolGenerator(new BigCannedData(), dataDirectory).GetAll().ToArray();
 			allPhrases = allExercises.Select (e => e.Original).ToArray ();
 		}
 

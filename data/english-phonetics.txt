@@ -1,0 +1,17 @@
+﻿world,wərld
+hello,həlo
+university,junɪvərsəti
+person,pərsən
+cook,kʊk
+horse,hɔrs
+hour,awər
+orphan,ɔrfən
+apple,æpəl
+idiot,ɪdiət
+egg,ɛg
+elephant,ɛləfənt
+user,juzər
+car,kɑr
+actor,æktər
+dentist,dɛntəst
+student,studənt

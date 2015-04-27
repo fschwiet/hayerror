@@ -40,6 +40,7 @@
     <Compile Include="CanGenerateSpanish.cs" />
     <Compile Include="CanLoadConjugationInformation.cs" />
     <Compile Include="CsQueryTest.cs" />
+    <Compile Include="ArticleAwareness.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

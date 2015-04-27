@@ -8,10 +8,12 @@ namespace monarquia
 	public class EspanolGenerator : ExerciseGenerator
 	{
 		CannedData cannedData;
+		CachedPhoneticData phoneticData;
 
 		public EspanolGenerator (CannedData cannedData, string dataDirectory)
 			: base(dataDirectory)
 		{
+			this.phoneticData = new CachedPhoneticData(dataDirectory);
 			this.cannedData = cannedData;
 		}
 
@@ -107,7 +109,7 @@ namespace monarquia
 						accumulatedTranslation.Add (englishVerb.ConjugatedForTense (conjugation, pointOfView));
 						accumulatedTranslation.Add (scenario.verbEnding.AsEnglish(pointOfView));
 
-						result.Translated = MakeSentenceFromWords (accumulatedTranslation);					
+						result.Translated = MakeEnglishSentenceFromWords (phoneticData, accumulatedTranslation);					
 					}
 					catch(TranslationNotImplemented.TranslatedNotImplementedException) {
 						// ignore
@@ -120,11 +122,32 @@ namespace monarquia
 			return results;
 		}
 
-		static string MakeSentenceFromWords (List<string> accumulatedWords)
+		static string MakeSentenceFromWords (IEnumerable<string> input, Func<IEnumerable<string>,IEnumerable<string>> transform = null)
 		{
-			var nonemptyWordsJoinedBySpaces = string.Join (" ", accumulatedWords.Where (w => !string.IsNullOrEmpty (w)));
+			if (transform != null) {
+				input = transform (input.SelectMany(w => w.Split(' ')).Where (w => !string.IsNullOrEmpty (w))).ToList ();
+			}
+
+			var nonemptyWordsJoinedBySpaces = string.Join (" ", input.Where (w => !string.IsNullOrEmpty (w)));
 			var capitolizedSentencewithPeriod = nonemptyWordsJoinedBySpaces.First ().ToString ().ToUpper () + nonemptyWordsJoinedBySpaces.Substring (1) + ".";
 			return capitolizedSentencewithPeriod;
+		}
+
+		public static string MakeEnglishSentenceFromWords (CachedPhoneticData phoneticData, IEnumerable<string> accumulatedTranslation)
+		{
+			return MakeSentenceFromWords (accumulatedTranslation, input =>  {
+				var words = input.ToArray ();
+				for (var i = 0; i < words.Length - 1; i++) {
+					if (words [i].Equals ("a", StringComparison.InvariantCultureIgnoreCase)) {
+						var nextWordPhonemes = phoneticData.GetEnglishPhonetics(words[i+1]);
+
+						if ("aɔæɪɛ".Contains(nextWordPhonemes[0])) {
+							words[i] = "an";
+						}
+					}
+				}
+				return words;
+			});
 		}
 
 		List<Exercise> GetAllConjugationsForVerb (Verb verb, bool limitVariations, Func<PointOfView> pointOfViewSelector)
