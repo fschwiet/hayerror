@@ -29,7 +29,7 @@ namespace monarquia
 		public override int Run (string[] remainingArguments)
 		{
 			var results = new List<EspanolGenerator.Exercise> ();
-			var cannedData = new CannedData ();
+			var cannedData = new BetterCannedData ();
 
 			var generator = new EspanolGenerator (cannedData, "./data");
 
