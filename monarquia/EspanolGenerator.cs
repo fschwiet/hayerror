@@ -49,11 +49,11 @@ namespace monarquia
 			bool limitVariations, 
 			PointOfView pointOfView,
 			CannedData cannedData,
-			Verb.Conjugation conjugation)
+			Conjugation conjugation)
 		{
 			Exercise resultTemplate = new Exercise ();
 
-			resultTemplate.ExtraInfo = verb.Infinitive;
+			resultTemplate.ExtraInfo = verb.Infinitive + " (" + conjugation + ")";
 
 			if (pointOfView.IsSecondPerson ())
 				resultTemplate.HintsForTranslated.Add (pointOfView.AsSubjectPronoun());
@@ -154,12 +154,12 @@ namespace monarquia
 		{
 			List<Exercise> results = new List<Exercise> ();
 
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Verb.Conjugation.Present));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Verb.Conjugation.PastPreterite));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Verb.Conjugation.PastImperfect));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Verb.Conjugation.Future));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Verb.Conjugation.Conditional));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Verb.Conjugation.PresentPerfect));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.Present));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.PastPreterite));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.PastImperfect));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.Future));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.Conditional));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.PresentPerfect));
 
 			return results;
 		}

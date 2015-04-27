@@ -43,12 +43,12 @@ namespace monarquia
 
 				var verb = new Verb (infinitive);
 
-				verb.WithTenses (Verb.Conjugation.Present, GetPovLookupFromTableColumn (indicativeTable, 0));
-				verb.WithTenses (Verb.Conjugation.PastPreterite, GetPovLookupFromTableColumn (indicativeTable, 1));
-				verb.WithTenses (Verb.Conjugation.PastImperfect, GetPovLookupFromTableColumn (indicativeTable, 2));
-				verb.WithTenses (Verb.Conjugation.Conditional, GetPovLookupFromTableColumn (indicativeTable, 3));
-				verb.WithTenses (Verb.Conjugation.Future, GetPovLookupFromTableColumn (indicativeTable, 4));
-				verb.WithTenses (Verb.Conjugation.PresentPerfect, GetPovLookupFromTableColumn (perfectTable, 0));
+				verb.WithTenses (Conjugation.Present, GetPovLookupFromTableColumn (indicativeTable, 0));
+				verb.WithTenses (Conjugation.PastPreterite, GetPovLookupFromTableColumn (indicativeTable, 1));
+				verb.WithTenses (Conjugation.PastImperfect, GetPovLookupFromTableColumn (indicativeTable, 2));
+				verb.WithTenses (Conjugation.Conditional, GetPovLookupFromTableColumn (indicativeTable, 3));
+				verb.WithTenses (Conjugation.Future, GetPovLookupFromTableColumn (indicativeTable, 4));
+				verb.WithTenses (Conjugation.PresentPerfect, GetPovLookupFromTableColumn (perfectTable, 0));
 
 
 				results.Add (verb);
@@ -87,12 +87,12 @@ namespace monarquia
 					futureConditional [key] = futureConditional[key].Replace("will", "would");
 				}
 
-				verb.WithTenses (Verb.Conjugation.Present, GetEnglishPovLookupFromRow (indicativeTable, 0));
-				verb.WithTenses (Verb.Conjugation.PastPreterite, GetEnglishPovLookupFromRow (indicativeTable, 1));
-				verb.WithTenses (Verb.Conjugation.PastImperfect, GetEnglishPovLookupFromRow (indicativeTable, 1));
-				verb.WithTenses (Verb.Conjugation.Conditional, futureConditional);
-				verb.WithTenses (Verb.Conjugation.Future, GetEnglishPovLookupFromRow (indicativeTable, 2));
-				verb.WithTenses (Verb.Conjugation.PresentPerfect, GetEnglishPovLookupFromRow (perfectTable, 0));
+				verb.WithTenses (Conjugation.Present, GetEnglishPovLookupFromRow (indicativeTable, 0));
+				verb.WithTenses (Conjugation.PastPreterite, GetEnglishPovLookupFromRow (indicativeTable, 1));
+				verb.WithTenses (Conjugation.PastImperfect, GetEnglishPovLookupFromRow (indicativeTable, 1));
+				verb.WithTenses (Conjugation.Conditional, futureConditional);
+				verb.WithTenses (Conjugation.Future, GetEnglishPovLookupFromRow (indicativeTable, 2));
+				verb.WithTenses (Conjugation.PresentPerfect, GetEnglishPovLookupFromRow (perfectTable, 0));
 
 				results.Add (verb);
 			}

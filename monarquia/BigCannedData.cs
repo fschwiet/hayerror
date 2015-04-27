@@ -14,15 +14,15 @@ namespace monarquia
 			
 			AddVerbTranslation ("ser", "is");
 
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, new CannedTranslation("a esa hora", "at that hour"));
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, new CannedTranslation("ayer", "yesterday"));
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, new CannedTranslation("de pronto", "suddenly"));
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, new CannedTranslation("de repente", "suddenly"));
+			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("a esa hora", "at that hour"));
+			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("ayer", "yesterday"));
+			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("de pronto", "suddenly"));
+			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("de repente", "suddenly"));
 
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, new CannedTranslation("él me dijo que", "he told me that"));
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, new CannedTranslation("todas las mañanas", "every morning"));
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, new CannedTranslation("todos los años", "every year"));
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, new CannedTranslation("todos los días", "every day"));
+			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("él me dijo que", "he told me that"));
+			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("todas las mañanas", "every morning"));
+			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("todos los años", "every year"));
+			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("todos los días", "every day"));
 
 			var actor = new Noun ("actor", "actriz", "actores", "actrizes").WithTranslation ("actor", "actors");
 			var cook = new Noun ("cocinero", "cocinera", "cocineros", "cocineras").WithTranslation ("cook", "cooks");
@@ -89,59 +89,59 @@ namespace monarquia
 
 
 			// Now
-			AddTimeframeExpression (Verb.Conjugation.Present, new CannedTranslation("", ""));
-			AddTimeframeExpression (Verb.Conjugation.Present, "ahora");
-			AddTimeframeExpression (Verb.Conjugation.Present, "ahora mismo");
-			AddTimeframeExpression (Verb.Conjugation.Present, "hoy");
-			AddTimeframeExpression (Verb.Conjugation.Present, "a este minuto");
+			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("", ""));
+			AddTimeframeExpression (Conjugation.Present, "ahora");
+			AddTimeframeExpression (Conjugation.Present, "ahora mismo");
+			AddTimeframeExpression (Conjugation.Present, "hoy");
+			AddTimeframeExpression (Conjugation.Present, "a este minuto");
 
 			// Usually? Frequency?
-			AddTimeframeExpression (Verb.Conjugation.Present, "a menudo");  // not sure
-			AddTimeframeExpression (Verb.Conjugation.Present, "de vez en cuando");  // not sure
-			AddTimeframeExpression (Verb.Conjugation.Present, "en general");
-			AddTimeframeExpression (Verb.Conjugation.Present, "los lunes");
-			AddTimeframeExpression (Verb.Conjugation.Present, "los martes");
-			AddTimeframeExpression (Verb.Conjugation.Present, "los miercoles");
-			AddTimeframeExpression (Verb.Conjugation.Present, "los jueves");
-			AddTimeframeExpression (Verb.Conjugation.Present, "los viernes");
-			AddTimeframeExpression (Verb.Conjugation.Present, "los sábados");
-			AddTimeframeExpression (Verb.Conjugation.Present, "los domingos");
-			AddTimeframeExpression (Verb.Conjugation.Present, "los fines de semanas");
-			AddTimeframeExpression (Verb.Conjugation.Present, "normalmente");
+			AddTimeframeExpression (Conjugation.Present, "a menudo");  // not sure
+			AddTimeframeExpression (Conjugation.Present, "de vez en cuando");  // not sure
+			AddTimeframeExpression (Conjugation.Present, "en general");
+			AddTimeframeExpression (Conjugation.Present, "los lunes");
+			AddTimeframeExpression (Conjugation.Present, "los martes");
+			AddTimeframeExpression (Conjugation.Present, "los miercoles");
+			AddTimeframeExpression (Conjugation.Present, "los jueves");
+			AddTimeframeExpression (Conjugation.Present, "los viernes");
+			AddTimeframeExpression (Conjugation.Present, "los sábados");
+			AddTimeframeExpression (Conjugation.Present, "los domingos");
+			AddTimeframeExpression (Conjugation.Present, "los fines de semanas");
+			AddTimeframeExpression (Conjugation.Present, "normalmente");
 
 			// Near future
-			AddTimeframeExpression (Verb.Conjugation.Present, "al mediodía");
-			AddTimeframeExpression (Verb.Conjugation.Present, "esta semana");
-			AddTimeframeExpression (Verb.Conjugation.Present, "esta mes");
+			AddTimeframeExpression (Conjugation.Present, "al mediodía");
+			AddTimeframeExpression (Conjugation.Present, "esta semana");
+			AddTimeframeExpression (Conjugation.Present, "esta mes");
 
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "a las cuatro");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "anoche");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "anteanoche");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "anteayer");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "ayer por la mañana");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "ayer por la noche");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "ayer por la tarde");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "el año pasado");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "el lunes pasado");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "el mes pasado");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "en ese instante");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "en ese momento");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "hace diez años");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "hoy por la mañana");
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "la semana pasada");
+			AddTimeframeExpression (Conjugation.PastPreterite, "a las cuatro");
+			AddTimeframeExpression (Conjugation.PastPreterite, "anoche");
+			AddTimeframeExpression (Conjugation.PastPreterite, "anteanoche");
+			AddTimeframeExpression (Conjugation.PastPreterite, "anteayer");
+			AddTimeframeExpression (Conjugation.PastPreterite, "ayer por la mañana");
+			AddTimeframeExpression (Conjugation.PastPreterite, "ayer por la noche");
+			AddTimeframeExpression (Conjugation.PastPreterite, "ayer por la tarde");
+			AddTimeframeExpression (Conjugation.PastPreterite, "el año pasado");
+			AddTimeframeExpression (Conjugation.PastPreterite, "el lunes pasado");
+			AddTimeframeExpression (Conjugation.PastPreterite, "el mes pasado");
+			AddTimeframeExpression (Conjugation.PastPreterite, "en ese instante");
+			AddTimeframeExpression (Conjugation.PastPreterite, "en ese momento");
+			AddTimeframeExpression (Conjugation.PastPreterite, "hace diez años");
+			AddTimeframeExpression (Conjugation.PastPreterite, "hoy por la mañana");
+			AddTimeframeExpression (Conjugation.PastPreterite, "la semana pasada");
 
 
 			/*
 			 * 
 			// excluding siempre since amibguous and google mistranslates 'Siempre usted está en frente'
 
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "entonces");  // ambiguous
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "finalmente");  // ambiguous
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "por fin");  // ambiguous
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "por primera vez");  // ambiguous
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "un día");  // ambiguous
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "una noche");  // ambiguous
-			AddTimeframeExpression (Verb.Conjugation.PastPreterite, "una vez");  // ambiguous
+			AddTimeframeExpression (Conjugation.PastPreterite, "entonces");  // ambiguous
+			AddTimeframeExpression (Conjugation.PastPreterite, "finalmente");  // ambiguous
+			AddTimeframeExpression (Conjugation.PastPreterite, "por fin");  // ambiguous
+			AddTimeframeExpression (Conjugation.PastPreterite, "por primera vez");  // ambiguous
+			AddTimeframeExpression (Conjugation.PastPreterite, "un día");  // ambiguous
+			AddTimeframeExpression (Conjugation.PastPreterite, "una noche");  // ambiguous
+			AddTimeframeExpression (Conjugation.PastPreterite, "una vez");  // ambiguous
 
 			AddTimeframeExpression (Timeframe.PastPreterite, "con frecuencia"); // ambiguous
 			AddTimeframeExpression (Timeframe.PastPreterite, "constantemente"); // ambiguous
@@ -151,38 +151,38 @@ namespace monarquia
 			AddTimeframeExpression (Timeframe.PastPreterite, "normalmente"); // ambiguous
 			AddTimeframeExpression (Timeframe.PastPreterite, "por lo general"); // ambiguous
 
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "mientras");  // also a conjugation
+			AddTimeframeExpression (Conjugation.PastImperfect, "mientras");  // also a conjugation
 
 */
 
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "a veces");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "algunas veces");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "casi nunca");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "casi siempre");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "de vez en cuando");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "muchas veces");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "por lo general");
-			AddTimeframeExpression (Verb.Conjugation.PastImperfect, "rara vez");
+			AddTimeframeExpression (Conjugation.PastImperfect, "a veces");
+			AddTimeframeExpression (Conjugation.PastImperfect, "algunas veces");
+			AddTimeframeExpression (Conjugation.PastImperfect, "casi nunca");
+			AddTimeframeExpression (Conjugation.PastImperfect, "casi siempre");
+			AddTimeframeExpression (Conjugation.PastImperfect, "de vez en cuando");
+			AddTimeframeExpression (Conjugation.PastImperfect, "muchas veces");
+			AddTimeframeExpression (Conjugation.PastImperfect, "por lo general");
+			AddTimeframeExpression (Conjugation.PastImperfect, "rara vez");
 
-			AddTimeframeExpression (Verb.Conjugation.PresentPerfect, "");
+			AddTimeframeExpression (Conjugation.PresentPerfect, "");
 
-			AddTimeframeExpression (Verb.Conjugation.Future, "");
-			AddTimeframeExpression (Verb.Conjugation.Future, "a la una");
-			AddTimeframeExpression (Verb.Conjugation.Future, "de aquí a dos días");
-			AddTimeframeExpression (Verb.Conjugation.Future, "el lunes que vien");
-			AddTimeframeExpression (Verb.Conjugation.Future, "en una semana");
-			AddTimeframeExpression (Verb.Conjugation.Future, "esta noche");
-			AddTimeframeExpression (Verb.Conjugation.Future, "esta primavera");
-			AddTimeframeExpression (Verb.Conjugation.Future, "luego");
-			AddTimeframeExpression (Verb.Conjugation.Future, "mañana");
-			AddTimeframeExpression (Verb.Conjugation.Future, "mañana por la mañana");
-			AddTimeframeExpression (Verb.Conjugation.Future, "mañana por la tarde");
-			AddTimeframeExpression (Verb.Conjugation.Future, "mañana por la noche");
-			AddTimeframeExpression (Verb.Conjugation.Future, "pasado mañana");
+			AddTimeframeExpression (Conjugation.Future, "");
+			AddTimeframeExpression (Conjugation.Future, "a la una");
+			AddTimeframeExpression (Conjugation.Future, "de aquí a dos días");
+			AddTimeframeExpression (Conjugation.Future, "el lunes que vien");
+			AddTimeframeExpression (Conjugation.Future, "en una semana");
+			AddTimeframeExpression (Conjugation.Future, "esta noche");
+			AddTimeframeExpression (Conjugation.Future, "esta primavera");
+			AddTimeframeExpression (Conjugation.Future, "luego");
+			AddTimeframeExpression (Conjugation.Future, "mañana");
+			AddTimeframeExpression (Conjugation.Future, "mañana por la mañana");
+			AddTimeframeExpression (Conjugation.Future, "mañana por la tarde");
+			AddTimeframeExpression (Conjugation.Future, "mañana por la noche");
+			AddTimeframeExpression (Conjugation.Future, "pasado mañana");
 
-			AddTimeframeExpression (Verb.Conjugation.Conditional, "");
-			AddTimeframeExpression (Verb.Conjugation.Conditional, "ahora mismo");
-			AddTimeframeExpression (Verb.Conjugation.Conditional, "por supuesto");
+			AddTimeframeExpression (Conjugation.Conditional, "");
+			AddTimeframeExpression (Conjugation.Conditional, "ahora mismo");
+			AddTimeframeExpression (Conjugation.Conditional, "por supuesto");
 		}
 	}
 }

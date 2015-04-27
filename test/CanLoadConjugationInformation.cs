@@ -16,12 +16,12 @@ namespace test
 
 			var expected = allVerbs.Single (v => v.Infinitive == "ir");
 
-			Assert.AreEqual("voy", expected.ConjugatedForTense(Verb.Conjugation.Present, PointOfView.FirstPerson));
-			Assert.AreEqual("fui", expected.ConjugatedForTense(Verb.Conjugation.PastPreterite, PointOfView.FirstPerson));
-			Assert.AreEqual("iba", expected.ConjugatedForTense(Verb.Conjugation.PastImperfect, PointOfView.FirstPerson));
-			Assert.AreEqual("iré", expected.ConjugatedForTense(Verb.Conjugation.Future, PointOfView.FirstPerson));
-			Assert.AreEqual("iría", expected.ConjugatedForTense(Verb.Conjugation.Conditional, PointOfView.FirstPerson));
-			Assert.AreEqual("he ido", expected.ConjugatedForTense(Verb.Conjugation.PresentPerfect, PointOfView.FirstPerson));
+			Assert.AreEqual("voy", expected.ConjugatedForTense(Conjugation.Present, PointOfView.FirstPerson));
+			Assert.AreEqual("fui", expected.ConjugatedForTense(Conjugation.PastPreterite, PointOfView.FirstPerson));
+			Assert.AreEqual("iba", expected.ConjugatedForTense(Conjugation.PastImperfect, PointOfView.FirstPerson));
+			Assert.AreEqual("iré", expected.ConjugatedForTense(Conjugation.Future, PointOfView.FirstPerson));
+			Assert.AreEqual("iría", expected.ConjugatedForTense(Conjugation.Conditional, PointOfView.FirstPerson));
+			Assert.AreEqual("he ido", expected.ConjugatedForTense(Conjugation.PresentPerfect, PointOfView.FirstPerson));
 		}
 
 		[Test]
@@ -30,12 +30,12 @@ namespace test
 
 			var expected = allVerbs.Single (v => v.Infinitive == "go");
 
-			Assert.AreEqual("go", expected.ConjugatedForTense(Verb.Conjugation.Present, PointOfView.FirstPerson));
-			Assert.AreEqual("went", expected.ConjugatedForTense(Verb.Conjugation.PastPreterite, PointOfView.FirstPerson));
-			Assert.AreEqual("went", expected.ConjugatedForTense(Verb.Conjugation.PastImperfect, PointOfView.FirstPerson));
-			Assert.AreEqual("will go", expected.ConjugatedForTense(Verb.Conjugation.Future, PointOfView.FirstPerson));
-			Assert.AreEqual("would go", expected.ConjugatedForTense(Verb.Conjugation.Conditional, PointOfView.FirstPerson));
-			Assert.AreEqual("have gone", expected.ConjugatedForTense(Verb.Conjugation.PresentPerfect, PointOfView.FirstPerson));
+			Assert.AreEqual("go", expected.ConjugatedForTense(Conjugation.Present, PointOfView.FirstPerson));
+			Assert.AreEqual("went", expected.ConjugatedForTense(Conjugation.PastPreterite, PointOfView.FirstPerson));
+			Assert.AreEqual("went", expected.ConjugatedForTense(Conjugation.PastImperfect, PointOfView.FirstPerson));
+			Assert.AreEqual("will go", expected.ConjugatedForTense(Conjugation.Future, PointOfView.FirstPerson));
+			Assert.AreEqual("would go", expected.ConjugatedForTense(Conjugation.Conditional, PointOfView.FirstPerson));
+			Assert.AreEqual("have gone", expected.ConjugatedForTense(Conjugation.PresentPerfect, PointOfView.FirstPerson));
 		}
 
 		[Test]
@@ -44,9 +44,9 @@ namespace test
 
 			var expected = allVerbs.Single (v => v.Infinitive == "estar");
 
-			Assert.AreEqual("estoy", expected.ConjugatedForTense(Verb.Conjugation.Present, PointOfView.FirstPerson));
-			Assert.AreEqual("estás", expected.ConjugatedForTense(Verb.Conjugation.Present, PointOfView.SecondPerson));
-			Assert.AreEqual("está", expected.ConjugatedForTense(Verb.Conjugation.Present, PointOfView.ThirdPersonFeminine));
+			Assert.AreEqual("estoy", expected.ConjugatedForTense(Conjugation.Present, PointOfView.FirstPerson));
+			Assert.AreEqual("estás", expected.ConjugatedForTense(Conjugation.Present, PointOfView.SecondPerson));
+			Assert.AreEqual("está", expected.ConjugatedForTense(Conjugation.Present, PointOfView.ThirdPersonFeminine));
 		}
 	}
 }

@@ -82,6 +82,7 @@
     <Compile Include="Spanish\Article.cs" />
     <Compile Include="Commands\DownloadPhoneticForm.cs" />
     <Compile Include="CachedPhoneticData.cs" />
+    <Compile Include="Spanish\Conjugation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

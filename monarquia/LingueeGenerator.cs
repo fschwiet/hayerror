@@ -27,7 +27,7 @@ namespace monarquia
 				new [] { PointOfView.ThirdPersonPluralMasculine, PointOfView.ThirdPersonPluralFeminine, PointOfView.SecondPersonPluralFormal }
 			};
 
-			foreach (var conjugation in Enum.GetValues(typeof(Verb.Conjugation)).Cast<Verb.Conjugation>()) {
+			foreach (var conjugation in Enum.GetValues(typeof(Conjugation)).Cast<Conjugation>()) {
 				foreach (var pointsOfView in pointOfViewGroupedByConjugationEffect) {
 
 					List<Exercise> pointOfViewExercises = new List<Exercise> ();

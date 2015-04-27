@@ -7,7 +7,7 @@ namespace monarquia
 	public class CannedData {
 
 		Dictionary<string, List<ITranslateable>> AllVerbEndings = new Dictionary<string, List<ITranslateable>>(StringComparer.InvariantCultureIgnoreCase);
-		Dictionary<Verb.Conjugation, List<ITranslateable>> TimeExpressions = new Dictionary<Verb.Conjugation, List<ITranslateable>>();
+		Dictionary<Conjugation, List<ITranslateable>> TimeExpressions = new Dictionary<Conjugation, List<ITranslateable>>();
 		Dictionary<string,string> VerbTranslations = new Dictionary<string, string> (StringComparer.InvariantCultureIgnoreCase);
 
 		protected void AddVerbEnding(string verbInfinitive, string ending) {
@@ -41,7 +41,7 @@ namespace monarquia
 			return AllVerbEndings [verbInfinitive];
 		}
 
-		protected void AddTimeframeExpression(Verb.Conjugation conjugation, string expression) {
+		protected void AddTimeframeExpression(Conjugation conjugation, string expression) {
 
 			if (!TimeExpressions.ContainsKey (conjugation)) {
 				TimeExpressions [conjugation] = new List<ITranslateable> ();
@@ -50,7 +50,7 @@ namespace monarquia
 			TimeExpressions[conjugation].Add (new TranslationNotImplemented(expression));
 		}
 
-		protected void AddTimeframeExpression(Verb.Conjugation conjugation, ITranslateable expression) {
+		protected void AddTimeframeExpression(Conjugation conjugation, ITranslateable expression) {
 
 			if (!TimeExpressions.ContainsKey (conjugation)) {
 				TimeExpressions [conjugation] = new List<ITranslateable> ();
@@ -59,7 +59,7 @@ namespace monarquia
 			TimeExpressions[conjugation].Add (expression);
 		}
 
-		public IEnumerable<ITranslateable> GetTimeframeExpressions(Verb.Conjugation conjugation) {
+		public IEnumerable<ITranslateable> GetTimeframeExpressions(Conjugation conjugation) {
 
 			if (!TimeExpressions.ContainsKey (conjugation))
 				return new [] { new CannedTranslation("","") };

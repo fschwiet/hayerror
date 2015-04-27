@@ -5,15 +5,6 @@ namespace monarquia
 {
 	public class Verb {
 
-		public enum Conjugation {
-			Present,
-			PastPreterite,
-			PastImperfect,
-			Future,
-			Conditional,
-			PresentPerfect
-		}
-
 		public readonly string Infinitive;
 		public Dictionary<Conjugation, Dictionary<PointOfView, string>> Tenses;
 
