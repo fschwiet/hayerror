@@ -53,7 +53,7 @@ namespace monarquia
 		{
 			Exercise resultTemplate = new Exercise ();
 
-			resultTemplate.ExtraInfo = verb.Infinitive + " (" + conjugation + ")";
+			resultTemplate.ExtraInfo = verb.Infinitive + " (" + conjugation.AsFriendlyString() + " tense)";
 
 			if (pointOfView.IsSecondPerson ())
 				resultTemplate.HintsForTranslated.Add (pointOfView.AsSubjectPronoun());
