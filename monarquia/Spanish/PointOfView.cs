@@ -94,7 +94,7 @@ namespace monarquia
 		public static string AsEnglishSubjectPronoun(this PointOfView v) {
 			switch (v) {
 			case PointOfView.FirstPerson:
-				return "i";
+				return "I";
 			case PointOfView.SecondPerson:
 				return "you";
 			case PointOfView.SecondPersonFormal:
