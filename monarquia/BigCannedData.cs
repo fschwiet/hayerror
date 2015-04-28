@@ -41,11 +41,10 @@ namespace monarquia
 			}
 
 			AddVerbEnding ("estar", new CannedTranslation("en frente", "in front"));
-			AddVerbEnding ("estar", new CannedTranslation("en el detrás", "in the back"));
 			AddVerbEnding ("estar", new CannedTranslation("al otro lado de la calle", "on the other side of the street"));
 
-			AddVerbEnding ("estar", new Noun ("list", "lista", "listos", "listas").WithTranslation("ready", "ready"));
-			AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation ("good", "good"));
+			AddVerbEnding ("estar", new Noun ("listo", "lista", "listos", "listas").WithTranslation("ready", "ready"));
+			AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation("good", "good"));
 
 			AddVerbEnding ("ir", new CannedTranslation("al cine", "to the movies"));
 			AddVerbEnding ("ir", new CannedTranslation("a decir la verdad", "to tell the truth"));
