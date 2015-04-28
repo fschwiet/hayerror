@@ -13,6 +13,7 @@ namespace monarquia
 		public BetterCannedData() {
 			
 			AddVerbTranslation ("ser", "is");
+			AddVerbTranslation ("estar", "is");
 
 			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("a esa hora", "at that hour"));
 			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("ayer", "yesterday"));
@@ -37,6 +38,13 @@ namespace monarquia
 						new Article() + profession
 					));
 			}
+
+			AddVerbEnding ("estar", new CannedTranslation("en frente", "in front"));
+			AddVerbEnding ("estar", new CannedTranslation("en el detrás", "in the back"));
+			AddVerbEnding ("estar", new CannedTranslation("al otro lado de la calle", "on the other side of the street"));
+
+			AddVerbEnding ("estar", new Noun ("list", "lista", "listos", "listas").WithTranslation("ready", "ready"));
+			AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation ("good", "good"));
 		}
 	}
 
@@ -63,10 +71,6 @@ namespace monarquia
 			AddVerbEnding ("dar", new CannedTranslation("un abrazo", "a hug"));
 			AddVerbEnding ("dar", new CannedTranslation("gritos", "shouts"));
 			//  AddVerbEnding ("dar", "la una");  ->  only clocks can strike one (to indicate a time)
-
-			AddVerbEnding ("estar", new CannedTranslation("en frente", "in front"));
-			AddVerbEnding ("estar", new CannedTranslation("en el detrás", "in the back"));
-			AddVerbEnding ("estar", new CannedTranslation("al otro lado de la calle", "on the other side of the street"));
 
 			AddVerbEnding ("hablar", new CannedTranslation("a la reportera", "to the reporter"));
 			AddVerbEnding ("hablar", new CannedTranslation("con él", "to him"));
