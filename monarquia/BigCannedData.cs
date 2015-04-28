@@ -54,7 +54,6 @@ namespace monarquia
 		{
 			AddVerbTranslation ("beber", "drink");
 			AddVerbTranslation ("comer", "eat");
-			AddVerbTranslation ("estar", "is");
 			AddVerbTranslation ("gritar", "shout");
 			AddVerbTranslation ("hablar", "talk");
 			AddVerbTranslation ("ir", "go");
