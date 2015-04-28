@@ -11,12 +11,14 @@ namespace monarquia
 	{
 		public string[] Verbs;
 		public bool IncludeTranslations = false;
+		public bool UseBigCannedData = false;
 
 		public DrillVerb ()
 		{
 			this.IsCommand ("drill-verb", "Generate phrases for a particular verb");
 			this.AllowsAnyAdditionalArguments (" <verb infinitive>+");
-			this.HasOption ("t", "include translations", v => IncludeTranslations = true);
+			this.HasOption ("t", "Include translations.", v => IncludeTranslations = true);
+			this.HasOption ("b", "Use BiggCannedData.", v => UseBigCannedData = true);
 			this.SkipsCommandSummaryBeforeRunning ();
 		}
 
@@ -34,6 +36,9 @@ namespace monarquia
 		{
 			var results = new List<EspanolGenerator.Exercise> ();
 			var cannedData = new BetterCannedData ();
+
+			if (UseBigCannedData)
+				cannedData = new BigCannedData ();
 
 			var generator = new EspanolGenerator (cannedData, "./data");
 
