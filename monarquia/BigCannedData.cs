@@ -42,12 +42,15 @@ namespace monarquia
 
 			AddVerbEnding ("estar", new CannedTranslation("en frente", "in front"));
 			AddVerbEnding ("estar", new CannedTranslation("al otro lado de la calle", "on the other side of the street"));
-
 			AddVerbEnding ("estar", new Noun ("listo", "lista", "listos", "listas").WithTranslation("ready", "ready"));
-			AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation("good", "good"));
+			AddVerbEnding ("estar", new CannedTranslation("afuera", "outside"));
+
+			//  English "good" is ambiguous
+			//AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation("good", "good"));
 
 			AddVerbEnding ("ir", new CannedTranslation("al cine", "to the movies"));
-			AddVerbEnding ("ir", new CannedTranslation("a leer", "to read"));
+			AddVerbEnding ("ir", new CannedTranslation ("a la playa", "to the beach"));
+			//AddVerbEnding ("ir", new CannedTranslation("a leer", "to read"));
 			AddVerbEnding ("ir", new CannedTranslation("allí", "there"));
 		}
 	}
