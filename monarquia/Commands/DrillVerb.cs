@@ -23,6 +23,10 @@ namespace monarquia
 		public override int? OverrideAfterHandlingArgumentsBeforeRun (string[] remainingArguments)
 		{
 			Verbs = remainingArguments.ToArray ();
+
+			if (!Verbs.Any ())
+				throw new ConsoleHelpAsException ("No verbs specified");
+			
 			return base.OverrideAfterHandlingArgumentsBeforeRun (remainingArguments);
 		} 
 
