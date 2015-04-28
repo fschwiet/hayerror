@@ -14,6 +14,7 @@ namespace monarquia
 			
 			AddVerbTranslation ("ser", "is");
 			AddVerbTranslation ("estar", "is");
+			AddVerbTranslation ("ir", "go");
 
 			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("a esa hora", "at that hour"));
 			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("ayer", "yesterday"));
@@ -45,6 +46,11 @@ namespace monarquia
 
 			AddVerbEnding ("estar", new Noun ("list", "lista", "listos", "listas").WithTranslation("ready", "ready"));
 			AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation ("good", "good"));
+
+			AddVerbEnding ("ir", new CannedTranslation("al cine", "to the movies"));
+			AddVerbEnding ("ir", new CannedTranslation("a decir la verdad", "to tell the truth"));
+			AddVerbEnding ("ir", new CannedTranslation("a leer", "to read"));
+			AddVerbEnding ("ir", new CannedTranslation("allí", "there"));
 		}
 	}
 
@@ -56,7 +62,6 @@ namespace monarquia
 			AddVerbTranslation ("comer", "eat");
 			AddVerbTranslation ("gritar", "shout");
 			AddVerbTranslation ("hablar", "talk");
-			AddVerbTranslation ("ir", "go");
 			//AddVerbTranslation ("preparar", "prepare"); -> ugh, can't load spanishdictionary.com/conjugate/prepare
 			AddVerbTranslation ("subir", "climb");
 			AddVerbTranslation ("sumar", "sum");
@@ -73,10 +78,6 @@ namespace monarquia
 
 			AddVerbEnding ("hablar", new CannedTranslation("a la reportera", "to the reporter"));
 			AddVerbEnding ("hablar", new CannedTranslation("con él", "to him"));
-			AddVerbEnding ("ir", new CannedTranslation("al cine", "to the movies"));
-			AddVerbEnding ("ir", new CannedTranslation("a decir la verdad", "to tell the truth"));
-			AddVerbEnding ("ir", new CannedTranslation("a leer", "to read"));
-			AddVerbEnding ("ir", new CannedTranslation("allí", "threre"));
 			AddVerbEnding ("preparar", new CannedTranslation("la cena", "the dinner"));
 		
 			AddVerbEnding ("subir", new CannedTranslation("la escalera", "the stairs"));
