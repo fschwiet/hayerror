@@ -31,14 +31,15 @@ namespace monarquia
 		{
 			List<Exercise> results = new List<Exercise>();
 
-			var selectedPointsOfView = Enum.GetValues (typeof(PointOfView)).Cast<PointOfView> ().ToList();
+			var pointOfViewGenerators = Enum.GetValues (typeof(PointOfView)).Cast<PointOfView> ()
+				.Select<PointOfView,Func<PointOfView>>(pov => delegate() { return pov; }).ToList();
 				
 			if (limitVariations) {
-				selectedPointsOfView = ChoosePointOfViewsForDrill ();
+				pointOfViewGenerators = ChoosePointOfViewsForDrill ();
 			}
 
-			foreach (PointOfView pointOfView in selectedPointsOfView) {
-				results.AddRange (GetAllConjugationsForVerb (verb, limitVariations, () => pointOfView));
+			foreach (var pointOfView in pointOfViewGenerators) {
+				results.AddRange (GetAllConjugationsForVerb (verb, limitVariations, pointOfView));
 			}
 
 			return results;
@@ -165,6 +166,31 @@ namespace monarquia
 			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.Future));
 			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.Conditional));
 			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.PresentPerfect));
+
+			return results;
+		}
+
+		public List<Func<PointOfView>> ChoosePointOfViewsForDrill ()
+		{
+			List<Func<PointOfView>> results = new List<Func<PointOfView>> ();
+
+			results.Add (() => PointOfView.FirstPerson);
+			results.Add (() => PointOfView.SecondPerson);
+
+			results.Add (() => new [] {
+				PointOfView.SecondPersonFormal,
+				PointOfView.ThirdPersonMasculine,
+				PointOfView.ThirdPersonFeminine
+			} [random.Next (3)]);
+
+			results.Add (() => PointOfView.FirstPersonPlural);
+
+
+			results.Add (() => new [] {
+				PointOfView.SecondPersonPluralFormal,
+				PointOfView.ThirdPersonPluralMasculine,
+				PointOfView.ThirdPersonPluralFeminine
+			} [random.Next (3)]);
 
 			return results;
 		}

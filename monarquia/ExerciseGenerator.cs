@@ -84,49 +84,6 @@ namespace monarquia
 
 			return verb;
 		}
-
-		public List<PointOfView> ChoosePointOfViewsForDrill ()
-		{
-			var results = Enum.GetValues (typeof(PointOfView)).Cast<PointOfView> ().ToList();
-
-			// don't use vosotros
-			results = results.Where (v => v != PointOfView.SecondPersonPlural).ToList ();
-
-			// only use one of el/ella/usted
-			// only use one of ellos/ellas/ustedes
-			results = results.Where (v => v != PointOfView.ThirdPersonFeminine && 
-				v != PointOfView.ThirdPersonMasculine && 
-				v != PointOfView.SecondPersonFormal && 
-				v != PointOfView.ThirdPersonPluralFeminine && 
-				v != PointOfView.ThirdPersonPluralMasculine && 
-				v != PointOfView.SecondPersonPluralFormal).ToList ();
-
-			switch (random.Next (3)) {
-			case 0:
-				results.Add (PointOfView.ThirdPersonFeminine);
-				break;
-			case 1:
-				results.Add (PointOfView.ThirdPersonMasculine);
-				break;
-			case 2:
-				results.Add (PointOfView.SecondPersonFormal);
-				break;
-			}
-
-			switch (random.Next (3)) {
-			case 0:
-				results.Add (PointOfView.ThirdPersonPluralFeminine);
-				break;
-			case 1:
-				results.Add (PointOfView.ThirdPersonPluralMasculine);
-				break;
-			case 2:
-				results.Add (PointOfView.SecondPersonPluralFormal);
-				break;
-			}
-
-			return results;
-		}
 	}
 	
 }
