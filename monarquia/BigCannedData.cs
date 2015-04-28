@@ -47,7 +47,6 @@ namespace monarquia
 			AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation("good", "good"));
 
 			AddVerbEnding ("ir", new CannedTranslation("al cine", "to the movies"));
-			AddVerbEnding ("ir", new CannedTranslation("a decir la verdad", "to tell the truth"));
 			AddVerbEnding ("ir", new CannedTranslation("a leer", "to read"));
 			AddVerbEnding ("ir", new CannedTranslation("allí", "there"));
 		}
