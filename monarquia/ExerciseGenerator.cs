@@ -118,7 +118,7 @@ namespace monarquia
 				results.Add (PointOfView.ThirdPersonPluralFeminine);
 				break;
 			case 1:
-				results.Add (PointOfView.ThirdPersonMasculine);
+				results.Add (PointOfView.ThirdPersonPluralMasculine);
 				break;
 			case 2:
 				results.Add (PointOfView.SecondPersonPluralFormal);
