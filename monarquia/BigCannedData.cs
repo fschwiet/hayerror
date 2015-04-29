@@ -171,7 +171,7 @@ namespace monarquia
 
 			AddTimeframeExpression (Conjugation.PresentPerfect, new CannedTranslation("",""));
 
-			AddTimeframeExpression (Conjugation.Future, "");
+			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("",""));
 			AddTimeframeExpression (Conjugation.Future, "a la una");
 			AddTimeframeExpression (Conjugation.Future, "de aquí a dos días");
 			AddTimeframeExpression (Conjugation.Future, "el lunes que vien");

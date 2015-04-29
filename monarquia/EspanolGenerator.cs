@@ -54,6 +54,8 @@ namespace monarquia
 		{
 			Exercise resultTemplate = new Exercise ();
 
+			var subject = pointOfView.GetSubjectNoun ();
+
 			resultTemplate.ExtraInfo = verb.Infinitive + " (" + conjugation.AsFriendlyString() + " tense)";
 
 			if (// tu o usted?
@@ -61,7 +63,7 @@ namespace monarquia
 				// ellos o ellas?
 				(pointOfView == PointOfView.ThirdPersonPluralMasculine || pointOfView == PointOfView.ThirdPersonPluralFeminine)) {
 
-				resultTemplate.HintsForTranslated.Add (pointOfView.AsSubjectPronoun());
+				resultTemplate.HintsForTranslated.Add (subject.AsSpanish(pointOfView));
 			}
 
 			resultTemplate.Tags.Add ("conjugation:" + conjugation);
@@ -95,7 +97,7 @@ namespace monarquia
 
 				accumulatedWords.Add (scenario.timeframe.AsSpanish(pointOfView));
 
-				accumulatedWords.Add(pointOfView.AsSubjectPronoun());
+				accumulatedWords.Add(subject.AsSpanish(pointOfView));
 				accumulatedWords.Add(verb.ConjugatedForTense (conjugation, pointOfView));
 
 				accumulatedWords.Add(scenario.verbEnding.AsSpanish(pointOfView));
@@ -111,7 +113,7 @@ namespace monarquia
 						List<string> accumulatedTranslation = new List<string> ();
 
 						accumulatedTranslation.Add (scenario.timeframe.AsEnglish (pointOfView));
-						accumulatedTranslation.Add (pointOfView.AsEnglishSubjectPronoun ());
+						accumulatedTranslation.Add (subject.AsEnglish(pointOfView));
 						accumulatedTranslation.Add (englishVerb.ConjugatedForTense (conjugation, pointOfView));
 						accumulatedTranslation.Add (scenario.verbEnding.AsEnglish(pointOfView));
 

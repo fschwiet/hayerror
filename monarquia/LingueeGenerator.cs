@@ -43,11 +43,11 @@ namespace monarquia
 
 						var exercise = exerciseTemplate.Clone ();
 
-						var basePhrase = pointOfView.AsSubjectPronoun () + " " +
+						var basePhrase = pointOfView.GetSubjectNoun ().AsSpanish(pointOfView) + " " +
 							verb.ConjugatedForTense (conjugation, pointOfView);
 
 						if (pointOfView.IsSecondPerson ())
-							exercise.HintsForTranslated.Add (pointOfView.AsSubjectPronoun());
+							exercise.HintsForTranslated.Add (pointOfView.GetSubjectNoun().AsSpanish(pointOfView));
 
 						var lingueeResults = DoLingueeLookup (webDriver, basePhrase);
 
