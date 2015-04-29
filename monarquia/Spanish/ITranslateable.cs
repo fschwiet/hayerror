@@ -1,11 +1,20 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace monarquia
 {
-	public interface ITranslateable {
-		string AsSpanish(PointOfView pointOfView);
-		string AsEnglish(PointOfView pointOfView);
+	public abstract class ITranslateable {
+		public abstract string AsSpanish(PointOfView pointOfView);
+		public abstract string AsEnglish(PointOfView pointOfView);
+
+		//  When ITranslateables are composed, GetEnglishHints() is
+		//  only called on ITranslateables whose AsSpanish() is also
+		//  called.
+		public virtual IEnumerable<string> GetEnglishHints()
+		{
+			return new string[0];
+		}
 	}
 
 	//  All ITransalateables either implement NotComposed or Composed
@@ -14,29 +23,31 @@ namespace monarquia
 	//  overloads on interfaces like ITranslteable)
 
 	public abstract class NotComposed : ITranslateable {
-
-		public abstract string AsSpanish(PointOfView pointOfView);
-		public abstract string AsEnglish(PointOfView pointOfView);
 	}
 
 	public class Composed : ITranslateable {
 
-		public ITranslateable[] spanish;
-		public ITranslateable[] english;
+		ITranslateable[] spanish;
+		ITranslateable[] english;
 
 		public Composed() {
 		}
 
-		public string AsSpanish(PointOfView pointOfView) {
+		public override string AsSpanish(PointOfView pointOfView) {
 			return String.Join (" ", 
 				spanish.Select(e => e.AsSpanish(pointOfView))
 				.Where(s => !String.IsNullOrEmpty(s)));
 		}
 
-		public string AsEnglish(PointOfView pointOfView) {
+		public override string AsEnglish(PointOfView pointOfView) {
 			return String.Join (" ", 
 				english.Select(e => e.AsEnglish(pointOfView))
 				.Where(s => !String.IsNullOrEmpty(s)));
+		}
+
+		public override IEnumerable<string> GetEnglishHints ()
+		{
+			return spanish.SelectMany (s => s.GetEnglishHints ());
 		}
 
 		public Composed WithEnglishAlternative(ITranslateable english) {

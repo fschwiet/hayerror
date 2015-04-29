@@ -21,6 +21,33 @@ namespace monarquia
 		public string ConjugatedForTense(Conjugation conjugation, PointOfView pointOfView) {
 			return Tenses [conjugation][pointOfView];
 		}
+
+		public VerbInstance ForConjugation(Conjugation conjugation) 
+		{
+			return new VerbInstance (this, conjugation);
+		}
+	}
+
+	public class VerbInstance : ITranslateable
+	{
+		Verb verb;
+		Conjugation conjugation;
+
+		public VerbInstance(Verb verb, Conjugation conjugation)
+		{
+			this.verb = verb;
+			this.conjugation = conjugation;
+		}
+
+		public override string AsSpanish (PointOfView pointOfView)
+		{
+			return verb.ConjugatedForTense (conjugation, pointOfView);
+		}
+
+		public override string AsEnglish (PointOfView pointOfView)
+		{
+			return verb.ConjugatedForTense (conjugation, pointOfView);
+		}
 	}
 }
 

@@ -58,14 +58,6 @@ namespace monarquia
 
 			resultTemplate.ExtraInfo = verb.Infinitive + " (" + conjugation.AsFriendlyString() + " tense)";
 
-			if (// tu o usted?
-				pointOfView.IsSecondPerson () ||
-				// ellos o ellas?
-				(pointOfView == PointOfView.ThirdPersonPluralMasculine || pointOfView == PointOfView.ThirdPersonPluralFeminine)) {
-
-				resultTemplate.HintsForTranslated.Add (subject.AsSpanish(pointOfView));
-			}
-
 			resultTemplate.Tags.Add ("conjugation:" + conjugation);
 			resultTemplate.Tags.Add ("verb:" + verb.Infinitive);
 
@@ -92,20 +84,21 @@ namespace monarquia
 				from tf in selectedTimeframes
 				select new { verbEnding, timeframe = tf }) 
 			{
+				List<ITranslateable> spanishPhrase = new List<ITranslateable> ();
+				spanishPhrase.Add (scenario.timeframe);
+				spanishPhrase.Add (subject);
+				spanishPhrase.Add (verb.ForConjugation (conjugation));
+				spanishPhrase.Add (scenario.verbEnding);
+
 				//  some accumulated words may be empty strings
-				List<string> accumulatedWords = new List<string>();
-
-				accumulatedWords.Add (scenario.timeframe.AsSpanish(pointOfView));
-
-				accumulatedWords.Add(subject.AsSpanish(pointOfView));
-				accumulatedWords.Add(verb.ConjugatedForTense (conjugation, pointOfView));
-
-				accumulatedWords.Add(scenario.verbEnding.AsSpanish(pointOfView));
-
-				var englishVerb = cannedData.TranslateVerbFromSpanishToEnglish (dataLoader, verb);
+				IEnumerable<string> accumulatedWords = spanishPhrase.Select(p => p.AsSpanish(pointOfView));
 
 				var result = resultTemplate.Clone ();
 				result.Original = MakeSentenceFromWords (accumulatedWords);
+
+				result.HintsForTranslated = spanishPhrase.SelectMany (p => p.GetEnglishHints ()).ToList();
+
+				var englishVerb = cannedData.TranslateVerbFromSpanishToEnglish (dataLoader, verb);
 
 				if (englishVerb != null) {
 
