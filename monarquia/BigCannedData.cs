@@ -169,7 +169,7 @@ namespace monarquia
 			AddTimeframeExpression (Conjugation.PastImperfect, "por lo general");
 			AddTimeframeExpression (Conjugation.PastImperfect, "rara vez");
 
-			AddTimeframeExpression (Conjugation.PresentPerfect, "");
+			AddTimeframeExpression (Conjugation.PresentPerfect, new CannedTranslation("",""));
 
 			AddTimeframeExpression (Conjugation.Future, "");
 			AddTimeframeExpression (Conjugation.Future, "a la una");
