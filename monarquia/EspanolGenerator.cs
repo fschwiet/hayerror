@@ -98,7 +98,7 @@ namespace monarquia
 
 				result.HintsForTranslated = spanishPhrase.SelectMany (p => p.GetEnglishHints ()).ToList();
 
-				var englishVerb = cannedData.TranslateVerbFromSpanishToEnglish (dataLoader, verb);
+				var englishVerb = cannedData.TranslateVerbFromSpanishToEnglish (dataLoader, verb, conjugation);
 
 				if (englishVerb != null) {
 
@@ -112,7 +112,7 @@ namespace monarquia
 
 						result.Translated = MakeEnglishSentenceFromWords (phoneticData, accumulatedTranslation);					
 					}
-					catch(TranslationNotImplemented.TranslatedNotImplementedException) {
+					catch(Exception) {
 						// ignore
 					}
 				}

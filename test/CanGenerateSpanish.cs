@@ -101,7 +101,7 @@ namespace test
 		[TestCase("Normalmente yo preparo la cena.")]
 		[TestCase("Esta mes yo preparo la cena.")]
 		[TestCase("Anoche yo preparé la cena.")]
-		[TestCase("Casi nunca yo preparaba la cena.")]
+		[TestCase("Algunas veces yo preparaba la cena.")]
 		[TestCase("Yo prepararé la cena.")]
 		[TestCase("Mañana yo prepararé la cena.")]
 		[TestCase("Por supuesto yo prepararía la cena.")]
@@ -116,6 +116,20 @@ namespace test
 		[TestCase("Ellas son actrizes.")]
 		public void TransferGenderAndNumberForSer(string expected){
 			Assert.Contains (expected, allPhrases);
+		}
+
+
+		[TestCase("Yo conozco ella.", "I know her.")]
+		[TestCase("Ayer yo conocí ella.", "Yesterday I met her.")]
+		[TestCase("Todos los años yo conocía ella.", "Every year I knew her.")]
+		[TestCase("Yo conocería ella.", "I would know her.")]
+		[TestCase("Yo conoceré ella.", "I will meet her.")]
+		[TestCase("Ellas han conocido ella.", "They have known her.")]
+
+		// nunca ha conocido -> has never met
+		public void HandlesVerbsThatChangeInterpretationWithTense(string expected, string translation)
+		{
+			AssertHasTranslation (expected, translation);
 		}
 	}
 }

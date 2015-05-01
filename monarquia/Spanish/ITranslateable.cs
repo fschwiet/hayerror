@@ -72,25 +72,4 @@ namespace monarquia
 			return result;
 		}
 	}
-
-	public class TranslationNotImplemented : NotComposed {
-
-		public class TranslatedNotImplementedException : Exception {
-		}
-
-		string value;
-
-		public TranslationNotImplemented(string value) {
-			this.value = value;
-		}
-
-		public override string AsSpanish(PointOfView pointOfView) {
-			return value;
-		}
-
-		public override string AsEnglish(PointOfView pointOfView) {
-			throw new TranslatedNotImplementedException();
-		}
-	}
-	
 }

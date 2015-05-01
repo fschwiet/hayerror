@@ -8,11 +8,7 @@ namespace monarquia
 
 		Dictionary<string, List<ITranslateable>> AllVerbEndings = new Dictionary<string, List<ITranslateable>>(StringComparer.InvariantCultureIgnoreCase);
 		Dictionary<Conjugation, List<ITranslateable>> TimeExpressions = new Dictionary<Conjugation, List<ITranslateable>>();
-		Dictionary<string,string> VerbTranslations = new Dictionary<string, string> (StringComparer.InvariantCultureIgnoreCase);
-
-		protected void AddVerbEnding(string verbInfinitive, string ending) {
-			AddVerbEnding(verbInfinitive, new TranslationNotImplemented(ending));
-		}
+		Dictionary<string,Func<Conjugation,string>> VerbTranslations = new Dictionary<string, Func<Conjugation,string>> (StringComparer.InvariantCultureIgnoreCase);
 
 		protected void AddVerbEnding(string verbInfinitive, ITranslateable ending) {
 
@@ -41,15 +37,6 @@ namespace monarquia
 			return AllVerbEndings [verbInfinitive];
 		}
 
-		protected void AddTimeframeExpression(Conjugation conjugation, string expression) {
-
-			if (!TimeExpressions.ContainsKey (conjugation)) {
-				TimeExpressions [conjugation] = new List<ITranslateable> ();
-			}
-
-			TimeExpressions[conjugation].Add (new TranslationNotImplemented(expression));
-		}
-
 		protected void AddTimeframeExpression(Conjugation conjugation, ITranslateable expression) {
 
 			if (!TimeExpressions.ContainsKey (conjugation)) {
@@ -67,18 +54,22 @@ namespace monarquia
 			return TimeExpressions [conjugation];
 		}
 
-		public void AddVerbTranslation(string spanishInfinitive, string englishInfinitive) {
-			VerbTranslations.Add (spanishInfinitive, englishInfinitive);
+		public void HasEnglishTranslation(string spanishInfinitive, string englishInfinitive) {
+			VerbTranslations.Add (spanishInfinitive, p => englishInfinitive);
 		}
 
-		public Verb TranslateVerbFromSpanishToEnglish(DataLoader loader, Verb verb) {
+		public void HasEnglishTranslation(string spanishInfinitive, Func<Conjugation,string> infinitiveSelector) {
+			VerbTranslations.Add (spanishInfinitive, infinitiveSelector);
+		}
+
+		public Verb TranslateVerbFromSpanishToEnglish(DataLoader loader, Verb verb, Conjugation conjugation) {
 
 			if (!VerbTranslations.ContainsKey (verb.Infinitive))
 				return null;
 
-			var englishInfinitive = VerbTranslations [verb.Infinitive];
+			var englishInfinitive = VerbTranslations [verb.Infinitive](conjugation);
 
-			return loader.GetAllEnglishVerbs ().Single (v => v.Infinitive == englishInfinitive);
+			return loader.GetAllEnglishVerbs ().Single (v =>  v.Infinitive == englishInfinitive);
 		}
 	}
 	
