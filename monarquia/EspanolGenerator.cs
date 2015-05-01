@@ -87,7 +87,7 @@ namespace monarquia
 				List<ITranslateable> spanishPhrase = new List<ITranslateable> ();
 				spanishPhrase.Add (scenario.timeframe);
 				spanishPhrase.Add (subject);
-				spanishPhrase.Add (verb.ForConjugation (conjugation));
+				spanishPhrase.Add (verb.ForSpanishConjugation (conjugation));
 				spanishPhrase.Add (scenario.verbEnding);
 
 				//  some accumulated words may be empty strings
@@ -107,7 +107,7 @@ namespace monarquia
 
 						accumulatedTranslation.Add (scenario.timeframe.AsEnglish (pointOfView));
 						accumulatedTranslation.Add (subject.AsEnglish(pointOfView));
-						accumulatedTranslation.Add (englishVerb.ConjugatedForTense (conjugation, pointOfView));
+						accumulatedTranslation.Add (englishVerb.ForEnglishConjugation (conjugation).AsEnglish(pointOfView));
 						accumulatedTranslation.Add (scenario.verbEnding.AsEnglish(pointOfView));
 
 						result.Translated = MakeEnglishSentenceFromWords (phoneticData, accumulatedTranslation);					

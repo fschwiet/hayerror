@@ -44,7 +44,7 @@ namespace monarquia
 						var exercise = exerciseTemplate.Clone ();
 
 						var basePhrase = pointOfView.GetSubjectNoun ().AsSpanish(pointOfView) + " " +
-							verb.ConjugatedForTense (conjugation, pointOfView);
+							verb.ForSpanishConjugation (conjugation).AsSpanish(pointOfView);
 
 						if (pointOfView.IsSecondPerson ())
 							exercise.HintsForTranslated.Add (pointOfView.GetSubjectNoun().AsSpanish(pointOfView));
@@ -61,7 +61,7 @@ namespace monarquia
 
 					if (!pointOfViewExercises.Any ()) {
 
-						var basePhrase = verb.ConjugatedForTense (conjugation, pointsOfView.First ());
+						var basePhrase = verb.ForSpanishConjugation (conjugation).AsSpanish(pointsOfView.First ());
 						var lingueeResults = DoLingueeLookup (webDriver, basePhrase);
 
 						if (!lingueeResults.Any ())

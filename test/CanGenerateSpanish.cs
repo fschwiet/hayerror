@@ -131,6 +131,14 @@ namespace test
 		{
 			AssertHasTranslation (expected, translation);
 		}
+
+		[TestCase("Nos duchamos", "We shower.")]
+		[TestCase("Te miras al espejo", "You look at yourself in the mirror")]
+		[TestCase("I cut my hair", "I cut my hair")]
+		public void CanDoReflexiveVerbs(string expected, string translation)
+		{
+			AssertHasTranslation (expected, translation);
+		}
 	}
 }
 

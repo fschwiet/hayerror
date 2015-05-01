@@ -14,39 +14,77 @@ namespace test
 		{
 			var allVerbs = new DataLoader("../../../data").GetAllSpanishVerbs ();
 
-			var expected = allVerbs.Single (v => v.Infinitive == "ir");
+			var verb = allVerbs.Single (v => v.Infinitive == "ir");
 
-			Assert.AreEqual("voy", expected.ConjugatedForTense(Conjugation.Present, PointOfView.FirstPerson));
-			Assert.AreEqual("fui", expected.ConjugatedForTense(Conjugation.PastPreterite, PointOfView.FirstPerson));
-			Assert.AreEqual("iba", expected.ConjugatedForTense(Conjugation.PastImperfect, PointOfView.FirstPerson));
-			Assert.AreEqual("iré", expected.ConjugatedForTense(Conjugation.Future, PointOfView.FirstPerson));
-			Assert.AreEqual("iría", expected.ConjugatedForTense(Conjugation.Conditional, PointOfView.FirstPerson));
-			Assert.AreEqual("he ido", expected.ConjugatedForTense(Conjugation.PresentPerfect, PointOfView.FirstPerson));
+			AssertHasSpanishConjugation("voy", verb, Conjugation.Present, PointOfView.FirstPerson);
+			AssertHasSpanishConjugation("fui", verb, Conjugation.PastPreterite, PointOfView.FirstPerson);
+			AssertHasSpanishConjugation("iba", verb, Conjugation.PastImperfect, PointOfView.FirstPerson);
+			AssertHasSpanishConjugation("iré", verb, Conjugation.Future, PointOfView.FirstPerson);
+			AssertHasSpanishConjugation("iría", verb, Conjugation.Conditional, PointOfView.FirstPerson);
+			AssertHasSpanishConjugation("he ido", verb, Conjugation.PresentPerfect, PointOfView.FirstPerson);
 		}
 
 		[Test]
 		public void CanLoadGo () {
 			var allVerbs = new DataLoader("../../../data").GetAllEnglishVerbs ();
 
-			var expected = allVerbs.Single (v => v.Infinitive == "go");
+			var verb = allVerbs.Single (v => v.Infinitive == "go");
 
-			Assert.AreEqual("go", expected.ConjugatedForTense(Conjugation.Present, PointOfView.FirstPerson));
-			Assert.AreEqual("went", expected.ConjugatedForTense(Conjugation.PastPreterite, PointOfView.FirstPerson));
-			Assert.AreEqual("went", expected.ConjugatedForTense(Conjugation.PastImperfect, PointOfView.FirstPerson));
-			Assert.AreEqual("will go", expected.ConjugatedForTense(Conjugation.Future, PointOfView.FirstPerson));
-			Assert.AreEqual("would go", expected.ConjugatedForTense(Conjugation.Conditional, PointOfView.FirstPerson));
-			Assert.AreEqual("have gone", expected.ConjugatedForTense(Conjugation.PresentPerfect, PointOfView.FirstPerson));
+			AssertHasEnglishConjugation("go", verb, Conjugation.Present, PointOfView.FirstPerson);
+			AssertHasEnglishConjugation("went", verb, Conjugation.PastPreterite, PointOfView.FirstPerson);
+			AssertHasEnglishConjugation("went", verb, Conjugation.PastImperfect, PointOfView.FirstPerson);
+			AssertHasEnglishConjugation("will go", verb, Conjugation.Future, PointOfView.FirstPerson);
+			AssertHasEnglishConjugation("would go", verb, Conjugation.Conditional, PointOfView.FirstPerson);
+			AssertHasEnglishConjugation("have gone", verb, Conjugation.PresentPerfect, PointOfView.FirstPerson);
 		}
 
 		[Test]
 		public void MiscConjugationBugs () {
+
 			var allVerbs = new DataLoader("../../../data").GetAllSpanishVerbs ();
 
-			var expected = allVerbs.Single (v => v.Infinitive == "estar");
+			var verb = allVerbs.Single (v => v.Infinitive == "estar");
 
-			Assert.AreEqual("estoy", expected.ConjugatedForTense(Conjugation.Present, PointOfView.FirstPerson));
-			Assert.AreEqual("estás", expected.ConjugatedForTense(Conjugation.Present, PointOfView.SecondPerson));
-			Assert.AreEqual("está", expected.ConjugatedForTense(Conjugation.Present, PointOfView.ThirdPersonFeminine));
+			AssertHasSpanishConjugation("estoy", verb, Conjugation.Present, PointOfView.FirstPerson);
+			AssertHasSpanishConjugation("estás", verb, Conjugation.Present, PointOfView.SecondPerson);
+			AssertHasSpanishConjugation("está", verb, Conjugation.Present, PointOfView.ThirdPersonFeminine);
+		}
+
+		[Test]
+		[TestCase("me corto", "cortar", PointOfView.FirstPerson)]
+		[TestCase("nos cortamos", "cortar", PointOfView.FirstPersonPlural)]
+		[TestCase("te cortas", "cortar", PointOfView.SecondPerson)]
+		[TestCase("se corta", "cortar", PointOfView.SecondPersonFormal)]
+		[TestCase("os cortáis", "cortar", PointOfView.SecondPersonPlural)]
+		[TestCase("se cortan", "cortar", PointOfView.SecondPersonPluralFormal)]
+		[TestCase("se corta", "cortar", PointOfView.ThirdPersonMasculine)]
+		[TestCase("se corta", "cortar", PointOfView.ThirdPersonFeminine)]
+		[TestCase("se cortan", "cortar", PointOfView.ThirdPersonPluralMasculine)]
+		[TestCase("se cortan", "cortar", PointOfView.ThirdPersonPluralFeminine)]
+		public void CanConjugateReflexively(string expected, string infinitive, PointOfView pointOfView)
+		{
+			var dataLoader = new DataLoader ("../../../data");
+			var allVerbs = dataLoader.GetAllSpanishVerbs ();
+
+			var verb = allVerbs.SingleOrDefault (v => v.Infinitive == infinitive);
+
+			Assert.IsNotNull (verb);
+
+			var reflexiveVerb = new ReflexiveVerb (infinitive, dataLoader);
+
+			var result = reflexiveVerb.ForSpanishConjugation (Conjugation.Present).AsSpanish (pointOfView);
+
+			Assert.AreEqual (expected, result);
+		}
+
+		void AssertHasSpanishConjugation(string expected, Verb verb, Conjugation conjugation, PointOfView pointOfView)
+		{
+			Assert.AreEqual(expected, verb.ForSpanishConjugation(conjugation).AsSpanish(pointOfView));
+		}
+
+		void AssertHasEnglishConjugation(string expected, Verb verb, Conjugation conjugation, PointOfView pointOfView)
+		{
+			Assert.AreEqual(expected, verb.ForEnglishConjugation(conjugation).AsEnglish(pointOfView));
 		}
 	}
 }

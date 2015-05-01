@@ -41,7 +41,7 @@ namespace monarquia
 				var indicativeTable = LoadConjugationTable (document, 0);
 				var perfectTable = LoadConjugationTable (document, 3);
 
-				var verb = new Verb (infinitive);
+				var verb = new CannedVerb (infinitive);
 
 				verb.WithTenses (Conjugation.Present, GetPovLookupFromTableColumn (indicativeTable, 0));
 				verb.WithTenses (Conjugation.PastPreterite, GetPovLookupFromTableColumn (indicativeTable, 1));
@@ -80,7 +80,7 @@ namespace monarquia
 				var indicativeTable = LoadConjugationTable (document, 0);
 				var perfectTable = LoadConjugationTable (document, 1);
 
-				var verb = new Verb (infinitive);
+				var verb = new CannedVerb (infinitive);
 
 				var futureConditional = GetEnglishPovLookupFromRow (indicativeTable, 2);
 				foreach (var key in futureConditional.Keys.ToArray()) {
