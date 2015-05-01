@@ -1,6 +1,7 @@
 beber
 caber
 comer
+conocer
 decir
 deshacer
 estar

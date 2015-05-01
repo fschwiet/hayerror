@@ -5,6 +5,8 @@ fear
 go
 have
 is
+know
+meet
 shout
 sum
 talk

@@ -14,12 +14,14 @@ namespace monarquia
 		public string TargetDirectory;
 		public string[] Words;
 		public bool IsSpanish = true;
+		public bool SkipExisting = false;
 
 		public ScrapeDictionary ()
 		{
 			this.IsCommand ("scrape-dictionary");
 			this.HasAdditionalArguments (2, " <outputDirectory> <filename>");
 			this.HasOption ("e", "Flag indicating the term is English", v => IsSpanish = false);
+			this.HasOption ("s", "Skip verbs that already verb a .conjugation.txt file.", v => SkipExisting = true);
 		}
 
 		public override int? OverrideAfterHandlingArgumentsBeforeRun (string[] remainingArguments)
@@ -46,6 +48,12 @@ namespace monarquia
 			using (var driver = new ChromeDriver (service, options))
 				foreach (var word in Words) {
 
+					var conjugationFileTarget = Path.Combine (TargetDirectory, word + ".conjugation.txt");
+
+					if (SkipExisting && File.Exists (conjugationFileTarget)) {
+						continue;
+					}
+
 					driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(5));
 
 					driver.Navigate ().GoToUrl ("http://spanishdict.com/translate/" + word);
@@ -66,7 +74,6 @@ namespace monarquia
 						//  use FindElement to force a wait for the page to load
 						driver.FindElementByCssSelector (".vtable-label");
 
-						var conjugationFileTarget = Path.Combine (TargetDirectory, word + ".conjugation.txt");
 						File.WriteAllText (conjugationFileTarget, driver.PageSource);
 					}
 				}

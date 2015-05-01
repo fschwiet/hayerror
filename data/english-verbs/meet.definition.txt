@@ -1,0 +1,483 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" data-placeholder-focus="false" class="supermodal-not-mobile"><head><!--Beanstock Nucleus Start-->
+<script type="text/javascript" async="" src="http://report-ads-to.pubnation.com/dist/pnr.js?t=pn-053b5b698be780ef"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js"></script><script async="" type="text/javascript" src="http://partner.googleadservices.com/gpt/pubads_impl_60.js"></script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/osd.js"></script></head><body data-datetime="2015-05-01T01:27:26" data-is-mobile="false" class="lang-en no-touch supports-machineTranslation supports-suggest supports-history supports-autoScroll supports-conjugationExpand supports-clearSearch"><img src="about:blank" style="display:none;" data-bsm-tag-url="http://cdn.beanstock.com/pub/cx/flagTag.js" data-bsm-flag="true" data-bsm-zone-map-url="http://cdn.beanstock.com/pub/spanishdict/zm.js" data-bsm-sizes="300x250 160x600 728x90" data-bsm-pub="spanishdict" data-bsm-pub-zone="spanishdict.com/asection" data-bsm-event-host="//helix.beanstock.co" onload="this.onerror()" onerror="(function(){function t(t,n,e,i,o,r,c){function u(){l=g[o],g[o]=h,m&amp;&amp;s()}function f(t){d[r](t)}function s(){if(!l)return void(m=!0);for(g[o]=l;d.length;)l[r](d.shift())}function a(t){var e=n.createElement('script'),i=t.getAttribute('data-bsm-tag-url');e.src=i,t.parentNode.insertBefore(e,t)}var l,d,g=t[i]=t[i]||{},h=g[o]||[],m=!1;d=h.slice(0),h=[u],g[o]=h,h[r]=f,h[c]=s,a(e)}t(window,document,this,'googletag','cmd','push','restore')}).call(this);" />
+<!--Beanstock Nucleus End-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" /><link rel="publisher" href="https://plus.google.com/106413713006018165072" /><link rel="search" title="SpanishDict.com" type="application/opensearchdescription+xml" href="http://www.spanishdict.com/toolbar_search.xml" /><link rel="alternate" hreflang="en" href="http://www.spanishdict.com/translate/meet" /><link rel="alternate" hreflang="es" href="http://www.spanishdict.com/traductor/meet" /><title>Meet in Spanish | English to Spanish Translation</title><meta name="description" content="Translate Meet in Spanish. Get the most accurate English to Spanish translations. Fast. Easy. Free." /><meta property="fb:app_id" content="123097127645" /><meta property="fb:admins" content="1675823057" /><meta property="og:type" content="article" /><meta property="og:site_name" content="SpanishDict" /><meta property="og:title" content="Check out the translation for &quot;meet&quot; on SpanishDict!" /><meta property="og:description" content="Find out why SpanishDict is the web's most popular, free Spanish translation, dictionary, and conjugation site." /><meta property="og:image" content="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><meta property="og:url" content="http://www.spanishdict.com/translate/meet?utm_source=social&amp;utm_medium=facebook&amp;utm_campaign=share" /><script async="" type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script><script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "http://www.spanishdict.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://www.spanishdict.com/translate/{search_term}",
+    "query-input": "required name=search_term"
+  }
+}</script><link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-144x144-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-120x120-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-114x114-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-76x76-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-72x72-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-57x57-precomposed.png" /><link rel="apple-touch-icon-precomposed" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-precomposed.png" /><script>(function(global) {
+  global.SD_ENV="production";
+  global.SD_LOG_LEVEL="warning";
+  global.SD_LANG="en";
+  global.SD_GA_UA="UA-329211-2";
+  global.SD_MP="0d9d3502c20e893b403e6018cccf0388";
+})(this);</script><link rel="dns-prefetch" href="http://www.google-analytics.com" /><link rel="dns-prefetch" href="http://api.mixpanel.com" /><link rel="dns-prefetch" href="http://cdn.mxpnl.com" /><link rel="dns-prefetch" href="http://suggest1.spanishdict.com" /><link rel="dns-prefetch" href="http://translate1.spanishdict.com" /><meta name="viewport" content="width=1024" /><link rel="canonical" href="http://www.spanishdict.com/translate/meet" /><script>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+  var gads = document.createElement("script");
+  gads.async = true;
+  gads.type = "text/javascript";
+  var useSSL = "https:" == document.location.protocol;
+  gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+  var node = document.getElementsByTagName("script")[0];
+  node.parentNode.insertBefore(gads, node);
+})();
+googletag.cmd.push(function() {
+  googletag.pubads().setTargeting('sd_is_mobile', 'false');
+  googletag.pubads().setTargeting('test_group', '67');
+});
+</script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_HEADER", [728, 90], "adTop").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_FOOTER", [728, 90], "adBot").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR", [300, 250], "adSide1").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR_2", [300, 250], "adSide2").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_160_600_SIDEBAR", [160, 600], "adSideLong").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_CONTENT", [300, 250], "adContent").addService(googletag.pubads());
+ });
+ </script><script>googletag.cmd.push(function() {
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+});</script><script async="" type="text/javascript" src="http://www.googletagservices.com/tag/js/check_359604.js"></script><iframe src="http://tpc.googlesyndication.com/safeframe/1-0-2/html/container.html" style="visibility: hidden; display: none;"></iframe><link rel="stylesheet" href="http://n1.sdcdns.com/dist/desktop-717e9d10f2808a4d24ed23603cdb802a.gz.css" /><!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://n1.sdcdns.com/dist/desktop-ie8-f7fed1e39cc45ed918639c01178e6dc6.gz.css"><![endif]--><div class="header-wrapper"><div class="header header-container container"><div class="menu-bar"><div class="menu-nav menu-collapsed"><div class="menu-container"><div class="menu-selector"><div class="icon-menu-nav-selector"></div><div class="menu-selector-text">Menu</div><div class="menu-collapse"></div></div><div class="menu"><a href="http://www.spanishdict.com/"><div class="menu-item">Home</div></a><a href="http://www.spanishdict.com/translation"><div class="menu-item">Translation</div></a><a href="http://www.spanishdict.com/conjugation"><div class="menu-item">Conjugation</div></a><a href="http://www.spanishdict.com/learn"><div class="menu-item">Learn Spanish</div></a><a href="http://www.spanishdict.com/flashcards"><div class="menu-item">Flashcards</div></a><a href="http://www.spanishdict.com/grammar"><div class="menu-item">Grammar</div></a><a href="http://www.spanishdict.com/answers"><div class="menu-item">Q &amp; A</div></a><a href="http://www.spanishdict.com/wordoftheday"><div class="menu-item">Word of the Day</div></a><a href="#"><div class="menu-item menu-divider go-language">Ver en español</div></a><div class="menu-fluencia menu-divider"><div class="menu-fluencia-title">Want to learn Spanish?</div><div class="menu-fluencia-text"><span>Try Fluencia, an amazing learning program from SpanishDict.</span></div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=nav_menu&amp;h=1" target="_blank" data-sd-track-click-type="fluencia" class="menu-fluencia-link sd-track-click"><div class="menu-fluencia-button">Yes!</div></a></div></div></div></div><div class="menu-user menu-collapsed"><div class="menu-container"><div class="menu-selector unauthed"><a href="http://www.spanishdict.com/users/login" class="menu-selector-text">Sign in</a></div></div></div><a href="http://www.spanishdict.com/" class="header-logo"></a></div></div></div><div class="content-container container"><div class="ad-wrapper-wide"><div class="ad-728-90 adTop-results ad-wrapper"><div id="adTop" class="adTop"><script>googletag.cmd.push(function() {
+  googletag.display("adTop");
+});</script><div id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div><div data-target="adTop" class="pubnation">report this ad</div></div></div><div class="main-container"><div class="search"><div class="search-component search-form"><form action="/translation" method="post" accept-charset="utf-8" data-action="translation" class="search_query_to_url save-history"><span id="hidden-search">meet</span><div class="search-form-parts search-collapse"><input id="hidden-input" name="isExpand" type="hidden" value="false" /><textarea name="text" id="query" type="search" data-suggest-host="suggest1.spanishdict.com:80" data-suggest-path="/dictionary/translate_auto_suggest" data-suggest-variation="original" placeholder="Enter Spanish or English text…" autocomplete="off" autocorrect="off" autocapitalize="off" class="search-form-input">meet</textarea><div class="accents"><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add á to your text">á</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add é to your text">é</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add í to your text">í</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add ó to your text">ó</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add ú to your text">ú</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add ñ to your text">ñ</span><span data-toggle="tooltip" title="" class="accents-letter accents-descender" data-original-title="Add ¿ to your text">¿</span><span data-toggle="tooltip" title="" class="accents-letter accents-descender" data-original-title="Add ¡ to your text">¡</span><span data-toggle="tooltip" title="" class="accents-audio-btn" data-original-title="Hear audio of the words"> </span></div><div data-toggle="tooltip" title="" class="search-expand-icon" data-original-title="Show the accent buttons and expand the search box."></div><div data-toggle="tooltip" title="" class="search-collapse-icon" style="display: none;" data-original-title="Collapse the search box"></div><button type="submit" class="search-form-button">Translate</button></div><div class="input-table"><table cellspace="0" cellpadding="0" dir="ltr" class="input-table-table"><tbody><tr><td><table cellspace="0" cellpadding="0" class="inner-input-table">
+<tbody></tbody></table></td></tr></tbody></table></div></form></div></div><div class="translate"><div class="card  "><div class="quickdef"><div class="source"><h1 class="source-text">meet</h1><a href="http://audio1.spanishdict.com/audio?lang=en&amp;text=meet" data-toggle="tooltip" title="" class="audio-start" data-original-title="Listen to an audio pronunciation"><span class="audio-blue"> </span></a></div><div class="lang"><div class="el"><a href="http://www.spanishdict.com/translate/conocer">conocer</a>, <a href="http://www.spanishdict.com/translate/encontrarse">encontrarse</a></div><span class="media-links"><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=conocer%2C-encontrarse" data-toggle="tooltip" title="" class="audio-start" data-original-title="Listen to an audio pronunciation"><span class="audio-blue"> </span></a></span></div></div><div class="nav-content"><div class="nav-content-item nav-active"><a><span class="nav-content-item-text">Dictionary</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/conjugate/conocer"><span class="nav-content-item-text">Conjugation</span></a></div><div class="social-small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.spanishdict.com%2Ftranslate%2Fmeet%3Futm_source%3Dsocial%26utm_medium%3Dfacebook%26utm_campaign%3Dshare" class="social-small-icon social-small-facebook"></a><a target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20the%20translation%20for%20%22meet%22%20on%20%40SpanishDict!&amp;amp;url=http%3A%2F%2Fspanishdict.com%2ftranslate%2Fmeet%3Futm_source%3Dsocial%26utm_medium%3Dtwitter%26utm_campaign%3Dshare" class="social-small-icon social-small-twitter"></a><a target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fspanishdict.com%2Ftranslate%2Fmeet%3Futm_source%3Dsocial%26utm_medium%3Dgoogleplus%26utm_campaign%3Dshare" class="social-small-icon social-small-gplus"></a></div></div><!-- neodict-entry--><div class="dictionary-entry dictionary-neodict"><div class="dictionary-neodict-entry-title">meet</div><a href="http://www.spanishdict.com/topics/show/107" title="" data-toggle="tooltip" class="has-tooltip dictionary-neodict-first-part-of-speech part_of_speech" data-original-title="A transitive verb is a verb that requires a direct object (e.g. I bought a book.).">transitive verb</a><div class="dictionary-neodict-indent-1"><span class="def">1. </span><span class="context click-to-translate-section">(to become acquainted with)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">conocer</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">I met my wife at a Star Trek convention.</span><span class="icon-dash"></span><em class="exB click-to-translate-section">Conocí a mi esposa en una convención de Star Trek.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">2. </span><span class="context click-to-translate-section">(to come together)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">encontrarse con</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">I am meeting my friends for brunch at noon.</span><span class="icon-dash"></span><em class="exB click-to-translate-section">Me voy a encontrar con mis amigas para brunch al mediodía.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">3. </span><span class="context click-to-translate-section">(to conform)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">cumplir con</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">I don't meet the requirements for the position.</span><span class="icon-dash"></span><em class="exB click-to-translate-section">No cumplo con los requisitos para el puesto.</em></div></div><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">b. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">satisfacer</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">Her test scores don't meet the minimum entrance requirement.</span><span class="icon-dash"></span><em class="exB click-to-translate-section">Sus resultados en el examen no satisfacen el requisito mínimo de entrada.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">4. </span><span class="context click-to-translate-section">(to welcome)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">recibir</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">My boyfriend met me with flowers after work.</span><span class="icon-dash"></span><em class="exB click-to-translate-section">Mi novio me recibió con flores después del trabajo.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">5. </span><span class="context click-to-translate-section">(to encounter)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">encontrar</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">He met his death on the battlefield.</span><span class="icon-dash"></span><em class="exB click-to-translate-section">Encontró la muerte en el campo de batalla.</em></div></div><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">b. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">enfrentarse</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">The two teams met on the playing field.</span><span class="icon-dash"></span><em class="exB click-to-translate-section">Los dos equipos se enfrentaron en el campo de juego.</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">6. </span><span class="context click-to-translate-section">(to join)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">unirse</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">This is the place where the four states meet.</span><span class="icon-dash"></span><em class="exB click-to-translate-section">En este lugar se unen los cuatro estados.</em></div></div><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">b. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">juntarse</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">The two rivers meet close to the lake.</span><span class="icon-dash"></span><em class="exB click-to-translate-section">Los dos ríos se juntan cerca al lago.</em></div></div></div></div><a href="http://www.spanishdict.com/topics/show/107" title="" data-toggle="tooltip" class="has-tooltip part_of_speech" data-original-title="An intransitive verb is one that does not require a direct object (e.g. The man sneezed.).">intransitive verb</a><div class="dictionary-neodict-indent-1"><span class="def">7. </span><span class="context click-to-translate-section">(to come together)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">encontrarse</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">We are going to meet at the movies.</span><span class="icon-dash"></span><em class="exB click-to-translate-section">Nos vamos a encontrar en el cine.</em></div></div><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">b. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">reunirse</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">Can we meet tomorrow?</span><span class="icon-dash"></span><em class="exB click-to-translate-section">¿Podemos reunirnos mañana?</em></div></div><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">c. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">verse</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">They met for coffee on a cold winter's day.</span><span class="icon-dash"></span><em class="exB click-to-translate-section">Se vieron para un café en un frío día de invierno.</em></div></div><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">d. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">quedar</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">At what time should we meet?</span><span class="icon-dash"></span><em class="exB click-to-translate-section">¿A qué hora quieres que quedemos?</em></div></div></div></div><div class="dictionary-neodict-indent-1"><span class="def">8. </span><span class="context click-to-translate-section">(to become acquainted with)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">conocerse</span></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">We met at school a long time ago.</span><span class="icon-dash"></span><em class="exB click-to-translate-section">Nos conocimos en el colegio hace mucho tiempo.</em></div></div></div></div><a href="http://www.spanishdict.com/topics/show/1" title="" data-toggle="tooltip" class="has-tooltip part_of_speech" data-original-title="A noun is a word referring to a person, animal, place, thing, feeling or idea (e.g. man, dog, house).">noun</a><div class="dictionary-neodict-indent-1"><span class="def">9. </span><span class="context click-to-translate-section">(convention)</span><span class="context click-to-translate-section"> (United States)</span><div class="dictionary-neodict-indent-2"><div class="dictionary-neodict-translation"><span class="dictionary-neodict-translation-letters">a. </span><span class="dictionary-neodict-translation-translation click-to-translate-section">el encuentro</span><span class="def"> </span><a href="http://www.spanishdict.com/topics/show/1" title="" data-toggle="tooltip" class="has-tooltip def" data-original-title="(m) means that a noun is masculine. Spanish nouns have a gender, which is either feminine (like la mujer or la luna) or masculine (like el hombre or el sol).">(M)</a></div><div class="dictionary-neodict-indent-3"><div class="dictionary-neodict-example"><span class="click-to-translate-section">There is a team meet this Sunday before the game. </span><span class="icon-dash"></span><em class="exB click-to-translate-section">Hay un encuentro del equipo este domingo antes del partido. </em></div></div></div></div><div class="d-copyright"><a href="http://www.spanishdict.com" rel="nofollow">Copyright © 2014 Curiosity Media Inc.</a></div></div><!-- end-neodict-entry--><div class="dictionary-line"></div><div class="dictionary-entry dictionary-chambers"><div class="LV0"><div class="dictionary_word" id="word_meet "><span class="head_word">meet </span><div class="box">(pt &amp; pp met [met]) </div> <span class="pron">[miːt] </span><div class="LV2"><span class="part_of_speech">transitive verb</span><div class="LV3"><span class="def_header">1. </span><span class="def">encontrarse con </span> <em><em class="context">(encounter) (by accident)</em></em>; <span class="def">encontrarse con, reunirse con </span> <em><em class="context">(by arrangement)</em></em><ul class="examples"><li><span>to meet somebody in the street </span><span class="icon-dash"></span><em class="exB">encontrarse con alguien en la calle </em><em class="context"></em> </li><li><span>to arrange to meet somebody </span><span class="icon-dash"></span><em class="exB">quedar con alguien </em><em class="context"></em> </li><li><span>to go to meet somebody </span><span class="icon-dash"></span><em class="exB">ir a encontrarse con alguien </em><em class="context"></em> </li><li><span>to meet somebody at the station </span><span class="icon-dash"></span><em class="exB">ir a buscar a alguien a la estación </em><em class="context"></em> </li><li><span>his eyes met mine </span><span class="icon-dash"></span><em class="exB">nuestras miradas se encontraron </em><em class="context"></em> </li><li><span>a remarkable sight met our eyes </span><span class="icon-dash"></span><em class="exB">nos topamos con una vista extraordinaria </em><em class="context"></em> </li><li><span>there's more to this than meets the eye </span><span class="icon-dash"></span><em class="exB">es más complicado de lo que parece </em><em class="context"></em> </li></ul></div><!--lv3--><div class="LV3"><span class="def_header">2. </span><span class="def">conocer </span> <em><em class="context">(become acquainted with)</em></em><ul class="examples"><li><span>meet Mr Jones </span><span class="icon-dash"></span><em class="exB">le presento al señor Jones </em><em class="context"></em> </li><li><span>have you met my husband? </span><span class="icon-dash"></span><em class="exB">¿conoces a mi marido? </em><em class="context"></em> </li></ul></div><!--lv3--><div class="LV3"><span class="def_header">3. </span><span class="def">unirse con, juntarse con </span> <em><em class="context">(join with)</em></em><ul class="examples"><li><span>where East meets West </span><span class="icon-dash"></span><em class="exB">donde se encuentran el Oriente y el Occidente </em><em class="context"></em> </li></ul></div><!--lv3--><div class="LV3"><span class="def_header">4. </span><span class="def">satisfacer </span> <em><em class="context">(satisfy) (demand, need, condition)</em></em>; <span class="def">responder a </span> <em><em class="context">(objection, criticism)</em></em>; <span class="def">cubrir </span> <em><em class="context">(cost, expense)</em></em>; <span class="def">servir, cumplir </span> <em><em class="context">(order)</em></em><ul class="examples"><li><span>to meet a deadline </span><span class="icon-dash"></span><em class="exB">cumplir (con) un plazo </em><em class="context"></em> </li></ul></div><!--lv3--><div class="LV3"><span class="def_header">5. </span><span class="def">encontrar, encontrarse con </span> <em><em class="context">(encounter) (danger, difficulties)</em></em><ul class="examples"><li><span>to meet one's death </span><span class="icon-dash"></span><em class="exB">encontrar la muerte </em><em class="context"></em> </li></ul></div><!--lv3--></div><!--lv2--><div class="LV2"><span class="part_of_speech">intransitive verb</span><div class="LV3"><span class="def_header">6. </span><span class="def">encontrarse </span> <em><em class="context">(by accident)</em></em>; <span class="def">quedar, encontrarse </span> <em><em class="context">(by arrangement)</em></em><ul class="examples"><li><span>where shall we meet? </span><span class="icon-dash"></span><em class="exB">¿dónde quedamos? </em><em class="context"></em> </li><li><span>our eyes met </span><span class="icon-dash"></span><em class="exB">nuestras miradas se encontraron </em><em class="context"></em> </li></ul></div><!--lv3--><div class="LV3"><span class="def_header">7. </span><span class="def">conocerse </span> <em><em class="context">(become acquainted)</em></em></div><!--lv3--><div class="LV3"><span class="def_header">8. </span><span class="def">reunirse </span> <em><em class="context">(society, assembly)</em></em><ul class="examples"><li><span>the club meets every Tuesday </span><span class="icon-dash"></span><em class="exB">el club se reúne todos los martes </em><em class="context"></em> </li></ul></div><!--lv3--><div class="LV3"><span class="def_header">9. </span><span class="def">encontrarse, unirse </span> <em><em class="context">(rivers, continents)</em></em></div></div></div></div><div class="d-copyright"><a href="http://www.amazon.com/Websters-World-Concise-Spanish-Dictionary/dp/0471748366/&amp;tag=spani-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" rel="nofollow">Copyright © 2006 Harrap Publishers Limited</a></div></div><div class="dictionary-line"></div><div class="dictionary-entry dictionary-collins"><div class="entry"><div class="hw_unit"><span class="hw">meet</span> <span class="pron">[miːt]</span> <span class="inflexion">met</span> <span class="gram_label">(past)</span></div><div class="gram_cat"><a name="verb:transitive"></a><div class="entry_pos">transitive verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span> <span class="sense"> <span class="context">(by arrangement)</span> <span class="tran_group"> <span class="tran_main">quedar con;</span> <span class="tran_main">verse con;</span></span></span><span class="sense"> <span class="context">(by chance)</span> <span class="tran_group"> <span class="tran_main">encontrarse con;</span> <span class="tran_main">tropezarse con</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">I'm meeting them for lunch tomorrow</span><span class="tran_group"> <span class="tran">he quedado para almorzar con ellos mañana;</span></span></span><span class="ex_unit"> <span class="ex">I had arranged to meet her in town</span><span class="tran_group"> <span class="tran">había quedado con ella en el centro;</span> <span class="tran">había acordado en verla en el centro;</span></span></span><span class="ex_unit"> <span class="ex">I'll meet you outside the cinema</span><span class="tran_group"> <span class="tran">te veré en la entrada del cine;</span></span></span><span class="ex_unit"> <span class="ex">you'll never guess who I met on the bus today!</span><span class="tran_group"> <span class="tran">¿a que no sabes con quién me encontré <em class="or" title="en-gb">or</em> me tropecé hoy en el autobús?</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">meet me at the beach tomorrow at two</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">we will be meeting the ambassador tomorrow to discuss the situation</span><span class="tran_group"> <span class="tran">mañana tendremos un encuentro <em class="or" title="en-gb">or</em> una reunión con el embajador para discutir la situación;</span> <span class="tran">mañana nos entrevistaremos <em class="or" title="en-gb">or</em> nos reuniremos con el embajador para discutir la situación</span></span></span></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span> <span class="sense"> <span class="label synonym">(go/come to get)</span> <span class="tran_group"> <span class="tran_main">ir/venir a buscar;</span></span></span><span class="sense"> <span class="label synonym">(welcome)</span> <span class="tran_group"> <span class="tran_main">recibir</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">we met her at the station</span><span class="tran_group"> <span class="tran">la fuimos a buscar a la estación;</span></span></span><span class="ex_unit"> <span class="ex">I'm being met at the airport</span><span class="tran_group"> <span class="tran">me vendrán a buscar al aeropuerto;</span></span></span><span class="ex_unit"> <span class="ex">she ran out to meet us</span><span class="tran_group"> <span class="tran">salió corriendo a recibirnos;</span></span></span><span class="ex_unit"> <span class="ex">to meet sb off the train</span><span class="tran_group"> <span class="tran">ir a esperar a algn a la estación;</span></span></span><span class="ex_unit"> <span class="ex">don't bother to meet me</span><span class="tran_group"> <span class="tran">no os molestéis en venir a esperarme</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">the car will meet the train</span></span><span class="ex_unit"> <span class="ex">the bus meets the aircraft</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">the bus for Aix meets the ten o'clock train</span><span class="tran_group"> <span class="tran">el autobús que va a Aix conecta con el tren de las diez</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">hay correspondencia entre ...</span></span><span class="ex_unit"> <span class="ex">Kurt's parents weren't able to meet our plane/flight so we took a taxi</span></span><span class="ex_unit"> <span class="ex">Lili and my father met me off the boat</span></span></div><div class="xref"><a class="xrhw" href="http://www.spanishdict.com/translate/halfway#">halfway</a> </div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="label synonym">(get to know, be introduced to)</span> <span class="tran_group"> <span class="tran_main">conocer</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">I never met him</span><span class="tran_group"> <span class="tran">no lo llegué a conocer;</span></span></span><span class="ex_unit"> <span class="ex">I met my wife in 1988</span><span class="tran_group"> <span class="tran">conocí a mi mujer en 1988;</span></span></span><span class="ex_unit"> <span class="ex">meet my brother</span><span class="tran_group"> <span class="tran">quiero presentarte a mi hermano;</span></span></span><span class="ex_unit"> <span class="ex">he's the kindest person I've ever met</span><span class="tran_group"> <span class="tran">es la persona más amable que he conocido jamás</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">candidates will be required to meet the committee</span></span><span class="ex_unit"> <span class="ex">we met by chance</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">nice to have met you!</span><span class="tran_group"> <span class="tran">¡encantado de conocerlo!;</span></span></span><span class="ex_unit"> <span class="ex">pleased to meet you!</span><span class="tran_group"> <span class="tran">¡mucho gusto!;</span> <span class="tran">¡encantado de conocerlo!</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">I am very pleased to meet you</span></span></div></div><div class="sense_main"><a name="4"></a><span class="num">4</span>  <span class="label synonym">(come together with)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">where the sea meets the horizon</span><span class="tran_group"> <span class="tran">donde el mar se junta con el horizonte;</span></span></span><span class="ex_unit"> <span class="ex">the box met the ground with an almighty thud</span><span class="tran_group"> <span class="tran">la caja se estrelló ruidsosamente contra el suelo;</span></span></span><span class="ex_unit"> <span class="ex">the sound which met his ears</span><span class="tran_group"> <span class="tran">el sonido que llegó a sus oídos</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">I met no vehicles coming in the opposite direction</span></span><span class="ex_unit"> <span class="ex">to meet sb's [eye] <or> [gaze]</or></span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">I could not meet his eye</span><span class="tran_group"> <span class="tran">no podía mirarle a los ojos;</span></span></span><span class="ex_unit"> <span class="ex">her eyes met her sister's across the table</span><span class="tran_group"> <span class="tran">tropezó con la mirada de su hermana al otro lado de la mesa;</span></span></span><span class="ex_unit"> <span class="ex">what a scene met my eyes!</span><span class="tran_group"> <span class="tran">¡el escenario que se presentó ante mis ojos!</span></span></span></div><div class="xref"><a class="xrhw" href="http://www.spanishdict.com/translate/eye#">eye</a> </div></div><div class="sense_main"><a name="5"></a><span class="num">5</span>  <span class="label synonym">(come across)</span> <span class="sense"> <span class="label collate object">[+problem]</span> <span class="tran_group"> <span class="tran_main">encontrarse con</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">almost all retired people meet this problem</span><span class="tran_group"> <span class="tran">casi todos los jubilados se encuentran con este problema</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">I believed I would never meet a problem I could not solve</span></span><span class="ex_unit"> <span class="ex">never had she met such spite and pettiness</span></span><span class="ex_unit"> <span class="ex">I don't know how I will react the next time I meet a potentially dangerous situation</span></span><span class="ex_unit"> <span class="ex">he had never met a problem like it</span></span></div></div><div class="sense_main"><a name="6"></a><span class="num">6</span>  <span class="label synonym">(confront)</span> <span class="sense"> <span class="label collate object">[+opponent]</span> <span class="tran_group"> <span class="tran_main">enfrentarse con;</span></span><span class="sense"> <span class="context">(in duel)</span> <span class="tran_group"> <span class="tran_main">batirse con;</span></span></span></span><span class="sense"> <span class="label collate object">[+problem]</span> <span class="tran_group"> <span class="tran_main">hacer frente a</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">he met his death <em class="or" title="en-gb">or</em> his end in 1800</span><span class="tran_group"> <span class="tran">halló <em class="or" title="en-gb">or</em> encontró la muerte en 1800;</span></span></span><span class="ex_unit"> <span class="ex">to meet death calmly</span><span class="tran_group"> <span class="tran">enfrentarse con la muerte con tranquilidad</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">to meet death courageously</span></span><span class="ex_unit"> <span class="ex">he met his death at the hands of a soldier</span></span><span class="ex_unit"> <span class="ex">no one knows exactly how or where he met his end</span></span><span class="ex_unit"> <span class="ex">she was prepared to meet problems as they arose</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">to meet sth head-on</span><span class="tran_group"> <span class="tran">enfrentarse de lleno con algo;</span> <span class="tran">hacer frente <em class="or" title="en-gb">or</em> plantar cara directamente a algo</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">She met the problem head-on, with a child's directness</span></span><span class="ex_unit"> <span class="ex">Becker will meet Ivanisevich in the final</span></span><span class="ex_unit"> <span class="ex">to be met [with]/[by] sth</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">this suggestion was met with angry protests</span><span class="tran_group"> <span class="tran">la gente reaccionó con protestas de indignación ante la sugerencia</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">the remark was met by cheers</span></span><span class="ex_unit"> <span class="ex">their explanations were met with great interest</span></span><span class="ex_unit"> <span class="ex">his appointment was met with a mixture of expectation and reservation</span></span><span class="ex_unit"> <span class="ex">Reagan's speech was met with incredulity in the US</span></span></div><div class="xref"><a class="xrhw" href="http://www.spanishdict.com/translate/match#">match</a> </div></div><div class="sense_main"><a name="7"></a><span class="num">7</span>  <span class="label synonym">(satisfy)</span> <span class="sense"> <span class="label collate object">[+need]</span> <span class="tran_group"> <span class="tran_main">satisfacer;</span> <span class="tran_main">cubrir;</span></span></span><span class="sense"> <span class="label collate object">[+demand]</span> <span class="tran_group"> <span class="tran_main">atender a;</span> <span class="tran_main">satisfacer;</span></span></span><span class="sense"> <span class="label collate object">[+wish]</span> <span class="tran_group"> <span class="tran_main">satisfacer;</span></span></span><span class="sense"> <span class="label collate object">[+requirement]</span> <span class="tran_group"> <span class="tran_main">cumplir con;</span></span></span><span class="sense"> <span class="label collate object">[+debt]</span> <span class="tran_group"> <span class="tran_main">pagar;</span></span></span><span class="sense"> <span class="label collate object">[+expense, cost]</span> <span class="tran_group"> <span class="tran_main">correr con;</span> <span class="tran_main">hacer frente a;</span></span></span><span class="sense"> <span class="label collate object">[+obligation]</span> <span class="tran_group"> <span class="tran_main">atender a;</span> <span class="tran_main">cumplir con;</span></span></span><span class="sense"> <span class="label collate object">[+target, goal]</span> <span class="tran_group"> <span class="tran_main">alcanzar;</span></span></span><span class="sense"> <span class="label collate object">[+challenge]</span> <span class="tran_group"> <span class="tran_main">hacer frente a;</span></span></span><span class="sense"> <span class="label collate object">[+expectations]</span> <span class="tran_group"> <span class="tran">estar a la altura de</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">he offered to meet the full cost of the repairs</span><span class="tran_group"> <span class="tran">se ofreció a correr con <em class="or" title="en-gb">or</em> hacer frente a todos los gastos de la reparación;</span></span></span><span class="ex_unit"> <span class="ex">it did not meet our expectations</span><span class="tran_group"> <span class="tran">no estuvo a la altura de nuestras expectativas</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">these policies do little to meet the needs of single mothers</span></span><span class="ex_unit"> <span class="ex">the government is unable to meet the demand for housing</span></span><span class="ex_unit"> <span class="ex">there were nowhere near enough buses to meet the demand</span></span><span class="ex_unit"> <span class="ex">only 120 candidates met the entry requirements</span></span><span class="ex_unit"> <span class="ex">how to tailor your application to meet your employer's requirements</span></span><span class="ex_unit"> <span class="ex">he found himself in the position of not being able to meet his debts</span></span><span class="ex_unit"> <span class="ex">I have difficulty finding the money to meet the monthly repayments</span></span><span class="ex_unit"> <span class="ex">the government's unbalanced borrowings to meet the deficit precipitated a panic</span></span><span class="ex_unit"> <span class="ex">the government said it will help meet some of the cost of the damage</span></span><span class="ex_unit"> <span class="ex">a Foreign Office idea of a separate "protocol" to meet Danish objections to the treaty</span></span><span class="ex_unit"> <span class="ex">it will now be easier to meet our target of around 850 units</span></span><span class="ex_unit"> <span class="ex">factories that don't meet their production targets</span></span><span class="ex_unit"> <span class="ex">to meet that goal, Japan will have to build another 40 reactors</span></span><span class="ex_unit"> <span class="ex">it is an enormous challenge but we hope to meet it within 18 months</span></span><span class="ex_unit"> <span class="ex">it goes some way towards meeting their wishes</span></span></div></div><div class="xref"><a class="xrhw" href="http://www.spanishdict.com/translate/deadline#">deadline</a> </div></div><div class="gram_cat"><a name="verb:intransitive"></a><div class="entry_pos">intransitive verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span> <span class="sense"> <span class="label synonym">(encounter each other)</span> <span class="sense"> <span class="context">(by arrangement)</span> <span class="tran_group"> <span class="tran_main">quedar;</span> <span class="tran_main">verse;</span></span></span><span class="sense"> <span class="context">(by chance)</span> <span class="tran_group"> <span class="tran_main">encontrarse;</span></span></span></span><span class="sense"> <span class="label synonym">(hold meeting)</span> <span class="tran_group"> <span class="tran_main">reunirse;</span></span><span class="sense"> <span class="label collate subject">[+ambassador, politician]</span>  <span class="context">(with interested parties)</span> <span class="tran_group"> <span class="tran_main">entrevistarse;</span> <span class="tran_main">reunirse</span></span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">we could meet for a drink after work</span><span class="tran_group"> <span class="tran">podríamos vernos <em class="or" title="en-gb">or</em> quedar para tomar una copa después del trabajo;</span></span></span><span class="ex_unit"> <span class="ex">what time shall we meet?</span><span class="tran_group"> <span class="tran">¿a qué hora quieres que quedemos <em class="or" title="en-gb">or</em> nos veamos?;</span></span></span><span class="ex_unit"> <span class="ex">let's meet at eight</span><span class="tran_group"> <span class="tran">quedemos para las ocho;</span></span></span><span class="ex_unit"> <span class="ex">they arranged to meet at ten</span><span class="tran_group"> <span class="tran">quedaron en verse a las diez;</span></span></span><span class="ex_unit"> <span class="ex">the two ministers met to discuss the treaty</span><span class="tran_group"> <span class="tran">los dos ministros se entrevistaron <em class="or" title="en-gb">or</em> se reunieron para discutir el tratado</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">officials from the two countries will meet soon to resume negotiations</span></span><span class="ex_unit"> <span class="ex">I ask after his wife whenever we meet</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">to meet again</span><span class="tran_group"> <span class="tran">volver a verse;</span></span></span><span class="ex_unit"> <span class="ex">until we meet again!</span><span class="tran_group"> <span class="tran">¡hasta la vista!;</span> <span class="tran">¡hasta pronto!</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">keep it until we meet again</span></span></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="label synonym">(convene)</span> <span class="sense"> <span class="label collate subject">[+Parliament, club, committee]</span> <span class="tran_group"> <span class="tran_main">reunirse</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">the society meets at eight</span><span class="tran_group"> <span class="tran">la sociedad se reúne a las ocho</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">the class meets in the art room</span></span><span class="ex_unit"> <span class="ex">the group meets regularly to exchange experiences</span></span><span class="ex_unit"> <span class="ex">the Commission met four times between 1988 and 1991</span></span><span class="ex_unit"> <span class="ex">the Russian Parliament meets today in Moscow</span></span><span class="ex_unit"> <span class="ex">when Parliament meets on Monday morning, opposition leaders may try to overturn the edict</span></span></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="label synonym">(get to know one another, be introduced)</span> <span class="tran_group"> <span class="tran_main">conocerse</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">we met in Seville</span><span class="tran_group"> <span class="tran">nos conocimos en Sevilla;</span></span></span><span class="ex_unit"> <span class="ex">we have met before</span><span class="tran_group"> <span class="tran">nos conocemos ya;</span></span></span><span class="ex_unit"> <span class="ex">have we met?</span><span class="tran_group"> <span class="tran">¿nos conocemos de antes?</span></span></span></div></div><div class="sense_main"><a name="4"></a><span class="num">4</span>  <span class="label synonym">(come together, join)</span> <span class="sense"> <span class="label collate subject">[+two ends]</span> <span class="tran_group"> <span class="tran_main">unirse;</span></span></span><span class="sense"> <span class="label collate subject">[+rivers]</span> <span class="tran_group"> <span class="tran_main">confluir;</span></span></span><span class="sense"> <span class="label collate subject">[+roads]</span> <span class="tran_group"> <span class="tran_main">empalmar</span></span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">the jacket was so small the two sides wouldn't meet (in the middle)</span></span><span class="ex_unit"> <span class="ex">parallel lines will never meet, however far they are extended</span></span><span class="ex_unit"> <span class="ex">where the rivers/the Pacific and Atlantic Oceans meet</span></span><span class="ex_unit"> <span class="ex">the roads meet at Toledo</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">our eyes met</span><span class="tran_group"> <span class="tran">cruzamos una mirada;</span></span></span><span class="ex_unit"> <span class="ex">their lips met</span><span class="tran_group"> <span class="tran">sus labios se encontraron</span></span></span></div><div class="xref"><a class="xrhw" href="http://www.spanishdict.com/translate/end#">end</a> <a class="xrhw" href="http://www.spanishdict.com/translate/twain#">twain</a> </div></div><div class="sense_main"><a name="5"></a><span class="num">5</span>  <span class="label synonym">(confront each other)</span> <span class="sense"> <span class="label collate subject">[+teams, armies]</span> <span class="tran_group"> <span class="tran_main">enfrentarse</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">Bilbao and Valencia will meet in the final</span><span class="tran_group"> <span class="tran">el Bilbao se enfrentará con el Valencia en la final;</span> <span class="tran">Bilbao y Valencia se disputarán la final</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">the two women will meet tomorrow in the final</span></span><span class="ex_unit"> <span class="ex">England last met the Frnech in 1984, when they lost 2-0</span></span><span class="ex_unit"> <span class="ex">the two armies met at Guilford on 15th March 1781</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">to meet (sb) in battle</span><span class="tran_group"> <span class="tran">librar batalla (con algn)</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">I was on the windy plains of Troy as Achilles and Hector met in battle</span></span><span class="ex_unit"> <span class="ex">they would soon meet in battle men with whom they had been drinking together only a week ago</span></span></div></div></div><div class="gram_cat"><a name="noun"></a><div class="entry_pos">noun</div><span class="sense"><span class="sense"> <span class="label subject" title="">(Hunting)</span> <span class="tran_group"> <span class="tran_main">cacería <span class="tran_pos" title="feminine"> (f)</span>;</span></span></span><span class="sense"> <span class="label mod" title="especially">especially</span> <span class="label geo" title="United States">(US)</span> <span class="label subject" title="">(Dep)</span> <span class="tran_group"> <span class="tran_main">encuentro <span class="tran_pos" title="masculine"> (m)</span></span></span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">she managed to get there before the meet moved off to begin the hunt</span></span><span class="ex_unit"> <span class="ex">John Pennel became the first person to pole-vault 17 ft, at a meet in Miami, FLorida</span></span><span class="ex_unit"> <span class="ex">the new Saratoga racetrack held its first meet. with 26 horses running in 8 races</span></span><span class="ex_unit"> <span class="ex">a long-awaited five-nation swimming meet in Moscow</span></span></div></span></div></div><div class="entry"><div class="hw_unit"><span class="hw">meet</span> <span class="pron">[miːt]</span> </div><div class="gram_cat"><a name="adjective"></a><div class="entry_pos">adjective</div><span class="sense"> <span class="label collate noun_of_adjective">[+liter]</span> <span class="tran_group"> <span class="tran_main">conveniente;</span> <span class="tran_main">apropiado</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">it is meet that ...</span><span class="tran_group"> <span class="tran">conviene que ...;</span></span></span><span class="ex_unit"> <span class="ex">to be meet for</span><span class="tran_group"> <span class="tran">ser apto para</span></span></span></div></span></div></div><div class="d-copyright"><a href="http://www.collinsdictionary.com/dictionary/english-spanish" rel="nofollow">Collins Complete Spanish Electronic Dictionary © HarperCollins Publishers 2011</a></div></div></div></div><div class="card machine"><a href="http://www.spanishdict.com/translate/meet?t=1#mt-anchor" rel="nofollow"><div class="machine-img"></div><span class="machine-text">'meet' </span><span class="machine-info">in our machine translators</span></a></div><div class="card fl-fourth-translation"><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=4thtranslation&amp;h=3" target="_blank" data-sd-track-click-type="fluencia" class="fluencia-link sd-track-click"><div class="fluencia-img"></div><div class="fluencia-text">Learn Spanish with Fluencia, the easiest way to learn Spanish from the creators of SpanishDict</div></a></div><div class="card"><div class="card-title">Verb Conjugations for conocer</div><div class="conj-row"><a href="http://www.spanishdict.com/answers/100043/gerund-form" target="_blank" class="conj-basic-label">Gerund:</a><span> conociendo</span></div><div class="conj-row"><a href="http://www.spanishdict.com/answers/100044/past-participles" target="_blank" class="conj-basic-label">Participle:</a><span> conocido</span></div><div class="conj-row"><span>The irregular conjugations of this verb are in</span><span> </span><span class="conj-irregular">red</span><span>.</span></div><a href="http://www.spanishdict.com/topics/show/112" class="vtable-label">Indicative<span class="icon-question-mark"></span></a><div class="vtable-wrapper"><table class="vtable"><tbody><tr><td class="vtable-empty"></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100045/present-tense" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He speaks* Spanish.">Present<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100046/preterite-simple-past" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He spoke* to my sister yesterday.">Preterite<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100048/imperfect-past" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He used to speak* Italian when he was a child.">Imperfect<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100050/conditional" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He would speak* French in France.">Conditional<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100049/future" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He will speak* Portuguese on his vacation next week.">Future<span class="icon-question-mark"></span></a></td></tr><tr><td class="vtable-pronoun">yo</td><td class="vtable-word conj-irregular ">conozco</td><td class="vtable-word  ">conocí</td><td class="vtable-word  ">conocía</td><td class="vtable-word  ">conocería</td><td class="vtable-word  ">conoceré</td></tr><tr><td class="vtable-pronoun">tú</td><td class="vtable-word  ">conoces</td><td class="vtable-word  ">conociste</td><td class="vtable-word  ">conocías</td><td class="vtable-word  ">conocerías</td><td class="vtable-word  ">conocerás</td></tr><tr><td class="vtable-pronoun">él/ella/Ud.</td><td class="vtable-word  ">conoce</td><td class="vtable-word  ">conoció</td><td class="vtable-word  ">conocía</td><td class="vtable-word  ">conocería</td><td class="vtable-word  ">conocerá</td></tr><tr><td class="vtable-pronoun">nosotros</td><td class="vtable-word  ">conocemos</td><td class="vtable-word  ">conocimos</td><td class="vtable-word  ">conocíamos</td><td class="vtable-word  ">conoceríamos</td><td class="vtable-word  ">conoceremos</td></tr><tr><td class="vtable-pronoun">vosotros</td><td class="vtable-word  ">conocéis</td><td class="vtable-word  ">conocisteis</td><td class="vtable-word  ">conocíais</td><td class="vtable-word  ">conoceríais</td><td class="vtable-word  ">conoceréis</td></tr><tr><td class="vtable-pronoun">ellos/ellas/Uds.</td><td class="vtable-word  ">conocen</td><td class="vtable-word  ">conocieron</td><td class="vtable-word  ">conocían</td><td class="vtable-word  ">conocerían</td><td class="vtable-word  ">conocerán</td></tr></tbody></table></div><a href="http://www.spanishdict.com/conjugate/conocer" class="card-button-full">View complete conjugation for <strong>conocer</strong></a></div><div class="ad-300-250 adContent-results ad-wrapper"><div id="adContent" class="adContent"><div id="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0" name="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe><object type="application/x-shockwave-flash" data="//www.gstatic.com/osd/hbe.swf?id=5~0" width="1" height="1" style="visibility: hidden; opacity: 0; z-index: -999999; position: fixed; left: 362px; top: 6527px;"><param name="movie" value="//www.gstatic.com/osd/hbe.swf?id=5~0" /><param name="allowscriptaccess" value="always" /><param name="wmode" value="opaque" /></object></div><script>googletag.cmd.push(function() {
+  googletag.display("adContent");
+});</script></div><div data-target="adContent" class="pubnation">report this ad</div></div><div id="feedback-query" class="card"><div class="card-title">Did this page answer your question?</div><form><div class="feedback-1"><a href="#" class="feedback-yes"><div class="icon-smile"></div><span>Yes</span></a><a href="#" class="feedback-no"><div class="icon-frown"></div><span>No</span></a></div><div class="feedback-2"><div id="feedback-categories"><div class="feedback-instructions">The page is...</div><div class="feedback-categories-select"><label><input type="radio" name="category" value="inaccurate" />Inaccurate</label><label><input type="radio" name="category" value="unclear" />Unclear</label><label><input type="radio" name="category" value="missingTranslations" />Missing translations</label><label><input type="radio" name="category" value="missingConjugations" />Missing conjugations</label><label><input type="radio" name="category" value="other" />Other</label></div></div><div class="feedback-instructions">What can we do to improve?</div><textarea id="feedback-comment" placeholder="Enter your comment..." required="" class="feedback-comment"></textarea><div class="feedback-instructions">How can we follow up with you? (Optional)</div><input id="feedback-query-email" type="email" placeholder="Enter your email" class="feedback-query-email" /><button type="submit" class="feedback-2-submit">Submit</button></div><div class="feedback-3"><span>Your feedback was sent. We appreciate your comments!</span></div></form></div></div><div class="sidebar-container"><div class="fluencia-sidebar card"><div class="card-title">Want to speak Spanish?</div><div class="fluencia-sidebar-text">Try Fluencia, an amazing learning program from SpanishDict.</div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=sidebar&amp;h=2" target="_blank" data-sd-track-click-type="fluencia" class="fluencia-sidebar-button sd-track-click">Join now</a></div><div class="ad-300-250 adSide-results sidebar-box ad-wrapper"><div id="adSide1" class="adSide1"><script>googletag.cmd.push(function() {
+  googletag.display("adSide1");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0" name="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSide1" class="pubnation">report this ad</div></div><div class="wotd-sidebar card"><div class="card-title">Word of the Day</div><div class="wotd-sidebar-date">Apr 30</div><a href="http://www.spanishdict.com/wordoftheday/2376/llenar" class="wotd-sidebar-word">llenar</a><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=llenar" data-toggle="tooltip" title="" class="audio-start" data-original-title="Listen to an audio pronunciation"><span class="audio-blue"> </span></a><div class="wotd-sidebar-translation">to fill</div><div class="wotd-sidebar-prompt">Get the free word of the day!</div><form action="/users/signup_email_verify" method="post" class="wotd-sidebar-form"><input name="email" type="email" placeholder="email" class="wotd-sidebar-input" /><button type="submit" data-sd-track-click-type="wotd" class="wotd-sidebar-button sd-track-click">Subscribe</button></form></div><div class="ad-300-250 adSide-results sidebar-box ad-wrapper"><div id="adSide2" class="adSide2"><script>googletag.cmd.push(function() {
+  googletag.display("adSide2");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0" name="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSide2" class="pubnation">report this ad</div></div><div class="social-sidebar card"><div class="card-title">Stay Connected</div><a href="https://www.facebook.com/pages/SpanishDict/92805940179" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="facebook" class="social-sidebar-button facebook sd-track-click"><div class="social-logo social-facebook-logo"></div></a><a href="https://plus.google.com/106413713006018165072/posts" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="google" class="social-sidebar-button gplus sd-track-click"><div class="social-logo social-gplus-logo"></div></a><a href="https://twitter.com/spanishdict" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="twitter" class="social-sidebar-button twitter sd-track-click"><div class="social-logo social-twitter-logo"></div></a></div><div class="ad-160-600 adSide-long-results sidebar-box-long ad-wrapper"><div id="adSideLong" class="adSideLong"><script>googletag.cmd.push(function() {
+  googletag.display("adSideLong");
+});</script><div id="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0" name="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSideLong" class="pubnation">report this ad</div></div></div><div class="ad-wrapper-wide"><div class="ad-728-90 adBot-results ad-wrapper"><div id="adBot" class="adBot"><script>googletag.cmd.push(function() {
+  googletag.display("adBot");
+});</script><div id="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0" name="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adBot" class="pubnation">report this ad</div></div></div></div><div class="footer-wrapper"><div class="footer footer-container container"><div class="footer-row"><div class="footer-item"><h4>Stay Connected</h4><div class="footer-social"><div class="social"><a href="http://www.facebook.com/pages/SpanishDict/92805940179"><div class="social-icon social-facebook"></div></a><a href="http://www.twitter.com/spanishdict"><div class="social-icon social-twitter"></div></a><a href="https://plus.google.com/106413713006018165072/posts"><div class="social-icon social-gplus"></div></a></div></div></div><div class="footer-item"><h4>iPhone</h4><a href="http://itunes.apple.com/us/app/spanishdict/id332510494"><div class="footer-external footer-external-appstore"></div></a></div><div class="footer-item"><h4>Android</h4><a href="https://play.google.com/store/apps/details?id=com.spanishdictapp"><div class="footer-external footer-external-google-play"></div></a></div><div class="footer-item footer-item-last"><h4>Kindle</h4><a href="http://www.amazon.com/SpanishDict-Spanish-English-Dictionary-and-More/dp/B004UO8ZNQ"><div class="footer-external footer-external-amazon"></div></a></div></div><div class="footer-row"><div class="footer-item"><h4>Spanish Reference</h4><ul><li><a href="http://www.spanishdict.com/translation">English to Spanish translation</a></li><li><a href="http://www.spanishdict.com/translation">Spanish to English translation</a></li><li><a href="http://www.spanishdict.com/dictionary">English to Spanish dictionary</a></li><li><a href="http://www.spanishdict.com/dictionary">Spanish to English dictionary</a></li></ul></div><div class="footer-item"><h4>Learn Spanish</h4><ul><li><a href="http://www.spanishdict.com/learn">Learn Spanish</a></li><li><a href="http://www.spanishdict.com/flashcards">Spanish Flashcards</a></li><li><a href="http://www.spanishdict.com/conjugation">Spanish Verb Conjugation</a></li><li><a href="http://www.spanishdict.com/answers">Spanish-English Q&amp;A</a></li></ul></div><div class="footer-item"><h4>Popular Translations</h4><ul><li><a href="http://www.spanishdict.com/translate/happy birthday">happy birthday in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/beautiful">beautiful in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/I love you">I love you in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/congratulations">congratulations in Spanish</a></li></ul></div><div class="footer-item footer-item-last"><h4>Popular Conjugations</h4><ul><li><a href="http://www.spanishdict.com/conjugate/querer">querer conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/pensar">pensar conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/poner">poner conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/pedir">pedir conjugation</a></li></ul></div></div><div class="footer-meta"><div class="footer-meta-list"><ul><li><a href="http://www.spanishdict.com/company/about">About</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.fluencia.com/about-us/careers/">We're hiring!</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.spanishdict.com/company/privacy">Privacy</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.spanishdict.com/company/tos">Terms</a><span class="footer-meta-list-item-bg"></span></li><li><a href="#" class="go-language">Español</a></li></ul></div><span class="footer-copyright">© Curiosity Media, Inc.</span><div class="footer-exclamation-logo-wrapper"><div class="footer-exclamation-container"><img src="http://n1.sdcdns.com/img/desktop/logoAnimation.gif" class="footer-exclamation-logo" /></div></div></div></div></div><div class="feedback-tab"><button data-toggle="modal" data-target="#feedback-modal">Feedback</button></div><div id="feedback-modal" class="feedback-modal sd-modal modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="sd-modal-title">Feedback</div><div class="sd-modal-close feedback-modal-close"></div><div class="sd-modal-message feedback-modal-message"></div><div class="sd-modal-content feedback-modal-content"><div class="sd-modal-desc">SpanishDict is devoted to improving our site based on user feedback and introducing new and innovative features that will continue to help people learn and love the Spanish language. Have a suggestion, idea, or comment? Send us your feedback.</div><form><label for="feedback-name" class="sd-modal-label">Your name</label><input id="feedback-name" type="text" placeholder="Your name" /><label for="feedback-email" class="sd-modal-label">Email address</label><input id="feedback-email" type="email" placeholder="Email address" /><label for="feedback-subject" class="sd-modal-label">Subject</label><input id="feedback-subject" type="text" placeholder="Subject" required="" /><label for="feedback-message" class="sd-modal-label">Message</label><textarea id="feedback-message" placeholder="Message" rows="5" required=""></textarea><input type="submit" value="Send" class="sd-modal-submit feedback-modal-submit" /></form></div></div></div></div></div><div id="survey-modal" class="survey-modal modal"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="survey-modal-icon"></div><div class="survey-modal-title">Share Your Opinion, Win $100</div><div id="survey-modal-close" class="survey-modal-close"></div><div class="survey-modal-message"></div><div class="survey-modal-content"><div class="survey-modal-desc">You've been invited to complete a short survey to help improve SpanishDict. Five people who take the survey will be randomly selected to win $100 Amazon gift cards.</div><a id="survey-modal-submit" href="#" target="_blank" class="survey-modal-submit">Take the Survey</a></div></div></div></div></div><script id="sd_analytics" type="application/json">{&amp;quot;site&amp;quot;:&amp;quot;desktop&amp;quot;,&amp;quot;q&amp;quot;:&amp;quot;meet&amp;quot;,&amp;quot;type&amp;quot;:&amp;quot;translation&amp;quot;,&amp;quot;is_found&amp;quot;:1,&amp;quot;browser_lang&amp;quot;:&amp;quot;en-US&amp;quot;,&amp;quot;result&amp;quot;:&amp;quot;meet&amp;quot;,&amp;quot;result_lang&amp;quot;:&amp;quot;en&amp;quot;,&amp;quot;result_sources&amp;quot;:[&amp;quot;chambers&amp;quot;,&amp;quot;velazquez&amp;quot;,&amp;quot;collins&amp;quot;,&amp;quot;neodict&amp;quot;],&amp;quot;result_has_alt_lang&amp;quot;:false}</script><script src="http://n1.sdcdns.com/dist/vendor/jquery-min-1-11-0-5506e81cd13183312c8cf5425c9f8c5e.gz.js" type="text/javascript" crossorigin="anonymous"></script><script src="http://n1.sdcdns.com/dist/desktop-min-6f357978711d512c2f29dfbaffa33e0c.gz.js" type="text/javascript" crossorigin="anonymous"></script><!--[if lte IE 9]><script>(function() {
+  var app = document.createElement('script'); app.type = 'text/javascript'; app.async = true;
+  app.src = 'http://n1.sdcdns.com/js/vendor/placeholders.min.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(app, s);
+})();</script><![endif]--> <script type="text/javascript">
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');   ga('set', 'user_status1', 'anonymous');   ga('set', 'section2', 'translate');   ga('set', 'sd_is_mobile3', 'false');
+   ga('require', 'displayfeatures');
+   ga('create', 'UA-329211-2', 'auto');
+   ga('send', 'pageview');
+ </script><script>var _pnq = _pnq || [];
+_pnq.push(['setId', 'pn-053b5b698be780ef']);
+_pnq.push(['enable', 'categories']);
+(function() {
+  var pnr = document.createElement('script');
+  pnr.type = 'text/javascript';
+  pnr.async = true;
+  pnr.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'report-ads-to.pubnation.com/dist/pnr.js?t=pn-053b5b698be780ef';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(pnr, s);
+})();</script>­<style>.supermodal-not-mobile .supermodal-body-show {
+  overflow: hidden !important;
+}
+
+.supermodal-root {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  text-align: center !important;
+  display: none !important;
+  position: absolute !important;
+}
+
+.supermodal-root.supermodal-show {
+  display: block !important;
+}
+
+.supermodal-not-mobile .supermodal-root {
+  position: fixed !important;
+  height: 100% !important;
+  white-space: nowrap !important;
+}
+
+.supermodal-not-mobile .supermodal-root::before {
+  content: '' !important;
+  display: inline-block !important;
+  height: 100% !important;
+  vertical-align: middle !important;
+  margin-right: -0.25em !important;
+}
+
+.supermodal-not-mobile .supermodal-root:before {
+  content: '' !important;
+  display: inline-block !important;
+  height: 100% !important;
+  vertical-align: middle !important;
+  margin-right: -0.25em !important;
+}
+
+.supermodal-backdrop {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  filter: alpha(opacity=50) !important;
+  background-color: black !important;
+  opacity: 0.5 !important;
+}
+
+.supermodal-positioner {
+  display: inline-block !important;
+  text-align: left !important;
+  white-space: normal !important;
+  position: relative !important;
+}
+
+.supermodal-not-mobile .supermodal-positioner {
+  vertical-align: middle !important;
+}
+
+.supermodal-close {
+  -webkit-appearance: none !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  background: none !important;
+  border: 0 !important;
+  position: absolute !important;
+  top: 15px !important;
+  right: 15px !important;
+  width: 21px !important;
+  font-size: 21px !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+  color: black !important;
+  text-shadow: 0 1px 0 white !important;
+  filter: alpha(opacity=20) !important;
+  opacity: 0.2 !important;
+}</style>­<style>/* Resets */
+
+.pubnation,
+.pn-modal-content,
+.pn-modal-content__cat,
+.pn-modal-content *,
+.pn-modal-content__cat * {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  font-weight: 400 !important;
+  vertical-align: baseline !important;
+  text-transform: none !important;
+  height: auto !important;
+  width: auto !important;
+  box-sizing: content-box !important;
+  transition: none !important;
+  box-shadow: none !important;
+  background: white !important;
+  border: none !important;
+}
+
+/* Highlighted AD Style */
+
+.pn-highlighted-ad {
+  box-shadow: 0 0 0 10px red !important;
+}
+
+/* Link Style */
+
+.pubnation {
+  font-size: 12px !important;
+  color: #a5a5a5 !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  margin-top: 2px !important;
+  background: none !important;
+  text-align: right !important;
+  display: inline-block !important;
+}
+
+/* Modal Styles */
+
+/* Defaults to Mobile Style */
+
+.pn-modal-content,
+.pn-modal-content__cat {
+  font-size: 12px !important;
+  line-height: 1 !important;
+  vertical-align: baseline !important;
+  padding: 10px 15px 13px !important;
+  position: relative !important;
+  background-color: white !important;
+  border-radius: 6px !important;
+  width: 600px !important;
+}
+
+.pn-modal-title {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  margin-bottom: 4px !important;
+  text-align: center !important;
+}
+
+.pn-modal-desc {
+  font-size: 14px !important;
+  line-height: 23px !important;
+  text-align: center !important;
+}
+
+.pn-modal-form {
+  margin: 15px 0 0 !important;
+}
+
+/* Only show in IE8,9 */
+
+.pn-modal-formLabel {
+  font-size: 16px !important;
+  color: black !important;
+  line-height: 1.2 !important;
+  margin-bottom: 8px !important;
+  display: none !important;
+}
+
+.pn-modal-input {
+  border: 1px solid #b0b0b0 !important;
+  color: #585858 !important;
+  display: block !important;
+  width: 100% !important;
+  padding: 14px !important;
+  margin: 0 0 10px !important;
+  border-radius: 4px !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+  font-size: 16px !important;
+  line-height: 1.2 !important;
+}
+
+.pn-submit,
+.pn-modal-content__cat .pn-form-submit {
+  font-size: 14px !important;
+  margin: 2px auto !important;
+  cursor: pointer !important;
+  background-color: #54b948 !important;
+  width: 100% !important;
+  display: block !important;
+  font-weight: bold !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+  border: none !important;
+  outline: none !important;
+  padding: 15px 40px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+.pn-submit:hover,
+.pn-modal-content__cat .pn-form-submit:hover {
+  background-color: #4eaf43 !important;
+}
+
+.pn-modal-footer {
+  text-align: center !important;
+  margin-top: 20px !important;
+  margin-bottom: 5px !important;
+}
+
+.pn-modal-footer-inner {
+  display: inline-block !important;
+  height: 14px !important;
+  margin: 0 auto !important;
+  color: #B0B0B0 !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  vertical-align: middle !important;
+  text-decoration: none !important;
+}
+
+.pn-modal-footer-logo {
+  height: 14px !important;
+  width: 14px !important;
+  vertical-align: middle !important;
+}
+
+.pn-modal-hidden {
+  display: none !important;
+}
+
+/* Desktop Styles */
+
+.supermodal-not-mobile .pn-submit,
+.supermodal-not-mobile .pn-modal-content__cat .pn-form-submit,
+.pn-modal-content__cat .supermodal-not-mobile .pn-form-submit {
+  width: 35% !important;
+  box-sizing: content-box !important;
+}
+
+.pn-modal-content__cat {
+  border-radius: 4px !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !important;
+  padding: 40px !important;
+}
+
+@media (min-width: 451px) {
+  .pn-modal-content__cat.pn-modal-content__cat {
+    width: 350px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .pn-modal-content__cat {
+    box-sizing: border-box !important;
+    width: 90% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+.pn-modal-content__cat .pn-modal-title {
+  font-size: 26px !important;
+  line-height: 32px !important;
+  font-weight: bold !important;
+}
+
+.pn-modal-content__cat .pn-modal-desc {
+  font-size: 16px !important;
+  line-height: 22px !important;
+  margin-top: 6px !important;
+}
+
+.pn-modal-content__cat .pn-modal-form {
+  margin-top: 11px !important;
+}
+
+.pn-modal-content__cat .pn-form-label {
+  display: block !important;
+  font-size: 16px !important;
+  line-height: 31px !important;
+}
+
+.pn-modal-content__cat .pn-form-inputRadio {
+  vertical-align: text-bottom !important;
+}
+
+.pn-modal-content__cat .pn-form-inputText {
+  margin-top: 10px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  font-size: 16px !important;
+  line-height: 18px !important;
+  height: 40px !important;
+  border: 1px solid #B0B0B0 !important;
+  padding: 11px 15px !important;
+  border-radius: 4px !important;
+}
+
+.pn-modal-content__cat .pn-form-submit {
+  margin-top: 20px !important;
+  margin-bottom: 0 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.supermodal-not-mobile .pn-modal-content__cat .pn-form-submit {
+  box-sizing: border-box !important;
+  width: 196px !important;
+  height: 48px !important;
+}
+
+.pn-modal-content__cat .pn-modal-footer {
+  margin-top: 16px !important;
+  margin-bottom: 0 !important;
+}
+
+.pn-modal-content__cat .supermodal-close {
+  font-size: 20px !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+@media (max-width: 630px) {
+  .supermodal-positioner {
+    width: 100% !important;
+  }
+
+  .pn-modal-content,
+  .pn-modal-content__cat {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  .pn-submit,
+  .pn-modal-content__cat .pn-form-submit {
+    padding: 15px 20px !important;
+  }
+}</style><div class="supermodal-root pn-report-modal" id="pn-report-modal" style="z-index: 2147483647">
+  <div class="supermodal-backdrop"></div>
+  <div class="supermodal-positioner">
+
+    <div class="pn-modal-content__cat">
+
+      <div class="pn-modal-box pn-modal-form-box">
+        <div class="pn-modal-title">Report this ad</div>
+        <div class="pn-modal-desc">Help us understand the problem. What's the main reason you're reporting this ad?</div>
+
+        <form class="pn-modal-form" id="pn-modal-form">
+
+          <label class="pn-form-label">
+            <input class="pn-form-inputRadio pn-js-category" type="radio" name="category" value="Autoplay Audio" /> It plays sounds.
+          </label>
+          <label class="pn-form-label">
+            <input class="pn-form-inputRadio pn-js-category" type="radio" name="category" value="Ad Speed" /> It slows down the site.
+          </label>
+          <label class="pn-form-label">
+            <input class="pn-form-inputRadio pn-js-category" type="radio" name="category" value="Inappropriate Content" /> It contains adult content.
+          </label>
+          <label class="pn-form-label">
+            <input class="pn-form-inputRadio pn-js-category" type="radio" name="category" value="Covers Page" /> It covers the page.
+          </label>
+          <label class="pn-form-label">
+            <input class="pn-form-inputRadio pn-js-category" type="radio" name="category" value="General" /> I don't like it.
+          </label>
+          <label class="pn-form-label">
+            <input class="pn-form-inputRadio pn-js-category" type="radio" name="category" value="Other" checked="" /> Something else.
+          </label>
+
+          <input class="pn-form-inputText" id="pn-message-input" type="text" name="message" placeholder="Describe the ad" />
+
+          <input class="pn-form-submit" type="submit" value="Report the Ad" />
+        </form>
+      </div>
+
+      <div class="pn-modal-box pn-modal-complete-box pn-modal-hidden">
+        <div class="pn-modal-title">Thank you!</div>
+        <div class="pn-modal-desc">Thank you for letting us know.</div>
+      </div>
+
+      <div class="pn-modal-footer">
+        <a class="pn-modal-footer-inner" href="http://pubnation.com" target="_blank">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAAAAXNSR0IArs4c6QAABERJREFUSA2tlltoXFUUhjOXRDOxoRAlBScUoRKs2ATxpRIfpBSVUs2NtIwQCdQG+pCiUh+kl/ECbZ/EPAhRK0JjmoYkE8EHhbZKlRZEREqlFmKhN8SH6ODUJs1MZvz+nbOGk+RMMilZsM5ee93+vfb1hCqWoYGBgcq6urqnw+Hws/ATuDbCDfC6QqFQq9BQKPQvTQa+CV/N5/NX4AtTU1O/9Pb2ZtEFUmixNpVKrSdpGwnF27DHFvuU2b9LnrNwijyptra2tD+uCDw6OvpMJBLZj1MnDg/6ndZAnmEAo3Nzcx91dnb+rHwOeGJi4hvkF0oBEHSdAV3UNDLlk/hNwZpe0Tq4DtsmLQe+W/Hd6CzBn29bW1tfjHq2JaAk+BEehr/u6Oi4HpwjWDs2NraRQezEuotBtPi9yLddfas478kFRv5JLpf7sKur66o/4H7lkZGRxmg0+gYD2SsMgLOsd5UBa/ep+gzT4Hbr/QKVimM5tfu1LDNgVIc9x5zXWt/rrl1Dpa5IMroj5tYYZY61EEqkHCiO3Pv475EvsZ8xdYdWisPfFaWplq9tLqvY+ivleRyHDZ6T5HLIFcUAZuXsRkFnxossq+JyUAJ8XG4qdlhW4bTnGOrv73+gr6/vnj+QnfkoO3MfO9Oma4vPvoWNc1R9TkSeE/ExJ+K2z15BvEAXYLkOo/ibqh+Tczwef4hmAXBVVZXO4juyi/CdF+Zl3eHiCo0L30uIp9U3mp2drUFv3X8k2FTfMC1J9QisKQEat4Tkd1hW/qQZqP5J5F+tr5Y79jzVJAlyA0XVActP9Bs8JoFYzfZ5yX7iDdhsfezXJNtUnyHpASkAeInmS8lGXJl/Ir9rfY5TI/4OGLDLHKcjZgtqvZzORNw5Ca6CdDqtUd6VgkQ7BgcH1+z24k2PAfayl/tONpv9QbID7unp0bM1LAVO62tqavZLXoauYLvhseSSVF9fvw/jw57DaXa8O8fF7cmW31RZWfk7wBEGkWYtnmKKb5XMWIZhaGioPhaLXRYwOedoG1mWPxTqKpbASCYBdWurqlmXU8lk0jafXFZFxIarq6tPEmTVDhqoEhWB1aHKN2nc4Qe8pampqV8JZFstNTc3HyPHdi/uNhW/5c9RnGpT8og/T7Xa5Q6QgK8ymcyr3d3d/5nPcq1uvoaGhs+JT8iPeL3126j2e/WNllTDun6HsXg8SPBKbW3tT1yLS/5SLIm1+DwH6AUDlR7gw4tBpV9SsZQi7+k7ON+b/5JEf43H29vbz6ApmG18fLwFsLdh/e4UCd8PAA18MksCKxrwLpJ9irjgXJPwGvpTtHppEsjurlaMR/rb2MufxoI724xqlwWWA8fsEe7a9wB5HQD3tEkfRPjoyJyYnp4+nEgk/gryMd2KwObIADYzgCTJ2xcPAJ020ATtEZZB53ZFKhvYMrHr4wC/Bu+Go4ANcwy/WO0v8P8H+qpWV2S+gQAAAABJRU5ErkJggg==" class="pn-modal-footer-logo" /> Powered by PubNation
+        </a>
+      </div>
+
+      <button class="supermodal-close">×</button>
+    </div>
+
+  </div>
+</div>
+<iframe id="google_osd_static_frame_7098415640648" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>
