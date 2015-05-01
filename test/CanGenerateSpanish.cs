@@ -119,12 +119,12 @@ namespace test
 		}
 
 
-		[TestCase("Yo conozco ella.", "I know her.")]
-		[TestCase("Ayer yo conocí ella.", "Yesterday I met her.")]
-		[TestCase("Todos los años yo conocía ella.", "Every year I knew her.")]
-		[TestCase("Yo conocería ella.", "I would know her.")]
-		[TestCase("Yo conoceré ella.", "I will meet her.")]
-		[TestCase("Ellas han conocido ella.", "They have known her.")]
+		[TestCase("Yo conozco a ella.", "I know her.")]
+		[TestCase("Ayer yo conocí a ella.", "Yesterday I met her.")]
+		[TestCase("Todos los años yo conocía a ella.", "Every year I knew her.")]
+		[TestCase("Yo conocería a ella.", "I would know her.")]
+		[TestCase("Yo conoceré a ella.", "I will meet her.")]
+		[TestCase("Ellas han conocido a ella.", "They have known her.")]
 
 		// nunca ha conocido -> has never met
 		public void HandlesVerbsThatChangeInterpretationWithTense(string expected, string translation)

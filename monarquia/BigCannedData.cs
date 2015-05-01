@@ -60,7 +60,44 @@ namespace monarquia
 			//AddVerbEnding ("ir", new CannedTranslation("a leer", "to read"));
 			AddVerbEnding ("ir", new CannedTranslation("allí", "there"));
 
-			AddVerbEnding ("conocer", new CannedTranslation ("ella", "her"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a ella", "her"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi padre", "my father"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi madre", "my mother"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi hermano", "my brother"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi hermana", "my sister"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi suegro", "my father-in-law"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi suegra", "my mother-in-law"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi cuñado", "my brother-in-law"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi cuñada", "my sister-in-law"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi esposo", "my husband"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi esposa", "my wife"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi abuelo", "my grandfather"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi abuela", "my grandmother"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi bisabuelo", "my great grandfather"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi bisabuela", "my great grandmother"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi hijo", "my son"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi hija", "my daughter"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi nieto", "my grandson"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi nieta", "my granddaughter"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi bisnieto", "my great grandson"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi bisnieta", "my great granddaughter"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi tío", "my uncle"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi tía", "my aunt"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi primo", "my cousin"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi prima", "my cousin"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi sobrino", "my nephew"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi sobrina", "my niece"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi padrastro", "my stepfather"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi madrastra", "my stepmother"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi hijastro", "my stepson"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi hijastra", "my stepdaughter"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi hermanastro", "my stepbrother"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi hermanastra", "my stepsister"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi padrino", "my godfather"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi madrina", "my godmother"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi ahijado", "my godson"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi ahijada", "my goddaughter"));
+			AddVerbEnding ("conocer", new CannedTranslation ("a mi conocido", "my acquaintance"));
 		}
 	}
 
