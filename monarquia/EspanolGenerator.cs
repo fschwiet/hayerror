@@ -111,34 +111,19 @@ namespace monarquia
 				List<ITranslateable> spanishPhrase = new List<ITranslateable> ();
 				spanishPhrase.Add (scenario.timeframe);
 				spanishPhrase.Add (subject);
-				spanishPhrase.Add (verb.ForSpanishConjugation (conjugation));
+				spanishPhrase.Add (verb.GetTranslateable (conjugation, cannedData, dataLoader));
 				spanishPhrase.Add (scenario.verbEnding);
 
-				//  some accumulated words may be empty strings
-				IEnumerable<string> accumulatedWords = spanishPhrase.Select(p => p.AsSpanish(pointOfView));
-
 				var result = resultTemplate.Clone ();
-				result.Original = MakeSentenceFromWords (accumulatedWords);
+				result.Original = MakeSentenceFromWords (spanishPhrase.Select(p => p.AsSpanish(pointOfView)));
 
 				result.HintsForTranslated = spanishPhrase.SelectMany (p => p.GetEnglishHints ()).ToList();
 
-				var englishVerb = cannedData.TranslateVerbFromSpanishToEnglish (dataLoader, verb, conjugation);
-
-				if (englishVerb != null) {
-
-					try {
-						List<string> accumulatedTranslation = new List<string> ();
-
-						accumulatedTranslation.Add (scenario.timeframe.AsEnglish (pointOfView));
-						accumulatedTranslation.Add (subject.AsEnglish(pointOfView));
-						accumulatedTranslation.Add (englishVerb.ForEnglishConjugation (conjugation).AsEnglish(pointOfView));
-						accumulatedTranslation.Add (scenario.verbEnding.AsEnglish(pointOfView));
-
-						result.Translated = MakeEnglishSentenceFromWords (phoneticData, accumulatedTranslation);					
-					}
-					catch(Exception) {
-						// ignore
-					}
+				try {
+					result.Translated = MakeEnglishSentenceFromWords (phoneticData, spanishPhrase.Select(p => p.AsEnglish(pointOfView)));					
+				}
+				catch(Exception) {
+					// ignore
 				}
 
 				results.Add (result);

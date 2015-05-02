@@ -9,10 +9,20 @@ namespace test
 	[TestFixture]
 	public class CanLoadConjugationInformation
 	{
+		DataLoader dataLoader;
+		ICannedData cannedData;
+
+		[TestFixtureSetUp]
+		public void Setup()
+		{
+			this.dataLoader = new DataLoader ("../../../data");
+			this.cannedData = new BigCannedData ();
+		}
+
 		[Test]
 		public void CanLoadIr ()
 		{
-			var allVerbs = new DataLoader("../../../data").GetAllSavedSpanishVerbs ();
+			var allVerbs = dataLoader.GetAllSavedSpanishVerbs ();
 
 			var verb = allVerbs.Single (v => v.Infinitive == "ir");
 
@@ -26,7 +36,7 @@ namespace test
 
 		[Test]
 		public void CanLoadGo () {
-			var allVerbs = new DataLoader("../../../data").GetAllSavedEnglishVerbs ();
+			var allVerbs = dataLoader.GetAllSavedEnglishVerbs ();
 
 			var verb = allVerbs.Single (v => v.Infinitive == "go");
 
@@ -41,7 +51,7 @@ namespace test
 		[Test]
 		public void MiscConjugationBugs () {
 
-			var allVerbs = new DataLoader("../../../data").GetAllSavedSpanishVerbs ();
+			var allVerbs = dataLoader.GetAllSavedSpanishVerbs ();
 
 			var verb = allVerbs.Single (v => v.Infinitive == "estar");
 
@@ -63,7 +73,6 @@ namespace test
 		[TestCase("se cortan", "cortar", PointOfView.ThirdPersonPluralFeminine)]
 		public void CanConjugateReflexively(string expected, string infinitive, PointOfView pointOfView)
 		{
-			var dataLoader = new DataLoader ("../../../data");
 			var allVerbs = dataLoader.GetAllSavedSpanishVerbs ();
 
 			var verb = allVerbs.SingleOrDefault (v => v.Infinitive == infinitive);
@@ -72,19 +81,19 @@ namespace test
 
 			var reflexiveVerb = new ReflexiveVerb (infinitive, dataLoader);
 
-			var result = reflexiveVerb.ForSpanishConjugation (Conjugation.Present).AsSpanish (pointOfView);
+			var result = reflexiveVerb.GetTranslateable (Conjugation.Present, cannedData, dataLoader).AsSpanish (pointOfView);
 
 			Assert.AreEqual (expected, result);
 		}
 
 		void AssertHasSpanishConjugation(string expected, Verb verb, Conjugation conjugation, PointOfView pointOfView)
 		{
-			Assert.AreEqual(expected, verb.ForSpanishConjugation(conjugation).AsSpanish(pointOfView));
+			Assert.AreEqual(expected, verb.ConjugatedForTense(conjugation, pointOfView));
 		}
 
 		void AssertHasEnglishConjugation(string expected, Verb verb, Conjugation conjugation, PointOfView pointOfView)
 		{
-			Assert.AreEqual(expected, verb.ForEnglishConjugation(conjugation).AsEnglish(pointOfView));
+			Assert.AreEqual(expected, verb.ConjugatedForTense(conjugation, pointOfView));
 		}
 	}
 }

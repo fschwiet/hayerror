@@ -15,14 +15,9 @@ namespace monarquia
 
 		public abstract string ConjugatedForTense (Conjugation conjugation, PointOfView pointOfView);
 
-		public ITranslateable ForSpanishConjugation(Conjugation conjugation) 
+		public ITranslateable GetTranslateable(Conjugation conjugation, ICannedData cannedData, DataLoader loader) 
 		{
-			return new SpanishVerbInstance (this, conjugation);
-		}
-
-		public ITranslateable ForEnglishConjugation(Conjugation conjugation)
-		{
-			return new EnglishVerbInstance (this, conjugation);
+			return new VerbInstance (this, conjugation, cannedData, loader);
 		}
 	}
 
@@ -101,48 +96,33 @@ namespace monarquia
 		}
 	}
 
-	public class SpanishVerbInstance : ITranslateable
+	public class VerbInstance : ITranslateable
 	{
-		Verb verb;
+		Verb spanishVerb;
+		Verb englishVerb;
 		Conjugation conjugation;
 
-		public SpanishVerbInstance(Verb verb, Conjugation conjugation)
+		public VerbInstance(Verb spanishVerb, Conjugation conjugation, ICannedData cannedData, DataLoader dataLoader)
 		{
-			this.verb = verb;
+			this.spanishVerb = spanishVerb;
+
+			if (cannedData != null)
+				this.englishVerb = cannedData.TranslateVerbFromSpanishToEnglish (dataLoader, spanishVerb, conjugation);
+			
 			this.conjugation = conjugation;
 		}
 
 		public override string AsSpanish (PointOfView pointOfView)
 		{
-			return verb.ConjugatedForTense (conjugation, pointOfView);
+			return spanishVerb.ConjugatedForTense (conjugation, pointOfView);
 		}
 
 		public override string AsEnglish (PointOfView pointOfView)
 		{
-			throw new InvalidOperationException ();
-		}
-	}
+			if (englishVerb == null)
+				throw new Exception ("Verb missing translation");
 
-
-	public class EnglishVerbInstance : ITranslateable
-	{
-		Verb verb;
-		Conjugation conjugation;
-
-		public EnglishVerbInstance(Verb verb, Conjugation conjugation)
-		{
-			this.verb = verb;
-			this.conjugation = conjugation;
-		}
-
-		public override string AsSpanish (PointOfView pointOfView)
-		{
-			throw new InvalidOperationException ();
-		}
-
-		public override string AsEnglish (PointOfView pointOfView)
-		{
-			return verb.ConjugatedForTense (conjugation, pointOfView);
+			return englishVerb.ConjugatedForTense (conjugation, pointOfView);
 		}
 	}
 }
