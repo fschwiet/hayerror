@@ -15,6 +15,11 @@ namespace monarquia
 		{
 			return new string[0];
 		}
+
+		public virtual IEnumerable<string> GetTags()
+		{
+			return new string[0];
+		}
 	}
 
 	//  All ITransalateables either implement NotComposed or Composed
@@ -92,6 +97,11 @@ namespace monarquia
 		public override IEnumerable<string> GetEnglishHints ()
 		{
 			return spanish.SelectMany (s => s.GetEnglishHints ());
+		}
+
+		public override IEnumerable<string> GetTags ()
+		{
+			return spanish.SelectMany (s => s.GetTags ()).Concat (english.SelectMany (e => e.GetTags ())).Distinct ();
 		}
 
 		public Composed WithEnglishAlternative(ITranslateable english) {

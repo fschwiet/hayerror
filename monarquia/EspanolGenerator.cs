@@ -82,9 +82,6 @@ namespace monarquia
 
 			resultTemplate.ExtraInfo = verb.Infinitive + " (" + conjugation.AsFriendlyString() + " tense)";
 
-			resultTemplate.Tags.Add ("conjugation:" + conjugation);
-			resultTemplate.Tags.Add ("verb:" + verb.Infinitive);
-
 			List<Exercise> results = new List<Exercise> ();
 
 			var selectedVerbEndings = cannedData.GetVerbEndings (verb.Infinitive, pointOfView).ToArray();
@@ -117,8 +114,8 @@ namespace monarquia
 
 				var result = resultTemplate.Clone ();
 				result.Original = MakeSentenceFromWords (spanishPhrase.Select(p => p.AsSpanish(pointOfView)));
-
 				result.HintsForTranslated = spanishPhrase.SelectMany (p => p.GetEnglishHints ()).ToList();
+				result.Tags = spanishPhrase.SelectMany (p => p.GetTags()).ToList ();
 
 				try {
 					result.Translated = MakeEnglishSentenceFromWords (phoneticData, spanishPhrase.Select(p => p.AsEnglish(pointOfView)));					

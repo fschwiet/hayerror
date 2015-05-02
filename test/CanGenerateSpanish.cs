@@ -138,6 +138,15 @@ namespace test
 		{
 			AssertHasTranslation (expected, translation);
 		}
+
+		[TestCase("Yo voy al cine.", new [] {"verb:ir", "conjugation:present"})]
+		public void ExercisesIncludeTags(string expectedPhrase, IEnumerable<string> expectedTags)
+		{
+			var exercise = allExercises.Single (e => e.Original == expectedPhrase);
+
+			Assert.Contains ("conjugation:Present", exercise.Tags);
+			Assert.Contains ("verb:ir", exercise.Tags);
+		}
 	}
 }
 

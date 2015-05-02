@@ -124,6 +124,11 @@ namespace monarquia
 
 			return englishVerb.ConjugatedForTense (conjugation, pointOfView);
 		}
+
+		public override IEnumerable<string> GetTags ()
+		{
+			return new [] { "verb:" + spanishVerb.Infinitive, "conjugation:" + conjugation };
+		}
 	}
 }
 
