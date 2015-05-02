@@ -76,12 +76,6 @@ namespace monarquia
 			ICannedData cannedData,
 			Conjugation conjugation)
 		{
-			Exercise resultTemplate = new Exercise ();
-
-			var subject = pointOfView.GetSubjectNoun ();
-
-			resultTemplate.ExtraInfo = verb.Infinitive + " (" + conjugation.AsFriendlyString() + " tense)";
-
 			List<Exercise> results = new List<Exercise> ();
 
 			var selectedVerbEndings = cannedData.GetVerbEndings (verb.Infinitive, pointOfView).ToArray();
@@ -99,7 +93,6 @@ namespace monarquia
 				};
 			}
 
-
 			foreach (var scenario in 
 				from verbEnding in selectedVerbEndings
 				from timeframe in selectedTimeframes
@@ -108,14 +101,15 @@ namespace monarquia
 			{
 				List<ITranslateable> spanishPhrase = new List<ITranslateable> ();
 				spanishPhrase.Add (scenario.timeframe);
-				spanishPhrase.Add (subject);
+				spanishPhrase.Add (pointOfView.GetSubjectNoun());
 				spanishPhrase.Add (scenario.verbPhrase);
 				spanishPhrase.Add (scenario.verbEnding);
 
-				var result = resultTemplate.Clone ();
+				var result = new Exercise();
 				result.Original = MakeSentenceFromWords (spanishPhrase.Select(p => p.AsSpanish(pointOfView)));
 				result.HintsForTranslated = spanishPhrase.SelectMany (p => p.GetEnglishHints ()).ToList();
 				result.Tags = spanishPhrase.SelectMany (p => p.GetTags()).ToList ();
+				result.ExtraInfo = string.Join (", ", spanishPhrase.SelectMany (p => p.GetExtraHints ()));
 
 				try {
 					result.Translated = MakeEnglishSentenceFromWords (phoneticData, spanishPhrase.Select(p => p.AsEnglish(pointOfView)));					
