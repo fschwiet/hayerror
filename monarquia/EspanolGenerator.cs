@@ -105,13 +105,14 @@ namespace monarquia
 
 			foreach (var scenario in 
 				from verbEnding in selectedVerbEndings
-				from tf in selectedTimeframes
-				select new { verbEnding, timeframe = tf }) 
+				from timeframe in selectedTimeframes
+				from verbPhrase in new [] {verb.GetTranslateable (conjugation, cannedData, dataLoader)}
+				select new { verbEnding, verbPhrase, timeframe }) 
 			{
 				List<ITranslateable> spanishPhrase = new List<ITranslateable> ();
 				spanishPhrase.Add (scenario.timeframe);
 				spanishPhrase.Add (subject);
-				spanishPhrase.Add (verb.GetTranslateable (conjugation, cannedData, dataLoader));
+				spanishPhrase.Add (scenario.verbPhrase);
 				spanishPhrase.Add (scenario.verbEnding);
 
 				var result = resultTemplate.Clone ();
