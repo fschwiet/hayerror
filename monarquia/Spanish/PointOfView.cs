@@ -40,6 +40,10 @@ namespace monarquia
 			return false;
 		}
 
+		public static bool IsFirstPerson(this PointOfView pointOfView) {
+			return pointOfView == PointOfView.FirstPerson || pointOfView == PointOfView.FirstPersonPlural;
+		}
+
 		public static bool IsSecondPerson(this PointOfView pointOfView) {
 			switch (pointOfView) {
 			case PointOfView.SecondPerson:

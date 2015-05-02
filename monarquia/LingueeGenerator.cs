@@ -16,7 +16,7 @@ namespace monarquia
 
 			List<Exercise> results = new List<Exercise> ();
 
-			var verb = LookupVerb (infinitive);
+			var verb = dataLoader.GetAllSavedSpanishVerbs().Single(v => v.Infinitive == infinitive);
 
 			var pointOfViewGroupedByConjugationEffect = new [] {
 				new [] { PointOfView.FirstPerson },

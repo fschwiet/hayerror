@@ -25,6 +25,50 @@ namespace monarquia
 	public abstract class NotComposed : ITranslateable {
 	}
 
+	public class SpanishOnly : NotComposed {
+
+		string value;
+
+		public SpanishOnly(string value) {
+			this.value = value;
+		}
+
+		public SpanishOnly() {
+		}
+
+		public override string AsEnglish (PointOfView pointOfView)
+		{
+			throw new Exception ("AsEnglish() called on SpanishOnly instance");
+		} 
+
+		public override string AsSpanish (PointOfView pointOfView)
+		{
+			return value;
+		}
+	}
+
+	public class EnglishOnly : NotComposed {
+
+		string value;
+
+		public EnglishOnly(string value) {
+			this.value = value;
+		}
+
+		public EnglishOnly() {
+		}
+
+		public override string AsSpanish (PointOfView pointOfView)
+		{
+			throw new Exception ("AsSpanish() called on EnglishOnly instance");
+		} 
+
+		public override string AsEnglish (PointOfView pointOfView)
+		{
+			return value;
+		}
+	}
+
 	public class Composed : ITranslateable {
 
 		ITranslateable[] spanish;

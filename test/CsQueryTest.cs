@@ -51,8 +51,6 @@ namespace test
 				}
 			}
 			*/
-
-			throw new Exception ("hi");
 		}
 	}
 }

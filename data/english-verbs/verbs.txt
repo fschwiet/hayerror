@@ -1,4 +1,5 @@
 climb
+cut
 drink
 eat
 fear

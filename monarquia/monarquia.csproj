@@ -77,13 +77,15 @@
     <Compile Include="Spanish\ITranslateable.cs" />
     <Compile Include="Commands\ScrapeDictionary.cs" />
     <Compile Include="BigCannedData.cs" />
-    <Compile Include="CannedData.cs" />
     <Compile Include="Commands\ViewExercises.cs" />
-    <Compile Include="Spanish\Article.cs" />
     <Compile Include="Commands\DownloadPhoneticForm.cs" />
     <Compile Include="CachedPhoneticData.cs" />
     <Compile Include="Spanish\Conjugation.cs" />
     <Compile Include="Spanish\Pronouns.cs" />
+    <Compile Include="English\Article.cs" />
+    <Compile Include="English\PossessiveAdjective.cs" />
+    <Compile Include="ICannedData.cs" />
+    <Compile Include="CannedDataBuilder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -95,5 +97,6 @@
   <ItemGroup>
     <Folder Include="Commands\" />
     <Folder Include="Spanish\" />
+    <Folder Include="English\" />
   </ItemGroup>
 </Project>

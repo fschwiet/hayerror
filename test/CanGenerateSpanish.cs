@@ -21,7 +21,6 @@ namespace test
 			} catch(InvalidOperationException) {
 				
 				var matchingExercises = allExercises.Where (e => e.Original == expected);
-				Console.WriteLine("has exercises for '" + expected + "':");
 				ExerciseGenerator.Exercise.WriteAsCsv (Console.Out, matchingExercises);
 
 				throw;
@@ -132,9 +131,9 @@ namespace test
 			AssertHasTranslation (expected, translation);
 		}
 
+		[TestCase("Yo me corto el pelo.", "I cut my hair.")]
 		[TestCase("Nos duchamos", "We shower.")]
-		[TestCase("Te miras al espejo", "You look at yourself in the mirror")]
-		[TestCase("I cut my hair", "I cut my hair")]
+		[TestCase("Te miras al espejo", "You look at yourself in the mirror.")]
 		public void CanDoReflexiveVerbs(string expected, string translation)
 		{
 			AssertHasTranslation (expected, translation);

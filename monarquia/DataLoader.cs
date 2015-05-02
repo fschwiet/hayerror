@@ -18,7 +18,7 @@ namespace monarquia
 			this.dataDirectory = dataDirectory;
 		}
 
-		public List<Verb> GetAllSpanishVerbs() {
+		public List<Verb> GetAllSavedSpanishVerbs() {
 
 			if (spanishVerbs != null)
 				return spanishVerbs;
@@ -57,7 +57,7 @@ namespace monarquia
 			return spanishVerbs = results;
 		}
 
-		public List<Verb> GetAllEnglishVerbs() {
+		public List<Verb> GetAllSavedEnglishVerbs() {
 
 			if (englishVerbs != null)
 				return englishVerbs;

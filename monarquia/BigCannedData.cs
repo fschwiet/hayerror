@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace monarquia
 {
-	public class BetterCannedData : CannedData 
+	public class BetterCannedData : CannedDataBuilder 
 	{
 		public static readonly IEnumerable<string> BetterVerbs = new string[] {
 			"ser"
@@ -15,6 +15,7 @@ namespace monarquia
 			HasEnglishTranslation ("ser", "is");
 			HasEnglishTranslation ("estar", "is");
 			HasEnglishTranslation ("ir", "go");
+			ReflexiveHasEnglishTranslation ("cortar", "cut");
 		
 			HasEnglishTranslation ("conocer", p => {
 				if (p == Conjugation.PastPreterite || p == Conjugation.Future)
@@ -98,6 +99,14 @@ namespace monarquia
 			AddVerbEnding ("conocer", new CannedTranslation ("a mi ahijado", "my godson"));
 			AddVerbEnding ("conocer", new CannedTranslation ("a mi ahijada", "my goddaughter"));
 			AddVerbEnding ("conocer", new CannedTranslation ("a mi conocido", "my acquaintance"));
+
+			AddVerbEnding ("cortar", new CannedTranslation ("la cadena", "the chain"));
+			AddVerbEnding ("cortar", new CannedTranslation ("los árboles", "the trees"));
+
+			var pelo = new CannedTranslation ("pelo", "hair");
+
+			AddVerbEnding ("cortarse", ((Composed)new SpanishOnly("el") + pelo).
+				WithEnglishAlternative ((Composed)new PossessiveAdjective() +  pelo));
 		}
 	}
 

@@ -12,7 +12,7 @@ namespace test
 		[Test]
 		public void CanLoadIr ()
 		{
-			var allVerbs = new DataLoader("../../../data").GetAllSpanishVerbs ();
+			var allVerbs = new DataLoader("../../../data").GetAllSavedSpanishVerbs ();
 
 			var verb = allVerbs.Single (v => v.Infinitive == "ir");
 
@@ -26,7 +26,7 @@ namespace test
 
 		[Test]
 		public void CanLoadGo () {
-			var allVerbs = new DataLoader("../../../data").GetAllEnglishVerbs ();
+			var allVerbs = new DataLoader("../../../data").GetAllSavedEnglishVerbs ();
 
 			var verb = allVerbs.Single (v => v.Infinitive == "go");
 
@@ -41,7 +41,7 @@ namespace test
 		[Test]
 		public void MiscConjugationBugs () {
 
-			var allVerbs = new DataLoader("../../../data").GetAllSpanishVerbs ();
+			var allVerbs = new DataLoader("../../../data").GetAllSavedSpanishVerbs ();
 
 			var verb = allVerbs.Single (v => v.Infinitive == "estar");
 
@@ -64,7 +64,7 @@ namespace test
 		public void CanConjugateReflexively(string expected, string infinitive, PointOfView pointOfView)
 		{
 			var dataLoader = new DataLoader ("../../../data");
-			var allVerbs = dataLoader.GetAllSpanishVerbs ();
+			var allVerbs = dataLoader.GetAllSavedSpanishVerbs ();
 
 			var verb = allVerbs.SingleOrDefault (v => v.Infinitive == infinitive);
 

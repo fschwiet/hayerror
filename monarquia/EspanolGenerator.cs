@@ -7,20 +7,44 @@ namespace monarquia
 {
 	public class EspanolGenerator : ExerciseGenerator
 	{
-		CannedData cannedData;
+		ICannedData cannedData;
 		CachedPhoneticData phoneticData;
 
-		public EspanolGenerator (CannedData cannedData, string dataDirectory)
+		public EspanolGenerator (ICannedData cannedData, string dataDirectory)
 			: base(dataDirectory)
 		{
 			this.phoneticData = new CachedPhoneticData(dataDirectory);
 			this.cannedData = cannedData;
 		}
 
-		public IEnumerable<Exercise> GetAll(){
+		List<Verb> GetAllVerbs ()
+		{
+			List<Verb> verbs = new List<Verb> ();
+			verbs.AddRange (dataLoader.GetAllSavedSpanishVerbs ());
+			var reflexiveVerbs = cannedData.GetReflexiveVerbs (dataLoader).Select (inf => new ReflexiveVerb (inf, dataLoader));
+			verbs.AddRange (cannedData.GetReflexiveVerbs (dataLoader).Select (inf => new ReflexiveVerb (inf, dataLoader)));
+			return verbs;
+		}
+
+		public Verb LookupVerb(string infinitive) {
+
+			var verb =  GetAllVerbs().SingleOrDefault (v => string.Equals (infinitive, v.Infinitive, StringComparison.InvariantCultureIgnoreCase));
+
+			if (verb == null) {
+				throw new Exception ("Verb does not have data: " + infinitive);
+			}
+
+			return verb;
+		}
+
+		public IEnumerable<Exercise> GetAll()
+		{
+			var verbs = GetAllVerbs ();
 
 			List<Exercise> results = new List<Exercise>();
-			foreach(var verb in allVerbs) {
+
+			foreach(var verb in verbs) 
+			{
 				results.AddRange(GetForVerb(verb, false));
 			}
 
@@ -49,7 +73,7 @@ namespace monarquia
 			Verb verb,
 			bool limitVariations, 
 			PointOfView pointOfView,
-			CannedData cannedData,
+			ICannedData cannedData,
 			Conjugation conjugation)
 		{
 			Exercise resultTemplate = new Exercise ();

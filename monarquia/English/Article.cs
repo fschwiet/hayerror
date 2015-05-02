@@ -2,15 +2,10 @@
 
 namespace monarquia
 {
-	public class Article : NotComposed
+	public class Article : EnglishOnly
 	{
 		public Article ()
 		{
-		}
-
-		public override string AsSpanish (PointOfView pointOfView)
-		{
-			throw new NotImplementedException ();
 		}
 
 		public override string AsEnglish (PointOfView pointOfView)

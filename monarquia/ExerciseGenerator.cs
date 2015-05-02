@@ -65,24 +65,12 @@ namespace monarquia
 			}
 		}
 
-		protected List<Verb> allVerbs;
 		protected Random random  = new Random ();
 		protected DataLoader dataLoader;
 
 		public ExerciseGenerator (string dataDirectory)
 		{
 			dataLoader = new DataLoader (dataDirectory);
-			allVerbs = dataLoader.GetAllSpanishVerbs ();
-		}
-
-		public Verb LookupVerb(string infinitive) {
-			var verb = allVerbs.SingleOrDefault (v => string.Equals (infinitive, v.Infinitive, StringComparison.InvariantCultureIgnoreCase));
-
-			if (verb == null) {
-				throw new Exception ("Verb does not have data: " + infinitive);
-			}
-
-			return verb;
 		}
 	}
 	

@@ -4,11 +4,13 @@ using System.Linq;
 
 namespace monarquia
 {
-	public class CannedData {
+
+	public class CannedDataBuilder : ICannedData {
 
 		Dictionary<string, List<ITranslateable>> AllVerbEndings = new Dictionary<string, List<ITranslateable>>(StringComparer.InvariantCultureIgnoreCase);
 		Dictionary<Conjugation, List<ITranslateable>> TimeExpressions = new Dictionary<Conjugation, List<ITranslateable>>();
 		Dictionary<string,Func<Conjugation,string>> VerbTranslations = new Dictionary<string, Func<Conjugation,string>> (StringComparer.InvariantCultureIgnoreCase);
+		Dictionary<string,Func<Conjugation,string>> ReflexiveVerbTranslations = new Dictionary<string, Func<Conjugation,string>> (StringComparer.InvariantCultureIgnoreCase);
 
 		protected void AddVerbEnding(string verbInfinitive, ITranslateable ending) {
 
@@ -62,14 +64,36 @@ namespace monarquia
 			VerbTranslations.Add (spanishInfinitive, infinitiveSelector);
 		}
 
+		public void ReflexiveHasEnglishTranslation(string spanishInfinitive, string englishInfinitive) {
+			ReflexiveVerbTranslations.Add (spanishInfinitive, p => englishInfinitive);
+		}
+
+		public IEnumerable<string> GetReflexiveVerbs (DataLoader dataLoader) {
+			return ReflexiveVerbTranslations.Select (t => t.Key);
+		}
+
 		public Verb TranslateVerbFromSpanishToEnglish(DataLoader loader, Verb verb, Conjugation conjugation) {
 
-			if (!VerbTranslations.ContainsKey (verb.Infinitive))
-				return null;
+			if (verb.Infinitive.EndsWith ("se")) {
+				var baseVerb = verb.Infinitive.Substring (0, verb.Infinitive.Length - 2);
 
-			var englishInfinitive = VerbTranslations [verb.Infinitive](conjugation);
+				if (ReflexiveVerbTranslations.ContainsKey (baseVerb)) {
 
-			return loader.GetAllEnglishVerbs ().Single (v =>  v.Infinitive == englishInfinitive);
+					var englishInfinitive = ReflexiveVerbTranslations [baseVerb] (conjugation);
+
+					return loader.GetAllSavedEnglishVerbs ().Single (v => v.Infinitive == englishInfinitive);
+				}
+			}
+
+			if (VerbTranslations.ContainsKey (verb.Infinitive)) {
+
+				var englishInfinitive = VerbTranslations [verb.Infinitive](conjugation);
+
+				return loader.GetAllSavedEnglishVerbs ().Single (v =>  v.Infinitive == englishInfinitive);
+			}
+
+			return null;
+
 		}
 	}
 	

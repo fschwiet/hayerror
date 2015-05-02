@@ -58,7 +58,7 @@ namespace monarquia
 
 		public ReflexiveVerb (string infinitive, DataLoader dataLoader)
 		{
-			this.underlyingVerb = dataLoader.GetAllSpanishVerbs ().Single (v => v.Infinitive == infinitive);
+			this.underlyingVerb = dataLoader.GetAllSavedSpanishVerbs ().Single (v => v.Infinitive == infinitive);
 		}
 
 		public override string Infinitive {
