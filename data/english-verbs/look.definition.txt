@@ -1,0 +1,735 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" data-placeholder-focus="false" class="supermodal-not-mobile"><head><!--Beanstock Nucleus Start-->
+<script async="" type="text/javascript" src="http://partner.googleadservices.com/gpt/pubads_impl_60.js"></script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/osd.js"></script></head><body data-datetime="2015-05-02T17:50:29" data-is-mobile="false" class="lang-en no-touch supports-machineTranslation supports-suggest supports-history supports-autoScroll supports-conjugationExpand supports-clearSearch"><iframe src="//ip.casalemedia.com/usermatchredir?s=180346&amp;cb=http%3A%2F%2Fcdn.beanstock.com%2Fpub%2Fpx%2Fpixel.html%3Fcx.uid.synccasale%3D__UID__" style="display: none;"></iframe><iframe src="//ads.pubmatic.com/AdServer/js/syncuppixels.html" style="display: none;"></iframe><iframe src="//match.adsrvr.org/track/cmf/generic?ttd_pid=beanstock&amp;ttd_tpi=http%3A%2F%2Fcdn.beanstock.com%2Fpub%2Fpx%2Fpixel.html%3Fcx.uid.syncttd%3D1" style="display: none;"></iframe><iframe src="//x.beanstock.co/pub/cx/d/bsm/xd.html?ixp2" style="display: none;"></iframe><iframe src="//x.beanstock.co/pub/cx/d/bsm/xd.html?ttd" style="display: none;"></iframe><script src="http://ib.adnxs.com/fpt?id=1576850&amp;size=728x90&amp;position=unknown&amp;reserve=0&amp;referrer=http%3A%2F%2Fwww.spanishdict.com%2Ftranslate%2Flook&amp;callback=c30171441"></script><script src="http://cdn.beanstock.com/pub/spanishdict/zm.js?15.5.2.12"></script><script src="http://ib.adnxs.com/fpt?id=1576850&amp;size=160x600&amp;position=unknown&amp;reserve=0&amp;referrer=http%3A%2F%2Fwww.spanishdict.com%2Ftranslate%2Flook&amp;callback=c45496153"></script><script src="http://cdn.beanstock.com/pub/spanishdict/zm.js?15.5.2.12"></script><script src="//cdn.beanstock.com/pub/spanishdict/aq.151-161.js"></script><script src="http://ib.adnxs.com/fpt?id=1576850&amp;size=300x250&amp;position=unknown&amp;reserve=0&amp;referrer=http%3A%2F%2Fwww.spanishdict.com%2Ftranslate%2Flook&amp;callback=c65759510"></script><script src="//geoh.beanstock.com/key=SAKD59X4RU899BSMBSMZ/ip=local?callback=_bsm_cb_997574"></script><script type="text/javascript" async="" src="http://report-ads-to.pubnation.com/dist/pnr.js?t=pn-053b5b698be780ef"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js"></script><script src="http://cdn.beanstock.com/pub/spanishdict/zm.js?15.5.2.12"></script><script src="//cdn.beanstock.com/pub/cx/1.52.3/cx.js"></script><script src="http://cdn.beanstock.com/pub/cx/flagTag.js"></script><img src="about:blank" style="display:none;" data-bsm-tag-url="http://cdn.beanstock.com/pub/cx/flagTag.js" data-bsm-flag="true" data-bsm-zone-map-url="http://cdn.beanstock.com/pub/spanishdict/zm.js" data-bsm-sizes="300x250 160x600 728x90" data-bsm-pub="spanishdict" data-bsm-pub-zone="spanishdict.com/asection" data-bsm-event-host="//helix.beanstock.co" onload="this.onerror()" onerror="(function(){function t(t,n,e,i,o,r,c){function u(){l=g[o],g[o]=h,m&amp;&amp;s()}function f(t){d[r](t)}function s(){if(!l)return void(m=!0);for(g[o]=l;d.length;)l[r](d.shift())}function a(t){var e=n.createElement('script'),i=t.getAttribute('data-bsm-tag-url');e.src=i,t.parentNode.insertBefore(e,t)}var l,d,g=t[i]=t[i]||{},h=g[o]||[],m=!1;d=h.slice(0),h=[u],g[o]=h,h[r]=f,h[c]=s,a(e)}t(window,document,this,'googletag','cmd','push','restore')}).call(this);" />
+<!--Beanstock Nucleus End-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" /><link rel="publisher" href="https://plus.google.com/106413713006018165072" /><link rel="search" title="SpanishDict.com" type="application/opensearchdescription+xml" href="http://www.spanishdict.com/toolbar_search.xml" /><link rel="alternate" hreflang="en" href="http://www.spanishdict.com/translate/look" /><link rel="alternate" hreflang="es" href="http://www.spanishdict.com/traductor/look" /><title>Look in Spanish | English to Spanish Translation</title><meta name="description" content="Translate Look in Spanish. Get the most accurate English to Spanish translations. Fast. Easy. Free." /><meta property="fb:app_id" content="123097127645" /><meta property="fb:admins" content="1675823057" /><meta property="og:type" content="article" /><meta property="og:site_name" content="SpanishDict" /><meta property="og:title" content="Check out the translation for &quot;look&quot; on SpanishDict!" /><meta property="og:description" content="Find out why SpanishDict is the web's most popular, free Spanish translation, dictionary, and conjugation site." /><meta property="og:image" content="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><meta property="og:url" content="http://www.spanishdict.com/translate/look?utm_source=social&amp;utm_medium=facebook&amp;utm_campaign=share" /><script async="" type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script><script type="application/ld+json">{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "http://www.spanishdict.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://www.spanishdict.com/translate/{search_term}",
+    "query-input": "required name=search_term"
+  }
+}</script><link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-152x152-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-144x144-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-120x120-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-114x114-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-76x76-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-72x72-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-57x57-precomposed.png" /><link rel="apple-touch-icon-precomposed" href="http://n1.sdcdns.com/img/common/apple-touch-icons/apple-touch-icon-precomposed.png" /><script>(function(global) {
+  global.SD_ENV="production";
+  global.SD_LOG_LEVEL="warning";
+  global.SD_LANG="en";
+  global.SD_GA_UA="UA-329211-2";
+  global.SD_MP="0d9d3502c20e893b403e6018cccf0388";
+})(this);</script><link rel="dns-prefetch" href="http://www.google-analytics.com" /><link rel="dns-prefetch" href="http://api.mixpanel.com" /><link rel="dns-prefetch" href="http://cdn.mxpnl.com" /><link rel="dns-prefetch" href="http://suggest1.spanishdict.com" /><link rel="dns-prefetch" href="http://translate1.spanishdict.com" /><meta name="viewport" content="width=1024" /><link rel="canonical" href="http://www.spanishdict.com/translate/look" /><script>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+  var gads = document.createElement("script");
+  gads.async = true;
+  gads.type = "text/javascript";
+  var useSSL = "https:" == document.location.protocol;
+  gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+  var node = document.getElementsByTagName("script")[0];
+  node.parentNode.insertBefore(gads, node);
+})();
+googletag.cmd.push(function() {
+  googletag.pubads().setTargeting('sd_is_mobile', 'false');
+  googletag.pubads().setTargeting('test_group', '15');
+});
+</script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_HEADER", [728, 90], "adTop").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_728_90_FOOTER", [728, 90], "adBot").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR", [300, 250], "adSide1").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_SIDEBAR_2", [300, 250], "adSide2").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_160_600_SIDEBAR", [160, 600], "adSideLong").addService(googletag.pubads());
+ });
+ </script> <script type="text/javascript">
+ googletag.cmd.push(function() {
+   googletag.defineSlot("/1027916/"+"BSM_300_250_CONTENT", [300, 250], "adContent").addService(googletag.pubads());
+ });
+ </script><script>googletag.cmd.push(function() {
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+});</script><link rel="stylesheet" href="http://n1.sdcdns.com/dist/desktop-717e9d10f2808a4d24ed23603cdb802a.gz.css" /><!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://n1.sdcdns.com/dist/desktop-ie8-f7fed1e39cc45ed918639c01178e6dc6.gz.css"><![endif]--><div class="header-wrapper"><div class="header header-container container"><div class="menu-bar"><div class="menu-nav menu-collapsed"><div class="menu-container"><div class="menu-selector"><div class="icon-menu-nav-selector"></div><div class="menu-selector-text">Menu</div><div class="menu-collapse"></div></div><div class="menu"><a href="http://www.spanishdict.com/"><div class="menu-item">Home</div></a><a href="http://www.spanishdict.com/translation"><div class="menu-item">Translation</div></a><a href="http://www.spanishdict.com/conjugation"><div class="menu-item">Conjugation</div></a><a href="http://www.spanishdict.com/learn"><div class="menu-item">Learn Spanish</div></a><a href="http://www.spanishdict.com/flashcards"><div class="menu-item">Flashcards</div></a><a href="http://www.spanishdict.com/grammar"><div class="menu-item">Grammar</div></a><a href="http://www.spanishdict.com/answers"><div class="menu-item">Q &amp; A</div></a><a href="http://www.spanishdict.com/wordoftheday"><div class="menu-item">Word of the Day</div></a><a href="#"><div class="menu-item menu-divider go-language">Ver en español</div></a><div class="menu-fluencia menu-divider"><div class="menu-fluencia-title">Want to learn Spanish?</div><div class="menu-fluencia-text"><span>Try Fluencia, an amazing learning program from SpanishDict.</span></div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=nav_menu&amp;h=1" target="_blank" data-sd-track-click-type="fluencia" class="menu-fluencia-link sd-track-click"><div class="menu-fluencia-button">Yes!</div></a></div></div></div></div><div class="menu-user menu-collapsed"><div class="menu-container"><div class="menu-selector unauthed"><a href="http://www.spanishdict.com/users/login" class="menu-selector-text">Sign in</a></div></div></div><a href="http://www.spanishdict.com/" class="header-logo"></a></div></div></div><div class="content-container container"><div class="ad-wrapper-wide"><div class="ad-728-90 adTop-results ad-wrapper"><div id="adTop" class="adTop"><script>googletag.cmd.push(function() {
+  googletag.display("adTop");
+});</script><div id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div><iframe id="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" name="google_ads_iframe_/1027916/BSM_728_90_HEADER_0__hidden__" width="0" height="0" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom; visibility: hidden; display: none;"></iframe></div><div data-target="adTop" class="pubnation">report this ad</div></div></div><div class="main-container"><div class="search"><div class="search-component search-form"><form action="/translation" method="post" accept-charset="utf-8" data-action="translation" class="search_query_to_url save-history"><span id="hidden-search">look</span><div class="search-form-parts search-collapse"><input id="hidden-input" name="isExpand" type="hidden" value="false" /><textarea name="text" id="query" type="search" data-suggest-host="suggest1.spanishdict.com:80" data-suggest-path="/dictionary/search_translate_auto_suggest" data-suggest-variation="0" placeholder="Enter Spanish or English text…" autocomplete="off" autocorrect="off" autocapitalize="off" class="search-form-input">look</textarea><div class="accents"><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add á to your text">á</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add é to your text">é</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add í to your text">í</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add ó to your text">ó</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add ú to your text">ú</span><span data-toggle="tooltip" title="" class="accents-letter" data-original-title="Add ñ to your text">ñ</span><span data-toggle="tooltip" title="" class="accents-letter accents-descender" data-original-title="Add ¿ to your text">¿</span><span data-toggle="tooltip" title="" class="accents-letter accents-descender" data-original-title="Add ¡ to your text">¡</span><span data-toggle="tooltip" title="" class="accents-audio-btn" data-original-title="Hear audio of the words"> </span></div><div data-toggle="tooltip" title="" class="search-expand-icon" data-original-title="Show the accent buttons and expand the search box."></div><div data-toggle="tooltip" title="" class="search-collapse-icon" style="display: none;" data-original-title="Collapse the search box"></div><button type="submit" class="search-form-button">Translate</button></div><div class="input-table"><table cellspace="0" cellpadding="0" dir="ltr" class="input-table-table"><tbody><tr><td><table cellspace="0" cellpadding="0" class="inner-input-table">
+<tbody></tbody></table></td></tr></tbody></table></div></form></div></div><div class="translate"><div class="card  "><div class="quickdef"><div class="source"><h1 class="source-text">look</h1><a href="http://audio1.spanishdict.com/audio?lang=en&amp;text=look" data-toggle="tooltip" title="" class="audio-start" data-original-title="Listen to an audio pronunciation"><span class="audio-blue"> </span></a></div><div class="lang"><div class="el"><a href="http://www.spanishdict.com/translate/mirar">mirar</a></div><span class="media-links"><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=mirar" data-toggle="tooltip" title="" class="audio-start" data-original-title="Listen to an audio pronunciation"><span class="audio-blue"> </span></a></span></div></div><div class="nav-content"><div class="nav-content-item nav-active"><a><span class="nav-content-item-text">Dictionary</span></a></div><div class="nav-content-item"><a href="http://www.spanishdict.com/conjugate/mirar"><span class="nav-content-item-text">Conjugation</span></a></div><div class="social-small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.spanishdict.com%2Ftranslate%2Flook%3Futm_source%3Dsocial%26utm_medium%3Dfacebook%26utm_campaign%3Dshare" class="social-small-icon social-small-facebook"></a><a target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20the%20translation%20for%20%22look%22%20on%20%40SpanishDict!&amp;amp;url=http%3A%2F%2Fspanishdict.com%2ftranslate%2Flook%3Futm_source%3Dsocial%26utm_medium%3Dtwitter%26utm_campaign%3Dshare" class="social-small-icon social-small-twitter"></a><a target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fspanishdict.com%2Ftranslate%2Flook%3Futm_source%3Dsocial%26utm_medium%3Dgoogleplus%26utm_campaign%3Dshare" class="social-small-icon social-small-gplus"></a></div></div><div class="dictionary-entry dictionary-chambers"><div class="LV0">
+<div class="dictionary_word" id="word_look ">
+<span class="head_word">look </span>
+<div class="box">
+</div> <span class="pron">[lʊk] </span>
+<div class="LV2">
+<span class="part_of_speech">noun</span>
+<div class="LV3">
+<span class="def_header">1. </span>
+<em>
+<em class="context">(act of looking)</em>
+</em>
+<ul class="examples">
+<li>
+<span>to have <i>or </i>take a look at something </span><span class="icon-dash"></span><em class="exB">mirar algo </em>
+<em class="context">
+</em> </li>
+<li>
+<span>to have a look for something </span><span class="icon-dash"></span><em class="exB">buscar algo </em>
+<em class="context">
+</em> </li>
+<li>
+<span>let me have a look </span><span class="icon-dash"></span><em class="exB">déjame ver </em>
+<em class="context">
+</em> </li>
+<li>
+<span>to have a look round the town </span><span class="icon-dash"></span><em class="exB">(ir a) ver la ciudad </em>
+<em class="context">
+</em> </li>
+<li>
+<span>to have a look through some magazines </span><span class="icon-dash"></span><em class="exB">ojear unas revistas </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">2. </span>
+<span class="def">mirada <em class="gender">(f)</em> </span> <em>
+<em class="context">(glance)</em>
+</em>
+<ul class="examples">
+<li>
+<span>a suspicious/angry look </span><span class="icon-dash"></span><em class="exB">una mirada recelosa/de </em>
+<em class="context">
+</em> <em class="exB">enfado <i>or</i> </em>
+<em class="context"> (especialmente español de España)</em> <em class="exB">enojo </em>
+<em class="context"> (especialmente <a class="tooltip" title="español de América">Am</a>)</em> </li>
+<li>
+<span>we got some very odd looks </span><span class="icon-dash"></span><em class="exB">nos miraron con cara rara </em>
+<em class="context">
+</em> </li>
+<li>
+<span>if looks could kill… </span><span class="icon-dash"></span><em class="exB">si las miradas mataran… </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">3. </span>
+<span class="def">aspecto <em class="gender">(m)</em> </span> <em>
+<em class="context">(appearance)</em>
+</em>
+<ul class="examples">
+<li>
+<span>I don't like the look of this at all! </span>
+<em class="context">(sentido figurado) </em> <span class="icon-dash"></span><em class="exB">no me gusta nada el cariz <i>or </i>la pinta que tiene esto </em>
+<em class="context">
+</em> </li>
+<li>
+<span>I don't like the look of him </span>
+<em class="context">(sentido figurado) </em> <span class="icon-dash"></span><em class="exB">me da mala espina </em>
+<em class="context">
+</em> </li>
+<li>
+<span>I don't like the look of those clouds </span><span class="icon-dash"></span><em class="exB">no me gusta la pinta de esas nubes </em>
+<em class="context">
+</em> </li>
+<li>
+<span>by the look of it </span><span class="icon-dash"></span><em class="exB">por lo que parece </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">4. </span>
+<em>
+<em class="context">(personal appearance)</em>
+</em>
+<ul class="examples">
+<li>
+<span>(good) looks </span><span class="icon-dash"></span><em class="exB">atractivo <em class="gender">(m) </em>, guapura <em class="gender">(f) </em>
+</em>
+<em class="context">
+</em> </li>
+<li>
+<span>looks don't matter </span><span class="icon-dash"></span><em class="exB">la belleza no es lo principal </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<span class="part_of_speech">transitive verb</span>
+<div class="LV3">
+<em class="def_also"> también: </em>
+<ul class="examples">
+<li>
+<span>I can never look him in the face again </span><span class="icon-dash"></span><em class="exB">nunca podré volver a mirarlo a la cara </em>
+<em class="context">
+</em> </li>
+<li>
+<span>to look somebody up and down </span><span class="icon-dash"></span><em class="exB">mirar a alguien de arriba abajo </em>
+<em class="context">
+</em> </li>
+<li>
+<span>look what you've done! </span><span class="icon-dash"></span><em class="exB">¡mira lo que has hecho! </em>
+<em class="context">
+</em> </li>
+<li>
+<span>look where you're going! </span><span class="icon-dash"></span><em class="exB">¡mira por dónde vas! </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+</div>
+<!--lv2-->
+<div class="LV2">
+<span class="part_of_speech">intransitive verb</span>
+<div class="LV3">
+<span class="def_header">5. </span>
+<span class="def">mirar</span> <em>
+<em class="context">(in general)</em>
+</em>, <span class="def">ver </span> <em> (<a class="tooltip" title="español de América">Am</a>)</em>
+<ul class="examples">
+<li>
+<span>to look at something/somebody </span><span class="icon-dash"></span><em class="exB">mirar algo/a alguien </em>
+<em class="context">
+</em> </li>
+<li>
+<span>he's not much to look at </span><span class="icon-dash"></span><em class="exB">no es gran cosa, es del montón </em>
+<em class="context">
+</em> </li>
+<li>
+<span>to look the other way </span>
+<em class="context">(sentido figurado) </em> <span class="icon-dash"></span><em class="exB">hacer la vista gorda </em>
+<em class="context">
+</em> </li>
+<li>
+<span>I'm just looking, thank you </span><span class="icon-dash"></span><em class="exB">sólo estoy mirando </em>
+<em class="context">(in shop)</em> </li>
+<li>
+<span>to look on the bright side </span><span class="icon-dash"></span><em class="exB">mirar el lado bueno (de las cosas) </em>
+<em class="context">
+</em> </li>
+<li>
+<span>to look to the future </span><span class="icon-dash"></span><em class="exB">mirar al futuro </em>
+<em class="context">
+</em> </li>
+<li>
+<span>look here! </span><span class="icon-dash"></span><em class="exB">¡mire usted! </em>
+<em class="context">
+</em> </li>
+<li>
+<span>(now) look! </span><span class="icon-dash"></span><em class="exB">¡mira! </em>
+<em class="context">
+</em> </li>
+<li>
+<span>I don't look at it that way </span><span class="icon-dash"></span><em class="exB">yo no lo miro de esa manera </em>
+<em class="context">
+</em> </li>
+<li>
+<span>look before you leap </span>
+<em class="context">(Prov) </em> <span class="icon-dash"></span><em class="exB">hay que pensar las cosas dos veces (antes de hacerlas) </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">6. </span>
+<em>
+<em class="context">(search)</em>
+</em>
+<ul class="examples">
+<li>
+<span>to look for something/somebody </span><span class="icon-dash"></span><em class="exB">buscar algo/a alguien </em>
+<em class="context">
+</em> </li>
+<li>
+<span>we've looked everywhere </span><span class="icon-dash"></span><em class="exB">hemos buscado <i>or</i> mirado <i>or</i> </em>
+<em class="context">
+</em> <em class="exB">nos hemos fijado por todas partes </em>
+<em class="context"> (<a class="tooltip" title="español de los países ribereños del Río de la Plata (Argentina, Uruguay y Paraguay)">RP</a>)</em> </li>
+</ul>
+</div>
+<!--lv3-->
+<div class="LV3">
+<span class="def_header">7. </span>
+<span class="def">parecer </span> <em>
+<em class="context">(seem, appear)</em>
+</em>
+<ul class="examples">
+<li>
+<span>to look old/ill </span><span class="icon-dash"></span><em class="exB">parecer viejo/enfermo </em>
+<em class="context">
+</em> </li>
+<li>
+<span>she looks tired </span><span class="icon-dash"></span><em class="exB">parece cansada </em>
+<em class="context">
+</em> </li>
+<li>
+<span>things are looking good/bad </span><span class="icon-dash"></span><em class="exB">las cosas van bien/mal </em>
+<em class="context">
+</em> </li>
+<li>
+<span>he doesn't look his age </span><span class="icon-dash"></span><em class="exB">no aparenta la edad que tiene </em>
+<em class="context">
+</em> </li>
+<li>
+<span>to look the part </span><span class="icon-dash"></span><em class="exB">dar la talla </em>
+<em class="context">
+</em> </li>
+<li>
+<span>what does she look like? </span><span class="icon-dash"></span><em class="exB">¿cómo es?, ¿qué aspecto tiene? </em>
+<em class="context">
+</em> </li>
+<li>
+<span>to look like somebody </span><span class="icon-dash"></span><em class="exB">parecerse a alguien </em>
+<em class="context">
+</em> </li>
+<li>
+<span>it looks like <i>or </i>as if… </span><span class="icon-dash"></span><em class="exB">parece que <i>or </i>como si… </em>
+<em class="context">
+</em> </li>
+<li>
+<span>it looks like rain </span><span class="icon-dash"></span><em class="exB">parece que va a llover </em>
+<em class="context">
+</em> </li>
+<li>
+<span>you look as if you've slept badly </span><span class="icon-dash"></span><em class="exB">tienes aspecto de haber dormido mal </em>
+<em class="context">
+</em> </li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="d-copyright"><a href="http://www.amazon.com/Websters-World-Concise-Spanish-Dictionary/dp/0471748366/&amp;tag=spani-20&amp;linkCode=ur2&amp;camp=1789&amp;creative=9325" rel="nofollow">Copyright © 2006 Harrap Publishers Limited</a></div></div><div class="dictionary-line"></div><div class="dictionary-entry dictionary-collins"><div class="entry"><div class="hw_unit"><span class="hw">look</span> <span class="pron">[lʊk]</span> </div><div class="gram_cat"><a name="noun"></a><div class="entry_pos">noun</div><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="label synonym">(glance)</span> <span class="tran_group"> <span class="tran_main">mirada <span class="tran_pos" title="feminine"> (f)</span>;</span> <span class="tran_main">vistazo <span class="tran_pos" title="masculine"> (m)</span></span></span><div class="phs_group"><span class="ph_unit"><span class="ph">to <em class="c">have</em> a look at sth</span></span><span class="tran_group"> <span class="tran">echar un vistazo a algo</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">let me have a look</span><span class="tran_group"> <span class="tran">déjame ver;</span></span></span><span class="ex_unit"> <span class="ex">have a look at this!</span><span class="tran_group"> <span class="tran">¡mira esto!;</span> <span class="tran">¡échale un vistazo a esto!;</span></span></span><span class="ex_unit"> <span class="ex">shall we have a look round the town?</span><span class="tran_group"> <span class="tran">¿damos una vuelta por la ciudad?;</span></span></span><span class="ex_unit"> <span class="ex">to have a look round a house</span><span class="tran_group"> <span class="tran">inspeccionar una casa</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">to <em class="c">take</em> a look at sth</span></span><span class="tran_group"> <span class="tran">echar un vistazo a algo</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">to take another <or> a second look at sth</or></span></span><span class="ex_unit"> <span class="ex">Harry took another look at his watch</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">take a look at this!</span><span class="tran_group"> <span class="tran">¡míra esto!;</span> <span class="tran">¡échale un vistazo a esto!;</span></span></span><span class="ex_unit"> <span class="ex">to take a good look at sth</span><span class="tran_group"> <span class="tran">mirar algo detenidamente;</span></span></span><span class="ex_unit"> <span class="ex">to take a long hard look at o.s.</span><span class="tran_group"> <span class="tran">examinarse a sí mismo detenidamente</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">before you start blaming other people you ought to take a long hard look at yourself</span></span><span class="ex_unit"> <span class="ex">after being out of work for a year Jimmy took a long hard look at himself and tried to analyse his failure to get employment</span></span><span class="ex_unit"> <span class="ex">she took a long hard look at herself and decided to be more positive about herself</span></span><span class="ex_unit"> <span class="ex">Assessing yourself means taking a long, hard look at yourself and seeing in what areas you have been affected</span></span><span class="ex_unit"> <span class="ex">...a campaign that forced the FDA to take a long, hard look at itself, to confront its faults and to do something about them</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">take a long hard look before deciding</span><span class="tran_group"> <span class="tran">antes de decidir conviene pensar muchísimo</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">do you <em class="c">want</em> a look?</span></span><span class="tran_group"> <span class="tran">¿quieres verlo?</span></span></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="label synonym">(expression)</span> <span class="tran_group"> <span class="tran_main">mirada <span class="tran_pos" title="feminine"> (f)</span></span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">an inquiring look</span></span><span class="ex_unit"> <span class="ex">with a nasty look in his eye</span></span><span class="ex_unit"> <span class="ex">she had an amused look on her face</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">she gave me a dirty look</span><span class="tran_group"> <span class="tran">me echó una mirada de odio;</span></span></span><span class="ex_unit"> <span class="ex">he gave me a furious look</span><span class="tran_group"> <span class="tran">me miró furioso;</span> <span class="tran">me lanzó una mirada furiosa;</span></span></span><span class="ex_unit"> <span class="ex">a look of despair</span><span class="tran_group"> <span class="tran">una cara de desesperación;</span></span></span><span class="ex_unit"> <span class="ex">we got some very odd looks</span><span class="tran_group"> <span class="tran">la gente nos miró extrañada;</span></span></span><span class="ex_unit"> <span class="ex">if looks could kill*...</span><span class="tran_group"> <span class="tran">si las miradas mataran ...</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">I told her what I thought and, if looks could kill, I'd be dead</span></span><span class="ex_unit"> <span class="ex">Melanie scowled at me. If looks could kill, I'd have been struck dead on the spot</span></span></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="label synonym">(search)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">to have a look for sth</span><span class="tran_group"> <span class="tran">buscar algo;</span></span></span><span class="ex_unit"> <span class="ex">I've had a good look for it already</span><span class="tran_group"> <span class="tran">lo he buscado ya en todas partes;</span></span></span><span class="ex_unit"> <span class="ex">have another look!</span><span class="tran_group"> <span class="tran">¡vuelve a buscar!</span></span></span></div></div><div class="sense_main"><a name="4"></a><span class="num">4</span>  <span class="label synonym">(air, appearance)</span> <span class="tran_group"> <span class="tran_main">aire <span class="tran_pos" title="masculine"> (m)</span>;</span> <span class="tran_main">aspecto <span class="tran_pos" title="masculine"> (m)</span>;</span> <span class="tran_main">pinta  <span class="label register">(informal)</span> <span class="tran_pos" title="feminine"> (f)</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">there's a mischievous look about that child</span><span class="tran_group"> <span class="tran">ese niño tiene pinta de pillo  <span class="label register">(informal)</span>;</span></span></span><span class="ex_unit"> <span class="ex">he had a sad look</span><span class="tran_group"> <span class="tran">tenía un aspecto <em class="or" title="en-gb">or</em> aire triste;</span></span></span><span class="ex_unit"> <span class="ex">he had the look of a sailor</span><span class="tran_group"> <span class="tran">tenía aire de marinero</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">by</em> the look(s) of it <em class="or" title="en-gb">or</em> things</span></span><span class="tran_group"> <span class="tran">a juzgar por las apariencias</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">by the look(s) of him ...</span><span class="tran_group"> <span class="tran">viéndole, se diría que ...</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">you can't <em class="c">go by</em> looks alone</span></span><span class="tran_group"> <span class="tran">es arriesgado juzgar por las apariencias nada más</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">to <em class="c">like</em> the look of sb/sth</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">We were only there for a few hours but I liked the look of the place</span></span><span class="ex_unit"> <span class="ex">He showed me a photo of his sister and I liked the look of her immediately</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">I don't like the look of him</span><span class="tran_group"> <span class="tran">me cae mal;</span> <span class="tran">no me fío de él;</span></span></span><span class="ex_unit"> <span class="ex">I don't like the look of it</span><span class="tran_group"> <span class="tran">no me gusta nada</span></span></span></div></div></div><div class="sense_main"><a name="5"></a><span class="num">5</span> <span class="drv">looks</span><span class="sense"> <span class="label synonym">(attractiveness)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">looks aren't everything</span><span class="tran_group"> <span class="tran">la belleza no lo es todo</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">good</em> looks</span></span><span class="tran_group"> <span class="tran">belleza <span class="tran_pos" title="feminine:singular"> (f)</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">she has <em class="c">kept</em> her looks</span></span><span class="tran_group"> <span class="tran">sigue tan guapa como siempre</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">she's <em class="c">losing</em> her looks</span></span><span class="tran_group"> <span class="tran">no es tan guapa como antes</span></span></div></span></div><div class="sense_main"><a name="6"></a><span class="num">6</span>  <span class="label synonym">(fashion)</span> <span class="tran_group"> <span class="tran_main">moda <span class="tran_pos" title="feminine"> (f)</span>;</span> <span class="tran_main">estilo <span class="tran_pos" title="masculine"> (m)</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">the 1999 look</span><span class="tran_group"> <span class="tran">la moda de 1999</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">the <em class="c">new</em> look</span></span><span class="tran_group"> <span class="tran">la nueva moda</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">I need a new look</span><span class="tran_group"> <span class="tran">quiero cambiar de imagen</span></span></span></div></div></div></div><div class="gram_cat"><a name="verb:intransitive"></a><div class="entry_pos">intransitive verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="label synonym">(see, glance)</span> <span class="tran_group"> <span class="tran_main">mirar</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">look!</span><span class="tran_group"> <span class="tran">¡mira!</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">Look! An eagle!</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">look here!</span><span class="tran_group"> <span class="tran">¡oye!;</span></span></span><span class="ex_unit"> <span class="ex">just look!</span><span class="tran_group"> <span class="tran">¡mira!;</span> <span class="tran">¡fíjate!;</span></span></span><span class="ex_unit"> <span class="ex">I'll look and see</span><span class="tran_group"> <span class="tran">voy a ver;</span></span></span><span class="ex_unit"> <span class="ex">look how she does it</span><span class="tran_group"> <span class="tran">fíjate cómo lo hace;</span></span></span><span class="ex_unit"> <span class="ex">look who's here!</span><span class="tran_group"> <span class="tran">¡mira quién está aquí!</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">look what a mess you've made!</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">to look into sb's <em class="c">eyes</em></span></span><span class="tran_group"> <span class="tran">mirarle a los ojos a algn</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">He took her in his arms and looked deep into her eyes</span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">to look the <em class="c">other way</em></span></span><span class="tran_group"> <span class="tran">mirar para el otro lado;</span></span><span class="tran_group"> <span class="tran">hacer como que no se da cuenta</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">to be looking over sb's <em class="c">shoulder</em></span></span><span class="tran_group"> <span class="tran">estar siempre vigilando a algn</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">I want to make decisions without my father looking over my shoulder the whole time and judging me</span></span><span class="ex_unit"> <span class="ex">to look over one's shoulder</span></span><span class="ex_unit"> <span class="ex">Do you intend spending the rest of your life looking over your shoulder, never knowing when your old friends will decide you're an embarrassment they would rather do without?</span></span><span class="ex_unit"> <span class="ex">he spends the whole time looking over his shoulder, in case he's spotted by somebody he grassed on</span></span></div></div><div class="idm_group"><div class="idm_unit"><span class="idm">to look down one's nose at sth/sb</span><span class="tran_group"> <span class="tran">menospreciar algo/a algn</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">She looks down her nose at romantic novels</span></span></div></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">look before you leap</span></span><span class="tran_group"> <span class="tran">mira bien lo que haces</span></span></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="label synonym">(search)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">look again!</span><span class="tran_group"> <span class="tran">¡vuelve a buscar!;</span></span></span><span class="ex_unit"> <span class="ex">you can't have looked far</span><span class="tran_group"> <span class="tran">no has mirado mucho;</span></span></span><span class="ex_unit"> <span class="ex">you should have looked more carefully</span><span class="tran_group"> <span class="tran">tendrías que haber mirado mejor</span></span></span></div></div><div class="sense_main"><a name="3"></a><span class="num">3</span>  <span class="label synonym">(seem, appear)</span> <span class="tran_group"> <span class="tran_main">parecer;</span> <span class="tran_main">verse; <span class="label geo" title="Latin America">(LAm)</span></span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">he looks about 60 (years old)</span><span class="tran_group"> <span class="tran">aparenta tener alrededor de los 60 años</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">to look one's <em class="c">age</em></span></span><span class="tran_group"> <span class="tran">aparentar <em class="or" title="en-gb">or</em> representar su edad</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">she doesn't look her age</span><span class="tran_group"> <span class="tran">no aparenta <em class="or" title="en-gb">or</em> representa la edad que tiene</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">it looks <em class="c">all right</em> to me</span></span><span class="tran_group"> <span class="tran">me parece que está bien</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">it will look <em class="c">bad</em></span></span><span class="tran_group"> <span class="tran">quedará mal</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">he wanted to look his <em class="c">best</em> for the interview</span></span><span class="tran_group"> <span class="tran">quería estar lo mejor (arreglado) posible para la entrevista</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">I don't look my best first thing in the morning</span><span class="tran_group"> <span class="tran">cuando me levanto por la mañana no estoy muy guapa que digamos</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">he just does it to look <em class="c">big</em></span></span><span class="tran_group"> <span class="tran">lo hace solo para impresionar</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">He tells all kinds of lies about his past, just so as to make himself look big</span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">they made me look a <em class="c">fool</em></span></span><span class="tran_group"> <span class="tran">me hicieron quedar como un idiota</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">they made me look <em class="c">foolish</em></span></span><span class="tran_group"> <span class="tran">me hicieron quedar en ridículo</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">he looks <em class="c">good</em> in a uniform</span></span><span class="tran_group"> <span class="tran">está muy guapo en uniforme</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">Manchester United are looking good for the championship</span><span class="tran_group"> <span class="tran">el Manchester United tiene muchas posibilidades de ganar el campeonato;</span></span></span><span class="ex_unit"> <span class="ex">it looks good on you</span><span class="tran_group"> <span class="tran">te sienta bien</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">he looks <em class="c">happy</em></span></span><span class="tran_group"> <span class="tran">parece contento</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">she wasn't looking <em class="c">herself</em></span></span><span class="tran_group"> <span class="tran">parecía otra;</span> <span class="tran">no parecía la misma</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph"><em class="c">how</em> does it look to you?</span></span><span class="tran_group"> <span class="tran">¿qué te parece?</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">how do I look?</span><span class="tran_group"> <span class="tran">¿cómo estoy?</span></span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">she's 70 but doesn't look <em class="c">it</em></span></span><span class="tran_group"> <span class="tran">tiene 70 años pero no los aparenta <em class="or" title="en-gb">or</em> representa</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">look <em class="c">lively</em>!</span></span><span class="tran_group"> <span class="tran">¡muévete!  <span class="label register">(informal)</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">that cake looks <em class="c">nice</em></span></span><span class="tran_group"> <span class="tran">ese pastel tiene buena pinta  <span class="label register">(informal)</span></span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">that hairstyle makes her look <em class="c">old</em></span></span><span class="tran_group"> <span class="tran">ese peinado la hace parece mayor</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">to look the <em class="c">part</em></span></span><span class="tran_group"> <span class="tran">parecerlo</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">Haydar was a crook. Today in his immense suit he looked the part</span></span><span class="ex_unit"> <span class="ex">My uncle was a professional boxer. He looked the part too, with his broken nose and cauliflower ear</span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">she looked <em class="c">prettier</em> than ever</span></span><span class="tran_group"> <span class="tran">estaba más guapa que nunca</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">how <em class="c">pretty</em> you look!</span></span><span class="tran_group"> <span class="tran">¡qué guapa estás!</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">it looks <em class="c">promising</em></span></span><span class="tran_group"> <span class="tran">parece prometedor</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">to make sb look <em class="c">small</em></span></span><span class="tran_group"> <span class="tran">rebajar a algn</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">He does everything he can to make me look small in front of my friends</span></span></div></div><div class="phs_group"><span class="ph_unit"><span class="ph">he looked <em class="c">surprised</em></span></span><span class="tran_group"> <span class="tran">hizo un gesto de extrañeza</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">he looks <em class="c">tired</em></span></span><span class="tran_group"> <span class="tran">parece cansado</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">to look <em class="c">well</em></span></span> <span class="label collate subject">[+person]</span> <span class="tran_group"> <span class="tran">tener buena cara</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">it looks well</span><span class="tran_group"> <span class="tran">parece muy bien;</span> <span class="tran">tiene buena apariencia</span></span></span></div></div></div><div class="sense_main"><a name="4"></a><span class="num">4</span> <div class="phs_group"><span class="ph_unit"><span class="ph">to look <em class="c">like</em></span></span></div><span class="sense"> <span class="label synonym">(be in appearance)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">what does she look like?</span><span class="tran_group"> <span class="tran">¿cómo es físicamente?</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">you can see what the house used to look like</span></span></div></span><span class="sense"><div class="ex_group"><span class="ex_unit"> <span class="ex">to look like sb</span> <span class="label synonym">(resemble)</span> <span class="tran_group"> <span class="tran">parecerse a algn;</span></span></span><span class="ex_unit"> <span class="ex">he looks like his brother</span><span class="tran_group"> <span class="tran">se parece a su hermano;</span></span></span><span class="ex_unit"> <span class="ex">this photo doesn't look like him</span><span class="tran_group"> <span class="tran">la foto no se le parece;</span> <span class="tran">en esta foto no parece él</span></span></span></div></span><span class="sense"> <span class="label synonym">(seem)</span> <div class="ex_group"><span class="ex_unit"> <span class="ex">it looks like cheese to me</span><span class="tran_group"> <span class="tran">a mí me parece (que es) queso;</span></span></span><span class="ex_unit"> <span class="ex">the festival looks like being lively</span><span class="tran_group"> <span class="tran">la fiesta se anuncia animada;</span></span></span><span class="ex_unit"> <span class="ex">it looks like rain</span><span class="tran_group"> <span class="tran">parece que va a llover</span></span></span></div><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">the rain doesn't look like stopping</span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">it certainly looks like it</span><span class="tran_group"> <span class="tran">parece que sí</span></span></span></div></span></div><div class="sense_main"><a name="5"></a><span class="num">5</span> <div class="phs_group"><span class="ph_unit"><span class="ph">to look <em class="c">as if</em> <em class="or" title="en-gb">or</em> as <em class="c">though</em>: it looks as if <em class="or" title="en-gb">or</em> as though the train will be late</span></span><span class="tran_group"> <span class="tran">parece que el tren va a llegar tarde</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">try to look as if <em class="or" title="en-gb">or</em> as though you're glad to see me</span><span class="tran_group"> <span class="tran">haz como que te alegras de verme;</span></span></span><span class="ex_unit"> <span class="ex">it doesn't look as if <em class="or" title="en-gb">or</em> as though he's coming</span><span class="tran_group"> <span class="tran">parece que no va a venir</span></span></span></div></div></div><div class="sense_main"><a name="6"></a><span class="num">6</span>  <span class="label synonym">(face)</span> <div class="phs_group"><span class="ph_unit"><span class="ph">it looks <em class="c">south</em></span></span> <span class="label collate subject">[+house]</span> <span class="tran_group"> <span class="tran">mira hacia el sur;</span> <span class="tran">está orientada hacia el sur</span></span></div></div><div class="sense_main"><a name="7"></a><span class="num">7</span>  <span class="label synonym">(seek)</span> <div class="phs_group"><span class="ph_unit"><span class="ph">they are looking <em class="c">to</em> make a profit</span></span><span class="tran_group"> <span class="tran">quieren sacar ganancias</span></span><div class="ex_group underlying"><span class="ex_unit"> <span class="ex">I was looking to unload the watches at whatever price I could get for them</span></span></div></div></div></div><div class="gram_cat"><a name="verb:transitive"></a><div class="entry_pos">transitive verb</div><div class="sense_main"><a name="1"></a><span class="num">1</span>  <span class="label synonym">(look at)</span> <span class="tran_group"> <span class="tran_main">mirar</span></span><div class="ex_group"><span class="ex_unit"> <span class="ex">to look sb (straight) in the eye(s) <em class="or" title="en-gb">or</em> in the face</span><span class="tran_group"> <span class="tran">mirar directamente a los ojos de algn;</span></span></span><span class="ex_unit"> <span class="ex">I would never be able to look her in the eye(s) <em class="or" title="en-gb">or</em> face again</span><span class="tran_group"> <span class="tran">no podría resistir su mirada, siempre me avergonzaría al verla;</span></span></span><span class="ex_unit"> <span class="ex">to look sb up and down</span><span class="tran_group"> <span class="tran">mirar a algn de arriba abajo</span></span></span></div></div><div class="sense_main"><a name="2"></a><span class="num">2</span>  <span class="label synonym">(pay attention to)</span> <div class="phs_group"><span class="ph_unit"><span class="ph">look <em class="c">what</em> you've done now!</span></span><span class="tran_group"> <span class="tran">¡mira lo que has hecho!</span></span></div><div class="phs_group"><span class="ph_unit"><span class="ph">look <em class="c">where</em> you're going!</span></span><span class="tran_group"> <span class="tran">¡fíjate por donde vas!</span></span></div></div></div><span class="note_header"><em class="em">Omission of article</em></span><div class="note">Don't translate the article "<em class="em">a</em>" in sentences like <em class="em">I'm looking for a flat</em>, when the number of such things is not significant since people normally only look for one at a time:</div><div class="ex_group"><span class="ex_unit"> <span class="ex">I'm looking for a flat</span><span class="tran_group"> <span class="tran"><em class="em">Estoy buscando piso</em></span></span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">He's looking for a secretary</span><span class="tran_group"> <span class="tran"><em class="em">Busca secretaria</em></span></span></span></div><div class="note">The personal <em class="em">a</em> is not used before people when the article is omitted as above.</div><div class="note">Do translate the article when the thing or person is qualified:</div><div class="ex_group"><span class="ex_unit"> <span class="ex">He's looking for a little flat</span><span class="tran_group"> <span class="tran"><em class="em">Busca un piso pequeño</em></span></span></span></div><div class="note">When translating examples like <em class="em">I'm looking for someone to ...</em> translate the English to-infinitive using <em class="em">que</em> + subjunctive:</div><div class="ex_group"><span class="ex_unit"> <span class="ex">I'm looking for someone to help with the children</span><span class="tran_group"> <span class="tran"><em class="em">Busco a alguien que me ayude con los niños</em></span></span></span></div><div class="ex_group"><span class="ex_unit"> <span class="ex">I'm looking for a mechanic to repair my car</span><span class="tran_group"> <span class="tran"><em class="em">Busco a un mecánico que me arregle el coche</em></span></span></span></div><div class="xref"><a class="xrhw" href="http://www.spanishdict.com/translate/look#">look</a> </div></div><div class="d-copyright"><a href="http://www.collinsdictionary.com/dictionary/english-spanish" rel="nofollow">Collins Complete Spanish Electronic Dictionary © HarperCollins Publishers 2011</a></div></div></div></div><div class="card machine"><a href="http://www.spanishdict.com/translate/look?t=1#mt-anchor" rel="nofollow"><div class="machine-img"></div><span class="machine-text">'look' </span><span class="machine-info">in our machine translators</span></a></div><div class="card fl-fourth-translation"><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=4thtranslation&amp;h=3" target="_blank" data-sd-track-click-type="fluencia" class="fluencia-link sd-track-click"><div class="fluencia-img"></div><div class="fluencia-text">Learn Spanish with Fluencia, the easiest way to learn Spanish from the creators of SpanishDict</div></a></div><div class="card"><div class="card-title">Verb Conjugations for mirar</div><div class="conj-row"><a href="http://www.spanishdict.com/answers/100043/gerund-form" target="_blank" class="conj-basic-label">Gerund:</a><span> mirando</span></div><div class="conj-row"><a href="http://www.spanishdict.com/answers/100044/past-participles" target="_blank" class="conj-basic-label">Participle:</a><span> mirado</span></div><a href="http://www.spanishdict.com/topics/show/112" class="vtable-label">Indicative<span class="icon-question-mark"></span></a><div class="vtable-wrapper"><table class="vtable"><tbody><tr><td class="vtable-empty"></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100045/present-tense" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He speaks* Spanish.">Present<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100046/preterite-simple-past" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He spoke* to my sister yesterday.">Preterite<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100048/imperfect-past" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He used to speak* Italian when he was a child.">Imperfect<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100050/conditional" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He would speak* French in France.">Conditional<span class="icon-question-mark"></span></a></td><td class="vtable-title"><a href="http://www.spanishdict.com/answers/100049/future" title="" data-toggle="tooltip" class="vtable-title-link" data-original-title="Tense example: *He will speak* Portuguese on his vacation next week.">Future<span class="icon-question-mark"></span></a></td></tr><tr><td class="vtable-pronoun">yo</td><td class="vtable-word  ">miro</td><td class="vtable-word  ">miré</td><td class="vtable-word  ">miraba</td><td class="vtable-word  ">miraría</td><td class="vtable-word  ">miraré</td></tr><tr><td class="vtable-pronoun">tú</td><td class="vtable-word  ">miras</td><td class="vtable-word  ">miraste</td><td class="vtable-word  ">mirabas</td><td class="vtable-word  ">mirarías</td><td class="vtable-word  ">mirarás</td></tr><tr><td class="vtable-pronoun">él/ella/Ud.</td><td class="vtable-word  ">mira</td><td class="vtable-word  ">miró</td><td class="vtable-word  ">miraba</td><td class="vtable-word  ">miraría</td><td class="vtable-word  ">mirará</td></tr><tr><td class="vtable-pronoun">nosotros</td><td class="vtable-word  ">miramos</td><td class="vtable-word  ">miramos</td><td class="vtable-word  ">mirábamos</td><td class="vtable-word  ">miraríamos</td><td class="vtable-word  ">miraremos</td></tr><tr><td class="vtable-pronoun">vosotros</td><td class="vtable-word  ">miráis</td><td class="vtable-word  ">mirasteis</td><td class="vtable-word  ">mirabais</td><td class="vtable-word  ">miraríais</td><td class="vtable-word  ">miraréis</td></tr><tr><td class="vtable-pronoun">ellos/ellas/Uds.</td><td class="vtable-word  ">miran</td><td class="vtable-word  ">miraron</td><td class="vtable-word  ">miraban</td><td class="vtable-word  ">mirarían</td><td class="vtable-word  ">mirarán</td></tr></tbody></table></div><a href="http://www.spanishdict.com/conjugate/mirar" class="card-button-full">View complete conjugation for <strong>mirar</strong></a></div><div class="ad-300-250 adContent-results ad-wrapper"><div id="adContent" class="adContent"><script>googletag.cmd.push(function() {
+  googletag.display("adContent");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0" name="google_ads_iframe_/1027916/BSM_300_250_CONTENT_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adContent" class="pubnation">report this ad</div></div><div id="feedback-query" class="card"><div class="card-title">Did this page answer your question?</div><form><div class="feedback-1"><a href="#" class="feedback-yes"><div class="icon-smile"></div><span>Yes</span></a><a href="#" class="feedback-no"><div class="icon-frown"></div><span>No</span></a></div><div class="feedback-2"><div id="feedback-categories"><div class="feedback-instructions">The page is...</div><div class="feedback-categories-select"><label><input type="radio" name="category" value="inaccurate" />Inaccurate</label><label><input type="radio" name="category" value="unclear" />Unclear</label><label><input type="radio" name="category" value="missingTranslations" />Missing translations</label><label><input type="radio" name="category" value="missingConjugations" />Missing conjugations</label><label><input type="radio" name="category" value="other" />Other</label></div></div><div class="feedback-instructions">What can we do to improve?</div><textarea id="feedback-comment" placeholder="Enter your comment..." required="" class="feedback-comment"></textarea><div class="feedback-instructions">How can we follow up with you? (Optional)</div><input id="feedback-query-email" type="email" placeholder="Enter your email" class="feedback-query-email" /><button type="submit" class="feedback-2-submit">Submit</button></div><div class="feedback-3"><span>Your feedback was sent. We appreciate your comments!</span></div></form></div></div><div class="sidebar-container"><div class="fluencia-sidebar card"><div class="card-title">Want to speak Spanish?</div><div class="fluencia-sidebar-text">Try Fluencia, an amazing learning program from SpanishDict.</div><a href="http://www.fluencia.com/learn-spanish/?utm_source=sd_desktop&amp;utm_medium=sidebar&amp;h=2" target="_blank" data-sd-track-click-type="fluencia" class="fluencia-sidebar-button sd-track-click">Join now</a></div><div class="ad-300-250 adSide-results sidebar-box ad-wrapper"><div id="adSide1" class="adSide1"><script>googletag.cmd.push(function() {
+  googletag.display("adSide1");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0" name="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSide1" class="pubnation">report this ad</div></div><div class="wotd-sidebar card"><div class="card-title">Word of the Day</div><div class="wotd-sidebar-date">May 02</div><a href="http://www.spanishdict.com/wordoftheday/2378/el-dueo" class="wotd-sidebar-word">el dueño</a><a href="http://audio1.spanishdict.com/audio?lang=es&amp;text=el-due%C3%B1o" data-toggle="tooltip" title="" class="audio-start" data-original-title="Listen to an audio pronunciation"><span class="audio-blue"> </span></a><div class="wotd-sidebar-translation">owner</div><div class="wotd-sidebar-prompt">Get the free word of the day!</div><form action="/users/signup_email_verify" method="post" class="wotd-sidebar-form"><input name="email" type="email" placeholder="email" class="wotd-sidebar-input" /><button type="submit" data-sd-track-click-type="wotd" class="wotd-sidebar-button sd-track-click">Subscribe</button></form></div><div class="ad-300-250 adSide-results sidebar-box ad-wrapper"><div id="adSide2" class="adSide2"><script>googletag.cmd.push(function() {
+  googletag.display("adSide2");
+});</script><div id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0" name="google_ads_iframe_/1027916/BSM_300_250_SIDEBAR_2_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSide2" class="pubnation">report this ad</div></div><div class="social-sidebar card"><div class="card-title">Stay Connected</div><a href="https://www.facebook.com/pages/SpanishDict/92805940179" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="facebook" class="social-sidebar-button facebook sd-track-click"><div class="social-logo social-facebook-logo"></div></a><a href="https://plus.google.com/106413713006018165072/posts" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="google" class="social-sidebar-button gplus sd-track-click"><div class="social-logo social-gplus-logo"></div></a><a href="https://twitter.com/spanishdict" target="_blank" data-sd-track-click-type="social" data-sd-track-click-text="twitter" class="social-sidebar-button twitter sd-track-click"><div class="social-logo social-twitter-logo"></div></a></div><div class="ad-160-600 adSide-long-results sidebar-box-long ad-wrapper"><div id="adSideLong" class="adSideLong"><script>googletag.cmd.push(function() {
+  googletag.display("adSideLong");
+});</script><div id="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0" name="google_ads_iframe_/1027916/BSM_160_600_SIDEBAR_0" width="160" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adSideLong" class="pubnation">report this ad</div></div></div><div class="ad-wrapper-wide"><div class="ad-728-90 adBot-results ad-wrapper"><div id="adBot" class="adBot"><script>googletag.cmd.push(function() {
+  googletag.display("adBot");
+});</script><div id="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0" name="google_ads_iframe_/1027916/BSM_728_90_FOOTER_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div data-target="adBot" class="pubnation">report this ad</div></div></div></div><div class="footer-wrapper"><div class="footer footer-container container"><div class="footer-row"><div class="footer-item"><h4>Stay Connected</h4><div class="footer-social"><div class="social"><a href="http://www.facebook.com/pages/SpanishDict/92805940179"><div class="social-icon social-facebook"></div></a><a href="http://www.twitter.com/spanishdict"><div class="social-icon social-twitter"></div></a><a href="https://plus.google.com/106413713006018165072/posts"><div class="social-icon social-gplus"></div></a></div></div></div><div class="footer-item"><h4>iPhone</h4><a href="http://itunes.apple.com/us/app/spanishdict/id332510494"><div class="footer-external footer-external-appstore"></div></a></div><div class="footer-item"><h4>Android</h4><a href="https://play.google.com/store/apps/details?id=com.spanishdictapp"><div class="footer-external footer-external-google-play"></div></a></div><div class="footer-item footer-item-last"><h4>Kindle</h4><a href="http://www.amazon.com/SpanishDict-Spanish-English-Dictionary-and-More/dp/B004UO8ZNQ"><div class="footer-external footer-external-amazon"></div></a></div></div><div class="footer-row"><div class="footer-item"><h4>Spanish Reference</h4><ul><li><a href="http://www.spanishdict.com/translation">English to Spanish translation</a></li><li><a href="http://www.spanishdict.com/translation">Spanish to English translation</a></li><li><a href="http://www.spanishdict.com/dictionary">English to Spanish dictionary</a></li><li><a href="http://www.spanishdict.com/dictionary">Spanish to English dictionary</a></li></ul></div><div class="footer-item"><h4>Learn Spanish</h4><ul><li><a href="http://www.spanishdict.com/learn">Learn Spanish</a></li><li><a href="http://www.spanishdict.com/flashcards">Spanish Flashcards</a></li><li><a href="http://www.spanishdict.com/conjugation">Spanish Verb Conjugation</a></li><li><a href="http://www.spanishdict.com/answers">Spanish-English Q&amp;A</a></li></ul></div><div class="footer-item"><h4>Popular Translations</h4><ul><li><a href="http://www.spanishdict.com/translate/baby">baby in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/happy">happy in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/I love you">I love you in Spanish</a></li><li><a href="http://www.spanishdict.com/translate/stop">stop in Spanish</a></li></ul></div><div class="footer-item footer-item-last"><h4>Popular Conjugations</h4><ul><li><a href="http://www.spanishdict.com/conjugate/ir">ir conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/seguir">seguir conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/decir">decir conjugation</a></li><li><a href="http://www.spanishdict.com/conjugate/ser">ser conjugation</a></li></ul></div></div><div class="footer-meta"><div class="footer-meta-list"><ul><li><a href="http://www.spanishdict.com/company/about">About</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.fluencia.com/about-us/careers/">We're hiring!</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.spanishdict.com/company/privacy">Privacy</a><span class="footer-meta-list-item-bg"></span></li><li><a href="http://www.spanishdict.com/company/tos">Terms</a><span class="footer-meta-list-item-bg"></span></li><li><a href="#" class="go-language">Español</a></li></ul></div><span class="footer-copyright">© Curiosity Media, Inc.</span><div class="footer-exclamation-logo-wrapper"><div class="footer-exclamation-container"><img src="http://n1.sdcdns.com/img/desktop/logoAnimation.gif" class="footer-exclamation-logo" /></div></div></div></div></div><div class="feedback-tab"><button data-toggle="modal" data-target="#feedback-modal">Feedback</button></div><div id="feedback-modal" class="feedback-modal sd-modal modal fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="sd-modal-title">Feedback</div><div class="sd-modal-close feedback-modal-close"></div><div class="sd-modal-message feedback-modal-message"></div><div class="sd-modal-content feedback-modal-content"><div class="sd-modal-desc">SpanishDict is devoted to improving our site based on user feedback and introducing new and innovative features that will continue to help people learn and love the Spanish language. Have a suggestion, idea, or comment? Send us your feedback.</div><form><label for="feedback-name" class="sd-modal-label">Your name</label><input id="feedback-name" type="text" placeholder="Your name" /><label for="feedback-email" class="sd-modal-label">Email address</label><input id="feedback-email" type="email" placeholder="Email address" /><label for="feedback-subject" class="sd-modal-label">Subject</label><input id="feedback-subject" type="text" placeholder="Subject" required="" /><label for="feedback-message" class="sd-modal-label">Message</label><textarea id="feedback-message" placeholder="Message" rows="5" required=""></textarea><input type="submit" value="Send" class="sd-modal-submit feedback-modal-submit" /></form></div></div></div></div></div><div id="survey-modal" class="survey-modal modal"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="survey-modal-icon"></div><div class="survey-modal-title">Share Your Opinion, Win $100</div><div id="survey-modal-close" class="survey-modal-close"></div><div class="survey-modal-message"></div><div class="survey-modal-content"><div class="survey-modal-desc">You've been invited to complete a short survey to help improve SpanishDict. Five people who take the survey will be randomly selected to win $100 Amazon gift cards.</div><a id="survey-modal-submit" href="#" target="_blank" class="survey-modal-submit">Take the Survey</a></div></div></div></div></div><script id="sd_analytics" type="application/json">{&amp;quot;site&amp;quot;:&amp;quot;desktop&amp;quot;,&amp;quot;q&amp;quot;:&amp;quot;look&amp;quot;,&amp;quot;type&amp;quot;:&amp;quot;translation&amp;quot;,&amp;quot;is_found&amp;quot;:1,&amp;quot;browser_lang&amp;quot;:&amp;quot;en-US&amp;quot;,&amp;quot;result&amp;quot;:&amp;quot;look&amp;quot;,&amp;quot;result_lang&amp;quot;:&amp;quot;en&amp;quot;,&amp;quot;result_sources&amp;quot;:[&amp;quot;chambers&amp;quot;,&amp;quot;velazquez&amp;quot;,&amp;quot;collins&amp;quot;],&amp;quot;result_has_alt_lang&amp;quot;:false}</script><script src="http://n1.sdcdns.com/dist/vendor/jquery-min-1-11-0-5506e81cd13183312c8cf5425c9f8c5e.gz.js" type="text/javascript" crossorigin="anonymous"></script><script src="http://n1.sdcdns.com/dist/desktop-min-6f357978711d512c2f29dfbaffa33e0c.gz.js" type="text/javascript" crossorigin="anonymous"></script><!--[if lte IE 9]><script>(function() {
+  var app = document.createElement('script'); app.type = 'text/javascript'; app.async = true;
+  app.src = 'http://n1.sdcdns.com/js/vendor/placeholders.min.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(app, s);
+})();</script><![endif]--> <script type="text/javascript">
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');   ga('set', 'user_status1', 'anonymous');   ga('set', 'section2', 'translate');   ga('set', 'sd_is_mobile3', 'false');
+   ga('require', 'displayfeatures');
+   ga('create', 'UA-329211-2', 'auto');
+   ga('send', 'pageview');
+ </script><script>var _pnq = _pnq || [];
+_pnq.push(['setId', 'pn-053b5b698be780ef']);
+_pnq.push(['enable', 'categories']);
+(function() {
+  var pnr = document.createElement('script');
+  pnr.type = 'text/javascript';
+  pnr.async = true;
+  pnr.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'report-ads-to.pubnation.com/dist/pnr.js?t=pn-053b5b698be780ef';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(pnr, s);
+})();</script><script async="" type="text/javascript" src="http://www.googletagservices.com/tag/js/check_359604.js"></script><iframe src="http://tpc.googlesyndication.com/safeframe/1-0-2/html/container.html" style="visibility: hidden; display: none;"></iframe>­<style>.supermodal-not-mobile .supermodal-body-show {
+  overflow: hidden !important;
+}
+
+.supermodal-root {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  text-align: center !important;
+  display: none !important;
+  position: absolute !important;
+}
+
+.supermodal-root.supermodal-show {
+  display: block !important;
+}
+
+.supermodal-not-mobile .supermodal-root {
+  position: fixed !important;
+  height: 100% !important;
+  white-space: nowrap !important;
+}
+
+.supermodal-not-mobile .supermodal-root::before {
+  content: '' !important;
+  display: inline-block !important;
+  height: 100% !important;
+  vertical-align: middle !important;
+  margin-right: -0.25em !important;
+}
+
+.supermodal-not-mobile .supermodal-root:before {
+  content: '' !important;
+  display: inline-block !important;
+  height: 100% !important;
+  vertical-align: middle !important;
+  margin-right: -0.25em !important;
+}
+
+.supermodal-backdrop {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  filter: alpha(opacity=50) !important;
+  background-color: black !important;
+  opacity: 0.5 !important;
+}
+
+.supermodal-positioner {
+  display: inline-block !important;
+  text-align: left !important;
+  white-space: normal !important;
+  position: relative !important;
+}
+
+.supermodal-not-mobile .supermodal-positioner {
+  vertical-align: middle !important;
+}
+
+.supermodal-close {
+  -webkit-appearance: none !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  background: none !important;
+  border: 0 !important;
+  position: absolute !important;
+  top: 15px !important;
+  right: 15px !important;
+  width: 21px !important;
+  font-size: 21px !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+  color: black !important;
+  text-shadow: 0 1px 0 white !important;
+  filter: alpha(opacity=20) !important;
+  opacity: 0.2 !important;
+}</style>­<style>/* Resets */
+
+.pubnation,
+.pn-modal-content,
+.pn-modal-content__cat,
+.pn-modal-content *,
+.pn-modal-content__cat * {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  font-weight: 400 !important;
+  vertical-align: baseline !important;
+  text-transform: none !important;
+  height: auto !important;
+  width: auto !important;
+  box-sizing: content-box !important;
+  transition: none !important;
+  box-shadow: none !important;
+  background: white !important;
+  border: none !important;
+}
+
+/* Highlighted AD Style */
+
+.pn-highlighted-ad {
+  box-shadow: 0 0 0 10px red !important;
+}
+
+/* Link Style */
+
+.pubnation {
+  font-size: 12px !important;
+  color: #a5a5a5 !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  margin-top: 2px !important;
+  background: none !important;
+  text-align: right !important;
+  display: inline-block !important;
+}
+
+/* Modal Styles */
+
+/* Defaults to Mobile Style */
+
+.pn-modal-content,
+.pn-modal-content__cat {
+  font-size: 12px !important;
+  line-height: 1 !important;
+  vertical-align: baseline !important;
+  padding: 10px 15px 13px !important;
+  position: relative !important;
+  background-color: white !important;
+  border-radius: 6px !important;
+  width: 600px !important;
+}
+
+.pn-modal-title {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  margin-bottom: 4px !important;
+  text-align: center !important;
+}
+
+.pn-modal-desc {
+  font-size: 14px !important;
+  line-height: 23px !important;
+  text-align: center !important;
+}
+
+.pn-modal-form {
+  margin: 15px 0 0 !important;
+}
+
+/* Only show in IE8,9 */
+
+.pn-modal-formLabel {
+  font-size: 16px !important;
+  color: black !important;
+  line-height: 1.2 !important;
+  margin-bottom: 8px !important;
+  display: none !important;
+}
+
+.pn-modal-input {
+  border: 1px solid #b0b0b0 !important;
+  color: #585858 !important;
+  display: block !important;
+  width: 100% !important;
+  padding: 14px !important;
+  margin: 0 0 10px !important;
+  border-radius: 4px !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+  font-size: 16px !important;
+  line-height: 1.2 !important;
+}
+
+.pn-submit,
+.pn-modal-content__cat .pn-form-submit {
+  font-size: 14px !important;
+  margin: 2px auto !important;
+  cursor: pointer !important;
+  background-color: #54b948 !important;
+  width: 100% !important;
+  display: block !important;
+  font-weight: bold !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+  border: none !important;
+  outline: none !important;
+  padding: 15px 40px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+.pn-submit:hover,
+.pn-modal-content__cat .pn-form-submit:hover {
+  background-color: #4eaf43 !important;
+}
+
+.pn-modal-footer {
+  text-align: center !important;
+  margin-top: 20px !important;
+  margin-bottom: 5px !important;
+}
+
+.pn-modal-footer-inner {
+  display: inline-block !important;
+  height: 14px !important;
+  margin: 0 auto !important;
+  color: #B0B0B0 !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+  vertical-align: middle !important;
+  text-decoration: none !important;
+}
+
+.pn-modal-footer-logo {
+  height: 14px !important;
+  width: 14px !important;
+  vertical-align: middle !important;
+}
+
+.pn-modal-hidden {
+  display: none !important;
+}
+
+/* Desktop Styles */
+
+.supermodal-not-mobile .pn-submit,
+.supermodal-not-mobile .pn-modal-content__cat .pn-form-submit,
+.pn-modal-content__cat .supermodal-not-mobile .pn-form-submit {
+  width: 35% !important;
+  box-sizing: content-box !important;
+}
+
+.pn-modal-content__cat {
+  border-radius: 4px !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !important;
+  padding: 40px !important;
+}
+
+@media (min-width: 451px) {
+  .pn-modal-content__cat.pn-modal-content__cat {
+    width: 350px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .pn-modal-content__cat {
+    box-sizing: border-box !important;
+    width: 90% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+.pn-modal-content__cat .pn-modal-title {
+  font-size: 26px !important;
+  line-height: 32px !important;
+  font-weight: bold !important;
+}
+
+.pn-modal-content__cat .pn-modal-desc {
+  font-size: 16px !important;
+  line-height: 22px !important;
+  margin-top: 6px !important;
+}
+
+.pn-modal-content__cat .pn-modal-form {
+  margin-top: 11px !important;
+}
+
+.pn-modal-content__cat .pn-form-label {
+  display: block !important;
+  font-size: 16px !important;
+  line-height: 31px !important;
+}
+
+.pn-modal-content__cat .pn-form-inputRadio {
+  vertical-align: text-bottom !important;
+}
+
+.pn-modal-content__cat .pn-form-inputText {
+  margin-top: 10px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  font-size: 16px !important;
+  line-height: 18px !important;
+  height: 40px !important;
+  border: 1px solid #B0B0B0 !important;
+  padding: 11px 15px !important;
+  border-radius: 4px !important;
+}
+
+.pn-modal-content__cat .pn-form-submit {
+  margin-top: 20px !important;
+  margin-bottom: 0 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.supermodal-not-mobile .pn-modal-content__cat .pn-form-submit {
+  box-sizing: border-box !important;
+  width: 196px !important;
+  height: 48px !important;
+}
+
+.pn-modal-content__cat .pn-modal-footer {
+  margin-top: 16px !important;
+  margin-bottom: 0 !important;
+}
+
+.pn-modal-content__cat .supermodal-close {
+  font-size: 20px !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+@media (max-width: 630px) {
+  .supermodal-positioner {
+    width: 100% !important;
+  }
+
+  .pn-modal-content,
+  .pn-modal-content__cat {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  .pn-submit,
+  .pn-modal-content__cat .pn-form-submit {
+    padding: 15px 20px !important;
+  }
+}</style><div class="supermodal-root pn-report-modal" id="pn-report-modal" style="z-index: 2147483647">
+  <div class="supermodal-backdrop"></div>
+  <div class="supermodal-positioner">
+
+    <div class="pn-modal-content__cat">
+
+      <div class="pn-modal-box pn-modal-form-box">
+        <div class="pn-modal-title">Report this ad</div>
+        <div class="pn-modal-desc">Help us understand the problem. What's the main reason you're reporting this ad?</div>
+
+        <form class="pn-modal-form" id="pn-modal-form">
+
+          <label class="pn-form-label">
+            <input class="pn-form-inputRadio pn-js-category" type="radio" name="category" value="Autoplay Audio" /> It plays sounds.
+          </label>
+          <label class="pn-form-label">
+            <input class="pn-form-inputRadio pn-js-category" type="radio" name="category" value="Ad Speed" /> It slows down the site.
+          </label>
+          <label class="pn-form-label">
+            <input class="pn-form-inputRadio pn-js-category" type="radio" name="category" value="Inappropriate Content" /> It contains adult content.
+          </label>
+          <label class="pn-form-label">
+            <input class="pn-form-inputRadio pn-js-category" type="radio" name="category" value="Covers Page" /> It covers the page.
+          </label>
+          <label class="pn-form-label">
+            <input class="pn-form-inputRadio pn-js-category" type="radio" name="category" value="General" /> I don't like it.
+          </label>
+          <label class="pn-form-label">
+            <input class="pn-form-inputRadio pn-js-category" type="radio" name="category" value="Other" checked="" /> Something else.
+          </label>
+
+          <input class="pn-form-inputText" id="pn-message-input" type="text" name="message" placeholder="Describe the ad" />
+
+          <input class="pn-form-submit" type="submit" value="Report the Ad" />
+        </form>
+      </div>
+
+      <div class="pn-modal-box pn-modal-complete-box pn-modal-hidden">
+        <div class="pn-modal-title">Thank you!</div>
+        <div class="pn-modal-desc">Thank you for letting us know.</div>
+      </div>
+
+      <div class="pn-modal-footer">
+        <a class="pn-modal-footer-inner" href="http://pubnation.com" target="_blank">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAAAAXNSR0IArs4c6QAABERJREFUSA2tlltoXFUUhjOXRDOxoRAlBScUoRKs2ATxpRIfpBSVUs2NtIwQCdQG+pCiUh+kl/ECbZ/EPAhRK0JjmoYkE8EHhbZKlRZEREqlFmKhN8SH6ODUJs1MZvz+nbOGk+RMMilZsM5ee93+vfb1hCqWoYGBgcq6urqnw+Hws/ATuDbCDfC6QqFQq9BQKPQvTQa+CV/N5/NX4AtTU1O/9Pb2ZtEFUmixNpVKrSdpGwnF27DHFvuU2b9LnrNwijyptra2tD+uCDw6OvpMJBLZj1MnDg/6ndZAnmEAo3Nzcx91dnb+rHwOeGJi4hvkF0oBEHSdAV3UNDLlk/hNwZpe0Tq4DtsmLQe+W/Hd6CzBn29bW1tfjHq2JaAk+BEehr/u6Oi4HpwjWDs2NraRQezEuotBtPi9yLddfas478kFRv5JLpf7sKur66o/4H7lkZGRxmg0+gYD2SsMgLOsd5UBa/ep+gzT4Hbr/QKVimM5tfu1LDNgVIc9x5zXWt/rrl1Dpa5IMroj5tYYZY61EEqkHCiO3Pv475EvsZ8xdYdWisPfFaWplq9tLqvY+ivleRyHDZ6T5HLIFcUAZuXsRkFnxossq+JyUAJ8XG4qdlhW4bTnGOrv73+gr6/vnj+QnfkoO3MfO9Oma4vPvoWNc1R9TkSeE/ExJ+K2z15BvEAXYLkOo/ibqh+Tczwef4hmAXBVVZXO4juyi/CdF+Zl3eHiCo0L30uIp9U3mp2drUFv3X8k2FTfMC1J9QisKQEat4Tkd1hW/qQZqP5J5F+tr5Y79jzVJAlyA0XVActP9Bs8JoFYzfZ5yX7iDdhsfezXJNtUnyHpASkAeInmS8lGXJl/Ir9rfY5TI/4OGLDLHKcjZgtqvZzORNw5Ca6CdDqtUd6VgkQ7BgcH1+z24k2PAfayl/tONpv9QbID7unp0bM1LAVO62tqavZLXoauYLvhseSSVF9fvw/jw57DaXa8O8fF7cmW31RZWfk7wBEGkWYtnmKKb5XMWIZhaGioPhaLXRYwOedoG1mWPxTqKpbASCYBdWurqlmXU8lk0jafXFZFxIarq6tPEmTVDhqoEhWB1aHKN2nc4Qe8pampqV8JZFstNTc3HyPHdi/uNhW/5c9RnGpT8og/T7Xa5Q6QgK8ymcyr3d3d/5nPcq1uvoaGhs+JT8iPeL3126j2e/WNllTDun6HsXg8SPBKbW3tT1yLS/5SLIm1+DwH6AUDlR7gw4tBpV9SsZQi7+k7ON+b/5JEf43H29vbz6ApmG18fLwFsLdh/e4UCd8PAA18MksCKxrwLpJ9irjgXJPwGvpTtHppEsjurlaMR/rb2MufxoI724xqlwWWA8fsEe7a9wB5HQD3tEkfRPjoyJyYnp4+nEgk/gryMd2KwObIADYzgCTJ2xcPAJ020ATtEZZB53ZFKhvYMrHr4wC/Bu+Go4ANcwy/WO0v8P8H+qpWV2S+gQAAAABJRU5ErkJggg==" class="pn-modal-footer-logo" /> Powered by PubNation
+        </a>
+      </div>
+
+      <button class="supermodal-close">×</button>
+    </div>
+
+  </div>
+</div>
+<iframe id="google_osd_static_frame_507047532591" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

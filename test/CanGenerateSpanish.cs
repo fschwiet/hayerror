@@ -78,7 +78,7 @@ namespace test
 			AssertHasTranslation (expected, translation);
 		}
 
-		[TestCase("Yo preparo la cena.", null/*, "I prepare the dinner"*/)]
+		[TestCase("Yo preparo la cena.", null /*"I prepare the dinner."  prepare doesn't have conjugation downloadable on SD */)]
 		[TestCase("Ellos suben la escalera.", "They climb the stairs.")]
 		[TestCase("Ellas beben leche.", "They drink milk.")]
 		[TestCase("Él suma la cuenta.", null/*, "He adds up the check."*/)]
@@ -133,7 +133,7 @@ namespace test
 
 		[TestCase("Yo me corto el pelo.", "I cut my hair.")]
 		[TestCase("Nosotros nos duchamos.", "We shower.")]
-		[TestCase("Tú te miras al espejo", "You look at yourself in the mirror.")]
+		[TestCase("Tú te miras en el espejo.", "You look at yourself in the mirror.")]
 		public void CanDoReflexiveVerbs(string expected, string translation)
 		{
 			AssertHasTranslation (expected, translation);

@@ -17,6 +17,7 @@ namespace monarquia
 			HasEnglishTranslation ("ir", "go");
 			ReflexiveHasEnglishTranslation ("cortar", "cut");
 			ReflexiveHasEnglishTranslation ("duchar", "shower");
+			ReflexiveHasEnglishTranslation ("mirar", "look");
 		
 			HasEnglishTranslation ("conocer", p => {
 				if (p == Conjugation.PastPreterite || p == Conjugation.Future)
@@ -112,6 +113,11 @@ namespace monarquia
 			AddVerbEnding ("ducharse", new CannedTranslation ("", ""));
 			AddVerbEnding ("ducharse", new CannedTranslation ("con agua fría", "with cold water"));
 			AddVerbEnding ("ducharse", new CannedTranslation ("con agua caliente", "with hot water"));
+
+			AddVerbEnding ("mirarse", new CannedTranslation ("", ""));
+			AddVerbEnding ("mirarse", ((Composed)new SpanishOnly("en el espejo")).
+				WithEnglishAlternative((Composed)new EnglishOnly("at") + new ReflexivePronoun() + new EnglishOnly("in the mirror")));
+			//  Plural only: AddVerbEnding ("mirarse", new CannedTranslation ("uno a otro", "at one another"));
 		}
 	}
 

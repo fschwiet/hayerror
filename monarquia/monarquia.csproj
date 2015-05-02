@@ -86,6 +86,7 @@
     <Compile Include="English\PossessiveAdjective.cs" />
     <Compile Include="ICannedData.cs" />
     <Compile Include="CannedDataBuilder.cs" />
+    <Compile Include="English\ReflexivePronoun.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
