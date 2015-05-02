@@ -5,6 +5,7 @@ conocer
 cortar
 decir
 deshacer
+duchar
 estar
 gritar
 querer

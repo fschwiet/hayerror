@@ -132,8 +132,8 @@ namespace test
 		}
 
 		[TestCase("Yo me corto el pelo.", "I cut my hair.")]
-		[TestCase("Nos duchamos", "We shower.")]
-		[TestCase("Te miras al espejo", "You look at yourself in the mirror.")]
+		[TestCase("Nosotros nos duchamos.", "We shower.")]
+		[TestCase("Tú te miras al espejo", "You look at yourself in the mirror.")]
 		public void CanDoReflexiveVerbs(string expected, string translation)
 		{
 			AssertHasTranslation (expected, translation);

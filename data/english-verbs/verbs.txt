@@ -9,5 +9,6 @@ is
 know
 meet
 shout
+shower
 sum
 talk

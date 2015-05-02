@@ -16,6 +16,7 @@ namespace monarquia
 			HasEnglishTranslation ("estar", "is");
 			HasEnglishTranslation ("ir", "go");
 			ReflexiveHasEnglishTranslation ("cortar", "cut");
+			ReflexiveHasEnglishTranslation ("duchar", "shower");
 		
 			HasEnglishTranslation ("conocer", p => {
 				if (p == Conjugation.PastPreterite || p == Conjugation.Future)
@@ -107,6 +108,10 @@ namespace monarquia
 
 			AddVerbEnding ("cortarse", ((Composed)new SpanishOnly("el") + pelo).
 				WithEnglishAlternative ((Composed)new PossessiveAdjective() +  pelo));
+
+			AddVerbEnding ("ducharse", new CannedTranslation ("", ""));
+			AddVerbEnding ("ducharse", new CannedTranslation ("con agua fría", "with cold water"));
+			AddVerbEnding ("ducharse", new CannedTranslation ("con agua caliente", "with hot water"));
 		}
 	}
 
