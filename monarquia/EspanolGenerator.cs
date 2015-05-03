@@ -61,24 +61,13 @@ namespace monarquia
 				pointsOfView = ChoosePointOfViewsForDrill ();
 			}
 
-			foreach (var pointOfView in pointsOfView) {
-				results.AddRange (GetAllConjugationsForVerb (verb, limitVariations, pointOfView));
+			var framings = from p in pointsOfView
+				from c in Enum.GetValues(typeof(Conjugation)).Cast<Conjugation>()
+				select new Framing(p, c);
+
+			foreach (var framing in framings) {
+				results.AddRange (GetForVerbConjugation (verb, limitVariations, framing.PointOfView, cannedData, framing.Conjugation));
 			}
-
-			return results;
-		}
-
-
-		List<Exercise> GetAllConjugationsForVerb (Verb verb, bool limitVariations, PointOfView pointOfView)
-		{
-			List<Exercise> results = new List<Exercise> ();
-
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, cannedData, Conjugation.Present));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, cannedData, Conjugation.PastPreterite));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, cannedData, Conjugation.PastImperfect));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, cannedData, Conjugation.Future));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, cannedData, Conjugation.Conditional));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, cannedData, Conjugation.PresentPerfect));
 
 			return results;
 		}
@@ -90,34 +79,43 @@ namespace monarquia
 			ICannedData cannedData,
 			Conjugation conjugation)
 		{
+			var rootRoleSelection = new RoleSelection (new Framing (pointOfView, conjugation));
+			rootRoleSelection = rootRoleSelection.WithRole ("verbPhrase", verb.GetTranslateable (conjugation, cannedData, dataLoader));
+			rootRoleSelection = rootRoleSelection.WithRole ("subject", pointOfView.GetSubjectNoun ());
+			IEnumerable<RoleSelection> roleSelections = new [] { rootRoleSelection };
+
+			roleSelections = roleSelections.SelectMany (selection => {
+				var verbEndings = cannedData.GetVerbEndings (verb.Infinitive, pointOfView).ToArray ();
+				if (limitVariations) {
+					verbEndings = new [] {
+						verbEndings [random.Next (verbEndings.Length)]
+					};
+				}
+
+				return verbEndings.Select (ve => selection.WithRole ("verbEnding", ve));
+			});
+
+			roleSelections = roleSelections.SelectMany (selection => {
+				var timeframes = cannedData.GetTimeframeExpressions(conjugation).ToArray();
+
+				if (limitVariations) {
+					timeframes = new [] {
+						timeframes[random.Next(timeframes.Length)]
+					};
+				}			
+
+				return timeframes.Select (tf => selection.WithRole ("timeframe", tf));
+			});
+
 			List<Exercise> results = new List<Exercise> ();
 
-			var selectedVerbEndings = cannedData.GetVerbEndings (verb.Infinitive, pointOfView).ToArray();
-			if (limitVariations) {
-				selectedVerbEndings = new [] {
-					selectedVerbEndings [random.Next (selectedVerbEndings.Length)]
-				};
-			}
-
-			var selectedTimeframes = cannedData.GetTimeframeExpressions(conjugation).ToArray();
-
-			if (limitVariations) {
-				selectedTimeframes = new [] {
-					selectedTimeframes[random.Next(selectedTimeframes.Length)]
-				};
-			}
-
-			foreach (var scenario in 
-				from verbEnding in selectedVerbEndings
-				from timeframe in selectedTimeframes
-				from verbPhrase in new [] {verb.GetTranslateable (conjugation, cannedData, dataLoader)}
-				select new { verbEnding, verbPhrase, timeframe }) 
+			foreach (var roleSelection in roleSelections)
 			{
 				List<ITranslateable> spanishPhrase = new List<ITranslateable> ();
-				spanishPhrase.Add (scenario.timeframe);
-				spanishPhrase.Add (pointOfView.GetSubjectNoun());
-				spanishPhrase.Add (scenario.verbPhrase);
-				spanishPhrase.Add (scenario.verbEnding);
+				spanishPhrase.Add (roleSelection.GetForRole("timeframe"));
+				spanishPhrase.Add (roleSelection.GetForRole("subject"));
+				spanishPhrase.Add (roleSelection.GetForRole("verbPhrase"));
+				spanishPhrase.Add (roleSelection.GetForRole("verbEnding"));
 
 				var result = new Exercise();
 				result.Original = MakeSentenceFromWords (spanishPhrase.Select(p => p.AsSpanish(pointOfView)));
