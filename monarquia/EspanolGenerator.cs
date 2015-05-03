@@ -63,7 +63,7 @@ namespace monarquia
 
 			var framings = from p in pointsOfView
 				from c in Enum.GetValues(typeof(Conjugation)).Cast<Conjugation>()
-				select new Framing(p, c);
+				select new Frame(p, c);
 
 			foreach (var framing in framings) {
 				results.AddRange (GetForVerbConjugation (verb, limitVariations, framing.PointOfView, cannedData, framing.Conjugation));
@@ -79,10 +79,14 @@ namespace monarquia
 			ICannedData cannedData,
 			Conjugation conjugation)
 		{
-			var rootRoleSelection = new RoleSelection (new Framing (pointOfView, conjugation));
+			var rootRoleSelection = new RoleSelection (new Frame (pointOfView, conjugation));
 			rootRoleSelection = rootRoleSelection.WithRole ("verbPhrase", verb.GetTranslateable (conjugation, cannedData, dataLoader));
-			rootRoleSelection = rootRoleSelection.WithRole ("subject", pointOfView.GetSubjectNoun ());
 			IEnumerable<RoleSelection> roleSelections = new [] { rootRoleSelection };
+
+			roleSelections = roleSelections.SelectMany (selection => {
+				return Pronouns.GetSubjectNouns().Where(n => n.AllowsFraming(new Frame(pointOfView, conjugation)))
+					.Select(n => selection.WithRole("subject", n));
+			});
 
 			roleSelections = roleSelections.SelectMany (selection => {
 				var verbEndings = cannedData.GetVerbEndings (verb.Infinitive, pointOfView).ToArray ();

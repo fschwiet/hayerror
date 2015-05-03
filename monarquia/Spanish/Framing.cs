@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace monarquia
 {
-	public class Framing
+	public class Frame
 	{
 		public readonly PointOfView PointOfView;
 		public readonly Conjugation Conjugation;
 
-		public Framing (PointOfView pointOfView, Conjugation conjugation)
+		public Frame (PointOfView pointOfView, Conjugation conjugation)
 		{
 			this.PointOfView = pointOfView;
 			this.Conjugation = conjugation;
@@ -17,10 +17,10 @@ namespace monarquia
 
 	public class RoleSelection
 	{
-		Framing Framing;
+		Frame Framing;
 		Dictionary<string, ITranslateable> Roles;
 
-		public RoleSelection(Framing framing) {
+		public RoleSelection(Frame framing) {
 			this.Framing = framing;
 			this.Roles = new Dictionary<string, ITranslateable> ();
 		}

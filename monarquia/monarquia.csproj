@@ -72,7 +72,6 @@
     <Compile Include="ExerciseGenerator.cs" />
     <Compile Include="LingueeGenerator.cs" />
     <Compile Include="Commands\LingueeLookup.cs" />
-    <Compile Include="Commands\DrillWithLinguee.cs" />
     <Compile Include="Spanish\CannedTranslation.cs" />
     <Compile Include="Spanish\ITranslateable.cs" />
     <Compile Include="Commands\ScrapeDictionary.cs" />

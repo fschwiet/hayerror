@@ -25,6 +25,10 @@ namespace monarquia
 		{
 			return new string[0];
 		}
+
+		public virtual bool AllowsFraming(Frame frame) {
+			return true;
+		}
 	}
 
 	//  All ITransalateables either implement NotComposed or Composed
@@ -112,6 +116,12 @@ namespace monarquia
 		public override IEnumerable<string> GetExtraHints ()
 		{
 			return spanish.SelectMany (s => s.GetExtraHints ()).Concat (english.SelectMany (e => e.GetExtraHints ()));
+		}
+
+		public override bool AllowsFraming (Frame frame)
+		{
+			return spanish.All (s => s.AllowsFraming (frame))
+			&& english.All (e => e.AllowsFraming (frame));
 		}
 
 		public Composed WithEnglishAlternative(ITranslateable english) {
