@@ -195,8 +195,8 @@ namespace monarquia
 			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("el año pasado", "last year"));
 			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("el lunes pasado","last Monday"));
 			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("el mes pasado","last month"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("en ese instante","at this instant"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("en ese momento","at this moment"));
+			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("en ese instante","at that instant"));
+			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("en ese momento","at that moment"));
 			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("la semana pasada", "last week"));
 
 
