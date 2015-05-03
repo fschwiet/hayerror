@@ -55,14 +55,13 @@ namespace monarquia
 		{
 			List<Exercise> results = new List<Exercise>();
 
-			var pointOfViewGenerators = Enum.GetValues (typeof(PointOfView)).Cast<PointOfView> ()
-				.Select<PointOfView,Func<PointOfView>>(pov => delegate() { return pov; }).ToList();
+			var pointsOfView = Enum.GetValues (typeof(PointOfView)).Cast<PointOfView> ();
 				
 			if (limitVariations) {
-				pointOfViewGenerators = ChoosePointOfViewsForDrill ();
+				pointsOfView = ChoosePointOfViewsForDrill ();
 			}
 
-			foreach (var pointOfView in pointOfViewGenerators) {
+			foreach (var pointOfView in pointsOfView) {
 				results.AddRange (GetAllConjugationsForVerb (verb, limitVariations, pointOfView));
 			}
 
@@ -70,16 +69,16 @@ namespace monarquia
 		}
 
 
-		List<Exercise> GetAllConjugationsForVerb (Verb verb, bool limitVariations, Func<PointOfView> pointOfViewSelector)
+		List<Exercise> GetAllConjugationsForVerb (Verb verb, bool limitVariations, PointOfView pointOfView)
 		{
 			List<Exercise> results = new List<Exercise> ();
 
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.Present));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.PastPreterite));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.PastImperfect));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.Future));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.Conditional));
-			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfViewSelector (), cannedData, Conjugation.PresentPerfect));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, cannedData, Conjugation.Present));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, cannedData, Conjugation.PastPreterite));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, cannedData, Conjugation.PastImperfect));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, cannedData, Conjugation.Future));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, cannedData, Conjugation.Conditional));
+			results.AddRange (GetForVerbConjugation (verb, limitVariations, pointOfView, cannedData, Conjugation.PresentPerfect));
 
 			return results;
 		}
@@ -167,23 +166,23 @@ namespace monarquia
 			});
 		}
 
-		public List<Func<PointOfView>> ChoosePointOfViewsForDrill ()
+		public IEnumerable<PointOfView> ChoosePointOfViewsForDrill ()
 		{
-			List<Func<PointOfView>> results = new List<Func<PointOfView>> ();
+			List<PointOfView> results = new List<PointOfView> ();
 
-			results.Add (() => PointOfView.FirstPerson);
-			results.Add (() => PointOfView.SecondPerson);
+			results.Add (PointOfView.FirstPerson);
+			results.Add (PointOfView.SecondPerson);
 
-			results.Add (() => new [] {
+			results.Add (new [] {
 				PointOfView.SecondPersonFormal,
 				PointOfView.ThirdPersonMasculine,
 				PointOfView.ThirdPersonFeminine
 			} [random.Next (3)]);
 
-			results.Add (() => PointOfView.FirstPersonPlural);
+			results.Add (PointOfView.FirstPersonPlural);
 
 
-			results.Add (() => new [] {
+			results.Add (new [] {
 				PointOfView.SecondPersonPluralFormal,
 				PointOfView.ThirdPersonPluralMasculine,
 				PointOfView.ThirdPersonPluralFeminine
