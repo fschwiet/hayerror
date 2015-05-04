@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace monarquia
 {
@@ -12,6 +13,48 @@ namespace monarquia
 		{
 			this.PointOfView = pointOfView;
 			this.Conjugation = conjugation;
+		}
+
+		static public IEnumerable<Frame> SelectAllFrames ()
+		{
+			List<Frame> frames = new List<Frame> ();
+
+			var pointsOfView = Enum.GetValues (typeof(PointOfView)).Cast<PointOfView> ();
+
+			frames.AddRange (from p in pointsOfView
+				from c in Enum.GetValues (typeof(Conjugation)).Cast<Conjugation> ()
+				select new Frame (p, c));
+
+			return frames;
+		}
+
+		static public IEnumerable<Frame> FramesCoveringEachConjugationForm ()
+		{
+			var random = new Random ();
+
+			List<PointOfView> pointsOfView = new List<PointOfView> ();
+
+			pointsOfView.Add (PointOfView.FirstPerson);
+			pointsOfView.Add (PointOfView.SecondPerson);
+
+			pointsOfView.Add (new [] {
+				PointOfView.SecondPersonFormal,
+				PointOfView.ThirdPersonMasculine,
+				PointOfView.ThirdPersonFeminine
+			} [ random.Next (3)]);
+
+			pointsOfView.Add (PointOfView.FirstPersonPlural);
+
+			pointsOfView.Add (new [] {
+				PointOfView.SecondPersonPluralFormal,
+				PointOfView.ThirdPersonPluralMasculine,
+				PointOfView.ThirdPersonPluralFeminine
+			} [random.Next (3)]);
+
+			return
+				from p in pointsOfView
+				from c in Enum.GetValues (typeof(Conjugation)).Cast<Conjugation> ()
+				select new Frame (p, c);
 		}
 	}
 

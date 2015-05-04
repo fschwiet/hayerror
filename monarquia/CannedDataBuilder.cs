@@ -95,6 +95,38 @@ namespace monarquia
 			return null;
 
 		}
+
+
+		public IEnumerable<RoleSelection> GetAllRoleScenariosForVerbAndFrame (Random random, Verb verb, bool limitVariations, DataLoader dataLoader, Frame frame)
+		{
+			var rootRoleSelection = new RoleSelection (frame);
+			rootRoleSelection = rootRoleSelection.WithRole ("verbPhrase", verb.GetTranslateable (frame.Conjugation, this, dataLoader));
+			IEnumerable<RoleSelection> roleSelections = new[] {
+				rootRoleSelection
+			};
+			roleSelections = roleSelections.SelectMany (selection =>  {
+				return Pronouns.GetSubjectNouns ().Where (n => n.AllowsFraming (frame)).Select (n => selection.WithRole ("subject", n));
+			});
+			roleSelections = roleSelections.SelectMany (selection =>  {
+				var verbEndings = this.GetVerbEndings (verb.Infinitive, frame.PointOfView).ToArray ();
+				if (limitVariations) {
+					verbEndings = new[] {
+						verbEndings [random.Next (verbEndings.Length)]
+					};
+				}
+				return verbEndings.Select (ve => selection.WithRole ("verbEnding", ve));
+			});
+			roleSelections = roleSelections.SelectMany (selection =>  {
+				var timeframes = this.GetTimeframeExpressions (frame.Conjugation).ToArray ();
+				if (limitVariations) {
+					timeframes = new[] {
+						timeframes [random.Next (timeframes.Length)]
+					};
+				}
+				return timeframes.Select (tf => selection.WithRole ("timeframe", tf));
+			});
+			return roleSelections;
+		}
 	}
 	
 }
