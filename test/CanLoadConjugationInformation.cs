@@ -81,7 +81,7 @@ namespace test
 
 			var reflexiveVerb = new ReflexiveVerb (infinitive, dataLoader);
 
-			var result = reflexiveVerb.GetTranslateable (Conjugation.Present, cannedData, dataLoader).AsSpanish (pointOfView);
+			var result = reflexiveVerb.Conjugation (Conjugation.Present, null).AsSpanish (pointOfView);
 
 			Assert.AreEqual (expected, result);
 		}

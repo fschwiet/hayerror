@@ -94,7 +94,11 @@ namespace monarquia
 		public IEnumerable<RoleSelection> GetAllRoleScenariosForVerbAndFrame (Random random, Verb verb, bool limitVariations, DataLoader dataLoader, Frame frame)
 		{
 			var rootRoleSelection = new RoleSelection (frame);
-			rootRoleSelection = rootRoleSelection.WithRole ("verbPhrase", verb.GetTranslateable (frame.Conjugation, this, dataLoader));
+
+			Verb englishVerb = TranslateVerbFromSpanishToEnglish (dataLoader, verb, frame.Conjugation);
+
+
+			rootRoleSelection = rootRoleSelection.WithRole ("verbPhrase", verb.Conjugation (frame.Conjugation, englishVerb));
 			IEnumerable<RoleSelection> roleSelections = new[] {
 				rootRoleSelection
 			};

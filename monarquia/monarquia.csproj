@@ -87,6 +87,7 @@
     <Compile Include="CannedDataBuilder.cs" />
     <Compile Include="English\ReflexivePronoun.cs" />
     <Compile Include="Spanish\Framing.cs" />
+    <Compile Include="Spanish\VerbRoleSelector.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

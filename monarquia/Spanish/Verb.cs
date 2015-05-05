@@ -15,9 +15,9 @@ namespace monarquia
 
 		public abstract string ConjugatedForTense (Conjugation conjugation, PointOfView pointOfView);
 
-		public ITranslateable GetTranslateable(Conjugation conjugation, ICannedData cannedData, DataLoader loader) 
+		public ITranslateable Conjugation(Conjugation conjugation, Verb englishVerb) 
 		{
-			return new VerbInstance (this, conjugation, cannedData, loader);
+			return new VerbInstance (this, englishVerb, conjugation);
 		}
 	}
 
@@ -102,13 +102,10 @@ namespace monarquia
 		Verb englishVerb;
 		Conjugation conjugation;
 
-		public VerbInstance(Verb spanishVerb, Conjugation conjugation, ICannedData cannedData, DataLoader dataLoader)
+		public VerbInstance(Verb spanishVerb, Verb englishVerb, Conjugation conjugation)
 		{
 			this.spanishVerb = spanishVerb;
-
-			if (cannedData != null)
-				this.englishVerb = cannedData.TranslateVerbFromSpanishToEnglish (dataLoader, spanishVerb, conjugation);
-			
+			this.englishVerb = englishVerb;
 			this.conjugation = conjugation;
 		}
 

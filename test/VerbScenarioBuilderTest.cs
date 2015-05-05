@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 using monarquia;
 
@@ -8,29 +10,54 @@ namespace test
 	[TestFixture]
 	public class VerbScenarioBuilderTest
 	{
+		ICannedData cannedData;
+		DataLoader dataLoader;
+
+		[TestFixtureSetUp]
+		public void LoadVerbs() {
+
+			var dataDirectory = "../../../data";
+			cannedData = new BigCannedData ();
+			dataLoader = new DataLoader (dataDirectory);
+		}
+
 		[Test]
 		public void CanBuildScenarios ()
 		{
-			/*
-			   var roleSelector = new VerbRoleSelector("beber")
-				.hasOneOf("timeframe", timeframes)
-				.hasOneOf("subject", people)
-				.hasOneOf("verbEnding", new CannedTranslation("leche", "milk"), new CannedTranslation("agua", "water"))
-				.hasTranslation("drink");
+			var timeFrames = new [] {
+				new CannedTranslation ("", ""),
+				new CannedTranslation ("timeframe1", "timeframe1"),
+				new CannedTranslation ("incompatible", "incompatible", frameFilter: f => false)
+			};
 
+			var people = new [] {
+				new CannedTranslation ("pacho", "pacho")
+			};
 
-			var frame = new Frame(PointOfView.FirstPerson, Conjugation.Present);
+			var verbEndings = new [] {
+				new CannedTranslation ("", "")
+			};
 
-			var result = roleSelector(frame);
+			var roleSelector = new VerbRoleSelector ("beber").
+				hasOneOf ("timeframe", timeFrames).
+				hasOneOf ("subject", people).
+				hasOneOf ("verbEnding", verbEndings)
+				.hasTranslation ("drink", cannedData, dataLoader);
 
-			var expectedSelection = result.Single(roleSelection =>
-			  roleSelection.hasrolevalues...
-			  */
+			var pointOfView = PointOfView.ThirdPersonMasculine;
+			var frame = new Frame (pointOfView, Conjugation.Present);
 
-			// scenario spec results in function that takes a frame and produces zero or more
-			// RoleSelections for that frame
+			var result = roleSelector.GetSelectionsFor (frame);
+
+			var expectedSelection = result.First (roleSelection => 
+				roleSelection.GetForRole ("timeframe").AsSpanish (pointOfView).Equals ("timeframe1")
+			    && roleSelection.GetForRole ("subject").AsSpanish (pointOfView).Equals ("pacho"));
+
+			Assert.AreEqual ("bebe", expectedSelection.GetForRole ("verbPhrase").AsSpanish (pointOfView));
+			Assert.AreEqual ("drinks", expectedSelection.GetForRole ("verbPhrase").AsEnglish (pointOfView));
+
+			Assert.That (!result.Any (r => r.GetForRole ("timeframe").AsSpanish (pointOfView).Equals ("incompatible")));
 		}
-
 	}
 }
 
