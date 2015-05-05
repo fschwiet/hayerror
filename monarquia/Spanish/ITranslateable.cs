@@ -29,6 +29,52 @@ namespace monarquia
 		public virtual bool AllowsFraming(Frame frame) {
 			return true;
 		}
+
+		public ITranslateable WithFrameRequirements(Func<Frame,bool> requirement) {
+			return new TranslateableWithFrameRestriction(this, requirement);
+		}
+	}
+
+	public class TranslateableWithFrameRestriction : NotComposed {
+
+		ITranslateable translateable;
+		Func<Frame,bool> restriction;
+
+		public TranslateableWithFrameRestriction(ITranslateable translateable, Func<Frame,bool> restriction)
+		{
+			this.translateable = translateable;
+			this.restriction = restriction;
+		}
+
+		public override bool AllowsFraming (Frame frame)
+		{
+			return this.restriction(frame) && base.AllowsFraming (frame);
+		}
+
+		public override string AsEnglish (PointOfView pointOfView)
+		{
+			return translateable.AsEnglish (pointOfView);
+		}
+
+		public override string AsSpanish (PointOfView pointOfView)
+		{
+			return translateable.AsSpanish (pointOfView);
+		}
+
+		public override IEnumerable<string> GetEnglishHints ()
+		{
+			return translateable.GetEnglishHints ();
+		}
+
+		public override IEnumerable<string> GetExtraHints ()
+		{
+			return translateable.GetExtraHints ();
+		}
+
+		public override IEnumerable<string> GetTags ()
+		{
+			return translateable.GetTags ();
+		}
 	}
 
 	//  All ITransalateables either implement NotComposed or Composed

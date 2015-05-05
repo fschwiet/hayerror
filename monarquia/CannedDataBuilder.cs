@@ -7,8 +7,9 @@ namespace monarquia
 
 	public class CannedDataBuilder : ICannedData {
 
+		List<ITranslateable> TimeExpressions = new List<ITranslateable>();
+
 		Dictionary<string, List<ITranslateable>> AllVerbEndings = new Dictionary<string, List<ITranslateable>>(StringComparer.InvariantCultureIgnoreCase);
-		Dictionary<Conjugation, List<ITranslateable>> TimeExpressions = new Dictionary<Conjugation, List<ITranslateable>>();
 		Dictionary<string,Func<Conjugation,string>> VerbTranslations = new Dictionary<string, Func<Conjugation,string>> (StringComparer.InvariantCultureIgnoreCase);
 		Dictionary<string,Func<Conjugation,string>> ReflexiveVerbTranslations = new Dictionary<string, Func<Conjugation,string>> (StringComparer.InvariantCultureIgnoreCase);
 
@@ -40,20 +41,13 @@ namespace monarquia
 		}
 
 		protected void AddTimeframeExpression(Conjugation conjugation, ITranslateable expression) {
-
-			if (!TimeExpressions.ContainsKey (conjugation)) {
-				TimeExpressions [conjugation] = new List<ITranslateable> ();
-			}
-
-			TimeExpressions[conjugation].Add (expression);
+			
+			TimeExpressions.Add (expression.WithFrameRequirements(frame => frame.Conjugation == conjugation));
 		}
 
-		public IEnumerable<ITranslateable> GetTimeframeExpressions(Conjugation conjugation) {
+		public IEnumerable<ITranslateable> GetTimeframeExpressions() {
 
-			if (!TimeExpressions.ContainsKey (conjugation))
-				return new [] { new CannedTranslation("","") };
-
-			return TimeExpressions [conjugation];
+			return TimeExpressions;
 		}
 
 		public void HasEnglishTranslation(string spanishInfinitive, string englishInfinitive) {
@@ -108,6 +102,7 @@ namespace monarquia
 				return Pronouns.GetSubjectNouns ().Where (n => n.AllowsFraming (frame)).Select (n => selection.WithRole ("subject", n));
 			});
 			roleSelections = roleSelections.SelectMany (selection =>  {
+				
 				var verbEndings = this.GetVerbEndings (verb.Infinitive, frame.PointOfView).ToArray ();
 				if (limitVariations) {
 					verbEndings = new[] {
@@ -117,12 +112,14 @@ namespace monarquia
 				return verbEndings.Select (ve => selection.WithRole ("verbEnding", ve));
 			});
 			roleSelections = roleSelections.SelectMany (selection =>  {
-				var timeframes = this.GetTimeframeExpressions (frame.Conjugation).ToArray ();
+				var timeframes = this.GetTimeframeExpressions ().Where( t=> t.AllowsFraming(frame)).ToArray ();
+
 				if (limitVariations) {
 					timeframes = new[] {
 						timeframes [random.Next (timeframes.Length)]
 					};
 				}
+
 				return timeframes.Select (tf => selection.WithRole ("timeframe", tf));
 			});
 			return roleSelections;

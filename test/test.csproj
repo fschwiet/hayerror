@@ -41,6 +41,8 @@
     <Compile Include="CanLoadConjugationInformation.cs" />
     <Compile Include="CsQueryTest.cs" />
     <Compile Include="ArticleAwareness.cs" />
+    <Compile Include="VerbScenarioBuilderTest.cs" />
+    <Compile Include="CannedDataTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
