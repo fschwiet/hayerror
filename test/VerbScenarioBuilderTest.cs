@@ -17,8 +17,8 @@ namespace test
 		public void LoadVerbs() {
 
 			var dataDirectory = "../../../data";
-			cannedData = new BigCannedData ();
 			dataLoader = new DataLoader (dataDirectory);
+			cannedData = new BigCannedData (dataLoader);
 		}
 
 		[Test]

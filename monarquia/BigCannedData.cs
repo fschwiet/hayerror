@@ -10,8 +10,34 @@ namespace monarquia
 			"ser"
 		};
 
-		public BetterCannedData() {
-			
+		public BetterCannedData(DataLoader dataLoader) {
+
+			var timeframeExpressions = new [] {
+
+				AddTimeframeExpression(Conjugation.PastPreterite, new CannedTranslation("a esa hora", "at that hour")),
+				AddTimeframeExpression(Conjugation.PastPreterite, new CannedTranslation("ayer", "yesterday")),
+				AddTimeframeExpression(Conjugation.PastPreterite, new CannedTranslation("de pronto", "suddenly")),
+				AddTimeframeExpression(Conjugation.PastPreterite, new CannedTranslation("de repente", "suddenly")),
+				AddTimeframeExpression(Conjugation.PastImperfect, new CannedTranslation("él me dijo que", "he told me that")),
+				AddTimeframeExpression(Conjugation.PastImperfect, new CannedTranslation("todas las mañanas", "every morning")),
+				AddTimeframeExpression(Conjugation.PastImperfect, new CannedTranslation("todos los años", "every year")),
+				AddTimeframeExpression(Conjugation.PastImperfect, new CannedTranslation("todos los días", "every day"))
+			}.ToList();
+
+			foreach(var conjugation in Enum.GetValues(typeof(Conjugation)).Cast<Conjugation>()
+				.Where(c => c != Conjugation.PastPreterite && c != Conjugation.PastImperfect))
+			{
+					timeframeExpressions.Add(AddTimeframeExpression(conjugation, new CannedTranslation("","")));
+			}
+
+			var peopleExpressions = Pronouns.GetSubjectNouns ();
+
+			AddRoleSelector(new VerbRoleSelector ("beber").
+				hasOneOf ("timeframe", timeframeExpressions).
+				hasOneOf ("subject", peopleExpressions).
+				hasOneOf ("verbEnding", new [] { new CannedTranslation("leche", "milk"), new CannedTranslation("agua", "water")}).
+				hasTranslation ("drink", this, dataLoader));
+
 			HasEnglishTranslation ("ser", "is");
 			HasEnglishTranslation ("estar", "is");
 			HasEnglishTranslation ("ir", "go");
@@ -25,16 +51,10 @@ namespace monarquia
 
 				return "know";
 			});
-
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("a esa hora", "at that hour"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("ayer", "yesterday"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("de pronto", "suddenly"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("de repente", "suddenly"));
-
-			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("él me dijo que", "he told me that"));
-			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("todas las mañanas", "every morning"));
-			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("todos los años", "every year"));
-			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("todos los días", "every day"));
+				
+			foreach(var timeframeExpression in timeframeExpressions) {
+				AddTimeframeExpression (timeframeExpression);
+			}
 
 			var actor = new Noun ("actor", "actriz", "actores", "actrizes").WithTranslation ("actor", "actors");
 			var cook = new Noun ("cocinero", "cocinera", "cocineros", "cocineras").WithTranslation ("cook", "cooks");
@@ -123,9 +143,8 @@ namespace monarquia
 
 	public class BigCannedData : BetterCannedData
 	{
-		public BigCannedData ()
+		public BigCannedData (DataLoader dataLoader) : base(dataLoader)
 		{
-			HasEnglishTranslation ("beber", "drink");
 			HasEnglishTranslation ("comer", "eat");
 			HasEnglishTranslation ("gritar", "shout");
 			HasEnglishTranslation ("hablar", "talk");
@@ -136,8 +155,6 @@ namespace monarquia
 			HasEnglishTranslation ("tener", "have");
 
 
-			AddVerbEnding ("beber", new CannedTranslation("leche", "milk"));
-			AddVerbEnding ("beber", new CannedTranslation("agua", "water"));
 			AddVerbEnding ("comer", new CannedTranslation("fajitas", "fajitas"));
 			AddVerbEnding ("dar", new CannedTranslation("un abrazo", "a hug"));
 			AddVerbEnding ("dar", new CannedTranslation("gritos", "shouts"));
@@ -159,49 +176,87 @@ namespace monarquia
 			//AddVerbEnding ("tener", "culpa");  // to be at fault
 
 
-			// Now
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("", ""));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("ahora", "now"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("ahora mismo", "right now"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("hoy", "today"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("a este minuto", "at this minute"));
+			var timeframeExpressions = new [] {
+				// Now
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("ahora", "now")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("ahora mismo", "right now")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("hoy", "today")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("a este minuto", "at this minute")),
 
-			// Usually? Frequency?
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("a menudo", "often"));  // not sure
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("de vez en cuando", "from time to time"));  // not sure
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("en general", "in general"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los lunes", "the Mondays"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los martes", "the Tuesdays"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los miercoles", "the Wednesdays"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los jueves", "the Thursdays"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los viernes", "the Fridays"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los sábados", "the Saturdays"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los domingos", "the Sundays"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los fines de semanas", "the weekends"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("normalmente", "normally"));
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("ahora", "now")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("ahora mismo", "right now")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("hoy", "today")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("a este minuto", "at this minute")),
 
-			// Near future
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("al mediodía","at noon"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("esta semana","this week"));
-			AddTimeframeExpression (Conjugation.Present, new CannedTranslation("esta mes", "this month"));
+				// Usually? Frequency?
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("a menudo", "often")),  // not sure
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("de vez en cuando", "from time to time")),  // not sure
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("en general", "in general")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los lunes", "the Mondays")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los martes", "the Tuesdays")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los miercoles", "the Wednesdays")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los jueves", "the Thursdays")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los viernes", "the Fridays")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los sábados", "the Saturdays")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los domingos", "the Sundays")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("los fines de semanas", "the weekends")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("normalmente", "normally")),
 
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("a las cuatro", "at four o'clock"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("anoche", "last night"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("anteanoche", "the night before last"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("anteayer", "the day before yesterday"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("ayer por la mañana", "yesterday morning"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("ayer por la noche", "yesterday night"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("ayer por la tarde", "yesterday afternoon"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("el año pasado", "last year"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("el lunes pasado","last Monday"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("el mes pasado","last month"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("en ese instante","at that instant"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("en ese momento","at that moment"));
-			AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("la semana pasada", "last week"));
+				// Near future
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("al mediodía","at noon")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("esta semana","this week")),
+				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("esta mes", "this month")),
+
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("a las cuatro", "at four o'clock")),
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("anoche", "last night")),
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("anteanoche", "the night before last")),
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("anteayer", "the day before yesterday")),
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("ayer por la mañana", "yesterday morning")),
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("ayer por la noche", "yesterday night")),
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("ayer por la tarde", "yesterday afternoon")),
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("el año pasado", "last year")),
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("el lunes pasado","last Monday")),
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("el mes pasado","last month")),
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("en ese instante","at that instant")),
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("en ese momento","at that moment")),
+				AddTimeframeExpression (Conjugation.PastPreterite, new CannedTranslation("la semana pasada", "last week")),
+
+
+				AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("a veces", "at times")),
+				AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("algunas veces", "sometimes")),
+				// AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("casi nunca", )),
+				AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("casi siempre", "almost always")),
+				AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("de vez en cuando", "from time to time")),
+				AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("muchas veces", "many times")),
+				//AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("por lo general", )),
+				//AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("rara vez", )),
+
+				AddTimeframeExpression (Conjugation.Future, new CannedTranslation("a la una", "at one o'clock")),
+				AddTimeframeExpression (Conjugation.Future, new CannedTranslation("de aquí a dos días", "two days from now")),
+				AddTimeframeExpression (Conjugation.Future, new CannedTranslation("el lunes que viene", "next monday")),
+				AddTimeframeExpression (Conjugation.Future, new CannedTranslation("en una semana", "in one week")),
+				AddTimeframeExpression (Conjugation.Future, new CannedTranslation("esta noche", "tonight")),
+				AddTimeframeExpression (Conjugation.Future, new CannedTranslation("esta primavera", "this spring")),
+				AddTimeframeExpression (Conjugation.Future, new CannedTranslation("luego", "later")),
+				AddTimeframeExpression (Conjugation.Future, new CannedTranslation("mañana", "tomorrow")),
+				AddTimeframeExpression (Conjugation.Future, new CannedTranslation("mañana por la mañana", "tomorrow morning")),
+				AddTimeframeExpression (Conjugation.Future, new CannedTranslation("mañana por la tarde", "tomorrow evening")),
+				AddTimeframeExpression (Conjugation.Future, new CannedTranslation("mañana por la noche", "tomorrow night")),
+				AddTimeframeExpression (Conjugation.Future, new CannedTranslation("pasado mañana", "the day after tomorrow")),
+
+				AddTimeframeExpression (Conjugation.Conditional, new CannedTranslation("ahora mismo", "right now")),
+				AddTimeframeExpression (Conjugation.Conditional, new CannedTranslation("por supuesto", "of course")),
+			};
+
+			foreach(var timeframeExpression in timeframeExpressions) {
+				AddTimeframeExpression (timeframeExpression);
+			}
+
+
 
 
 			/*
-			 * 
+			 
 			// excluding siempre since amibguous and google mistranslates 'Siempre usted está en frente'
 
 			AddTimeframeExpression (Conjugation.PastPreterite, "entonces");  // ambiguous
@@ -222,36 +277,7 @@ namespace monarquia
 
 			AddTimeframeExpression (Conjugation.PastImperfect, "mientras");  // also a conjugation
 
-*/
-
-			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("a veces", "at times"));
-			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("algunas veces", "sometimes"));
-			// AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("casi nunca", ));
-			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("casi siempre", "almost always"));
-			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("de vez en cuando", "from time to time"));
-			AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("muchas veces", "many times"));
-			//AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("por lo general", ));
-			//AddTimeframeExpression (Conjugation.PastImperfect, new CannedTranslation("rara vez", ));
-
-			AddTimeframeExpression (Conjugation.PresentPerfect, new CannedTranslation("",""));
-
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("",""));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("a la una", "at one o'clock"));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("de aquí a dos días", "two days from now"));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("el lunes que viene", "next monday"));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("en una semana", "in one week"));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("esta noche", "tonight"));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("esta primavera", "this spring"));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("luego", "later"));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("mañana", "tomorrow"));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("mañana por la mañana", "tomorrow morning"));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("mañana por la tarde", "tomorrow evening"));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("mañana por la noche", "tomorrow night"));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("pasado mañana", "the day after tomorrow"));
-
-			AddTimeframeExpression (Conjugation.Conditional, new CannedTranslation("", ""));
-			AddTimeframeExpression (Conjugation.Conditional, new CannedTranslation("ahora mismo", "right now"));
-			AddTimeframeExpression (Conjugation.Conditional, new CannedTranslation("por supuesto", "of course"));
+			*/
 		}
 	}
 }

@@ -15,8 +15,8 @@ namespace test
 			//  there when it starts throwing exceptions.  So this test just runs to give more
 			//  information about those TestFixtureSetup methods.
 
-			new DataLoader ("../../../data");
-			new BigCannedData ();
+			var dataLoader = new DataLoader ("../../../data");
+			new BigCannedData (dataLoader);
 		}
 	}
 }

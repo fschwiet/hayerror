@@ -34,11 +34,12 @@ namespace monarquia
 
 		public override int Run (string[] remainingArguments)
 		{
+			var dataLoader = new DataLoader ("./data");
 			var results = new List<EspanolGenerator.Exercise> ();
-			var cannedData = new BetterCannedData ();
+			var cannedData = new BetterCannedData (dataLoader);
 
 			if (UseBigCannedData)
-				cannedData = new BigCannedData ();
+				cannedData = new BigCannedData (dataLoader);
 
 			var generator = new EspanolGenerator (cannedData, "./data");
 

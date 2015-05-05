@@ -20,11 +20,11 @@ namespace monarquia
 		public override int Run (string[] remainingArguments)
 		{
 			DataLoader dataLoader = new DataLoader("./data");
-			var cannedData = new BetterCannedData ();
+			var cannedData = new BetterCannedData (dataLoader);
 			var verbs = BetterCannedData.BetterVerbs;
 
 			if (UseBiggerCannedData) {
-				cannedData = new BigCannedData ();
+				cannedData = new BigCannedData (dataLoader);
 				verbs = dataLoader.GetAllSavedSpanishVerbs ().Select(v => v.Infinitive)
 					.Concat(cannedData.GetReflexiveVerbs(dataLoader).Select(v => v + "se"));
 			}

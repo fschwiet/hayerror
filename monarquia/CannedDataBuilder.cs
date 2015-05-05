@@ -42,9 +42,14 @@ namespace monarquia
 			return AllVerbEndings [verbInfinitive];
 		}
 
-		protected void AddTimeframeExpression(Conjugation conjugation, ITranslateable expression) {
-			
-			TimeExpressions.Add (expression.WithFrameRequirements(frame => frame.Conjugation == conjugation));
+		protected ITranslateable AddTimeframeExpression(Conjugation conjugation, ITranslateable expression) {
+
+			return expression.WithFrameRequirements(frame => frame.Conjugation == conjugation);
+		}
+
+		protected void AddTimeframeExpression(ITranslateable expression) {
+
+			TimeExpressions.Add (expression);
 		}
 
 		public IEnumerable<ITranslateable> GetTimeframeExpressions() {

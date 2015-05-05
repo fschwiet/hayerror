@@ -16,7 +16,7 @@ namespace test
 		public void Setup()
 		{
 			this.dataLoader = new DataLoader ("../../../data");
-			this.cannedData = new BigCannedData ();
+			this.cannedData = new BigCannedData (this.dataLoader);
 		}
 
 		[Test]

@@ -39,7 +39,7 @@ namespace test
 		public void LoadVerbs() {
 
 			var dataDirectory = "../../../data";
-			allExercises = new monarquia.EspanolGenerator(new BigCannedData(), dataDirectory).GetExercises().ToArray();
+			allExercises = new monarquia.EspanolGenerator(new BigCannedData( new DataLoader(dataDirectory)), dataDirectory).GetExercises().ToArray();
 			allPhrases = allExercises.Select (e => e.Original).ToArray ();
 		}
 
