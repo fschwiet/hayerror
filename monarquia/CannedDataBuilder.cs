@@ -7,6 +7,8 @@ namespace monarquia
 
 	public class CannedDataBuilder : ICannedData {
 
+		List<VerbRoleSelector> roleSelectors = new List<VerbRoleSelector> ();
+
 		List<ITranslateable> TimeExpressions = new List<ITranslateable>();
 
 		Dictionary<string, List<ITranslateable>> AllVerbEndings = new Dictionary<string, List<ITranslateable>>(StringComparer.InvariantCultureIgnoreCase);
@@ -66,6 +68,15 @@ namespace monarquia
 			return ReflexiveVerbTranslations.Select (t => t.Key);
 		}
 
+		public void AddRoleSelector(VerbRoleSelector selector) {
+			roleSelectors.Add (selector);
+		}
+
+		public IEnumerable<VerbRoleSelector> GetAllVerbRoleSelectors()
+		{
+			return roleSelectors;
+		}
+
 		public Verb TranslateVerbFromSpanishToEnglish(DataLoader loader, Verb verb, Conjugation conjugation) {
 
 			if (verb.Infinitive.EndsWith ("se")) {
@@ -89,8 +100,7 @@ namespace monarquia
 			return null;
 
 		}
-
-
+			
 		public IEnumerable<RoleSelection> GetAllRoleScenariosForVerbAndFrame (Random random, Verb verb, bool limitVariations, DataLoader dataLoader, Frame frame)
 		{
 			var rootRoleSelection = new RoleSelection (frame);

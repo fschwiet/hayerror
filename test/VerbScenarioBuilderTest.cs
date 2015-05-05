@@ -41,9 +41,15 @@ namespace test
 			var roleSelector = new VerbRoleSelector ("beber").
 				hasOneOf ("timeframe", timeFrames).
 				hasOneOf ("subject", people).
-				hasOneOf ("verbEnding", verbEndings)
-				.hasTranslation ("drink", cannedData, dataLoader);
+				hasOneOf ("verbEnding", verbEndings).
+				hasTranslation ("drink", cannedData, dataLoader);
 
+			/*
+			var reflexiveRoleSelector = new ReflexiveVerbRoleSelector ("cortar").
+				hasOneOf ("timeframe", timeFrames).
+				hasOneOf ("subject", people).
+				hasTranslation ("cut", cannedData, dataLoader);
+*/
 			var pointOfView = PointOfView.ThirdPersonMasculine;
 			var frame = new Frame (pointOfView, Conjugation.Present);
 

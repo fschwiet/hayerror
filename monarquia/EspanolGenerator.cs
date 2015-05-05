@@ -19,6 +19,27 @@ namespace monarquia
 
 		public IEnumerable<Exercise> GetExercises(string verb = null, bool limitVariations = false)
 		{
+			List<Exercise> results = new List<Exercise> ();
+
+			var frames = limitVariations ? 
+				Frame.FramesCoveringEachConjugationForm () :
+				Frame.SelectAllFrames ();
+
+			foreach (var scenario in 
+				from roleSelector in cannedData.GetAllVerbRoleSelectors() 
+				from frame in frames
+				select new { roleSelector, frame } )
+			{
+				results.AddRange(GetForVerbConjugation (scenario.roleSelector.GetSelectionsFor (scenario.frame), scenario.frame));
+			}
+
+			var tagPrefix = "verb:";
+			var verbsToConsiderFinished = results.SelectMany (r => r.Tags)
+				.Where (t => t.StartsWith (tagPrefix))
+				.Select (t => t.Substring (tagPrefix.Length));
+
+			//Console.WriteLine ("Have good data for verbs: " + string.Join (", ", verbsToConsiderFinished));
+
 			List<Verb> verbs = new List<Verb> ();
 
 			verbs.AddRange (dataLoader.GetAllSavedSpanishVerbs ());
@@ -27,16 +48,12 @@ namespace monarquia
 			if (verb != null)
 				verbs = verbs.Where (v => v.Infinitive == verb).ToList();
 
-			var frames = limitVariations ? 
-				Frame.FramesCoveringEachConjugationForm () :
-				Frame.SelectAllFrames ();
-
-			List<Exercise> results = new List<Exercise> ();
-
-			foreach(var v in verbs) 
+			foreach(var v in verbs.Where(v => !verbsToConsiderFinished.Contains(v.Infinitive))) 
 			{
 				foreach (var framing in frames) {
-					results.AddRange (GetForVerbConjugation (v, limitVariations, cannedData, framing));
+
+					var roleSelecton = cannedData.GetAllRoleScenariosForVerbAndFrame (random, v, limitVariations, dataLoader, framing);
+					results.AddRange (GetForVerbConjugation (roleSelecton, framing));
 				}
 			}
 
@@ -44,13 +61,9 @@ namespace monarquia
 		}
 
 		List<Exercise> GetForVerbConjugation (
-			Verb verb,
-			bool limitVariations, 
-			ICannedData cannedData,
+			IEnumerable<RoleSelection> roleSelections,
 			Frame frame)
 		{
-			var roleSelections = cannedData.GetAllRoleScenariosForVerbAndFrame (random, verb, limitVariations, dataLoader, frame);
-
 			List<Exercise> results = new List<Exercise> ();
 
 			foreach (var roleSelection in roleSelections)
