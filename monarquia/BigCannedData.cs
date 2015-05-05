@@ -38,7 +38,19 @@ namespace monarquia
 				hasOneOf ("verbEnding", new [] { new CannedTranslation("leche", "milk"), new CannedTranslation("agua", "water")}).
 				hasTranslation ("drink", this, dataLoader));
 
-			HasEnglishTranslation ("ser", "is");
+			var actor = new Noun ("actor", "actriz", "actores", "actrizes").WithTranslation ("actor", "actors");
+			var cook = new Noun ("cocinero", "cocinera", "cocineros", "cocineras").WithTranslation ("cook", "cooks");
+			var dentist = new Noun ("dentista", "dentistas").WithTranslation ("dentist", "dentists");
+			var student = new Noun ("estudiante", "estudiantes").WithTranslation ("student", "students");
+
+			var professions = new [] { actor, cook, dentist, student };
+
+			AddRoleSelector (new VerbRoleSelector ("ser")
+				.hasOneOf ("timeframe", timeframeExpressions)
+				.hasOneOf ("subject", peopleExpressions)
+				.hasOneOf ("verbEnding", professions.Select (p => ((Composed)p).WithEnglishAlternative ((Composed)new Article () + p)))
+				.hasTranslation ("is", this, dataLoader));
+
 			HasEnglishTranslation ("estar", "is");
 			HasEnglishTranslation ("ir", "go");
 			ReflexiveHasEnglishTranslation ("cortar", "cut");
@@ -54,20 +66,6 @@ namespace monarquia
 				
 			foreach(var timeframeExpression in timeframeExpressions) {
 				AddTimeframeExpression (timeframeExpression);
-			}
-
-			var actor = new Noun ("actor", "actriz", "actores", "actrizes").WithTranslation ("actor", "actors");
-			var cook = new Noun ("cocinero", "cocinera", "cocineros", "cocineras").WithTranslation ("cook", "cooks");
-			var dentist = new Noun ("dentista", "dentistas").WithTranslation ("dentist", "dentists");
-			var student = new Noun ("estudiante", "estudiantes").WithTranslation ("student", "students");
-
-			var professions = new [] { actor, cook, dentist, student };
-
-			foreach (var profession in professions.Select(t => (Composed)t)) {
-				AddVerbEnding ("ser", 
-					profession.WithEnglishAlternative(
-						new Article() + profession
-					));
 			}
 
 			AddVerbEnding ("estar", new CannedTranslation("en frente", "in front"));
