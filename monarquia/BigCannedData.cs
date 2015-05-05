@@ -247,7 +247,7 @@ namespace monarquia
 			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("mañana por la mañana", "tomorrow morning"));
 			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("mañana por la tarde", "tomorrow evening"));
 			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("mañana por la noche", "tomorrow night"));
-			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("pasado mañana", "after tomorrow"));
+			AddTimeframeExpression (Conjugation.Future, new CannedTranslation("pasado mañana", "the day after tomorrow"));
 
 			AddTimeframeExpression (Conjugation.Conditional, new CannedTranslation("", ""));
 			AddTimeframeExpression (Conjugation.Conditional, new CannedTranslation("ahora mismo", "right now"));
