@@ -33,6 +33,10 @@ namespace monarquia
 				results.AddRange(GetForVerbConjugation (scenario.roleSelector.GetSelectionsFor (scenario.frame), scenario.frame));
 			}
 
+			if (verb != null) {
+				results = results.Where (r => r.Tags.Contains ("verb:" + verb)).ToList ();
+			}
+
 			var tagPrefix = "verb:";
 			var verbsToConsiderFinished = results.SelectMany (r => r.Tags)
 				.Where (t => t.StartsWith (tagPrefix))
