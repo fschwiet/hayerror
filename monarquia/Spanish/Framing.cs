@@ -28,43 +28,28 @@ namespace monarquia
 			return frames;
 		}
 
-		static public IEnumerable<Frame> FramesCoveringEachConjugationForm (string infinitive)
+		static public IEnumerable<Frame> FramesCoveringEachConjugationForm ()
 		{
 			var random = new Random ();
 
 			List<PointOfView> pointsOfView = new List<PointOfView> ();
 
-			if (infinitive == "haber") {
+			pointsOfView.Add (PointOfView.FirstPerson);
+			pointsOfView.Add (PointOfView.SecondPerson);
 
-				pointsOfView.Add (new [] {
-					PointOfView.ThirdPersonMasculine,
-					PointOfView.ThirdPersonFeminine
-				} [ random.Next (2)]);
+			pointsOfView.Add (new [] {
+				PointOfView.SecondPersonFormal,
+				PointOfView.ThirdPersonMasculine,
+				PointOfView.ThirdPersonFeminine
+			} [ random.Next (3)]);
 
-				pointsOfView.Add (new [] {
-					PointOfView.ThirdPersonPluralMasculine,
-					PointOfView.ThirdPersonPluralFeminine
-				} [random.Next (2)]);
+			pointsOfView.Add (PointOfView.FirstPersonPlural);
 
-			} else {
-
-				pointsOfView.Add (PointOfView.FirstPerson);
-				pointsOfView.Add (PointOfView.SecondPerson);
-
-				pointsOfView.Add (new [] {
-					PointOfView.SecondPersonFormal,
-					PointOfView.ThirdPersonMasculine,
-					PointOfView.ThirdPersonFeminine
-				} [ random.Next (3)]);
-
-				pointsOfView.Add (PointOfView.FirstPersonPlural);
-
-				pointsOfView.Add (new [] {
-					PointOfView.SecondPersonPluralFormal,
-					PointOfView.ThirdPersonPluralMasculine,
-					PointOfView.ThirdPersonPluralFeminine
-				} [random.Next (3)]);
-			}
+			pointsOfView.Add (new [] {
+				PointOfView.SecondPersonPluralFormal,
+				PointOfView.ThirdPersonPluralMasculine,
+				PointOfView.ThirdPersonPluralFeminine
+			} [random.Next (3)]);
 
 			return
 				from p in pointsOfView
