@@ -49,6 +49,25 @@ namespace test
 		}
 
 		[Test]
+		public void CanLoadHaber() {
+			var allVerbs = dataLoader.GetAllSavedSpanishVerbs ();
+
+			var verb = allVerbs.Single (v => v.Infinitive == "haber");
+
+			AssertHasEnglishConjugation("hay", verb, Conjugation.Present, PointOfView.ThirdPersonMasculine);
+			AssertHasEnglishConjugation("hubo", verb, Conjugation.PastPreterite, PointOfView.ThirdPersonMasculine);
+			AssertHasEnglishConjugation("había", verb, Conjugation.PastImperfect, PointOfView.ThirdPersonMasculine);
+			AssertHasEnglishConjugation("habrá", verb, Conjugation.Future, PointOfView.ThirdPersonMasculine);
+			AssertHasEnglishConjugation("habría", verb, Conjugation.Conditional, PointOfView.ThirdPersonMasculine);
+			AssertHasEnglishConjugation("ha habido", verb, Conjugation.PresentPerfect, PointOfView.ThirdPersonMasculine);
+
+			//  Haber is used in the singular sense
+			//    http://spanish.about.com/cs/verbs/a/haber_as_there.htm
+			AssertHasEnglishConjugation("habría", verb, Conjugation.Conditional, PointOfView.ThirdPersonPluralFeminine);
+			AssertHasEnglishConjugation("habría", verb, Conjugation.Conditional, PointOfView.ThirdPersonPluralMasculine);
+		}
+
+		[Test]
 		public void MiscConjugationBugs () {
 
 			var allVerbs = dataLoader.GetAllSavedSpanishVerbs ();

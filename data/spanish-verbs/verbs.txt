@@ -9,6 +9,7 @@ duchar
 estar
 gritar
 querer
+haber
 hablar
 hacer
 ir

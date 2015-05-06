@@ -32,6 +32,11 @@ namespace monarquia
 		}
 
 		public Verb WithTenses (Conjugation conjugation, Dictionary<PointOfView, string> value) {
+
+			if (value.Values.Any(v => v.Contains(","))) {
+				throw new Exception(String.Format("WithTenses passed invalid value for verb {0} for conjugation {1}.", infinitive, conjugation));
+			}
+
 			tenses [conjugation] = value;
 			return this;
 		}
@@ -44,6 +49,19 @@ namespace monarquia
 
 		public override string ConjugatedForTense(Conjugation conjugation, PointOfView pointOfView) {
 			return tenses [conjugation][pointOfView];
+		}
+
+		public void MakeThirdPersonPluralMatchSingular() {
+			//  http://spanish.about.com/cs/verbs/a/haber_as_there.htm
+
+			foreach (var conjugation in tenses.Keys) {
+
+				tenses [conjugation] [PointOfView.ThirdPersonPluralMasculine] = 
+					tenses [conjugation] [PointOfView.ThirdPersonMasculine];
+
+				tenses [conjugation] [PointOfView.ThirdPersonPluralFeminine] = 
+					tenses [conjugation] [PointOfView.ThirdPersonFeminine];
+			}
 		}
 	}
 

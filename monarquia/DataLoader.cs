@@ -43,13 +43,25 @@ namespace monarquia
 
 				var verb = new CannedVerb (infinitive);
 
-				verb.WithTenses (Conjugation.Present, GetPovLookupFromTableColumn (indicativeTable, 0));
+				var presentPovLookup = GetPovLookupFromTableColumn (indicativeTable, 0);
+
+				if (infinitive == "haber") {
+					presentPovLookup [PointOfView.ThirdPersonMasculine] =
+						presentPovLookup [PointOfView.ThirdPersonFeminine] =
+							presentPovLookup [PointOfView.SecondPersonFormal] =
+								"hay";
+				}
+
+				verb.WithTenses (Conjugation.Present, presentPovLookup);
 				verb.WithTenses (Conjugation.PastPreterite, GetPovLookupFromTableColumn (indicativeTable, 1));
 				verb.WithTenses (Conjugation.PastImperfect, GetPovLookupFromTableColumn (indicativeTable, 2));
 				verb.WithTenses (Conjugation.Conditional, GetPovLookupFromTableColumn (indicativeTable, 3));
 				verb.WithTenses (Conjugation.Future, GetPovLookupFromTableColumn (indicativeTable, 4));
 				verb.WithTenses (Conjugation.PresentPerfect, GetPovLookupFromTableColumn (perfectTable, 0));
 
+				if (infinitive == "haber") {
+					verb.MakeThirdPersonPluralMatchSingular ();
+				}
 
 				results.Add (verb);
 			}
