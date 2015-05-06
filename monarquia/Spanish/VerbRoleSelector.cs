@@ -31,7 +31,7 @@ namespace monarquia
 			return this;
 		}
 
-		public IEnumerable<RoleSelection> GetSelectionsFor(Frame frame)
+		public IEnumerable<RoleSelection> GetSelectionsFor(Frame frame, bool limitVariations, Random random)
 		{
 			var seedRoleSelection = new RoleSelection (frame);
 			seedRoleSelection = seedRoleSelection.WithRole("verbPhrase", spanishVerb.Conjugation(frame.Conjugation,englishVerb));
@@ -44,11 +44,19 @@ namespace monarquia
 				List<RoleSelection> newResults = new List<RoleSelection> ();
 
 				foreach (var existingResult in results) {
-					foreach (var option in roleOptions[key]) {
 
-						if (option.AllowsFraming (frame)) {
-							newResults.Add (existingResult.WithRole (key, option));
-						}
+					var options = roleOptions [key].Where (o => o.AllowsFraming (frame)).ToArray();
+
+					if (!options.Any ())
+						continue;
+
+					if (limitVariations) {
+						options = new [] { options [random.Next (options.Length)] };
+					}
+
+					foreach (var option in options) {
+						
+						newResults.Add (existingResult.WithRole (key, option));
 					}
 				}
 			

@@ -29,7 +29,7 @@ namespace monarquia
 
 				foreach (var frame in frames) {
 					results.AddRange(BuildExercisesFromRoles (
-						roleSelector.VerbRoleSelector.GetSelectionsFor (frame), 
+						roleSelector.VerbRoleSelector.GetSelectionsFor (frame, limitVariations, random), 
 						roleSelector.SpanishRolePattern,
 						roleSelector.EnglishRolePattern,
 						frame));

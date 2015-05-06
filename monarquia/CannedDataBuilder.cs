@@ -120,7 +120,6 @@ namespace monarquia
 
 			Verb englishVerb = TranslateVerbFromSpanishToEnglish (dataLoader, verb, frame.Conjugation);
 
-
 			rootRoleSelection = rootRoleSelection.WithRole ("verbPhrase", verb.Conjugation (frame.Conjugation, englishVerb));
 			IEnumerable<RoleSelection> roleSelections = new[] {
 				rootRoleSelection
