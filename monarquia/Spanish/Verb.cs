@@ -140,9 +140,9 @@ namespace monarquia
 			return englishVerb.ConjugatedForTense (conjugation, pointOfView);
 		}
 
-		public override IEnumerable<string> GetTags ()
+		public override IEnumerable<string> GetTags (Frame frame)
 		{
-			return new [] { "verb:" + spanishVerb.Infinitive, "conjugation:" + conjugation };
+			return new [] { "verb:" + spanishVerb.Infinitive, "conjugation:" + conjugation, frame.PointOfView.AsTagString() };
 		}
 
 		public override IEnumerable<string> GetExtraHints ()

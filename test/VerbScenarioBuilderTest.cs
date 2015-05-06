@@ -53,7 +53,7 @@ namespace test
 			var pointOfView = PointOfView.ThirdPersonMasculine;
 			var frame = new Frame (pointOfView, Conjugation.Present);
 
-			var result = roleSelector.GetSelectionsFor (frame, false, null);
+			var result = roleSelector.GetSelectionsFor (frame);
 
 			var expectedSelection = result.First (roleSelection => 
 				roleSelection.GetForRole ("timeframe").AsSpanish (pointOfView).Equals ("timeframe1")

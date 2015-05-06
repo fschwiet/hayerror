@@ -23,13 +23,11 @@ namespace monarquia
 
 			foreach (var roleSelector in cannedData.GetAllVerbRoleSelectors())
 			{
-				var frames = limitVariations ? 
-					Frame.FramesCoveringEachConjugationForm (verb) :
-					Frame.SelectAllFrames ();
+				var frames = Frame.SelectAllFrames ();
 
 				foreach (var frame in frames) {
 					results.AddRange(BuildExercisesFromRoles (
-						roleSelector.VerbRoleSelector.GetSelectionsFor (frame, limitVariations, random), 
+						roleSelector.VerbRoleSelector.GetSelectionsFor (frame), 
 						roleSelector.SpanishRolePattern,
 						roleSelector.EnglishRolePattern,
 						frame));
@@ -41,10 +39,6 @@ namespace monarquia
 				.Where (t => t.StartsWith (tagPrefix))
 				.Distinct()
 				.Select (t => t.Substring (tagPrefix.Length));
-
-			if (verb != null) {
-				results = results.Where (r => r.Tags.Contains ("verb:" + verb)).ToList ();
-			}
 
 			// Console.WriteLine ("Have good data for verbs: " + string.Join (", ", verbsToConsiderFinished));
 
@@ -58,18 +52,44 @@ namespace monarquia
 
 			foreach(var v in verbs.Where(v => !verbsToConsiderFinished.Contains(v.Infinitive))) 
 			{
-				var frames = limitVariations ? 
-					Frame.FramesCoveringEachConjugationForm (verb) :
-					Frame.SelectAllFrames ();
+				var frames = Frame.SelectAllFrames ();
 
 				foreach (var framing in frames) {
 
-					var roleSelecton = cannedData.GetAllRoleScenariosForVerbAndFrame (random, v, limitVariations, dataLoader, framing);
+					var roleSelecton = cannedData.GetAllRoleScenariosForVerbAndFrame (random, v, dataLoader, framing);
 					results.AddRange (BuildExercisesFromRoles (roleSelecton, 
 						new [] { "timeframe", "subject","verbPhrase", "verbEnding"},
 						new [] { "timeframe", "subject","verbPhrase", "verbEnding"},
 						framing));
 				}
+			}
+
+			if (verb != null) {
+				results = results.Where (r => r.Tags.Contains ("verb:" + verb)).ToList ();
+			}
+
+			if (limitVariations) {
+				var allTags = results.SelectMany (r => r.Tags).Distinct ().AsEnumerable ();
+				var allVerbTags = allTags.Where (t => t.StartsWith ("verb:")).AsEnumerable ();
+				var allConjugationTags = allTags.Where (t => t.StartsWith ("conjugation:")).AsEnumerable ();
+				var allPointOfViewTags = Frame.FramesCoveringEachConjugationForm (null).Select (r => r.PointOfView).Distinct ()
+					.Select (p => p.AsTagString ()).AsEnumerable ();
+
+				List<Exercise> limitedExercises = new List<Exercise> ();
+
+				foreach (var resultsGroup in
+					from v in allVerbTags
+					from c in allConjugationTags
+					from p in allPointOfViewTags
+					select results.Where(r => r.Tags.Contains(v) && r.Tags.Contains(c) && r.Tags.Contains(p)).ToArray()) {
+
+					if (!resultsGroup.Any ())
+						continue;
+
+					limitedExercises.Add (resultsGroup [random.Next (resultsGroup.Length)]);
+				}
+
+				results = limitedExercises;
 			}
 
 			return results;
@@ -90,7 +110,7 @@ namespace monarquia
 				var result = new Exercise();
 				result.Original = MakeSentenceFromWords (spanishPhrase.Select(p => p.AsSpanish(frame.PointOfView)));
 				result.HintsForTranslated = spanishPhrase.SelectMany (p => p.GetEnglishHints ()).ToList();
-				result.Tags = spanishPhrase.SelectMany (p => p.GetTags()).ToList ();
+				result.Tags = spanishPhrase.SelectMany (p => p.GetTags(frame)).ToList ();
 				result.ExtraInfo = string.Join (", ", spanishPhrase.SelectMany (p => p.GetExtraHints ()));
 
 				try {

@@ -16,7 +16,7 @@ namespace monarquia
 			return new string[0];
 		}
 
-		public virtual IEnumerable<string> GetTags()
+		public virtual IEnumerable<string> GetTags(Frame frame)
 		{
 			return new string[0];
 		}
@@ -71,9 +71,9 @@ namespace monarquia
 			return translateable.GetExtraHints ();
 		}
 
-		public override IEnumerable<string> GetTags ()
+		public override IEnumerable<string> GetTags (Frame frame)
 		{
-			return translateable.GetTags ();
+			return translateable.GetTags (frame);
 		}
 	}
 
@@ -154,9 +154,9 @@ namespace monarquia
 			return spanish.SelectMany (s => s.GetEnglishHints ());
 		}
 
-		public override IEnumerable<string> GetTags ()
+		public override IEnumerable<string> GetTags (Frame frame)
 		{
-			return spanish.SelectMany (s => s.GetTags ()).Concat (english.SelectMany (e => e.GetTags ())).Distinct ();
+			return spanish.SelectMany (s => s.GetTags (frame)).Concat (english.SelectMany (e => e.GetTags (frame))).Distinct ();
 		}
 
 		public override IEnumerable<string> GetExtraHints ()

@@ -114,7 +114,7 @@ namespace monarquia
 
 		}
 			
-		public IEnumerable<RoleSelection> GetAllRoleScenariosForVerbAndFrame (Random random, Verb verb, bool limitVariations, DataLoader dataLoader, Frame frame)
+		public IEnumerable<RoleSelection> GetAllRoleScenariosForVerbAndFrame (Random random, Verb verb, DataLoader dataLoader, Frame frame)
 		{
 			var rootRoleSelection = new RoleSelection (frame);
 
@@ -130,22 +130,11 @@ namespace monarquia
 			roleSelections = roleSelections.SelectMany (selection =>  {
 				
 				var verbEndings = this.GetVerbEndings (verb.Infinitive, frame.PointOfView).ToArray ();
-				if (limitVariations) {
-					verbEndings = new[] {
-						verbEndings [random.Next (verbEndings.Length)]
-					};
-				}
 				return verbEndings.Select (ve => selection.WithRole ("verbEnding", ve));
 			});
 			roleSelections = roleSelections.SelectMany (selection =>  {
+				
 				var timeframes = this.GetTimeframeExpressions ().Where( t=> t.AllowsFraming(frame)).ToArray ();
-
-				if (limitVariations) {
-					timeframes = new[] {
-						timeframes [random.Next (timeframes.Length)]
-					};
-				}
-
 				return timeframes.Select (tf => selection.WithRole ("timeframe", tf));
 			});
 			return roleSelections;
