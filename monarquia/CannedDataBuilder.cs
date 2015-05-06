@@ -7,7 +7,7 @@ namespace monarquia
 
 	public class CannedDataBuilder : ICannedData {
 
-		List<VerbRoleSelector> roleSelectors = new List<VerbRoleSelector> ();
+		List<ExpressableVerbRoleSelection> roleSelectors = new List<ExpressableVerbRoleSelection> ();
 
 		List<ITranslateable> TimeExpressions = new List<ITranslateable>();
 
@@ -73,11 +73,19 @@ namespace monarquia
 			return ReflexiveVerbTranslations.Select (t => t.Key);
 		}
 
-		public void AddRoleSelector(VerbRoleSelector selector) {
-			roleSelectors.Add (selector);
+		public void AddRoleSelector(
+			VerbRoleSelector selector,
+			IEnumerable<string> spanishRolePattern = null,
+			IEnumerable<string> englishRolePattern = null) {
+
+			roleSelectors.Add (new ExpressableVerbRoleSelection() {
+				VerbRoleSelector = selector,
+				SpanishRolePattern = spanishRolePattern ?? new [] { "timeframe", "subject", "verbPhrase", "verbEnding" },
+				EnglishRolePattern = englishRolePattern ?? new [] { "timeframe", "subject", "verbPhrase", "verbEnding" }
+			});
 		}
 
-		public IEnumerable<VerbRoleSelector> GetAllVerbRoleSelectors()
+		public IEnumerable<ExpressableVerbRoleSelection> GetAllVerbRoleSelectors()
 		{
 			return roleSelectors;
 		}

@@ -15,3 +15,4 @@ car,kɑr
 actor,æktər
 dentist,dɛntəst
 student,studənt
+lot,lɑt

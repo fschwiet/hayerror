@@ -30,19 +30,24 @@ namespace monarquia
 				from frame in frames
 				select new { roleSelector, frame } )
 			{
-				results.AddRange(GetForVerbConjugation (scenario.roleSelector.GetSelectionsFor (scenario.frame), scenario.frame));
+				results.AddRange(BuildExercisesFromRoles (
+					scenario.roleSelector.VerbRoleSelector.GetSelectionsFor (scenario.frame), 
+					scenario.roleSelector.SpanishRolePattern,
+					scenario.roleSelector.EnglishRolePattern,
+					scenario.frame));
 			}
+				
+			var tagPrefix = "verb:";
+			var verbsToConsiderFinished = results.SelectMany (r => r.Tags)
+				.Where (t => t.StartsWith (tagPrefix))
+				.Distinct()
+				.Select (t => t.Substring (tagPrefix.Length));
 
 			if (verb != null) {
 				results = results.Where (r => r.Tags.Contains ("verb:" + verb)).ToList ();
 			}
 
-			var tagPrefix = "verb:";
-			var verbsToConsiderFinished = results.SelectMany (r => r.Tags)
-				.Where (t => t.StartsWith (tagPrefix))
-				.Select (t => t.Substring (tagPrefix.Length));
-
-			//Console.WriteLine ("Have good data for verbs: " + string.Join (", ", verbsToConsiderFinished));
+			// Console.WriteLine ("Have good data for verbs: " + string.Join (", ", verbsToConsiderFinished));
 
 			List<Verb> verbs = new List<Verb> ();
 
@@ -57,26 +62,27 @@ namespace monarquia
 				foreach (var framing in frames) {
 
 					var roleSelecton = cannedData.GetAllRoleScenariosForVerbAndFrame (random, v, limitVariations, dataLoader, framing);
-					results.AddRange (GetForVerbConjugation (roleSelecton, framing));
+					results.AddRange (BuildExercisesFromRoles (roleSelecton, 
+						new [] { "timeframe", "subject","verbPhrase", "verbEnding"},
+						new [] { "timeframe", "subject","verbPhrase", "verbEnding"},
+						framing));
 				}
 			}
 
 			return results;
 		}
 
-		List<Exercise> GetForVerbConjugation (
+		List<Exercise> BuildExercisesFromRoles (
 			IEnumerable<RoleSelection> roleSelections,
+			IEnumerable<string> spanishTemplate,
+			IEnumerable<string> englishTemplate,
 			Frame frame)
 		{
 			List<Exercise> results = new List<Exercise> ();
 
 			foreach (var roleSelection in roleSelections)
 			{
-				List<ITranslateable> spanishPhrase = new List<ITranslateable> ();
-				spanishPhrase.Add (roleSelection.GetForRole("timeframe"));
-				spanishPhrase.Add (roleSelection.GetForRole("subject"));
-				spanishPhrase.Add (roleSelection.GetForRole("verbPhrase"));
-				spanishPhrase.Add (roleSelection.GetForRole("verbEnding"));
+				var spanishPhrase = spanishTemplate.Select (t => roleSelection.GetForRole (t));
 
 				var result = new Exercise();
 				result.Original = MakeSentenceFromWords (spanishPhrase.Select(p => p.AsSpanish(frame.PointOfView)));
@@ -85,7 +91,9 @@ namespace monarquia
 				result.ExtraInfo = string.Join (", ", spanishPhrase.SelectMany (p => p.GetExtraHints ()));
 
 				try {
-					result.Translated = MakeEnglishSentenceFromWords (phoneticData, spanishPhrase.Select(p => p.AsEnglish(frame.PointOfView)));					
+					var englishPhrase = englishTemplate.Select (t => roleSelection.GetForRole (t));
+
+					result.Translated = MakeEnglishSentenceFromWords (phoneticData, englishPhrase.Select(p => p.AsEnglish(frame.PointOfView)));					
 				}
 				catch(Exception) {
 					// ignore

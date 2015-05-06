@@ -147,6 +147,23 @@ namespace test
 			Assert.Contains ("conjugation:Present", exercise.Tags);
 			Assert.Contains ("verb:ir", exercise.Tags);
 		}
+
+		[TestCase("Hay tres pasos.", "There are three steps.")]
+		[TestCase("Hay confusión.", "There is confusion.")]
+		[TestCase("Ayer hubo confusión.", "Yesterday there was confusion.")]
+		[TestCase("Ayer hubo tres pasos.", "Yesterday there were three steps.")]
+		[TestCase("Todos los años había confusión.", "Every year there was confusion.")]
+		[TestCase("Todos los años había tres pasos.", "Every year there were three steps.")]
+		[TestCase("Habrá confusión.", "There will be confusion.")]
+		[TestCase("Habrá tres pasos.", "There will be three steps.")]
+		[TestCase("Habría confusión.", "There would be confusion.")]
+		[TestCase("Habría tres pasos.", "There would be three steps.")]
+		[TestCase("Ha habido confusión.", "There has been confusion.")]
+		[TestCase("Ha habido tres pasos.", "There have been three steps.")]
+		public void HaberIsTricky (string expected, string translation)
+		{
+			AssertHasTranslation (expected, translation);
+		}
 	}
 }
 
