@@ -148,8 +148,8 @@ namespace test
 			Assert.Contains ("verb:ir", exercise.Tags);
 		}
 
-		[TestCase("Hay tres pasos.", "There are three steps.")]
 		[TestCase("Hay confusión.", "There is confusion.")]
+		[TestCase("Hay tres pasos.", "There are three steps.")]
 		[TestCase("Ayer hubo confusión.", "Yesterday there was confusion.")]
 		[TestCase("Ayer hubo tres pasos.", "Yesterday there were three steps.")]
 		[TestCase("Todos los años había confusión.", "Every year there was confusion.")]

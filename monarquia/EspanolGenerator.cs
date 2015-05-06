@@ -21,20 +21,19 @@ namespace monarquia
 		{
 			List<Exercise> results = new List<Exercise> ();
 
-			var frames = limitVariations ? 
-				Frame.FramesCoveringEachConjugationForm () :
-				Frame.SelectAllFrames ();
-
-			foreach (var scenario in 
-				from roleSelector in cannedData.GetAllVerbRoleSelectors() 
-				from frame in frames
-				select new { roleSelector, frame } )
+			foreach (var roleSelector in cannedData.GetAllVerbRoleSelectors())
 			{
-				results.AddRange(BuildExercisesFromRoles (
-					scenario.roleSelector.VerbRoleSelector.GetSelectionsFor (scenario.frame), 
-					scenario.roleSelector.SpanishRolePattern,
-					scenario.roleSelector.EnglishRolePattern,
-					scenario.frame));
+				var frames = limitVariations ? 
+					Frame.FramesCoveringEachConjugationForm (verb) :
+					Frame.SelectAllFrames ();
+
+				foreach (var frame in frames) {
+					results.AddRange(BuildExercisesFromRoles (
+						roleSelector.VerbRoleSelector.GetSelectionsFor (frame), 
+						roleSelector.SpanishRolePattern,
+						roleSelector.EnglishRolePattern,
+						frame));
+				}
 			}
 				
 			var tagPrefix = "verb:";
@@ -59,6 +58,10 @@ namespace monarquia
 
 			foreach(var v in verbs.Where(v => !verbsToConsiderFinished.Contains(v.Infinitive))) 
 			{
+				var frames = limitVariations ? 
+					Frame.FramesCoveringEachConjugationForm (verb) :
+					Frame.SelectAllFrames ();
+
 				foreach (var framing in frames) {
 
 					var roleSelecton = cannedData.GetAllRoleScenariosForVerbAndFrame (random, v, limitVariations, dataLoader, framing);

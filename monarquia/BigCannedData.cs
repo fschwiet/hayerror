@@ -54,11 +54,12 @@ namespace monarquia
 			AddRoleSelector (new VerbRoleSelector ("haber")
 				.hasOneOf ("timeframe", timeframeExpressions)
 				.hasOneOf ("subject", new [] {
-					new CannedTranslation ("mucho tráfico", "a lot of traffic", frameFilter: frame => frame.PointOfView == PointOfView.ThirdPersonPluralMasculine),
-					new CannedTranslation ("tiempo", "time", frameFilter: frame => frame.PointOfView == PointOfView.ThirdPersonPluralMasculine),
+					new CannedTranslation ("mucho tráfico", "a lot of traffic", frameFilter: frame => frame.PointOfView == PointOfView.ThirdPersonMasculine),
 					new CannedTranslation ("confusión", "confusion", frameFilter: frame => frame.PointOfView == PointOfView.ThirdPersonFeminine),
+					new CannedTranslation ("tiempo", "time", frameFilter: frame => frame.PointOfView == PointOfView.ThirdPersonPluralMasculine),
 					new CannedTranslation ("problemas", "problems", frameFilter: frame => frame.PointOfView == PointOfView.ThirdPersonPluralMasculine),
-					new CannedTranslation ("tres pasos", "three steps", frameFilter: frame => frame.PointOfView == PointOfView.ThirdPersonPluralMasculine)
+					new CannedTranslation ("tres pasos", "three steps", frameFilter: frame => frame.PointOfView == PointOfView.ThirdPersonPluralMasculine),
+					new CannedTranslation ("opciones", "options", frameFilter: frame => frame.PointOfView == PointOfView.ThirdPersonPluralFeminine)
 				})
 				.hasOneOf ("fakeSubject", new [] {
 					new EnglishOnly("there")
