@@ -90,6 +90,7 @@
     <Compile Include="Spanish\VerbRoleSelector.cs" />
     <Compile Include="ExpressableVerbRoleSelection.cs" />
     <Compile Include="Spanish\ResultChunk.cs" />
+    <Compile Include="HintedLanguageAccumulator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
