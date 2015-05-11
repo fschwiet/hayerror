@@ -39,7 +39,7 @@ namespace monarquia
 
 			foreach (var exercise in results) {
 				Console.WriteLine (exercise.Original);
-				Console.WriteLine (exercise.GetTranslatedWithHints());
+				Console.WriteLine (exercise.Translated);
 				Console.WriteLine ("{0} - {1}", exercise.ExtraInfo, String.Join(", ", exercise.Tags));
 				Console.WriteLine("");
 				Console.WriteLine("");

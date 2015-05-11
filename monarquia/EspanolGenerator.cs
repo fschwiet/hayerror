@@ -109,8 +109,7 @@ namespace monarquia
 				var spanishResultChunks = spanishPhrase.SelectMany (s => s.GetResult (frame));
 
 				var result = new Exercise();
-				result.Original = MakeSentenceFromWords (spanishResultChunks.Select(p => p.SpanishTranslation));
-				result.HintsForTranslated = spanishPhrase.SelectMany (p => spanishResultChunks.SelectMany(r => r.EnglishHint)).ToList();
+				result.Original = MakeSpanishSentence (spanishResultChunks);
 				result.Tags = spanishResultChunks.SelectMany (p => p.Tags).Distinct().ToList ();
 				result.ExtraInfo = string.Join (", ", spanishResultChunks.SelectMany(s => s.ExtraInfo));
 
@@ -118,7 +117,7 @@ namespace monarquia
 					var englishPhrase = englishTemplate.Select (t => roleSelection.GetForRole (t));
 					var englishChunks = englishPhrase.SelectMany(e => e.GetResult(frame));
 
-					result.Translated = MakeEnglishSentenceFromWords (phoneticData, englishChunks.Select(e => e.EnglishTranslation));					
+					result.Translated = MakeEnglishSentence (phoneticData, englishChunks);					
 				}
 				catch(Exception) {
 					// ignore
@@ -130,32 +129,26 @@ namespace monarquia
 			return results;
 		}
 
-		static string MakeSentenceFromWords (IEnumerable<string> input, Func<IEnumerable<string>,IEnumerable<string>> transform = null)
+		static string MakeSpanishSentence (IEnumerable<ResultChunk> chunks)
 		{
-			if (transform != null) {
-				input = transform (input.SelectMany(w => w.Split(' ')).Where (w => !string.IsNullOrWhiteSpace (w))).ToList ();
-			}
+			var accumulator = new HintedLanguageAccumulator();
 
-			var nonemptyWordsJoinedBySpaces = string.Join (" ", input.Where (w => !string.IsNullOrEmpty (w)));
-			var capitolizedSentencewithPeriod = nonemptyWordsJoinedBySpaces.First ().ToString ().ToUpper () + nonemptyWordsJoinedBySpaces.Substring (1) + ".";
-			return capitolizedSentencewithPeriod;
+			foreach (var chunk in chunks)
+				accumulator.Add (chunk.SpanishTranslation, chunk.SpanishHint);
+
+			return accumulator.GetResult ();
 		}
 
-		public static string MakeEnglishSentenceFromWords (CachedPhoneticData phoneticData, IEnumerable<string> accumulatedTranslation)
+		public static string MakeEnglishSentence (CachedPhoneticData phoneticData, IEnumerable<ResultChunk> chunks)
 		{
-			return MakeSentenceFromWords (accumulatedTranslation, input =>  {
-				var words = input.ToArray ();
-				for (var i = 0; i < words.Length - 1; i++) {
-					if (words [i].Equals ("a", StringComparison.InvariantCultureIgnoreCase)) {
-						var nextWordPhonemes = phoneticData.GetEnglishPhonetics(words[i+1]);
+			var accumulator = new HintedLanguageAccumulator();
 
-						if ("aɔæɪɛ".Contains(nextWordPhonemes[0])) {
-							words[i] = "an";
-						}
-					}
-				}
-				return words;
-			});
+			foreach (var chunk in chunks)
+				accumulator.Add (chunk.EnglishTranslation, chunk.EnglishHint);
+
+			accumulator.ApplyTransform ("a", w => "aɔæɪɛ".Contains (phoneticData.GetEnglishPhonetics (w) [0]), "an");
+
+			return accumulator.GetResult ();
 		}
 
 		public IEnumerable<PointOfView> ChoosePointOfViewsForDrill ()

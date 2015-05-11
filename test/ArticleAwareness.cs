@@ -22,8 +22,16 @@ namespace test
 		{
 			var phoneticData = new CachedPhoneticData("../../../data");
 
-			var result = EspanolGenerator.MakeEnglishSentenceFromWords(phoneticData, new [] {
-				"a", input});
+			var result = EspanolGenerator.MakeEnglishSentence(phoneticData, new [] {
+					new ResultChunk() {
+						EnglishTranslation = "a",
+						EnglishHint = new string[0]
+					}, 
+					new ResultChunk() {
+						EnglishTranslation = input,
+						EnglishHint = new string[0]	
+					}
+				});
 
 			Assert.AreEqual(expected, result);
 		}

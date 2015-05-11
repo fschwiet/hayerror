@@ -37,6 +37,7 @@ namespace monarquia
 
 		public void Add(string value, IEnumerable<string> hints = null)
 		{
+			value = value.Trim ();
 			hints = hints ?? new string[0];
 
 			if (value.Length == 0) {

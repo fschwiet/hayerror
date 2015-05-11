@@ -12,7 +12,6 @@ namespace monarquia
 			public string Original;
 			public string Translated;
 			public string ExtraInfo;
-			public List<string> HintsForTranslated = new List<string>();
 			public List<string> Tags = new List<string>();
 
 			public Exercise Clone() {
@@ -20,17 +19,8 @@ namespace monarquia
 					Original = this.Original,
 					Translated = this.Translated,
 					ExtraInfo = this.ExtraInfo,
-					HintsForTranslated = new List<string> (this.HintsForTranslated),
 					Tags = new List<string> (this.Tags)
 				};
-			}
-
-			public string GetTranslatedWithHints() {
-				var result = Translated;
-				if (HintsForTranslated.Any()) {
-					result = "(" + string.Join(", ", HintsForTranslated) + ") " + Translated;
-				}
-				return result;
 			}
 
 			public int GetWeight() {
@@ -55,7 +45,7 @@ namespace monarquia
 				foreach (var exercise in exercises) {
 
 					csv.WriteField (exercise.Original);
-					csv.WriteField (exercise.GetTranslatedWithHints());
+					csv.WriteField (exercise.Translated);
 					csv.WriteField (exercise.ExtraInfo);
 					csv.WriteField (string.Join(" ", exercise.Tags));
 					csv.NextRecord ();

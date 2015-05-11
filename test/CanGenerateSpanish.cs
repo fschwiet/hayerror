@@ -45,16 +45,16 @@ namespace test
 
 		[Test]
 		[TestCase("Yo voy al cine.", "I go to the movies.")]
-		[TestCase("Tú vas al cine.", "You go to the movies.")]		
-		[TestCase("Usted va al cine.", "You go to the movies.")]
+		[TestCase("Tú vas al cine.", "(tú) You go to the movies.")]		
+		[TestCase("Usted va al cine.", "(usted) You go to the movies.")]
 		[TestCase("Él va al cine.", "He goes to the movies.")]
 		[TestCase("Ella va al cine.", "She goes to the movies.")]
 
 		[TestCase("Nosotros vamos al cine.", "We go to the movies.")]
-		[TestCase("Vosotros vais al cine.", "You all go to the movies.")]
+		[TestCase("Vosotros vais al cine.", "(vosotros) You all go to the movies.")]
 		[TestCase("Ustedes van al cine.", "You all go to the movies.")]
-		[TestCase("Ellos van al cine.", "They go to the movies.")]
-		[TestCase("Ellas van al cine.", "They go to the movies.")]
+		[TestCase("Ellos van al cine.", "(ellos) They go to the movies.")]
+		[TestCase("Ellas van al cine.", "(ellas) They go to the movies.")]
 		public void PresentTenseIntransitive (string expected, string translation)
 		{
 			AssertHasTranslation (expected, translation);
@@ -70,21 +70,21 @@ namespace test
 
 		[TestCase("Yo soy cocinero.", "I am a cook.")]
 		[TestCase("Ella es actriz.", "She is an actor.")]
-		[TestCase("Tú eres cocinero.", "You are a cook.")]
+		[TestCase("Tú eres cocinero.", "(tú) You are a cook.")]
 		[TestCase("Nosotros somos cocineros.", "We are cooks.")]
-		[TestCase("Ellos son cocineros.", "They are cooks.")]
+		[TestCase("Ellos son cocineros.", "(ellos) They are cooks.")]
 		public void IsProfessionExpressionsOftenLackAnArticle (string expected, string translation)
 		{
 			AssertHasTranslation (expected, translation);
 		}
 
 		[TestCase("Yo preparo la cena.", null /*"I prepare the dinner."  prepare doesn't have conjugation downloadable on SD */)]
-		[TestCase("Ellos suben la escalera.", "They climb the stairs.")]
-		[TestCase("Ellas beben leche.", "They drink milk.")]
+		[TestCase("Ellos suben la escalera.", "(ellos) They climb the stairs.")]
+		[TestCase("Ellas beben leche.", "(ellas) They drink milk.")]
 		[TestCase("Él suma la cuenta.", null/*, "He adds up the check."*/)]
 		[TestCase("Ella habla a la reportera.", "She talks to the reporter.")]
 		[TestCase("Él teme a los críticos.", "He fears the critics.")]
-		[TestCase("Ellos comen fajitas.", "They eat fajitas.")]
+		[TestCase("Ellos comen fajitas.", "(ellos) They eat fajitas.")]
 		public void PresentTenseTransitive (string expected, string translation)
 		{
 			AssertHasTranslation (expected, translation);
@@ -123,7 +123,7 @@ namespace test
 		[TestCase("Todos los años yo conocía a ella.", "Every year I knew her.")]
 		[TestCase("Yo conocería a ella.", "I would know her.")]
 		[TestCase("Yo conoceré a ella.", "I will meet her.")]
-		[TestCase("Ellas han conocido a ella.", "They have known her.")]
+		[TestCase("Ellas han conocido a ella.", "(ellas) They have known her.")]
 
 		// nunca ha conocido -> has never met
 		public void HandlesVerbsThatChangeInterpretationWithTense(string expected, string translation)
@@ -133,7 +133,7 @@ namespace test
 
 		[TestCase("Yo me corto el pelo.", "I cut my hair.")]
 		[TestCase("Nosotros nos duchamos.", "We shower.")]
-		[TestCase("Tú te miras en el espejo.", "You look at yourself in the mirror.")]
+		[TestCase("Tú te miras en el espejo.", "(tú) You look at yourself in the mirror.")]
 		public void CanDoReflexiveVerbs(string expected, string translation)
 		{
 			AssertHasTranslation (expected, translation);
@@ -164,14 +164,6 @@ namespace test
 		{
 			AssertHasTranslation (expected, translation);
 		}
-
-		/*
-		[TestCase("Todos los años usted va al cine.", "Every year (usted) you go to the movies.")]
-		public void EnglishHintsAreInsertedContextually(string expected, string translation)
-		{
-			AssertHasTranslation (expected, translation);
-		}
-		*/
 	}
 }
 

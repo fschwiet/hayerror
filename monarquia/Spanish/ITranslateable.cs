@@ -107,29 +107,31 @@ namespace monarquia
 			var spanishChunks = spanish.SelectMany (s => s.GetResult (frame)).ToArray ();
 			var englishChunks = english.SelectMany (e => e.GetResult (frame)).ToArray ();
 
-			//  A null translation indicates a chunk can't be expressed in that language.
-			//  Bubble that failure up into the composed result.
+			List<ResultChunk> results = new List<ResultChunk> ();
 
-			string spanishTranslation = null;
-			if (spanishChunks.All (c => c.SpanishTranslation != null)) {
-				spanishTranslation = string.Join (" ", spanishChunks.Select (r => r.SpanishTranslation));
+			foreach (var spanishChunk in spanish.SelectMany(s => s.GetResult(frame))) {
+				results.Add (new ResultChunk () {
+					SpanishTranslation = spanishChunk.SpanishTranslation,
+					SpanishHint = spanishChunk.SpanishHint,
+					EnglishTranslation = "",
+					EnglishHint = new string[0],
+					ExtraInfo = spanishChunk.ExtraInfo,
+					Tags = spanishChunk.Tags
+				});
 			}
 
-			string englishTranslation = null;
-			if (englishChunks.All(c => c.EnglishTranslation != null)) {
-				englishTranslation = string.Join(" ", englishChunks.Select((r => r.EnglishTranslation)));
+			foreach (var englishChunk in english.SelectMany(s => s.GetResult(frame))) {
+				results.Add (new ResultChunk () {
+					SpanishTranslation = "",
+					SpanishHint = new string[0],
+					EnglishTranslation = englishChunk.EnglishTranslation,
+					EnglishHint = englishChunk.EnglishHint,
+					ExtraInfo = englishChunk.ExtraInfo,
+					Tags = englishChunk.Tags
+				});
 			}
 
-			return new [] {
-				new ResultChunk () {
-					SpanishTranslation = spanishTranslation,
-					EnglishTranslation = englishTranslation,
-					SpanishHint = spanishChunks.SelectMany (r => r.SpanishHint),
-					EnglishHint = englishChunks.SelectMany (r => r.EnglishHint),
-					Tags = spanishChunks.SelectMany(s => s.Tags).Concat(englishChunks.SelectMany(e => e.Tags)).Distinct(),
-					ExtraInfo = spanishChunks.SelectMany(s => s.ExtraInfo).Concat(englishChunks.SelectMany(e => e.ExtraInfo))
-				}
-			};
+			return results;
 		}
 
 		public override bool AllowsFraming (Frame frame)
