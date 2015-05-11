@@ -133,7 +133,7 @@ namespace monarquia
 		static string MakeSentenceFromWords (IEnumerable<string> input, Func<IEnumerable<string>,IEnumerable<string>> transform = null)
 		{
 			if (transform != null) {
-				input = transform (input.Where(s => s != null).SelectMany(w => w.Split(' ')).Where (w => !string.IsNullOrEmpty (w))).ToList ();
+				input = transform (input.SelectMany(w => w.Split(' ')).Where (w => !string.IsNullOrWhiteSpace (w))).ToList ();
 			}
 
 			var nonemptyWordsJoinedBySpaces = string.Join (" ", input.Where (w => !string.IsNullOrEmpty (w)));

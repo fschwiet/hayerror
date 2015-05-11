@@ -107,10 +107,23 @@ namespace monarquia
 			var spanishChunks = spanish.SelectMany (s => s.GetResult (frame)).ToArray ();
 			var englishChunks = english.SelectMany (e => e.GetResult (frame)).ToArray ();
 
+			//  A null translation indicates a chunk can't be expressed in that language.
+			//  Bubble that failure up into the composed result.
+
+			string spanishTranslation = null;
+			if (spanishChunks.All (c => c.SpanishTranslation != null)) {
+				spanishTranslation = string.Join (" ", spanishChunks.Select (r => r.SpanishTranslation));
+			}
+
+			string englishTranslation = null;
+			if (englishChunks.All(c => c.EnglishTranslation != null)) {
+				englishTranslation = string.Join(" ", englishChunks.Select((r => r.EnglishTranslation)));
+			}
+
 			return new [] {
 				new ResultChunk () {
-					SpanishTranslation = string.Join(" ", spanishChunks.Where(r => r.SpanishTranslation != null).Select(r => r.SpanishTranslation)),
-					EnglishTranslation = string.Join(" ", englishChunks.Where(r => r.EnglishTranslation != null).Select(r => r.EnglishTranslation)),
+					SpanishTranslation = spanishTranslation,
+					EnglishTranslation = englishTranslation,
 					SpanishHint = spanishChunks.SelectMany (r => r.SpanishHint),
 					EnglishHint = englishChunks.SelectMany (r => r.EnglishHint),
 					Tags = spanishChunks.SelectMany(s => s.Tags).Concat(englishChunks.SelectMany(e => e.Tags)).Distinct(),
