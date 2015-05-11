@@ -8,13 +8,13 @@ namespace monarquia
 		{
 		}
 
-		public override string AsEnglish (PointOfView pointOfView)
+		public override System.Collections.Generic.IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
-			if (pointOfView.IsPlural()) {
-				return "";
-			} else {
-				return "a";
-			}
+			return new [] {
+				new ResultChunk () {
+					EnglishTranslation = frame.PointOfView.IsPlural () ? "" : "a"
+				}
+			};
 		}
 	}
 }

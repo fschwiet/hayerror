@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace monarquia
 {
 
-	public class CannedTranslation : NotComposed
+	public class CannedTranslation : ITranslateable
 	{
 		string spanishText;
 		string englishText;
@@ -22,17 +22,15 @@ namespace monarquia
 			}
 		}
 
-		public override string AsSpanish(PointOfView pointOfView) {
-			return spanishText;
-		}
-
-		public override string AsEnglish(PointOfView pointOfView) {
-			return englishText;
-		}
-
-		public override IEnumerable<string> GetEnglishHints ()
+		public override IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
-			return englishHints;
+			return new [] {
+				new ResultChunk () {
+					SpanishTranslation = spanishText,
+					EnglishTranslation = englishText,
+					EnglishHint = englishHints 
+				}
+			};
 		}
 
 		public override bool AllowsFraming (Frame frame)

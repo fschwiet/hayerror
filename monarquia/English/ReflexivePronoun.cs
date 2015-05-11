@@ -4,9 +4,18 @@ namespace monarquia
 {
 	public class ReflexivePronoun : EnglishOnly
 	{
-		public override string AsEnglish (PointOfView pointOfView)
+		public override System.Collections.Generic.IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
-			switch (pointOfView) 
+			return new [] {
+				new ResultChunk() {
+					EnglishTranslation = AsEnglish(frame)
+				}
+			};
+		}
+
+		public string AsEnglish (Frame frame)
+		{
+			switch (frame.PointOfView) 
 			{
 			case PointOfView.FirstPerson:
 				return "myself";

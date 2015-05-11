@@ -100,7 +100,10 @@ namespace test
 
 			var reflexiveVerb = new ReflexiveVerb (infinitive, dataLoader);
 
-			var result = reflexiveVerb.Conjugation (Conjugation.Present, null).AsSpanish (pointOfView);
+			var frame = new Frame (pointOfView, Conjugation.Present);
+
+			var resultChunks = reflexiveVerb.Conjugation (Conjugation.Present, null).GetResult (frame);
+			var result = String.Join (" ", resultChunks.Select(c => c.SpanishTranslation));
 
 			Assert.AreEqual (expected, result);
 		}

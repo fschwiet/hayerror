@@ -15,8 +15,10 @@ namespace test
 			//  there when it starts throwing exceptions.  So this test just runs to give more
 			//  information about those TestFixtureSetup methods.
 
-			var dataLoader = new DataLoader ("../../../data");
-			new BigCannedData (dataLoader);
+			var dataDirectory = "../../../data";
+			var dataLoader = new DataLoader (dataDirectory);
+			var cannedData = new BigCannedData (dataLoader);
+			new monarquia.EspanolGenerator (cannedData, dataDirectory).GetExercises ();
 		}
 	}
 }

@@ -127,27 +127,17 @@ namespace monarquia
 			this.conjugation = conjugation;
 		}
 
-		public override string AsSpanish (PointOfView pointOfView)
+		public override IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
-			return spanishVerb.ConjugatedForTense (conjugation, pointOfView);
-		}
-
-		public override string AsEnglish (PointOfView pointOfView)
-		{
-			if (englishVerb == null)
-				throw new Exception ("Verb missing translation");
-
-			return englishVerb.ConjugatedForTense (conjugation, pointOfView);
-		}
-
-		public override IEnumerable<string> GetTags (Frame frame)
-		{
-			return new [] { "verb:" + spanishVerb.Infinitive, "conjugation:" + conjugation, frame.PointOfView.AsTagString() };
-		}
-
-		public override IEnumerable<string> GetExtraHints ()
-		{
-			return new [] { "verb " + spanishVerb.Infinitive, conjugation.AsFriendlyString () };
+			return new [] { new ResultChunk () {
+				SpanishTranslation = spanishVerb.ConjugatedForTense (frame.Conjugation, frame.PointOfView),
+				EnglishTranslation = englishVerb == null ? null : englishVerb.ConjugatedForTense (frame.Conjugation, frame.PointOfView),
+				SpanishHint = new string[0],
+				EnglishHint = new string[0],
+				Tags = new [] { "verb:" + spanishVerb.Infinitive, "conjugation:" + conjugation, frame.PointOfView.AsTagString () },
+				ExtraInfo = new [] { "verb " + spanishVerb.Infinitive, conjugation.AsFriendlyString () }
+				}
+			};
 		}
 	}
 }

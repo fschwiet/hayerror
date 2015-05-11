@@ -164,6 +164,14 @@ namespace test
 		{
 			AssertHasTranslation (expected, translation);
 		}
+
+		/*
+		[TestCase("Todos los años usted va al cine.", "Every year (usted) you go to the movies.")]
+		public void EnglishHintsAreInsertedContextually(string expected, string translation)
+		{
+			AssertHasTranslation (expected, translation);
+		}
+		*/
 	}
 }
 

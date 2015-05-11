@@ -5,26 +5,8 @@ using System.Linq;
 namespace monarquia
 {
 	public abstract class ITranslateable {
-		public abstract string AsSpanish(PointOfView pointOfView);
-		public abstract string AsEnglish(PointOfView pointOfView);
 
-		//  When ITranslateables are composed, GetEnglishHints() is
-		//  only called on ITranslateables whose AsSpanish() is also
-		//  called.
-		public virtual IEnumerable<string> GetEnglishHints()
-		{
-			return new string[0];
-		}
-
-		public virtual IEnumerable<string> GetTags(Frame frame)
-		{
-			return new string[0];
-		}
-
-		public virtual IEnumerable<string> GetExtraHints()
-		{
-			return new string[0];
-		}
+		public abstract IEnumerable<ResultChunk> GetResult (Frame frame);
 
 		public virtual bool AllowsFraming(Frame frame) {
 			return true;
@@ -33,9 +15,20 @@ namespace monarquia
 		public ITranslateable WithFrameRequirements(Func<Frame,bool> requirement) {
 			return new TranslateableWithFrameRestriction(this, requirement);
 		}
+
+		public static ITranslateable operator +(ITranslateable a, ITranslateable b) {
+			var result = new Composed (new [] { a, b }, new [] { a, b });
+			return result;
+		}
+
+		public Composed WithEnglishAlternative(ITranslateable english) {
+			var result = new Composed (new [] { this }, new [] { english });
+
+			return result;
+		}
 	}
 
-	public class TranslateableWithFrameRestriction : NotComposed {
+	public class TranslateableWithFrameRestriction : ITranslateable {
 
 		ITranslateable translateable;
 		Func<Frame,bool> restriction;
@@ -51,41 +44,13 @@ namespace monarquia
 			return this.restriction(frame) && base.AllowsFraming (frame);
 		}
 
-		public override string AsEnglish (PointOfView pointOfView)
+		public override IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
-			return translateable.AsEnglish (pointOfView);
-		}
-
-		public override string AsSpanish (PointOfView pointOfView)
-		{
-			return translateable.AsSpanish (pointOfView);
-		}
-
-		public override IEnumerable<string> GetEnglishHints ()
-		{
-			return translateable.GetEnglishHints ();
-		}
-
-		public override IEnumerable<string> GetExtraHints ()
-		{
-			return translateable.GetExtraHints ();
-		}
-
-		public override IEnumerable<string> GetTags (Frame frame)
-		{
-			return translateable.GetTags (frame);
+			return translateable.GetResult (frame);
 		}
 	}
 
-	//  All ITransalateables either implement NotComposed or Composed
-	//  so anything that is actually not Composed can be implicitly
-	//  converted to a Composed (since we can't do certain operator
-	//  overloads on interfaces like ITranslteable)
-
-	public abstract class NotComposed : ITranslateable {
-	}
-
-	public class SpanishOnly : NotComposed {
+	public class SpanishOnly : ITranslateable {
 
 		string value;
 
@@ -96,18 +61,17 @@ namespace monarquia
 		public SpanishOnly() {
 		}
 
-		public override string AsEnglish (PointOfView pointOfView)
+		public override IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
-			throw new Exception ("AsEnglish() called on SpanishOnly instance");
-		} 
-
-		public override string AsSpanish (PointOfView pointOfView)
-		{
-			return value;
+			return new [] {
+				new ResultChunk() {
+					SpanishTranslation = value
+				}
+			};
 		}
 	}
 
-	public class EnglishOnly : NotComposed {
+	public class EnglishOnly : ITranslateable {
 
 		string value;
 
@@ -118,14 +82,13 @@ namespace monarquia
 		public EnglishOnly() {
 		}
 
-		public override string AsSpanish (PointOfView pointOfView)
+		public override IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
-			throw new Exception ("AsSpanish() called on EnglishOnly instance");
-		} 
-
-		public override string AsEnglish (PointOfView pointOfView)
-		{
-			return value;
+			return new [] {
+				new ResultChunk() {
+					EnglishTranslation = value
+				}
+			};
 		}
 	}
 
@@ -134,62 +97,32 @@ namespace monarquia
 		ITranslateable[] spanish;
 		ITranslateable[] english;
 
-		public Composed() {
+		public Composed(IEnumerable<ITranslateable> spanish, IEnumerable<ITranslateable> english) {
+			this.spanish = spanish.ToArray();
+			this.english = english.ToArray();
 		}
 
-		public override string AsSpanish(PointOfView pointOfView) {
-			return String.Join (" ", 
-				spanish.Select(e => e.AsSpanish(pointOfView))
-				.Where(s => !String.IsNullOrEmpty(s)));
-		}
-
-		public override string AsEnglish(PointOfView pointOfView) {
-			return String.Join (" ", 
-				english.Select(e => e.AsEnglish(pointOfView))
-				.Where(s => !String.IsNullOrEmpty(s)));
-		}
-
-		public override IEnumerable<string> GetEnglishHints ()
+		public override IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
-			return spanish.SelectMany (s => s.GetEnglishHints ());
-		}
+			var spanishChunks = spanish.SelectMany (s => s.GetResult (frame)).ToArray ();
+			var englishChunks = english.SelectMany (e => e.GetResult (frame)).ToArray ();
 
-		public override IEnumerable<string> GetTags (Frame frame)
-		{
-			return spanish.SelectMany (s => s.GetTags (frame)).Concat (english.SelectMany (e => e.GetTags (frame))).Distinct ();
-		}
-
-		public override IEnumerable<string> GetExtraHints ()
-		{
-			return spanish.SelectMany (s => s.GetExtraHints ()).Concat (english.SelectMany (e => e.GetExtraHints ()));
+			return new [] {
+				new ResultChunk () {
+					SpanishTranslation = string.Join(" ", spanishChunks.Where(r => r.SpanishTranslation != null).Select(r => r.SpanishTranslation)),
+					EnglishTranslation = string.Join(" ", englishChunks.Where(r => r.EnglishTranslation != null).Select(r => r.EnglishTranslation)),
+					SpanishHint = spanishChunks.SelectMany (r => r.SpanishHint),
+					EnglishHint = englishChunks.SelectMany (r => r.EnglishHint),
+					Tags = spanishChunks.SelectMany(s => s.Tags).Concat(englishChunks.SelectMany(e => e.Tags)).Distinct(),
+					ExtraInfo = spanishChunks.SelectMany(s => s.ExtraInfo).Concat(englishChunks.SelectMany(e => e.ExtraInfo))
+				}
+			};
 		}
 
 		public override bool AllowsFraming (Frame frame)
 		{
 			return spanish.All (s => s.AllowsFraming (frame))
 			&& english.All (e => e.AllowsFraming (frame));
-		}
-
-		public Composed WithEnglishAlternative(ITranslateable english) {
-			var result = new Composed ();
-			result.spanish = (ITranslateable[])this.spanish.Clone ();
-			result.english = new [] { english };
-			return result;
-		}
-
-		public static implicit operator Composed(NotComposed a) {
-
-			var result = new Composed();
-			result.spanish = new [] {a};
-			result.english = new [] {a};
-			return result;
-		}
-
-		public static Composed operator +(Composed a, ITranslateable b) {
-			var result = new Composed ();
-			result.spanish = new [] { a, b };
-			result.english = new [] { a, b };
-			return result;
 		}
 	}
 }

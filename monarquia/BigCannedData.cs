@@ -48,7 +48,7 @@ namespace monarquia
 			AddRoleSelector (new VerbRoleSelector ("ser")
 				.hasOneOf ("timeframe", timeframeExpressions)
 				.hasOneOf ("subject", peopleExpressions)
-				.hasOneOf ("verbEnding", professions.Select (p => ((Composed)p).WithEnglishAlternative ((Composed)new Article () + p)))
+				.hasOneOf ("verbEnding", professions.Select (p => p.WithEnglishAlternative (new Article () + p)))
 				.hasTranslation ("is", this, dataLoader));
 
 			AddRoleSelector (new VerbRoleSelector ("haber")
@@ -144,16 +144,16 @@ namespace monarquia
 
 			var pelo = new CannedTranslation ("pelo", "hair");
 
-			AddVerbEnding ("cortarse", ((Composed)new SpanishOnly("el") + pelo).
-				WithEnglishAlternative ((Composed)new PossessiveAdjective() +  pelo));
+			AddVerbEnding ("cortarse", (new SpanishOnly("el") + pelo).
+				WithEnglishAlternative (new PossessiveAdjective() +  pelo));
 
 			AddVerbEnding ("ducharse", new CannedTranslation ("", ""));
 			AddVerbEnding ("ducharse", new CannedTranslation ("con agua fría", "with cold water"));
 			AddVerbEnding ("ducharse", new CannedTranslation ("con agua caliente", "with hot water"));
 
 			AddVerbEnding ("mirarse", new CannedTranslation ("", ""));
-			AddVerbEnding ("mirarse", ((Composed)new SpanishOnly("en el espejo")).
-				WithEnglishAlternative((Composed)new EnglishOnly("at") + new ReflexivePronoun() + new EnglishOnly("in the mirror")));
+			AddVerbEnding ("mirarse", new SpanishOnly("en el espejo").
+				WithEnglishAlternative(new EnglishOnly("at") + new ReflexivePronoun() + new EnglishOnly("in the mirror")));
 			//  Plural only: AddVerbEnding ("mirarse", new CannedTranslation ("uno a otro", "at one another"));
 		}
 	}

@@ -2,7 +2,7 @@
 
 namespace monarquia
 {
-	public class Noun : NotComposed
+	public class Noun : ITranslateable
 	{
 		public string Masculine;
 		public string Feminine;
@@ -33,15 +33,25 @@ namespace monarquia
 			return this;
 		}
 
-		public override string AsSpanish(PointOfView pov) {
-			if (pov.IsFeminine ()) {
-				if (pov.IsPlural ()) {
+		public override System.Collections.Generic.IEnumerable<ResultChunk> GetResult (Frame frame)
+		{
+			return new [] {
+				new ResultChunk() {
+					SpanishTranslation = AsSpanish(frame),
+					EnglishTranslation = AsEnglish(frame)
+				}
+			};
+		}
+
+		public string AsSpanish(Frame frame) {
+			if (frame.PointOfView.IsFeminine ()) {
+				if (frame.PointOfView.IsPlural ()) {
 					return PluralFeminine;
 				} else {
 					return Feminine;
 				}
 			} else {
-				if (pov.IsPlural ()) {
+				if (frame.PointOfView.IsPlural ()) {
 					return PluralMasculine;
 				} else {
 					return Masculine;
@@ -49,8 +59,8 @@ namespace monarquia
 			}
 		}
 
-		public override string AsEnglish(PointOfView pointOfView) {
-			if (pointOfView.IsPlural())
+		public string AsEnglish(Frame frame) {
+			if (frame.PointOfView.IsPlural())
 				return EnglishPlural;
 			else
 				return EnglishSingular;

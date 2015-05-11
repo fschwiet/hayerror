@@ -106,17 +106,19 @@ namespace monarquia
 			foreach (var roleSelection in roleSelections)
 			{
 				var spanishPhrase = spanishTemplate.Select (t => roleSelection.GetForRole (t));
+				var spanishResultChunks = spanishPhrase.SelectMany (s => s.GetResult (frame));
 
 				var result = new Exercise();
-				result.Original = MakeSentenceFromWords (spanishPhrase.Select(p => p.AsSpanish(frame.PointOfView)));
-				result.HintsForTranslated = spanishPhrase.SelectMany (p => p.GetEnglishHints ()).ToList();
-				result.Tags = spanishPhrase.SelectMany (p => p.GetTags(frame)).ToList ();
-				result.ExtraInfo = string.Join (", ", spanishPhrase.SelectMany (p => p.GetExtraHints ()));
+				result.Original = MakeSentenceFromWords (spanishResultChunks.Select(p => p.SpanishTranslation));
+				result.HintsForTranslated = spanishPhrase.SelectMany (p => spanishResultChunks.SelectMany(r => r.EnglishHint)).ToList();
+				result.Tags = spanishResultChunks.SelectMany (p => p.Tags).Distinct().ToList ();
+				result.ExtraInfo = string.Join (", ", spanishResultChunks.SelectMany(s => s.ExtraInfo));
 
 				try {
 					var englishPhrase = englishTemplate.Select (t => roleSelection.GetForRole (t));
+					var englishChunks = englishPhrase.SelectMany(e => e.GetResult(frame));
 
-					result.Translated = MakeEnglishSentenceFromWords (phoneticData, englishPhrase.Select(p => p.AsEnglish(frame.PointOfView)));					
+					result.Translated = MakeEnglishSentenceFromWords (phoneticData, englishChunks.Select(e => e.EnglishTranslation));					
 				}
 				catch(Exception) {
 					// ignore
@@ -131,7 +133,7 @@ namespace monarquia
 		static string MakeSentenceFromWords (IEnumerable<string> input, Func<IEnumerable<string>,IEnumerable<string>> transform = null)
 		{
 			if (transform != null) {
-				input = transform (input.SelectMany(w => w.Split(' ')).Where (w => !string.IsNullOrEmpty (w))).ToList ();
+				input = transform (input.Where(s => s != null).SelectMany(w => w.Split(' ')).Where (w => !string.IsNullOrEmpty (w))).ToList ();
 			}
 
 			var nonemptyWordsJoinedBySpaces = string.Join (" ", input.Where (w => !string.IsNullOrEmpty (w)));
