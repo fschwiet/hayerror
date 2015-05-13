@@ -23,12 +23,26 @@ namespace monarquia
 
 		public VerbRoleSelector hasTranslation(string english, ICannedData cannedData, DataLoader dataLoader)
 		{
+			return hasTranslation (c => english, cannedData, dataLoader);
+		}
+
+		public VerbRoleSelector hasTranslation(Func<Conjugation, string> englishVerbSelector, ICannedData cannedData, DataLoader dataLoader) {
+
 			var spanishVerb = dataLoader.GetAllSavedSpanishVerbs ().Single (v => v.Infinitive == this.infinitive);
-			var englishVerb = dataLoader.GetAllSavedEnglishVerbs ().Single (v => v.Infinitive == english);
+			Dictionary<string, Verb> englishVerbCached = new Dictionary<string, Verb>();
 
 			List<ITranslateable> options = new List<ITranslateable> ();
 
 			foreach (var conjugation in Enum.GetValues(typeof(Conjugation)).Cast<Conjugation>()) {
+
+				var englishVerbText = englishVerbSelector(conjugation);
+
+				if (!englishVerbCached.ContainsKey(englishVerbText)) {
+					englishVerbCached[englishVerbText] = dataLoader.GetAllSavedEnglishVerbs ().Single (v => v.Infinitive == englishVerbText);
+				}
+
+				var englishVerb = englishVerbCached[englishVerbText];
+
 				options.Add (spanishVerb.Conjugation (conjugation, englishVerb));
 			}
 
