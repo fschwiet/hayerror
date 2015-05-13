@@ -139,6 +139,11 @@ namespace monarquia
 				}
 			};
 		}
+
+		public override bool AllowsFraming (Frame frame)
+		{
+			return frame.Conjugation == this.conjugation;
+		}
 	}
 }
 

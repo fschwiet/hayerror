@@ -9,9 +9,7 @@ namespace monarquia
 	{
 		string infinitive;
 		Dictionary<string, IEnumerable<ITranslateable>> roleOptions = new Dictionary<string, IEnumerable<ITranslateable>>();
-		Verb spanishVerb;
-		Verb englishVerb;
-
+	
 		public VerbRoleSelector(string infinitive) 
 		{
 			this.infinitive = infinitive;
@@ -25,8 +23,16 @@ namespace monarquia
 
 		public VerbRoleSelector hasTranslation(string english, ICannedData cannedData, DataLoader dataLoader)
 		{
-			spanishVerb = dataLoader.GetAllSavedSpanishVerbs ().Single (v => v.Infinitive == this.infinitive);
-			englishVerb = dataLoader.GetAllSavedEnglishVerbs ().Single (v => v.Infinitive == english);
+			var spanishVerb = dataLoader.GetAllSavedSpanishVerbs ().Single (v => v.Infinitive == this.infinitive);
+			var englishVerb = dataLoader.GetAllSavedEnglishVerbs ().Single (v => v.Infinitive == english);
+
+			List<ITranslateable> options = new List<ITranslateable> ();
+
+			foreach (var conjugation in Enum.GetValues(typeof(Conjugation)).Cast<Conjugation>()) {
+				options.Add (spanishVerb.Conjugation (conjugation, englishVerb));
+			}
+
+			roleOptions ["verbPhrase"] = options;
 
 			return this;
 		}
@@ -34,7 +40,6 @@ namespace monarquia
 		public IEnumerable<RoleSelection> GetSelectionsFor(Frame frame)
 		{
 			var seedRoleSelection = new RoleSelection (frame);
-			seedRoleSelection = seedRoleSelection.WithRole("verbPhrase", spanishVerb.Conjugation(frame.Conjugation,englishVerb));
 
 			List<RoleSelection> results = new List<RoleSelection> ();
 			results.Add (seedRoleSelection);
