@@ -118,6 +118,39 @@ namespace monarquia
 				.hasOneOf ("verbEnding", verbEndingsForConocer)
 				.hasTranslation(c => (c == Conjugation.PastPreterite || c == Conjugation.Future) ? "meet" : "know", this, dataLoader));
 
+			AddRoleSelector (new VerbRoleSelector ("dar")
+				.hasOneOf ("timeframe", timeframeExpressions)
+				.hasOneOf ("subject", new [] {
+					new CannedTranslation("el reloj", "the watch", frameFilter: frame => frame.PointOfView.IsThirdPerson() && frame.PointOfView.IsSingular()),
+					new CannedTranslation("el reloj", "the clock", frameFilter: frame => frame.PointOfView.IsThirdPerson() && frame.PointOfView.IsSingular())
+				})
+				.hasOneOf ("verbEnding", new [] {
+					new CannedTranslation("la una", "one"),
+					new CannedTranslation("las dos", "two"),
+					new CannedTranslation("el mediodía", "noon"),
+					new CannedTranslation("la medianoche", "midnight")
+				})
+				.hasTranslation("strike", this, dataLoader));
+
+			AddRoleSelector (new VerbRoleSelector("dar")
+				.hasOneOf ("timeframe", timeframeExpressions)
+				.hasOneOf ("subject", peopleExpressions)
+				.hasOneOf ("verbEnding", new [] { new SpanishOnly("un abrazo").WithEnglishAlternative("")})
+				.hasTranslation("hug", this, dataLoader));
+
+			AddRoleSelector (new VerbRoleSelector("dar")
+				.hasOneOf ("timeframe", timeframeExpressions)
+				.hasOneOf ("subject", peopleExpressions)
+				.hasOneOf ("verbEnding", new [] { new SpanishOnly("gritos").WithEnglishAlternative("") })
+				.hasTranslation("shout", this, dataLoader));
+
+			AddRoleSelector (new VerbRoleSelector("dar")
+				.hasOneOf ("timeframe", timeframeExpressions)
+				.hasOneOf ("subject", peopleExpressions)
+				.hasOneOf ("verbEnding", new [] { new SpanishOnly("gritos ahogados").WithEnglishAlternative("") })
+				.hasTranslation("gasp", this, dataLoader));
+			
+
 			HasEnglishTranslation ("estar", "is");
 			HasEnglishTranslation ("ir", "go");
 			ReflexiveHasEnglishTranslation ("cortar", "cut");
@@ -175,9 +208,6 @@ namespace monarquia
 
 
 			AddVerbEnding ("comer", new CannedTranslation("fajitas", "fajitas"));
-			AddVerbEnding ("dar", new CannedTranslation("un abrazo", "a hug"));
-			AddVerbEnding ("dar", new CannedTranslation("gritos", "shouts"));
-			//  AddVerbEnding ("dar", "la una");  ->  only clocks can strike one (to indicate a time)
 
 			AddVerbEnding ("hablar", new CannedTranslation("a la reportera", "to the reporter"));
 			AddVerbEnding ("hablar", new CannedTranslation("con él", "to him"));

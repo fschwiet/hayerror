@@ -26,6 +26,10 @@ namespace monarquia
 
 			return result;
 		}
+
+		public Composed WithEnglishAlternative(string englsh) {
+			return WithEnglishAlternative (new EnglishOnly (englsh));
+		}
 	}
 
 	public class TranslateableWithFrameRestriction : ITranslateable {

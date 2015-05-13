@@ -3,13 +3,16 @@ cut
 drink
 eat
 fear
+gasp
 go
 have
+hug
 is
 know
 look
 meet
 shout
 shower
+strike
 sum
 talk

@@ -27,6 +27,10 @@ namespace monarquia
 			}
 		}
 
+		public static bool IsSingular(this PointOfView pointOfView) {
+			return !pointOfView.IsPlural();
+		}
+
 		public static bool IsPlural(this PointOfView pointOfView) {
 			switch (pointOfView) {
 				case PointOfView.FirstPersonPlural:

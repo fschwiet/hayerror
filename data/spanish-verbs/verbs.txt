@@ -3,6 +3,7 @@ caber
 comer
 conocer
 cortar
+dar
 decir
 deshacer
 duchar
