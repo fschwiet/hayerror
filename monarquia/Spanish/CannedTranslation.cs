@@ -22,6 +22,13 @@ namespace monarquia
 			}
 		}
 
+		static public CannedTranslation WithPointOfView (string spanishText, string englishText, PointOfView pointOfView) 
+		{
+			return new CannedTranslation (spanishText, englishText, false,
+				frame => frame.PointOfView == pointOfView);
+		}
+
+
 		public override IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
 			return new [] {

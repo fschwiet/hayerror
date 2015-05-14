@@ -42,11 +42,11 @@ namespace test
 				new CannedTranslation ("", "")
 			};
 
-			var roleSelector = new VerbRoleSelector ("beber").
+			var roleSelector = new VerbRoleSelector (cannedData, dataLoader).
 				hasOneOf ("timeframe", timeFrames).
 				hasOneOf ("subject", people).
 				hasOneOf ("verbEnding", verbEndings).
-				hasTranslation ("drink", cannedData, dataLoader);
+				hasTranslation ("beber", "drink");
 
 			var frame = new Frame (PointOfView.ThirdPersonMasculine, Conjugation.Present);
 

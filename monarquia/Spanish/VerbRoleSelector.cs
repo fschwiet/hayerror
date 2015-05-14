@@ -7,12 +7,14 @@ namespace monarquia
 {
 	public class VerbRoleSelector
 	{
-		string infinitive;
+		ICannedData cannedData;
+		DataLoader dataLoader;
 		Dictionary<string, IEnumerable<ITranslateable>> roleOptions = new Dictionary<string, IEnumerable<ITranslateable>>();
 	
-		public VerbRoleSelector(string infinitive) 
+		public VerbRoleSelector(ICannedData cannedData, DataLoader dataLoader) 
 		{
-			this.infinitive = infinitive;
+			this.cannedData = cannedData;
+			this.dataLoader = dataLoader;
 		}
 
 		public VerbRoleSelector hasOneOf(string roleName, IEnumerable<ITranslateable> values)
@@ -21,27 +23,29 @@ namespace monarquia
 			return this;
 		}
 
-		public VerbRoleSelector hasTranslation(string english, ICannedData cannedData, DataLoader dataLoader)
+		public VerbRoleSelector hasTranslation(string spanishInfinitive, string englishInfinitive)
 		{
-			return hasTranslation (c => english, cannedData, dataLoader);
+			return hasTranslation (spanishInfinitive, c => englishInfinitive);
 		}
 
-		public VerbRoleSelector hasTranslation(Func<Conjugation, string> englishVerbSelector, ICannedData cannedData, DataLoader dataLoader) {
+		public VerbRoleSelector hasTranslation(
+			string spanishInfinitive, 
+			Func<Conjugation, string> englishInfinitiveSelector) {
 
-			var spanishVerb = dataLoader.GetAllSavedSpanishVerbs ().Single (v => v.Infinitive == this.infinitive);
+			var spanishVerb = dataLoader.GetAllSavedSpanishVerbs ().Single (v => v.Infinitive == spanishInfinitive);
 			Dictionary<string, Verb> englishVerbCached = new Dictionary<string, Verb>();
 
 			List<ITranslateable> options = new List<ITranslateable> ();
 
 			foreach (var conjugation in Enum.GetValues(typeof(Conjugation)).Cast<Conjugation>()) {
 
-				var englishVerbText = englishVerbSelector(conjugation);
+				var englishInfinitive = englishInfinitiveSelector(conjugation);
 
-				if (!englishVerbCached.ContainsKey(englishVerbText)) {
-					englishVerbCached[englishVerbText] = dataLoader.GetAllSavedEnglishVerbs ().Single (v => v.Infinitive == englishVerbText);
+				if (!englishVerbCached.ContainsKey(englishInfinitive)) {
+					englishVerbCached[englishInfinitive] = dataLoader.GetAllSavedEnglishVerbs ().Single (v => v.Infinitive == englishInfinitive);
 				}
 
-				var englishVerb = englishVerbCached[englishVerbText];
+				var englishVerb = englishVerbCached[englishInfinitive];
 
 				options.Add (spanishVerb.Conjugation (conjugation, englishVerb));
 			}
