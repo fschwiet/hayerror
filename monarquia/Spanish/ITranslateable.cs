@@ -108,9 +108,6 @@ namespace monarquia
 
 		public override IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
-			var spanishChunks = spanish.SelectMany (s => s.GetResult (frame)).ToArray ();
-			var englishChunks = english.SelectMany (e => e.GetResult (frame)).ToArray ();
-
 			List<ResultChunk> results = new List<ResultChunk> ();
 
 			foreach (var spanishChunk in spanish.SelectMany(s => s.GetResult(frame))) {
