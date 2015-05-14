@@ -32,7 +32,12 @@ namespace monarquia
 			string spanishInfinitive, 
 			Func<Conjugation, string> englishInfinitiveSelector) {
 
-			var spanishVerb = dataLoader.GetAllSavedSpanishVerbs ().Single (v => v.Infinitive == spanishInfinitive);
+			var matchingSpanishVerbs = dataLoader.GetAllSavedSpanishVerbs ().Where (v => v.Infinitive == spanishInfinitive);
+
+			if (!matchingSpanishVerbs.Any ())
+				throw new Exception ("No scraped data for spanish verb: " + spanishInfinitive);
+
+			var spanishVerb = matchingSpanishVerbs.Single();
 			Dictionary<string, Verb> englishVerbCached = new Dictionary<string, Verb>();
 
 			List<ITranslateable> options = new List<ITranslateable> ();
@@ -42,7 +47,13 @@ namespace monarquia
 				var englishInfinitive = englishInfinitiveSelector(conjugation);
 
 				if (!englishVerbCached.ContainsKey(englishInfinitive)) {
-					englishVerbCached[englishInfinitive] = dataLoader.GetAllSavedEnglishVerbs ().Single (v => v.Infinitive == englishInfinitive);
+
+					var matchingEnglishWords = dataLoader.GetAllSavedEnglishVerbs ().Where (v => v.Infinitive == englishInfinitive);
+
+					if (!matchingEnglishWords.Any ())
+						throw new Exception ("No scraped data for english verb: " + englishInfinitive);
+
+					englishVerbCached[englishInfinitive] = matchingEnglishWords.Single();
 				}
 
 				var englishVerb = englishVerbCached[englishInfinitive];
