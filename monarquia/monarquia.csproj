@@ -62,7 +62,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EspanolGenerator.cs" />
     <Compile Include="DataLoader.cs" />
-    <Compile Include="Commands\LoadAllExampleTexts.cs" />
     <Compile Include="Commands\LoadContexts.cs" />
     <Compile Include="Commands\DrillVerb.cs" />
     <Compile Include="Commands\GetTranslation.cs" />
@@ -76,7 +75,6 @@
     <Compile Include="Spanish\ITranslateable.cs" />
     <Compile Include="Commands\ScrapeDictionary.cs" />
     <Compile Include="BigCannedData.cs" />
-    <Compile Include="Commands\ViewExercises.cs" />
     <Compile Include="Commands\DownloadPhoneticForm.cs" />
     <Compile Include="CachedPhoneticData.cs" />
     <Compile Include="Spanish\Conjugation.cs" />
@@ -91,6 +89,8 @@
     <Compile Include="ExpressableVerbRoleSelection.cs" />
     <Compile Include="Spanish\ResultChunk.cs" />
     <Compile Include="HintedLanguageAccumulator.cs" />
+    <Compile Include="Commands\LoadExamples.cs" />
+    <Compile Include="Commands\ViewAllExercises.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

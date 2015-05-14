@@ -14,7 +14,7 @@ namespace monarquia.Commands
 
 		public LoadAllExampleTexts ()
 		{
-			this.IsCommand ("load-examples");
+			this.IsCommand ("load-examples", "loads example texts from spanishdict.com");
 			this.HasAdditionalArguments (1, " <data-dir>");
 		}
 
