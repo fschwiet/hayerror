@@ -21,21 +21,16 @@ namespace monarquia
 		{
 			DataLoader dataLoader = new DataLoader("./data");
 			var cannedData = new BetterCannedData (dataLoader);
-			var verbs = BetterCannedData.BetterVerbs;
 
 			if (UseBiggerCannedData) {
 				cannedData = new BigCannedData (dataLoader);
-				verbs = dataLoader.GetAllSavedSpanishVerbs ().Select(v => v.Infinitive)
-					.Concat(cannedData.GetReflexiveVerbs(dataLoader).Select(v => v + "se"));
 			}
 
 			var exerciseGenerator = new EspanolGenerator (cannedData, "./data");
 
 			List<ExerciseGenerator.Exercise> results = new List<ExerciseGenerator.Exercise> ();
 
-			foreach (var verb in verbs) {
-				results.AddRange (exerciseGenerator.GetExercises (verb, LimitOutput));
-			}
+			results.AddRange (exerciseGenerator.GetExercises (null, LimitOutput));
 
 			foreach (var exercise in results) {
 				Console.WriteLine (exercise.Original);
