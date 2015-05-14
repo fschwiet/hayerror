@@ -80,6 +80,9 @@ namespace monarquia
 		}
 
 		public ITranslateable GetForRole(string role) {
+
+			if (!this.Roles.ContainsKey (role))
+				throw new Exception ("Role '" + role + "' is missing.");
 		
 			return this.Roles [role];
 		}

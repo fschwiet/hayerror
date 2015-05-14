@@ -70,6 +70,38 @@ namespace monarquia
 				new [] {"timeframe", "verbPhrase", "subject" },
 				new [] {"timeframe", "fakeSubject", "verbPhrase", "subject"});
 
+			AddRoleSelector (new VerbRoleSelector ("hacer")
+				.hasOneOf("timeframe", timeframeExpressions)
+				.hasOneOf("subject", new [] {
+					new CannedTranslation("calor", "hot"),
+					new CannedTranslation("fresco", "cool"),
+					new CannedTranslation("viento", "windy"),
+				})
+				.hasOneOf ("fakeSubject", new [] {
+					new EnglishOnly("it")
+				})
+				.hasTranslation ("is", this, dataLoader),
+					new [] {"timeframe", "verbPhrase", "subject" },
+					new [] {"timeframe", "fakeSubject", "verbPhrase", "subject"}
+			);
+
+			AddRoleSelector (new VerbRoleSelector("hacer")
+				.hasOneOf("timeframe", timeframeExpressions)
+				.hasOneOf("subject", peopleExpressions)
+				.hasOneOf("verbEnding", new [] {
+					new CannedTranslation("una viaje", "a trip"),
+				})
+				.hasTranslation ("take", this, dataLoader)
+			);
+
+			AddRoleSelector (new VerbRoleSelector("hacer")
+				.hasOneOf("timeframe", timeframeExpressions)
+				.hasOneOf("subject", peopleExpressions)
+				.hasOneOf("verbEnding", new [] {
+					new CannedTranslation("una visita", ""),
+				})
+				.hasTranslation ("visit", this, dataLoader)
+			);
 
 			var verbEndingsForConocer = new [] {
 				new CannedTranslation ("a ella", "her"),
@@ -149,7 +181,6 @@ namespace monarquia
 				.hasOneOf ("subject", peopleExpressions)
 				.hasOneOf ("verbEnding", new [] { new SpanishOnly("gritos ahogados").WithEnglishAlternative("") })
 				.hasTranslation("gasp", this, dataLoader));
-			
 
 			HasEnglishTranslation ("estar", "is");
 			HasEnglishTranslation ("ir", "go");
