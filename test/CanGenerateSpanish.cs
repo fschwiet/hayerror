@@ -164,6 +164,14 @@ namespace test
 		{
 			AssertHasTranslation (expected, translation);
 		}
+
+		[Test]
+		[TestCase ("Tú me haces daño.", "(tú) You hurt me.")]
+		[TestCase ("Yo me hago daño.", "I hurt myself.")]
+		public void CanGivePain (string expected, string translation) 
+		{
+			AssertHasTranslation (expected, translation);
+		}
 	}
 }
 

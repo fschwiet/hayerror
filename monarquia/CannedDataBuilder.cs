@@ -125,7 +125,7 @@ namespace monarquia
 				rootRoleSelection
 			};
 			roleSelections = roleSelections.SelectMany (selection =>  {
-				return Pronouns.GetSubjectNouns ().Where (n => n.AllowsFraming (frame)).Select (n => selection.WithRole ("subject", n));
+				return Pronouns.GetCommonPeopleSubjectNouns ().Where (n => n.AllowsFraming (frame)).Select (n => selection.WithRole ("subject", n));
 			});
 			roleSelections = roleSelections.SelectMany (selection =>  {
 				

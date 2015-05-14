@@ -5,7 +5,7 @@ namespace monarquia
 {
 	public static class Pronouns
 	{
-		public static IEnumerable<ITranslateable> GetSubjectNouns() {
+		public static IEnumerable<ITranslateable> GetCommonPeopleSubjectNouns() {
 			return new [] {
 				new CannedTranslation ("yo", "I", frameFilter: frame => {
 					return frame.PointOfView == PointOfView.FirstPerson;
@@ -40,6 +40,37 @@ namespace monarquia
 			};
 		}
 
+		//  We're assuming third person direct objects are never the same
+		//  http://www.studyspanish.com/lessons/iodopro.htm
+		// http://www.studyspanish.com/lessons/reflexive2.htm
+		public static IEnumerable<ITranslateable> GetCommonPeopleIndirectObject() {
+			List<ITranslateable> results = new List<ITranslateable> ();
+
+			Action<string,string> addObjectAsTransitiveThoughItCouldBeReflexive = 
+				delegate (string spanish, string english) {
+					results.Add(new CannedTranslation(spanish, english));
+				};
+
+			Action<PointOfView, string, string, string, string> addNecessarilyReflexivelyObject = 
+				delegate(PointOfView pointOfView, string spanish, string spanishReflexive, string english, string englishReflexive) {
+					results.Add(new CannedTranslation(spanishReflexive, englishReflexive, 
+						frameFilter: frame => frame.PointOfView == pointOfView));
+					results.Add(new CannedTranslation(spanish, english, 
+						frameFilter: frame => frame.PointOfView != pointOfView));
+				};
+
+			addObjectAsTransitiveThoughItCouldBeReflexive ("le", "him");
+			addObjectAsTransitiveThoughItCouldBeReflexive ("le", "her");
+			addObjectAsTransitiveThoughItCouldBeReflexive ("les", "them");
+			addObjectAsTransitiveThoughItCouldBeReflexive ("les", "them");
+
+			addNecessarilyReflexivelyObject (PointOfView.FirstPerson, "me", "me", "me", "myself");
+			addNecessarilyReflexivelyObject (PointOfView.FirstPersonPlural, "nos", "nos", "us", "ourselves");
+			addNecessarilyReflexivelyObject (PointOfView.SecondPerson, "te", "te", "you", "yourself");
+			//addNecessarilyReflexivelyObject (PointOfView.SecondPersonPlural, "os", "os", "you", "yourselves");
+
+			return results;
+		}
 	}
 }
 

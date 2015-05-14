@@ -30,7 +30,7 @@ namespace monarquia
 					timeframeExpressions.Add(AddTimeframeExpression(conjugation, new CannedTranslation("","")));
 			}
 
-			var peopleExpressions = Pronouns.GetSubjectNouns ();
+			var peopleExpressions = Pronouns.GetCommonPeopleSubjectNouns ();
 
 			AddRoleSelector(StartScenarios().
 				hasOneOf ("timeframe", timeframeExpressions).
@@ -102,6 +102,19 @@ namespace monarquia
 				})
 				.hasTranslation ("hacer", "visit")
 			);
+
+			AddRoleSelector (StartScenarios ()
+				.hasOneOf ("timeframe", timeframeExpressions)
+				.hasOneOf ("subject", peopleExpressions)
+				.hasOneOf ("object", new [] {
+					new CannedTranslation ("daño", "")
+				})
+				.hasOneOf ("indirectObject", Pronouns.GetCommonPeopleIndirectObject ())
+				.hasOneOf ("verbEnding", new [] { new CannedTranslation ("", "")})
+				.hasTranslation("hacer", "hurt"),
+				new [] {"timeframe", "subject", "indirectObject", "verbPhrase", "object"},
+				new [] {"timeframe", "subject", "verbPhrase", "indirectObject"}
+				);
 
 			var verbEndingsForConocer = new [] {
 				new CannedTranslation ("a ella", "her"),

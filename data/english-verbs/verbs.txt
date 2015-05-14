@@ -7,6 +7,7 @@ gasp
 go
 have
 hug
+hurt
 is
 know
 look
