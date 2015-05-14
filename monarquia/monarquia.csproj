@@ -84,13 +84,13 @@
     <Compile Include="ICannedData.cs" />
     <Compile Include="CannedDataBuilder.cs" />
     <Compile Include="English\ReflexivePronoun.cs" />
-    <Compile Include="Spanish\Framing.cs" />
     <Compile Include="Spanish\VerbRoleSelector.cs" />
     <Compile Include="ExpressableVerbRoleSelection.cs" />
     <Compile Include="Spanish\ResultChunk.cs" />
     <Compile Include="HintedLanguageAccumulator.cs" />
     <Compile Include="Commands\LoadExamples.cs" />
     <Compile Include="Commands\ViewAllExercises.cs" />
+    <Compile Include="Spanish\Frame.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
