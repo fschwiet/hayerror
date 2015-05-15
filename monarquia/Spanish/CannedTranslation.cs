@@ -10,24 +10,37 @@ namespace monarquia
 		string englishText;
 		Func<Frame,bool> frameFilter;
 		List<string> englishHints = new List<string>();
+		List<string> spanishHints = new List<string>();
 
-		public CannedTranslation (string spanishText, string englishText, bool addAsHintText = false, Func<Frame, bool> frameFilter = null)
+		public CannedTranslation (string spanishText, string englishText, Func<Frame, bool> frameFilter = null)
 		{
 			this.spanishText = spanishText;
 			this.englishText = englishText;
 			this.frameFilter = frameFilter ?? delegate(Frame f) { return true; };
 
-			if (addAsHintText) {
-				englishHints.Add (spanishText);
-			}
+		}
+
+		public CannedTranslation WithEnglishHint(string text = null) {
+			englishHints.Add (text ?? spanishText);
+			return this;
+		}
+
+		public CannedTranslation WithSpanishHint(string text = null) {
+			spanishHints.Add (text ?? englishText);
+			return this;
 		}
 
 		static public CannedTranslation WithPointOfView (string spanishText, string englishText, PointOfView pointOfView) 
 		{
-			return new CannedTranslation (spanishText, englishText, false,
+			return new CannedTranslation (spanishText, englishText,
 				frame => frame.PointOfView == pointOfView);
 		}
 
+		static public CannedTranslation WithoutPointOfView (string spanishText, string englishText, PointOfView pointOfView) 
+		{
+			return new CannedTranslation (spanishText, englishText,
+				frame => frame.PointOfView != pointOfView);
+		}
 
 		public override IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
