@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using CsQuery;
 using System.Net;
+using Newtonsoft.Json.Linq;
 
 namespace monarquia
 {
@@ -78,7 +79,7 @@ namespace monarquia
 
 			foreach(var file in Directory.GetFiles(Path.Combine(dataDirectory, "english-verbs"))) {
 
-				var expectedFileEnding = ".conjugation.txt";
+				var expectedFileEnding = ".verbix.txt";
 
 				if (!file.EndsWith (expectedFileEnding)) {
 					continue;
@@ -87,29 +88,39 @@ namespace monarquia
 				var filename = new FileInfo (file).Name;
 				string infinitive = filename.Substring (0, filename.Length - expectedFileEnding.Length);
 
-				CsQuery.CQ document = File.ReadAllText (file);
-
-				var indicativeTable = LoadConjugationTable (document, 0);
-				var perfectTable = LoadConjugationTable (document, 1);
-
 				var verb = new CannedVerbConjugator (infinitive);
+				var verbixData = Verbix.ScrapeVerbixVeb (file);
 
-				var futureConditional = GetEnglishPovLookupFromRow (indicativeTable, 2);
-				foreach (var key in futureConditional.Keys.ToArray()) {
-					futureConditional [key] = futureConditional[key].Replace("will", "would");
-				}
-
-				verb.WithTenses (Conjugation.Present, GetEnglishPovLookupFromRow (indicativeTable, 0));
-				verb.WithTenses (Conjugation.PastPreterite, GetEnglishPovLookupFromRow (indicativeTable, 1));
-				verb.WithTenses (Conjugation.PastImperfect, GetEnglishPovLookupFromRow (indicativeTable, 1));
-				verb.WithTenses (Conjugation.Conditional, futureConditional);
-				verb.WithTenses (Conjugation.Future, GetEnglishPovLookupFromRow (indicativeTable, 2));
-				verb.WithTenses (Conjugation.PresentPerfect, GetEnglishPovLookupFromRow (perfectTable, 0));
+				verb.WithTenses (Conjugation.Present, GetEnglishPovLookup (verbixData.Get("Indicative", "Present")));
+				verb.WithTenses (Conjugation.PastPreterite, GetEnglishPovLookup (verbixData.Get("Indicative", "Past")));
+				verb.WithTenses (Conjugation.PastImperfect, GetEnglishPovLookup (verbixData.Get("Indicative", "Past")));
+				verb.WithTenses (Conjugation.Conditional, GetEnglishPovLookup (verbixData.Get("Conditional", "Present")));
+				verb.WithTenses (Conjugation.Future, GetEnglishPovLookup (verbixData.Get("Indicative", "Future")));
+				verb.WithTenses (Conjugation.PresentPerfect, GetEnglishPovLookup (verbixData.Get("Indicative", "Perfect")));
 
 				results.Add (verb);
 			}
 
 			return englishVerbs = results;
+		}
+
+		Dictionary<PointOfView,string> GetEnglishPovLookup(JToken token)
+		{
+			var source = token as JObject;
+			var results = new Dictionary<PointOfView, string> ();
+
+			results [PointOfView.FirstPerson] = source.GetValue ("I").ToString();
+			results [PointOfView.SecondPerson] = source.GetValue ("you").ToString();
+			results [PointOfView.SecondPersonFormal] = source.GetValue ("you").ToString();
+			results [PointOfView.ThirdPersonMasculine] = source.GetValue ("he").ToString();
+			results [PointOfView.ThirdPersonFeminine] = source.GetValue ("he").ToString();
+			results [PointOfView.FirstPersonPlural] = source.GetValue ("we").ToString();
+			results [PointOfView.SecondPersonPlural] = source.GetValue ("you2").ToString();
+			results [PointOfView.SecondPersonPluralFormal] = source.GetValue ("you2").ToString();
+			results [PointOfView.ThirdPersonPluralMasculine] = source.GetValue ("they").ToString();
+			results [PointOfView.ThirdPersonPluralFeminine] = source.GetValue ("they").ToString();
+
+			return results;
 		}
 
 		static string[][] LoadConjugationTable (CQ document, int tableIndex)
@@ -144,37 +155,21 @@ namespace monarquia
 
 		static Dictionary<PointOfView, string> GetPovLookupFromTableColumn (string[][] indicativeTable, int columnIndex)
 		{
-			var presentTenses = new Dictionary<PointOfView, string> ();
+			var results = new Dictionary<PointOfView, string> ();
 
-			presentTenses [PointOfView.FirstPerson] = indicativeTable [columnIndex] [0];
-			presentTenses [PointOfView.SecondPerson] = indicativeTable [columnIndex] [1];
-			presentTenses [PointOfView.SecondPersonFormal] = indicativeTable [columnIndex] [2];
-			presentTenses [PointOfView.ThirdPersonMasculine] = indicativeTable [columnIndex] [2];
-			presentTenses [PointOfView.ThirdPersonFeminine] = indicativeTable [columnIndex] [2];
-			presentTenses [PointOfView.FirstPersonPlural] = indicativeTable [columnIndex] [3];
-			presentTenses [PointOfView.SecondPersonPlural] = indicativeTable [columnIndex] [4];
-			presentTenses [PointOfView.SecondPersonPluralFormal] = indicativeTable [columnIndex] [5];
-			presentTenses [PointOfView.ThirdPersonPluralMasculine] = indicativeTable [columnIndex] [5];
-			presentTenses [PointOfView.ThirdPersonPluralFeminine] = indicativeTable [columnIndex] [5];
-			return presentTenses;
+			results [PointOfView.FirstPerson] = indicativeTable [columnIndex] [0];
+			results [PointOfView.SecondPerson] = indicativeTable [columnIndex] [1];
+			results [PointOfView.SecondPersonFormal] = indicativeTable [columnIndex] [2];
+			results [PointOfView.ThirdPersonMasculine] = indicativeTable [columnIndex] [2];
+			results [PointOfView.ThirdPersonFeminine] = indicativeTable [columnIndex] [2];
+			results [PointOfView.FirstPersonPlural] = indicativeTable [columnIndex] [3];
+			results [PointOfView.SecondPersonPlural] = indicativeTable [columnIndex] [4];
+			results [PointOfView.SecondPersonPluralFormal] = indicativeTable [columnIndex] [5];
+			results [PointOfView.ThirdPersonPluralMasculine] = indicativeTable [columnIndex] [5];
+			results [PointOfView.ThirdPersonPluralFeminine] = indicativeTable [columnIndex] [5];
+			return results;
 		}
 
-		static Dictionary<PointOfView, string> GetEnglishPovLookupFromRow (string[][] indicativeTable, int columnIndex)
-		{
-			var presentTenses = new Dictionary<PointOfView, string> ();
-
-			presentTenses [PointOfView.FirstPerson] = indicativeTable [columnIndex] [0];
-			presentTenses [PointOfView.SecondPerson] = indicativeTable [columnIndex] [1];
-			presentTenses [PointOfView.SecondPersonFormal] = indicativeTable [columnIndex] [1];
-			presentTenses [PointOfView.ThirdPersonMasculine] = indicativeTable [columnIndex] [2];
-			presentTenses [PointOfView.ThirdPersonFeminine] = indicativeTable [columnIndex] [2];
-			presentTenses [PointOfView.FirstPersonPlural] = indicativeTable [columnIndex] [3];
-			presentTenses [PointOfView.SecondPersonPlural] = indicativeTable [columnIndex] [4];
-			presentTenses [PointOfView.SecondPersonPluralFormal] = indicativeTable [columnIndex] [4];
-			presentTenses [PointOfView.ThirdPersonPluralMasculine] = indicativeTable [columnIndex] [5];
-			presentTenses [PointOfView.ThirdPersonPluralFeminine] = indicativeTable [columnIndex] [5];
-			return presentTenses;
-		}
 	}
 }
 

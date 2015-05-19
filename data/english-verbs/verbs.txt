@@ -1,3 +1,4 @@
+be
 climb
 cut
 drink
@@ -8,7 +9,6 @@ go
 have
 hug
 hurt
-is
 know
 look
 meet

@@ -15,7 +15,7 @@ namespace monarquia
 			this.root = root;
 		}
 
-		public string GetValue(params string[] propertyNames)
+		public JToken Get(params string[] propertyNames)
 		{
 			JToken current = root;
 
@@ -29,13 +29,7 @@ namespace monarquia
 				}
 			}
 
-			if (!(current is JValue))
-				throw new Exception ("Property requested is not a JValue: " + string.Join(",",propertyNames));
-
-			if ((current as JValue).Type != JTokenType.String)
-				throw new Exception ("Property requested is not a string JValue: " + string.Join(",",propertyNames));
-
-			return current.ToString ();
+			return current;
 		}
 	}
 
@@ -58,13 +52,21 @@ namespace monarquia
 
 		public override int Run (string[] remainingArguments)
 		{
-			JObject result = new JObject();
-			JObject topLoopPosition = result;
-
 			var filepath = "./data/english-verbs/" + Verb + ".verbix.txt";
 
+			var readable = ScrapeVerbixVeb(filepath);
+			Console.WriteLine (readable.Get ("Indicative", "Present", "I"));
+
+			return 0;
+		}
+
+		public static PropertyBag ScrapeVerbixVeb(string filepath)
+		{
 			if (!File.Exists (filepath))
-				throw new ConsoleHelpAsException ("Could not find Verbix data at " + filepath);
+				throw new Exception ("Could not find Verbix data at " + filepath);
+
+			JObject result = new JObject();
+			JObject topLoopPosition = result;
 
 			CsQuery.CQ document = File.ReadAllText (filepath);
 
@@ -82,21 +84,22 @@ namespace monarquia
 				var containerNode = node;
 				topLoopPosition.Add (header.Cq().Text(), node);
 
-				var children = header.ParentNode.Cq ().Find ("td > p > *");
+				var children = header.ParentNode.Cq ().Find ("td > p > *").ToArray();
 				string value1 = null;
 				string value2 = null;
 
 				foreach (var child in children) {
-					
+
 					if (child.NodeName == "BR") {
 						if (value2 != null) {
 							JToken temp;
-							if (!node.TryGetValue (value1, out temp)) {
+							if (!containerNode.TryGetValue (value1, out temp)) {
 								containerNode.Add (value1, new JValue (value2));
+							} else if (!containerNode.TryGetValue (value1 + "2", out temp)) {
+								containerNode.Add (value1 + "2", new JValue (value2));
 							}
-						}
-						if (value1 != null) {
-						
+						} else if (value1 != null) {
+
 							JToken temp;
 							if (!node.TryGetValue (value1, out temp)) {
 								var subcontainer = new JObject ();
@@ -108,25 +111,21 @@ namespace monarquia
 						value1 = null;
 						value2 = null;
 					} else {
-					
+
 						if (value1 == null) {
 							value1 = child.Cq().Text().Trim();
+							if (value1 == null)
+								throw new Exception ("wut");
 						} else if (value2 == null) {
 							value2 = child.Cq ().Text ().Trim();
+							if (value1 == null)
+								throw new Exception ("wut");
 						}
 					}
 				}
 			}
 
-			Console.WriteLine (result.ToString ());
-
-			var readable = new PropertyBag (result);
-			Console.WriteLine (readable.GetValue ("Indicative", "Present", "I"));
-			//((readable.GetValue("Indicative") as JObject).GetValue("Present") as JObject).GetValue("I")
-
-			//Console.WriteLine (((readable.GetValue("Indicative") as JObject).GetValue("Present") as JObject).GetValue("I"));
-
-			return 0;
+			return new PropertyBag (result);
 		}
 	}
 }

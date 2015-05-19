@@ -49,7 +49,7 @@ namespace monarquia
 				.hasOneOf ("timeframe", timeframeExpressions)
 				.hasOneOf ("subject", peopleExpressions)
 				.hasOneOf ("verbEnding", professions.Select (p => p.WithEnglishAlternative (new Article () + p)))
-				.hasTranslation ("ser", "is"));
+				.hasTranslation ("ser", "be"));
 
 			AddRoleSelector (StartScenarios()
 				.hasOneOf ("timeframe", timeframeExpressions)
@@ -66,7 +66,7 @@ namespace monarquia
 				.hasOneOf ("fakeSubject", new [] {
 					new EnglishOnly("there")
 				})
-				.hasTranslation ("haber", "is"),
+				.hasTranslation ("haber", "be"),
 				new [] {"timeframe", "verbPhrase", "subject" },
 				new [] {"timeframe", "fakeSubject", "verbPhrase", "subject"});
 
@@ -80,7 +80,7 @@ namespace monarquia
 				.hasOneOf ("fakeSubject", new [] {
 					new EnglishOnly("it")
 				})
-				.hasTranslation ("hacer", "is"),
+				.hasTranslation ("hacer", "be"),
 					new [] {"timeframe", "verbPhrase", "subject" },
 					new [] {"timeframe", "fakeSubject", "verbPhrase", "subject"}
 			);
@@ -195,7 +195,7 @@ namespace monarquia
 				.hasOneOf ("verbEnding", new [] { new SpanishOnly("gritos ahogados").WithEnglishAlternative("") })
 				.hasTranslation("dar", "gasp"));
 
-			HasEnglishTranslation ("estar", "is");
+			HasEnglishTranslation ("estar", "be");
 			HasEnglishTranslation ("ir", "go");
 			ReflexiveHasEnglishTranslation ("cortar", "cut");
 			ReflexiveHasEnglishTranslation ("duchar", "shower");
