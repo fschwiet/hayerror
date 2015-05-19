@@ -94,6 +94,7 @@
     <Compile Include="Verbs\VerbInstance.cs" />
     <Compile Include="Verbs\ReflexiveVerbConjugator.cs" />
     <Compile Include="Verbs\CannedVerbConjugator.cs" />
+    <Compile Include="Commands\ScrapeVerbix.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
