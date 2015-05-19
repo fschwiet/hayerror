@@ -72,16 +72,13 @@ namespace monarquia
 				var allTags = results.SelectMany (r => r.Tags).Distinct ().AsEnumerable ();
 				var allVerbTags = allTags.Where (t => t.StartsWith ("verb:")).AsEnumerable ();
 				var allConjugationTags = allTags.Where (t => t.StartsWith ("conjugation:")).AsEnumerable ();
-				var allPointOfViewTags = Frame.FramesCoveringEachConjugationForm ().Select (r => r.PointOfView).Distinct ()
-					.Select (p => p.AsTagString ()).AsEnumerable ();
 
 				List<Exercise> limitedExercises = new List<Exercise> ();
 
 				foreach (var resultsGroup in
 					from v in allVerbTags
 					from c in allConjugationTags
-					from p in allPointOfViewTags
-					select results.Where(r => r.Tags.Contains(v) && r.Tags.Contains(c) && r.Tags.Contains(p)).ToArray()) {
+					select results.Where(r => r.Tags.Contains(v) && r.Tags.Contains(c)).ToArray()) {
 
 					if (!resultsGroup.Any ())
 						continue;

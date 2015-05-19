@@ -99,11 +99,7 @@ namespace test
 			Assert.IsNotNull (verb);
 
 			var reflexiveVerb = new ReflexiveVerbConjugator (infinitive, dataLoader);
-
-			var frame = new Frame (pointOfView, Conjugation.Present);
-
-			var resultChunks = reflexiveVerb.Conjugation (Conjugation.Present, null).GetResult (frame);
-			var result = String.Join (" ", resultChunks.Select(c => c.SpanishTranslation));
+			var result = reflexiveVerb.ConjugatedForTense (Conjugation.Present, pointOfView);
 
 			Assert.AreEqual (expected, result);
 		}

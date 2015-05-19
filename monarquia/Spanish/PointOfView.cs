@@ -71,10 +71,6 @@ namespace monarquia
 
 			return false;
 		}
-
-		public static string AsTagString(this PointOfView pointOfView) {
-			return "point-of-view:" + pointOfView;
-		}
 	}
 }
 

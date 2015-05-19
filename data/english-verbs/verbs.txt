@@ -12,6 +12,7 @@ hurt
 know
 look
 meet
+prepare
 shout
 shower
 strike

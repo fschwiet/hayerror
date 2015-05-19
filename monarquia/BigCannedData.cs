@@ -197,6 +197,7 @@ namespace monarquia
 
 			HasEnglishTranslation ("estar", "be");
 			HasEnglishTranslation ("ir", "go");
+			//HasEnglishTranslation ("cortar", "cut");
 			ReflexiveHasEnglishTranslation ("cortar", "cut");
 			ReflexiveHasEnglishTranslation ("duchar", "shower");
 			ReflexiveHasEnglishTranslation ("mirar", "look");
@@ -248,12 +249,11 @@ namespace monarquia
 			HasEnglishTranslation ("comer", "eat");
 			HasEnglishTranslation ("gritar", "shout");
 			HasEnglishTranslation ("hablar", "talk");
-			//AddVerbTranslation ("preparar", "prepare"); -> ugh, can't load spanishdictionary.com/conjugate/prepare
+			HasEnglishTranslation ("preparar", "prepare");
 			HasEnglishTranslation ("subir", "climb");
 			HasEnglishTranslation ("sumar", "sum");
 			HasEnglishTranslation ("temer", "fear");
 			HasEnglishTranslation ("tener", "have");
-
 
 			AddVerbEnding ("comer", new CannedTranslation("fajitas", "fajitas"));
 

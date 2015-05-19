@@ -116,15 +116,6 @@ namespace test
 			AssertHasTranslation (expected, translation);
 		}
 
-		[TestCase("Yo voy al cine.", new [] {"verb:ir", "conjugation:present"})]
-		public void ExercisesIncludeTags(string expectedPhrase, IEnumerable<string> expectedTags)
-		{
-			var exercise = allExercises.Single (e => e.Original == expectedPhrase);
-
-			Assert.Contains ("conjugation:Present", exercise.Tags);
-			Assert.Contains ("verb:ir", exercise.Tags);
-		}
-
 		[TestCase("Hay confusión.", "There is confusion.")]
 		[TestCase("Hay tres pasos.", "There are three steps.")]
 		[TestCase("Ayer hubo confusión.", "Yesterday there was confusion.")]
@@ -150,7 +141,26 @@ namespace test
 			AssertHasTranslation (expected, translation);
 		}
 
-		public void AssertHasTranslation (string expected, string translation)
+		[Test]
+		[TestCase ("Ayer yo hice una viaje.", 
+			new [] {
+				"verb:hacer", 
+				"verb:hacer-take",
+				"usage:hacer-PastPreterite-FirstPerson"})]
+		[TestCase ("Yo me corto el pelo.", 
+			new [] {
+				"verb:cortarse", 
+				"verb:cortarse-cut",
+				"usage:cortarse-Present-FirstPerson"})]
+		public void CanGivePain (string expected, IEnumerable<string> tags) 
+		{
+			AssertHasTranslation (expected, expectedTags: tags);
+		}
+
+		public void AssertHasTranslation (
+			string expected, 
+			string translation = null,
+			IEnumerable<string> expectedTags = null)
 		{
 			ExerciseGenerator.Exercise exercise;
 
@@ -170,6 +180,12 @@ namespace test
 
 			if (!string.IsNullOrEmpty (translation)) {
 				Assert.AreEqual (translation, exercise.Translated);
+			}
+
+			if (expectedTags != null) {
+				foreach (var tag in expectedTags) {
+					Assert.Contains (tag, exercise.Tags);
+				}
 			}
 		}
 	}

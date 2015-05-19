@@ -20,12 +20,17 @@ namespace monarquia
 
 		public override IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
+			var usageString = spanishVerb.Infinitive + "-" + frame.Conjugation + "-" + frame.PointOfView;
+
 			return new [] { new ResultChunk () {
 				SpanishTranslation = spanishVerb.ConjugatedForTense (frame.Conjugation, frame.PointOfView),
 				EnglishTranslation = englishVerb == null ? null : englishVerb.ConjugatedForTense (frame.Conjugation, frame.PointOfView),
 				SpanishHint = new string[0],
 				EnglishHint = new string[0],
-				Tags = new [] { "verb:" + spanishVerb.Infinitive, "conjugation:" + conjugation, frame.PointOfView.AsTagString () },
+				Tags = new [] { 
+						"verb:" + spanishVerb.Infinitive, 
+						"verb:" + spanishVerb.Infinitive + "-" + englishVerb.Infinitive,
+						"usage:" + usageString },
 				ExtraInfo = new [] { "verb " + spanishVerb.Infinitive, conjugation.AsFriendlyString () }
 				}
 			};
