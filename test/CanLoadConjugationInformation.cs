@@ -98,7 +98,7 @@ namespace test
 
 			Assert.IsNotNull (verb);
 
-			var reflexiveVerb = new ReflexiveVerb (infinitive, dataLoader);
+			var reflexiveVerb = new ReflexiveVerbConjugator (infinitive, dataLoader);
 
 			var frame = new Frame (pointOfView, Conjugation.Present);
 
@@ -108,12 +108,12 @@ namespace test
 			Assert.AreEqual (expected, result);
 		}
 
-		void AssertHasSpanishConjugation(string expected, Verb verb, Conjugation conjugation, PointOfView pointOfView)
+		void AssertHasSpanishConjugation(string expected, VerbConjugator verb, Conjugation conjugation, PointOfView pointOfView)
 		{
 			Assert.AreEqual(expected, verb.ConjugatedForTense(conjugation, pointOfView));
 		}
 
-		void AssertHasEnglishConjugation(string expected, Verb verb, Conjugation conjugation, PointOfView pointOfView)
+		void AssertHasEnglishConjugation(string expected, VerbConjugator verb, Conjugation conjugation, PointOfView pointOfView)
 		{
 			Assert.AreEqual(expected, verb.ConjugatedForTense(conjugation, pointOfView));
 		}

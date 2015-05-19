@@ -42,10 +42,10 @@ namespace monarquia
 
 			// Console.WriteLine ("Have good data for verbs: " + string.Join (", ", verbsToConsiderFinished));
 
-			List<Verb> verbs = new List<Verb> ();
+			List<VerbConjugator> verbs = new List<VerbConjugator> ();
 
 			verbs.AddRange (dataLoader.GetAllSavedSpanishVerbs ());
-			verbs.AddRange (cannedData.GetReflexiveVerbs (dataLoader).Select (inf => new ReflexiveVerb (inf, dataLoader)));
+			verbs.AddRange (cannedData.GetReflexiveVerbs (dataLoader).Select (inf => new ReflexiveVerbConjugator (inf, dataLoader)));
 
 			if (verb != null)
 				verbs = verbs.Where (v => v.Infinitive == verb).ToList();

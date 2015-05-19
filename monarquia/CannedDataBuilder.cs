@@ -90,7 +90,7 @@ namespace monarquia
 			return roleSelectors;
 		}
 
-		public Verb TranslateVerbFromSpanishToEnglish(DataLoader loader, Verb verb, Conjugation conjugation) {
+		public VerbConjugator TranslateVerbFromSpanishToEnglish(DataLoader loader, VerbConjugator verb, Conjugation conjugation) {
 
 			if (verb.Infinitive.EndsWith ("se")) {
 				var baseVerb = verb.Infinitive.Substring (0, verb.Infinitive.Length - 2);
@@ -114,11 +114,11 @@ namespace monarquia
 
 		}
 			
-		public IEnumerable<RoleSelection> GetAllRoleScenariosForVerbAndFrame (Random random, Verb verb, DataLoader dataLoader, Frame frame)
+		public IEnumerable<RoleSelection> GetAllRoleScenariosForVerbAndFrame (Random random, VerbConjugator verb, DataLoader dataLoader, Frame frame)
 		{
 			var rootRoleSelection = new RoleSelection (frame);
 
-			Verb englishVerb = TranslateVerbFromSpanishToEnglish (dataLoader, verb, frame.Conjugation);
+			VerbConjugator englishVerb = TranslateVerbFromSpanishToEnglish (dataLoader, verb, frame.Conjugation);
 
 			rootRoleSelection = rootRoleSelection.WithRole ("verbPhrase", verb.Conjugation (frame.Conjugation, englishVerb));
 			IEnumerable<RoleSelection> roleSelections = new[] {

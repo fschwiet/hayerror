@@ -38,7 +38,7 @@ namespace monarquia
 				throw new Exception ("No scraped data for spanish verb: " + spanishInfinitive);
 
 			var spanishVerb = matchingSpanishVerbs.Single();
-			Dictionary<string, Verb> englishVerbCached = new Dictionary<string, Verb>();
+			Dictionary<string, VerbConjugator> englishVerbCached = new Dictionary<string, VerbConjugator>();
 
 			List<ITranslateable> options = new List<ITranslateable> ();
 

@@ -66,7 +66,6 @@
     <Compile Include="Commands\DrillVerb.cs" />
     <Compile Include="Commands\GetTranslation.cs" />
     <Compile Include="Spanish\PointOfView.cs" />
-    <Compile Include="Spanish\Verb.cs" />
     <Compile Include="Spanish\Noun.cs" />
     <Compile Include="ExerciseGenerator.cs" />
     <Compile Include="LingueeGenerator.cs" />
@@ -91,6 +90,10 @@
     <Compile Include="Commands\LoadExamples.cs" />
     <Compile Include="Commands\ViewAllExercises.cs" />
     <Compile Include="Spanish\Frame.cs" />
+    <Compile Include="Verbs\VerbConjugator.cs" />
+    <Compile Include="Verbs\VerbInstance.cs" />
+    <Compile Include="Verbs\ReflexiveVerbConjugator.cs" />
+    <Compile Include="Verbs\CannedVerbConjugator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -103,5 +106,6 @@
     <Folder Include="Commands\" />
     <Folder Include="Spanish\" />
     <Folder Include="English\" />
+    <Folder Include="Verbs\" />
   </ItemGroup>
 </Project>

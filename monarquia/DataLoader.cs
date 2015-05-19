@@ -10,20 +10,20 @@ namespace monarquia
 	public class DataLoader
 	{
 		string dataDirectory;
-		List<Verb> spanishVerbs;
-		List<Verb> englishVerbs;
+		List<VerbConjugator> spanishVerbs;
+		List<VerbConjugator> englishVerbs;
 
 		public DataLoader (string dataDirectory)
 		{
 			this.dataDirectory = dataDirectory;
 		}
 
-		public List<Verb> GetAllSavedSpanishVerbs() {
+		public List<VerbConjugator> GetAllSavedSpanishVerbs() {
 
 			if (spanishVerbs != null)
 				return spanishVerbs;
 
-			List<Verb> results = new List<Verb> ();
+			List<VerbConjugator> results = new List<VerbConjugator> ();
 
 			foreach(var file in Directory.GetFiles(Path.Combine(dataDirectory, "spanish-verbs"))) {
 
@@ -41,7 +41,7 @@ namespace monarquia
 				var indicativeTable = LoadConjugationTable (document, 0);
 				var perfectTable = LoadConjugationTable (document, 3);
 
-				var verb = new CannedVerb (infinitive);
+				var verb = new CannedVerbConjugator (infinitive);
 
 				var presentPovLookup = GetPovLookupFromTableColumn (indicativeTable, 0);
 
@@ -69,12 +69,12 @@ namespace monarquia
 			return spanishVerbs = results;
 		}
 
-		public List<Verb> GetAllSavedEnglishVerbs() {
+		public List<VerbConjugator> GetAllSavedEnglishVerbs() {
 
 			if (englishVerbs != null)
 				return englishVerbs;
 
-			List<Verb> results = new List<Verb> ();
+			List<VerbConjugator> results = new List<VerbConjugator> ();
 
 			foreach(var file in Directory.GetFiles(Path.Combine(dataDirectory, "english-verbs"))) {
 
@@ -92,7 +92,7 @@ namespace monarquia
 				var indicativeTable = LoadConjugationTable (document, 0);
 				var perfectTable = LoadConjugationTable (document, 1);
 
-				var verb = new CannedVerb (infinitive);
+				var verb = new CannedVerbConjugator (infinitive);
 
 				var futureConditional = GetEnglishPovLookupFromRow (indicativeTable, 2);
 				foreach (var key in futureConditional.Keys.ToArray()) {

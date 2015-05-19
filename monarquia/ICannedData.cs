@@ -7,9 +7,9 @@ namespace monarquia
 	public interface ICannedData {
 		IEnumerable<ITranslateable> GetVerbEndings (string verbInfinitive, PointOfView pointOfView);
 		IEnumerable<ITranslateable> GetTimeframeExpressions ();
-		Verb TranslateVerbFromSpanishToEnglish(DataLoader loader, Verb verb, Conjugation conjugation);
+		VerbConjugator TranslateVerbFromSpanishToEnglish(DataLoader loader, VerbConjugator verb, Conjugation conjugation);
 		IEnumerable<string> GetReflexiveVerbs (DataLoader dataLoader);
-		IEnumerable<RoleSelection> GetAllRoleScenariosForVerbAndFrame (Random random, Verb verb, DataLoader dataLoader, Frame frame);
+		IEnumerable<RoleSelection> GetAllRoleScenariosForVerbAndFrame (Random random, VerbConjugator verb, DataLoader dataLoader, Frame frame);
 		IEnumerable<ExpressableVerbRoleSelection> GetAllVerbRoleSelectors();
 	}
 	
