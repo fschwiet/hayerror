@@ -7,6 +7,38 @@ using Newtonsoft.Json.Linq;
 
 namespace monarquia
 {
+	public class PropertyBag {
+
+		JObject root;
+
+		public PropertyBag(JObject root) {
+			this.root = root;
+		}
+
+		public string GetValue(params string[] propertyNames)
+		{
+			JToken current = root;
+
+			foreach (var property in propertyNames) {
+				if (!(current is JObject)) {
+					throw new Exception ("Could not load property " + property + " of non-JObject: " + string.Join (",", propertyNames));
+				}
+
+				if (!(current as JObject).TryGetValue (property, out current)) {
+					throw new Exception ("Could not find property " + property + " querying for: " + string.Join (",", propertyNames));
+				}
+			}
+
+			if (!(current is JValue))
+				throw new Exception ("Property requested is not a JValue: " + string.Join(",",propertyNames));
+
+			if ((current as JValue).Type != JTokenType.String)
+				throw new Exception ("Property requested is not a string JValue: " + string.Join(",",propertyNames));
+
+			return current.ToString ();
+		}
+	}
+
 	public class Verbix : ConsoleCommand
 	{
 		public string Verb;
@@ -87,6 +119,12 @@ namespace monarquia
 			}
 
 			Console.WriteLine (result.ToString ());
+
+			var readable = new PropertyBag (result);
+			Console.WriteLine (readable.GetValue ("Indicative", "Present", "I"));
+			//((readable.GetValue("Indicative") as JObject).GetValue("Present") as JObject).GetValue("I")
+
+			//Console.WriteLine (((readable.GetValue("Indicative") as JObject).GetValue("Present") as JObject).GetValue("I"));
 
 			return 0;
 		}
