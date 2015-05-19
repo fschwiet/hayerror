@@ -12,29 +12,6 @@ namespace test
 		ExerciseGenerator.Exercise[] allExercises;
 		string[] allPhrases;
 
-		public void AssertHasTranslation (string expected, string translation)
-		{
-			ExerciseGenerator.Exercise exercise;
-
-			try {
-				exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();
-			} catch(InvalidOperationException) {
-				
-				var matchingExercises = allExercises.Where (e => e.Original == expected);
-				ExerciseGenerator.Exercise.WriteAsCsv (Console.Out, matchingExercises);
-
-				throw;
-			}
-
-			if (exercise == null) {
-				throw new Exception ("Original text not found: " + expected);
-			}
-
-			if (!string.IsNullOrEmpty (translation)) {
-				Assert.AreEqual (translation, exercise.Translated);
-			}
-		}
-
 		[TestFixtureSetUp]
 		public void LoadVerbs() {
 
@@ -171,6 +148,29 @@ namespace test
 		public void CanGivePain (string expected, string translation) 
 		{
 			AssertHasTranslation (expected, translation);
+		}
+
+		public void AssertHasTranslation (string expected, string translation)
+		{
+			ExerciseGenerator.Exercise exercise;
+
+			try {
+				exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();
+			} catch(InvalidOperationException) {
+
+				var matchingExercises = allExercises.Where (e => e.Original == expected);
+				ExerciseGenerator.Exercise.WriteAsCsv (Console.Out, matchingExercises);
+
+				throw;
+			}
+
+			if (exercise == null) {
+				throw new Exception ("Original text not found: " + expected);
+			}
+
+			if (!string.IsNullOrEmpty (translation)) {
+				Assert.AreEqual (translation, exercise.Translated);
+			}
 		}
 	}
 }
