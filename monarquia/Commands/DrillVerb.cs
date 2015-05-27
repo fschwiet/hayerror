@@ -10,15 +10,13 @@ namespace monarquia
 	public class DrillVerb : ConsoleCommand
 	{
 		public string[] Verbs;
-		public bool IncludeTranslations = false;
 		public bool UseBigCannedData = false;
 
 		public DrillVerb ()
 		{
 			this.IsCommand ("drill-verb", "Generate phrases for a particular verb");
 			this.AllowsAnyAdditionalArguments (" <verb infinitive>+");
-			this.HasOption ("t", "Include translations.", v => IncludeTranslations = true);
-			this.HasOption ("b", "Use BiggCannedData.", v => UseBigCannedData = true);
+			this.HasOption ("b", "Use BigCannedData.", v => UseBigCannedData = true);
 			this.SkipsCommandSummaryBeforeRunning ();
 		}
 
@@ -45,14 +43,6 @@ namespace monarquia
 
 			foreach (var verbString in Verbs) {
 				results.AddRange (generator.GetExercises(verbString, true));
-			}
-
-			if (IncludeTranslations) {
-				var translations = GetTranslation.DownloadTranslationsFromGoogle(results.Select(t => t.Original));
-
-				foreach (var result in results) {
-					result.Translated = translations [result.Original];
-				}
 			}
 
 			ExerciseGenerator.Exercise.WriteAsCsv (Console.Out, results);

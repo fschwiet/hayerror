@@ -26,8 +26,11 @@ namespace monarquia
 				var frames = Frame.SelectAllFrames ();
 
 				foreach (var frame in frames) {
+
+					var availableRoleSelections = roleSelector.VerbRoleSelector.GetSelectionsFor (frame);
+
 					results.AddRange(BuildExercisesFromRoles (
-						roleSelector.VerbRoleSelector.GetSelectionsFor (frame), 
+						availableRoleSelections, 
 						roleSelector.SpanishRolePattern,
 						roleSelector.EnglishRolePattern,
 						frame));
@@ -57,8 +60,9 @@ namespace monarquia
 				foreach (var framing in frames) {
 
 					var roleSelecton = cannedData.GetAllRoleScenariosForVerbAndFrame (random, v, dataLoader, framing);
+
 					results.AddRange (BuildExercisesFromRoles (roleSelecton, 
-						new [] { "timeframe", "subject","verbPhrase", "verbEnding"},
+						new [] { "timeframe", "subject", "spanishonlyNoPreposition","verbPhrase", "verbEnding"},
 						new [] { "timeframe", "subject","verbPhrase", "verbEnding"},
 						framing));
 				}
@@ -69,16 +73,15 @@ namespace monarquia
 			}
 
 			if (limitVariations) {
+				
 				var allTags = results.SelectMany (r => r.Tags).Distinct ().AsEnumerable ();
-				var allVerbTags = allTags.Where (t => t.StartsWith ("verb:")).AsEnumerable ();
-				var allConjugationTags = allTags.Where (t => t.StartsWith ("conjugation:")).AsEnumerable ();
+				var allUsageTags = allTags.Where (t => t.StartsWith ("usage:")).AsEnumerable ();
 
 				List<Exercise> limitedExercises = new List<Exercise> ();
 
 				foreach (var resultsGroup in
-					from v in allVerbTags
-					from c in allConjugationTags
-					select results.Where(r => r.Tags.Contains(v) && r.Tags.Contains(c)).ToArray()) {
+					from u in allUsageTags
+					select results.Where(r => r.Tags.Contains(u)).ToArray()) {
 
 					if (!resultsGroup.Any ())
 						continue;

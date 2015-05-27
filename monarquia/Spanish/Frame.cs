@@ -8,11 +8,18 @@ namespace monarquia
 	{
 		public readonly PointOfView PointOfView;
 		public readonly Conjugation Conjugation;
+		public readonly bool IsNegated;
 
-		public Frame (PointOfView pointOfView, Conjugation conjugation)
+		public Frame (PointOfView pointOfView, Conjugation conjugation, bool isNegated = false)
 		{
 			this.PointOfView = pointOfView;
 			this.Conjugation = conjugation;
+			this.IsNegated = isNegated;
+		}
+
+		public Frame Clone(Conjugation? conjugation = null, PointOfView? pointOfView = null)
+		{
+			return new Frame (pointOfView ?? this.PointOfView, conjugation ?? this.Conjugation, this.IsNegated);
 		}
 
 		static public IEnumerable<Frame> SelectAllFrames ()
@@ -20,10 +27,13 @@ namespace monarquia
 			List<Frame> frames = new List<Frame> ();
 
 			var pointsOfView = Enum.GetValues (typeof(PointOfView)).Cast<PointOfView> ();
+			var conjugations = Enum.GetValues (typeof(Conjugation)).Cast<Conjugation> ();
+			var negativeOrNot = new [] { true, false };
 
 			frames.AddRange (from p in pointsOfView
-				from c in Enum.GetValues (typeof(Conjugation)).Cast<Conjugation> ()
-				select new Frame (p, c));
+				from c in conjugations
+				from n in negativeOrNot
+				select new Frame (p, c, n));
 
 			return frames;
 		}

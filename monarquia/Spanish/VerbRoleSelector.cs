@@ -15,6 +15,11 @@ namespace monarquia
 		{
 			this.cannedData = cannedData;
 			this.dataLoader = dataLoader;
+
+			this.hasOneOf ("spanishonlyNoPreposition", new ITranslateable[] {
+				new CannedTranslation("no", "", frame => frame.IsNegated),
+				new CannedTranslation("", "", frame => !frame.IsNegated)
+			});
 		}
 
 		public VerbRoleSelector hasOneOf(string roleName, IEnumerable<ITranslateable> values)

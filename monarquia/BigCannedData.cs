@@ -67,7 +67,7 @@ namespace monarquia
 					new EnglishOnly("there")
 				})
 				.hasTranslation ("haber", "be"),
-				new [] {"timeframe", "verbPhrase", "subject" },
+				new [] {"timeframe", "spanishonlyNoPreposition", "verbPhrase", "subject" },
 				new [] {"timeframe", "fakeSubject", "verbPhrase", "subject"});
 
 			AddRoleSelector (StartScenarios()
@@ -81,7 +81,7 @@ namespace monarquia
 					new EnglishOnly("it")
 				})
 				.hasTranslation ("hacer", "be"),
-					new [] {"timeframe", "verbPhrase", "subject" },
+					new [] {"timeframe", "spanishonlyNoPreposition", "verbPhrase", "subject" },
 					new [] {"timeframe", "fakeSubject", "verbPhrase", "subject"}
 			);
 
@@ -112,7 +112,7 @@ namespace monarquia
 				.hasOneOf ("indirectObject", Pronouns.GetCommonPeopleIndirectObject ())
 				.hasOneOf ("verbEnding", new [] { new CannedTranslation ("", "")})
 				.hasTranslation("hacer", "hurt"),
-				new [] {"timeframe", "subject", "indirectObject", "verbPhrase", "object"},
+				new [] {"timeframe", "subject", "spanishonlyNoPreposition", "indirectObject", "verbPhrase", "object"},
 				new [] {"timeframe", "subject", "verbPhrase", "indirectObject"}
 				);
 
@@ -239,7 +239,9 @@ namespace monarquia
 		}
 
 		public VerbRoleSelector StartScenarios() {
-			return new VerbRoleSelector (this, this.dataLoader);
+			var result = new VerbRoleSelector (this, this.dataLoader);
+			result.hasOneOf ("spanishonlyNoPreposition", PotentialNegationPreposition.Get());
+			return result;
 		}
 	}
 

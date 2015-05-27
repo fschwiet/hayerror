@@ -80,7 +80,7 @@ namespace monarquia
 
 			roleSelectors.Add (new ExpressableVerbRoleSelection() {
 				VerbRoleSelector = selector,
-				SpanishRolePattern = spanishRolePattern ?? new [] { "timeframe", "subject", "verbPhrase", "verbEnding" },
+				SpanishRolePattern = spanishRolePattern ?? new [] { "timeframe", "subject", "spanishonlyNoPreposition", "verbPhrase", "verbEnding" },
 				EnglishRolePattern = englishRolePattern ?? new [] { "timeframe", "subject", "verbPhrase", "verbEnding" }
 			});
 		}
@@ -123,13 +123,19 @@ namespace monarquia
 				return new RoleSelection[0];
 			}
 
-			rootRoleSelection = rootRoleSelection.WithRole ("verbPhrase", verb.Conjugation (englishVerb, f => frame.Conjugation == f.Conjugation));
+			rootRoleSelection = rootRoleSelection.WithRole ("verbPhrase", verb.MakeTranslateable (englishVerb, f => frame.Conjugation == f.Conjugation));
 			IEnumerable<RoleSelection> roleSelections = new[] {
 				rootRoleSelection
 			};
+
+			roleSelections = roleSelections.SelectMany (selection => {
+				return PotentialNegationPreposition.Get().Where(n => n.AllowsFraming(frame)).Select (n => selection.WithRole ("spanishonlyNoPreposition", n));
+			});
+
 			roleSelections = roleSelections.SelectMany (selection =>  {
 				return Pronouns.GetCommonPeopleSubjectNouns ().Where (n => n.AllowsFraming (frame)).Select (n => selection.WithRole ("subject", n));
 			});
+
 			roleSelections = roleSelections.SelectMany (selection =>  {
 				
 				var verbEndings = this.GetVerbEndings (verb.Infinitive, frame.PointOfView).ToArray ();

@@ -47,7 +47,8 @@ namespace test
 			AssertHasEnglishConjugation("would go", verb, Conjugation.Conditional, PointOfView.FirstPerson);
 			AssertHasEnglishConjugation("have gone", verb, Conjugation.PresentPerfect, PointOfView.FirstPerson);
 		}
-		/*
+
+
 		[Test]
 		public void CanLoadGoAndNegate () {
 			var allVerbs = dataLoader.GetAllSavedEnglishVerbs ();
@@ -61,7 +62,7 @@ namespace test
 			AssertHasNegativeEnglishConjugation("would not go", verb, Conjugation.Conditional, PointOfView.FirstPerson);
 			AssertHasNegativeEnglishConjugation("have not gone", verb, Conjugation.PresentPerfect, PointOfView.FirstPerson);
 		}
-		*/
+		
 
 		[Test]
 		public void CanLoadHaber() {
@@ -132,7 +133,7 @@ namespace test
 
 		void AssertHasNegativeEnglishConjugation(string expected, VerbConjugator verb, Conjugation conjugation, PointOfView pointOfView)
 		{
-			Assert.AreEqual(expected, verb.ConjugatedForTense(new Frame(pointOfView, conjugation)));
+			Assert.AreEqual(expected, verb.ConjugatedForTense(new Frame(pointOfView, conjugation, isNegated : true)));
 		}
 	}
 }

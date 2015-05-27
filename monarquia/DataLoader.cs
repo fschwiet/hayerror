@@ -98,7 +98,7 @@ namespace monarquia
 				verb.WithTenses (Conjugation.Future, GetEnglishPovLookup (verbixData.Get("Indicative", "Future")));
 				verb.WithTenses (Conjugation.PresentPerfect, GetEnglishPovLookup (verbixData.Get("Indicative", "Perfect")));
 
-				results.Add (verb);
+				results.Add (new EnglishVerbConjugator(verb));
 			}
 
 			return englishVerbs = results;

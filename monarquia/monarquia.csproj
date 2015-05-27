@@ -96,6 +96,8 @@
     <Compile Include="Verbs\CannedVerbConjugator.cs" />
     <Compile Include="Commands\ScrapeVerbix.cs" />
     <Compile Include="Commands\Verbix.cs" />
+    <Compile Include="Verbs\EnglishVerbConjugator.cs" />
+    <Compile Include="Spanish\PotentialNegationPreposition.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
