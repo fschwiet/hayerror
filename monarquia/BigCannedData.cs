@@ -161,7 +161,8 @@ namespace monarquia
 				.hasOneOf ("timeframe", timeframeExpressions)
 				.hasOneOf ("subject", peopleExpressions)
 				.hasOneOf ("verbEnding", verbEndingsForConocer)
-				.hasTranslation("conocer", c => (c == Conjugation.PastPreterite || c == Conjugation.Future) ? "meet" : "know"));
+				.hasTranslation("conocer", "meet", frame => frame.Conjugation == Conjugation.PastPreterite || frame.Conjugation == Conjugation.Future)
+				.hasTranslation("conocer", "know", frame => !(frame.Conjugation == Conjugation.PastPreterite || frame.Conjugation == Conjugation.Future)));
 
 			AddRoleSelector (StartScenarios()
 				.hasOneOf ("timeframe", timeframeExpressions)

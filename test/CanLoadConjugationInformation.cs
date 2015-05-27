@@ -47,6 +47,21 @@ namespace test
 			AssertHasEnglishConjugation("would go", verb, Conjugation.Conditional, PointOfView.FirstPerson);
 			AssertHasEnglishConjugation("have gone", verb, Conjugation.PresentPerfect, PointOfView.FirstPerson);
 		}
+		/*
+		[Test]
+		public void CanLoadGoAndNegate () {
+			var allVerbs = dataLoader.GetAllSavedEnglishVerbs ();
+
+			var verb = allVerbs.Single (v => v.Infinitive == "go");
+
+			AssertHasNegativeEnglishConjugation("do not go", verb, Conjugation.Present, PointOfView.FirstPerson);
+			AssertHasNegativeEnglishConjugation("did not go", verb, Conjugation.PastPreterite, PointOfView.FirstPerson);
+			AssertHasNegativeEnglishConjugation("did not go", verb, Conjugation.PastImperfect, PointOfView.FirstPerson);
+			AssertHasNegativeEnglishConjugation("will not go", verb, Conjugation.Future, PointOfView.FirstPerson);
+			AssertHasNegativeEnglishConjugation("would not go", verb, Conjugation.Conditional, PointOfView.FirstPerson);
+			AssertHasNegativeEnglishConjugation("have not gone", verb, Conjugation.PresentPerfect, PointOfView.FirstPerson);
+		}
+		*/
 
 		[Test]
 		public void CanLoadHaber() {
@@ -54,17 +69,17 @@ namespace test
 
 			var verb = allVerbs.Single (v => v.Infinitive == "haber");
 
-			AssertHasEnglishConjugation("hay", verb, Conjugation.Present, PointOfView.ThirdPersonMasculine);
-			AssertHasEnglishConjugation("hubo", verb, Conjugation.PastPreterite, PointOfView.ThirdPersonMasculine);
-			AssertHasEnglishConjugation("había", verb, Conjugation.PastImperfect, PointOfView.ThirdPersonMasculine);
-			AssertHasEnglishConjugation("habrá", verb, Conjugation.Future, PointOfView.ThirdPersonMasculine);
-			AssertHasEnglishConjugation("habría", verb, Conjugation.Conditional, PointOfView.ThirdPersonMasculine);
-			AssertHasEnglishConjugation("ha habido", verb, Conjugation.PresentPerfect, PointOfView.ThirdPersonMasculine);
+			AssertHasSpanishConjugation("hay", verb, Conjugation.Present, PointOfView.ThirdPersonMasculine);
+			AssertHasSpanishConjugation("hubo", verb, Conjugation.PastPreterite, PointOfView.ThirdPersonMasculine);
+			AssertHasSpanishConjugation("había", verb, Conjugation.PastImperfect, PointOfView.ThirdPersonMasculine);
+			AssertHasSpanishConjugation("habrá", verb, Conjugation.Future, PointOfView.ThirdPersonMasculine);
+			AssertHasSpanishConjugation("habría", verb, Conjugation.Conditional, PointOfView.ThirdPersonMasculine);
+			AssertHasSpanishConjugation("ha habido", verb, Conjugation.PresentPerfect, PointOfView.ThirdPersonMasculine);
 
 			//  Haber is used in the singular sense
 			//    http://spanish.about.com/cs/verbs/a/haber_as_there.htm
-			AssertHasEnglishConjugation("habría", verb, Conjugation.Conditional, PointOfView.ThirdPersonPluralFeminine);
-			AssertHasEnglishConjugation("habría", verb, Conjugation.Conditional, PointOfView.ThirdPersonPluralMasculine);
+			AssertHasSpanishConjugation("habría", verb, Conjugation.Conditional, PointOfView.ThirdPersonPluralFeminine);
+			AssertHasSpanishConjugation("habría", verb, Conjugation.Conditional, PointOfView.ThirdPersonPluralMasculine);
 		}
 
 		[Test]
@@ -99,19 +114,25 @@ namespace test
 			Assert.IsNotNull (verb);
 
 			var reflexiveVerb = new ReflexiveVerbConjugator (infinitive, dataLoader);
-			var result = reflexiveVerb.ConjugatedForTense (Conjugation.Present, pointOfView);
+			var frame = new Frame (pointOfView, Conjugation.Present);
+			var result = reflexiveVerb.ConjugatedForTense (frame);
 
 			Assert.AreEqual (expected, result);
 		}
 
 		void AssertHasSpanishConjugation(string expected, VerbConjugator verb, Conjugation conjugation, PointOfView pointOfView)
 		{
-			Assert.AreEqual(expected, verb.ConjugatedForTense(conjugation, pointOfView));
+			Assert.AreEqual(expected, verb.ConjugatedForTense(new Frame(pointOfView, conjugation)));
 		}
 
 		void AssertHasEnglishConjugation(string expected, VerbConjugator verb, Conjugation conjugation, PointOfView pointOfView)
 		{
-			Assert.AreEqual(expected, verb.ConjugatedForTense(conjugation, pointOfView));
+			Assert.AreEqual(expected, verb.ConjugatedForTense(new Frame(pointOfView, conjugation)));
+		}
+
+		void AssertHasNegativeEnglishConjugation(string expected, VerbConjugator verb, Conjugation conjugation, PointOfView pointOfView)
+		{
+			Assert.AreEqual(expected, verb.ConjugatedForTense(new Frame(pointOfView, conjugation)));
 		}
 	}
 }

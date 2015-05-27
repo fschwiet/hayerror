@@ -20,11 +20,11 @@ namespace monarquia
 			}
 		}
 
-		public override string ConjugatedForTense (Conjugation conjugation, PointOfView pointOfView)
+		public override string ConjugatedForTense (Frame frame)
 		{
-			var original = this.underlyingVerb.ConjugatedForTense (conjugation, pointOfView);
+			var original = this.underlyingVerb.ConjugatedForTense (frame);
 
-			return GetReflexiveArticle (pointOfView) + " " + original;
+			return GetReflexiveArticle (frame.PointOfView) + " " + original;
 		}
 
 		string GetReflexiveArticle(PointOfView pointOfView) 

@@ -13,11 +13,11 @@ namespace monarquia
 			get;
 		}
 
-		public abstract string ConjugatedForTense (Conjugation conjugation, PointOfView pointOfView);
+		public abstract string ConjugatedForTense (Frame frame);
 
-		public ITranslateable Conjugation(Conjugation conjugation, VerbConjugator englishVerb) 
+		public ITranslateable Conjugation(VerbConjugator englishVerb, Func<Frame,bool> framing) 
 		{
-			return new VerbInstance (this, englishVerb, conjugation);
+			return new VerbInstance (this, englishVerb, framing);
 		}
 	}
 }

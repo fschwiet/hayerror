@@ -31,8 +31,8 @@ namespace monarquia
 			}
 		}
 
-		public override string ConjugatedForTense(Conjugation conjugation, PointOfView pointOfView) {
-			return tenses [conjugation][pointOfView];
+		public override string ConjugatedForTense(Frame frame) {
+			return tenses [frame.Conjugation][frame.PointOfView];
 		}
 
 		public void MakeThirdPersonPluralMatchSingular() {
