@@ -28,7 +28,7 @@ namespace monarquia
 
 			var exerciseGenerator = new EspanolGenerator (cannedData, "./data");
 
-			List<ExerciseGenerator.Exercise> results = new List<ExerciseGenerator.Exercise> ();
+			List<Exercise> results = new List<Exercise> ();
 
 			results.AddRange (exerciseGenerator.GetExercises (null, LimitOutput));
 

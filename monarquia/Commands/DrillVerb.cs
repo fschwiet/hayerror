@@ -33,7 +33,7 @@ namespace monarquia
 		public override int Run (string[] remainingArguments)
 		{
 			var dataLoader = new DataLoader ("./data");
-			var results = new List<EspanolGenerator.Exercise> ();
+			var results = new List<Exercise> ();
 			var cannedData = new BetterCannedData (dataLoader);
 
 			if (UseBigCannedData)
@@ -45,7 +45,7 @@ namespace monarquia
 				results.AddRange (generator.GetExercises(verbString, true));
 			}
 
-			ExerciseGenerator.Exercise.WriteAsCsv (Console.Out, results);
+			Exercise.WriteAsCsv (Console.Out, results);
 
 			return 0;
 		} 

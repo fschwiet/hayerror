@@ -5,14 +5,16 @@ using System.Linq;
 
 namespace monarquia
 {
-	public class EspanolGenerator : ExerciseGenerator
+	public class EspanolGenerator
 	{
+		protected Random random  = new Random ();
+		protected DataLoader dataLoader;
 		ICannedData cannedData;
 		CachedPhoneticData phoneticData;
 
 		public EspanolGenerator (ICannedData cannedData, string dataDirectory)
-			: base(dataDirectory)
 		{
+			this.dataLoader = new DataLoader (dataDirectory);
 			this.phoneticData = new CachedPhoneticData(dataDirectory);
 			this.cannedData = cannedData;
 		}

@@ -9,7 +9,7 @@ namespace test
 	[TestFixture ()]
 	public class CanGenerateSpanish
 	{
-		ExerciseGenerator.Exercise[] allExercises;
+		Exercise[] allExercises;
 		string[] allPhrases;
 
 		[TestFixtureSetUp]
@@ -162,14 +162,14 @@ namespace test
 			string translation = null,
 			IEnumerable<string> expectedTags = null)
 		{
-			ExerciseGenerator.Exercise exercise;
+			Exercise exercise;
 
 			try {
 				exercise = allExercises.Where (e => e.Original == expected).SingleOrDefault ();
 			} catch(InvalidOperationException) {
 
 				var matchingExercises = allExercises.Where (e => e.Original == expected);
-				ExerciseGenerator.Exercise.WriteAsCsv (Console.Out, matchingExercises);
+				Exercise.WriteAsCsv (Console.Out, matchingExercises);
 
 				throw;
 			}
