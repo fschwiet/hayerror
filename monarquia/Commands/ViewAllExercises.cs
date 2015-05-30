@@ -32,13 +32,7 @@ namespace monarquia
 
 			results.AddRange (exerciseGenerator.GetExercises (null, LimitOutput));
 
-			foreach (var exercise in results) {
-				Console.WriteLine (exercise.Original);
-				Console.WriteLine (exercise.Translated);
-				Console.WriteLine ("{0} - {1}", exercise.ExtraInfo, String.Join(", ", exercise.Tags));
-				Console.WriteLine("");
-				Console.WriteLine("");
-			}
+			Console.WriteLine (Newtonsoft.Json.JsonConvert.SerializeObject (results, Newtonsoft.Json.Formatting.Indented));
 
 			return 0;
 		}
