@@ -196,21 +196,29 @@ namespace monarquia
 				.hasOneOf ("verbEnding", new [] { new SpanishOnly("gritos ahogados").WithEnglishAlternative("") })
 				.hasTranslation("dar", "gasp"));
 
-			HasEnglishTranslation ("estar", "be");
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("verbEnding", new ITranslateable[] {
+                    new CannedTranslation("en frente", "in front"),
+                    new CannedTranslation("al otro lado de la calle", "on the other side of the street"),
+                    new Noun ("listo", "lista", "listos", "listas").WithTranslation("ready", "ready"),
+                    new CannedTranslation("afuera", "outside")
+				})
+                .hasTranslation("estar", "be", framing => true)
+                .hasTranslation("estar", "be", framing => true)
+            );
+
 			HasEnglishTranslation ("ir", "go");
 			//HasEnglishTranslation ("cortar", "cut");
 			ReflexiveHasEnglishTranslation ("cortar", "cut");
 			ReflexiveHasEnglishTranslation ("duchar", "shower");
 			ReflexiveHasEnglishTranslation ("mirar", "look");
-						
-			foreach(var timeframeExpression in timeframeExpressions) {
-				AddTimeframeExpression (timeframeExpression);
-			}
 
-			AddVerbEnding ("estar", new CannedTranslation("en frente", "in front"));
-			AddVerbEnding ("estar", new CannedTranslation("al otro lado de la calle", "on the other side of the street"));
-			AddVerbEnding ("estar", new Noun ("listo", "lista", "listos", "listas").WithTranslation("ready", "ready"));
-			AddVerbEnding ("estar", new CannedTranslation("afuera", "outside"));
+            foreach (var timeframeExpression in timeframeExpressions)
+            {
+                AddTimeframeExpression(timeframeExpression);
+            }
 
 			//  English "good" is ambiguous
 			//AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation("good", "good"));

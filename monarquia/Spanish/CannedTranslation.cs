@@ -11,6 +11,7 @@ namespace monarquia
 		Func<Frame,bool> frameFilter;
 		List<string> englishHints = new List<string>();
 		List<string> spanishHints = new List<string>();
+        List<string> tags = new List<string>();
 
 		public CannedTranslation (string spanishText, string englishText, Func<Frame, bool> frameFilter = null)
 		{
@@ -19,6 +20,12 @@ namespace monarquia
 			this.frameFilter = frameFilter ?? delegate(Frame f) { return true; };
 
 		}
+
+        public CannedTranslation WithTag(params string[] tags)
+        {
+            this.tags.AddRange(tags);
+            return this;
+        }
 
 		public CannedTranslation WithEnglishHint(string text = null) {
 			englishHints.Add (text ?? spanishText);
@@ -48,7 +55,8 @@ namespace monarquia
 				new ResultChunk () {
 					SpanishTranslation = spanishText,
 					EnglishTranslation = englishText,
-					EnglishHint = englishHints 
+					EnglishHint = englishHints,
+                    Tags = tags
 				}
 			};
 		}

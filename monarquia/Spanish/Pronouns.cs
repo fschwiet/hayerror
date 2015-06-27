@@ -28,7 +28,7 @@ namespace monarquia
 				}),
 				new CannedTranslation ("vosotros", "you all", frameFilter: frame => {
 					return frame.PointOfView == PointOfView.SecondPersonPlural;
-				}).WithEnglishHint(),
+				}).WithEnglishHint().WithTag("vosotros"),
 				new CannedTranslation ("ustedes", "you all", frameFilter: frame => {
 					return frame.PointOfView == PointOfView.SecondPersonPluralFormal;
 				}),
