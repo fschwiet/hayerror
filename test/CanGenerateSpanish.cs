@@ -40,6 +40,7 @@ namespace test
 		[TestCase("Yo grito.", "I shout.")]
 		[TestCase("Ella está en frente.", "She is in front.")]
 		[TestCase("Yo estoy en frente.", "I am in front.")]
+        [TestCase("A esa hora nosotros no estuvimos en frente.", "At that hour we were not in front.")]
 		public void MiscBugs (string expected, string translation)
 		{
 			AssertHasTranslation (expected, translation);

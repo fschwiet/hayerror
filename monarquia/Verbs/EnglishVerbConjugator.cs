@@ -21,31 +21,39 @@ namespace monarquia
 			if (!frame.IsNegated)
 				return innerResult;
 
-			if (frame.Conjugation == Conjugation.Present) {
+            if (!English.Classification.IsAuxiliaryVerb(Infinitive))
+            {
+                if (frame.Conjugation == Conjugation.Present)
+                {
 
-				var newFrame = frame.Clone ();
+                    var newFrame = frame.Clone();
 
-				var prefix = "do not ";
-			
-				if (newFrame.PointOfView.IsThirdPerson()) {
-					prefix = "does not ";
+                    var prefix = "do not ";
 
-					newFrame = newFrame.Clone (pointOfView: PointOfView.FirstPerson);
-				}
+                    if (newFrame.PointOfView.IsThirdPerson())
+                    {
+                        prefix = "does not ";
 
-				return prefix + inner.ConjugatedForTense (newFrame);
-			} else if (
-				frame.Conjugation == Conjugation.PastImperfect ||
-				frame.Conjugation == Conjugation.PastPreterite) {
+                        newFrame = newFrame.Clone(pointOfView: PointOfView.FirstPerson);
+                    }
 
-				var newFrame = frame.Clone (conjugation: Conjugation.Present);
-			
-				return "did not " + inner.ConjugatedForTense(newFrame);
-			} else {
-				var innerResultParts = innerResult.Split (new [] { ' ' }).ToList ();
-				innerResultParts.Insert (1, "not");
-				return string.Join (" ", innerResultParts);
-			}
+                    return prefix + inner.ConjugatedForTense(newFrame);
+                }
+                else if (
+                  frame.Conjugation == Conjugation.PastImperfect ||
+                  frame.Conjugation == Conjugation.PastPreterite)
+                {
+
+                    var newFrame = frame.Clone(conjugation: Conjugation.Present);
+
+                    return "did not " + inner.ConjugatedForTense(newFrame);
+                }
+
+            }
+
+			var innerResultParts = innerResult.Split (new [] { ' ' }).ToList ();
+			innerResultParts.Insert (1, "not");
+			return string.Join (" ", innerResultParts);
 		}
 		public override string Infinitive {
 			get {

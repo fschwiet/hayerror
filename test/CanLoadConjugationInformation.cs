@@ -61,6 +61,18 @@ namespace test
 			AssertHasNegativeEnglishConjugation("will not go", verb, Conjugation.Future, PointOfView.FirstPerson);
 			AssertHasNegativeEnglishConjugation("would not go", verb, Conjugation.Conditional, PointOfView.FirstPerson);
 			AssertHasNegativeEnglishConjugation("have not gone", verb, Conjugation.PresentPerfect, PointOfView.FirstPerson);
+
+            // modal verbs are negating by appending "no"
+            // https://en.wikipedia.org/wiki/English_modal_verbs
+
+            var modalVerb = allVerbs.Single(v => v.Infinitive == "be");
+
+            AssertHasNegativeEnglishConjugation("am not", modalVerb, Conjugation.Present, PointOfView.FirstPerson);
+            AssertHasNegativeEnglishConjugation("was not", modalVerb, Conjugation.PastPreterite, PointOfView.FirstPerson);
+            AssertHasNegativeEnglishConjugation("was not", modalVerb, Conjugation.PastImperfect, PointOfView.FirstPerson);
+            AssertHasNegativeEnglishConjugation("will not be", modalVerb, Conjugation.Future, PointOfView.FirstPerson);
+            AssertHasNegativeEnglishConjugation("would not be", modalVerb, Conjugation.Conditional, PointOfView.FirstPerson);
+            AssertHasNegativeEnglishConjugation("have not been", modalVerb, Conjugation.PresentPerfect, PointOfView.FirstPerson);
 		}
 		
 
