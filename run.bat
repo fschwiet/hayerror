@@ -1,0 +1,1 @@
+.\monarquia\bin\Debug\monarquia %*

@@ -206,7 +206,6 @@ namespace monarquia
                     new CannedTranslation("afuera", "outside")
 				})
                 .hasTranslation("estar", "be", framing => true)
-                .hasTranslation("estar", "be", framing => true)
             );
 
 			HasEnglishTranslation ("ir", "go");
