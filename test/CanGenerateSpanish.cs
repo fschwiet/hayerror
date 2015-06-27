@@ -180,7 +180,7 @@ namespace test
 			}
 
 			if (!string.IsNullOrEmpty (translation)) {
-				Assert.AreEqual (translation, exercise.Translated);
+				Assert.AreEqual (translation, exercise.Translation);
 			}
 
 			if (expectedTags != null) {

@@ -8,14 +8,14 @@ namespace monarquia
 {
 	public class Exercise {
 		public string Original;
-		public string Translated;
+		public string Translation;
 		public string ExtraInfo;
 		public List<string> Tags = new List<string>();
 
 		public Exercise Clone() {
 			return new Exercise () {
 				Original = this.Original,
-				Translated = this.Translated,
+				Translation = this.Translation,
 				ExtraInfo = this.ExtraInfo,
 				Tags = new List<string> (this.Tags)
 			};
@@ -43,7 +43,7 @@ namespace monarquia
 			foreach (var exercise in exercises) {
 
 				csv.WriteField (exercise.Original);
-				csv.WriteField (exercise.Translated);
+				csv.WriteField (exercise.Translation);
 				csv.WriteField (exercise.ExtraInfo);
 				csv.WriteField (string.Join(" ", exercise.Tags));
 				csv.NextRecord ();

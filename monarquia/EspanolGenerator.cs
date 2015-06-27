@@ -119,7 +119,7 @@ namespace monarquia
 					var englishPhrase = englishTemplate.Select (t => roleSelection.GetForRole (t));
 					var englishChunks = englishPhrase.SelectMany(e => e.GetResult(frame));
 
-					result.Translated = MakeEnglishSentence (phoneticData, englishChunks);					
+					result.Translation = MakeEnglishSentence (phoneticData, englishChunks);					
 				}
 				catch(Exception) {
 					// ignore
