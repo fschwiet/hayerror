@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BetterCannedData.cs" />
+    <Compile Include="Commands\ViewAllPriorityGroups.cs" />
     <Compile Include="English\Classification.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -18,7 +18,6 @@ namespace monarquia
 			this.spanishText = spanishText;
 			this.englishText = englishText;
 			this.frameFilter = frameFilter ?? delegate(Frame f) { return true; };
-
 		}
 
         public CannedTranslation WithTag(params string[] tags)

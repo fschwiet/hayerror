@@ -14,6 +14,7 @@ namespace monarquia
 		Dictionary<string, List<ITranslateable>> AllVerbEndings = new Dictionary<string, List<ITranslateable>>(StringComparer.InvariantCultureIgnoreCase);
 		Dictionary<string,Func<Conjugation,string>> VerbTranslations = new Dictionary<string, Func<Conjugation,string>> (StringComparer.InvariantCultureIgnoreCase);
 		Dictionary<string,Func<Conjugation,string>> ReflexiveVerbTranslations = new Dictionary<string, Func<Conjugation,string>> (StringComparer.InvariantCultureIgnoreCase);
+        List<IEnumerable<string>> TagPrioritizations = new List<IEnumerable<string>>();
 
 		protected void AddVerbEnding(string verbInfinitive, ITranslateable ending) {
 
@@ -148,6 +149,35 @@ namespace monarquia
 			});
 			return roleSelections;
 		}
+
+        protected void AddLearningPriority(IEnumerable<ITranslateable> expressions)
+        {
+            List<string> tags = new List<string>();
+
+            foreach(var expression in expressions)
+            {
+                foreach(var framing in Frame.SelectAllFrames())
+                {
+                    var result = expression.GetResult(framing);
+                    var generatedTags = result.SelectMany(r => r.Tags).Distinct();
+
+                    foreach(var generatedTag in generatedTags)
+                    {
+                        if (!tags.Contains(generatedTag))
+                        {
+                            tags.Add(generatedTag);
+                        }
+                    }
+                }
+            }
+
+            TagPrioritizations.Add(tags);
+        }
+
+        public IEnumerable<IEnumerable<string>> GetPriorityGroups()
+        {
+            return TagPrioritizations;
+        }
 	}
 	
 }

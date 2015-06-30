@@ -166,7 +166,7 @@ namespace monarquia
 				new Noun ("conocido", "acquaintance")
 			};
 
-            AddLearningPriority(peopleExpressions);
+            AddLearningPriority(relativeNouns);
 
             AddRoleSelector(StartScenarios()
                 .hasOneOf("timeframe", timeframeExpressions)
