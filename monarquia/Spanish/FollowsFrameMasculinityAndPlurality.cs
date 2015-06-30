@@ -2,7 +2,7 @@
 
 namespace monarquia
 {
-	public class Noun : ITranslateable
+	public class FollowsFrameMasculinityAndPlurality : ITranslateable
 	{
 		public string Masculine;
 		public string Feminine;
@@ -12,7 +12,7 @@ namespace monarquia
 		public string EnglishSingular;
 		public string EnglishPlural;
 
-		public Noun (string masculine, string feminine, string pluralMasculine, string pluralFeminine)
+		public FollowsFrameMasculinityAndPlurality (string masculine, string feminine, string pluralMasculine, string pluralFeminine)
 		{
 			Masculine = masculine;
 			Feminine = feminine;
@@ -20,14 +20,14 @@ namespace monarquia
 			PluralFeminine = pluralFeminine;
 		}
 
-		public Noun (string singular, string plural) {
+		public FollowsFrameMasculinityAndPlurality (string singular, string plural) {
 			Masculine = singular;
 			Feminine = singular;
 			PluralMasculine = plural;
 			PluralFeminine = plural;
 		}
 
-		public Noun WithTranslation(string singular, string plural) {
+		public FollowsFrameMasculinityAndPlurality WithTranslation(string singular, string plural) {
 			EnglishSingular = singular;
 			EnglishPlural = plural;
 			return this;

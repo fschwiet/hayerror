@@ -41,10 +41,10 @@ namespace monarquia
                 hasOneOf("verbEnding", new[] { new CannedTranslation("leche", "milk"), new CannedTranslation("agua", "water") }).
                 hasTranslation("beber", "drink"));
 
-            var actor = new Noun("actor", "actriz", "actores", "actrizes").WithTranslation("actor", "actors");
-            var cook = new Noun("cocinero", "cocinera", "cocineros", "cocineras").WithTranslation("cook", "cooks");
-            var dentist = new Noun("dentista", "dentistas").WithTranslation("dentist", "dentists");
-            var student = new Noun("estudiante", "estudiantes").WithTranslation("student", "students");
+            var actor = new FollowsFrameMasculinityAndPlurality("actor", "actriz", "actores", "actrizes").WithTranslation("actor", "actors");
+            var cook = new FollowsFrameMasculinityAndPlurality("cocinero", "cocinera", "cocineros", "cocineras").WithTranslation("cook", "cooks");
+            var dentist = new FollowsFrameMasculinityAndPlurality("dentista", "dentistas").WithTranslation("dentist", "dentists");
+            var student = new FollowsFrameMasculinityAndPlurality("estudiante", "estudiantes").WithTranslation("student", "students");
 
             var professions = new[] { actor, cook, dentist, student };
 
@@ -205,7 +205,7 @@ namespace monarquia
                 .hasOneOf("verbEnding", new ITranslateable[] {
                     new CannedTranslation("en frente", "in front"),
                     new CannedTranslation("al otro lado de la calle", "on the other side of the street"),
-                    new Noun ("listo", "lista", "listos", "listas").WithTranslation("ready", "ready"),
+                    new FollowsFrameMasculinityAndPlurality ("listo", "lista", "listos", "listas").WithTranslation("ready", "ready"),
                     new CannedTranslation("afuera", "outside")
 				})
                 .hasTranslation("estar", "be", framing => true)

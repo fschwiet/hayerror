@@ -24,7 +24,7 @@ namespace monarquia
 			AllVerbEndings [verbInfinitive].Add (ending);
 		}
 
-		protected void AddVerbEnding(string verbInfinitive, Noun noun) {
+		protected void AddVerbEnding(string verbInfinitive, FollowsFrameMasculinityAndPlurality noun) {
 
 			if (!AllVerbEndings.ContainsKey (verbInfinitive)) {
 				AllVerbEndings.Add (verbInfinitive, new List<ITranslateable> ());
