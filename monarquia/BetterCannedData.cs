@@ -34,11 +34,17 @@ namespace monarquia
 
             var peopleExpressions = Pronouns.GetCommonPeopleSubjectNouns();
 
-            AddRoleSelector(StartScenarios().
-                hasOneOf("timeframe", timeframeExpressions).
-                hasOneOf("subject", peopleExpressions).
-                hasOneOf("verbEnding", new[] { new CannedTranslation("leche", "milk"), new CannedTranslation("agua", "water") }).
-                hasTranslation("beber", "drink"));
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("verbEnding", new ITranslateable[] {
+                    new CannedTranslation("en frente", "in front"),
+                    new CannedTranslation("al otro lado de la calle", "on the other side of the street"),
+                    new FollowsFrameMasculinityAndPlurality ("listo", "lista", "listos", "listas").WithTranslation("ready", "ready"),
+                    new CannedTranslation("afuera", "outside")
+				})
+                .hasTranslation("estar", "be", framing => true)
+            );
 
             var actor = new FollowsFrameMasculinityAndPlurality("actor", "actriz", "actores", "actrizes").WithTranslation("actor", "actors");
             var cook = new FollowsFrameMasculinityAndPlurality("cocinero", "cocinera", "cocineros", "cocineras").WithTranslation("cook", "cooks");
@@ -160,6 +166,8 @@ namespace monarquia
 				new Noun ("conocido", "acquaintance")
 			};
 
+            AddLearningPriority(peopleExpressions);
+
             AddRoleSelector(StartScenarios()
                 .hasOneOf("timeframe", timeframeExpressions)
                 .hasOneOf("subject", peopleExpressions)
@@ -212,17 +220,11 @@ namespace monarquia
                 .hasOneOf("verbEnding", new[] { new SpanishOnly("gritos ahogados").WithEnglishAlternative("") })
                 .hasTranslation("dar", "gasp"));
 
-            AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new ITranslateable[] {
-                    new CannedTranslation("en frente", "in front"),
-                    new CannedTranslation("al otro lado de la calle", "on the other side of the street"),
-                    new FollowsFrameMasculinityAndPlurality ("listo", "lista", "listos", "listas").WithTranslation("ready", "ready"),
-                    new CannedTranslation("afuera", "outside")
-				})
-                .hasTranslation("estar", "be", framing => true)
-            );
+            AddRoleSelector(StartScenarios().
+                hasOneOf("timeframe", timeframeExpressions).
+                hasOneOf("subject", peopleExpressions).
+                hasOneOf("verbEnding", new[] { new CannedTranslation("leche", "milk"), new CannedTranslation("agua", "water") }).
+                hasTranslation("beber", "drink"));
 
             HasEnglishTranslation("ir", "go");
             //HasEnglishTranslation ("cortar", "cut");
