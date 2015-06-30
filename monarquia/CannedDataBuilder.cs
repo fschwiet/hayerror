@@ -123,7 +123,7 @@ namespace monarquia
 				return new RoleSelection[0];
 			}
 
-			rootRoleSelection = rootRoleSelection.WithRole ("verbPhrase", verb.MakeTranslateable (englishVerb, f => frame.Conjugation == f.Conjugation));
+			rootRoleSelection = rootRoleSelection.WithRole ("verbPhrase", new VerbInstance(verb, englishVerb, f => frame.Conjugation == f.Conjugation));
 			IEnumerable<RoleSelection> roleSelections = new[] {
 				rootRoleSelection
 			};

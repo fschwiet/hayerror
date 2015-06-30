@@ -14,11 +14,6 @@ namespace monarquia
 		}
 
 		public abstract string ConjugatedForTense (Frame frame);
-
-		public ITranslateable MakeTranslateable(VerbConjugator englishVerb, Func<Frame,bool> framing) 
-		{
-			return new VerbInstance (this, englishVerb, framing);
-		}
 	}
 }
 
