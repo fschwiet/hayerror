@@ -18,6 +18,9 @@ namespace monarquia
 
 	public static class PointOfViewUtils {
 		public static bool IsFeminine(this PointOfView pointOfView) {
+
+            // BUGBUG: assumes second-person is female
+
 			switch(pointOfView) {
 				case PointOfView.ThirdPersonFeminine:
 				case PointOfView.ThirdPersonPluralFeminine:

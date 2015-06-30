@@ -16,3 +16,7 @@ actor,æktər
 dentist,dɛntəst
 student,studənt
 lot,lɑt
+actors,æktərz
+cooks,kʊks
+dentists,dɛntəsts
+students,studənts

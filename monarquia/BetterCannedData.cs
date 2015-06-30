@@ -12,7 +12,6 @@ namespace monarquia
 
         public BetterCannedData(DataLoader dataLoader)
         {
-
             this.dataLoader = dataLoader;
 
             var timeframeExpressions = new[] {
@@ -51,7 +50,9 @@ namespace monarquia
             AddRoleSelector(StartScenarios()
                 .hasOneOf("timeframe", timeframeExpressions)
                 .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", professions.Select(p => p.WithEnglishAlternative(new Article() + p)))
+                .hasOneOf<ITranslateable>("verbEnding", 
+                        spanishNoun => new [] {spanishNoun}, 
+                        englishNoun => new [] {new Article(), englishNoun}, professions)
                 .hasTranslation("ser", "be"));
 
             AddRoleSelector(StartScenarios()
@@ -119,66 +120,78 @@ namespace monarquia
                 new[] { "timeframe", "subject", "verbPhrase", "indirectObject" }
                 );
 
-            var verbEndingsForConocer = new[] {
-				new CannedTranslation ("a ella", "her"),
-				new CannedTranslation ("a mi padre", "my father"),
-				new CannedTranslation ("a mi madre", "my mother"),
-				new CannedTranslation ("a mi hermano", "my brother"),
-				new CannedTranslation ("a mi hermana", "my sister"),
-				new CannedTranslation ("a mi suegro", "my father-in-law"),
-				new CannedTranslation ("a mi suegra", "my mother-in-law"),
-				new CannedTranslation ("a mi cuñado", "my brother-in-law"),
-				new CannedTranslation ("a mi cuñada", "my sister-in-law"),
-				new CannedTranslation ("a mi esposo", "my husband"),
-				new CannedTranslation ("a mi esposa", "my wife"),
-				new CannedTranslation ("a mi abuelo", "my grandfather"),
-				new CannedTranslation ("a mi abuela", "my grandmother"),
-				new CannedTranslation ("a mi bisabuelo", "my great grandfather"),
-				new CannedTranslation ("a mi bisabuela", "my great grandmother"),
-				new CannedTranslation ("a mi hijo", "my son"),
-				new CannedTranslation ("a mi hija", "my daughter"),
-				new CannedTranslation ("a mi nieto", "my grandson"),
-				new CannedTranslation ("a mi nieta", "my granddaughter"),
-				new CannedTranslation ("a mi bisnieto", "my great grandson"),
-				new CannedTranslation ("a mi bisnieta", "my great granddaughter"),
-				new CannedTranslation ("a mi tío", "my uncle"),
-				new CannedTranslation ("a mi tía", "my aunt"),
-				new CannedTranslation ("a mi primo", "my cousin"),
-				new CannedTranslation ("a mi prima", "my cousin"),
-				new CannedTranslation ("a mi sobrino", "my nephew"),
-				new CannedTranslation ("a mi sobrina", "my niece"),
-				new CannedTranslation ("a mi padrastro", "my stepfather"),
-				new CannedTranslation ("a mi madrastra", "my stepmother"),
-				new CannedTranslation ("a mi hijastro", "my stepson"),
-				new CannedTranslation ("a mi hijastra", "my stepdaughter"),
-				new CannedTranslation ("a mi hermanastro", "my stepbrother"),
-				new CannedTranslation ("a mi hermanastra", "my stepsister"),
-				new CannedTranslation ("a mi padrino", "my godfather"),
-				new CannedTranslation ("a mi madrina", "my godmother"),
-				new CannedTranslation ("a mi ahijado", "my godson"),
-				new CannedTranslation ("a mi ahijada", "my goddaughter"),
-				new CannedTranslation ("a mi conocido", "my acquaintance")
+            var relativeNouns = new[] {
+				new CannedTranslation ("padre", "father"),
+				new CannedTranslation ("madre", "mother"),
+				new CannedTranslation ("hermano", "brother"),
+				new CannedTranslation ("hermana", "sister"),
+				new CannedTranslation ("suegro", "father-in-law"),
+				new CannedTranslation ("suegra", "mother-in-law"),
+				new CannedTranslation ("cuñado", "brother-in-law"),
+				new CannedTranslation ("cuñada", "sister-in-law"),
+				new CannedTranslation ("esposo", "husband"),
+				new CannedTranslation ("esposa", "wife"),
+				new CannedTranslation ("abuelo", "grandfather"),
+				new CannedTranslation ("abuela", "grandmother"),
+				new CannedTranslation ("bisabuelo", "great grandfather"),
+				new CannedTranslation ("bisabuela", "great grandmother"),
+				new CannedTranslation ("hijo", "son"),
+				new CannedTranslation ("hija", "daughter"),
+				new CannedTranslation ("nieto", "grandson"),
+				new CannedTranslation ("nieta", "granddaughter"),
+				new CannedTranslation ("bisnieto", "great grandson"),
+				new CannedTranslation ("bisnieta", "great granddaughter"),
+				new CannedTranslation ("tío", "uncle"),
+				new CannedTranslation ("tía", "aunt"),
+				new CannedTranslation ("primo", "cousin"),
+				new CannedTranslation ("prima", "cousin"),
+				new CannedTranslation ("sobrino", "nephew"),
+				new CannedTranslation ("sobrina", "niece"),
+				new CannedTranslation ("padrastro", "stepfather"),
+				new CannedTranslation ("madrastra", "stepmother"),
+				new CannedTranslation ("hijastro", "stepson"),
+				new CannedTranslation ("hijastra", "stepdaughter"),
+				new CannedTranslation ("hermanastro", "stepbrother"),
+				new CannedTranslation ("hermanastra", "stepsister"),
+				new CannedTranslation ("padrino", "godfather"),
+				new CannedTranslation ("madrina", "godmother"),
+				new CannedTranslation ("ahijado", "godson"),
+				new CannedTranslation ("ahijada", "goddaughter"),
+				new CannedTranslation ("conocido", "acquaintance")
 			};
 
             AddRoleSelector(StartScenarios()
                 .hasOneOf("timeframe", timeframeExpressions)
                 .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", verbEndingsForConocer)
+                .hasOneOf("verbEnding", new[] { new CannedTranslation("a ella", "her") })
+                .hasOneOf("verbEnding", new[] { new CannedTranslation("a mis padres", "my parents") })
+                .hasOneOf<ITranslateable>("verbEnding", 
+                    spanishNoun => new [] { new SpanishOnly("a"), new SpanishOnly("mi"), spanishNoun},
+                    englishNoun => new [] { new EnglishOnly("my"), englishNoun},
+                    relativeNouns)
                 .hasTranslation("conocer", "meet", frame => frame.Conjugation == Conjugation.PastPreterite || frame.Conjugation == Conjugation.Future)
                 .hasTranslation("conocer", "know", frame => !(frame.Conjugation == Conjugation.PastPreterite || frame.Conjugation == Conjugation.Future)));
 
             AddRoleSelector(StartScenarios()
                 .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", new[] {
-					CannedTranslation.WithPointOfView("el reloj", "the watch", PointOfView.ThirdPersonMasculine),
-					CannedTranslation.WithPointOfView("el reloj", "the clock", PointOfView.ThirdPersonMasculine)
-				})
-                .hasOneOf("verbEnding", new[] {
-					new CannedTranslation("la una", "one"),
-					new CannedTranslation("las dos", "two"),
-					new CannedTranslation("el mediodía", "noon"),
-					new CannedTranslation("la medianoche", "midnight")
-				})
+                .hasOneOf<Noun>("subject",
+                    noun => new[] { noun.DefiniteArticle(), noun },
+                    new[] {
+					    new Noun("reloj", "watch", isSubject: true),
+					    new Noun("relojes", "watches", isSubject: true, isPlural:true),
+					    new Noun("reloj", "clock", isSubject: true),
+					    new Noun("relojes", "clocks", isSubject: true, isPlural:true)
+                    })
+                .hasOneOf<Noun>("verbEnding",
+                    spanishNoun => new[] { spanishNoun.DefiniteArticle(), spanishNoun },
+                    englishNoun => new[] { englishNoun },
+                    new[] {
+					    new Noun("una", "one"),
+					    new Noun("dos", "two", isPlural:true),
+					    new Noun("seis", "six", isPlural:true),
+					    new Noun("mediodía", "noon", isPlural:false),
+					    new Noun("medianoche", "midnight", isPlural:true)
+				    })
                 .hasTranslation("dar", "strike"));
 
             AddRoleSelector(StartScenarios()
@@ -251,7 +264,6 @@ namespace monarquia
         public VerbRoleSelector StartScenarios()
         {
             var result = new VerbRoleSelector(this, this.dataLoader);
-            result.hasOneOf("spanishonlyNoPreposition", PotentialNegationPreposition.Get());
             return result;
         }
     }

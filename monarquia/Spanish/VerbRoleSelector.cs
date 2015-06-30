@@ -9,7 +9,7 @@ namespace monarquia
 	{
 		ICannedData cannedData;
 		DataLoader dataLoader;
-		Dictionary<string, IEnumerable<ITranslateable>> roleOptions = new Dictionary<string, IEnumerable<ITranslateable>>();
+		Dictionary<string, List<ITranslateable>> roleOptions = new Dictionary<string, List<ITranslateable>>();
 	
 		public VerbRoleSelector(ICannedData cannedData, DataLoader dataLoader) 
 		{
@@ -24,9 +24,30 @@ namespace monarquia
 
 		public VerbRoleSelector hasOneOf(string roleName, IEnumerable<ITranslateable> values)
 		{
-			roleOptions [roleName] = values;
+            if (!roleOptions.ContainsKey(roleName))
+                roleOptions[roleName] = new List<ITranslateable>();
+
+			roleOptions [roleName].AddRange(values);
+
 			return this;
 		}
+
+        public VerbRoleSelector hasOneOf<T>(string roleName, Func<T, IEnumerable<ITranslateable>> transform, IEnumerable<T> values)
+        {
+            return hasOneOf<T>(roleName, transform, transform, values);
+        }
+
+        public VerbRoleSelector hasOneOf<T>(string roleName, Func<T, IEnumerable<ITranslateable>> spanishTransform, Func<T, IEnumerable<ITranslateable>> englishTransform, IEnumerable<T> values)
+        {
+            List<ITranslateable> transformedValues = new List<ITranslateable>();
+
+            foreach (var value in values)
+            {
+                transformedValues.Add(new Composed(spanishTransform(value), englishTransform(value)));
+            }
+
+            return hasOneOf(roleName, transformedValues);
+        }
 
 		public VerbRoleSelector hasTranslation(string spanishInfinitive, string englishInfinitive)
 		{
@@ -50,13 +71,7 @@ namespace monarquia
 			if (englishVerb == null)
 				throw new Exception ("No scraped data for english verb: " + englishInfinitive);
 
-			List<ITranslateable> options = new List<ITranslateable> ();
-			if (roleOptions.ContainsKey ("verbPhrase"))
-				options.AddRange (roleOptions ["verbPhrase"]);
-
-			options.Add (new VerbInstance (spanishVerb, englishVerb, framing));
-
-			roleOptions ["verbPhrase"] = options;
+            hasOneOf("verbPhrase", new[] { new VerbInstance(spanishVerb, englishVerb, framing) });
 
 			return this;
 		}

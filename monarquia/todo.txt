@@ -1,4 +1,9 @@
-﻿Todos los días ellas les hacían daño.
+﻿
+
+unattempted tags should have a lower score than tags that are scheduled for later
+
+
+Todos los días ellas les hacían daño.
 -> Every day (ellas) they hurt you all.
 ---> the les is ambiguous and needs a hint.
 
