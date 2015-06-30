@@ -56,6 +56,7 @@ namespace monarquia
 					SpanishTranslation = spanishText,
 					EnglishTranslation = englishText,
 					EnglishHint = englishHints,
+                    SpanishHint = spanishHints,
                     Tags = tags
 				}
 			};
