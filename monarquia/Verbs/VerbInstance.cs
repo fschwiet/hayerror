@@ -19,7 +19,33 @@ namespace monarquia
 
 		public override IEnumerable<ResultChunk> GetResult (Frame frame)
 		{
-			var usageString = spanishVerb.Infinitive + "-" + frame.Conjugation + "-" + frame.PointOfView;
+			var usageString = spanishVerb.Infinitive + "-" + frame.Conjugation + "-";
+
+            switch(frame.PointOfView)
+            {
+                case PointOfView.FirstPerson:
+                    usageString += "firstperson";
+                    break;
+                case PointOfView.FirstPersonPlural:
+                    usageString += "firstpersonplural";
+                    break;
+                case PointOfView.SecondPerson:
+                    usageString += "secondperson";
+                    break;
+                case PointOfView.SecondPersonPlural:
+                    usageString += "secondpersonplural";
+                    break;
+                case PointOfView.ThirdPersonMasculine:
+                case PointOfView.ThirdPersonFeminine:
+                case PointOfView.SecondPersonFormal:
+                    usageString += "thirdperson";
+                    break;
+                case PointOfView.ThirdPersonPluralMasculine:
+                case PointOfView.ThirdPersonPluralFeminine:
+                case PointOfView.SecondPersonPluralFormal:
+                    usageString += "firstperson";
+                    break;
+            }
 
 			return new [] { new ResultChunk () {
 				SpanishTranslation = spanishVerb.ConjugatedForTense (frame),

@@ -147,12 +147,12 @@ namespace test
 			new [] {
 				"verb:hacer", 
 				"verb:hacer-take",
-				"usage:hacer-PastPreterite-FirstPerson"})]
+				"usage:hacer-PastPreterite-firstperson"})]
 		[TestCase ("Yo me corto el pelo.", 
 			new [] {
 				"verb:cortarse", 
 				"verb:cortarse-cut",
-				"usage:cortarse-Present-FirstPerson"})]
+				"usage:cortarse-Present-firstperson"})]
 		public void CanGivePain (string expected, IEnumerable<string> tags) 
 		{
 			AssertHasTranslation (expected, expectedTags: tags);
