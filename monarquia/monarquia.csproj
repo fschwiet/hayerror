@@ -67,6 +67,7 @@
     <Compile Include="Commands\LoadContexts.cs" />
     <Compile Include="Commands\DrillVerb.cs" />
     <Compile Include="Commands\GetTranslation.cs" />
+    <Compile Include="Spanish\Noun.cs" />
     <Compile Include="Spanish\PointOfView.cs" />
     <Compile Include="Spanish\FollowsFrameMasculinityAndPlurality.cs" />
     <Compile Include="LingueeGenerator.cs" />
