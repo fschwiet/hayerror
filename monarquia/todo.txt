@@ -11,9 +11,6 @@ Todos los días ellas les hacían daño.
 should group thirdperson masc/feminine + second person formal
 
 
-
-start attaching tags to nouns / objects
-
 handle nouns better
   - spanish noun lookup: http://www.wordreference.com/es/en/translation.asp?spen=abuelo
   

@@ -12,6 +12,8 @@ namespace monarquia
                 bool isFeminine = false, bool isPlural = false, bool isSubject = false) 
             : base(spanishVersion, englishVersion)
         {
+            this.WithTag("noun:" + spanishVersion + "-" + englishVersion);
+
             IsFeminine = isFeminine;
             IsPlural = isPlural;
             IsSubject = isSubject;
