@@ -71,8 +71,8 @@ namespace monarquia
 			results.Add (CannedTranslation.WithoutPointOfView ("nos", "us", PointOfView.FirstPersonPlural));
 			results.Add (CannedTranslation.WithPointOfView    ("nos", "ourselves", PointOfView.FirstPersonPlural));
 
-			results.Add (CannedTranslation.WithoutPointOfView ("os", "you all", PointOfView.SecondPersonPlural));
-			results.Add (CannedTranslation.WithPointOfView    ("os", "yourselves", PointOfView.SecondPersonPlural));
+			results.Add (CannedTranslation.WithoutPointOfView ("os", "you all", PointOfView.SecondPersonPlural).WithTag("vosotros"));
+			results.Add (CannedTranslation.WithPointOfView    ("os", "yourselves", PointOfView.SecondPersonPlural).WithTag("vosostros"));
 
 			results.Add (CannedTranslation.WithoutPointOfView ("les", "you all", PointOfView.SecondPersonPluralFormal)
 				.WithSpanishHint("ustedes"));
