@@ -75,15 +75,19 @@ namespace monarquia
 			results.Add (CannedTranslation.WithPointOfView    ("os", "yourselves", PointOfView.SecondPersonPlural).WithTag("vosostros"));
 
 			results.Add (CannedTranslation.WithoutPointOfView ("les", "you all", PointOfView.SecondPersonPluralFormal)
-				.WithSpanishHint("ustedes"));
-			results.Add (CannedTranslation.WithPointOfView    ("se", "yourselves", PointOfView.SecondPersonPluralFormal)
+                .WithSpanishHint("ustedes"));
+            results.Add(CannedTranslation.WithPointOfView("se", "yourselves", PointOfView.SecondPersonPluralFormal)
 				.WithSpanishHint("ustedes"));
 
-			results.Add (CannedTranslation.WithoutPointOfView ("les", "them", PointOfView.ThirdPersonPluralMasculine));
-			results.Add (CannedTranslation.WithPointOfView    ("se", "themselves", PointOfView.ThirdPersonPluralMasculine));
+			results.Add (CannedTranslation.WithoutPointOfView ("les", "them", PointOfView.ThirdPersonPluralMasculine)
+				.WithSpanishHint("masculine"));
+			results.Add (CannedTranslation.WithPointOfView    ("se", "themselves", PointOfView.ThirdPersonPluralMasculine)
+				.WithSpanishHint("masculine"));
 
-			results.Add (CannedTranslation.WithoutPointOfView ("les", "them", PointOfView.ThirdPersonPluralFeminine));
-			results.Add (CannedTranslation.WithPointOfView    ("se", "themselves", PointOfView.ThirdPersonPluralFeminine));
+			results.Add (CannedTranslation.WithoutPointOfView ("les", "them", PointOfView.ThirdPersonPluralFeminine)
+				.WithSpanishHint("feminine"));
+			results.Add (CannedTranslation.WithPointOfView    ("se", "themselves", PointOfView.ThirdPersonPluralFeminine)
+				.WithSpanishHint("feminine"));
 			return results;
 		}
 	}
