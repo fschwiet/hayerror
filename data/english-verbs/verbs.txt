@@ -4,6 +4,7 @@ cut
 drink
 eat
 fear
+feel
 gasp
 go
 have
