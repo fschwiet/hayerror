@@ -12,6 +12,7 @@ hug
 hurt
 know
 look
+make
 meet
 prepare
 shout

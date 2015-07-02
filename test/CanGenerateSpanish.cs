@@ -155,7 +155,7 @@ namespace test
 				"verb:cortarse", 
 				"verb:cortarse-cut",
 				"usage:cortarse-Present-firstperson"})]
-		public void CanGivePain (string expected, IEnumerable<string> tags) 
+		public void CanMakeATrip (string expected, IEnumerable<string> tags) 
 		{
 			AssertHasTranslation (expected, expectedTags: tags);
 		}
