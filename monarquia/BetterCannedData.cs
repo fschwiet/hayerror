@@ -90,7 +90,7 @@ namespace monarquia
                 .hasOneOf("fakeSubject", new[] {
 					new EnglishOnly("it")
 				})
-                .hasTranslation("hacer", "be"),
+                .hasTranslation("hacer", "feel"),
                     new[] { "timeframe", "spanishonlyNoPreposition", "verbPhrase", "subject" },
                     new[] { "timeframe", "fakeSubject", "verbPhrase", "subject" }
             );

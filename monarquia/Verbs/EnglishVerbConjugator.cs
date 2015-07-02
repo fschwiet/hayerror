@@ -44,7 +44,7 @@ namespace monarquia
                   frame.Conjugation == Conjugation.PastPreterite)
                 {
 
-                    var newFrame = frame.Clone(conjugation: Conjugation.Present);
+                    var newFrame = frame.Clone(conjugation: Conjugation.Present, pointOfView: PointOfView.FirstPerson);
 
                     return "did not " + inner.ConjugatedForTense(newFrame);
                 }
