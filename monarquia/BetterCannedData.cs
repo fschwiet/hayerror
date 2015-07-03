@@ -64,6 +64,16 @@ namespace monarquia
 
             AddRoleSelector(StartScenarios()
                 .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("verbEnding", new [] {
+                    new CannedTranslation("al cine", "to the movies"),
+                    new CannedTranslation("a la playa", "to the beach"),
+                    new CannedTranslation("allí", "there")
+                })
+                .hasTranslation("ir", "go"));
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
                 .hasOneOf("subject", new[] {
 					CannedTranslation.WithPointOfView ("tiempo", "time", PointOfView.ThirdPersonMasculine),
 					CannedTranslation.WithPointOfView ("mucho tráfico", "a lot of traffic", PointOfView.ThirdPersonMasculine),
@@ -226,7 +236,6 @@ namespace monarquia
                 hasOneOf("verbEnding", new[] { new CannedTranslation("leche", "milk"), new CannedTranslation("agua", "water") }).
                 hasTranslation("beber", "drink"));
 
-            HasEnglishTranslation("ir", "go");
             //HasEnglishTranslation ("cortar", "cut");
             ReflexiveHasEnglishTranslation("cortar", "cut");
             ReflexiveHasEnglishTranslation("duchar", "shower");
@@ -239,11 +248,6 @@ namespace monarquia
 
             //  English "good" is ambiguous
             //AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation("good", "good"));
-
-            AddVerbEnding("ir", new CannedTranslation("al cine", "to the movies"));
-            AddVerbEnding("ir", new CannedTranslation("a la playa", "to the beach"));
-            //AddVerbEnding ("ir", new CannedTranslation("a leer", "to read"));
-            AddVerbEnding("ir", new CannedTranslation("allí", "there"));
 
             AddVerbEnding("cortar", new CannedTranslation("la cadena", "the chain"));
             AddVerbEnding("cortar", new CannedTranslation("los árboles", "the trees"));
