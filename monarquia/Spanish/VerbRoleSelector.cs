@@ -32,21 +32,55 @@ namespace monarquia
 			return this;
 		}
 
-        public VerbRoleSelector hasOneOf<T>(string roleName, Func<T, IEnumerable<ITranslateable>> transform, IEnumerable<T> values)
+        public VerbRoleSelector hasOneOf<T>(string roleName, 
+            IEnumerable<T> values,
+            Func<T, ITranslateable> defaultToTranslateable = null,
+            Func<T, ITranslateable> spanishToTranslateable = null,
+            Func<T, ITranslateable> englishToTranslateable = null,
+            IEnumerable<Func<T, ITranslateable>> additionalToTranslateables = null,
+            Func<ITranslateable, ITranslateable> sharedDecorator = null,
+            Func<ITranslateable, ITranslateable> spanishDecorator = null,
+            Func<ITranslateable, ITranslateable> englishDecorator = null)
         {
-            return hasOneOf<T>(roleName, transform, transform, values);
-        }
+            List<ITranslateable> variations = new List<ITranslateable>();
 
-        public VerbRoleSelector hasOneOf<T>(string roleName, Func<T, IEnumerable<ITranslateable>> spanishTransform, Func<T, IEnumerable<ITranslateable>> englishTransform, IEnumerable<T> values)
-        {
-            List<ITranslateable> transformedValues = new List<ITranslateable>();
+            List<Func<T, ITranslateable>> allToTranslateables = new List<Func<T, ITranslateable>>();
+
+            spanishToTranslateable = spanishToTranslateable ?? defaultToTranslateable;
+            englishToTranslateable = englishToTranslateable ?? defaultToTranslateable;
+
+            if (spanishToTranslateable != null && englishToTranslateable != null)
+            {
+                allToTranslateables.Add(n => spanishToTranslateable(n).WithEnglishAlternative(englishToTranslateable(n)));
+            }
+            else if (spanishToTranslateable != null || englishToTranslateable != null)
+            {
+                throw new Exception("Invalid call to hasOneOf<T>");
+            }
+
+            if (additionalToTranslateables != null)
+                allToTranslateables.AddRange(additionalToTranslateables);
+            
+            if (!allToTranslateables.Any())
+            {
+                allToTranslateables.Add(t => t as ITranslateable );
+            }
+
+            sharedDecorator = sharedDecorator ?? delegate(ITranslateable v) { return v; };
+            spanishDecorator = spanishDecorator ?? sharedDecorator;
+            englishDecorator = englishDecorator ?? sharedDecorator;
 
             foreach (var value in values)
             {
-                transformedValues.Add(new Composed(spanishTransform(value), englishTransform(value)));
+                foreach (var translateable in allToTranslateables.Select(f => f(value)))
+                {
+                    variations.Add(
+                        spanishDecorator(translateable).
+                        WithEnglishAlternative(englishDecorator(translateable)));
+                }
             }
 
-            return hasOneOf(roleName, transformedValues);
+            return hasOneOf(roleName, variations);
         }
 
 		public VerbRoleSelector hasTranslation(string spanishInfinitive, string englishInfinitive)

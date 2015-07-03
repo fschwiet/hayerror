@@ -57,8 +57,9 @@ namespace monarquia
                 .hasOneOf("timeframe", timeframeExpressions)
                 .hasOneOf("subject", peopleExpressions)
                 .hasOneOf<ITranslateable>("verbEnding", 
-                        spanishNoun => new [] {spanishNoun}, 
-                        englishNoun => new [] {new Article(), englishNoun}, professions)
+                        professions,
+                        spanishDecorator: t => t,
+                        englishDecorator: t => new Article() + t)
                 .hasTranslation("ser", "be"));
 
             AddRoleSelector(StartScenarios()
@@ -174,32 +175,32 @@ namespace monarquia
                 .hasOneOf("verbEnding", new[] { new CannedTranslation("a ella", "her") })
                 .hasOneOf("verbEnding", new[] { new CannedTranslation("a mis padres", "my parents") })
                 .hasOneOf<ITranslateable>("verbEnding", 
-                    spanishNoun => new [] { new SpanishOnly("a"), new SpanishOnly("mi"), spanishNoun},
-                    englishNoun => new [] { new EnglishOnly("my"), englishNoun},
-                    relativeNouns)
+                    relativeNouns,
+                    spanishDecorator: t => new SpanishOnly("a") + new SpanishOnly("mi") + t,
+                    englishDecorator: t => new EnglishOnly("my") + t)
                 .hasTranslation("conocer", "meet", frame => frame.Conjugation == Conjugation.PastPreterite || frame.Conjugation == Conjugation.Future)
                 .hasTranslation("conocer", "know", frame => !(frame.Conjugation == Conjugation.PastPreterite || frame.Conjugation == Conjugation.Future)));
 
             AddRoleSelector(StartScenarios()
                 .hasOneOf("timeframe", timeframeExpressions)
                 .hasOneOf<Noun>("subject",
-                    noun => new[] { noun.DefiniteArticle(), noun },
                     new[] {
 					    new Noun("reloj", "watch", isSubject: true),
 					    new Noun("relojes", "watches", isSubject: true, isPlural:true),
 					    new Noun("reloj", "clock", isSubject: true),
 					    new Noun("relojes", "clocks", isSubject: true, isPlural:true)
-                    })
+                    },
+                    noun => noun.DefiniteArticle() + noun)
                 .hasOneOf<Noun>("verbEnding",
-                    spanishNoun => new[] { spanishNoun.DefiniteArticle(), spanishNoun },
-                    englishNoun => new[] { englishNoun },
                     new[] {
 					    new Noun("una", "one"),
 					    new Noun("dos", "two", isPlural:true),
 					    new Noun("seis", "six", isPlural:true),
 					    new Noun("mediodía", "noon", isPlural:false),
 					    new Noun("medianoche", "midnight", isPlural:true)
-				    })
+				    },
+                    spanishToTranslateable: n => n.DefiniteArticle() + n,
+                    englishToTranslateable: n => n)
                 .hasTranslation("dar", "strike"));
 
             AddRoleSelector(StartScenarios()
