@@ -30,7 +30,7 @@ namespace monarquia
 
                     var prefix = "do not ";
 
-                    if (newFrame.PointOfView.IsThirdPerson())
+                    if (newFrame.PointOfView.IsThirdPerson() && newFrame.PointOfView.IsSingular())
                     {
                         prefix = "does not ";
 
