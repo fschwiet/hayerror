@@ -43,7 +43,7 @@ namespace monarquia
                 case PointOfView.ThirdPersonPluralMasculine:
                 case PointOfView.ThirdPersonPluralFeminine:
                 case PointOfView.SecondPersonPluralFormal:
-                    usageString += "firstperson";
+                    usageString += "thirdperson";
                     break;
             }
 
