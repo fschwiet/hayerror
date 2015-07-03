@@ -125,8 +125,10 @@ namespace monarquia
 
 					var options = roleOptions [key].Where (o => o.AllowsFraming (frame)).ToArray();
 
-					if (!options.Any ())
-						continue;
+                    if (!options.Any())
+                    {
+                        options = new ITranslateable[] { new EmptyTranslateable() };
+                    }
 
 					foreach (var option in options) {
 						

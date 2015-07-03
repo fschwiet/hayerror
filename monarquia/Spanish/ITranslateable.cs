@@ -32,6 +32,14 @@ namespace monarquia
 		}
 	}
 
+    public class EmptyTranslateable : ITranslateable
+    {
+        public override IEnumerable<ResultChunk> GetResult(Frame frame)
+        {
+            return new ResultChunk[0];
+        }
+    }
+
 	public class TranslateableWithFrameRestriction : ITranslateable {
 
 		ITranslateable translateable;

@@ -107,23 +107,18 @@ namespace monarquia
 
 			foreach (var roleSelection in roleSelections)
 			{
-				var spanishPhrase = spanishTemplate.Select (t => roleSelection.GetForRole (t));
+                var spanishPhrase = spanishTemplate.Select(t => roleSelection.GetForRole(t) ?? new EmptyTranslateable());
 				var spanishResultChunks = spanishPhrase.SelectMany (s => s.GetResult (frame));
 
 				var result = new Exercise();
 				result.Original = MakeSpanishSentence (spanishResultChunks);
 				result.Tags = spanishResultChunks.SelectMany (p => p.Tags).Distinct().ToList ();
 
-				try {
-					var englishPhrase = englishTemplate.Select (t => roleSelection.GetForRole (t));
-					var englishChunks = englishPhrase.SelectMany(e => e.GetResult(frame));
+				var englishPhrase = englishTemplate.Select(t => roleSelection.GetForRole(t) ?? new EmptyTranslateable());
+				var englishChunks = englishPhrase.SelectMany(e => e.GetResult(frame));
 
-					result.Translation = MakeEnglishSentence (phoneticData, englishChunks);					
-				}
-				catch(Exception) {
-					// ignore
-				}
-
+				result.Translation = MakeEnglishSentence (phoneticData, englishChunks);					
+			
 				results.Add (result);
 			}
 
