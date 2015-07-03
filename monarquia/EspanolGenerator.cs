@@ -113,7 +113,6 @@ namespace monarquia
 				var result = new Exercise();
 				result.Original = MakeSpanishSentence (spanishResultChunks);
 				result.Tags = spanishResultChunks.SelectMany (p => p.Tags).Distinct().ToList ();
-				result.ExtraInfo = string.Join (", ", spanishResultChunks.SelectMany(s => s.ExtraInfo));
 
 				try {
 					var englishPhrase = englishTemplate.Select (t => roleSelection.GetForRole (t));

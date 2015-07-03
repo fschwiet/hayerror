@@ -55,8 +55,7 @@ namespace monarquia
 				Tags = new [] { 
 						"verb:" + spanishVerb.Infinitive, 
 						"verb:" + spanishVerb.Infinitive + "-" + englishVerb.Infinitive,
-						"usage:" + usageString },
-				ExtraInfo = new [] { "verb " + spanishVerb.Infinitive, frame.Conjugation.AsFriendlyString () }
+						"usage:" + usageString }
 				}
 			};
 		}

@@ -116,7 +116,6 @@ namespace monarquia
 					SpanishHint = spanishChunk.SpanishHint,
 					EnglishTranslation = "",
 					EnglishHint = new string[0],
-					ExtraInfo = spanishChunk.ExtraInfo,
 					Tags = spanishChunk.Tags
 				});
 			}
@@ -127,7 +126,6 @@ namespace monarquia
 					SpanishHint = new string[0],
 					EnglishTranslation = englishChunk.EnglishTranslation,
 					EnglishHint = englishChunk.EnglishHint,
-					ExtraInfo = englishChunk.ExtraInfo,
 					Tags = englishChunk.Tags
 				});
 			}
