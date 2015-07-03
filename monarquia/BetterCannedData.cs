@@ -99,7 +99,7 @@ namespace monarquia
                 .hasOneOf("timeframe", timeframeExpressions)
                 .hasOneOf("subject", peopleExpressions)
                 .hasOneOf("verbEnding", new[] {
-					new CannedTranslation("una viaje", "a trip"),
+					new CannedTranslation("un viaje", "a trip"),
 				})
                 .hasTranslation("hacer", "take")
             );

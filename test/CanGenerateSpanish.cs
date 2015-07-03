@@ -41,8 +41,8 @@ namespace test
 		[TestCase("Ella está en frente.", "She is in front.")]
 		[TestCase("Yo estoy en frente.", "I am in front.")]
         [TestCase("A esa hora nosotros no estuvimos en frente.", "At that hour we were not in front.")]
-        [TestCase("Ella no hace una viaje.", "She does not take a trip.")]
-        [TestCase("Ayer ella no hizo una viaje.", "Yesterday she did not take a trip.")]
+        [TestCase("Ella no hace un viaje.", "She does not take a trip.")]
+        [TestCase("Ayer ella no hizo un viaje.", "Yesterday she did not take a trip.")]
         [TestCase("Ellos no conocen a ella.", "(ellos) They do not know her.")]
         public void MiscBugs (string expected, string translation)
 		{
@@ -146,7 +146,7 @@ namespace test
 		}
 
 		[Test]
-		[TestCase ("Ayer yo hice una viaje.", 
+		[TestCase ("Ayer yo hice un viaje.", 
 			new [] {
 				"verb:hacer", 
 				"verb:hacer-take",
