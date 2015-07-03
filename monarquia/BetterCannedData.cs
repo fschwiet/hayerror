@@ -172,7 +172,6 @@ namespace monarquia
             AddRoleSelector(StartScenarios()
                 .hasOneOf("timeframe", timeframeExpressions)
                 .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new[] { new CannedTranslation("a ella", "her") })
                 .hasOneOf("verbEnding", new[] { new CannedTranslation("a mis padres", "my parents") })
                 .hasOneOf<ITranslateable>("verbEnding", 
                     relativeNouns,

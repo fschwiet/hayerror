@@ -43,7 +43,7 @@ namespace test
         [TestCase("A esa hora nosotros no estuvimos en frente.", "At that hour we were not in front.")]
         [TestCase("Ella no hace un viaje.", "She does not take a trip.")]
         [TestCase("Ayer ella no hizo un viaje.", "Yesterday she did not take a trip.")]
-        [TestCase("Ellos no conocen a ella.", "(ellos) They do not know her.")]
+        [TestCase("Ellos no conocen a mi madre.", "(ellos) They do not know my mother.")]
         public void MiscBugs (string expected, string translation)
 		{
 			AssertHasTranslation (expected, translation);
@@ -99,12 +99,12 @@ namespace test
 		}
 
 
-		[TestCase("Yo conozco a ella.", "I know her.")]
-		[TestCase("Ayer yo conocí a ella.", "Yesterday I met her.")]
-		[TestCase("Todos los años yo conocía a ella.", "Every year I knew her.")]
-		[TestCase("Yo conocería a ella.", "I would know her.")]
-		[TestCase("Yo conoceré a ella.", "I will meet her.")]
-		[TestCase("Ellas han conocido a ella.", "(ellas) They have known her.")]
+		[TestCase("Yo conozco a mi madre.", "I know my mother.")]
+		[TestCase("Ayer yo conocí a mi madre.", "Yesterday I met my mother.")]
+		[TestCase("Todos los años yo conocía a mi madre.", "Every year I knew my mother.")]
+		[TestCase("Yo conocería a mi madre.", "I would know my mother.")]
+		[TestCase("Yo conoceré a mi madre.", "I will meet my mother.")]
+		[TestCase("Ellas han conocido a mi madre.", "(ellas) They have known my mother.")]
 
 		// nunca ha conocido -> has never met
 		public void HandlesVerbsThatChangeInterpretationWithTense(string expected, string translation)
