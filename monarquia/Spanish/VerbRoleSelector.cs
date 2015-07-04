@@ -10,7 +10,8 @@ namespace monarquia
 		ICannedData cannedData;
 		DataLoader dataLoader;
 		Dictionary<string, List<ITranslateable>> roleOptions = new Dictionary<string, List<ITranslateable>>();
-	
+        bool needsDebugging;
+
 		public VerbRoleSelector(ICannedData cannedData, DataLoader dataLoader) 
 		{
 			this.cannedData = cannedData;
@@ -21,6 +22,22 @@ namespace monarquia
 				new CannedTranslation("", "", frame => !frame.IsNegated)
 			});
 		}
+
+        public VerbRoleSelector MarkNeedsDebugging()
+        {
+            needsDebugging = true;
+            return this;
+        }
+
+        public VerbRoleSelector CheckNeedsDebugging()
+        {
+            if (needsDebugging)
+            {
+                int i = 0;
+            }
+
+            return this;
+        }
 
 		public VerbRoleSelector hasOneOf(string roleName, IEnumerable<ITranslateable> values)
 		{
@@ -125,7 +142,10 @@ namespace monarquia
 
 					var options = roleOptions [key].Where (o => o.AllowsFraming (frame)).ToArray();
 
-                    if (!options.Any())
+                    //  only put in an empty default if there were no options,
+                    //  if they're all incompatible with the frame then we don't
+                    //  want to force this frame.
+                    if (!roleOptions[key].Any())
                     {
                         options = new ITranslateable[] { new EmptyTranslateable() };
                     }

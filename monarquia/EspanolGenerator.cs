@@ -25,6 +25,8 @@ namespace monarquia
 
 			foreach (var roleSelector in cannedData.GetAllVerbRoleSelectors())
 			{
+                roleSelector.VerbRoleSelector.CheckNeedsDebugging();
+
 				var frames = Frame.SelectAllFrames ();
 
 				foreach (var frame in frames) {
