@@ -56,10 +56,20 @@ namespace monarquia
             AddRoleSelector(StartScenarios()
                 .hasOneOf("timeframe", timeframeExpressions)
                 .hasOneOf("subject", peopleExpressions)
-                .hasOneOf<ITranslateable>("verbEnding", 
+                .hasOneOf<ITranslateable>("verbEnding",
                         professions,
                         spanishDecorator: t => t,
                         englishDecorator: t => new Article() + t)
+                .hasTranslation("ser", "be"));
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf<ITranslateable>("verbEnding", new [] {
+                        new FollowsFrameMasculinityAndPlurality("grosero", "grosera", "groseros", "groseras").WithEnglishAlternative("rude"),
+                        new FollowsFrameMasculinityAndPlurality("gracioso", "graciosa", "graciosos", "graciosas").WithEnglishAlternative("funny"),
+                        new FollowsFrameMasculinityAndPlurality("amable", "amables").WithEnglishAlternative("kind")
+                })
                 .hasTranslation("ser", "be"));
 
             AddRoleSelector(StartScenarios()
