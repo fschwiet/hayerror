@@ -11,9 +11,7 @@ namespace monarquia
 			HasEnglishTranslation ("comer", "eat");
 			HasEnglishTranslation ("gritar", "shout");
 			HasEnglishTranslation ("hablar", "talk");
-			HasEnglishTranslation ("preparar", "prepare");
 			HasEnglishTranslation ("subir", "climb");
-			HasEnglishTranslation ("sumar", "sum");
 			HasEnglishTranslation ("temer", "fear");
 			HasEnglishTranslation ("tener", "have");
 
@@ -21,10 +19,8 @@ namespace monarquia
 
 			AddVerbEnding ("hablar", new CannedTranslation("a la reportera", "to the reporter"));
 			AddVerbEnding ("hablar", new CannedTranslation("con él", "to him"));
-			AddVerbEnding ("preparar", new CannedTranslation("la cena", "the dinner"));
-		
+            
 			AddVerbEnding ("subir", new CannedTranslation("la escalera", "the stairs"));
-			AddVerbEnding ("sumar", new CannedTranslation("la cuenta", "the bill"));
 			AddVerbEnding ("temer", new CannedTranslation("a los críticos", "the critics"));
 			//AddVerbEnding ("tener", "frío");   // to be cold
 			//AddVerbEnding ("tener", "hambre"); // to be hungry

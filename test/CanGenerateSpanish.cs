@@ -62,7 +62,8 @@ namespace test
 		[TestCase("Yo preparo la cena.", null /*"I prepare the dinner."  prepare doesn't have conjugation downloadable on SD */)]
 		[TestCase("Ellos suben la escalera.", "(ellos) They climb the stairs.")]
 		[TestCase("Ellas beben leche.", "(ellas) They drink milk.")]
-		[TestCase("Él suma la cuenta.", null/*, "He adds up the check."*/)]
+        [TestCase("Él suma su voz a los otros.", "He adds his voice to the others.")]
+		[TestCase("Él suma la comida a la cuenta.", "He adds the food to the bill.")]
 		[TestCase("Ella habla a la reportera.", "She talks to the reporter.")]
 		[TestCase("Él teme a los críticos.", "He fears the critics.")]
 		[TestCase("Ellos comen fajitas.", "(ellos) They eat fajitas.")]
@@ -77,14 +78,14 @@ namespace test
 			AssertHasTranslation (expected, translation);
 		}
 
-		[TestCase("Ahora yo preparo la cena.")]
-		[TestCase("Normalmente yo preparo la cena.")]
-		[TestCase("Esta mes yo preparo la cena.")]
-		[TestCase("Anoche yo preparé la cena.")]
-		[TestCase("Algunas veces yo preparaba la cena.")]
-		[TestCase("Yo prepararé la cena.")]
-		[TestCase("Mañana yo prepararé la cena.")]
-		[TestCase("Por supuesto yo prepararía la cena.")]
+		[TestCase("Ahora yo grito.")]
+        [TestCase("Normalmente yo grito.")]
+        [TestCase("Esta mes yo grito.")]
+        [TestCase("Anoche yo grité.")]
+        [TestCase("Algunas veces yo gritaba.")]
+        [TestCase("Yo gritaré.")]
+        [TestCase("Mañana yo gritaré.")]
+        [TestCase("Por supuesto yo gritaría.")]
 		// other conjugations?
 		public void TimeframesAreUsedWithAppropriateTense(string expected) {
 			Assert.Contains (expected, allPhrases);
@@ -156,7 +157,7 @@ namespace test
 				"verb:cortarse", 
 				"verb:cortarse-cut",
 				"usage:cortarse-Present-firstperson"})]
-		public void CanMakeATrip (string expected, IEnumerable<string> tags) 
+		public void TagsReflectReflexivity (string expected, IEnumerable<string> tags) 
 		{
 			AssertHasTranslation (expected, expectedTags: tags);
 		}

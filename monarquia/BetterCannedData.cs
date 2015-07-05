@@ -236,6 +236,32 @@ namespace monarquia
                 hasOneOf("verbEnding", new[] { new CannedTranslation("leche", "milk"), new CannedTranslation("agua", "water") }).
                 hasTranslation("beber", "drink"));
 
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("verbEnding", new[] { new CannedTranslation("la cena", "dinner") })
+                .hasTranslation("preparar", "prepare"));
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("directObject", new[] { new PossessiveAdjective(false, true) + new CannedTranslation("voz", "voice") })
+                .hasOneOf("indirectObject", new[] { 
+                        new Noun("otros", "others", isPlural: true),
+                        new Noun("coro", "chorus"),
+                    }, n => new CannedTranslation("a", "to") + n.DefiniteArticle() + n)
+                .hasTranslation("sumar", "add"));
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("directObject", new[] { new Noun("comida", "food", isFeminine:true) },
+                    n => n.DefiniteArticle() + n)
+                .hasOneOf("indirectObject", new[] { 
+                        new Noun("cuenta", "bill", isFeminine: true)
+                    }, n => new CannedTranslation("a", "to") + n.DefiniteArticle() + n)
+                .hasTranslation("sumar", "add"));
+            
             //HasEnglishTranslation ("cortar", "cut");
             ReflexiveHasEnglishTranslation("cortar", "cut");
             ReflexiveHasEnglishTranslation("duchar", "shower");
@@ -255,7 +281,7 @@ namespace monarquia
             var pelo = new CannedTranslation("pelo", "hair");
 
             AddVerbEnding("cortarse", (new SpanishOnly("el") + pelo).
-                WithEnglishAlternative(new PossessiveAdjective() + pelo));
+                WithEnglishAlternative(new PossessiveAdjective(false, false) + pelo));
 
             AddVerbEnding("ducharse", new CannedTranslation("", ""));
             AddVerbEnding("ducharse", new CannedTranslation("con agua fría", "with cold water"));

@@ -41,11 +41,11 @@ namespace monarquia
         {
             if (IsPlural)
             {
-                return IsFeminine ? new CannedTranslation("las", "the") : new CannedTranslation("la", "the");
+                return IsFeminine ? new CannedTranslation("las", "the") : new CannedTranslation("los", "the");
             }
             else
             {
-                return IsFeminine ? new CannedTranslation("los", "the") : new CannedTranslation("el", "the");
+                return IsFeminine ? new CannedTranslation("la", "the") : new CannedTranslation("el", "the");
             }
         }
 
