@@ -17,9 +17,10 @@ namespace monarquia
 	};
 
 	public static class PointOfViewUtils {
-		public static bool IsFeminine(this PointOfView pointOfView) {
+		public static bool? IsFeminine(this PointOfView pointOfView) {
 
-            // BUGBUG: assumes second-person is female
+            if (pointOfView.IsFirstPerson() || pointOfView.IsSecondPerson())
+                return null;
 
 			switch(pointOfView) {
 				case PointOfView.ThirdPersonFeminine:
@@ -74,6 +75,12 @@ namespace monarquia
 
 			return false;
 		}
+
+        public static bool IsFormal(this PointOfView pointOfView)
+        {
+            return pointOfView == PointOfView.SecondPersonFormal || 
+                pointOfView == PointOfView.SecondPersonPluralFormal;
+        }
 	}
 }
 

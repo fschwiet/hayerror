@@ -9,7 +9,8 @@ namespace monarquia
     public class Noun : CannedTranslation
     {
         public Noun(string spanishVersion, string englishVersion, 
-                bool isFeminine = false, bool isPlural = false, bool isSubject = false) 
+                bool isFeminine = false, bool isPlural = false, bool isSubject = false,
+                Identity role = Identity.Other) 
             : base(spanishVersion, englishVersion)
         {
             this.WithTag("noun:" + spanishVersion + "-" + englishVersion);
@@ -17,10 +18,19 @@ namespace monarquia
             IsFeminine = isFeminine;
             IsPlural = isPlural;
             IsSubject = isSubject;
+            Role = role;
         }   
+
+        public enum Identity {
+            Speaker,
+            Listener,
+            FormalListener,
+            Other
+        }
 
         public bool IsFeminine { get; private set; }
         public bool IsPlural { get; private set; }
+        public Identity Role { get; private set; } 
         public bool IsSubject { get; private set; }
 
         public override bool AllowsFraming(Frame frame)
@@ -31,8 +41,20 @@ namespace monarquia
             if (IsPlural != frame.PointOfView.IsPlural())
                 return false;
 
-            if (IsFeminine != frame.PointOfView.IsFeminine())
+            if (IsFeminine != (frame.PointOfView.IsFeminine() ?? IsFeminine))
                 return false;
+
+            switch (Role)
+            {
+                case Identity.Speaker:
+                    return frame.PointOfView.IsFirstPerson();
+                case Identity.Listener:
+                    return frame.PointOfView.IsSecondPerson() && !frame.PointOfView.IsFormal();
+                case Identity.FormalListener:
+                    return frame.PointOfView.IsSecondPerson() && frame.PointOfView.IsFormal();
+                case Identity.Other:
+                    return frame.PointOfView.IsThirdPerson();
+            }
 
             return true;
         }

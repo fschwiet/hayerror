@@ -8,36 +8,16 @@ namespace monarquia
 	{
 		public static IEnumerable<ITranslateable> GetCommonPeopleSubjectNouns() {
 			return new [] {
-				new CannedTranslation ("yo", "I", frameFilter: frame => {
-					return frame.PointOfView == PointOfView.FirstPerson;
-				}),
-				new CannedTranslation ("tú", "you", frameFilter: frame => {
-					return frame.PointOfView == PointOfView.SecondPerson;
-				}).WithEnglishHint(),
-				new CannedTranslation ("usted", "you", frameFilter: frame => {
-					return frame.PointOfView == PointOfView.SecondPersonFormal;
-				}).WithEnglishHint(),
-				new CannedTranslation ("él", "he", frameFilter: frame => {
-					return frame.PointOfView == PointOfView.ThirdPersonMasculine;
-				}),
-				new CannedTranslation ("ella", "she", frameFilter: frame => {
-					return frame.PointOfView == PointOfView.ThirdPersonFeminine;
-				}),
-				new CannedTranslation ("nosotros", "we", frameFilter: frame => {
-					return frame.PointOfView == PointOfView.FirstPersonPlural;
-				}),
-				new CannedTranslation ("vosotros", "you all", frameFilter: frame => {
-					return frame.PointOfView == PointOfView.SecondPersonPlural;
-				}).WithEnglishHint().WithTag("vosotros"),
-				new CannedTranslation ("ustedes", "you all", frameFilter: frame => {
-					return frame.PointOfView == PointOfView.SecondPersonPluralFormal;
-				}),
-				new CannedTranslation ("ellos", "they", frameFilter: frame => {
-					return frame.PointOfView == PointOfView.ThirdPersonPluralMasculine;
-				}).WithEnglishHint(),
-				new CannedTranslation ("ellas", "they", frameFilter: frame => {
-					return frame.PointOfView == PointOfView.ThirdPersonPluralFeminine;
-				}).WithEnglishHint()
+				new Noun ("yo", "I", isSubject: true, role: Noun.Identity.Speaker),
+				new Noun ("tú", "you", isSubject: true, role: Noun.Identity.Listener).WithEnglishHint(),
+                new Noun ("usted", "you", isSubject: true, role: Noun.Identity.FormalListener).WithEnglishHint(),
+                new Noun ("él", "he", isSubject: true),
+				new Noun ("ella", "she", isSubject: true, isFeminine: true),
+				new Noun ("nosotros", "we", isSubject: true, isPlural: true, role: Noun.Identity.Speaker), 
+				new Noun ("vosotros", "you all", isSubject: true, isPlural: true, role: Noun.Identity.Listener).WithEnglishHint().WithTag("vosotros"),
+				new Noun ("ustedes", "you all", isSubject: true, isPlural: true, role: Noun.Identity.FormalListener),
+				new Noun ("ellos", "they", isSubject:true, isPlural: true).WithEnglishHint(),
+				new Noun ("ellas", "they", isSubject:true, isPlural: true, isFeminine: true).WithEnglishHint()
 			};
 		}
 

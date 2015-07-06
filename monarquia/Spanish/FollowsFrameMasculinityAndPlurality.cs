@@ -44,7 +44,7 @@ namespace monarquia
 		}
 
 		public string AsSpanish(Frame frame) {
-			if (frame.PointOfView.IsFeminine ()) {
+			if (frame.PointOfView.IsFeminine () ?? false) {
 				if (frame.PointOfView.IsPlural ()) {
 					return PluralFeminine;
 				} else {

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace monarquia
 {
-
 	public class CannedTranslation : ITranslateable
 	{
 		string spanishText;

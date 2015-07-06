@@ -20,3 +20,4 @@ actors,æktərz
 cooks,kʊks
 dentists,dɛntəsts
 students,studənts
+trees,triz
