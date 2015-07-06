@@ -129,7 +129,7 @@ namespace monarquia
 
 		public IEnumerable<RoleSelection> GetSelectionsFor(Frame frame)
 		{
-			var seedRoleSelection = new RoleSelection (frame);
+			var seedRoleSelection = new RoleSelection ();
 
 			List<RoleSelection> results = new List<RoleSelection> ();
 			results.Add (seedRoleSelection);

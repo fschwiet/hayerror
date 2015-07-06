@@ -70,17 +70,15 @@ namespace monarquia
 
 	public class RoleSelection
 	{
-		Frame Framing;
 		Dictionary<string, ITranslateable> Roles;
 
-		public RoleSelection(Frame framing) {
-			this.Framing = framing;
+		public RoleSelection() {
 			this.Roles = new Dictionary<string, ITranslateable> ();
 		}
 			
 		public RoleSelection WithRole(string role, ITranslateable value) {
 		
-			var result = new RoleSelection (this.Framing);
+			var result = new RoleSelection ();
 
 			result.Roles = new Dictionary<string, ITranslateable> (this.Roles);
 
