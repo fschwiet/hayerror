@@ -17,20 +17,20 @@ namespace monarquia
 
             timeframeExpressions = new[] {
 
-				AddTimeframeExpression(Conjugation.PastPreterite, new CannedTranslation("a esa hora", "at that hour")),
-				AddTimeframeExpression(Conjugation.PastPreterite, new CannedTranslation("ayer", "yesterday")),
+				new CannedTranslation("a esa hora", "at that hour", f => f.Conjugation == Conjugation.PastPreterite),
+				new CannedTranslation("ayer", "yesterday", f => f.Conjugation == Conjugation.PastPreterite),
 				//AddTimeframeExpression(Conjugation.PastPreterite, new CannedTranslation("de pronto", "suddenly")),
 				//AddTimeframeExpression(Conjugation.PastPreterite, new CannedTranslation("de repente", "suddenly")),
-				AddTimeframeExpression(Conjugation.PastImperfect, new CannedTranslation("él me dijo que", "he told me that")),
+				new CannedTranslation("él me dijo que", "he told me that", f => f.Conjugation == Conjugation.PastImperfect),
 				//AddTimeframeExpression(Conjugation.PastImperfect, new CannedTranslation("todas las mañanas", "every morning")),
 				//AddTimeframeExpression(Conjugation.PastImperfect, new CannedTranslation("todos los años", "every year")),
 				//AddTimeframeExpression(Conjugation.PastImperfect, new CannedTranslation("todos los días", "every day"))
-			}.ToList();
+			}.ToList<ITranslateable>();
 
             foreach (var conjugation in Enum.GetValues(typeof(Conjugation)).Cast<Conjugation>()
                 .Where(c => c != Conjugation.PastPreterite && c != Conjugation.PastImperfect))
             {
-                timeframeExpressions.Add(AddTimeframeExpression(conjugation, new CannedTranslation("", "")));
+                timeframeExpressions.Add(new CannedTranslation("", "", f => f.Conjugation == conjugation));
             }
 
             var peopleExpressions = Pronouns.GetCommonPeopleSubjectNouns();
@@ -309,11 +309,6 @@ namespace monarquia
                     new CannedTranslation ("uno a otro", "at one another", frame => frame.PointOfView.IsPlural())
                     })
                 .hasReflexiveTranslation("mirar", "look"));
-
-            foreach (var timeframeExpression in timeframeExpressions)
-            {
-                AddTimeframeExpression(timeframeExpression);
-            }
 
             //  English "good" is ambiguous
             //AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation("good", "good"));

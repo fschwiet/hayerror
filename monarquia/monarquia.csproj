@@ -95,7 +95,6 @@
     <Compile Include="Spanish\Frame.cs" />
     <Compile Include="Verbs\VerbConjugator.cs" />
     <Compile Include="Verbs\VerbInstance.cs" />
-    <Compile Include="Verbs\ReflexiveVerbConjugator.cs" />
     <Compile Include="Verbs\CannedVerbConjugator.cs" />
     <Compile Include="Commands\ScrapeVerbix.cs" />
     <Compile Include="Commands\Verbix.cs" />

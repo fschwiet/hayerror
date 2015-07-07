@@ -40,37 +40,6 @@ namespace monarquia
 						frame));
 				}
 			}
-				
-			var tagPrefix = "verb:";
-			var verbsToConsiderFinished = results.SelectMany (r => r.Tags)
-				.Where (t => t.StartsWith (tagPrefix))
-				.Distinct()
-				.Select (t => t.Substring (tagPrefix.Length));
-
-			// Console.WriteLine ("Have good data for verbs: " + string.Join (", ", verbsToConsiderFinished));
-
-			List<VerbConjugator> verbs = new List<VerbConjugator> ();
-
-			verbs.AddRange (dataLoader.GetAllSavedSpanishVerbs ());
-			verbs.AddRange (cannedData.GetReflexiveVerbs (dataLoader).Select (inf => new ReflexiveVerbConjugator (inf, dataLoader)));
-
-			if (verb != null)
-				verbs = verbs.Where (v => v.Infinitive == verb).ToList();
-
-			foreach(var v in verbs.Where(v => !verbsToConsiderFinished.Contains(v.Infinitive))) 
-			{
-				var frames = Frame.SelectAllFrames ();
-
-				foreach (var framing in frames) {
-
-					var roleSelecton = cannedData.GetAllRoleScenariosForVerbAndFrame (random, v, dataLoader, framing);
-
-					results.AddRange (BuildExercisesFromRoles (roleSelecton, 
-						new [] { "timeframe", "subject", "spanishonlyNoPreposition","verbPhrase", "verbEnding"},
-						new [] { "timeframe", "subject","verbPhrase", "verbEnding"},
-						framing));
-				}
-			}
 
 			if (verb != null) {
 				results = results.Where (r => r.Tags.Contains ("verb:" + verb)).ToList ();

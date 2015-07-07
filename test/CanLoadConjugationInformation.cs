@@ -107,32 +107,6 @@ namespace test
 			AssertHasSpanishConjugation("está", verb, Conjugation.Present, PointOfView.ThirdPersonFeminine);
 		}
 
-		[Test]
-		[TestCase("me corto", "cortar", PointOfView.FirstPerson)]
-		[TestCase("nos cortamos", "cortar", PointOfView.FirstPersonPlural)]
-		[TestCase("te cortas", "cortar", PointOfView.SecondPerson)]
-		[TestCase("se corta", "cortar", PointOfView.SecondPersonFormal)]
-		[TestCase("os cortáis", "cortar", PointOfView.SecondPersonPlural)]
-		[TestCase("se cortan", "cortar", PointOfView.SecondPersonPluralFormal)]
-		[TestCase("se corta", "cortar", PointOfView.ThirdPersonMasculine)]
-		[TestCase("se corta", "cortar", PointOfView.ThirdPersonFeminine)]
-		[TestCase("se cortan", "cortar", PointOfView.ThirdPersonPluralMasculine)]
-		[TestCase("se cortan", "cortar", PointOfView.ThirdPersonPluralFeminine)]
-		public void CanConjugateReflexively(string expected, string infinitive, PointOfView pointOfView)
-		{
-			var allVerbs = dataLoader.GetAllSavedSpanishVerbs ();
-
-			var verb = allVerbs.SingleOrDefault (v => v.Infinitive == infinitive);
-
-			Assert.IsNotNull (verb);
-
-			var reflexiveVerb = new ReflexiveVerbConjugator (infinitive, dataLoader);
-			var frame = new Frame (pointOfView, Conjugation.Present);
-			var result = reflexiveVerb.ConjugatedForTense (frame);
-
-			Assert.AreEqual (expected, result);
-		}
-
 		void AssertHasSpanishConjugation(string expected, VerbConjugator verb, Conjugation conjugation, PointOfView pointOfView)
 		{
 			Assert.AreEqual(expected, verb.ConjugatedForTense(new Frame(pointOfView, conjugation)));
