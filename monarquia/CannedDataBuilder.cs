@@ -81,7 +81,7 @@ namespace monarquia
 
 			roleSelectors.Add (new ExpressableVerbRoleSelection() {
 				VerbRoleSelector = selector,
-				SpanishRolePattern = spanishRolePattern ?? new [] { "timeframe", "subject", "spanishonlyNoPreposition", "verbPhrase", "directObject", "indirectObject", "verbEnding" },
+				SpanishRolePattern = spanishRolePattern ?? new [] { "timeframe", "subject", "spanishonlyNoPreposition", "reflexivePronoun", "verbPhrase", "directObject", "indirectObject", "verbEnding" },
                 EnglishRolePattern = englishRolePattern ?? new[] { "timeframe", "subject", "spanishonlyNoPreposition", "verbPhrase", "directObject", "indirectObject", "verbEnding" }
 			});
 		}

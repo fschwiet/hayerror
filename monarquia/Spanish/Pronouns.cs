@@ -21,6 +21,34 @@ namespace monarquia
 			};
 		}
 
+        public static ITranslateable GetReflexivePronoun(PointOfView pointOfView)
+        {
+            switch (pointOfView)
+            {
+                case PointOfView.FirstPerson:
+                    return new SpanishOnly("me");
+                case PointOfView.FirstPersonPlural:
+                    return new SpanishOnly("nos");
+                case PointOfView.SecondPerson:
+                    return new SpanishOnly("te");
+                case PointOfView.SecondPersonFormal:
+                    return new SpanishOnly("se");
+                case PointOfView.SecondPersonPlural:
+                    return new SpanishOnly("os");
+                case PointOfView.SecondPersonPluralFormal:
+                    return new SpanishOnly("se");
+
+                case PointOfView.ThirdPersonFeminine:
+                case PointOfView.ThirdPersonMasculine:
+                case PointOfView.ThirdPersonPluralFeminine:
+                case PointOfView.ThirdPersonPluralMasculine:
+                    return new SpanishOnly("se");
+                default:
+                    throw new InvalidOperationException();
+            }
+
+        }
+
 		//  http://www.studyspanish.com/lessons/iodopro.htm
 		// http://www.studyspanish.com/lessons/reflexive2.htm
 		public static IEnumerable<ITranslateable> GetCommonPeopleIndirectObject() {

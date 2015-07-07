@@ -271,9 +271,26 @@ namespace monarquia
                         new Noun("cuenta", "bill", isFeminine: true)
                     }, n => new CannedTranslation("a", "to") + n.DefiniteArticle() + n)
                 .hasTranslation("sumar", "add"));
-            
-            //HasEnglishTranslation ("cortar", "cut");
-            ReflexiveHasEnglishTranslation("cortar", "cut");
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("directObject", new[] {
+                    new Noun("cadena", "chain", isFeminine: true),
+                    new Noun("manzana", "apple", isFeminine: true)
+                }, n => n.DefiniteArticle() + n)
+                .hasTranslation("cortar", "cut"));
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("directObject", new[] {
+                    new Noun("pelo", "hair")
+                    },
+                    spanishToTranslateable: n => n.DefiniteArticle() + n,
+                    englishToTranslateable: n => n.PossessedBySubjectArticle() + n)
+                .hasReflexiveTranslation("cortar", "cut"));
+
             ReflexiveHasEnglishTranslation("duchar", "shower");
             ReflexiveHasEnglishTranslation("mirar", "look");
 
@@ -284,14 +301,6 @@ namespace monarquia
 
             //  English "good" is ambiguous
             //AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation("good", "good"));
-
-            AddVerbEnding("cortar", new CannedTranslation("la cadena", "the chain"));
-            AddVerbEnding("cortar", new CannedTranslation("los árboles", "the trees"));
-
-            var pelo = new CannedTranslation("pelo", "hair");
-
-            AddVerbEnding("cortarse", (new SpanishOnly("el") + pelo).
-                WithEnglishAlternative(new PossessiveAdjective(false, false) + pelo));
 
             AddVerbEnding("ducharse", new CannedTranslation("", ""));
             AddVerbEnding("ducharse", new CannedTranslation("con agua fría", "with cold water"));

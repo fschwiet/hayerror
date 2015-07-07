@@ -82,5 +82,10 @@ namespace monarquia
                 return IsFeminine ? new CannedTranslation("unos", "some") : new CannedTranslation("uno", "a");
             }
         }
+
+        public ITranslateable PossessedBySubjectArticle()
+        {
+            return new PossessiveAdjective(IsPlural, IsFeminine);
+        }
     }
 }

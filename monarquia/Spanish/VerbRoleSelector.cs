@@ -10,6 +10,7 @@ namespace monarquia
 		ICannedData cannedData;
 		DataLoader dataLoader;
 		Dictionary<string, List<ITranslateable>> roleOptions = new Dictionary<string, List<ITranslateable>>();
+        List<ITranslateable> reflexives = new List<ITranslateable>();
         bool needsDebugging;
 
 		public VerbRoleSelector(ICannedData cannedData, DataLoader dataLoader) 
@@ -100,15 +101,21 @@ namespace monarquia
             return hasOneOf(roleName, variations);
         }
 
-		public VerbRoleSelector hasTranslation(string spanishInfinitive, string englishInfinitive)
-		{
-			return hasTranslation (spanishInfinitive, englishInfinitive, f => true);
-		}
+        public VerbRoleSelector hasTranslation(string spanishInfinitive, string englishInfinitive)
+        {
+            return hasTranslation(spanishInfinitive, englishInfinitive, f => true);
+        }
+
+        public VerbRoleSelector hasReflexiveTranslation(string spanishInfinitive, string englishInfinitive)
+        {
+            return hasTranslation(spanishInfinitive, englishInfinitive, f => true, isReflexive: true);
+        }
 
 		public VerbRoleSelector hasTranslation(
 			string spanishInfinitive,
 			string englishInfinitive,
-			Func<Frame, bool> framing) {
+			Func<Frame, bool> framing,
+            bool isReflexive = false) {
 
 			var spanishVerb = dataLoader.GetAllSavedSpanishVerbs ()
 				.Where (v => v.Infinitive == spanishInfinitive).SingleOrDefault();
@@ -122,7 +129,14 @@ namespace monarquia
 			if (englishVerb == null)
 				throw new Exception ("No scraped data for english verb: " + englishInfinitive);
 
-            hasOneOf("verbPhrase", new[] { new VerbInstance(spanishVerb, englishVerb, framing) });
+            var translateable = new VerbInstance(spanishVerb, englishVerb, framing);
+
+            hasOneOf("verbPhrase", new ITranslateable[] { translateable });
+
+            if (isReflexive)
+            {
+                reflexives.Add(translateable);
+            }
 
 			return this;
 		}
@@ -151,8 +165,15 @@ namespace monarquia
                     }
 
 					foreach (var option in options) {
-						
-						newResults.Add (existingResult.WithRole (key, option));
+
+                        var newResult = existingResult.WithRole(key, option);
+
+                        if (reflexives.Contains(option))
+                        {
+                            newResult = newResult.WithRole("reflexivePronoun", Pronouns.GetReflexivePronoun(frame.PointOfView));
+                        }
+
+						newResults.Add (newResult);
 					}
 				}
 			
