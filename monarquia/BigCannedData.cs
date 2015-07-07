@@ -8,21 +8,51 @@ namespace monarquia
 	{
 		public BigCannedData (DataLoader dataLoader) : base(dataLoader)
 		{
-			HasEnglishTranslation ("comer", "eat");
-			HasEnglishTranslation ("gritar", "shout");
-			HasEnglishTranslation ("hablar", "talk");
-			HasEnglishTranslation ("subir", "climb");
-			HasEnglishTranslation ("temer", "fear");
-			HasEnglishTranslation ("tener", "have");
+            var peopleExpressions = Pronouns.GetCommonPeopleSubjectNouns();
 
-			AddVerbEnding ("comer", new CannedTranslation("fajitas", "fajitas"));
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("verbEnding", new[] { new Noun("fajitas", "fajitas", isFeminine: true, isPlural: true) })
+                .hasTranslation("comer", "eat"));
 
-			AddVerbEnding ("hablar", new CannedTranslation("a la reportera", "to the reporter"));
-			AddVerbEnding ("hablar", new CannedTranslation("con él", "to him"));
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("verbEnding", new[] { new Noun("reportera", "reporter", isFeminine: true) },
+                    n => new CannedTranslation("a", "to") + n.DefiniteArticle() + n)
+                .hasOneOf("verbEnding", 
+                    new[] { new Noun("amigo", "friend") },
+                    n => new CannedTranslation("con", "with") + n.PossessedBySubjectArticle() + n)
+                .hasTranslation("hablar", "talk"));
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasTranslation("gritar", "shout"));
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                //  BUGBUG hmm, noun is plural for spanish but not english
+                .hasOneOf("verbEnding", new [] {new Noun("escalera", "stairs", isFeminine:true, isPlural:false)},
+                    n => n.DefiniteArticle() + n)
+                .hasTranslation("subir", "climb"));
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("verbEnding", new[] { 
+                        new Noun("escalera", "stairs", isFeminine: true, isPlural: true), 
+                        new Noun("críticos", "critics", isPlural: true) 
+                    },
+                    n => n.DefiniteArticle() + n,
+                    spanishDecorator: t => new SpanishOnly("a") + t)
+                .hasTranslation("temer", "fear"));
+
             
-			AddVerbEnding ("subir", new CannedTranslation("la escalera", "the stairs"));
-			AddVerbEnding ("temer", new CannedTranslation("a los críticos", "the critics"));
-			//AddVerbEnding ("tener", "frío");   // to be cold
+            //HasEnglishTranslation ("tener", "have");
+            //AddVerbEnding ("tener", "frío");   // to be cold
 			//AddVerbEnding ("tener", "hambre"); // to be hungry
 			//AddVerbEnding ("tener", "miedo");  // to have fear
 			//AddVerbEnding ("tener", "razón");  // to be right
@@ -30,7 +60,7 @@ namespace monarquia
 			//AddVerbEnding ("tener", "prisa");  // to be in a hurry
 			//AddVerbEnding ("tener", "culpa");  // to be at fault
 
-
+            /*
 			var timeframeExpressions = new [] {
 				// Now
 				AddTimeframeExpression (Conjugation.Present, new CannedTranslation("ahora", "now")),
@@ -106,7 +136,7 @@ namespace monarquia
 			foreach(var timeframeExpression in timeframeExpressions) {
 				AddTimeframeExpression (timeframeExpression);
 			}
-
+            */
 
 
 

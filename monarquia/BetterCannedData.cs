@@ -9,12 +9,13 @@ namespace monarquia
     public class BetterCannedData : CannedDataBuilder
     {
         DataLoader dataLoader;
+        protected List<ITranslateable> timeframeExpressions;
 
         public BetterCannedData(DataLoader dataLoader)
         {
             this.dataLoader = dataLoader;
 
-            var timeframeExpressions = new[] {
+            timeframeExpressions = new[] {
 
 				AddTimeframeExpression(Conjugation.PastPreterite, new CannedTranslation("a esa hora", "at that hour")),
 				AddTimeframeExpression(Conjugation.PastPreterite, new CannedTranslation("ayer", "yesterday")),

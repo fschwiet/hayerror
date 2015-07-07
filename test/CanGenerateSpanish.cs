@@ -72,21 +72,14 @@ namespace test
 			AssertHasTranslation (expected, translation);
 		}
 
-		[TestCase("Yo he hablado con él.", "I have talked to him.")]
+		[TestCase("Yo he hablado con mi amigo.", "I have talked with my friend.")]
 		public void PresentPerfectTense (string expected, string translation)
 		{
 			AssertHasTranslation (expected, translation);
 		}
 
-		[TestCase("Ahora yo grito.")]
-        [TestCase("Normalmente yo grito.")]
-        [TestCase("Esta mes yo grito.")]
-        [TestCase("Anoche yo grité.")]
-        [TestCase("Algunas veces yo gritaba.")]
-        [TestCase("Yo gritaré.")]
-        [TestCase("Mañana yo gritaré.")]
-        [TestCase("Por supuesto yo gritaría.")]
-		// other conjugations?
+		[TestCase("Ayer yo grité.")]
+        // other conjugations?
 		public void TimeframesAreUsedWithAppropriateTense(string expected) {
 			Assert.Contains (expected, allPhrases);
 		}
