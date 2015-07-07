@@ -114,7 +114,7 @@ namespace test
 		}
 
 		[TestCase("Yo me corto el pelo.", "I cut my hair.")]
-		[TestCase("Nosotros nos duchamos.", "We shower.")]
+		[TestCase("Nosotros nos duchamos con agua caliente.", "We shower with hot water.")]
 		[TestCase("Tú te miras en el espejo.", "(tú) You look at yourself in the mirror.")]
 		public void CanDoReflexiveVerbs(string expected, string translation)
 		{
@@ -152,11 +152,6 @@ namespace test
 				"verb:hacer", 
 				"verb:hacer-take",
 				"usage:hacer-PastPreterite-firstperson"})]
-		[TestCase ("Yo me corto el pelo.", 
-			new [] {
-				"verb:cortarse", 
-				"verb:cortarse-cut",
-				"usage:cortarse-Present-firstperson"})]
 		public void TagsReflectReflexivity (string expected, IEnumerable<string> tags) 
 		{
 			AssertHasTranslation (expected, expectedTags: tags);

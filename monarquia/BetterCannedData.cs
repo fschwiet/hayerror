@@ -291,8 +291,23 @@ namespace monarquia
                     englishToTranslateable: n => n.PossessedBySubjectArticle() + n)
                 .hasReflexiveTranslation("cortar", "cut"));
 
-            ReflexiveHasEnglishTranslation("duchar", "shower");
-            ReflexiveHasEnglishTranslation("mirar", "look");
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("verbEnding", new[] {
+                    new Noun("agua fría", "cold water"),
+                    new Noun("agua caliente", "hot water")
+                    }, n => new CannedTranslation("con", "with") + n)
+                .hasReflexiveTranslation("duchar", "shower"));
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf("timeframe", timeframeExpressions)
+                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf("verbEnding", new ITranslateable[] {
+                    new SpanishOnly("en el espejo").WithEnglishAlternative(new EnglishOnly("at") + new ReflexivePronoun() + new EnglishOnly("in the mirror")),
+                    new CannedTranslation ("uno a otro", "at one another", frame => frame.PointOfView.IsPlural())
+                    })
+                .hasReflexiveTranslation("mirar", "look"));
 
             foreach (var timeframeExpression in timeframeExpressions)
             {
@@ -301,15 +316,6 @@ namespace monarquia
 
             //  English "good" is ambiguous
             //AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation("good", "good"));
-
-            AddVerbEnding("ducharse", new CannedTranslation("", ""));
-            AddVerbEnding("ducharse", new CannedTranslation("con agua fría", "with cold water"));
-            AddVerbEnding("ducharse", new CannedTranslation("con agua caliente", "with hot water"));
-
-            AddVerbEnding("mirarse", new CannedTranslation("", ""));
-            AddVerbEnding("mirarse", new SpanishOnly("en el espejo").
-                WithEnglishAlternative(new EnglishOnly("at") + new ReflexivePronoun() + new EnglishOnly("in the mirror")));
-            //  Plural only: AddVerbEnding ("mirarse", new CannedTranslation ("uno a otro", "at one another"));
         }
 
         public VerbRoleSelector StartScenarios()
