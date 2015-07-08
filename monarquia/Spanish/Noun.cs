@@ -13,7 +13,10 @@ namespace monarquia
                 Identity role = Identity.Other) 
             : base(spanishVersion, englishVersion)
         {
-            this.WithTag("noun:" + spanishVersion + "-" + englishVersion);
+            if (!string.IsNullOrEmpty(spanishVersion) && !string.IsNullOrEmpty(englishVersion))
+            {
+                this.WithTag("noun:" + spanishVersion + "-" + englishVersion);
+            }
 
             IsFeminine = isFeminine;
             IsPlural = isPlural;

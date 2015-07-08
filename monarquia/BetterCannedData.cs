@@ -130,12 +130,12 @@ namespace monarquia
             AddRoleSelector(StartScenarios()
                 .hasOneOf(Role.timeframe, timeframeExpressions)
                 .hasOneOf(Role.subject, new[] {
-					new CannedTranslation("", "it")
+					new Noun("", "it", isSubject: true)
 				})
                 .hasOneOf(Role.directObject, new[] {
-					CannedTranslation.WithPointOfView ("calor", "hot", PointOfView.ThirdPersonMasculine),
-					CannedTranslation.WithPointOfView ("fresco", "cool", PointOfView.ThirdPersonMasculine),
-					CannedTranslation.WithPointOfView ("viento", "windy", PointOfView.ThirdPersonMasculine),
+					new Noun ("calor", "hot"),
+					new Noun ("fresco", "cool"),
+					new Noun ("viento", "windy"),
 				})
                 .hasTranslation("hacer", "feel"));
 
