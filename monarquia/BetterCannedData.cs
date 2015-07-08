@@ -36,9 +36,9 @@ namespace monarquia
             var peopleExpressions = Pronouns.GetCommonPeopleSubjectNouns();
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new ITranslateable[] {
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new ITranslateable[] {
                     new CannedTranslation("en frente", "in front"),
                     new CannedTranslation("al otro lado de la calle", "on the other side of the street"),
                     new FollowsFrameMasculinityAndPlurality ("listo", "lista", "listos", "listas").WithTranslation("ready", "ready"),
@@ -55,18 +55,18 @@ namespace monarquia
             var professions = new[] { actor, cook, dentist, student };
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf<ITranslateable>("verbEnding",
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf<ITranslateable>(Role.verbEnding,
                         professions,
                         spanishDecorator: t => t,
                         englishDecorator: t => new Article() + t)
                 .hasTranslation("ser", "be"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf<ITranslateable>("verbEnding", new [] {
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf<ITranslateable>(Role.verbEnding, new [] {
                         new FollowsFrameMasculinityAndPlurality("grosero", "grosera", "groseros", "groseras").WithEnglishAlternative("rude"),
                         new FollowsFrameMasculinityAndPlurality("gracioso", "graciosa", "graciosos", "graciosas").WithEnglishAlternative("funny"),
                         new FollowsFrameMasculinityAndPlurality("amable", "amables").WithEnglishAlternative("kind")
@@ -74,9 +74,9 @@ namespace monarquia
                 .hasTranslation("ser", "be"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new [] {
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new[] {
                     new CannedTranslation("al cine", "to the movies"),
                     new CannedTranslation("a la playa", "to the beach"),
                     new CannedTranslation("allí", "there")
@@ -84,69 +84,89 @@ namespace monarquia
                 .hasTranslation("ir", "go"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", new[] {
-					CannedTranslation.WithPointOfView ("tiempo", "time", PointOfView.ThirdPersonMasculine),
-					CannedTranslation.WithPointOfView ("mucho tráfico", "a lot of traffic", PointOfView.ThirdPersonMasculine),
-					CannedTranslation.WithPointOfView ("confusión", "confusion", PointOfView.ThirdPersonFeminine),
-					CannedTranslation.WithPointOfView ("lluvia", "rain", PointOfView.ThirdPersonFeminine),
-					CannedTranslation.WithPointOfView ("problemas", "problems", PointOfView.ThirdPersonPluralMasculine),
-					CannedTranslation.WithPointOfView ("tres pasos", "three steps", PointOfView.ThirdPersonPluralMasculine),
-					CannedTranslation.WithPointOfView ("opciones", "options", PointOfView.ThirdPersonPluralFeminine),
-					CannedTranslation.WithPointOfView ("soluciónes", "solutions", PointOfView.ThirdPersonPluralFeminine)
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, new[] {
+					new Noun("", "there", isSubject: true)
+                })
+                .hasOneOf(Role.directObject, new[] {
+					new Noun ("tiempo", "time"),
+					new Noun ("mucho tráfico", "a lot of traffic"),
 				})
-                .hasOneOf("fakeSubject", new[] {
-					new EnglishOnly("there")
-				})
-                .hasTranslation("haber", "be"),
-                new[] { "timeframe", "spanishonlyNoPreposition", "verbPhrase", "subject" },
-                new[] { "timeframe", "fakeSubject", "verbPhrase", "subject" });
+                .hasTranslation("haber", "be"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", new[] {
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, new[] {
+					new Noun("", "there", isSubject: true, isFeminine: true)
+                })
+                .hasOneOf(Role.directObject, new[] {
+					new Noun ("confusión", "confusion", isFeminine: true),
+					new Noun ("lluvia", "rain", isFeminine: true),
+				})
+                .hasTranslation("haber", "be"));
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, new[] {
+					new Noun("", "there", isSubject: true, isPlural: true)
+                })
+                .hasOneOf(Role.directObject, new[] {
+					new Noun ("problemas", "problems", isPlural: true),
+					new Noun ("tres pasos", "three steps", isPlural: true),
+				})
+                .hasTranslation("haber", "be"));
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, new[] {
+					new Noun("", "there", isSubject: true, isFeminine: true, isPlural: true)
+                })
+                .hasOneOf(Role.directObject, new[] {
+					new Noun ("opciones", "options", isFeminine: true, isPlural: true),
+					new Noun ("soluciónes", "solutions", isFeminine: true, isPlural: true)
+				})
+                .hasTranslation("haber", "be"));
+
+            AddRoleSelector(StartScenarios()
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, new[] {
+					new CannedTranslation("", "it")
+				})
+                .hasOneOf(Role.directObject, new[] {
 					CannedTranslation.WithPointOfView ("calor", "hot", PointOfView.ThirdPersonMasculine),
 					CannedTranslation.WithPointOfView ("fresco", "cool", PointOfView.ThirdPersonMasculine),
 					CannedTranslation.WithPointOfView ("viento", "windy", PointOfView.ThirdPersonMasculine),
 				})
-                .hasOneOf("fakeSubject", new[] {
-					new EnglishOnly("it")
-				})
-                .hasTranslation("hacer", "feel"),
-                    new[] { "timeframe", "spanishonlyNoPreposition", "verbPhrase", "subject" },
-                    new[] { "timeframe", "fakeSubject", "verbPhrase", "subject" }
-            );
+                .hasTranslation("hacer", "feel"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new[] {
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new[] {
 					new CannedTranslation("un viaje", "a trip"),
 				})
                 .hasTranslation("hacer", "take")
             );
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new[] {
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new[] {
 					new CannedTranslation("una visita", ""),
 				})
                 .hasTranslation("hacer", "visit")
             );
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("object", new[] {
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.directObject, new[] {
 					new CannedTranslation ("daño", "")
 				})
-                .hasOneOf("indirectObject", Pronouns.GetCommonPeopleIndirectObject())
-                .hasOneOf("verbEnding", new[] { new CannedTranslation("", "") })
+                .hasOneOf(Role.indirectObject, Pronouns.GetCommonPeopleIndirectObject())
+                //.hasSpanishRoleChange(Role.indirectObject, Role.directObjectProunoun)
                 .hasTranslation("hacer", "hurt"),
-                new[] { "timeframe", "subject", "spanishonlyNoPreposition", "indirectObject", "verbPhrase", "object" },
-                new[] { "timeframe", "subject", "verbPhrase", "indirectObject" }
-                );
+                spanishRolePattern: new[] { Role.timeframe, Role.subject, Role.spanishonlyNoPreposition, Role.indirectObject, Role.directObjectProunoun, Role.reflexivePronoun, Role.verbPhrase, Role.directObject, Role.verbEnding });
 
             var relativeNouns = new[] {
 				new Noun ("padre", "father"),
@@ -191,10 +211,10 @@ namespace monarquia
             AddLearningPriority(relativeNouns);
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new[] { new CannedTranslation("a mis padres", "my parents") })
-                .hasOneOf<ITranslateable>("verbEnding", 
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new[] { new CannedTranslation("a mis padres", "my parents") })
+                .hasOneOf<ITranslateable>(Role.verbEnding, 
                     relativeNouns,
                     spanishDecorator: t => new SpanishOnly("a") + new SpanishOnly("mi") + t,
                     englishDecorator: t => new EnglishOnly("my") + t)
@@ -202,8 +222,8 @@ namespace monarquia
                 .hasTranslation("conocer", "know", frame => !(frame.Conjugation == Conjugation.PastPreterite || frame.Conjugation == Conjugation.Future)));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf<Noun>("subject",
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf<Noun>(Role.subject,
                     new[] {
 					    new Noun("reloj", "watch", isSubject: true),
 					    new Noun("relojes", "watches", isSubject: true, isPlural:true),
@@ -211,7 +231,7 @@ namespace monarquia
 					    new Noun("relojes", "clocks", isSubject: true, isPlural:true)
                     },
                     noun => noun.DefiniteArticle() + noun)
-                .hasOneOf<Noun>("verbEnding",
+                .hasOneOf<Noun>(Role.verbEnding,
                     new[] {
 					    new Noun("una", "one"),
 					    new Noun("dos", "two", isPlural:true),
@@ -224,68 +244,68 @@ namespace monarquia
                 .hasTranslation("dar", "strike"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new[] { new SpanishOnly("un abrazo").WithEnglishAlternative("") })
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new[] { new SpanishOnly("un abrazo").WithEnglishAlternative("") })
                 .hasTranslation("dar", "hug"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new[] { new SpanishOnly("gritos").WithEnglishAlternative("") })
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new[] { new SpanishOnly("gritos").WithEnglishAlternative("") })
                 .hasTranslation("dar", "shout"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new[] { new SpanishOnly("gritos ahogados").WithEnglishAlternative("") })
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new[] { new SpanishOnly("gritos ahogados").WithEnglishAlternative("") })
                 .hasTranslation("dar", "gasp"));
 
             AddRoleSelector(StartScenarios().
-                hasOneOf("timeframe", timeframeExpressions).
-                hasOneOf("subject", peopleExpressions).
-                hasOneOf("verbEnding", new[] { new CannedTranslation("leche", "milk"), new CannedTranslation("agua", "water") }).
+                hasOneOf(Role.timeframe, timeframeExpressions).
+                hasOneOf(Role.subject, peopleExpressions).
+                hasOneOf(Role.verbEnding, new[] { new CannedTranslation("leche", "milk"), new CannedTranslation("agua", "water") }).
                 hasTranslation("beber", "drink"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new[] { new CannedTranslation("la cena", "dinner") })
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new[] { new CannedTranslation("la cena", "dinner") })
                 .hasTranslation("preparar", "prepare"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("directObject", new[] { new PossessiveAdjective(false, true) + new CannedTranslation("voz", "voice") })
-                .hasOneOf("indirectObject", new[] { 
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.directObject, new[] { new PossessiveAdjective(false, true) + new CannedTranslation("voz", "voice") })
+                .hasOneOf(Role.indirectObject, new[] { 
                         new Noun("otros", "others", isPlural: true),
                         new Noun("coro", "chorus"),
                     }, n => new CannedTranslation("a", "to") + n.DefiniteArticle() + n)
                 .hasTranslation("sumar", "add"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("directObject", new[] { new Noun("comida", "food", isFeminine:true) },
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.directObject, new[] { new Noun("comida", "food", isFeminine: true) },
                     n => n.DefiniteArticle() + n)
-                .hasOneOf("indirectObject", new[] { 
+                .hasOneOf(Role.indirectObject, new[] { 
                         new Noun("cuenta", "bill", isFeminine: true)
                     }, n => new CannedTranslation("a", "to") + n.DefiniteArticle() + n)
                 .hasTranslation("sumar", "add"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("directObject", new[] {
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.directObject, new[] {
                     new Noun("cadena", "chain", isFeminine: true),
                     new Noun("manzana", "apple", isFeminine: true)
                 }, n => n.DefiniteArticle() + n)
                 .hasTranslation("cortar", "cut"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("directObject", new[] {
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.directObject, new[] {
                     new Noun("pelo", "hair")
                     },
                     spanishToTranslateable: n => n.DefiniteArticle() + n,
@@ -293,18 +313,18 @@ namespace monarquia
                 .hasReflexiveTranslation("cortar", "cut"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new[] {
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new[] {
                     new Noun("agua fría", "cold water"),
                     new Noun("agua caliente", "hot water")
                     }, n => new CannedTranslation("con", "with") + n)
                 .hasReflexiveTranslation("duchar", "shower"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new ITranslateable[] {
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new ITranslateable[] {
                     new SpanishOnly("en el espejo").WithEnglishAlternative(new EnglishOnly("at") + new ReflexivePronoun() + new EnglishOnly("in the mirror")),
                     new CannedTranslation ("uno a otro", "at one another", frame => frame.PointOfView.IsPlural())
                     })

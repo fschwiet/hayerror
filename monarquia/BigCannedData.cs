@@ -11,38 +11,38 @@ namespace monarquia
             var peopleExpressions = Pronouns.GetCommonPeopleSubjectNouns();
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new[] { new Noun("fajitas", "fajitas", isFeminine: true, isPlural: true) })
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new[] { new Noun("fajitas", "fajitas", isFeminine: true, isPlural: true) })
                 .hasTranslation("comer", "eat"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new[] { new Noun("reportera", "reporter", isFeminine: true) },
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new[] { new Noun("reportera", "reporter", isFeminine: true) },
                     n => new CannedTranslation("a", "to") + n.DefiniteArticle() + n)
-                .hasOneOf("verbEnding", 
+                .hasOneOf(Role.verbEnding, 
                     new[] { new Noun("amigo", "friend") },
                     n => new CannedTranslation("con", "with") + n.PossessedBySubjectArticle() + n)
                 .hasTranslation("hablar", "talk"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
                 .hasTranslation("gritar", "shout"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
                 //  BUGBUG hmm, noun is plural for spanish but not english
-                .hasOneOf("verbEnding", new [] {new Noun("escalera", "stairs", isFeminine:true, isPlural:false)},
+                .hasOneOf(Role.verbEnding, new[] { new Noun("escalera", "stairs", isFeminine: true, isPlural: false) },
                     n => n.DefiniteArticle() + n)
                 .hasTranslation("subir", "climb"));
 
             AddRoleSelector(StartScenarios()
-                .hasOneOf("timeframe", timeframeExpressions)
-                .hasOneOf("subject", peopleExpressions)
-                .hasOneOf("verbEnding", new[] { 
+                .hasOneOf(Role.timeframe, timeframeExpressions)
+                .hasOneOf(Role.subject, peopleExpressions)
+                .hasOneOf(Role.verbEnding, new[] { 
                         new Noun("escalera", "stairs", isFeminine: true, isPlural: true), 
                         new Noun("críticos", "critics", isPlural: true) 
                     },

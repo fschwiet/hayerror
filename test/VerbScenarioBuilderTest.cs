@@ -43,9 +43,9 @@ namespace test
 			};
 
 			var roleSelector = new VerbRoleSelector (cannedData, dataLoader).
-				hasOneOf ("timeframe", timeFrames).
-				hasOneOf ("subject", people).
-				hasOneOf ("verbEnding", verbEndings).
+                hasOneOf(Role.timeframe, timeFrames).
+				hasOneOf (Role.subject, people).
+                hasOneOf(Role.verbEnding, verbEndings).
 				hasTranslation ("beber", "drink");
 
 			var frame = new Frame (PointOfView.ThirdPersonMasculine, Conjugation.Present);

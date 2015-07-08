@@ -70,24 +70,24 @@ namespace monarquia
 
 	public class RoleSelection
 	{
-		Dictionary<string, ITranslateable> Roles;
+		Dictionary<Role, ITranslateable> Roles;
 
 		public RoleSelection() {
-			this.Roles = new Dictionary<string, ITranslateable> ();
+			this.Roles = new Dictionary<Role, ITranslateable> ();
 		}
 			
-		public RoleSelection WithRole(string role, ITranslateable value) {
+		public RoleSelection WithRole(Role role, ITranslateable value) {
 		
 			var result = new RoleSelection ();
 
-			result.Roles = new Dictionary<string, ITranslateable> (this.Roles);
+			result.Roles = new Dictionary<Role, ITranslateable> (this.Roles);
 
 			result.Roles.Add (role, value);
 
 			return result;
 		}
 
-		public ITranslateable GetForRole(string role) {
+		public ITranslateable GetForRole(Role role) {
 
             ITranslateable result;
 

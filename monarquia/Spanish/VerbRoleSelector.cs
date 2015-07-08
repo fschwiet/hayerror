@@ -9,7 +9,7 @@ namespace monarquia
 	{
 		ICannedData cannedData;
 		DataLoader dataLoader;
-		Dictionary<string, List<ITranslateable>> roleOptions = new Dictionary<string, List<ITranslateable>>();
+		Dictionary<Role, List<ITranslateable>> roleOptions = new Dictionary<Role, List<ITranslateable>>();
         List<ITranslateable> reflexives = new List<ITranslateable>();
         bool needsDebugging;
 
@@ -18,7 +18,7 @@ namespace monarquia
 			this.cannedData = cannedData;
 			this.dataLoader = dataLoader;
 
-			this.hasOneOf ("spanishonlyNoPreposition", new ITranslateable[] {
+			this.hasOneOf (Role.spanishonlyNoPreposition, new ITranslateable[] {
 				new CannedTranslation("no", "", frame => frame.IsNegated),
 				new CannedTranslation("", "", frame => !frame.IsNegated)
 			});
@@ -40,7 +40,7 @@ namespace monarquia
             return this;
         }
 
-		public VerbRoleSelector hasOneOf(string roleName, IEnumerable<ITranslateable> values)
+		public VerbRoleSelector hasOneOf(Role roleName, IEnumerable<ITranslateable> values)
 		{
             if (!roleOptions.ContainsKey(roleName))
                 roleOptions[roleName] = new List<ITranslateable>();
@@ -50,7 +50,7 @@ namespace monarquia
 			return this;
 		}
 
-        public VerbRoleSelector hasOneOf<T>(string roleName, 
+        public VerbRoleSelector hasOneOf<T>(Role roleName, 
             IEnumerable<T> values,
             Func<T, ITranslateable> defaultToTranslateable = null,
             Func<T, ITranslateable> spanishToTranslateable = null,
@@ -131,7 +131,7 @@ namespace monarquia
 
             var translateable = new VerbInstance(spanishVerb, englishVerb, framing);
 
-            hasOneOf("verbPhrase", new ITranslateable[] { translateable });
+            hasOneOf(Role.verbPhrase, new ITranslateable[] { translateable });
 
             if (isReflexive)
             {
@@ -170,7 +170,7 @@ namespace monarquia
 
                         if (reflexives.Contains(option))
                         {
-                            newResult = newResult.WithRole("reflexivePronoun", Pronouns.GetReflexivePronoun(frame.PointOfView));
+                            newResult = newResult.WithRole(Role.reflexivePronoun, Pronouns.GetReflexivePronoun(frame.PointOfView));
                         }
 
 						newResults.Add (newResult);

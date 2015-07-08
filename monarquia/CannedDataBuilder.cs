@@ -4,6 +4,19 @@ using System.Linq;
 
 namespace monarquia
 {
+    public enum Role
+    {
+        timeframe, 
+        subject, 
+        spanishonlyNoPreposition, 
+        indirectObjectPronoun,
+        directObjectProunoun,
+        reflexivePronoun, 
+        verbPhrase, 
+        directObject, 
+        indirectObject,
+        verbEnding
+    }
 
 	public class CannedDataBuilder : ICannedData {
 
@@ -12,13 +25,14 @@ namespace monarquia
 
 		public void AddRoleSelector(
 			VerbRoleSelector selector,
-			IEnumerable<string> spanishRolePattern = null,
-			IEnumerable<string> englishRolePattern = null) {
+            IEnumerable<Role> spanishRolePattern = null,
+            IEnumerable<Role> englishRolePattern = null)
+        {
 
 			roleSelectors.Add (new ExpressableVerbRoleSelection() {
 				VerbRoleSelector = selector,
-				SpanishRolePattern = spanishRolePattern ?? new [] { "timeframe", "subject", "spanishonlyNoPreposition", "reflexivePronoun", "verbPhrase", "directObject", "indirectObject", "verbEnding" },
-                EnglishRolePattern = englishRolePattern ?? new[] { "timeframe", "subject", "spanishonlyNoPreposition", "verbPhrase", "directObject", "indirectObject", "verbEnding" }
+                SpanishRolePattern = spanishRolePattern ?? new[] { Role.timeframe, Role.subject, Role.spanishonlyNoPreposition, Role.indirectObjectPronoun, Role.directObjectProunoun, Role.reflexivePronoun, Role.verbPhrase, Role.directObject, Role.indirectObject, Role.verbEnding },
+                EnglishRolePattern = englishRolePattern ?? new[] { Role.timeframe, Role.subject, Role.spanishonlyNoPreposition, Role.verbPhrase, Role.directObject, Role.indirectObject, Role.verbEnding }
 			});
 		}
 

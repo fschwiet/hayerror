@@ -8,8 +8,8 @@ namespace monarquia
 	public class ExpressableVerbRoleSelection
 	{
 		public VerbRoleSelector VerbRoleSelector;
-		public IEnumerable<string> SpanishRolePattern;
-		public IEnumerable<string> EnglishRolePattern;
+		public IEnumerable<Role> SpanishRolePattern;
+		public IEnumerable<Role> EnglishRolePattern;
 	}
 	
 }

@@ -70,8 +70,8 @@ namespace monarquia
 
 		List<Exercise> BuildExercisesFromRoles (
 			IEnumerable<RoleSelection> roleSelections,
-			IEnumerable<string> spanishTemplate,
-			IEnumerable<string> englishTemplate,
+			IEnumerable<Role> spanishTemplate,
+			IEnumerable<Role> englishTemplate,
 			Frame frame)
 		{
 			List<Exercise> results = new List<Exercise> ();
