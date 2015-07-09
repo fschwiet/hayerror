@@ -309,7 +309,8 @@ namespace monarquia
                     },
                     spanishToTranslateable: n => n.DefiniteArticle() + n,
                     englishToTranslateable: n => n.PossessedBySubjectArticle() + n)
-                .hasReflexiveTranslation("cortar", "cut"));
+                .hasTransform(s => s.MakeSpanishReflexive())
+                .hasTranslation("cortar", "cut"));
 
             AddRoleSelector(StartScenarios()
                 .hasOneOf(Role.timeframe, timeframeExpressions)
@@ -318,7 +319,8 @@ namespace monarquia
                     new Noun("agua fría", "cold water"),
                     new Noun("agua caliente", "hot water")
                     }, n => new CannedTranslation("con", "with") + n)
-                .hasReflexiveTranslation("duchar", "shower"));
+                .hasTransform(s => s.MakeSpanishReflexive())
+                .hasTranslation("duchar", "shower"));
 
             AddRoleSelector(StartScenarios()
                 .hasOneOf(Role.timeframe, timeframeExpressions)
@@ -327,7 +329,8 @@ namespace monarquia
                     new SpanishOnly("en el espejo").WithEnglishAlternative(new EnglishOnly("at") + new ReflexivePronoun() + new EnglishOnly("in the mirror")),
                     new CannedTranslation ("uno a otro", "at one another", frame => frame.PointOfView.IsPlural())
                     })
-                .hasReflexiveTranslation("mirar", "look"));
+                .hasTransform(s => s.MakeSpanishReflexive())
+                .hasTranslation("mirar", "look"));
 
             //  English "good" is ambiguous
             //AddVerbEnding ("estar", new Noun ("bueno", "buena", "buenos", "buenas").WithTranslation("good", "good"));

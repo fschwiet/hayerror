@@ -61,6 +61,18 @@ namespace monarquia
             return result.Value;
         }
 
+        public RoleSelections MakeSpanishReflexive()
+        {
+            var result = this.Clone();
+
+            var spanishSubject = result.SpanishRoles[Role.subject];
+
+            result.SpanishRoles[Role.indirectObjectPronoun]
+                = new RoleSelection(spanishSubject.UnderlyingObject.ReflexivePronoun(), spanishSubject.UnderlyingObject);
+
+            return result;
+        }
+
         public RoleSelections MakeIndirectObjectPronoun()
         {
             var spanishUnderlyingSubject = this.SpanishRoles[Role.subject].UnderlyingObject;

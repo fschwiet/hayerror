@@ -10,7 +10,6 @@ namespace monarquia
 		ICannedData cannedData;
 		DataLoader dataLoader;
         Dictionary<Role, List<RoleSelection>> roleOptions = new Dictionary<Role, List<RoleSelection>>();
-        List<RoleSelection> reflexives = new List<RoleSelection>();
         List<Func<RoleSelections, RoleSelections>> transforms = new List<Func<RoleSelections, RoleSelections>>();
         bool needsDebugging;
 
@@ -107,11 +106,6 @@ namespace monarquia
             return hasTranslation(spanishInfinitive, englishInfinitive, f => true);
         }
 
-        public VerbRoleSelector hasReflexiveTranslation(string spanishInfinitive, string englishInfinitive)
-        {
-            return hasTranslation(spanishInfinitive, englishInfinitive, f => true, isReflexive: true);
-        }
-
         public VerbRoleSelector hasTransform(Func<RoleSelections, RoleSelections> transform)
         {
             transforms.Add(transform);
@@ -121,8 +115,7 @@ namespace monarquia
 		public VerbRoleSelector hasTranslation(
 			string spanishInfinitive,
 			string englishInfinitive,
-			Func<Frame, bool> framing,
-            bool isReflexive = false) {
+			Func<Frame, bool> framing) {
 
 			var spanishVerb = dataLoader.GetAllSavedSpanishVerbs ()
 				.Where (v => v.Infinitive == spanishInfinitive).SingleOrDefault();
@@ -141,11 +134,6 @@ namespace monarquia
             var selection = new RoleSelection(translateable);
 
             hasSelections(Role.verbPhrase, new [] { selection });
-
-            if (isReflexive)
-            {
-                reflexives.Add(selection);
-            }
 
 			return this;
 		}
@@ -194,14 +182,7 @@ namespace monarquia
 
 					foreach (var option in options) {
 
-                        var newResult = existingResult.WithRole(key, option);
-
-                        if (reflexives.Contains(option))
-                        {
-                            newResult = newResult.WithRole(Role.reflexivePronoun, new RoleSelection(Pronouns.GetReflexivePronoun(frame.PointOfView), option.UnderlyingObject));
-                        }
-
-						newResults.Add (newResult);
+                        newResults.Add(existingResult.WithRole(key, option));
 					}
 				}
 			
