@@ -8,33 +8,84 @@ namespace monarquia
 {
     public class RoleSelections
     {
-        Dictionary<Role, RoleSelection> Roles;
+        Dictionary<Role, RoleSelection> SpanishRoles = new Dictionary<Role,RoleSelection>();
+        Dictionary<Role, RoleSelection> EnglishRoles = new Dictionary<Role,RoleSelection>();
 
-        public RoleSelections()
+        public RoleSelections Clone()
         {
-            this.Roles = new Dictionary<Role, RoleSelection>();
+            return new RoleSelections()
+            {
+                SpanishRoles = new Dictionary<Role, RoleSelection>(this.SpanishRoles),
+                EnglishRoles = new Dictionary<Role, RoleSelection>(this.EnglishRoles)
+            };
         }
 
         public RoleSelections WithRole(Role role, RoleSelection value)
         {
+            var result = this.Clone();
 
-            var result = new RoleSelections();
-
-            result.Roles = new Dictionary<Role, RoleSelection>(this.Roles);
-
-            result.Roles.Add(role, value);
+            result.SpanishRoles.Add(role, value);
+            result.EnglishRoles.Add(role, value);
 
             return result;
         }
 
-        public ITranslateable GetForRole(Role role)
+        public RoleSelection GetForRole(Role role)
+        {
+            if (!SpanishRoles.ContainsKey(role) && !EnglishRoles.ContainsKey(role))
+                return null;
+
+            if (SpanishRoles[role] != EnglishRoles[role])
+                throw new Exception("GetForRole called when Spanish and English have different roles.");
+
+            return SpanishRoles[role];
+        }
+
+        public ITranslateable GetForSpanishRole(Role role)
         {
             RoleSelection result;
 
-            if (!this.Roles.TryGetValue(role, out result))
+            if (!this.SpanishRoles.TryGetValue(role, out result))
                 return null;
-            
+
             return result.Value;
+        }
+
+        public ITranslateable GetForEnglishRole(Role role)
+        {
+            RoleSelection result;
+
+            if (!this.EnglishRoles.TryGetValue(role, out result))
+                return null;
+
+            return result.Value;
+        }
+
+        public RoleSelections MakeIndirectObjectPronoun()
+        {
+            var spanishUnderlyingSubject = this.SpanishRoles[Role.subject].UnderlyingObject;
+            var englishUnderlyingSubject = this.EnglishRoles[Role.subject].UnderlyingObject;
+            var spanishUnderlyingIndirectObject = this.SpanishRoles[Role.indirectObject].UnderlyingObject;
+            var englishUnderlyingIndirectObject = this.EnglishRoles[Role.indirectObject].UnderlyingObject;
+
+            var spanishReflexive = spanishUnderlyingSubject != null
+                && spanishUnderlyingSubject == spanishUnderlyingIndirectObject;
+
+            var englishReflexive = englishUnderlyingSubject != null
+                && englishUnderlyingSubject == englishUnderlyingIndirectObject;
+
+            var result = this.Clone();
+
+            result.SpanishRoles[Role.indirectObjectPronoun] =
+                new RoleSelection(spanishReflexive ? spanishUnderlyingIndirectObject.ReflexivePronoun() : spanishUnderlyingIndirectObject.IndirectObjectPronoun(),
+                                  spanishUnderlyingIndirectObject);
+
+            result.SpanishRoles.Remove(Role.indirectObject);
+
+            result.EnglishRoles[Role.indirectObject] =
+                new RoleSelection(englishReflexive ? englishUnderlyingIndirectObject.ReflexivePronoun() : englishUnderlyingIndirectObject.IndirectObjectPronoun(),
+                                  englishUnderlyingIndirectObject);
+            return result;
         }
     }
 }

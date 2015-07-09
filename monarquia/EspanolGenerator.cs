@@ -27,22 +27,16 @@ namespace monarquia
 			{
                 roleSelector.VerbRoleSelector.CheckNeedsDebugging();
 
-				var frames = Frame.SelectAllFrames ();
-
-				foreach (var frame in frames) {
-
-					var availableRoleSelections = roleSelector.VerbRoleSelector.GetSelectionsFor (frame);
-                    /*
-                    foreach(var selection in availableRoleSelections)
-                    {
-                        selection.GetForRole(Role.indirectObject)
-                    }
-                    */
+				foreach (var conjugation in Enum.GetValues(typeof(Conjugation)).Cast<Conjugation>())
+                foreach (var isNegated in new[] { false, true})
+                {
+					var availableRoleSelections = roleSelector.VerbRoleSelector.GetSelectionsFor (conjugation, isNegated);
+                    
 					results.AddRange(BuildExercisesFromRoles (
 						availableRoleSelections, 
 						roleSelector.SpanishRolePattern,
 						roleSelector.EnglishRolePattern,
-						frame));
+						conjugation, isNegated));
 				}
 			}
 
@@ -77,20 +71,23 @@ namespace monarquia
 			IEnumerable<RoleSelections> roleSelections,
 			IEnumerable<Role> spanishTemplate,
 			IEnumerable<Role> englishTemplate,
-			Frame frame)
+            Conjugation conjugation,
+            bool isNegated)
 		{
 			List<Exercise> results = new List<Exercise> ();
 
 			foreach (var roleSelection in roleSelections)
 			{
-                var spanishPhrase = spanishTemplate.Select(t => roleSelection.GetForRole(t) ?? new EmptyTranslateable());
+                var frame = new Frame(roleSelection.GetForRole(Role.subject).UnderlyingObject.GetPointOfView(), conjugation, isNegated); 
+
+                var spanishPhrase = spanishTemplate.Select(t => roleSelection.GetForSpanishRole(t) ?? new EmptyTranslateable());
 				var spanishResultChunks = spanishPhrase.SelectMany (s => s.GetResult (frame));
 
 				var result = new Exercise();
 				result.Original = MakeSpanishSentence (spanishResultChunks);
 				result.Tags = spanishResultChunks.SelectMany (p => p.Tags).Distinct().ToList ();
 
-				var englishPhrase = englishTemplate.Select(t => roleSelection.GetForRole(t) ?? new EmptyTranslateable());
+				var englishPhrase = englishTemplate.Select(t => roleSelection.GetForEnglishRole(t) ?? new EmptyTranslateable());
 				var englishChunks = englishPhrase.SelectMany(e => e.GetResult(frame));
 
 				result.Translation = MakeEnglishSentence (phoneticData, englishChunks);					

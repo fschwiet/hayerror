@@ -11,6 +11,7 @@ namespace monarquia
 		DataLoader dataLoader;
         Dictionary<Role, List<RoleSelection>> roleOptions = new Dictionary<Role, List<RoleSelection>>();
         List<RoleSelection> reflexives = new List<RoleSelection>();
+        List<Func<RoleSelections, RoleSelections>> transforms = new List<Func<RoleSelections, RoleSelections>>();
         bool needsDebugging;
 
 		public VerbRoleSelector(ICannedData cannedData, DataLoader dataLoader) 
@@ -111,6 +112,12 @@ namespace monarquia
             return hasTranslation(spanishInfinitive, englishInfinitive, f => true, isReflexive: true);
         }
 
+        public VerbRoleSelector hasTransform(Func<RoleSelections, RoleSelections> transform)
+        {
+            transforms.Add(transform);
+            return this;
+        }
+
 		public VerbRoleSelector hasTranslation(
 			string spanishInfinitive,
 			string englishInfinitive,
@@ -143,18 +150,37 @@ namespace monarquia
 			return this;
 		}
 
-		public IEnumerable<RoleSelections> GetSelectionsFor(Frame frame)
+		public IEnumerable<RoleSelections> GetSelectionsFor(Conjugation conjugation, bool isNegated)
 		{
 			var seedRoleSelection = new RoleSelections ();
 
 			List<RoleSelections> results = new List<RoleSelections> ();
 			results.Add (seedRoleSelection);
 
-			foreach (var key in roleOptions.Keys) {
+            {
+                List<RoleSelections> newResults = new List<RoleSelections>();
+
+                foreach (var existingResult in results)
+                {
+                    var options = roleOptions[Role.subject].ToArray();
+
+                    foreach (var option in options)
+                    {
+                        var newResult = existingResult.WithRole(Role.subject, option);
+                        newResults.Add(newResult);
+                    }
+                }
+
+                results = newResults;
+            }
+
+			foreach (var key in roleOptions.Keys.Where(k => k != Role.subject)) {
 
 				List<RoleSelections> newResults = new List<RoleSelections> ();
 
 				foreach (var existingResult in results) {
+
+                    var frame = new Frame(existingResult.GetForRole(Role.subject).UnderlyingObject.GetPointOfView(), conjugation, isNegated);
 
 					var options = roleOptions [key].Where (o => o.Value.AllowsFraming (frame)).ToArray();
 
@@ -181,6 +207,11 @@ namespace monarquia
 			
 				results = newResults;
 			}
+
+            foreach(var transform in transforms)
+            {
+                results = results.Select(r => transform(r)).ToList();
+            }
 
 			return results;
 		}

@@ -22,14 +22,14 @@ namespace test
 
 		[Test]
 		[TestCase("Yo voy al cine.", "I go to the movies.")]
-		[TestCase("Tú vas al cine.", "(tú) You go to the movies.")]		
+		[TestCase("Tú vas al cine.", "You go to the movies.")]		
 		[TestCase("Usted va al cine.", "(usted) You go to the movies.")]
 		[TestCase("Él va al cine.", "He goes to the movies.")]
 		[TestCase("Ella va al cine.", "She goes to the movies.")]
 
 		[TestCase("Nosotros vamos al cine.", "We go to the movies.")]
-		[TestCase("Vosotros vais al cine.", "(vosotros) You all go to the movies.")]
-		[TestCase("Ustedes van al cine.", "You all go to the movies.")]
+		[TestCase("Vosotros vais al cine.", "(vosotros) All of you go to the movies.")]
+		[TestCase("Ustedes van al cine.", "All of you go to the movies.")]
 		[TestCase("Ellos van al cine.", "(ellos) They go to the movies.")]
 		[TestCase("Ellas van al cine.", "(ellas) They go to the movies.")]
 		public void PresentTenseIntransitive (string expected, string translation)
@@ -51,7 +51,7 @@ namespace test
 
 		[TestCase("Yo soy cocinero.", "I am a cook.")]
 		[TestCase("Ella es actriz.", "She is an actor.")]
-		[TestCase("Tú eres cocinero.", "(tú) You are a cook.")]
+		[TestCase("Tú eres cocinero.", "You are a cook.")]
 		[TestCase("Nosotros somos cocineros.", "We are cooks.")]
 		[TestCase("Ellos son cocineros.", "(ellos) They are cooks.")]
 		public void IsProfessionExpressionsOftenLackAnArticle (string expected, string translation)
@@ -108,7 +108,7 @@ namespace test
 
 		[TestCase("Yo me corto el pelo.", "I cut my hair.")]
 		[TestCase("Nosotros nos duchamos con agua caliente.", "We shower with hot water.")]
-		[TestCase("Tú te miras en el espejo.", "(tú) You look at yourself in the mirror.")]
+		[TestCase("Tú te miras en el espejo.", "You look at yourself in the mirror.")]
 		public void CanDoReflexiveVerbs(string expected, string translation)
 		{
 			AssertHasTranslation (expected, translation);
@@ -132,7 +132,7 @@ namespace test
 		}
 
 		[Test]
-		[TestCase ("Tú me haces daño.", "(tú) You hurt me.")]
+		[TestCase ("Tú me haces daño.", "You hurt me.")]
 		[TestCase ("Yo me hago daño.", "I hurt myself.")]
 		public void CanGivePain (string expected, string translation) 
 		{

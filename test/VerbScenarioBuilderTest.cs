@@ -26,7 +26,7 @@ namespace test
 		{
 			var timeframe1 = new CannedTranslation ("timeframe1", "timeframe1");
 			var incompatibleTimeframe = new CannedTranslation ("incompatible", "incompatible", frameFilter: f => false);
-			var pachoNoun = new CannedTranslation ("pacho", "pacho");
+			var pachoNoun = new Noun ("pacho", "pacho");
 
 			var timeFrames = new [] {
 				new CannedTranslation ("", ""),
@@ -48,9 +48,7 @@ namespace test
                 hasOneOf(Role.verbEnding, verbEndings).
 				hasTranslation ("beber", "drink");
 
-			var frame = new Frame (PointOfView.ThirdPersonMasculine, Conjugation.Present);
-
-			var result = roleSelector.GetSelectionsFor (frame);
+			var result = roleSelector.GetSelectionsFor (Conjugation.Present, false);
 
             Assert.AreEqual(2, result.Count());
 		}

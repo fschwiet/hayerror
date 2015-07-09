@@ -8,7 +8,7 @@ namespace monarquia
 	{
 		public BigCannedData (DataLoader dataLoader) : base(dataLoader)
 		{
-            var peopleExpressions = Pronouns.GetCommonPeopleSubjectNouns();
+            var peopleExpressions = Pronouns.GetCommonPeopleSubjectPronouns();
 
             AddRoleSelector(StartScenarios()
                 .hasOneOf(Role.timeframe, timeframeExpressions)

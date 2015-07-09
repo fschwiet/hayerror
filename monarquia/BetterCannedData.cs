@@ -33,7 +33,7 @@ namespace monarquia
                 timeframeExpressions.Add(new CannedTranslation("", "", f => f.Conjugation == conjugation));
             }
 
-            var peopleExpressions = Pronouns.GetCommonPeopleSubjectNouns();
+            var peopleExpressions = Pronouns.GetCommonPeopleSubjectPronouns();
 
             AddRoleSelector(StartScenarios()
                 .hasOneOf(Role.timeframe, timeframeExpressions)
@@ -86,7 +86,7 @@ namespace monarquia
             AddRoleSelector(StartScenarios()
                 .hasOneOf(Role.timeframe, timeframeExpressions)
                 .hasOneOf(Role.subject, new[] {
-					new Noun("", "there", isSubject: true)
+					new Noun("", "there")
                 })
                 .hasOneOf(Role.directObject, new[] {
 					new Noun ("tiempo", "time"),
@@ -97,7 +97,7 @@ namespace monarquia
             AddRoleSelector(StartScenarios()
                 .hasOneOf(Role.timeframe, timeframeExpressions)
                 .hasOneOf(Role.subject, new[] {
-					new Noun("", "there", isSubject: true, isFeminine: true)
+					new Noun("", "there", isFeminine: true)
                 })
                 .hasOneOf(Role.directObject, new[] {
 					new Noun ("confusión", "confusion", isFeminine: true),
@@ -108,7 +108,7 @@ namespace monarquia
             AddRoleSelector(StartScenarios()
                 .hasOneOf(Role.timeframe, timeframeExpressions)
                 .hasOneOf(Role.subject, new[] {
-					new Noun("", "there", isSubject: true, isPlural: true)
+					new Noun("", "there", isPlural: true)
                 })
                 .hasOneOf(Role.directObject, new[] {
 					new Noun ("problemas", "problems", isPlural: true),
@@ -119,7 +119,7 @@ namespace monarquia
             AddRoleSelector(StartScenarios()
                 .hasOneOf(Role.timeframe, timeframeExpressions)
                 .hasOneOf(Role.subject, new[] {
-					new Noun("", "there", isSubject: true, isFeminine: true, isPlural: true)
+					new Noun("", "there", isFeminine: true, isPlural: true)
                 })
                 .hasOneOf(Role.directObject, new[] {
 					new Noun ("opciones", "options", isFeminine: true, isPlural: true),
@@ -130,7 +130,7 @@ namespace monarquia
             AddRoleSelector(StartScenarios()
                 .hasOneOf(Role.timeframe, timeframeExpressions)
                 .hasOneOf(Role.subject, new[] {
-					new Noun("", "it", isSubject: true)
+					new Noun("", "it")
 				})
                 .hasOneOf(Role.directObject, new[] {
 					new Noun ("calor", "hot"),
@@ -163,10 +163,9 @@ namespace monarquia
                 .hasOneOf(Role.directObject, new[] {
 					new CannedTranslation ("daño", "")
 				})
-                .hasOneOf(Role.indirectObject, Pronouns.GetCommonPeopleIndirectObject())
-                //.hasSpanishRoleChange(Role.indirectObject, Role.directObjectProunoun)
-                .hasTranslation("hacer", "hurt"),
-                spanishRolePattern: new[] { Role.timeframe, Role.subject, Role.spanishonlyNoPreposition, Role.indirectObject, Role.directObjectProunoun, Role.reflexivePronoun, Role.verbPhrase, Role.directObject, Role.verbEnding });
+                .hasOneOf(Role.indirectObject, peopleExpressions)
+                .hasTransform(roleSelections => roleSelections.MakeIndirectObjectPronoun())
+                .hasTranslation("hacer", "hurt"));
 
             var relativeNouns = new[] {
 				new Noun ("padre", "father"),
@@ -225,10 +224,10 @@ namespace monarquia
                 .hasOneOf(Role.timeframe, timeframeExpressions)
                 .hasOneOf<Noun>(Role.subject,
                     new[] {
-					    new Noun("reloj", "watch", isSubject: true),
-					    new Noun("relojes", "watches", isSubject: true, isPlural:true),
-					    new Noun("reloj", "clock", isSubject: true),
-					    new Noun("relojes", "clocks", isSubject: true, isPlural:true)
+					    new Noun("reloj", "watch"),
+					    new Noun("relojes", "watches", isPlural:true),
+					    new Noun("reloj", "clock"),
+					    new Noun("relojes", "clocks", isPlural:true)
                     },
                     noun => noun.DefiniteArticle() + noun)
                 .hasOneOf<Noun>(Role.verbEnding,
