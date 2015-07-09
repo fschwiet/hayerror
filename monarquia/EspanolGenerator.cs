@@ -32,7 +32,12 @@ namespace monarquia
 				foreach (var frame in frames) {
 
 					var availableRoleSelections = roleSelector.VerbRoleSelector.GetSelectionsFor (frame);
-
+                    /*
+                    foreach(var selection in availableRoleSelections)
+                    {
+                        selection.GetForRole(Role.indirectObject)
+                    }
+                    */
 					results.AddRange(BuildExercisesFromRoles (
 						availableRoleSelections, 
 						roleSelector.SpanishRolePattern,
@@ -69,7 +74,7 @@ namespace monarquia
 		}
 
 		List<Exercise> BuildExercisesFromRoles (
-			IEnumerable<RoleSelection> roleSelections,
+			IEnumerable<RoleSelections> roleSelections,
 			IEnumerable<Role> spanishTemplate,
 			IEnumerable<Role> englishTemplate,
 			Frame frame)

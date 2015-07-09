@@ -67,35 +67,5 @@ namespace monarquia
 				select new Frame (p, c);
 		}
 	}
-
-	public class RoleSelection
-	{
-		Dictionary<Role, ITranslateable> Roles;
-
-		public RoleSelection() {
-			this.Roles = new Dictionary<Role, ITranslateable> ();
-		}
-			
-		public RoleSelection WithRole(Role role, ITranslateable value) {
-		
-			var result = new RoleSelection ();
-
-			result.Roles = new Dictionary<Role, ITranslateable> (this.Roles);
-
-			result.Roles.Add (role, value);
-
-			return result;
-		}
-
-		public ITranslateable GetForRole(Role role) {
-
-            ITranslateable result;
-
-            if (!this.Roles.TryGetValue(role, out result))
-                return null;
-
-            return result;
-		}
-	}
 }
 

@@ -7,22 +7,10 @@ namespace monarquia
 {
 	public class VerbRoleSelector
 	{
-        class Selection
-        {
-            public ITranslateable Value;
-            public Noun UnderlyingObject;
-
-            public Selection(ITranslateable value, Noun underlyingObject = null)
-            {
-                this.Value = value;
-                this.UnderlyingObject = (underlyingObject ?? value) as Noun;
-            }
-        }
-
 		ICannedData cannedData;
 		DataLoader dataLoader;
-        Dictionary<Role, List<Selection>> roleOptions = new Dictionary<Role, List<Selection>>();
-        List<Selection> reflexives = new List<Selection>();
+        Dictionary<Role, List<RoleSelection>> roleOptions = new Dictionary<Role, List<RoleSelection>>();
+        List<RoleSelection> reflexives = new List<RoleSelection>();
         bool needsDebugging;
 
 		public VerbRoleSelector(ICannedData cannedData, DataLoader dataLoader) 
@@ -52,10 +40,10 @@ namespace monarquia
             return this;
         }
 
-        VerbRoleSelector hasSelections(Role roleName, IEnumerable<Selection> values)
+        VerbRoleSelector hasSelections(Role roleName, IEnumerable<RoleSelection> values)
 		{
             if (!roleOptions.ContainsKey(roleName))
-                roleOptions[roleName] = new List<Selection>();
+                roleOptions[roleName] = new List<RoleSelection>();
 
 			roleOptions [roleName].AddRange(values);
 
@@ -72,7 +60,7 @@ namespace monarquia
             Func<ITranslateable, ITranslateable> spanishDecorator = null,
             Func<ITranslateable, ITranslateable> englishDecorator = null)
         {
-            List<Selection> variations = new List<Selection>();
+            List<RoleSelection> variations = new List<RoleSelection>();
 
             List<Func<T, ITranslateable>> allToTranslateables = new List<Func<T, ITranslateable>>();
 
@@ -104,7 +92,7 @@ namespace monarquia
             {
                 foreach (var translateable in allToTranslateables.Select(f => f(value)))
                 {
-                    variations.Add(new Selection(
+                    variations.Add(new RoleSelection(
                         spanishDecorator(translateable).WithEnglishAlternative(englishDecorator(translateable)), 
                         value as Noun));
                 }
@@ -143,7 +131,7 @@ namespace monarquia
 
             var translateable = new VerbInstance(spanishVerb, englishVerb, framing);
 
-            var selection = new Selection(translateable);
+            var selection = new RoleSelection(translateable);
 
             hasSelections(Role.verbPhrase, new [] { selection });
 
@@ -155,16 +143,16 @@ namespace monarquia
 			return this;
 		}
 
-		public IEnumerable<RoleSelection> GetSelectionsFor(Frame frame)
+		public IEnumerable<RoleSelections> GetSelectionsFor(Frame frame)
 		{
-			var seedRoleSelection = new RoleSelection ();
+			var seedRoleSelection = new RoleSelections ();
 
-			List<RoleSelection> results = new List<RoleSelection> ();
+			List<RoleSelections> results = new List<RoleSelections> ();
 			results.Add (seedRoleSelection);
 
 			foreach (var key in roleOptions.Keys) {
 
-				List<RoleSelection> newResults = new List<RoleSelection> ();
+				List<RoleSelections> newResults = new List<RoleSelections> ();
 
 				foreach (var existingResult in results) {
 
@@ -175,16 +163,16 @@ namespace monarquia
                     //  want to force this frame.
                     if (!roleOptions[key].Any())
                     {
-                        options = new Selection[] { new Selection(new EmptyTranslateable()) };
+                        options = new RoleSelection[] { new RoleSelection(new EmptyTranslateable()) };
                     }
 
 					foreach (var option in options) {
 
-                        var newResult = existingResult.WithRole(key, option.Value);
+                        var newResult = existingResult.WithRole(key, option);
 
                         if (reflexives.Contains(option))
                         {
-                            newResult = newResult.WithRole(Role.reflexivePronoun, Pronouns.GetReflexivePronoun(frame.PointOfView));
+                            newResult = newResult.WithRole(Role.reflexivePronoun, new RoleSelection(Pronouns.GetReflexivePronoun(frame.PointOfView), option.UnderlyingObject));
                         }
 
 						newResults.Add (newResult);
