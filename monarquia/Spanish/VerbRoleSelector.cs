@@ -7,10 +7,22 @@ namespace monarquia
 {
 	public class VerbRoleSelector
 	{
+        class Selection
+        {
+            public ITranslateable Value;
+            public Noun UnderlyingObject;
+
+            public Selection(ITranslateable value, Noun underlyingObject = null)
+            {
+                this.Value = value;
+                this.UnderlyingObject = (underlyingObject ?? value) as Noun;
+            }
+        }
+
 		ICannedData cannedData;
 		DataLoader dataLoader;
-		Dictionary<Role, List<ITranslateable>> roleOptions = new Dictionary<Role, List<ITranslateable>>();
-        List<ITranslateable> reflexives = new List<ITranslateable>();
+        Dictionary<Role, List<Selection>> roleOptions = new Dictionary<Role, List<Selection>>();
+        List<Selection> reflexives = new List<Selection>();
         bool needsDebugging;
 
 		public VerbRoleSelector(ICannedData cannedData, DataLoader dataLoader) 
@@ -40,10 +52,10 @@ namespace monarquia
             return this;
         }
 
-		public VerbRoleSelector hasOneOf(Role roleName, IEnumerable<ITranslateable> values)
+        VerbRoleSelector hasSelections(Role roleName, IEnumerable<Selection> values)
 		{
             if (!roleOptions.ContainsKey(roleName))
-                roleOptions[roleName] = new List<ITranslateable>();
+                roleOptions[roleName] = new List<Selection>();
 
 			roleOptions [roleName].AddRange(values);
 
@@ -60,7 +72,7 @@ namespace monarquia
             Func<ITranslateable, ITranslateable> spanishDecorator = null,
             Func<ITranslateable, ITranslateable> englishDecorator = null)
         {
-            List<ITranslateable> variations = new List<ITranslateable>();
+            List<Selection> variations = new List<Selection>();
 
             List<Func<T, ITranslateable>> allToTranslateables = new List<Func<T, ITranslateable>>();
 
@@ -92,13 +104,13 @@ namespace monarquia
             {
                 foreach (var translateable in allToTranslateables.Select(f => f(value)))
                 {
-                    variations.Add(
-                        spanishDecorator(translateable).
-                        WithEnglishAlternative(englishDecorator(translateable)));
+                    variations.Add(new Selection(
+                        spanishDecorator(translateable).WithEnglishAlternative(englishDecorator(translateable)), 
+                        value as Noun));
                 }
             }
 
-            return hasOneOf(roleName, variations);
+            return hasSelections(roleName, variations);
         }
 
         public VerbRoleSelector hasTranslation(string spanishInfinitive, string englishInfinitive)
@@ -131,11 +143,13 @@ namespace monarquia
 
             var translateable = new VerbInstance(spanishVerb, englishVerb, framing);
 
-            hasOneOf(Role.verbPhrase, new ITranslateable[] { translateable });
+            var selection = new Selection(translateable);
+
+            hasSelections(Role.verbPhrase, new [] { selection });
 
             if (isReflexive)
             {
-                reflexives.Add(translateable);
+                reflexives.Add(selection);
             }
 
 			return this;
@@ -154,19 +168,19 @@ namespace monarquia
 
 				foreach (var existingResult in results) {
 
-					var options = roleOptions [key].Where (o => o.AllowsFraming (frame)).ToArray();
+					var options = roleOptions [key].Where (o => o.Value.AllowsFraming (frame)).ToArray();
 
                     //  only put in an empty default if there were no options,
                     //  if they're all incompatible with the frame then we don't
                     //  want to force this frame.
                     if (!roleOptions[key].Any())
                     {
-                        options = new ITranslateable[] { new EmptyTranslateable() };
+                        options = new Selection[] { new Selection(new EmptyTranslateable()) };
                     }
 
 					foreach (var option in options) {
 
-                        var newResult = existingResult.WithRole(key, option);
+                        var newResult = existingResult.WithRole(key, option.Value);
 
                         if (reflexives.Contains(option))
                         {
