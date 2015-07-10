@@ -21,34 +21,6 @@ namespace monarquia
 				new Noun ("","", isPlural: true, isFeminine: true).SubjectPronoun()
             };
         }
-
-        public static ITranslateable GetReflexivePronoun(PointOfView pointOfView)
-        {
-            switch (pointOfView)
-            {
-                case PointOfView.FirstPerson:
-                    return new SpanishOnly("me");
-                case PointOfView.FirstPersonPlural:
-                    return new SpanishOnly("nos");
-                case PointOfView.SecondPerson:
-                    return new SpanishOnly("te");
-                case PointOfView.SecondPersonFormal:
-                    return new SpanishOnly("se");
-                case PointOfView.SecondPersonPlural:
-                    return new SpanishOnly("os");
-                case PointOfView.SecondPersonPluralFormal:
-                    return new SpanishOnly("se");
-
-                case PointOfView.ThirdPersonFeminine:
-                case PointOfView.ThirdPersonMasculine:
-                case PointOfView.ThirdPersonPluralFeminine:
-                case PointOfView.ThirdPersonPluralMasculine:
-                    return new SpanishOnly("se");
-                default:
-                    throw new InvalidOperationException();
-            }
-
-        }
 	}
 }
 
