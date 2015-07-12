@@ -33,7 +33,7 @@ namespace monarquia
                 timeframeExpressions.Add(new CannedTranslation("", "", f => f.Conjugation == conjugation));
             }
 
-            var peopleExpressions = Pronouns.GetCommonPeopleSubjectPronouns();
+            var peopleExpressions = CannedNouns.GetCommonPeopleSubjectPronouns();
             AddLearningPriority(peopleExpressions);
 
             AddRoleSelector(StartScenarios()
@@ -168,7 +168,7 @@ namespace monarquia
                 .hasTransform(roleSelections => roleSelections.MakeIndirectObjectPronoun())
                 .hasTranslation("hacer", "hurt"));
 
-            var relativeNouns = Pronouns.GetRelatives();
+            var relativeNouns = CannedNouns.GetRelatives();
 
             AddLearningPriority(relativeNouns);
 

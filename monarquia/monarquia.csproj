@@ -81,7 +81,7 @@
     <Compile Include="Commands\DownloadPhoneticForm.cs" />
     <Compile Include="CachedPhoneticData.cs" />
     <Compile Include="Spanish\Conjugation.cs" />
-    <Compile Include="Spanish\Pronouns.cs" />
+    <Compile Include="Spanish\CannedNouns.cs" />
     <Compile Include="English\Article.cs" />
     <Compile Include="English\PossessiveAdjective.cs" />
     <Compile Include="ICannedData.cs" />

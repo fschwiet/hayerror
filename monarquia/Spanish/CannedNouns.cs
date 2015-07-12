@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace monarquia
 {
-	public static class Pronouns
+	public static class CannedNouns
 	{
         static IEnumerable<Noun> CommonPeopleSubjectPronouns = new[] {
 				new Noun ("","", role: Identity.Speaker).SubjectPronoun(),
