@@ -189,6 +189,18 @@ namespace monarquia
 				results = newResults;
 			}
 
+            {
+                //  don't mix tu/usted/vosotros/ustedes
+
+                var unmixableIdentities = new[] {
+                    Identity.Listener,
+                    Identity.FormalListener
+                };
+
+                results = results.Where(r => r.GetAllAssignedUnderlyingObjects()
+                    .Where(n => unmixableIdentities.Contains(n.Role)).Count() <= 1).ToList();
+            }
+            
             foreach(var transform in transforms)
             {
                 results = results.Select(r => transform(r)).ToList();

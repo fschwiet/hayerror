@@ -18,7 +18,7 @@ namespace test
 
 			var dataDirectory = "../../../data";
 			dataLoader = new DataLoader (dataDirectory);
-			cannedData = new BigCannedData (dataLoader);
+			cannedData = new BetterCannedData (dataLoader);
 		}
 
 		[Test]
@@ -52,6 +52,33 @@ namespace test
 
             Assert.AreEqual(2, result.Count());
 		}
+
+        [Test]
+        public void DoesntMixTuAndUsted()
+        {
+            var roleSelector = new VerbRoleSelector(cannedData, dataLoader).
+                    hasOneOf(Role.subject, CannedNouns.GetCommonPeopleSubjectPronouns()).
+                    hasOneOf(Role.directObject, CannedNouns.GetCommonPeopleSubjectPronouns()).
+                    hasTranslation("conocer", "know");
+
+            var yo = CannedNouns.GetCommonPeopleSubjectPronouns().Where(r => !r.IsPlural && r.Role == Identity.Speaker).Single();
+            var tu = CannedNouns.GetCommonPeopleSubjectPronouns().Where(r => !r.IsPlural && r.Role == Identity.Listener).Single();
+            var usted = CannedNouns.GetCommonPeopleSubjectPronouns().Where(r => !r.IsPlural && r.Role == Identity.FormalListener).Single();
+
+            var ustedes = CannedNouns.GetCommonPeopleSubjectPronouns().Where(r => r.IsPlural && r.Role == Identity.FormalListener).Single();
+
+            var result = roleSelector.GetSelectionsFor(Conjugation.Present, false);
+
+            Assert.AreEqual(1, result.Count(r => r.GetForRole(Role.subject).UnderlyingObject == yo && r.GetForRole(Role.directObject).UnderlyingObject == tu));
+
+            Assert.AreEqual(1, result.Count(r => r.GetForRole(Role.subject).UnderlyingObject == yo && r.GetForRole(Role.directObject).UnderlyingObject == ustedes));
+
+            Assert.AreEqual(0, result.Count(r => r.GetForRole(Role.subject).UnderlyingObject == tu && r.GetForRole(Role.directObject).UnderlyingObject == usted));
+
+            Assert.AreEqual(0, result.Count(r => r.GetForRole(Role.subject).UnderlyingObject == usted && r.GetForRole(Role.directObject).UnderlyingObject == tu));
+
+            Assert.AreEqual(0, result.Count(r => r.GetForRole(Role.subject).UnderlyingObject == usted && r.GetForRole(Role.directObject).UnderlyingObject == ustedes));
+        }
 	}
 }
 

@@ -41,6 +41,13 @@ namespace monarquia
             return SpanishRoles[role];
         }
 
+        public IEnumerable<Noun> GetAllAssignedUnderlyingObjects()
+        {
+            var grouped = SpanishRoles.Values.Concat(EnglishRoles.Values).GroupBy(a => a.UnderlyingObject);
+
+            return grouped.Select(g => g.Key).Where(k => k != null).ToArray();
+        }
+
         public ITranslateable GetForSpanishRole(Role role)
         {
             RoleSelection result;
