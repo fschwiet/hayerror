@@ -31,9 +31,18 @@ namespace monarquia
             Role = role;
         }   
 
+        public Noun(Noun original)
+            : base(original)
+        {
+            this.IsFeminine = original.IsFeminine;
+            this.IsPlural = original.IsPlural;
+            this.Role = original.Role;
+        }
+
         public bool IsFeminine { get; private set; }
         public bool IsPlural { get; private set; }
         public Identity Role { get; private set; } 
+
         public Noun SubjectPronoun()
         {
             string spanishVersion, englishVersion, englishHint = null;

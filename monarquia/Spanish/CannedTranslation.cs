@@ -5,8 +5,8 @@ namespace monarquia
 {
 	public class CannedTranslation : ITranslateable
 	{
-		string spanishText;
-		string englishText;
+		protected string spanishText;
+		protected string englishText;
 		Func<Frame,bool> frameFilter;
 		List<string> englishHints = new List<string>();
 		List<string> spanishHints = new List<string>();
@@ -18,6 +18,16 @@ namespace monarquia
 			this.englishText = englishText;
 			this.frameFilter = frameFilter ?? delegate(Frame f) { return true; };
 		}
+
+        public CannedTranslation(CannedTranslation original)
+        {
+            this.spanishText = original.spanishText;
+            this.englishText = original.englishText;
+            this.frameFilter = original.frameFilter;
+            this.englishHints = new List<string>(original.englishHints);
+            this.spanishHints = new List<string>(original.spanishHints);
+            this.tags = new List<string>(original.tags);
+        }
 
         public CannedTranslation WithTag(params string[] tags)
         {

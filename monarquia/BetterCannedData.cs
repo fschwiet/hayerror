@@ -178,8 +178,7 @@ namespace monarquia
                 .hasOneOf(Role.verbEnding, new[] { new CannedTranslation("a mis padres", "my parents") })
                 .hasOneOf<ITranslateable>(Role.verbEnding, 
                     relativeNouns,
-                    spanishDecorator: t => new SpanishOnly("a") + new SpanishOnly("mi") + t,
-                    englishDecorator: t => new EnglishOnly("my") + t)
+                    spanishDecorator: t => new SpanishOnly("a") + t)
                 .hasTranslation("conocer", "meet", frame => frame.Conjugation == Conjugation.PastPreterite || frame.Conjugation == Conjugation.Future)
                 .hasTranslation("conocer", "know", frame => !(frame.Conjugation == Conjugation.PastPreterite || frame.Conjugation == Conjugation.Future)));
 
