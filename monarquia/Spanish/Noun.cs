@@ -6,16 +6,24 @@ using System.Threading.Tasks;
 
 namespace monarquia
 {
+    public enum Identity
+    {
+        Speaker,
+        Listener,
+        FormalListener,
+        Other
+    }
+
     public class Noun : CannedTranslation
     {
         public Noun(string spanishVersion, string englishVersion, 
                 bool isFeminine = false, bool isPlural = false,
-                Identity role = Identity.Other) 
+                Identity role = Identity.Other, string tagWith = null) 
             : base(spanishVersion, englishVersion)
         {
             if (!string.IsNullOrEmpty(spanishVersion) && !string.IsNullOrEmpty(englishVersion))
             {
-                this.WithTag("noun:" + spanishVersion + "-" + englishVersion);
+                this.WithTag("noun:" + (tagWith ?? spanishVersion + "-" + englishVersion));
             }
 
             IsFeminine = isFeminine;
@@ -23,17 +31,10 @@ namespace monarquia
             Role = role;
         }   
 
-        public enum Identity {
-            Speaker,
-            Listener,
-            FormalListener,
-            Other
-        }
-
         public bool IsFeminine { get; private set; }
         public bool IsPlural { get; private set; }
         public Identity Role { get; private set; } 
-        public ITranslateable SubjectPronoun()
+        public Noun SubjectPronoun()
         {
             string spanishVersion, englishVersion, englishHint = null;
             List<string> tags = new List<string>();

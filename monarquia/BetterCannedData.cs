@@ -34,6 +34,7 @@ namespace monarquia
             }
 
             var peopleExpressions = Pronouns.GetCommonPeopleSubjectPronouns();
+            AddLearningPriority(peopleExpressions);
 
             AddRoleSelector(StartScenarios()
                 .hasOneOf(Role.timeframe, timeframeExpressions)
@@ -167,45 +168,7 @@ namespace monarquia
                 .hasTransform(roleSelections => roleSelections.MakeIndirectObjectPronoun())
                 .hasTranslation("hacer", "hurt"));
 
-            var relativeNouns = new[] {
-				new Noun ("padre", "father"),
-				new Noun ("madre", "mother", isFeminine:true),
-				new Noun ("hermano", "brother"),
-				new Noun ("hermana", "sister", isFeminine:true),
-				new Noun ("suegro", "father-in-law"),
-				new Noun ("suegra", "mother-in-law", isFeminine:true),
-				new Noun ("cuñado", "brother-in-law"),
-				new Noun ("cuñada", "sister-in-law", isFeminine:true),
-				new Noun ("esposo", "husband"),
-				new Noun ("esposa", "wife", isFeminine:true),
-				new Noun ("abuelo", "grandfather"),
-				new Noun ("abuela", "grandmother", isFeminine:true),
-				new Noun ("bisabuelo", "great grandfather"),
-				new Noun ("bisabuela", "great grandmother", isFeminine:true),
-				new Noun ("hijo", "son"),
-				new Noun ("hija", "daughter", isFeminine:true),
-				new Noun ("nieto", "grandson"),
-				new Noun ("nieta", "granddaughter", isFeminine:true),
-				new Noun ("bisnieto", "great grandson"),
-				new Noun ("bisnieta", "great granddaughter", isFeminine:true),
-				new Noun ("tío", "uncle"),
-				new Noun ("tía", "aunt", isFeminine:true),
-				new Noun ("primo", "cousin"),
-				new Noun ("prima", "cousin", isFeminine:true),
-				new Noun ("sobrino", "nephew"),
-				new Noun ("sobrina", "niece", isFeminine:true),
-				new Noun ("padrastro", "stepfather"),
-				new Noun ("madrastra", "stepmother", isFeminine:true),
-				new Noun ("hijastro", "stepson"),
-				new Noun ("hijastra", "stepdaughter", isFeminine:true),
-				new Noun ("hermanastro", "stepbrother"),
-				new Noun ("hermanastra", "stepsister", isFeminine:true),
-				new Noun ("padrino", "godfather"),
-				new Noun ("madrina", "godmother", isFeminine:true),
-				new Noun ("ahijado", "godson"),
-				new Noun ("ahijada", "goddaughter", isFeminine:true),
-				new Noun ("conocido", "acquaintance")
-			};
+            var relativeNouns = Pronouns.GetRelatives();
 
             AddLearningPriority(relativeNouns);
 
